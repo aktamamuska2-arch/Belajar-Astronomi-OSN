@@ -1,0 +1,295 @@
+<Tujuan>
+
+- Membedakan hari sideris dan hari solar serta menurunkan selisih geometrisnya (~4 menit per hari).
+- Mengonversi waktu antara UT, LST, zona waktu, dan Julian Date (JD); menerapkan rumus konversi JD ↔ kalender Gregorian.
+- Menjelaskan perbedaan kalender Julian dan Gregorian serta syarat tahun kabisat, dan menghubungkannya dengan presesi ekuinoks.
+- Menganalisis fase Bulan dari sudut elongasi dan menentukan waktu terbit, transit, dan terbenam masing-masing fase.
+- Menentukan kondisi geometri umbra/penumbra untuk terjadinya gerhana Matahari dan Bulan, serta mengenal siklus Saros.
+- Menghitung posisi bintang di langit (Hour Angle dan kulminasi) dari data LST dan koordinat ekuatorial.
+
+</Tujuan>
+
+<Prasyarat babIds={['a2']} />
+
+<p className="lead">Langit bergerak, dan kita mengukur waktu dari gerak itu. Bumi berputar sekaligus mengorbit, sehingga muncul dua jenis hari, dua jenis bulan, dan kalender yang harus menambal sisa pecahan. Bab ini menghubungkan koordinat ekuatorial dari A2 dengan jam, kalender, fase Bulan, dan geometri gerhana — rantai konsep yang sering muncul di soal olimpiade bertingkat.</p>
+
+## 1. Hari sideris versus hari solar: geometri orbital
+
+<Poin judul="1 · Dua jenis hari & asal 4 menit" defaultOpen>
+
+Satu **hari solar rata-rata** adalah selang antara dua kulminasi Matahari berturut-turut: tepat **24 jam** menurut definisi jam sipil. Satu **hari sideris** adalah selang antara dua kulminasi bintang yang sama: **23 jam 56 menit 4 detik** (23h56m04s), sekitar 3 menit 56 detik lebih pendek.
+
+**Mengapa ada selisih?** Selama Bumi berputar penuh $360°$ terhadap bintang jauh, Bumi juga bergerak sejauh $\approx 1°$ mengelilingi Matahari (karena satu revolusi $= 360°/365{,}25 \approx 0{,}9856°/$hari). Agar Matahari kembali ke meridian yang sama, Bumi harus berputar ekstra $\approx 1°$, yang membutuhkan waktu tambahan:
+
+$$\Delta t = \frac{1°}{360°} \times 24\ \text{jam} = \frac{24 \times 60}{360}\ \text{menit} \approx 4\ \text{menit}.$$
+
+Bintang jauh tidak terpengaruh gerakan orbit (paralaks bintang diabaikan), sehingga kulminasinya datang **4 menit lebih awal setiap hari sipil**. Dalam 1 tahun (365,25 hari), akumulasinya persis $\approx 365,25 \times 4\text{ menit} \approx 24$ jam — satu hari sideris ekstra. Itulah mengapa dalam satu tahun ada **366 hari sideris** tetapi hanya 365,25 hari solar.
+
+$$\frac{1\ \text{hari solar}}{1\ \text{hari sideris}} = \frac{366{,}25}{365{,}25} \approx 1{,}00274.$$
+
+**Akibat praktis bagi pengamat:** Rasi bintang yang terlihat pada pukul 21.00 malam ini akan berada di posisi yang sama kira-kira pada pukul 19.00 satu bulan kemudian (bergeser $\approx 2$ jam maju per bulan).
+
+<Catatan variasi="tips">
+
+Rumus konversi singkat: $1\ \text{hari sideris} = 0{,}99727\ \text{hari solar}$, atau $1\ \text{hari solar} = 1{,}00274\ \text{hari sideris}$. Dalam kalkulasi olimpiade, selisih $\approx 3^{\text{m}}56^{\text{s}}$ per hari sering dibulatkan menjadi **4 menit/hari**.
+
+</Catatan>
+
+</Poin>
+
+## 2. Sistem waktu: UT, LST, zona waktu, dan Julian Date
+
+<Poin judul="2 · UT, LST, zona waktu & Julian Date">
+
+**Universal Time (UT/UTC)** adalah standar waktu berbasis rotasi Bumi yang disetarakan dengan jam di meridian Greenwich ($\lambda = 0°$). Waktu sipil di zona waktu lain adalah $\text{UT} + \text{offset}$.
+
+**Waktu Sideris Lokal (LST)** menyatakan sudut jam (Hour Angle) titik vernal ekuinoks (titik Aries, $\Upsilon$) terhadap meridian lokal pengamat. Ini juga setara dengan asensio rekta (RA) objek yang sedang berada tepat di meridian. Hubungan praktis:
+
+$$\boxed{\mathrm{LST} \approx \mathrm{GMST} + \frac{\lambda}{15°/\text{jam}}}$$
+
+dengan $\lambda$ bujur timur positif. GMST (Greenwich Mean Sidereal Time) pada tengah malam UT bergantung pada tanggal, tetapi pendekatan kasar untuk tanggal $J$ adalah:
+
+$$\mathrm{GMST}_{0\text{h UT}}\ (\text{jam}) \approx 6{,}697 + 0{,}0657 \times (J - J_0)\ \text{(mod 24)}$$
+
+dengan $J_0$ adalah JD pada 1 Januari J2000.0.
+
+**Julian Date (JD)** adalah hitungan hari kontinu sejak 12.00 UT, 1 Januari 4713 SM (Kalender Julian). Ini menghilangkan kerumitan kalender untuk selang waktu panjang. Nilai referensi penting:
+
+| Tanggal | JD |
+|---|---|
+| 1 Jan 2000, 12:00 UT (J2000.0) | 2.451.545,0 |
+| 1 Jan 2024, 00:00 UT | 2.460.310,5 |
+| 1 Jan 2025, 00:00 UT | 2.460.675,5 |
+
+**Konversi JD → Kalender Gregorian** dilakukan dengan algoritma bertingkat; untuk keperluan olimpiade, cukup ketahui bahwa:
+$$\text{Selang waktu (hari)} = \mathrm{JD}_2 - \mathrm{JD}_1.$$
+
+**Hour Angle (HA)** suatu bintang di titik RA $= \alpha$ adalah:
+$$\mathrm{HA} = \mathrm{LST} - \alpha.$$
+Bintang berkulminasi (transit meridian) saat $\mathrm{HA} = 0$, artinya $\mathrm{LST} = \alpha$.
+
+<Gambar id="bola-langit" />
+
+</Poin>
+
+## 3. Kalender: Julian, Gregorian, kabisat & presesi ekuinoks
+
+<Poin judul="3 · Kalender & presesi ekuinoks (siklus 26.000 tahun)">
+
+**Kalender Julian** (Julius Caesar, 46 SM): tahun rata-rata $= 365{,}25$ hari, dengan satu tahun kabisat setiap 4 tahun. Namun tahun tropis (dari ekuinoks ke ekuinoks) sejati adalah $365{,}24219$ hari, sehingga kalender Julian lambat laun geser $\approx 11$ menit per tahun terhadap musim.
+
+**Kalender Gregorian** (Paus Gregorius XIII, 1582): memperbaiki dengan menghilangkan 3 tahun kabisat dari setiap 400 tahun. Aturan kabisat Gregorian:
+- Habis dibagi 4 → kabisat, **kecuali**
+- Habis dibagi 100 → bukan kabisat, **kecuali**
+- Habis dibagi 400 → kabisat.
+
+Contoh: tahun 1900 bukan kabisat, tetapi tahun 2000 adalah kabisat.
+
+Tahun rata-rata Gregorian $= 365{,}2425$ hari, hanya berselisih $\approx 26$ detik dari tahun tropis — kesalahan hanya $1$ hari per $\approx 3.300$ tahun.
+
+**Presesi Ekuinoks:** Sumbu rotasi Bumi berpresesi seperti gasing yang melambat, mengitari kutub ekliptika dengan periode $\approx 25.772$ tahun (sering dibulatkan ke 26.000 tahun). Akibatnya:
+1. Titik vernal ekuinoks (asal koordinat RA/Dec) bergeser $\approx 50{,}3''/\text{tahun}$ ke barat di sepanjang ekliptika.
+2. Koordinat bintang (RA, Dec) berubah perlahan — itulah mengapa katalog bintang mencantumkan epok referensi (J2000.0, B1950.0, dll.).
+3. Bintang kutub berubah seiring waktu: saat ini Polaris ($\alpha$ UMi) dekat kutub utara langit, tetapi sekitar 13.000 tahun lagi Vega ($\alpha$ Lyr) akan menjadi bintang kutub.
+
+Koreksi presesi koordinat ekuatorial dari epok $J_1$ ke $J_2$ (dalam satuan tahun Julian):
+$$\Delta\alpha \approx 46{,}1'' + 20{,}0'' \sin\alpha\ \tan\delta \quad \text{per tahun (RA)}$$
+$$\Delta\delta \approx 20{,}0'' \cos\alpha \quad \text{per tahun (Dec)}$$
+
+(pendekatan linier orde pertama untuk jangka pendek $< 50$ tahun).
+
+</Poin>
+
+## 4. Fase Bulan: elongasi, konjungsi, oposisi, kuartur
+
+<Poin judul="4 · Fase Bulan & periode sinodis vs sideris">
+
+Bulan mengorbit Bumi dengan **periode sideris** $T_{\text{sid}} = 27{,}321$ hari (satu putaran penuh $360°$ terhadap bintang jauh). Namun fase Bulan bergantung pada posisi relatif Bulan–Bumi–Matahari, dan Bumi sendiri bergerak. Periode fase berulang disebut **periode sinodis**:
+
+$$\frac{1}{T_{\text{sin}}} = \frac{1}{T_{\text{sid}}} - \frac{1}{T_{\oplus}} \implies T_{\text{sin}} = \frac{T_{\text{sid}} \times T_{\oplus}}{T_{\oplus} - T_{\text{sid}}} = \frac{27{,}321 \times 365{,}25}{365{,}25 - 27{,}321} \approx 29{,}531\ \text{hari}.$$
+
+Fase ditentukan oleh **elongasi** $\varepsilon$ (sudut Matahari–Bumi–Bulan):
+
+| Elongasi $\varepsilon$ | Fase | Terbit | Transit | Terbenam |
+|---|---|---|---|---|
+| $0°$ | Bulan Baru (konjungsi) | $\sim 06.00$ | $\sim 12.00$ | $\sim 18.00$ |
+| $90°$ | Kuartal Pertama | $\sim 12.00$ | $\sim 18.00$ | $\sim 00.00$ |
+| $180°$ | Purnama (oposisi) | $\sim 18.00$ | $\sim 00.00$ | $\sim 06.00$ |
+| $270°$ | Kuartal Akhir | $\sim 00.00$ | $\sim 06.00$ | $\sim 12.00$ |
+
+<Gambar id="fase-bulan" />
+
+Hubungan elongasi dengan posisi Bulan di langit: Bulan bergerak $\approx 13{,}2°/\text{hari}$ ke timur terhadap bintang latar. Fraksi piringan yang bercahaya berhubungan dengan elongasi melalui:
+$$\text{Fraksi piringan teriluminasi} = \frac{1 - \cos\varepsilon}{2}.$$
+
+</Poin>
+
+## 5. Gerhana Matahari dan Bulan: umbra, penumbra & siklus Saros
+
+<Poin judul="5 · Geometri gerhana & siklus Saros">
+
+**Syarat terjadinya gerhana:** Bulan harus berada di dekat **simpul orbit** (node) — titik perpotongan orbit Bulan dengan bidang ekliptika — sambil berada pada fase yang tepat:
+- **Gerhana Matahari:** Bulan baru, dekat simpul.
+- **Gerhana Bulan:** Bulan purnama, dekat simpul.
+
+Karena orbit Bulan miring $\approx 5{,}1°$ terhadap ekliptika, Bulan biasanya lewat di atas atau di bawah bayangan Bumi (atau bayangannya melewati Bumi) tanpa gerhana. Hanya ketika Bulan berada dalam **batas simpul** (zona gerhana $\approx \pm 18{,}5°$ dari simpul untuk gerhana Matahari, $\approx \pm 12°$ untuk gerhana Bulan) gerhana dapat terjadi.
+
+**Jenis gerhana berdasarkan geometri umbra/penumbra:**
+
+<Gambar id="gerhana-geometri" />
+
+| Jenis | Kondisi | Bayangan |
+|---|---|---|
+| Gerhana Matahari Total | Umbra Bulan menyentuh Bumi | Jalur sempit $\leq 270$ km |
+| Gerhana Matahari Cincin (Annular) | Bulan lebih jauh, umbra tidak mencapai Bumi | Bayangan antumbra |
+| Gerhana Matahari Sebagian | Pengamat di penumbra Bulan | Lebar |
+| Gerhana Bulan Total | Bulan masuk sepenuhnya ke umbra Bumi | Semua pengamat melihat |
+| Gerhana Bulan Sebagian | Bulan sebagian masuk umbra Bumi | — |
+| Gerhana Bulan Penumbra | Bulan hanya masuk penumbra Bumi | Sulit terlihat |
+
+**Siklus Saros ($\approx 18$ tahun 11 hari 8 jam):** Setelah satu siklus Saros, geometri Matahari–Bumi–Bulan hampir terulang persis karena:
+- 223 bulan sinodis $= 6.585{,}32$ hari
+- 242 bulan drakonik (node ke node) $= 6.585{,}36$ hari
+- 239 bulan anomalistik (perigee ke perigee) $= 6.585{,}54$ hari
+
+Ketiga periode ini hampir sama, sehingga gerhana berulang dengan karakteristik serupa setiap siklus Saros. Karena ada sisa $8$ jam, posisi bujur gerhana bergeser $\approx 120°$ ke barat setiap siklus.
+
+</Poin>
+
+## 6. Rantai olimpiade: JD + LST + HA + kulminasi
+
+<Poin judul="6 · Rantai olimpiade: tanggal, waktu sideris, & posisi bintang">
+
+<Contoh judul="Rantai olimpiade: Menentukan LST, HA, dan waktu kulminasi bintang">
+
+<Langkah>
+
+**Data soal:** Seorang pengamat di Observatorium Bosscha, Lembang (bujur $\lambda = 107{,}619°\text{E}$, lintang $\phi = -6{,}821°$) melakukan observasi pada tanggal **15 Maret 2024** pukul **21:00 WIB** (UTC+7). Bintang target memiliki asensio rekta $\alpha = 10^{\text{h}}\,45^{\text{m}}\,0^{\text{s}}$ (Regulus, $\alpha$ Leo) dan deklinasi $\delta = +11{,}967°$.
+
+**Pertanyaan:** (a) Hitung JD pada saat pengamatan. (b) Hitung GMST dan LST. (c) Hitung Hour Angle bintang. (d) Apakah bintang sudah melewati meridian? Kapan kulminasinya (waktu WIB)?
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 — Menghitung Julian Date:**
+
+Waktu pengamatan: 15 Maret 2024, 21:00 WIB = 14:00 UT (21 − 7).
+
+JD pada 1 Januari 2024 pukul 00:00 UT adalah JD = 2.460.310,5. Hitung hari sejak awal tahun 2024 hingga 15 Maret 2024 pukul 00:00 UT:
+- Januari: 31 hari
+- Februari 2024 (kabisat): 29 hari
+- 1–14 Maret: 14 hari
+- Total: 31 + 29 + 14 = **74 hari**
+
+JD pada 15 Maret 2024, 00:00 UT $= 2.460.310{,}5 + 74 = 2.460.384{,}5$.
+
+JD pada 15 Maret 2024, 14:00 UT $= 2.460.384{,}5 + 14/24 = 2.460.384{,}5 + 0{,}5833 = \mathbf{2.460.385{,}0833}$.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 — Menghitung GMST dan LST:**
+
+Gunakan pendekatan: GMST pada J2000.0 (1 Jan 2000, 12:00 UT) = 18:41:50 UT = 18,6972 jam.
+
+Jumlah hari Julian sejak J2000.0:
+$$d = \mathrm{JD} - 2.451.545{,}0 = 2.460.385{,}0833 - 2.451.545{,}0 = 8.840{,}0833\ \text{hari}.$$
+
+GMST (jam) $\approx 18{,}6972 + 24{,}06571 \times (d / 36525) \times 36525\ \text{mod}\ 24$
+$$= 18{,}6972 + 0{,}06570982 \times 8.840{,}0833\ (\text{mod}\ 24)$$
+$$= 18{,}6972 + 580{,}82\ (\text{mod}\ 24) = 599{,}52\ \text{mod}\ 24 = \mathbf{23{,}52\ \text{jam}} = 23^{\text{h}}31^{\text{m}}.$$
+
+(Nilai ini adalah perkiraan; perhitungan presisi penuh memerlukan koreksi nutation dan aberasi.)
+
+LST di bujur $\lambda = 107{,}619°$E:
+$$\mathrm{LST} = \mathrm{GMST} + \frac{107{,}619}{15} = 23{,}52 + 7{,}175 = 30{,}695\ \text{jam}\ \mathrm{mod}\ 24 = \mathbf{6{,}695\ \text{jam}} \approx 6^{\text{h}}41^{\text{m}}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 — Hitung Hour Angle dan waktu kulminasi:**
+
+RA bintang Regulus: $\alpha = 10^{\text{h}}45^{\text{m}} = 10{,}75\ \text{jam}$.
+
+Hour Angle: $\mathrm{HA} = \mathrm{LST} - \alpha = 6{,}695 - 10{,}75 = -4{,}055\ \text{jam}\ (\approx -4^{\text{h}}3^{\text{m}})$.
+
+HA negatif berarti bintang **belum** melewati meridian (masih di timur). Bintang akan berkulminasi dalam $4{,}055$ jam sideris $\approx 4{,}055 \times (23^{\text{h}}56^{\text{m}}/24^{\text{h}}) \approx 4{,}039$ jam solar setelah saat pengamatan.
+
+Waktu kulminasi (WIB): $21^{\text{h}}00^{\text{m}} + 4^{\text{h}}02^{\text{m}} = \mathbf{01^{\text{h}}02^{\text{m}}}$ WIB (dini hari 16 Maret).
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="a3-cek-1"
+  pertanyaan="Bintang Sirius terbit pukul 20:00 malam ini. Kira-kira pukul berapa ia terbit 45 hari kemudian?"
+  opsi={['Sekitar 17:00', 'Sekitar 20:00', 'Sekitar 23:00', 'Sekitar 18:00']}
+  jawaban={0}
+  penjelasan="Setiap hari bintang terbit sekitar 4 menit lebih awal. Dalam 45 hari, bintang terbit 45 × 4 menit = 180 menit = 3 jam lebih awal: 20:00 − 3:00 = 17:00."
+/>
+
+<CekPaham
+  id="a3-cek-2"
+  pertanyaan="Mengapa gerhana Matahari tidak terjadi pada setiap bulan baru?"
+  opsi={[
+    'Karena orbit Bulan miring ≈5,1° terhadap ekliptika; Bulan biasanya tidak berada dekat simpul',
+    'Karena Bulan terlalu kecil untuk menutupi seluruh Matahari',
+    'Karena Bumi berputar terlalu cepat sehingga bayangan Bulan tidak dapat mengejar',
+    'Karena ada 29,5 hari sinodis sehingga Bulan baru tidak tepat pada hari yang sama'
+  ]}
+  jawaban={0}
+  penjelasan="Kemiringan orbit Bulan 5,1° membuat bayangannya biasanya lewat di atas atau bawah Bumi. Gerhana hanya terjadi bila Bulan baru dekat simpul orbit."
+/>
+
+<CekPaham
+  id="a3-cek-3"
+  pertanyaan="Sebuah bintang memiliki RA = 6h 45m. LST saat ini 4h 30m. Berapakah Hour Angle bintang tersebut dan di mana posisinya terhadap meridian?"
+  opsi={[
+    'HA = −2h 15m; bintang berada di timur meridian (belum kulminasi)',
+    'HA = +2h 15m; bintang berada di barat meridian (sudah kulminasi)',
+    'HA = 0; bintang sedang berkulminasi',
+    'HA = −6h 45m; bintang di bawah cakrawala'
+  ]}
+  jawaban={0}
+  penjelasan="HA = LST − RA = 4h30m − 6h45m = −2h15m. Nilai HA negatif berarti bintang berada di timur meridian dan belum berkulminasi."
+/>
+
+<Refleksi
+  id="a3-refleksi-1"
+  pertanyaan="Presesi ekuinoks menyebabkan koordinat RA dan Dec bintang berubah perlahan selama ribuan tahun. Jika epok referensi katalog bintang adalah J2000.0, mengapa kita tidak perlu mengkhawatirkan presesi untuk pengamatan visual biasa malam ini, tetapi HARUS mempertimbangkannya untuk program observasi yang membandingkan data katalog era 1950-an dengan pengukuran modern?"
+/>
+
+## 8. Konstanta dan nilai penting
+
+<Konstanta
+  data={[
+    { simbol: 'Hari sideris', nilai: '23j 56m 04,091s', satuan: 'waktu solar' },
+    { simbol: 'Periode sinodis Bulan', nilai: '29,53059', satuan: 'hari' },
+    { simbol: 'Periode sideris Bulan', nilai: '27,32166', satuan: 'hari' },
+    { simbol: 'Inklinasi orbit Bulan', nilai: '5,145', satuan: 'derajat' },
+    { simbol: 'Siklus Saros', nilai: '6.585,32 ≈ 18 thn 11 hr', satuan: 'hari' },
+    { simbol: 'Presesi ekuinoks', nilai: '25.772 (≈26.000)', satuan: 'tahun' },
+    { simbol: 'Laju presesi', nilai: '50,29', satuan: 'arcsec/tahun' },
+    { simbol: 'JD J2000.0', nilai: '2.451.545,0', satuan: 'JD' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rumus-rumus kunci bab A3:
+1. $\text{Selisih hari solar−sideris} \approx 4\ \text{menit/hari}$
+2. $\mathrm{LST} = \mathrm{GMST} + \lambda/15$
+3. $\mathrm{HA} = \mathrm{LST} - \alpha$ (kulminasi saat $\mathrm{HA} = 0$)
+4. $1/T_{\text{sin}} = 1/T_{\text{sid}} - 1/T_{\oplus}$
+5. Siklus Saros $\approx 18$ tahun $11$ hari $8$ jam
+6. Presesi: titik Aries bergeser $\approx 50{,}3''/\text{tahun}$ ke barat
+
+</Catatan>

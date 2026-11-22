@@ -1,0 +1,447 @@
+[
+  {
+    "id": "l3-01",
+    "topik": "bintang-ganda",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Bintang ganda memiliki sumbu semi-mayor 4 AU dan periode 4 tahun. Berapa massa totalnya?",
+    "opsi": [
+      "16 M☉",
+      "1 M☉",
+      "4 M☉",
+      "64 M☉"
+    ],
+    "jawaban": 2,
+    "pembahasan": [
+      "Kepler III: M₁ + M₂ = a³/P² dengan a dalam AU dan P dalam tahun.",
+      "M = 4³/4² = 64/16 = 4.",
+      "Massa totalnya 4 M☉; massa masing-masing ditentukan dari rasio jarak ke pusat massa."
+    ]
+  },
+  {
+    "id": "l3-02",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Dua bintang mengorbit pusat massa dengan a₁ = 2 AU dan a₂ = 6 AU. Jika massa totalnya 8 M☉, berapa massa masing-masing?",
+    "opsi": [
+      "2 M☉ dan 6 M☉",
+      "4 M☉ dan 4 M☉",
+      "6 M☉ dan 2 M☉",
+      "3 M☉ dan 5 M☉"
+    ],
+    "jawaban": 2,
+    "pembahasan": [
+      "Rasio massa berbanding terbalik dengan jarak ke pusat massa: M₁/M₂ = a₂/a₁ = 6/2 = 3.",
+      "Dengan M₁ + M₂ = 8 dan M₁ = 3M₂, diperoleh 4M₂ = 8.",
+      "M₂ = 2 M☉ dan M₁ = 6 M☉ — bintang yang lebih masif lebih dekat ke pusat massa."
+    ]
+  },
+  {
+    "id": "l3-03",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah bintang ganda memiliki a = 5 AU dan P = 5 tahun. Berapa massa totalnya dalam M☉?",
+    "jawaban": 5,
+    "toleransiRel": 0.03,
+    "satuan": "M☉",
+    "pembahasan": [
+      "M = a³/P².",
+      "M = 125/25 = 5.",
+      "Massa total 5 M☉; sistem ini cukup masif untuk mengandung bintang kelas B."
+    ]
+  },
+  {
+    "id": "l3-04",
+    "topik": "bintang-ganda",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Planet dengan radius 0,1 kali radius bintangnya melintas di depan bintang. Berapa kedalaman transitnya dalam persen?",
+    "jawaban": 1,
+    "toleransiRel": 0.02,
+    "satuan": "persen",
+    "pembahasan": [
+      "Kedalaman transit δ = (Rp/R*)².",
+      "δ = 0,1² = 0,01.",
+      "0,01 sama dengan 1%, atau 10.000 ppm — tipe sinyal yang mudah dideteksi dari Bumi."
+    ]
+  },
+  {
+    "id": "l3-05",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sistem bintang ganda jenis apa yang memberikan massa dan radius kedua bintang secara lengkap tanpa perlu mengetahui jarak sistem?",
+    "opsi": [
+      "Bintang ganda visual saja",
+      "Bintang ganda spektroskopik bergaris tunggal (SB1)",
+      "Bintang ganda gerhana yang sekaligus spektroskopik bergaris ganda (SB2)",
+      "Bintang ganda astrometrik"
+    ],
+    "jawaban": 2,
+    "pembahasan": [
+      "SB2 memberi dua kurva kecepatan, sehingga rasio massa dan kecepatan orbit diketahui; gerhana memberi inklinasi dan radius relatif.",
+      "Kombinasi keduanya menghasilkan massa dan radius masing-masing bintang dalam satuan Matahari tanpa jarak.",
+      "Bintang ganda visual butuh jarak untuk mengubah sudut menjadi AU, dan SB1 kekurangan informasi inklinasi."
+    ]
+  },
+  {
+    "id": "l3-06",
+    "topik": "bintang-ganda",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah planet transit setiap 128 hari pada jarak 0,5 AU dari bintangnya. Berapa perkiraan massa bintang itu?",
+    "opsi": [
+      "Sekitar 1 M☉",
+      "Sekitar 0,5 M☉",
+      "Sekitar 2 M☉",
+      "Sekitar 4 M☉"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Karena massa planet sangat kecil, gunakan Kepler III untuk bintang: M ≈ a³/P².",
+      "P = 128/365,25 ≈ 0,350 tahun; P² ≈ 0,123.",
+      "M ≈ 0,125/0,123 ≈ 1,0 M☉. Bintang ini mirip Matahari, dan planet pada 0,5 AU lebih panas daripada Bumi."
+    ]
+  },
+  {
+    "id": "l3-07",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang gugus bintang.",
+    "opsi": [
+      "Gugus terbuka umumnya muda dan berada di cakram galaksi.",
+      "Gugus bola umumnya tua dan berada di halo galaksi.",
+      "Gugus bola dapat berisi 10⁴ hingga 10⁶ bintang.",
+      "Gugus terbuka selalu lebih tua daripada gugus bola.",
+      "Umur gugus dapat ditaksir dari posisi turnoff deret utamanya."
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Gugus terbuka muda dan kaya logam, sedangkan gugus bola tua dan miskin logam.",
+      "Gugus bola sangat padat dengan puluhan ribu hingga jutaan bintang.",
+      "Pernyataan 3 salah: justru gugus bola yang jauh lebih tua; turnoff yang lebih panas menandakan gugus lebih muda."
+    ]
+  },
+  {
+    "id": "l3-08",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang metode deteksi eksoplanet.",
+    "opsi": [
+      "Kecepatan radial mendeteksi goyangan bintang akibat tarikan planet.",
+      "Kedalaman transit memberi perbandingan radius planet dan bintang.",
+      "Transit saja tidak memberi massa planet.",
+      "Pencitraan langsung paling mudah untuk planet seukuran Bumi di sekitar bintang mirip Matahari.",
+      "Mikrolensing dapat menemukan planet yang jauh dari Bumi."
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "RV mengukur pergeseran Doppler periodik; transit mengukur penurunan fluks δ = (Rp/R*)².",
+      "Transit memberi radius, bukan massa; massa datang dari RV (atau TTV), sehingga keduanya sering dikombinasikan.",
+      "Pencitraan langsung sangat sulit untuk planet kecil karena kontras cahaya ekstrem — pernyataan 3 salah."
+    ]
+  },
+  {
+    "id": "l3-09",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Pada bintang ganda SB2, rasio amplitudo kecepatan K₁/K₂ = 5 dan massa total 6 M☉. Berapa massa bintang 1 dalam M☉?",
+    "jawaban": 1,
+    "toleransiRel": 0.03,
+    "satuan": "M☉",
+    "pembahasan": [
+      "Kecepatan orbit berbanding terbalik dengan massa: K₁/K₂ = M₂/M₁ = 5, jadi M₂ = 5M₁.",
+      "M₁ + M₂ = 6M₁ = 6, sehingga M₁ = 1 M☉.",
+      "Bintang 1 bermassa 1 M☉ dan bintang 2 bermassa 5 M☉ — pasangan yang sangat tidak seimbang."
+    ]
+  },
+  {
+    "id": "l3-10",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada kurva cahaya bintang gerhana, minimum primer lebih dalam daripada minimum sekunder. Apa tafsirannya?",
+    "opsi": [
+      "Saat minimum primer, bintang yang lebih panas tertutup",
+      "Saat minimum primer, bintang yang lebih dingin tertutup",
+      "Kedua bintang bersuhu sama",
+      "Minimum primer menunjukkan planet, bukan bintang"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Penurunan fluks saat gerhana bergantung pada luas dan luminositas bagian yang tertutup.",
+      "Kedalaman lebih besar terjadi ketika bintang yang lebih terang (biasanya lebih panas) berada di belakang dan tertutup.",
+      "Selisih kedalaman primer–sekunder dapat dipakai menaksir rasio suhu kedua bintang."
+    ]
+  },
+  {
+    "id": "l3-11",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah planet memiliki radius 0,05 kali radius bintangnya. Berapa kedalaman transitnya dalam persen?",
+    "jawaban": 0.25,
+    "toleransiRel": 0.03,
+    "satuan": "persen",
+    "pembahasan": [
+      "δ = (Rp/R*)² = 0,05² = 0,0025.",
+      "0,0025 = 0,25%, atau 2.500 ppm.",
+      "Planet seukuran Neptunus pada bintang mirip Matahari memberi sinyal sekecil ini — masih terdeteksi oleh teleskop antariksa."
+    ]
+  },
+  {
+    "id": "l3-12",
+    "topik": "bintang-ganda",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa bintang ganda gerhana yang juga SB2 menjadi cara paling langsung menimbang dan mengukur bintang. Lalu jelaskan bagaimana kombinasi transit dan kecepatan radial memberi densitas eksoplanet.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan bahwa SB2 memberi dua kurva kecepatan sehingga rasio massa dan kecepatan orbit diketahui.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan bahwa gerhana memberi inklinasi dan radius relatif, melengkapi Kepler III menjadi massa dan radius absolut.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyebut transit memberi radius planet dari δ = (Rp/R*)² dan RV memberi massa (m sin i).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyimpulkan densitas planet = massa/volume dan pentingnya untuk membedakan planet batuan dan gas.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "Pada SB2, dua set garis bergeser periodik sehingga kita mengukur kedua kurva kecepatan. Rasio amplitudo memberi rasio massa, dan Kepler III memberi massa total, sehingga masing-masing massa diperoleh. Gerhana terjadi karena orbit hampir sejajar garis pandang; kedalaman dan durasi gerhana memberi radius relatif dan inklinasi, sehingga massa dan radius absolut bisa dihitung tanpa mengetahui jarak sistem. Untuk eksoplanet, transit memberi radius dari kedalaman δ = (Rp/R*)², sedangkan kecepatan radial bintang memberi massa planet (setidaknya m sin i). Dengan massa dan radius, densitas planet dihitung sebagai massa/volume; nilai ini membedakan planet batuan padat dari raksasa gas.",
+    "pembahasan": [
+      "SB2 + gerhana memberikan kecepatan orbit, rasio massa, inklinasi, dan radius relatif sekaligus; Kepler III menutup perhitungan menjadi massa absolut.",
+      "Untuk eksoplanet, transit mengukur radius dan RV mengukur massa; keduanya independen dan saling melengkapi.",
+      "Massa dibagi volume memberi densitas, besaran kunci untuk menafsirkan komposisi planet."
+    ]
+  },
+  {
+    "id": "l3-13",
+    "topik": "bintang-ganda",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-gerhana",
+    "soal": "Pada kurva cahaya bintang ganda gerhana (gambar), minimum primer berulang setiap 12 hari. Berapa periode orbit sistem?",
+    "opsi": ["6 hari", "12 hari", "24 hari", "Tidak dapat diketahui"],
+    "jawaban": 1,
+    "pembahasan": ["Konfigurasi yang sama, termasuk minimum primer, terulang sekali setiap orbit.", "Selang dua minimum primer berturut-turut adalah periode, sehingga P = 12 hari.", "Minimum sekunder di tengah kurva adalah gerhana komponen lain dalam orbit yang sama, bukan bukti periode 6 hari."]
+  },
+  {
+    "id": "l3-14",
+    "topik": "bintang-ganda",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Dua bintang bermassa sama mengorbit pusat massa. Menurut kurva kecepatan radial SB2 pada gambar, jika amplitudo bintang pertama 30 km/s, berapa amplitudo pasangannya?",
+    "opsi": ["15 km/s", "30 km/s", "60 km/s", "Tidak berhubungan"],
+    "jawaban": 1,
+    "pembahasan": ["Untuk massa sama, jarak keduanya dari pusat massa sama.", "Kelajuan orbit dan amplitudo kecepatan radialnya sama besar, jadi K₂ = K₁ = 30 km/s.", "Kedua kurva berlawanan fase, tetapi tanda yang berlawanan tidak mengubah besar amplitudo."]
+  },
+  {
+    "id": "l3-15",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Dari dua kurva kecepatan radial SB2 pada gambar diperoleh K₁ = 20 km/s dan K₂ = 50 km/s. Berapa M₁/M₂?",
+    "opsi": ["0,4", "1", "2,5", "70"],
+    "jawaban": 2,
+    "pembahasan": ["Keseimbangan momentum terhadap pusat massa memberi M₁K₁ = M₂K₂.", "Karena itu M₁/M₂ = K₂/K₁ = 50/20 = 2,5.", "Bintang 1 lebih masif dan memiliki amplitudo gerak lebih kecil."]
+  },
+  {
+    "id": "l3-16",
+    "topik": "bintang-ganda",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Kurva kecepatan radial SB1 pada gambar berayun dari −24 hingga +24 km/s terhadap kecepatan sistem. Jika inklinasi belum diketahui, kesimpulan massa pasangan yang benar adalah…",
+    "opsi": ["Massa tepat langsung terbaca dari amplitudo", "Data memberi fungsi massa atau batas bawah massa yang melibatkan sin i", "Massa pasangan nol", "Periode orbit tidak dapat diketahui"],
+    "jawaban": 1,
+    "pembahasan": ["Simpangan dari kecepatan sistem memberi semi-amplitudo K = 24 km/s dan kurva berulang memberi periode.", "Pada SB1, persamaan dinamika mengandung inklinasi yang belum diketahui; lazimnya diperoleh massa minimum m sin i atau fungsi massa.", "Karena sin i ≤ 1, nilai m sin i merupakan batas bawah massa sebenarnya. Kurva tetap mengungkap periode meski pasangan tidak tampak."]
+  },
+  {
+    "id": "l3-17",
+    "topik": "bintang-ganda",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-gerhana",
+    "soal": "Pada kurva gerhana, minimum primer 0,30 magnitudo lebih dalam daripada minimum sekunder 0,08 magnitudo. Dengan asumsi geometri penutupan sebanding, inferensi paling wajar adalah…",
+    "opsi": ["Kedua bintang pasti bersuhu sama", "Saat minimum primer, komponen yang lebih terang umumnya tertutup", "Bintang yang lebih dingin pasti lebih besar", "Kedalaman langsung menentukan massa total"],
+    "jawaban": 1,
+    "pembahasan": ["Minimum primer yang lebih dalam menunjukkan fluks lebih banyak hilang pada konfigurasi itu.", "Jika luas yang tertutup sebanding, komponen tertutup saat minimum primer lebih terang per luas dan biasanya lebih panas.", "Kurva fotometri saja tidak menentukan ukuran, suhu, atau massa secara unik; interpretasi bergantung pada geometri dan model sistem."]
+  },
+  {
+    "id": "l3-18",
+    "topik": "mekanika-langit",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Pada kurva SB2 (gambar), puncak bintang 1 di fase 0,25 dan puncak bintang 2 di fase 0,75; K₁ = 18 km/s dan K₂ = 54 km/s. Apa kesimpulan yang tepat?",
+    "opsi": ["Kurva berlawanan fase dan M₁/M₂ = 3", "Kurva sefase dan M₁/M₂ = 1/3", "Kurva berlawanan fase dan M₁/M₂ = 1/3", "Kurva sefase dan M₁/M₂ = 3"],
+    "jawaban": 0,
+    "pembahasan": ["Puncak terpisah setengah siklus menunjukkan kecepatan radial kedua bintang berlawanan fase.", "Momentum pusat massa memberi M₁K₁ = M₂K₂, jadi M₁/M₂ = K₂/K₁ = 54/18 = 3.", "Amplitudo lebih besar pada bintang 2 berarti bintang 2 lebih ringan; pilihan yang sesuai adalah kurva berlawanan fase dengan M₁/M₂ = 3."]
+  },
+  {
+    "id": "l3-19",
+    "topik": "bintang-ganda",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-gerhana",
+    "soal": "Dari kurva pada gambar, minimum primer terjadi pada hari ke-2 dan ke-14, sedangkan minimum sekunder pada hari ke-8. Untuk orbit lingkaran, berapa periode dan selang primer–sekunder?",
+    "opsi": ["P = 6 hari; selang 6 hari", "P = 12 hari; selang 6 hari", "P = 14 hari; selang 7 hari", "P = 24 hari; selang 12 hari"],
+    "jawaban": 1,
+    "pembahasan": ["Minimum primer berulang setelah 14 − 2 = 12 hari, sehingga P = 12 hari.", "Minimum sekunder berada 8 − 2 = 6 hari setelah primer, yaitu P/2 untuk orbit lingkaran.", "Dua minimum berbeda menandai dua konjungsi gerhana dalam satu orbit; periode bukan setengah selang minimum primer."]
+  },
+  {
+    "id": "l3-20",
+    "topik": "bintang-ganda",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "gambar": "kurva-gerhana",
+    "soal": "Gunakan kurva cahaya gerhana pada gambar. Pilih semua informasi yang dapat diperoleh dari fotometri berulang, tanpa data lain.",
+    "opsi": ["Periode dari pengulangan minimum", "Kedalaman relatif gerhana", "Massa absolut kedua bintang", "Durasi gerhana sebagai kendala geometri", "Jarak sistem secara langsung"],
+    "jawaban": [0, 1, 3],
+    "pembahasan": ["Pengulangan minimum memberi periode dan kedalaman mengukur perubahan fluks relatif.", "Durasi dan waktu kontak memberi kendala pada rasio radius serta inklinasi melalui model kurva cahaya.", "Massa absolut memerlukan informasi dinamika seperti kecepatan radial, dan fotometri tidak langsung mengukur jarak."]
+  },
+  {
+    "id": "l3-21",
+    "topik": "bintang-ganda",
+    "level": "olimpiade",
+    "tipe": "pilihan-jamak",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Dua kurva SB2 pada gambar berlawanan fase dengan K₁ = 12 km/s dan K₂ = 36 km/s. Pilih semua simpulan yang benar.",
+    "opsi": ["M₁/M₂ = 3", "Bintang 1 lebih dekat ke pusat massa", "Kecepatan radial keduanya selalu bertanda sama", "Rasio amplitudo berbanding terbalik dengan rasio massa", "Pengulangan kurva menentukan periode"],
+    "jawaban": [0, 1, 3, 4],
+    "pembahasan": ["M₁K₁ = M₂K₂, maka M₁/M₂ = K₂/K₁ = 3; bintang 1 yang lebih masif bergerak pada orbit lebih kecil.", "Kurva berlawanan fase sehingga kecepatan radialnya berlawanan tanda pada waktu yang sama.", "Bentuk kurva berulang memberi periode, dan amplitudo lebih besar menandakan massa lebih kecil."]
+  },
+  {
+    "id": "l3-22",
+    "topik": "mekanika-langit",
+    "level": "fondasi",
+    "tipe": "isian",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Kurva kecepatan radial SB1 berulang setiap 16 hari. Berapa periode orbitnya?",
+    "jawaban": 16,
+    "toleransiRel": 0.01,
+    "satuan": "hari",
+    "pembahasan": ["Bintang yang diamati kembali ke fase gerak radial yang sama setelah satu orbit.", "Periode pengulangan kurva adalah periode orbit, jadi P = 16 hari.", "Pasangan tidak harus terlihat agar tarikan gravitasinya tampak pada gerak bintang yang teramati."]
+  },
+  {
+    "id": "l3-23",
+    "topik": "bintang-ganda",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Kurva SB2 memberi K₁ = 15 km/s dan K₂ = 45 km/s. Jika massa total sistem 8 M☉, tentukan M₁ dalam M☉.",
+    "jawaban": 6,
+    "toleransiRel": 0.02,
+    "satuan": "M☉",
+    "pembahasan": ["Rasio massa M₁/M₂ = K₂/K₁ = 45/15 = 3.", "Dengan M₁ + M₂ = 8 dan M₁ = 3M₂, maka 4M₂ = 8 sehingga M₂ = 2 M☉.", "Jadi M₁ = 6 M☉; amplitudo kecepatan lebih kecil menandai bintang lebih masif."]
+  },
+  {
+    "id": "l3-24",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Kurva kecepatan radial planet menunjukkan P = 20 hari. Anggap massa planet dapat diabaikan terhadap bintang 1 M☉, dan gunakan Kepler a³/P² = M dengan a dalam AU, P dalam tahun, serta 365 hari per tahun. Hitung a dalam AU.",
+    "jawaban": 0.144,
+    "toleransiRel": 0.02,
+    "satuan": "AU",
+    "pembahasan": ["P = 20/365 = 0,05479 tahun.", "Dengan M★ = 1 M☉ dan massa planet diabaikan, a³ = M★P² = 0,05479² AU³.", "a = (0,05479²)^(1/3) ≈ 0,144 AU."]
+  },
+  {
+    "id": "l3-25",
+    "topik": "bintang-ganda",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "kurva-gerhana",
+    "soal": "Pada kurva gerhana, kedalaman minimum primer adalah 0,16 dalam fluks relatif. Anggap gerhana total, komponen yang tertutup menyumbang seluruh fluks yang hilang, dan fluks luar gerhana dinormalisasi menjadi 1. Berapa fraksi fluks total dari komponen yang tertutup?",
+    "jawaban": 0.16,
+    "toleransiRel": 0.02,
+    "satuan": "fraksi",
+    "pembahasan": ["Pada gerhana total, fluks yang hilang sama dengan seluruh fluks komponen tertutup.", "Kedalaman relatif ΔF/F = 0,16/1 = 0,16.", "Komponen itu menyumbang 0,16 atau 16% fluks total. Untuk gerhana parsial, kesetaraan langsung ini tidak berlaku."]
+  },
+  {
+    "id": "l3-26",
+    "topik": "bintang-ganda",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Dari kurva SB2 diketahui periode 1 tahun dan amplitudo K₁ = 20 km/s, K₂ = 30 km/s. Anggap orbit lingkaran dilihat tepat dari samping; gunakan 1 AU/tahun = 4,740 km/s dan Kepler a³/P² = M_total. Hitung massa total dalam M☉.",
+    "jawaban": 4.73,
+    "toleransiRel": 0.04,
+    "satuan": "M☉",
+    "pembahasan": ["Untuk i = 90°, jari-jari orbit relatif a = (K₁ + K₂)P/(2π × 4,740) AU.", "a = 50/(2π × 4,740) ≈ 1,679 AU.", "M_total = a³/P² ≈ 1,679³/1² = 4,73 M☉."]
+  },
+  {
+    "id": "l3-27",
+    "topik": "bintang-ganda",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Kurva SB2 menunjukkan P = 2 tahun, K₁ = 15 km/s, dan K₂ = 45 km/s. Anggap orbit lingkaran dilihat tepat dari samping; gunakan 1 AU/tahun = 4,740 km/s dan a³/P² = M_total. Hitung M₁ dalam M☉.",
+    "jawaban": 12.3,
+    "toleransiRel": 0.04,
+    "satuan": "M☉",
+    "pembahasan": ["Jumlah amplitudo 60 km/s setara 12,66 AU/tahun; a = (K₁+K₂)P/(2π × 4,740) = 4,03 AU.", "M_total = a³/P² = 4,03³/2² ≈ 16,4 M☉.", "M₁/M₂ = K₂/K₁ = 3, sehingga M₁ = 3/4 M_total ≈ 12,3 M☉."]
+  },
+  {
+    "id": "l3-28",
+    "topik": "bintang-ganda",
+    "level": "penalaran",
+    "tipe": "esai",
+    "gambar": "kurva-gerhana",
+    "soal": "Berdasarkan kurva gerhana pada gambar, jelaskan informasi dari selang waktu minimum, kedalaman minimum primer dan sekunder, serta durasi gerhana. Bedakan kesimpulan langsung dari hal yang masih memerlukan model atau pengukuran lain.",
+    "rubrik": [
+      {"poin": "Menghubungkan minimum primer berulang dengan periode orbit dan minimum sekunder dengan gerhana komponen lain.", "bobot": 2},
+      {"poin": "Menjelaskan kedalaman sebagai perubahan fluks dan menafsirkan minimum lebih dalam sebagai komponen tertutup yang lebih terang, dengan asumsi geometri sebanding.", "bobot": 2},
+      {"poin": "Menjelaskan durasi/kontak memberi kendala rasio radius dan inklinasi melalui pemodelan kurva.", "bobot": 2},
+      {"poin": "Menegaskan massa absolut memerlukan data dinamika seperti kecepatan radial dan fotometri tidak langsung memberi jarak.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Selang antara minimum primer yang berulang memberi periode orbit. Minimum sekunder menandai gerhana komponen yang lain; pada orbit lingkaran ia kira-kira setengah periode setelah primer. Kedalaman mengukur fraksi fluks yang hilang. Jika luas tertutup sebanding, minimum primer yang lebih dalam berarti komponen yang tertutup lebih terang per luas dan biasanya lebih panas. Durasi dan waktu kontak membatasi rasio radius serta inklinasi, tetapi perlu dicocokkan dengan model geometri dan kecerlangan permukaan. Kurva cahaya sendiri tidak memberi massa absolut atau jarak: massa memerlukan kecepatan radial/dinamika, sedangkan jarak memerlukan metode lain.",
+    "pembahasan": ["Pengulangan minimum mengukur periode, kedalaman mengukur fluks yang tertutup, dan durasi/kontak memberi kendala geometri.", "Kedalaman berbeda dapat menunjukkan rasio kecerlangan atau suhu, tetapi harus memperhitungkan radius dan geometri.", "Jangan menyimpulkan massa atau jarak absolut dari fotometri saja; diperlukan data kecepatan radial dan/atau pengukuran jarak."]
+  },
+  {
+    "id": "l3-29",
+    "topik": "bintang-ganda",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Dua kurva SB2 pada gambar berulang setiap 10 hari dan berlawanan fase; amplitudo K₁ = 40 km/s serta K₂ = 10 km/s. Dengan asumsi orbit lingkaran, jelaskan cara memperoleh rasio massa, tentukan bintang yang lebih masif, dan jelaskan syarat tambahan untuk memperoleh massa absolut.",
+    "rubrik": [
+      {"poin": "Membaca pengulangan kurva sebagai periode orbit 10 hari.", "bobot": 1},
+      {"poin": "Menggunakan M₁K₁ = M₂K₂ sehingga M₁/M₂ = K₂/K₁ = 0,25.", "bobot": 2},
+      {"poin": "Menyimpulkan bintang 2 empat kali lebih masif dan memiliki orbit lebih kecil terhadap pusat massa.", "bobot": 2},
+      {"poin": "Menjelaskan massa absolut memerlukan skala orbit fisik dan inklinasi atau kendala independen yang setara.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Pengulangan kurva memberi P = 10 hari, sedangkan kurva berlawanan fase menunjukkan kedua bintang bergerak berlawanan terhadap pusat massa. Dari M₁K₁ = M₂K₂ diperoleh M₁/M₂ = K₂/K₁ = 10/40 = 0,25. Jadi bintang 2 empat kali lebih masif dan orbitnya lebih kecil. Massa absolut tidak didapat dari rasio amplitudo saja; perlu skala orbit dari amplitudo dan periode serta koreksi inklinasi (atau informasi geometri independen, misalnya gerhana).",
+    "pembahasan": ["Amplitudo berbanding terbalik dengan massa; komponen dengan K lebih kecil lebih masif.", "Periode adalah waktu pengulangan pola, tetapi massa absolut memerlukan ukuran orbit fisik dan inklinasi.", "SB2 memberi rasio massa langsung, sementara gerhana dapat memberi inklinasi yang diperlukan untuk massa dinamik tepat."]
+  },
+  {
+    "id": "l3-30",
+    "topik": "bintang-ganda",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "kurva-kecepatan-radial",
+    "soal": "Kurva radial planet pada gambar sinusoidal dengan periode P = 100 hari dan semi-amplitudo bintang K = 30 m/s. Anggap orbit melingkar, massa planet jauh lebih kecil daripada massa bintang, dan massa bintang diketahui. Jelaskan bagaimana P dan K digunakan untuk membatasi massa planet, mengapa kurva radial saja memberi massa minimum m sin i, serta pengukuran apa yang menghilangkan ambiguitas inklinasi.",
+    "rubrik": [
+      {"poin": "Membaca periode kurva sebagai periode orbit planet dan K sebagai amplitudo gerak radial bintang.", "bobot": 2},
+      {"poin": "Menjelaskan bahwa massa bintang, P, dan K masuk ke fungsi massa untuk memberi m sin i atau batas bawah massa planet.", "bobot": 2},
+      {"poin": "Mengaitkan batas bawah dengan proyeksi kecepatan dan sin i ≤ 1; K bukan massa planet secara langsung.", "bobot": 2},
+      {"poin": "Menyebut inklinasi independen, misalnya geometri transit, diperlukan untuk massa sebenarnya.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Pengulangan kurva memberi periode orbit 100 hari, dan semi-amplitudo 30 m/s mengukur gerak radial bintang akibat tarikan planet. Untuk orbit lingkaran, massa bintang yang diketahui bersama P dan K dimasukkan ke fungsi massa; dalam batas massa planet kecil hasilnya membatasi m sin i. Karena kecepatan radial hanya mengukur proyeksi gerak pada garis pandang dan sin i ≤ 1, massa yang diperoleh tanpa inklinasi adalah batas bawah, bukan massa sebenarnya. Pengamatan transit atau metode geometri lain dapat menentukan i; dengan itu faktor sin i dikoreksi dan massa planet dapat ditentukan lebih tepat.",
+    "pembahasan": ["P dibaca dari periodisitas dan K dari simpangan maksimum kurva terhadap kecepatan sistem.", "P, K, dan massa bintang menentukan fungsi massa; untuk massa planet kecil, informasi utamanya adalah m sin i.", "Transit memberi inklinasi orbit dan menghilangkan ambiguitas proyeksi jika model orbit memadai."]
+  }
+]

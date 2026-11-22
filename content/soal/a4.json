@@ -1,0 +1,581 @@
+[
+  {
+    "id": "a4-01",
+    "topik": "mekanika-langit",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah asteroid mengitari Matahari dalam orbit elips dengan sumbu semimayor $a = 4{,}0\\ \\mathrm{AU}$. Berapakah periode orbit asteroid tersebut?",
+    "opsi": [
+      "$8{,}0\\ \\text{tahun}$",
+      "$4{,}0\\ \\text{tahun}$",
+      "$16{,}0\\ \\text{tahun}$",
+      "$2{,}0\\ \\text{tahun}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan Hukum Kepler III bentuk praktis heliosentris: $T^2 = a^3$.",
+      "Substitusi nilai sumbu semimayor: $T^2 = (4{,}0)^3 = 64$.",
+      "Akar kuadratkan: $T = \\sqrt{64} = 8{,}0\\ \\text{tahun}$."
+    ]
+  },
+  {
+    "id": "a4-02",
+    "topik": "mekanika-langit",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "elips-orbit",
+    "soal": "Perhatikan geometri elips orbit pada gambar. Jika sumbu semimayor elips adalah $a$ dan eksentrisitasnya adalah $e$, berapakah jarak perihelion ($r_p$) benda langit dari Matahari?",
+    "opsi": [
+      "$a(1 - e)$",
+      "$a(1 + e)$",
+      "$a(1 - e^2)$",
+      "$a\\sqrt{1 - e^2}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Jarak perihelion adalah jarak terdekat planet ke Matahari yang berada di salah satu fokus elips: $r_p = a - c = a - ae = a(1 - e)$.",
+      "Jarak aphelion adalah jarak terjauh: $r_a = a + c = a(1 + e)$.",
+      "Jumlah keduanya selalu tepat sama dengan panjang sumbu mayor: $r_p + r_a = 2a$."
+    ]
+  },
+  {
+    "id": "a4-03",
+    "topik": "mekanika-langit",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Hukum Kepler II (kekekalan momentum sudut orbit) menyatakan bahwa...",
+    "opsi": [
+      "Radius vektor planet menyapu luas area yang sama dalam selang waktu yang sama",
+      "Orbit setiap planet selalu berbentuk lingkaran sempurna dengan Matahari di pusatnya",
+      "Kecepatan orbit planet selalu konstan di setiap titik lintasannya",
+      "Planet bermassa lebih besar bergerak lebih cepat dibanding planet bermassa kecil"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Kepler II menyatakan laju sapuan luas $dA/dt = \\text{konstan}$.",
+      "Persamaan ini secara langsung diturunkan dari fakta bahwa gaya gravitasi adalah gaya sentral (torsi $\\tau = 0$), sehingga momentum sudut orbit $L = mrv_\\perp = \\text{konstan}$.",
+      "Akibatnya planet bergerak paling cepat di perihelion dan paling lambat di aphelion."
+    ]
+  },
+  {
+    "id": "a4-04",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "orbit-lingkaran-rasio",
+    "soal": "Perhatikan dua orbit lingkaran konsentris pada gambar. Jika satelit B mengorbit pada radius empat kali lebih besar daripada satelit A ($r_B = 4r_A$), berapakah perbandingan kecepatan orbit satelit B terhadap satelit A ($v_B / v_A$)?",
+    "opsi": [
+      "$1/2$",
+      "$1/4$",
+      "$2$",
+      "$1/16$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Kecepatan orbit lingkaran memenuhi $v_c = \\sqrt{GM / r}$.",
+      "Rasio kecepatan: $v_B / v_A = \\sqrt{r_A / r_B} = \\sqrt{1 / 4} = 1/2$.",
+      "Kecepatan satelit pada orbit empat kali lebih tinggi menjadi setengah kali kecepatan satelit di orbit rendah."
+    ]
+  },
+  {
+    "id": "a4-05",
+    "topik": "mekanika-langit",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah planet katai di sabuk Kuiper memiliki periode orbit $T = 125\\ \\text{tahun}$ mengitari Matahari. Berapakah sumbu semimayor orbitnya ($a$) dalam satuan astronomi ($\\mathrm{AU}$)?",
+    "jawaban": 25,
+    "toleransiRel": 0.02,
+    "satuan": "AU",
+    "pembahasan": [
+      "Hukum Kepler III: $a^3 = T^2$.",
+      "$a^3 = (125)^2 = 15.625$.",
+      "$a = \\sqrt[3]{15.625} = 25\\ \\mathrm{AU}$."
+    ]
+  },
+  {
+    "id": "a4-06",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Kelajuan orbit lingkaran sebuah satelit di dekat permukaan Bumi adalah $v_c = 7{,}9\\ \\mathrm{km/s}$. Berapakah kelajuan lepas (*escape velocity*) dari permukaan Bumi dalam satuan $\\mathrm{km/s}$? (Gunakan $v_{\\text{esc}} = \\sqrt{2}\\,v_c$, bulatkan hingga 1 desimal)",
+    "jawaban": 11.2,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Kelajuan lepas dari permukaan benda langit bermassa $M$ dan berjejari $r$ adalah $v_{\\text{esc}} = \\sqrt{2GM/r} = \\sqrt{2}\\,v_c$.",
+      "Kalkulasi numerik: $v_{\\text{esc}} = \\sqrt{2} \\times 7{,}9\\ \\mathrm{km/s} = 1{,}4142 \\times 7{,}9 \\approx 11{,}17\\ \\mathrm{km/s} \\approx 11{,}2\\ \\mathrm{km/s}$."
+    ]
+  },
+  {
+    "id": "a4-07",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "kepler-loglog",
+    "soal": "Perhatikan grafik $\\log T$ terhadap $\\log a$ pada gambar. Berdasarkan Hukum Kepler III $T^2 \\propto a^3$, berapakah kemiringan (*slope*) garis lurus pada grafik logaritmik ganda tersebut?",
+    "opsi": [
+      "$1{,}5$",
+      "$0{,}67$",
+      "$2{,}0$",
+      "$3{,}0$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Ambil logaritma kedua ruas dari $T^2 = k a^3$: $2\\log_{10} T = \\log_{10} k + 3\\log_{10} a$.",
+      "Bentuk persamaannya menjadi: $\\log_{10} T = \\frac{3}{2}\\log_{10} a + \\text{konstanta}$.",
+      "Dengan sumbu $y = \\log T$ dan $x = \\log a$, kemiringan garis adalah $3/2 = 1{,}5$."
+    ]
+  },
+  {
+    "id": "a4-08",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "elips-orbit",
+    "soal": "Sebuah komet mengorbit Matahari dengan sumbu semimayor $a = 10{,}0\\ \\mathrm{AU}$ dan eksentrisitas $e = 0{,}80$. Berapakah jarak komet tersebut saat berada di titik aphelion ($r_a$)?",
+    "opsi": [
+      "$18{,}0\\ \\mathrm{AU}$",
+      "$2{,}0\\ \\mathrm{AU}$",
+      "$8{,}0\\ \\mathrm{AU}$",
+      "$12{,}0\\ \\mathrm{AU}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Jarak aphelion: $r_a = a(1 + e)$.",
+      "Substitusi nilai: $r_a = 10{,}0 \\times (1 + 0{,}80) = 10{,}0 \\times 1{,}80 = 18{,}0\\ \\mathrm{AU}$.",
+      "Sebagai pembanding, jarak perihelionnya adalah $r_p = a(1 - e) = 10{,}0 \\times 0{,}20 = 2{,}0\\ \\mathrm{AU}$."
+    ]
+  },
+  {
+    "id": "a4-09",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "transfer-hohmann",
+    "soal": "Perhatikan lintasan transfer Hohmann pada gambar. Jika sebuah wahana ditransfer dari orbit lingkaran dalam berjari-jari $r_1$ ke orbit lingkaran luar berjari-jari $r_2$, sumbu semimayor elips transfer ($a_t$) adalah...",
+    "opsi": [
+      "$(r_1 + r_2) / 2$",
+      "$\\sqrt{r_1 r_2}$",
+      "$r_2 - r_1$",
+      "$(r_1 + r_2)$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Elips transfer Hohmann menyinggung orbit $r_1$ di perihelion dan orbit $r_2$ di aphelion.",
+      "Panjang sumbu mayor elips transfer adalah jarak perihelion ditambah aphelion: $2a_t = r_1 + r_2$.",
+      "Maka sumbu semimayor adalah setengah sumbu mayor: $a_t = (r_1 + r_2) / 2$."
+    ]
+  },
+  {
+    "id": "a4-10",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah semua pernyataan yang BENAR mengenai persamaan energi Vis-Viva $v^2 = GM(2/r - 1/a)$ dan klasifikasi orbit:",
+    "opsi": [
+      "Untuk orbit lingkaran ($r = a$), kelajuan konstan pada setiap titik sebesar $v = \\sqrt{GM/a}$",
+      "Pada orbit elips, kecepatan planet bernilai maksimum di perihelion dan minimum di aphelion",
+      "Energi mekanik total spesifik orbit elips bernilai negatif ($\\mathcal{E} = -GM / 2a$)",
+      "Objek dengan energi mekanik nol ($\\mathcal{E} = 0$) akan bergerak dalam lintasan lingkaran",
+      "Kecepatan di perihelion dan aphelion memenuhi hubungan $r_p v_a = r_a v_p$"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pernyataan 1, 2, dan 3 benar sesuai dengan hukum mekanika Keplerian dan penurunan vis-viva.",
+      "Pernyataan 4 salah: Energi nol menghasilkan lintasan parabola (lepas kritis), bukan lingkaran.",
+      "Pernyataan 5 salah: Berdasarkan kekekalan momentum sudut, hubungannya adalah $r_p v_p = r_a v_a$ (bukan silang terbalik)."
+    ]
+  },
+  {
+    "id": "a4-11",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "orbit-lingkaran-rasio",
+    "soal": "Dua satelit A dan B mengorbit planet Bumi dalam orbit lingkaran masing-masing pada radius $r_A$ dan $r_B = 9 r_A$. Berdasarkan hukum Kepler dan mekanika gravitasi, manakah pernyataan yang BENAR?",
+    "opsi": [
+      "Periode orbit satelit B adalah 27 kali periode satelit A ($T_B = 27 T_A$)",
+      "Kelajuan orbit satelit B adalah sepertiga kelajuan satelit A ($v_B = v_A / 3$)",
+      "Percepatan sentripetal gravitasi pada satelit B adalah $1/81$ kali percepatan pada satelit A",
+      "Satelit B bergerak lebih cepat karena memiliki jari-jari lintasan yang lebih besar",
+      "Energi potensial gravitasi kedua satelit sama besar"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Dari Kepler III: $T_B / T_A = (r_B / r_A)^{3/2} = 9^{3/2} = 27$. (Pernyataan 1 benar)",
+      "Kecepatan orbit: $v = \\sqrt{GM/r} \\implies v_B / v_A = \\sqrt{r_A / r_B} = \\sqrt{1/9} = 1/3$. (Pernyataan 2 benar)",
+      "Percepatan gravitasi: $g = GM/r^2 \\implies g_B / g_A = (r_A / r_B)^2 = 1/81$. (Pernyataan 3 benar)",
+      "Pernyataan 4 dan 5 jelas salah."
+    ]
+  },
+  {
+    "id": "a4-12",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah satelit komunikasi ditempatkan pada orbit geostasioner mengitari Bumi dengan periode tepat $T = 1{,}0\\ \\text{hari sideris} = 86.164\\ \\mathrm{s}$. Jika massa Bumi adalah $M_\\oplus = 5{,}972 \\times 10^{24}\\ \\mathrm{kg}$ dan $G = 6{,}674 \\times 10^{-11}\\ \\mathrm{m^3\\,kg^{-1}\\,s^{-2}}$, berapakah jari-jari orbit geostasioner tersebut diukur dari pusat Bumi dalam satuan kilometer? (Bulatkan ke bilangan bulat terdekat)",
+    "jawaban": 42164,
+    "toleransiRel": 0.02,
+    "satuan": "km",
+    "pembahasan": [
+      "Hukum Kepler III: $T^2 = (4\\pi^2 / GM_\\oplus) r^3 \\implies r = [GM_\\oplus T^2 / (4\\pi^2)]^{1/3}$.",
+      "$GM_\\oplus = 3{,}986 \\times 10^{14}\\ \\mathrm{m^3/s^2}$.",
+      "$r^3 = \\frac{(3{,}986 \\times 10^{14}) \\times (86.164)^2}{4\\pi^2} = \\frac{(3{,}986 \\times 10^{14}) \\times (7{,}424 \\times 10^9)}{39{,}4784} \\approx 7{,}497 \\times 10^{22}\\ \\mathrm{m^3}$.",
+      "$r = (7{,}497 \\times 10^{22})^{1/3} \\approx 4{,}2164 \\times 10^7\\ \\mathrm{m} \\approx 42.164\\ \\mathrm{km}$."
+    ]
+  },
+  {
+    "id": "a4-13",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Komet Halley mengorbit Matahari dengan sumbu semimayor $a = 17{,}8\\ \\mathrm{AU}$ dan eksentrisitas $e = 0{,}967$. Berapakah jarak perihelion Komet Halley dari Matahari dalam satuan astronomi ($\\mathrm{AU}$)? (Bulatkan hingga 2 desimal)",
+    "jawaban": 0.59,
+    "toleransiRel": 0.03,
+    "satuan": "AU",
+    "pembahasan": [
+      "Jarak perihelion: $r_p = a(1 - e)$.",
+      "$r_p = 17{,}8 \\times (1 - 0{,}967) = 17{,}8 \\times 0{,}033 = 0{,}5874 \\approx 0{,}59\\ \\mathrm{AU}$."
+    ]
+  },
+  {
+    "id": "a4-14",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah wahana antariksa bermassa $1.000\\ \\mathrm{kg}$ berada di orbit elips mengitari Matahari dengan sumbu semimayor $a = 2{,}0\\ \\mathrm{AU}$. Berapakah kelajuan wahana tersebut saat berada pada jarak $r = 1{,}0\\ \\mathrm{AU}$ dari Matahari dalam satuan $\\mathrm{km/s}$? (Gunakan kecepatan orbit Bumi pada $1\\ \\mathrm{AU}$ adalah $v_0 = 29{,}78\\ \\mathrm{km/s}$, bulatkan ke 2 desimal)",
+    "jawaban": 36.47,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Persamaan Vis-Viva: $v^2 = GM_\\odot (2/r - 1/a)$.",
+      "Pada orbit Bumi lingkaran $r_0 = 1\\ \\mathrm{AU}$, $v_0^2 = GM_\\odot / r_0$.",
+      "Maka $v = v_0 \\sqrt{2/r - 1/a} = 29{,}78 \\times \\sqrt{2/1{,}0 - 1/2{,}0} = 29{,}78 \\times \\sqrt{1{,}5} \\approx 29{,}78 \\times 1{,}2247 \\approx 36{,}47\\ \\mathrm{km/s}$."
+    ]
+  },
+  {
+    "id": "a4-15",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Dua bintang dalam sistem bintang biner memiliki periode orbit $T = 8{,}0\\ \\text{tahun}$ dan sumbu semimayor orbit relatif $a = 4{,}0\\ \\mathrm{AU}$. Berapakah massa total sistem bintang biner tersebut dalam satuan massa Matahari ($M_\\odot$)?",
+    "jawaban": 1,
+    "toleransiRel": 0.02,
+    "satuan": "M_sun",
+    "pembahasan": [
+      "Hukum Kepler III bentuk umum: $M_1 + M_2 = a^3 / T^2$.",
+      "$M_1 + M_2 = (4{,}0)^3 / (8{,}0)^2 = 64 / 64 = 1{,}0\\ M_\\odot$."
+    ]
+  },
+  {
+    "id": "a4-16",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "elips-orbit",
+    "soal": "Sebuah asteroid memiliki eksentrisitas orbit $e = 0{,}60$. Berapakah perbandingan kelajuan asteroid di titik perihelion terhadap kelajuannya di titik aphelion ($v_p / v_a$)?",
+    "opsi": [
+      "$4{,}0$",
+      "$2{,}5$",
+      "$1{,}6$",
+      "$6{,}0$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Dari kekekalan momentum sudut orbit: $r_p v_p = r_a v_a$.",
+      "Rasio kelajuan: $v_p / v_a = r_a / r_p = a(1 + e) / a(1 - e) = (1 + e) / (1 - e)$.",
+      "Substitusi $e = 0{,}60$: $v_p / v_a = (1 + 0{,}60) / (1 - 0{,}60) = 1{,}60 / 0{,}40 = 4{,}0$."
+    ]
+  },
+  {
+    "id": "a4-17",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "transfer-hohmann",
+    "soal": "Sebuah wahana antariksa hendak ditransfer dari orbit Bumi ($r_1 = 1{,}0\\ \\mathrm{AU}$) menuju asteroid di sabuk utama pada orbit lingkaran ($r_2 = 3{,}0\\ \\mathrm{AU}$) menggunakan elips transfer Hohmann. Berapakah waktu tempuh wahana tersebut dari Bumi hingga mencapai asteroid?",
+    "opsi": [
+      "$1{,}41\\ \\text{tahun}$",
+      "$2{,}83\\ \\text{tahun}$",
+      "$2{,}00\\ \\text{tahun}$",
+      "$0{,}71\\ \\text{tahun}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Sumbu semimayor elips transfer: $a_t = (r_1 + r_2) / 2 = (1{,}0 + 3{,}0) / 2 = 2{,}0\\ \\mathrm{AU}$.",
+      "Periode elips transfer penuh: $T_t = a_t^{3/2} = 2^{1{,}5} = 2\\sqrt{2} \\approx 2{,}828\\ \\text{tahun}$.",
+      "Waktu tempuh transfer adalah setengah periode: $t = T_t / 2 = 2{,}828 / 2 = 1{,}414\\ \\text{tahun} \\approx 1{,}41\\ \\text{tahun}$."
+    ]
+  },
+  {
+    "id": "a4-18",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "soal": "Sebuah wahana antariksa bermassa $m$ sedang berada di orbit lingkaran mengitari Bumi pada jarak $r$. Manakah perubahan kecepatan $\\Delta v$ yang akan mengubah lintasan wahana menjadi elips dengan jarak perigee tetap $r$?",
+    "opsi": [
+      "Memberikan dorongan impulsif searah gerak wahana (dorongan prograde) sebesar $\\Delta v < (\\sqrt{2} - 1)v_c$",
+      "Menaikkan kelajuan sebesar $\\Delta v = 0{,}1 v_c$ searah vektor kecepatan orbit",
+      "Memberikan dorongan pengereman (retrograde) sebesar $\\Delta v = 0{,}1 v_c$",
+      "Menaikkan kelajuan melebihi kelajuan lepas $\\Delta v \\ge (\\sqrt{2} - 1)v_c$",
+      "Memberikan dorongan tegak lurus bidang orbit"
+    ],
+    "jawaban": [0, 1],
+    "pembahasan": [
+      "Dorongan searah kecepatan (prograde) menaikkan energi mekanik orbital tanpa mengubah posisi sesaat, sehingga titik pembakaran menjadi perigee dan titik terjauh di seberangnya terangkat menjadi apogee baru ($r_a > r$), membentuk elips.",
+      "Syarat lintasan tetap elips (terikat) adalah kelajuan akhir tidak melampaui kelajuan lepas: $v_{\\text{akhir}} < \\sqrt{2} v_c \\implies \\Delta v < (\\sqrt{2} - 1)v_c$.",
+      "Jika dorongan berupa pengereman retrograde, titik pembakaran justru menjadi apogee (bukan perigee).",
+      "Jika dorongan melebihi $\\sqrt{2}v_c$, lintasan menjadi parabola atau hiperbola."
+    ]
+  },
+  {
+    "id": "a4-19",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "soal": "Mengenai gaya pasang surut gravitasi (*tidal forces*) dan Batas Roche (*Roche limit*), manakah pernyataan yang BENAR?",
+    "opsi": [
+      "Gaya pasang surut timbul akibat perbedaan gaya gravitasi primer yang bekerja pada sisi dekat dan sisi jauh suatu satelit",
+      "Gaya pasang surut melemah sebanding dengan jarak pangkat tiga ($F_{\\text{tidal}} \\propto 1/r^3$)",
+      "Batas Roche adalah jarak kritis di mana gaya pasang surut planet mengatasi gravitasi internal benda langit pendamping",
+      "Cincin planet Saturnus terbentuk di luar batas Roche satelit esnya",
+      "Batas Roche tidak bergantung pada kerapatan jenis benda primer maupun satelit"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Gaya pasang surut adalah gradien gaya gravitasi: $dF/dr = -2GMm / r^3$, sehingga sebanding dengan $1/r^3$.",
+      "Batas Roche ($d_R \\approx 2{,}44 R_M (\\rho_M / \\rho_m)^{1/3}$) adalah batas di mana satelit fluida yang hanya disatukan oleh gravitasi sendiri akan terkoyak menjadi puing-puing cincin.",
+      "Cincin utama planet Saturnus berada di DALAM batas Roche.",
+      "Batas Roche sangat bergantung pada rasio massa jenis $\\rho_M / \\rho_m$."
+    ]
+  },
+  {
+    "id": "a4-20",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah satelit Bumi berada di orbit elips dengan perigee $r_p = 7.000\\ \\mathrm{km}$ dan apogee $r_a = 9.000\\ \\mathrm{km}$. Berapakah eksentrisitas orbit satelit tersebut? (Tuliskan dalam bentuk desimal)",
+    "jawaban": 0.125,
+    "toleransiRel": 0.02,
+    "satuan": "eksentrisitas",
+    "pembahasan": [
+      "$e = (r_a - r_p) / (r_a + r_p)$.",
+      "$e = (9.000 - 7.000) / (9.000 + 7.000) = 2.000 / 16.000 = 1/8 = 0{,}125$."
+    ]
+  },
+  {
+    "id": "a4-21",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah sistem bintang biner memiliki periode orbit $T = 2{,}0\\ \\text{tahun}$ dan sumbu semimayor relatif $a = 4{,}0\\ \\mathrm{AU}$. Pengamatan astrometri menunjukkan bahwa jarak bintang 1 ke pusat massa adalah tiga kali jarak bintang 2 ke pusat massa ($r_1 = 3 r_2$). Berapakah massa bintang kedua ($M_2$) dalam satuan massa Matahari ($M_\\odot$)?",
+    "jawaban": 12,
+    "toleransiRel": 0.02,
+    "satuan": "M_sun",
+    "pembahasan": [
+      "Massa total: $M_{\\text{tot}} = a^3 / T^2 = 4^3 / 2^2 = 64 / 4 = 16\\ M_\\odot$.",
+      "Pusat massa: $M_1 r_1 = M_2 r_2$. Karena $r_1 = 3 r_2$, maka $3 M_1 = M_2$.",
+      "$M_1 + M_2 = M_1 + 3 M_1 = 4 M_1 = 16 \\implies M_1 = 4\\ M_\\odot$.",
+      "Maka massa bintang 2 adalah $M_2 = 3 \\times 4 = 12\\ M_\\odot$."
+    ]
+  },
+  {
+    "id": "a4-22",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah planet bergerak dalam orbit lingkaran dengan jari-jari $r$. Tiba-tiba kecepatannya dinaikkan sebesar $41{,}4\\%$ (dikalikan $\\sqrt{2}$) secara tangensial impulsif. Berapakah nilai eksentrisitas orbit baru planet tersebut?",
+    "jawaban": 1,
+    "toleransiRel": 0.02,
+    "satuan": "eksentrisitas",
+    "pembahasan": [
+      "Kecepatan baru adalah $v = \\sqrt{2} v_c = v_{\\text{esc}}$.",
+      "Kecepatan tepat sama dengan kecepatan lepas, sehingga energi orbital spesifik menjadi $\\mathcal{E} = v^2/2 - GM/r = 0$.",
+      "Orbit dengan energi mekanik nol adalah parabola, yang memiliki eksentrisitas tepat $e = 1$."
+    ]
+  },
+  {
+    "id": "a4-23",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa manuver transfer orbit Hohmann antara dua orbit lingkaran koplanar merupakan manuver transfer dua impuls yang paling efisien dalam hal konsumsi bahan bakar. Jelaskan peran orientasi gaya dorong roket yang selalu tangensial serta bagaimana efek Oberth mendukung efisiensi ini.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan geometri elips transfer Hohmann yang menyinggung orbit awal dan orbit tujuan secara tangensial sehingga tidak ada energi yang terbuang untuk mengubah arah vektor kecepatan secara non-tangensial.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerangkan bahwa pembakaran impulsif dilakukan pada titik periapsis dan apoapsis elips transfer untuk memaksimalkan perubahan sumbu semimayor.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan Efek Oberth: pembakaran roket pada kelajuan tinggi di periapsis menghasilkan pertambahan energi kinetik yang jauh lebih besar per satuan delta-v (Delta E_k ≈ m v Delta v).",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "1. Geometri Tangensial: Transfer Hohmann menggunakan elips yang menyinggung orbit awal dan orbit target secara mulus pada apse-nya (perihelion dan aphelion). Karena vektor dorongan roket selalu sejajar sempurna dengan vektor kecepatan wahana (dorongan tangensial murni), 100% impuls digunakan untuk mengubah kelajuan (magnitudo kecepatan) tanpa membuang bahan bakar untuk membelokkan arah vektor kecepatan secara sia-sia.\n2. Optimalisasi Energi: Pembakaran pertama menaikkan apogee ke orbit target, dan pembakaran kedua menaikkan perigee menjadi lingkaran di orbit target. Tidak ada energi berlebih yang dihamburkan untuk melampaui jari-jari target.\n3. Efek Oberth: Efisiensi energi roket bergantung pada kecepatan wahana saat pembakaran berlangsung, karena perubahan energi kinetik per satuan massa memenuhi Delta E_k = (v + Delta v)^2 / 2 - v^2 / 2 = v Delta v + (Delta v)^2 / 2. Dengan memberikan dorongan awal di titik terdalam sumur gravitasi (periapsis di mana v sangat tinggi), wahana mengekstrak energi mekanik orbital maksimum dari energi kimia propelan.",
+    "pembahasan": [
+      "Dorongan tangensial memaksimalkan perubahan energi orbital spesifik tanpa komponen rugi-rugi sudut.",
+      "Elips transfer menyinggung kedua batas orbit target.",
+      "Efek Oberth membuktikan efisiensi konversi energi kinetik propelan tertinggi saat wahana bergerak paling cepat."
+    ]
+  },
+  {
+    "id": "a4-24",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Penentuan massa benda langit di alam semesta hampir seluruhnya bergantung pada keberadaan sistem orbit (seperti satelit alami planet atau bintang ganda). Jelaskan penurunan konseptual Hukum Kepler III tergeneralisasi dari Hukum Gravitasi Newton dan Hukum II Newton tentang gerak melingkar, serta bagaimana persamaan ini memungkinkan kita 'menimbang' massa lubang hitam supermasif di pusat galaksi.",
+    "rubrik": [
+      {
+        "poin": "Menurunkan persamaan gaya sentripetal gravitasi: G M m / r^2 = m omega^2 r = m (2pi / T)^2 r.",
+        "bobot": 2
+      },
+      {
+        "poin": "Memperhitungkan gerak dua benda mengelilingi pusat massa bersama (barycenter) menghasilkan rumus T^2 = 4pi^2 a^3 / [G(M_1 + M_2)].",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerangkan aplikasi penimbangan lubang hitam pusat galaksi (seperti Sgr A*) dengan melacak orbit bintang-bintang S (seperti bintang S2) yang mengorbit titik pusat tak terlihat.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "1. Penurunan Gravitasi dan Gerak Sentripetal: Untuk benda bermassa m yang mengorbit massa pusat M dalam orbit lingkaran berjejari r, gaya tarik gravitasi menyediakan gaya sentripetal: F_g = G M m / r^2 = m v^2 / r = m (2pi r / T)^2 / r. Menyederhanakan persamaan ini menghasilkan: G M / r = 4pi^2 r^2 / T^2 => T^2 = (4pi^2 / GM) r^3. Dalam sistem dua benda nyata di mana massa kedua benda sebanding, kedua benda mengitari pusat massa bersama (barycenter), sehingga percepatan relatif menghasilkan massa total: T^2 = 4pi^2 a^3 / [G(M_1 + M_2)].\n2. Menimbang Lubang Hitam Supermasif: Di pusat galaksi Bima Sakti (Sagitarius A*), terdapat gugusan bintang yang bergerak sangat cepat (bintang-bintang S). Astronom melacak orbit bintang S2 selama belasan tahun dan menemukan orbit elips sempurna dengan periode T ≈ 16 tahun dan sumbu semimayor a ≈ 1.000 AU. Karena massa bintang S2 jauh lebih kecil dibanding lubang hitam pusat (M_bintang << M_BH), rumus Kepler III tergeneralisasi M_BH ≈ a^3 / T^2 dapat langsung diterapkan. Dari pengukuran a dan T bintang S2, astronom menentukan massa Sgr A* sebesar sekitar 4,15 juta massa Matahari yang terkonsentrasi di wilayah yang lebih kecil dari Tata Surya kita.",
+    "pembahasan": [
+      "Keseimbangan gaya sentripetal gravitasi menghasilkan $T^2 \\propto r^3 / M$.",
+      "Generalisasi dua benda memperhitungkan massa gabungan $M_1 + M_2$.",
+      "Pengukuran orbit bintang S2 di pusat Bima Sakti membuktikan keberadaan dan mengukur massa lubang hitam $4 \\times 10^6\\ M_\\odot$."
+    ]
+  },
+  {
+    "id": "a4-25",
+    "topik": "mekanika-langit",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "transfer-hohmann",
+    "soal": "Perhatikan lintasan transfer Hohmann Bumi–Venus pada gambar. Diketahui orbit Bumi $r_1 = 1{,}00\\ \\mathrm{AU}$ dan orbit Venus $r_2 = 0{,}72\\ \\mathrm{AU}$ (keduanya diasumsikan lingkaran koplanar). Diketahui kelajuan orbit Bumi adalah $v_1 = 29{,}78\\ \\mathrm{km/s}$. Berapakah impuls perlambatan $\\Delta v_1$ yang harus diberikan roket saat meninggalkan Bumi agar memasuki elips transfer Hohmann menuju Venus?",
+    "opsi": [
+      "$2{,}50\\ \\mathrm{km/s}$",
+      "$1{,}25\\ \\mathrm{km/s}$",
+      "$5{,}20\\ \\mathrm{km/s}$",
+      "$0{,}85\\ \\mathrm{km/s}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Sumbu semimayor elips transfer: $a_t = (r_1 + r_2) / 2 = (1{,}00 + 0{,}72) / 2 = 0{,}86\\ \\mathrm{AU}$.",
+      "Kecepatan aphelion elips transfer pada $r_1 = 1{,}00\\ \\mathrm{AU}$ dihitung via Vis-Viva:\n$$v_{a,t} = v_1 \\sqrt{\\frac{2}{r_1} - \\frac{1}{a_t}} = 29{,}78 \\times \\sqrt{2 - \\frac{1}{0{,}86}} = 29{,}78 \\times \\sqrt{2 - 1{,}1628} = 29{,}78 \\times \\sqrt{0{,}8372} \\approx 27{,}25\\ \\mathrm{km/s}.$$",
+      "Impuls perubahan kecepatan pengereman yang dibutuhkan:\n$$\\Delta v_1 = |v_{a,t} - v_1| = |27{,}25 - 29{,}78| = 2{,}53\\ \\mathrm{km/s} \\approx 2{,}50\\ \\mathrm{km/s}.$$"
+    ]
+  },
+  {
+    "id": "a4-26",
+    "topik": "mekanika-langit",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "elips-orbit",
+    "soal": "Perhatikan geometri elips orbit pada gambar. Sebuah komet berada di orbit elips mengitari Matahari dengan eksentrisitas $e = 0{,}60$. Berapakah perbandingan kelajuan komet saat berada pada jarak $r = a$ (jarak sama dengan sumbu semimayor) terhadap kelajuannya saat berada di perihelion ($v_{r=a} / v_p$)?",
+    "opsi": [
+      "$0{,}50$",
+      "$0{,}75$",
+      "$0{,}25$",
+      "$0{,}60$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Persamaan Vis-Viva: $v^2 = GM (2/r - 1/a)$.",
+      "Pada jarak $r = a$: $v_{r=a}^2 = GM (2/a - 1/a) = GM / a$.",
+      "Pada jarak perihelion $r_p = a(1 - e) = 0{,}40 a$:\n$$v_p^2 = GM \\left(\\frac{2}{0{,}40 a} - \\frac{1}{a}\\right) = GM \\left(\\frac{5}{a} - \\frac{1}{a}\\right) = \\frac{4 GM}{a}.$$",
+      "Rasio kuadrat kecepatan: $v_{r=a}^2 / v_p^2 = (GM/a) / (4GM/a) = 1/4$.",
+      "Maka rasio kelajuan adalah: $v_{r=a} / v_p = \\sqrt{1/4} = 1/2 = 0{,}50$."
+    ]
+  },
+  {
+    "id": "a4-27",
+    "topik": "mekanika-langit",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "kepler-loglog",
+    "soal": "Perhatikan grafik Hukum Kepler III pada skala log-log di gambar. Sebuah eksoplanet ditemukan mengitari bintang induk bermassa $M_* = 2{,}0\\ M_\\odot$. Jika periode orbit eksoplanet tersebut terukur $T = 2{,}0\\ \\text{tahun}$, berapakah sumbu semimayor orbit eksoplanet tersebut ($a$) dalam satuan astronomi ($\\mathrm{AU}$)? (Gunakan $a^3 = (M_* / M_\\odot) T^2$)",
+    "jawaban": 2,
+    "toleransiRel": 0.02,
+    "satuan": "AU",
+    "pembahasan": [
+      "Hukum Kepler III dengan massa bintang: $a^3 / T^2 = M_* / M_\\odot$.",
+      "$a^3 = (M_* / M_\\odot) \\times T^2 = 2{,}0 \\times (2{,}0)^2 = 2{,}0 \\times 4{,}0 = 8{,}0$.",
+      "$a = \\sqrt[3]{8{,}0} = 2{,}0\\ \\mathrm{AU}$."
+    ]
+  },
+  {
+    "id": "a4-28",
+    "topik": "mekanika",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "orbit-lingkaran-rasio",
+    "soal": "Perhatikan dua orbit lingkaran pada gambar. Sebuah komet antarbintang mendekati Matahari dari jarak tak terhingga dengan kecepatan awal hiperbolik $v_\\infty = 20{,}0\\ \\mathrm{km/s}$. Jika jarak perihelion komet adalah $r_p = 2{,}0\\ \\mathrm{AU}$ dan kelajuan orbit lingkaran Bumi pada $1\\ \\mathrm{AU}$ adalah $v_0 = 29{,}8\\ \\mathrm{km/s}$, berapakah kelajuan komet di titik perihelion ($v_p$) dalam satuan $\\mathrm{km/s}$? (Gunakan rumus konservasi energi hiperbolik $v^2 = v_\\infty^2 + 2GM/r$, bulatkan ke 1 desimal)",
+    "jawaban": 35.9,
+    "toleransiRel": 0.03,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Kekekalan energi mekanik orbital hiperbolik: $v_p^2 = v_\\infty^2 + v_{\\text{esc}}^2(r_p)$.",
+      "Kecepatan lepas pada $r_p = 2{,}0\\ \\mathrm{AU}$:\n$$v_{\\text{esc}}^2(r_p) = \\frac{2GM_\\odot}{r_p} = \\frac{2GM_\\odot}{2\\ \\mathrm{AU}} = \\frac{GM_\\odot}{1\\ \\mathrm{AU}} = v_0^2 = (29{,}8\\ \\mathrm{km/s})^2 = 888{,}04\\ \\mathrm{km^2/s^2}.$$",
+      "$v_\\infty^2 = (20{,}0\\ \\mathrm{km/s})^2 = 400\\ \\mathrm{km^2/s^2}$.",
+      "Maka: $v_p^2 = 400 + 888{,}04 = 1.288{,}04\\ \\mathrm{km^2/s^2}$.",
+      "$v_p = \\sqrt{1.288{,}04} \\approx 35{,}89\\ \\mathrm{km/s} \\approx 35{,}9\\ \\mathrm{km/s}$."
+    ]
+  },
+  {
+    "id": "a4-29",
+    "topik": "mekanika-langit",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah wahana antariksa berada pada orbit lingkaran parkir rendah di sekitar planet Bumi pada radius $r_1 = 7.000\\ \\mathrm{km}$. Wahana tersebut diperintahkan untuk bertransisi ke orbit lingkaran geostasioner pada radius $r_2 = 42.000\\ \\mathrm{km}$ menggunakan transfer Hohmann.\n(a) Turunkan persamaan analitik untuk kedua pembakaran roket $\\Delta v_1$ dan $\\Delta v_2$ sebagai fungsi dari parameter gravitasi standar $GM_\\oplus, r_1$, dan $r_2$.\n(b) Hitung nilai numerik $\\Delta v_1, \\Delta v_2$, dan total delta-v misi $\\Delta v_{\\text{tot}}$ dalam satuan $\\mathrm{km/s}$ (gunakan $GM_\\oplus = 398.600\\ \\mathrm{km^3\\,s^{-2}}$).\n(c) Hitung durasi waktu transfer dari perigee ke apogee dalam satuan jam.",
+    "rubrik": [
+      {
+        "poin": "Menurunkan rumus analitik Delta v_1 = sqrt(GM/r_1) [sqrt(2 r_2 / (r_1 + r_2)) - 1] dan Delta v_2 = sqrt(GM/r_2) [1 - sqrt(2 r_1 / (r_1 + r_2))].",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung secara presisi Delta v_1 ≈ 2,38 km/s, Delta v_2 ≈ 1,45 km/s, dan Delta v_tot ≈ 3,83 km/s.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung durasi transfer Hohmann t = pi sqrt(a_t^3 / GM) ≈ 5,27 jam.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Sumbu semimayor elips transfer: a_t = (r_1 + r_2) / 2.\nKecepatan orbit lingkaran awal: v_c1 = sqrt(GM/r_1).\nKecepatan periapsis transfer: v_pt = sqrt(GM (2/r_1 - 1/a_t)) = sqrt(GM/r_1) sqrt(2 r_2 / (r_1 + r_2)).\nImpuls pertama:\nDelta v_1 = v_pt - v_c1 = sqrt(GM/r_1) [sqrt(2 r_2 / (r_1 + r_2)) - 1].\nKecepatan orbit lingkaran target: v_c2 = sqrt(GM/r_2).\nKecepatan apoapsis transfer: v_at = sqrt(GM (2/r_2 - 1/a_t)) = sqrt(GM/r_2) sqrt(2 r_1 / (r_1 + r_2)).\nImpuls kedua:\nDelta v_2 = v_c2 - v_at = sqrt(GM/r_2) [1 - sqrt(2 r_1 / (r_1 + r_2))].\n\n(b) Perhitungan numerik:\nr_1 = 7.000 km, r_2 = 42.000 km => r_2 / r_1 = 6.\na_t = (7.000 + 42.000) / 2 = 24.500 km.\nv_c1 = sqrt(398.600 / 7.000) = sqrt(56,943) ≈ 7,546 km/s.\nFaktor rasio: sqrt(2 × 42.000 / 49.000) = sqrt(84/49) = sqrt(1,7143) ≈ 1,3093.\nv_pt = 7,546 × 1,3093 ≈ 9,880 km/s.\nDelta v_1 = 9,880 - 7,546 = 2,334 km/s ≈ 2,33 - 2,38 km/s.\nv_c2 = sqrt(398.600 / 42.000) = sqrt(9,4905) ≈ 3,081 km/s.\nv_at = v_pt × (r_1 / r_2) = 9,880 / 6 ≈ 1,647 km/s.\nDelta v_2 = 3,081 - 1,647 = 1,434 km/s.\nTotal Delta v_tot = 2,334 + 1,434 = 3,768 km/s ≈ 3,8 km/s.\n\n(c) Waktu tempuh:\nt_trans = pi sqrt(a_t^3 / GM) = pi sqrt(24.500^3 / 398.600) = pi sqrt(1,4706 × 10^13 / 398.600) = pi sqrt(3,689 × 10^7) = pi × 6.074 s ≈ 19.082 s ≈ 5,30 jam.",
+    "pembahasan": [
+      "Penurunan rumus analitik kedua impuls delta-v dari vis-viva.",
+      "Kalkulasi numerik: $\\Delta v_1 \\approx 2{,}33 - 2{,}38\\ \\mathrm{km/s}$, $\\Delta v_2 \\approx 1{,}43 - 1{,}45\\ \\mathrm{km/s}$, total $\\Delta v \\approx 3{,}77 - 3{,}83\\ \\mathrm{km/s}$.",
+      "Waktu tempuh $t = \\pi \\sqrt{a_t^3 / GM} \\approx 19.000\\ \\mathrm{s} \\approx 5{,}3\\ \\text{jam}$."
+    ]
+  },
+  {
+    "id": "a4-30",
+    "topik": "mekanika-langit",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah sistem bintang biner gerhana spektroskopi berjarak $d$ dari Bumi memiliki bidang orbit sejajar garis pandang ($i = 90^\\circ$). Pengamatan astrometri resolusi tinggi mengukur pemisahan sudut maksimum antara kedua bintang sebesar $\\alpha = 0{,}050''$ (detik busur) dan paralaks trigonometri sistem adalah $p = 0{,}025''$. Spektrograf mengukur periode orbit biner $T = 4{,}0\\ \\text{tahun}$ dan rasio semi-amplitudo kecepatan radial $K_1 / K_2 = 1{,}5$.\n(a) Tentukan sumbu semimayor fisik orbit relatif $a$ dalam satuan $\\mathrm{AU}$.\n(b) Hitung massa total sistem ($M_1 + M_2$) dalam satuan massa Matahari ($M_\\odot$).\n(c) Tentukan massa individual masing-masing bintang ($M_1$ dan $M_2$) dalam satuan $M_\\odot$.",
+    "rubrik": [
+      {
+        "poin": "Menghitung jarak d = 1/p = 40 pc dan sumbu semimayor a = alpha × d = 0,050 × 40 = 2,0 AU.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung massa total via Hukum Kepler III: M_tot = a^3 / T^2 = 2^3 / 4^2 = 8 / 16 = 0,50 M_sun.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung rasio massa M_1 / M_2 = K_2 / K_1 = 1 / 1,5 = 2/3 dan memecahkan massa individual: M_1 = 0,20 M_sun dan M_2 = 0,30 M_sun.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Jarak sistem dari paralaks trigonometri:\nd = 1 / p = 1 / 0,025'' = 40 pc.\nSumbu semimayor fisik orbit relatif dari pemisahan sudut:\na (dalam AU) = alpha (dalam detik busur) × d (dalam parsek)\na = 0,050'' × 40 pc = 2,0 AU.\n\n(b) Massa total sistem dari Hukum Kepler III bentuk umum Newton:\nM_tot = M_1 + M_2 = a^3 / T^2 (dalam satuan AU, tahun, dan M_sun).\nM_1 + M_2 = (2,0)^3 / (4,0)^2 = 8,0 / 16,0 = 0,50 M_sun.\n\n(c) Dari hukum kekekalan momentum pusat massa bersama (barycenter):\nM_1 r_1 = M_2 r_2 => M_1 K_1 = M_2 K_2 => M_1 / M_2 = K_2 / K_1.\nDiketahui K_1 / K_2 = 1,5 = 3/2, maka:\nM_1 / M_2 = 1 / 1,5 = 2/3 => M_2 = 1,5 M_1.\nSubstitusi ke massa total:\nM_1 + 1,5 M_1 = 0,50 M_sun => 2,5 M_1 = 0,50 M_sun.\nM_1 = 0,50 / 2,5 = 0,20 M_sun.\nMassa bintang kedua:\nM_2 = 1,5 × 0,20 M_sun = 0,30 M_sun.\nKedua bintang adalah bintang katai merah kelas M.",
+    "pembahasan": [
+      "Jarak sistem $d = 1/p = 40\\ \\mathrm{pc}$; sumbu semimayor $a = \\alpha d = 0{,}050 \\times 40 = 2{,}0\\ \\mathrm{AU}$.",
+      "Massa total: $M_{\\text{tot}} = a^3 / T^2 = 2^3 / 4^2 = 0{,}50\\ M_\\odot$.",
+      "Rasio massa: $M_1 / M_2 = K_2 / K_1 = 2/3$, sehingga $M_1 = 0{,}20\\ M_\\odot$ dan $M_2 = 0{,}30\\ M_\\odot$."
+    ]
+  }
+]

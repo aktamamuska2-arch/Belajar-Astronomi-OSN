@@ -1,0 +1,253 @@
+<Tujuan>
+
+- Menguasai urutan klasifikasi spektrum Harvard (OBAFGKM) dan sistem kelas luminositas Yerkes (Morgan–Keenan).
+- Membaca dan menganalisis diagram Hertzsprung–Russell (HR), garis iso-radius, dan sebaran kelas bintang.
+- Menerapkan hubungan massa–luminositas deret utama dan menghitung masa hidup evolusi bintang.
+- Menganalisis pergeseran Doppler garis spektrum untuk mengukur kecepatan radial dan rotasi bintang ($v \sin i$).
+- Menghubungkan profil garis absorpsi dengan suhu, ionisasi (Boltzmann & Saha), serta percepatan gravitasi permukaan ($\log g$).
+
+</Tujuan>
+
+<Prasyarat babIds={['a5']} />
+
+<p className="lead">Spektroskopi adalah jantung astrofisika modern. Dari seberkas cahaya bintang yang diurai menjadi ribuan garis spektral, astronom dapat mengukur suhu, komposisi kimia, kerapatan atmosfer, kecepatan gerak, rotasi, hingga massa dan ukuran fisik bintang tanpa pernah mengunjunginya. Bab ini merangkai data spektral dan fotometri ke dalam mahakarya visual astrofisika: Diagram Hertzsprung–Russell.</p>
+
+## 1. Klasifikasi spektrum OBAFGKM dan fisika ionisasi
+
+<Poin judul="1 · OBAFGKM & garis absorpsi" defaultOpen>
+
+Fotosfer bintang memancarkan spektrum kontinu, namun gas atmosfer luar yang relatif lebih dingin menyerap panjang gelombang tertentu, meninggalkan pita gelap berupa **spektrum absorpsi**.
+
+<Gambar id="spektrum-absorpsi" />
+
+Bintang dikelompokkan dalam urutan suhu permukaan menurun: **O, B, A, F, G, K, M**:
+
+| Kelas | Rentang Suhu (K) | Warna Khas | Fitur Spektrum Utama | Contoh Bintang |
+|---|---|---|---|---|
+| **O** | $> 30.000$ | Biru | Garis He II (helium terionisasi), ion N III, Si IV; H lemah | Alnitak (O9.7) |
+| **B** | $10.000 - 30.000$ | Biru-putih | Garis He I (helium netral) mencapai puncak; deret Balmer menguat | Rigel (B8), Spica (B1) |
+| **A** | $7.500 - 10.000$ | Putih | Garis hidrogen Balmer (H$\alpha$, H$\beta$, H$\gamma$) mencapai kekuatan maksimum di A0 | Vega (A0), Sirius (A1) |
+| **F** | $6.000 - 7.500$ | Putih-kuning | Balmer melemah; garis logam terion tunggal (Ca II H & K, Fe II) menguat | Canopus (F0), Procyon (F5) |
+| **G** | $5.200 - 6.000$ | Kuning | Garis Ca II H & K sangat dominan; garis logam netral (Fe I) tampak | Matahari (G2V), Capella (G3) |
+| **K** | $3.700 - 5.200$ | Oranye | Garis logam netral sangat kaya; pita molekul sederhana (CH, CN) mulai terbentuk | Arcturus (K1), Aldebaran (K5) |
+| **M** | $2.400 - 3.700$ | Merah | Pita molekul Titanium Oksida (TiO) sangat kuat dan lebar | Betelgeuse (M1-2), Proxima Centauri (M5.5) |
+
+Kekuatan garis hidrogen Balmer memuncak pada kelas A ($\sim 10.000\ \mathrm{K}$), bukan pada kelas O yang paling panas. Penjelasan fisisnya diatur oleh dua persamaan:
+1. **Persamaan Boltzmann**: Pada suhu rendah ($T < 7.000\ \mathrm{K}$), hampir semua atom hidrogen berada pada tingkat dasar $n = 1$, sehingga tidak dapat menyerap foton Balmer optik (yang memerlukan elektron pada $n = 2$).
+2. **Persamaan Ionisasi Saha**: Pada suhu sangat tinggi ($T > 25.000\ \mathrm{K}$), tumbukan termal begitu energetik sehingga sebagian besar hidrogen terionisasi total menjadi proton bebas, sehingga tidak ada elektron terikat untuk transisi spektral.
+
+</Poin>
+
+## 2. Diagram Hertzsprung–Russell dan kelas luminositas
+
+<Poin judul="2 · Diagram HR & kelas luminositas">
+
+Diagram Hertzsprung–Russell (HR) memplot **luminositas ($L/L_\odot$ atau $M_V$)** pada sumbu vertikal terhadap **suhu efektif ($T_{\text{eff}}$, indeks $B-V$, atau kelas spektrum)** pada sumbu horizontal terbalik (suhu tinggi di sebelah kiri).
+
+<Gambar id="hr-skematis" />
+
+<Interaktif jenis="hr" />
+
+Dua bintang dengan kelas spektrum sama (suhu sama) dapat memiliki luminositas yang sangat berbeda karena perbedaan ukuran fisik fotosfernya ($L = 4\pi R^2 \sigma T^4$). Sistem klasifikasi Yerkes (Morgan–Keenan) membedakan kelas luminositas:
+- **Ia / Ib**: Superraksasa sangat terang / terang (misal Betelgeuse, Rigel)
+- **II**: Raksasa terang
+- **III**: Raksasa normal (misal Arcturus, Aldebaran)
+- **IV**: Subraksasa
+- **V**: Deret utama (*Main Sequence*) / Katai (misal Matahari G2V, Sirius A1V)
+- **VII / wd**: Katai putih (*White Dwarf*)
+
+Dari relasi Stefan-Boltzmann, garis diagonal bergradien tertentu pada diagram HR merepresentasikan garis **iso-radius** (radius konstan):
+
+$$\log_{10} L = 2\log_{10} R + 4\log_{10} T + \text{konstanta}$$
+
+<Gambar id="hr-iso-radius" />
+
+Bintang di bagian kanan atas diagram adalah raksasa merah bermassa menengah-rendah atau superraksasa dengan radius mencapai ratusan hingga ribuan $R_\odot$, sedangkan katai putih di kiri bawah berukuran sebanding planet Bumi ($R \sim 0{,}01\ R_\odot$).
+
+</Poin>
+
+## 3. Relasi massa–luminositas dan masa hidup deret utama
+
+<Poin judul="3 · Hubungan massa–luminositas & usia bintang">
+
+Untuk bintang deret utama (kelas V) yang membakar hidrogen di inti dalam kesetimbangan hidrostatik dan termal, terdapat relasi empiris dan teoritis yang menghubungkan massa dengan luminositas:
+
+$$\frac{L}{L_\odot} \approx \left(\frac{M}{M_\odot}\right)^{\alpha}$$
+
+dengan eksponen $\alpha$:
+- $\alpha \approx 3{,}5$ untuk rentang massa menengah ($0{,}43\ M_\odot \lesssim M \lesssim 20\ M_\odot$)
+- $\alpha \approx 4{,}0$ untuk bintang berukuran sedang
+- $\alpha \approx 1$ untuk bintang supermasif ($M > 50\ M_\odot$) yang didominasi oleh tekanan radiasi.
+
+Karena energi total yang dapat dihasilkan melalui fusi nuklir sebanding dengan massa bahan bakar inti ($E_{\text{fusi}} \propto M$), dan laju konsumsi bahan bakar adalah luminositasnya ($L = dE/dt$), masa hidup bintang di deret utama ($\tau_{\text{MS}}$) memenuhi:
+
+$$\tau_{\text{MS}} \approx \frac{E_{\text{fusi}}}{L} \propto \frac{M}{M^{3{,}5}} = M^{-2{,}5} \implies \tau_{\text{MS}} \approx 10^{10}\ \text{tahun} \times \left(\frac{M}{M_\odot}\right)^{-2{,}5}$$
+
+<Catatan variasi="awas">
+
+Meskipun bintang masif memiliki persediaan hidrogen jauh lebih banyak, luminositasnya yang luar biasa boros ($L \propto M^{3{,}5}$) membuat bahan bakarnya habis dalam waktu yang jauh lebih singkat. Bintang $10\ M_\odot$ hanya hidup $\sim 30$ juta tahun, sedangkan bintang katai merah $0{,}1\ M_\odot$ dapat hidup hingga triliunan tahun.
+
+</Catatan>
+
+</Poin>
+
+## 4. Efek Doppler dan pengukuran kecepatan radial
+
+<Poin judul="4 · Efek Doppler & pergeseran garis">
+
+Gerak relatif bintang terhadap pengamat di sepanjang garis pandang (*line of sight*) menggeser seluruh panjang gelombang garis spektrum berdasarkan efek Doppler:
+
+$$\frac{\Delta\lambda}{\lambda_0} = \frac{\lambda - \lambda_0}{\lambda_0} = \frac{v_r}{c}$$
+
+dengan konvensi tanda:
+- $v_r > 0$ (pergeseran merah / *redshift*, $\lambda > \lambda_0$): bintang bergerak menjauhi pengamat.
+- $v_r < 0$ (pergeseran biru / *blueshift*, $\lambda < \lambda_0$): bintang bergerak mendekati pengamat.
+
+<Gambar id="doppler-geser" />
+
+Dalam sistem spektrograf modern dengan kalibrasi sel gas atau laser frequency comb, pergeseran garis dapat dideteksi hingga presisi fraksional $\Delta\lambda / \lambda_0 \sim 10^{-9}$, yang setara dengan deteksi gerak refleks bintang sebesar beberapa sentimeter per detik akibat tarikan gravitasi eksoplanet.
+
+</Poin>
+
+## 5. Profil garis spektrum, pelebaran tekanan, dan gravitasi permukaan
+
+<Poin judul="5 · Profil garis spektrum & log g">
+
+Garis spektrum bukan garis tajam matematis, melainkan memiliki lebar dan profil fisik tertentu:
+1. **Pelebaran Alami (*Natural Broadening*)**: Muncul dari prinsip ketidakpastian Heisenberg ($\Delta E \Delta t \gtrsim \hbar/2$).
+2. **Pelebaran Termal Doppler**: Gerak termal acak atom gas di fotosfer menghasilkan profil Gaussian dengan lebar $\Delta\lambda_D = (\lambda_0/c)\sqrt{2k_B T / m}$.
+3. **Pelebaran Tekanan / Tumbukan (*Pressure Broadening*)**: Tumbukan dan medan listrik atom tetangga mengganggu tingkat energi elektron. Di atmosfer katai deret utama yang berkerapatan tinggi, garis hidrogen tampak sangat lebar dengan sayap difus (*damped wings*). Sebaliknya, pada superraksasa yang atmosfernya sangat renggang, garis-garis tampak sangat sempit dan tajam.
+
+Kerapatan atmosfer berhubungan langsung dengan percepatan gravitasi permukaan:
+
+$$g = \frac{GM}{R^2}$$
+
+Dalam astrofisika, nilai ini dinyatakan dalam skala logaritmik $\log_{10} g$ (dalam satuan cgs, $\mathrm{cm\,s^{-2}}$):
+- Katai deret utama (kelas V): $\log g \approx 4{,}0 - 4{,}5$ (Matahari: $\log g_\odot \approx 4{,}44$)
+- Raksasa (kelas III): $\log g \approx 2{,}0 - 3{,}0$
+- Superraksasa (kelas I): $\log g \approx 0{,}0 - 1{,}5$
+- Katai putih (wd): $\log g \approx 8{,}0$
+
+</Poin>
+
+## 6. Sintesis parameter fisis: menentukan massa dan radius
+
+<Poin judul="6 · Analisis multi-metode parameter bintang">
+
+Melalui kombinasi fotometri dan spektroskopi resolusi tinggi, astronom dapat merumuskan parameter fisis lengkap suatu bintang:
+
+$$R = \sqrt{\frac{L}{4\pi \sigma T_{\text{eff}}^4}}, \qquad M = \frac{g R^2}{G}, \qquad \bar{\rho} = \frac{3M}{4\pi R^3}$$
+
+<Contoh judul="Soal Olimpiade Multi-Rantai: Analisis Spektroskopi dan Parameter Bintang Biner Spektroskopi">
+
+<Langkah>
+
+Sebuah bintang memiliki garis emisi laboratorium H$\alpha$ pada $\lambda_0 = 656{,}281\ \mathrm{nm}$. Pengamatan spektroskopi berkala menunjukkan bahwa garis tersebut berosilasi sinusoidal dengan panjang gelombang minimum $\lambda_{\min} = 656{,}194\ \mathrm{nm}$ dan maksimum $\lambda_{\max} = 656{,}368\ \mathrm{nm}$ dengan periode $P = 4{,}0\ \text{hari}$. Analisis fotosfer memberikan suhu efektif $T_{\text{eff}} = 11.556\ \mathrm{K}$ (kelas B8) dan gravitasi permukaan $\log_{10} g = 4{,}0$ ($\mathrm{cm\,s^{-2}}$ dalam cgs). Tentukan semi-amplitudo kecepatan radial $K$ dan taksirlah radius bintang dalam satuan $R_\odot$.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 (Semi-amplitudo Doppler):**
+Pergeseran Doppler total dari puncak ke lembah:
+$$\Delta\lambda_{\text{peak-to-peak}} = \lambda_{\max} - \lambda_{\min} = 656{,}368 - 656{,}194 = 0{,}174\ \mathrm{nm}.$$
+Semi-amplitudo panjang gelombang:
+$$\Delta\lambda = \frac{0{,}174}{2} = 0{,}087\ \mathrm{nm}.$$
+Semi-amplitudo kecepatan radial:
+$$K = c \times \frac{\Delta\lambda}{\lambda_0} = (2{,}998 \times 10^5\ \mathrm{km/s}) \times \frac{0{,}087}{656{,}281} \approx 39{,}74\ \mathrm{km/s} \approx 40\ \mathrm{km/s}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 (Menaksir Radius dari Suhu dan Gravitasi Permukaan):**
+Diketahui $\log_{10} g = 4{,}0 \implies g = 10^4\ \mathrm{cm\,s^{-2}} = 100\ \mathrm{m\,s^{-2}}$.
+Untuk bintang deret utama kelas B8, relasi massa-suhu tipikal memberikan massa $M \approx 3{,}0\ M_\odot = 3{,}0 \times 1{,}989 \times 10^{30}\ \mathrm{kg} \approx 5{,}97 \times 10^{30}\ \mathrm{kg}$.
+Dari $g = GM / R^2$:
+$$R = \sqrt{\frac{GM}{g}} = \sqrt{\frac{(6{,}674 \times 10^{-11}) \times (5{,}97 \times 10^{30})}{100}} = \sqrt{3{,}98 \times 10^{18}} \approx 1{,}996 \times 10^9\ \mathrm{m}.$$
+Dalam satuan radius Matahari ($R_\odot = 6{,}96 \times 10^8\ \mathrm{m}$):
+$$\frac{R}{R_\odot} = \frac{1{,}996 \times 10^9}{6{,}96 \times 10^8} \approx 2{,}87\ R_\odot.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 (Verifikasi Konsistensi HR):**
+Bintang kelas B8V memang memiliki radius tipikal $R \approx 2{,}5 - 3{,}0\ R_\odot$ dan $T_{\text{eff}} \approx 11.500\ \mathrm{K}$. Hasil ini sangat konsisten dengan data empiris deret utama.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="l1-cek-1"
+  pertanyaan="Mengapa garis absorpsi hidrogen deret Balmer (H-alfa, H-beta) mencapai intensitas terkuat pada bintang kelas spektrum A (suhu ~10.000 K), bukan pada kelas O yang lebih panas?"
+  opsi={[
+    'Pada kelas O hidrogen hampir terionisasi sempurna, sedangkan pada suhu ~10.000 K populasi atom hidrogen pada tingkat n=2 berada di kondisi optimal',
+    'Bintang kelas A memiliki kelimpahan unsur hidrogen yang jauh lebih melimpah daripada kelas O',
+    'Bintang kelas O terlalu dingin untuk mengeksitasi elektron ke tingkat n=2',
+    'Atmosfer bintang kelas O tidak memiliki elektron bebas'
+  ]}
+  jawaban={0}
+  penjelasan="Kombinasi persamaan Boltzmann dan Saha: di bawah 10.000 K elektron mayoritas di n=1; di atas 25.000 K (kelas O) hidrogen terionisasi total. Puncak populasi n=2 terjadi di kelas A0 (~9.520 K)."
+/>
+
+<CekPaham
+  id="l1-cek-2"
+  pertanyaan="Dua bintang memiliki kelas spektrum yang sama persis (G2), namun bintang pertama memiliki garis-garis absorpsi yang sangat sempit dan tajam (kelas luminositas Ia), sedangkan bintang kedua memiliki garis yang lebar dengan sayap difus (kelas V). Apa kesimpulan fisisnya?"
+  opsi={[
+    'Bintang pertama adalah superraksasa dengan kerapatan fotosfer dan gravitasi permukaan yang sangat rendah',
+    'Bintang pertama adalah katai putih dengan gravitasi permukaan sangat kuat',
+    'Bintang kedua memiliki suhu fotosfer yang jauh lebih tinggi',
+    'Bintang pertama berotasi jauh lebih cepat daripada bintang kedua'
+  ]}
+  jawaban={0}
+  penjelasan="Pelebaran tekanan (Stark effect) sebanding dengan kerapatan dan gravitasi permukaan g. Superraksasa (Ia) memiliki atmosfer sangat renggang (g rendah), menghasilkan garis spektrum yang tajam dan sempit."
+/>
+
+<CekPaham
+  id="l1-cek-3"
+  pertanyaan="Bintang deret utama X memiliki massa tiga kali massa bintang deret utama Y (M_X = 3 M_Y). Dengan asumsi relasi L ~ M^3,5, berapakah perbandingan masa hidup bintang Y dibanding bintang X (tau_Y / tau_X)?"
+  opsi={[
+    'Bintang Y hidup sekitar 15,6 kali lebih lama daripada bintang X',
+    'Bintang X hidup sekitar 15,6 kali lebih lama daripada bintang Y',
+    'Bintang Y hidup 3 kali lebih lama daripada bintang X',
+    'Keduanya memiliki masa hidup yang sama karena pasokan bahan bakar sebanding dengan luminositas'
+  ]}
+  jawaban={0}
+  penjelasan="Masa hidup deret utama tau ~ M / L ~ M / M^3,5 = M^-2,5. Maka tau_Y / tau_X = (M_Y / M_X)^-2,5 = (1/3)^-2,5 = 3^2,5 = 3^2 × sqrt(3) ≈ 9 × 1,732 ≈ 15,6 kali."
+/>
+
+<Refleksi
+  id="l1-refleksi-1"
+  pertanyaan="Jika sebuah gugus bintang terbuka diamati tidak lagi memiliki bintang deret utama kelas O dan B, tetapi masih memiliki bintang deret utama kelas A, F, dan G yang melimpah, apa yang dapat kamu simpulkan mengenai usia gugus tersebut? Jelaskan prinsip fisisnya."
+/>
+
+## 8. Konstanta penting astrofisika bintang
+
+<Konstanta
+  data={[
+    { simbol: 'T☉', nilai: '5.778', satuan: 'K' },
+    { simbol: 'L☉', nilai: '3,828 × 10²⁶', satuan: 'W' },
+    { simbol: 'M☉', nilai: '1,989 × 10³⁰', satuan: 'kg' },
+    { simbol: 'R☉', nilai: '6,957 × 10⁸', satuan: 'm' },
+    { simbol: 'log g☉ (cgs)', nilai: '4,44', satuan: 'log(cm/s²)' },
+    { simbol: 'λ_Hα (udara)', nilai: '656,281', satuan: 'nm' },
+    { simbol: 'c', nilai: '2,9979 × 10⁵', satuan: 'km/s' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rumus-rumus penting bab L1:
+1. $v_r = c \times (\Delta\lambda / \lambda_0)$
+2. $L / L_\odot \approx (M / M_\odot)^{3{,}5}$
+3. $\tau_{\text{MS}} \approx 10^{10} \times (M / M_\odot)^{-2{,}5}\ \text{tahun}$
+4. $g = GM / R^2$
+5. $L = 4\pi R^2 \sigma T^4$
+
+</Catatan>

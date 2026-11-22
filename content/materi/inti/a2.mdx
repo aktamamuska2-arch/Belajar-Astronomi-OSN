@@ -1,0 +1,251 @@
+<Tujuan>
+
+- Menguasai konsep bola langit, zenith, nadir, horizon, meridian pengamat, dan kutub langit (KLU/KLS).
+- Membedakan sistem koordinat horizontal (Altitude, Azimuth) dengan sistem koordinat ekuatorial (Asensio Rekta, Deklinasi).
+- Menghubungkan Waktu Sideris Lokal ($LST$), Asensio Rekta ($\alpha$), dan Sudut Jam ($HA$).
+- Menerapkan rumus segitiga bola kutub–zenith–bintang ($P-Z-S$) untuk transformasi koordinat dan penentuan posisi bintang.
+- Menghitung kondisi kulminasi atas, kulminasi bawah, kriteria bintang sirkumpolar, serta waktu terbit dan terbenam objek langit.
+- Menganalisis variasi panjang siang dan gerak semu tahunan Matahari di sepanjang lingkaran ekliptika.
+
+</Tujuan>
+
+<Prasyarat babIds={['f2', 'f4']} />
+
+<p className="lead">Astronomi bola adalah geometri langit malam. Karena mata manusia tidak dapat mengindera kedalaman jarak bintang di ruang antariksa secara langsung, seluruh semesta tampak diproyeksikan pada permukaan bola khayalan raksasa yang berpusat pada pengamat. Menguasai segitiga bola dan sistem koordinat langit adalah kunci utama untuk memprediksi kapan dan di mana suatu objek dapat diamati di horizon lokal.</p>
+
+## 1. Bola langit dan sistem koordinat horizontal
+
+<Poin judul="1 · Bola langit & sistem Alt-Az" defaultOpen>
+
+Bayangkan sebuah bola berongga dengan radius sembarang yang konsentris dengan Bumi atau mata pengamat:
+- **Zenith ($Z$)**: Titik di bola langit tepat tegak lurus di atas kepala pengamat ($+90^\circ$).
+- **Nadir ($N$)**: Titik di bola langit tepat di bawah kaki pengamat ($-90^\circ$).
+- **Horizon astronomis**: Lingkaran besar yang tegak lurus terhadap garis vertikal Zenith–Nadir, memisahkan belahan langit tampak dan tak tampak.
+- **Kutub Langit Utara (KLU) / Selatan (KLS)**: Titik tembus perpanjangan sumbu rotasi Bumi ke bola langit. Ketinggian kutub langit di atas horizon sama persis dengan nilai mutlak lintang pengamat: $a_{\text{kutub}} = |\varphi|$.
+
+<Gambar id="bola-langit" />
+
+**Sistem Koordinat Horizontal (Alt-Az):**
+1. **Altitude ($a$ atau $h$)**: Sudut busur vertikal dari horizon menuju objek ($0^\circ$ di horizon hingga $+90^\circ$ di zenith, negatif di bawah horizon). Jarak zenith didefinisikan sebagai $z = 90^\circ - a$.
+2. **Azimuth ($A$ atau $Az$)**: Sudut busur horizontal yang diukur sepanjang horizon, umumnya dimulai dari titik Utara ($0^\circ$) memutar ke Timur ($90^\circ$), Selatan ($180^\circ$), Barat ($270^\circ$).
+
+Kelemahan sistem horizontal adalah nilainya terus berubah terhadap waktu akibat rotasi Bumi dan berbeda untuk setiap pengamat di lokasi geografis yang berbeda.
+
+</Poin>
+
+## 2. Sistem koordinat ekuatorial dan waktu sideris
+
+<Poin judul="2 · Koordinat ekuatorial & LST">
+
+Untuk menetapkan koordinat permanen bintang yang tidak bergantung pada lokasi dan waktu pengamat di Bumi, digunakan **Sistem Koordinat Ekuatorial**:
+- **Ekuator Langit**: Proyeksi ekuator Bumi ke bola langit, miring sebesar sudut $90^\circ - |\varphi|$ terhadap horizon pengamat.
+- **Titik Aries ($\Upsilon$ / Vernal Equinox)**: Titik potong antara ekliptika (lintasan semu tahunan Matahari) dengan ekuator langit saat Matahari bergerak ke belahan langit utara (sekitar 21 Maret).
+- **Deklinasi ($\delta$)**: Jarak sudut objek dari ekuator langit ke arah kutub langit ($-90^\circ \le \delta \le +90^\circ$).
+- **Asensio Rekta ($\alpha$ atau $RA$)**: Jarak sudut dari Titik Aries ke arah timur sepanjang ekuator langit, diukur dalam satuan jam, menit, dan detik busur ($0^{\mathrm{h}} \le \alpha < 24^{\mathrm{h}}$, di mana $1^{\mathrm{h}} = 15^\circ$).
+
+**Sudut Jam ($HA$ / Hour Angle):** Sudut sepanjang ekuator langit diukur dari meridian pengamat ke arah barat menuju lingkaran jam bintang. Hubungan fundamentalnya adalah:
+
+$$LST = \alpha + HA \iff HA = LST - \alpha$$
+
+dengan $LST$ adalah Waktu Sideris Lokal (*Local Sidereal Time*), yaitu sudut jam Titik Aries pada saat itu.
+
+</Poin>
+
+## 3. Kulminasi dan transit meridian
+
+<Poin judul="3 · Kulminasi atas & bawah">
+
+Bintang mencapai titik tertinggi di langit saat melintasi meridian pengamat ($HA = 0^{\mathrm{h}}$ atau $LST = \alpha$). Fenomena ini disebut **kulminasi atas / transit meridian**:
+- Jika bintang transit di sebelah selatan zenith:
+  $$a_{\text{kulminasi}} = 90^\circ - |\varphi - \delta|$$
+- Secara umum untuk pengamat di lintang utara ($\varphi > 0$):
+  $$a_{\text{atas}} = 90^\circ - \varphi + \delta \quad (\text{selatan zenith}) \qquad \text{atau} \qquad a_{\text{atas}} = 90^\circ + \varphi - \delta \quad (\text{utara zenith})$$
+
+Setengah hari sideris kemudian ($HA = 12^{\mathrm{h}}$), bintang mencapai titik terendahnya yang disebut **kulminasi bawah**:
+
+$$a_{\text{bawah}} = \varphi + \delta - 90^\circ \qquad (\text{belahan langit utara})$$
+
+</Poin>
+
+## 4. Segitiga bola astronomi P–Z–S
+
+<Poin judul="4 · Segitiga bola P–Z–S & trigonometri bola">
+
+Transformasi antara koordinat ekuatorial $(\alpha, \delta)$ dan horizontal $(a, A)$ diselesaikan melalui **Segitiga Bola Astronomi P–Z–S** yang dibentuk oleh tiga titik sudut pada bola langit:
+- **Titik P**: Kutub Langit terdekat (KLU atau KLS).
+- **Titik Z**: Zenith pengamat.
+- **Titik S**: Posisi bintang (*Star*).
+
+<Gambar id="segitiga-bola" />
+
+Sisi-sisi busur segitiga bola $P-Z-S$:
+- Sisi $PZ = 90^\circ - \varphi$ (jarak kutub ke zenith, ko-lintang).
+- Sisi $PS = 90^\circ - \delta$ (jarak kutub ke bintang, polar distance).
+- Sisi $ZS = 90^\circ - a = z$ (jarak zenith).
+
+Sudut-sudut segitiga:
+- Sudut di $P$ adalah Sudut Jam ($|HA|$).
+- Sudut di $Z$ berkaitan dengan Azimuth ($180^\circ - A$ atau $A$).
+
+**Aturan Kosinus Sisi untuk Segitiga Bola:**
+
+$$\cos z = \sin a = \sin \varphi \sin \delta + \cos \varphi \cos \delta \cos(HA)$$
+
+**Aturan Sinus Bola:**
+
+$$\frac{\sin(180^\circ - A)}{\sin(90^\circ - \delta)} = \frac{\sin HA}{\sin z} \implies \sin A = -\frac{\cos \delta \sin HA}{\cos a}$$
+
+</Poin>
+
+## 5. Bintang sirkumpolar dan zona visibilitas
+
+<Poin judul="5 · Sirkumpolar & batas pengamatan">
+
+Akibat kemiringan ekuator langit terhadap horizon, bintang diklasifikasikan ke dalam tiga kelompok pengamatan pada lintang geografis $\varphi$:
+1. **Bintang Sirkumpolar (Selalu Terbit / Tidak Pernah Terbenam)**: Bintang yang saat kulminasi bawah pun tetap berada di atas horizon ($a_{\text{bawah}} \ge 0^\circ$).
+   $$\delta \ge 90^\circ - \varphi \quad (\text{untuk } \varphi > 0) \qquad \text{atau} \qquad |\delta| \ge 90^\circ - |\varphi| \quad (\text{tanda sama dengan } \varphi)$$
+2. **Bintang yang Tidak Pernah Terbit**: Bintang yang saat kulminasi atas pun tidak mencapai horizon ($a_{\text{atas}} \le 0^\circ$).
+   $$\delta \le -(90^\circ - |\varphi|)$$
+3. **Bintang Terbit-Terbenam**: Bintang yang memotong horizon dua kali dalam satu hari sideris.
+
+Saat terbit atau terbenam, altitude bintang adalah nol ($a = 0^\circ \implies \cos z = 0$). Dari aturan kosinus bola:
+
+$$0 = \sin \varphi \sin \delta + \cos \varphi \cos \delta \cos(HA_0) \implies \cos(HA_0) = -\tan \varphi \tan \delta$$
+
+dengan $HA_0$ adalah setengah durasi waktu bintang berada di atas horizon (*semidiurnal arc*).
+
+</Poin>
+
+## 6. Gerak semu tahunan Matahari dan panjang siang
+
+<Poin judul="6 · Ekliptika & variasi panjang siang">
+
+Bumi mengelilingi Matahari dengan kemiringan sumbu rotasi sebesar $\varepsilon \approx 23{,}44^\circ$ terhadap bidang orbit (ekliptika). Hal ini menyebabkan deklinasi Matahari bervariasi secara sinusoidal sepanjang tahun:
+- **Ekuinoks Musim Semi (21 Maret)**: $\alpha_\odot = 0^{\mathrm{h}}, \delta_\odot = 0^\circ$.
+- **Titik Balik Musim Panas (21 Juni)**: $\alpha_\odot = 6^{\mathrm{h}}, \delta_\odot = +23{,}44^\circ$ (siang terpanjang di belahan bumi utara).
+- **Ekuinoks Musim Gugur (23 September)**: $\alpha_\odot = 12^{\mathrm{h}}, \delta_\odot = 0^\circ$.
+- **Titik Balik Musim Dingin (22 Desember)**: $\alpha_\odot = 18^{\mathrm{h}}, \delta_\odot = -23{,}44^\circ$ (malam terpanjang di belahan bumi utara).
+
+Panjang siang hari ($D$) dihitung langsung dari sudut jam terbenam Matahari:
+
+$$D = \frac{2 \times HA_0}{15^\circ/\text{jam}}$$
+
+<Contoh judul="Soal Olimpiade Rantai: Waktu dan Azimuth Terbit Bintang Sirius">
+
+<Langkah>
+
+Bintang Sirius memiliki asensio rekta $\alpha = 6^{\mathrm{h}}45^{\mathrm{m}}$ dan deklinasi $\delta = -16^\circ 43'$. Seorang pengamat berada di Observatorium Bosscha, Lembang pada lintang geografis $\varphi = -6^\circ 49'$ (Lintang Selatan) dan bujur $\lambda = 107^\circ 37'\ \mathrm{BT}$.\
+(a) Tentukan sudut jam saat Sirius terbit ($HA_0$).\
+(b) Tentukan azimuth titik terbit bintang Sirius diukur dari Utara ke Timur.\
+(c) Jika pada suatu malam Titik Aries melintasi meridian pengamat ($LST = 0^{\mathrm{h}}00^{\mathrm{m}}$) tepat pada pukul 19.00 WIB, pada pukul berapa WIB bintang Sirius terbit?
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 (Kalkulasi Sudut Jam Terbit):**
+Konversi koordinat ke desimal: $\varphi = -6{,}817^\circ$, $\delta = -16{,}717^\circ$.
+Gunakan rumus busur semi-diurnal:
+$$\cos(HA_0) = -\tan \varphi \tan \delta = -\tan(-6{,}817^\circ) \tan(-16{,}717^\circ) = -( -0{,}1196 ) \times ( -0{,}3004 ) = -0{,}03593.$$
+$$HA_0 = \arccos(-0{,}03593) \approx 92{,}06^\circ.$$
+Ubah ke jam: $HA_0 = 92{,}06 / 15 \approx 6{,}137^{\mathrm{h}} = 6^{\mathrm{h}}08^{\mathrm{m}}$.
+Karena terbit terjadi di sebelah timur meridian pengamat, sudut jam saat terbit adalah $HA = -HA_0 = -6^{\mathrm{h}}08^{\mathrm{m}} = 17^{\mathrm{h}}52^{\mathrm{m}}$.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 (Azimuth Terbit):**
+Saat terbit ($a = 0^\circ$), aturan sinus segitiga bola memberikan:
+$$\cos A_{\text{terbit}} = \frac{\sin \delta}{\cos \varphi} = \frac{\sin(-16{,}717^\circ)}{\cos(-6{,}817^\circ)} = \frac{-0{,}2876}{0{,}9929} \approx -0{,}2897.$$
+$$A_0 = \arccos(-0{,}2897) \approx 106{,}8^\circ.$$
+Karena bintang terbit di ufuk timur, azimuth terbit adalah $A = 106{,}8^\circ$ (timur-menenggara).
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 (Waktu Terbit dalam WIB):**
+Waktu sideris lokal saat Sirius terbit:
+$$LST = \alpha + HA = 6^{\mathrm{h}}45^{\mathrm{m}} - 6^{\mathrm{h}}08^{\mathrm{m}} = 0^{\mathrm{h}}37^{\mathrm{m}}.$$
+Diketahui $LST = 0^{\mathrm{h}}00^{\mathrm{m}}$ terjadi pukul 19.00 WIB.
+Maka selisih waktu sideris adalah $\Delta t_{\text{sid}} = 0^{\mathrm{h}}37^{\mathrm{m}} = 37\ \text{menit}$.
+Konversi ke waktu matahari rata-rata: $37\ \text{menit sideris} \times (365{,}24 / 366{,}24) \approx 36{,}9\ \text{menit}$.
+Bintang Sirius terbit pada pukul $19.00 + 37\ \text{menit} \approx 19.37\ \text{WIB}$.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="a2-cek-1"
+  pertanyaan="Bagi pengamat yang berada tepat di ekuator Bumi (lintang 0 derajat), di manakah posisi Kutub Langit Utara (KLU) dan Kutub Langit Selatan (KLS)?"
+  opsi={[
+    'Tepat di horizon titik Utara dan titik Selatan',
+    'Tepat di zenith dan nadir',
+    'Masing-masing pada ketinggian 45 derajat di atas horizon',
+    'Kutub langit tidak dapat ditentukan bagi pengamat ekuator'
+  ]}
+  jawaban={0}
+  penjelasan="Ketinggian kutub langit sama dengan lintang pengamat: a = |phi|. Untuk lintang 0 derajat, altitude kutub langit adalah tepat 0 derajat (berimpit dengan titik kardinal Utara dan Selatan di horizon)."
+/>
+
+<CekPaham
+  id="a2-cek-2"
+  pertanyaan="Sebuah bintang memiliki deklinasi delta = +70 derajat. Bagi pengamat di kota London (lintang +51,5 derajat Lintang Utara), apakah bintang tersebut tergolong sirkumpolar?"
+  opsi={[
+    'Ya, sirkumpolar karena deklinasi lebih besar dari 90° − 51,5° = 38,5°',
+    'Tidak, karena deklinasinya tidak mencapai 90°',
+    'Tidak, bintang tersebut terbit dan terbenam setiap hari',
+    'Tidak dapat ditentukan tanpa mengetahui asensio rektanya'
+  ]}
+  jawaban={0}
+  penjelasan="Syarat bintang sirkumpolar di belahan bumi utara adalah delta >= 90° - phi. Di sini batasnya adalah 90° - 51,5° = 38,5°. Karena delta = +70° > 38,5°, bintang selalu berada di atas horizon (sirkumpolar)."
+/>
+
+<CekPaham
+  id="a2-cek-3"
+  pertanyaan="Kapan bintang mencapai altitude tertingginya (kulminasi atas) di langit lokal?"
+  opsi={[
+    'Saat sudut jam bintang bernilai tepat nol (HA = 0 jam atau LST = RA)',
+    'Saat sudut jam bernilai 6 jam',
+    'Saat bintang berada tepat di titik zenith untuk semua pengamat',
+    'Saat matahari terbenam di horizon barat'
+  ]}
+  jawaban={0}
+  penjelasan="Kulminasi atas terjadi ketika bintang melintasi meridian pengamat. Pada saat itu, sudut jam HA = 0 jam, yang berarti LST = alpha (Waktu Sideris Lokal sama dengan Asensio Rekta bintang)."
+/>
+
+<Refleksi
+  id="a2-refleksi-1"
+  pertanyaan="Mengapa bangunan observatorium optik profesional di belahan bumi utara dan selatan tidak dapat mengamati seluruh bola langit secara lengkap? Jelaskan zona langit buta (blind zone) yang dialami teleskop tetap berdasarkan lintang geografisnya."
+/>
+
+## 8. Konstanta penting astronomi bola
+
+<Konstanta
+  data={[
+    { simbol: 'ε (Kemiringan ekliptika)', nilai: '23,439', satuan: 'derajat' },
+    { simbol: '1 jam RA', nilai: '15', satuan: 'derajat busur' },
+    { simbol: '1 menit RA', nilai: '15', satuan: 'menit busur' },
+    { simbol: '1 detik RA', nilai: '15', satuan: 'detik busur' },
+    { simbol: '1 hari sideris', nilai: '23j 56m 04s', satuan: 'waktu matahari' },
+    { simbol: 'Jarak zenith z', nilai: '90° − a', satuan: 'derajat' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rumus-rumus kunci bab A2:
+1. $LST = \alpha + HA$
+2. $\sin a = \sin \varphi \sin \delta + \cos \varphi \cos \delta \cos(HA)$
+3. $a_{\text{kulminasi atas}} = 90^\circ - |\varphi - \delta|$
+4. $\cos(HA_0) = -\tan \varphi \tan \delta$
+5. $\cos A_{\text{terbit}} = \sin \delta / \cos \varphi$
+6. Syarat sirkumpolar: $|\delta| \ge 90^\circ - |\varphi|$
+
+</Catatan>

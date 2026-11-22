@@ -1,0 +1,188 @@
+<Tujuan>
+
+- Mengelompokkan galaksi menurut tipe Hubble dan menjelaskan arti urutannya.
+- Menyebutkan komponen struktur Bima Sakti beserta ukuran dan posisi Matahari.
+- Menghitung massa di dalam radius orbit dari kurva rotasi galaksi.
+- Menjelaskan bukti materi gelap dari kurva rotasi yang datar.
+- Mengenali fase-fase materi antarbintang dan peran debu pada pengamatan.
+
+</Tujuan>
+
+<Prasyarat babIds={['l1']} />
+
+<p className="lead">Setelah menimbang bintang satu per satu, kita memperbesar skala: miliaran bintang yang terikat gravitasi membentuk galaksi. Bab ini menyatukan fotometri dan spektroskopi dari bab sebelumnya untuk menimbang galaksi — dan menemukan bahwa sebagian besar massanya tidak terlihat.</p>
+
+## 1. Tipe galaksi
+
+<Poin judul="1 · Urutan Hubble" defaultOpen>
+
+Edwin Hubble menyusun galaksi ke dalam diagram yang menyerupai garpu tala:
+
+- **Elips (E0–E7)**: cahaya halus tanpa lengan; angka menunjukkan semakin pipih. Berisi bintang tua, sedikit gas.
+- **Lentikular (S0)**: cakram tanpa lengan spiral yang jelas.
+- **Spiral (Sa–Sc)** dan **spiral berpalang (SBa–SBc)**: cakram dengan lengan; a lebih rapat dan besar bulge-nya, c semakin terbuka.
+- **Tak beraturan (Irr)**: bentuk kacau, kaya gas, sering akibat interaksi.
+
+Penting: urutan Hubble **bukan** urutan evolusi. Galaksi tidak bergeser dari E ke Sc seiring waktu; klasifikasi ini hanya morfologi.
+
+<Catatan variasi="info">
+
+Bima Sakti tergolong spiral berpalang, sekitar SBbc: ada palang di pusat, lengan spiral sedang, dan bulge yang jelas. Matahari bukan di pusat, melainkan sekitar 8 kpc dari pusat galaksi.
+
+</Catatan>
+
+</Poin>
+
+## 2. Struktur Bima Sakti
+
+<Poin judul="2 · Cakram, bulge, dan halo">
+
+Komponen utama Bima Sakti:
+
+| Komponen | Isi | Ukuran khas |
+|---|---|---|
+| Bulge | bintang tua, padat | radius beberapa kpc |
+| Cakram tipis | gas, debu, bintang muda | tebal ~300 pc, diameter ~30 kpc |
+| Cakram tebal | bintang lebih tua | tebal ~1 kpc |
+| Halo | bintang tua miskin logam, gugus bola | radius puluhan kpc |
+
+Matahari berada di cakram, 8 kpc dari pusat, dan mengorbit pusat galaksi dengan kecepatan sekitar 220 km/s. Satu putaran penuh memerlukan waktu sekitar 225 juta tahun — satu "tahun galaksi".
+
+<Contoh judul="Satu putaran Matahari mengelilingi galaksi">
+
+<Langkah>
+
+Jari-jari orbit $r = 8\ \mathrm{kpc} = 8 \times 3{,}086 \times 10^{19}\ \mathrm{m} \approx 2{,}47 \times 10^{20}$ m.
+
+</Langkah>
+
+<Langkah>
+
+$T = \dfrac{2\pi r}{v} = \dfrac{2\pi \times 2{,}47 \times 10^{20}}{2{,}2 \times 10^{5}} \approx 7{,}1 \times 10^{15}$ s.
+
+</Langkah>
+
+<Langkah>
+
+Ubah ke tahun: $7{,}1 \times 10^{15}/(3{,}156 \times 10^{7}) \approx 2{,}2 \times 10^{8}$ tahun ≈ 220 juta tahun.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: Matahari sudah menyelesaikan sekitar 20 putaran sejak terbentuk. Angka ini juga dipakai untuk memperkirakan umur pola lengan spiral.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 3. Kurva rotasi dan materi gelap
+
+<Poin judul="3 · Massa dari kecepatan orbit">
+
+Untuk orbit lingkaran, kecepatan memenuhi
+
+$$v(r) = \sqrt{\frac{GM(<r)}{r}},$$
+
+dengan $M(<r)$ massa di dalam radius $r$. Artinya, bila kita mengukur $v(r)$ dari pergeseran Doppler gas, kita bisa menimbang galaksi:
+
+$$M(<r) = \frac{v^{2} r}{G}.$$
+
+Jika seluruh massa terkonsentrasi di pusat (seperti Tata Surya), $v$ menurun seiring $r$. Yang teramati pada galaksi spiral justru **kurva datar**: $v$ hampir konstan sampai radius jauh di luar cahaya tampak. Dengan $v$ konstan, $M(<r) \propto r$ — massa terus bertambah padahal tidak ada cahaya yang sepadan.
+
+<Gambar id="kurva-rotasi" />
+
+<Contoh judul="Massa di dalam orbit Matahari">
+
+<Langkah>
+
+$v = 220\ \mathrm{km/s} = 2{,}2 \times 10^{5}$ m/s dan $r = 2{,}47 \times 10^{20}$ m.
+
+</Langkah>
+
+<Langkah>
+
+$M = v^{2}r/G = (2{,}2 \times 10^{5})^{2} \times 2{,}47 \times 10^{20}/(6{,}67 \times 10^{-11})$.
+
+</Langkah>
+
+<Langkah>
+
+$v^{2} = 4{,}84 \times 10^{10}$; perkalian dengan $r$ memberi $1{,}20 \times 10^{31}$; dibagi $G$ menghasilkan $1{,}79 \times 10^{41}$ kg.
+
+</Langkah>
+
+<Langkah>
+
+$1{,}79 \times 10^{41}/1{,}989 \times 10^{30} \approx 9 \times 10^{10}\ M_\odot$. Bandingkan dengan massa bintang yang tampak, sekitar $6 \times 10^{10}\ M_\odot$ — sisanya materi gelap.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="awas">
+
+Kurva datar tidak berarti materi gelap berbentuk cakram seperti bintang. Halo materi gelap diperkirakan berbentuk spheroid besar dan hampir tidak berinteraksi dengan cahaya, sehingga tidak terlihat pada pita apa pun yang biasa dipakai.
+
+</Catatan>
+
+</Poin>
+
+## 4. Materi antarbintang
+
+<Poin judul="4 · Gas, debu, dan formasi bintang">
+
+Ruang antarbintang bukan hampa. Materi antarbintang (ISM) hadir dalam beberapa fase:
+
+- **Awan molekul** dingin (~10–20 K), padat, tempat bintang lahir; terlihat lewat emisi CO.
+- **Hidrogen netral (H I)** ~100 K; memancarkan garis 21 cm yang menembus debu dan menjadi alat pemetaan kurva rotasi.
+- **Daerah H II** (~10⁴ K), gas terionisasi di sekitar bintang panas; tampak sebagai nebula emisi merah.
+- **Gas koronal** sangat panas dan renggang di halo.
+
+Debu menyerap dan menghamburkan cahaya biru lebih kuat daripada merah, sehingga bintang tampak lebih merah dan redup daripada seharusnya. Inilah ekstingsi $A_V$ yang sudah dipakai di A5 — dan alasan astronom mengamati di inframerah untuk menembus awan.
+
+</Poin>
+
+## 5. Cek pemahaman
+
+<CekPaham
+  id="l4-cek-1"
+  pertanyaan="Kurva rotasi sebuah galaksi datar dengan v konstan. Bagaimana massa di dalam radius r berubah terhadap r?"
+  opsi={['M ∝ r', 'M ∝ r²', 'M konstan', 'M ∝ 1/r']}
+  jawaban={0}
+  penjelasan="M(<r) = v²r/G. Dengan v konstan, massa sebanding dengan r. Massa bertambah terus tanpa cahaya yang sepadan — bukti materi gelap."
+/>
+
+<CekPaham
+  id="l4-cek-2"
+  pertanyaan="Bima Sakti paling tepat digolongkan sebagai galaksi..."
+  opsi={['Elips raksasa', 'Spiral berpalang', 'Lentikular', 'Tak beraturan']}
+  jawaban={1}
+  penjelasan="Bima Sakti memiliki cakram dengan lengan spiral dan palang di pusat, sehingga tergolong spiral berpalang (sekitar SBbc)."
+/>
+
+<Refleksi
+  id="l4-refleksi-1"
+  pertanyaan="Materi gelap tidak memancarkan cahaya. Bagaimana astronom bisa menyimpulkan keberadaannya hanya dari gerak gas dan bintang?"
+/>
+
+## 6. Nilai yang sering dipakai
+
+<Konstanta
+  data={[
+    { simbol: 'R☉ (galaktosentris)', nilai: '8,0', satuan: 'kpc' },
+    { simbol: 'v☉', nilai: '220', satuan: 'km/s' },
+    { simbol: '1 pc', nilai: '3,086 × 10¹⁶', satuan: 'm' },
+    { simbol: 'G', nilai: '6,674 × 10⁻¹¹', satuan: 'm³ kg⁻¹ s⁻²' },
+    { simbol: 'M☉', nilai: '1,989 × 10³⁰', satuan: 'kg' },
+    { simbol: 'Diameter cakram', nilai: '~30', satuan: 'kpc' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Bab L5 akan memakai galaksi sebagai titik uji Hukum Hubble dan redshift. Keterampilan inti dari L4: membaca morfologi, menghitung $M(<r) = v^{2}r/G$, dan mengenali tanda materi gelap pada kurva rotasi.
+
+</Catatan>

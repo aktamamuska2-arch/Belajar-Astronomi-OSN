@@ -1,0 +1,186 @@
+<Tujuan>
+
+- Menentukan massa total dan rasio massa bintang ganda dari orbitnya.
+- Membedakan bintang ganda visual, spektroskopik, dan gerhana.
+- Membaca kurva cahaya bintang gerhana dan menafsirkan kedalaman minimumnya.
+- Menjelaskan perbedaan gugus terbuka dan gugus bola serta cara menentukan umurnya.
+- Menjelaskan metode deteksi eksoplanet dan besaran yang diberikan masing-masing.
+
+</Tujuan>
+
+<Prasyarat babIds={['a4', 'l1']} />
+
+<p className="lead">Hampir semua yang kita ketahui tentang massa bintang berasal dari bintang ganda: gravitasi Kepler memberi massa, spektroskopi memberi kecepatan, dan gerhana memberi ukuran. Bab ini menyatukan A4 dan L1, lalu membawa alat yang sama ke gugus bintang dan eksoplanet.</p>
+
+## 1. Bintang ganda dan penentuan massa
+
+<Poin judul="1 · Kepler untuk dua bintang" defaultOpen>
+
+Dua bintang mengorbit pusat massa bersama. Hukum Kepler III yang sudah dipakai di A4 berlaku dengan massa total:
+
+$$\frac{a^{3}}{P^{2}} = M_1 + M_2,$$
+
+dengan $a$ dalam AU, $P$ dalam tahun, dan massa dalam $M_\odot$. Rasio massa diperoleh dari posisi relatif terhadap pusat massa:
+
+$$M_1 a_1 = M_2 a_2, \qquad \frac{M_1}{M_2} = \frac{a_2}{a_1} = \frac{v_2}{v_1}.$$
+
+Bintang yang lebih masif bergerak lebih lambat dan orbitnya lebih kecil.
+
+<Contoh judul="Menimbang bintang ganda">
+
+<Langkah>
+
+Sebuah bintang ganda memiliki $a = 10$ AU dan $P = 10$ tahun.
+
+</Langkah>
+
+<Langkah>
+
+$M_1 + M_2 = a^{3}/P^{2} = 1\,000/100 = 10\ M_\odot$.
+
+</Langkah>
+
+<Langkah>
+
+Pusat massa berjarak $a_1 = 2$ AU dari bintang 1 dan $a_2 = 8$ AU dari bintang 2, sehingga $M_1/M_2 = 8/2 = 4$.
+
+</Langkah>
+
+<Langkah>
+
+Dengan $M_1 + M_2 = 10$ dan $M_1 = 4M_2$: $5M_2 = 10$, jadi $M_2 = 2\ M_\odot$ dan $M_1 = 8\ M_\odot$.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="tips">
+
+Untuk bintang ganda visual, sudut pisah harus dikonversi ke AU memakai jarak, sedangkan periode diukur langsung dalam tahun. Tanpa jarak, hanya rasio massa yang bisa ditentukan dari gerak relatif.
+
+</Catatan>
+
+</Poin>
+
+## 2. Jenis bintang ganda
+
+<Poin judul="2 · Visual, spektroskopik, gerhana">
+
+- **Visual**: terpisah di teleskop; orbitnya bisa digambar, tetapi butuh puluhan tahun dan jarak diketahui.
+- **Spektroskopik**: garis bergeser periodik. Pada SB2 (double-lined), dua set garis terlihat dan rasio kecepatan langsung memberi rasio massa. Pada SB1 hanya satu set garis, sehingga yang terukur $M \sin i$ dan inklinasi tak diketahui.
+- **Gerhana (eclipsing)**: orbit hampir tepat sejajar garis pandang, sehingga bintang saling menutupi. Kurva cahayanya memberi periode, radius relatif, dan kemiringan orbit.
+- **Astrometrik**: goyangan posisi bintang terang mengungkap pasangan yang redup.
+
+Kombinasi gerhana + SB2 adalah cara terbaik mendapatkan massa, radius, dan luminositas secara lengkap — dasar kalibrasi hubungan massa–luminositas.
+
+<Gambar id="kurva-gerhana" />
+
+<Interaktif jenis="orbit" />
+
+</Poin>
+
+## 3. Gugus bintang
+
+<Poin judul="3 · Terbuka dan bola">
+
+Gugus bintang adalah kumpulan bintang yang lahir hampir bersamaan dari awan yang sama:
+
+| Ciri | Gugus terbuka | Gugus bola |
+|---|---|---|
+| Jumlah bintang | puluhan–ribuan | 10⁴–10⁶ |
+| Umur | muda (juta tahun) | tua (miliar tahun) |
+| Lokasi | cakram galaksi | halo galaksi |
+| Logam | relatif kaya | miskin |
+| Bentuk | longgar | padat dan simetris |
+
+Karena semua anggotanya seumur dan sekomposisi, posisi turnoff pada diagram warna–magnitudo langsung memberi umur (lihat L1). Gugus bola yang turnoff-nya di bintang mirip Matahari berumur sekitar 10 miliar tahun atau lebih.
+
+</Poin>
+
+## 4. Eksoplanet
+
+<Poin judul="4 · Bagaimana planet ditemukan">
+
+Metode utama:
+
+- **Kecepatan radial**: planet menarik bintangnya sehingga garis bergeser periodik. Memberi periode dan batas bawah massa $m \sin i$.
+- **Transit**: planet melintas di depan bintang dan meredupkan cahaya. Kedalaman transit:
+
+$$\delta = \left(\frac{R_p}{R_*}\right)^{2}.$$
+
+Transit memberi jari-jari planet, periode, dan kemiringan orbit. Kombinasi transit + kecepatan radial memberi massa sekaligus radius, sehingga densitas planet bisa dihitung.
+
+- **Mikrolensing**: gravitasi planet membelokkan cahaya bintang latar; cocok untuk planet jauh.
+- **Pencitraan langsung**: sulit karena bintang jauh lebih terang daripada planetnya.
+
+<Contoh judul="Kedalaman transit Jupiter">
+
+<Langkah>
+
+Jupiter memiliki radius sekitar $0{,}1\ R_\odot$ dan Matahari $R_* = R_\odot$.
+
+</Langkah>
+
+<Langkah>
+
+$\delta = (0{,}1)^{2} = 0{,}01$, yaitu 1% atau 10.000 ppm.
+
+</Langkah>
+
+<Langkah>
+
+Transit planet seukuran Bumi pada bintang seukuran Matahari hanya sekitar $(1/109)^{2} \approx 8 \times 10^{-5}$, atau kurang dari 100 ppm — tantangan besar bagi fotometri.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="awas">
+
+Transit hanya teramati bila bidang orbit hampir sejajar garis pandang. Karena itu sebagian besar planet tidak transit bagi pengamat Bumi, dan penemuan transit tidak boleh ditafsirkan sebagai kelimpahan planet yang sebenarnya.
+
+</Catatan>
+
+</Poin>
+
+## 5. Cek pemahaman
+
+<CekPaham
+  id="l3-cek-1"
+  pertanyaan="Bintang ganda dengan a = 1 AU dan P = 1 tahun memiliki massa total..."
+  opsi={['1 M☉', '2 M☉', '0,5 M☉', '4 M☉']}
+  jawaban={0}
+  penjelasan="M₁+M₂ = a³/P² = 1/1 = 1 M☉. Nilai ini sama dengan kasus Matahari–Bumi jika Bumi bermassa seperti bintang."
+/>
+
+<CekPaham
+  id="l3-cek-2"
+  pertanyaan="Jika radius planet 0,1 kali radius bintangnya, berapa kedalaman transitnya?"
+  opsi={['10%', '1%', '0,1%', '0,01%']}
+  jawaban={1}
+  penjelasan="δ = (Rp/R*)² = 0,1² = 0,01 = 1%. Kedalaman bergantung pada kuadrat rasio radius."
+/>
+
+<Refleksi
+  id="l3-refleksi-1"
+  pertanyaan="Mengapa bintang ganda gerhana yang sekaligus spektroskopik ganda sangat berharga untuk astrofisika bintang?"
+/>
+
+## 6. Nilai yang sering dipakai
+
+<Konstanta
+  data={[
+    { simbol: 'Kepler III', nilai: 'a³/P² = M₁+M₂', satuan: 'AU, tahun, M☉' },
+    { simbol: 'Kedalaman transit', nilai: 'δ = (Rp/R*)²', satuan: '—' },
+    { simbol: 'R☉', nilai: '6,96 × 10⁸', satuan: 'm' },
+    { simbol: 'R_Jupiter', nilai: '0,1005', satuan: 'R☉' },
+    { simbol: 'R_Bumi', nilai: '0,00916', satuan: 'R☉' },
+    { simbol: '1 tahun', nilai: '365,25', satuan: 'hari' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Eksoplanet yang dipelajari di sini akan kembali di L6 sebagai latihan kurva cahaya dan best fit. Keterampilan inti L3: $a^{3}/P^{2} = M_1+M_2$, rasio massa dari pusat massa, dan $\delta = (R_p/R_*)^{2}$.
+
+</Catatan>

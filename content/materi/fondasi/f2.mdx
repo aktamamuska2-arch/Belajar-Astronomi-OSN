@@ -1,0 +1,247 @@
+<Tujuan>
+
+- Menerjemahkan sudut antara derajat dan radian, lalu memakai panjang busur $s = R\theta$.
+- Memakai aturan sinus dan kosinus pada segitiga yang tidak siku-siku.
+- Menguraikan vektor menjadi komponen, menjumlahkannya, dan memakai perkalian titik.
+- Memakai aproksimasi sudut kecil untuk ukuran sudut, paralaks, dan pemisahan benda langit.
+
+</Tujuan>
+
+<Prasyarat babIds={['f1']} />
+
+<p className="lead">Hampir setiap perhitungan astronomi berakhir di segitiga: dua bintang dan Bumi, satelit dan pusat Bumi, arah gerak dan garis pandang. Bab ini menyiapkan tiga perkakas yang akan dipakai terus — trigonometri segitiga, vektor, dan izin "untuk sudut kecil, sudut sama dengan busur dibagi jarak".</p>
+
+## 1. Sinus, kosinus, dan lingkaran satuan
+
+<Poin judul="1 · Sinus, kosinus, dan lingkaran satuan" defaultOpen>
+
+Satu putaran penuh adalah $360^\circ$ atau $2\pi$ radian, sehingga
+
+$$1\ \mathrm{rad} = \frac{180^\circ}{\pi} \approx 57{,}3^\circ, \qquad 1^\circ = \frac{\pi}{180}\ \mathrm{rad} \approx 0{,}017453\ \mathrm{rad}.$$
+
+Radian bukan satuan tambahan yang aneh: ia didefinisikan sebagai **panjang busur dibagi jari-jari**. Karena itu panjang busur lingkaran berjari-jari $R$ yang ditempuh sudut $\theta$ (dalam radian) adalah
+
+$$s = R\theta.$$
+
+Di lingkaran satuan ($R = 1$), titik pada sudut $\theta$ memiliki koordinat $(\cos\theta,\ \sin\theta)$. Dari situ semua identitas dasar muncul: $\tan\theta = \sin\theta/\cos\theta$, $\sin^2\theta + \cos^2\theta = 1$, dan nilai-nilai istimewa berikut.
+
+| $\theta$ | $0^\circ$ | $30^\circ$ | $45^\circ$ | $60^\circ$ | $90^\circ$ |
+|---|---|---|---|---|---|
+| $\sin\theta$ | $0$ | $1/2$ | $\sqrt{2}/2$ | $\sqrt{3}/2$ | $1$ |
+| $\cos\theta$ | $1$ | $\sqrt{3}/2$ | $\sqrt{2}/2$ | $1/2$ | $0$ |
+
+<Catatan variasi="tips">
+
+Selalu periksa apakah kalkulatormu dalam derajat atau radian. Kesalahan mode kalkulator adalah penyebab kehilangan poin paling umum di soal sudut — dan paling mudah dihindari.
+
+</Catatan>
+
+<Contoh judul="Panjang busur 1 derajat di ekuator Bumi">
+
+<Langkah>
+
+Jari-jari Bumi $R = 6\,371\ \mathrm{km}$. Ubah sudut ke radian: $1^\circ = 0{,}017453\ \mathrm{rad}$.
+
+</Langkah>
+
+<Langkah>
+
+Pakai $s = R\theta$: $s = 6\,371 \times 0{,}017453 \approx 111{,}2\ \mathrm{km}$.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: satu derajat lintang di permukaan Bumi kira-kira 111 km — angka yang berguna untuk menaksir jarak kota atau ukuran negara dari peta.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Aturan sinus dan kosinus
+
+<Poin judul="2 · Aturan sinus & kosinus">
+
+Segitiga astronomi jarang siku-siku. Untuk segitiga dengan sisi $a, b, c$ dan sudut $A, B, C$ yang berhadapan dengan sisi yang sama hurufnya:
+
+$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$
+
+dan
+
+$$c^{2} = a^{2} + b^{2} - 2ab\cos C.$$
+
+Aturan sinus berguna ketika kamu tahu satu pasangan sisi–sudut; aturan kosinus ketika kamu tahu dua sisi dan sudut apitnya, atau ketiga sisinya. Untuk bola langit, aturan kosinus versi bola nanti muncul di astronomi bola, tetapi bentuk datarnya sudah cukup untuk pemisahan kecil dan segitiga posisi.
+
+Satu bentuk yang sering tersembunyi: tali busur antara dua titik pada lingkaran berjari-jari $R$ yang berjarak sudut $\theta$ adalah
+
+$$\mathrm{tali\ busur} = 2R\sin\frac{\theta}{2}.$$
+
+Untuk sudut kecil, ini kembali menjadi $R\theta$ — konsisten dengan $s = R\theta$.
+
+<Contoh judul="Jarak dua satelit dari sudut pandang pusat Bumi">
+
+<Langkah>
+
+Satelit A berjarak $5\,000\ \mathrm{km}$ dan B $7\,000\ \mathrm{km}$ dari pusat Bumi. Sudut antara keduanya, dilihat dari pusat Bumi, $60^\circ$.
+
+</Langkah>
+
+<Langkah>
+
+Gunakan aturan kosinus dengan $C = 60^\circ$: $d^{2} = 5^{2} + 7^{2} - 2(5)(7)\cos 60^\circ$.
+
+</Langkah>
+
+<Langkah>
+
+$\cos 60^\circ = 0{,}5$, sehingga $d^{2} = 25 + 49 - 35 = 39$ (dalam ribuan km$^2$).
+
+</Langkah>
+
+<Langkah>
+
+$d = \sqrt{39} \approx 6{,}2$ ribu km. Perhatikan bahwa hasilnya lebih kecil dari $5 + 7 = 12$ ribu km — sudut apit memperpendek jarak, bukan menjumlahkannya.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 3. Vektor dan komponen
+
+<Poin judul="3 · Vektor & komponen">
+
+Besaran vektor punya besar dan arah. Yang paling sering dipakai di astronomi adalah menguraikan vektor menjadi dua komponen tegak lurus. Untuk vektor $\vec{v}$ dengan besar $v$ yang membentuk sudut $\theta$ terhadap sumbu acuan:
+
+$$v_{x} = v\cos\theta, \qquad v_{y} = v\sin\theta.$$
+
+Menguraikan bukan sekadar trik hitung: dalam astrofisika, arah acuan biasanya **garis pandang pengamat**. Komponen sepanjang garis pandang (radial) menggeser garis spektrum lewat efek Doppler, sedangkan komponen tegak lurusnya (tangensial) mengubah posisi bintang di langit. Keduanya diukur dengan cara berbeda dan memberi informasi berbeda.
+
+Penjumlahan vektor bisa lewat komponen: jumlahkan $x$ dengan $x$, $y$ dengan $y$, lalu hitung besar resultan dengan Pythagoras. Perkalian titik mengukur "seberapa searah" dua vektor:
+
+$$\vec{A}\cdot\vec{B} = AB\cos\theta.$$
+
+Hasilnya nol bila tegak lurus, positif bila searah, dan negatif bila berlawanan arah.
+
+<Contoh judul="Kecepatan radial dan tangensial sebuah bintang">
+
+<Langkah>
+
+Sebuah bintang bergerak $50\ \mathrm{km/s}$ dengan arah $60^\circ$ terhadap garis pandang.
+
+</Langkah>
+
+<Langkah>
+
+Komponen radial: $v_{r} = 50\cos 60^\circ = 25\ \mathrm{km/s}$.
+
+</Langkah>
+
+<Langkah>
+
+Komponen tangensial: $v_{t} = 50\sin 60^\circ = 50 \times 0{,}866 \approx 43{,}3\ \mathrm{km/s}$.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: hanya $25\ \mathrm{km/s}$ yang terlihat sebagai pergeseran Doppler; sisanya membuat bintang berpindah posisi di langit. Kecepatan total tidak bisa disimpulkan dari spektrum saja tanpa informasi tambahan.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 4. Sudut kecil: izin yang menyederhanakan
+
+<Poin judul="4 · Sudut kecil & aproksimasi">
+
+Untuk sudut yang jauh lebih kecil dari 1 radian, panjang busur, tali busur, dan garis singgung hampir sama panjang:
+
+$$\sin\theta \approx \tan\theta \approx \theta \qquad (\theta\ \mathrm{dalam\ radian}).$$
+
+Akibatnya, ukuran sudut sebuah objek berukuran linier $s$ pada jarak $d$ adalah
+
+$$\theta \approx \frac{s}{d}.$$
+
+Aplikasi astronomi yang paling penting: paralaks. Bintang berjarak $d$ parsek tampak bergeser sebesar
+
+$$p = \frac{1}{d}\ \mathrm{detik\ busur}$$
+
+akibat gerak Bumi mengelilingi Matahari. Definisi ini bekerja karena 1 AU pada jarak 1 pc membentuk sudut 1 detik busur — tepat definisi parsek di bab F1.
+
+<Catatan variasi="awas">
+
+Aproksimasi ini punya batas. Pada $10^\circ$, $\sin\theta$ berbeda sekitar 0,5% dari $\theta$, sedangkan $\tan\theta$ berbeda sekitar 1%. Di atas sekitar $20^\circ$ kesalahannya sudah terlalu besar untuk soal presisi. Selalu tulis asumsinya: "gunakan pendekatan sudut kecil" adalah bagian dari jawaban yang baik.
+
+</Catatan>
+
+<Contoh judul="Paralaks bintang berjarak 5 parsek">
+
+<Langkah>
+
+Gunakan $p = 1/d$ dengan $d$ dalam parsek: $p = 1/5 = 0{,}2$ detik busur.
+
+</Langkah>
+
+<Langkah>
+
+Periksa dengan definisi: 1 AU pada 5 pc tampak $1/5$ kali sudut 1 AU pada 1 pc, yaitu $0{,}2''$.
+
+</Langkah>
+
+<Langkah>
+
+Sudut $0{,}2''$ sangat kecil — sekitar 1/18.000 diameter Bulan. Inilah alasan paralaks bintang baru terukur dengan teleskop presisi tinggi.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 5. Cek pemahaman
+
+<CekPaham
+  id="f2-cek-1"
+  pertanyaan="Dua vektor sebesar 6 dan 8 saling tegak lurus. Berapa besar resultannya?"
+  opsi={['14', '10', '2', '7']}
+  jawaban={1}
+  penjelasan="Karena tegak lurus, gunakan Pythagoras: √(6² + 8²) = √100 = 10. Resultan tidak pernah melebihi jumlah besar kedua vektor, dan di sini justru lebih kecil."
+/>
+
+<CekPaham
+  id="f2-cek-2"
+  pertanyaan="Satu radian kira-kira sama dengan berapa derajat?"
+  opsi={['45°', '57,3°', '60°', '90°']}
+  jawaban={1}
+  penjelasan="1 rad = 180/π ≈ 57,3°. Karena itu sudut kecil dalam radian dan sinusnya hampir sama besar."
+/>
+
+<Refleksi
+  id="f2-refleksi-1"
+  pertanyaan="Mengapa astronom memisahkan kecepatan bintang menjadi komponen radial dan tangensial, padahal keduanya berasal dari satu gerak yang sama? Menurutmu, alat ukur apa yang dipakai untuk masing-masing komponen?"
+/>
+
+## 6. Konstanta dan nilai yang sering muncul
+
+<Konstanta
+  data={[
+    { simbol: 'π', nilai: '3,14159', satuan: '—' },
+    { simbol: '1 radian', nilai: '57,2958', satuan: 'derajat' },
+    { simbol: '1 radian', nilai: '206.265', satuan: 'detik busur' },
+    { simbol: '1°', nilai: '0,017453', satuan: 'radian' },
+    { simbol: '1°', nilai: '3.600', satuan: 'detik busur' },
+    { simbol: 'R Bumi', nilai: '6.371', satuan: 'km' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Aturan sinus dan kosinus akan muncul lagi saat menghitung panjang siang, sudut jam, dan pemisahan bintang. Simpan bentuknya, bukan hanya cara memasukkannya ke kalkulator.
+
+</Catatan>

@@ -1,0 +1,421 @@
+[
+  {
+    "id": "f4-01",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah benda dijatuhkan dari ketinggian 20 m tanpa kecepatan awal. Abaikan hambatan udara. Berapa lama waktu yang dibutuhkan untuk mencapai tanah?",
+    "opsi": [
+      "2,0 s",
+      "4,0 s",
+      "1,0 s",
+      "6,3 s"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan s = ½at² dengan a = g = 9,8 m/s² dan v₀ = 0.",
+      "20 = 4,9t², sehingga t² = 20/4,9 ≈ 4,08.",
+      "t ≈ 2,0 s.",
+      "Periksa dengan kecepatan akhir: v = gt = 9,8 × 2,0 = 19,6 m/s, dan v² = 2gh = 2 × 9,8 × 20 = 392, sehingga v ≈ 19,8 m/s. Konsisten."
+    ]
+  },
+  {
+    "id": "f4-02",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Satelit mengorbit Bumi pada radius 2R dari pusat Bumi (R adalah jari-jari Bumi). Jika kelajuan orbit rendah di permukaan adalah 7,9 km/s, berapa kelajuan satelit itu?",
+    "opsi": [
+      "5,6 km/s",
+      "7,9 km/s",
+      "11,2 km/s",
+      "3,9 km/s"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Kelajuan orbit lingkaran v = √(GM/r). Jadi v berbanding terbalik dengan akar radius.",
+      "v(2R)/v(R) = √(R/2R) = 1/√2 ≈ 0,707.",
+      "0,707 × 7,9 ≈ 5,6 km/s.",
+      "Periksa kewajaran: orbit lebih tinggi berarti lebih lambat, tetapi tidak separuh — kelajuannya turun dengan akar radius, bukan radiusnya."
+    ]
+  },
+  {
+    "id": "f4-03",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Berapa jarak satelit geostasioner dari pusat Bumi? Gunakan periode satu hari sideris dan GM = 3,98 × 10¹⁴ m³/s².",
+    "opsi": [
+      "42.200 km",
+      "35.800 km",
+      "6.371 km",
+      "384.400 km"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Kepler lingkaran: T² = 4π²r³/(GM), sehingga r³ = GMT²/(4π²).",
+      "T = 86.164 s dan GM = 3,98 × 10¹⁴ m³/s² memberi r³ ≈ 7,49 × 10²² m³.",
+      "r ≈ 4,22 × 10⁷ m = 42.200 km dari pusat Bumi.",
+      "35.800 km adalah ketinggian di atas permukaan (42.200 − 6.371), bukan jarak dari pusat. Keduanya sering tertukar dalam soal."
+    ]
+  },
+  {
+    "id": "f4-04",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Satelit B mengorbit Bumi pada radius 4 kali radius orbit satelit A. Bagaimana perbandingan kecepatan orbit keduanya?",
+    "opsi": [
+      "B bergerak dua kali lebih lambat daripada A",
+      "B bergerak dua kali lebih cepat daripada A",
+      "B bergerak empat kali lebih lambat daripada A",
+      "Kecepatan keduanya sama karena massa satelit tidak berpengaruh"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Dari GMm/r² = mv²/r diperoleh v = √(GM/r), jadi v ∝ r^(−1/2).",
+      "v_B/v_A = √(r_A/r_B) = √(1/4) = 1/2.",
+      "Satelit B bergerak setengah kecepatan A, yaitu dua kali lebih lambat.",
+      "Tafsir energi: satelit B punya energi potensial yang lebih tinggi (kurang negatif) dan energi kinetik yang lebih kecil; total energinya tetap negatif dan lebih besar, sesuai orbit yang lebih longgar."
+    ]
+  },
+  {
+    "id": "f4-05",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang satelit dalam orbit lingkaran.",
+    "opsi": [
+      "Gaya gravitasi Bumi berperan sebagai gaya sentripetal",
+      "Kelajuan orbit tidak bergantung pada massa satelit",
+      "Semakin besar radius orbit, semakin besar periodenya",
+      "Satelit geostasioner harus berada tepat di atas kutub Bumi",
+      "Di orbit, satelit tidak mengalami gaya gravitasi"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Satu-satunya gaya pada satelit adalah gravitasi, dan gaya itu menuju pusat orbit — tepat peran gaya sentripetal.",
+      "Massa satelit muncul di kedua ruas persamaan GMm/r² = mv²/r dan saling menghilang, sehingga kelajuan orbit hanya bergantung pada GM dan radius.",
+      "Hukum Kepler ketiga T² ∝ r³: radius lebih besar berarti periode lebih panjang.",
+      "Satelit geostasioner harus berada di bidang ekuator, bukan di atas kutub, agar tetap di atas titik yang sama.",
+      "Gravitasi tetap bekerja di orbit — justru itulah yang menahan satelit tetap melingkar. Yang hilang adalah sensasi berat, bukan gravitasinya."
+    ]
+  },
+  {
+    "id": "f4-06",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Untuk satelit bermassa m pada orbit lingkaran berjari-jari r, pilih semua pernyataan energi yang benar (acuan energi potensial nol di tak hingga).",
+    "opsi": [
+      "Energi potensialnya −GMm/r",
+      "Energi kinetiknya GMm/(2r)",
+      "Energi mekanik totalnya −GMm/(2r)",
+      "Energi mekanik totalnya positif sehingga satelit bebas"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Energi potensial gravitasi dengan acuan tak hingga selalu negatif: Ep = −GMm/r.",
+      "Dari mv²/r = GMm/r² diperoleh v² = GM/r, sehingga Ek = ½mv² = GMm/(2r).",
+      "Jumlahkan: E = GMm/(2r) − GMm/r = −GMm/(2r). Nilainya negatif, tanda bahwa sistem terikat.",
+      "Energi mekanik positif berarti satelit punya cukup energi untuk lepas ke tak hingga — itu bukan kasus orbit lingkaran."
+    ]
+  },
+  {
+    "id": "f4-07",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Hitung kelajuan lepas dari permukaan Mars. Massa Mars 6,42 × 10²³ kg dan jari-jarinya 3,39 × 10⁶ m. Gunakan G = 6,674 × 10⁻¹¹ N·m²/kg².",
+    "jawaban": 5.03,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Kelajuan lepas: v = √(2GM/R).",
+      "2GM/R = 2 × 6,674 × 10⁻¹¹ × 6,42 × 10²³ / (3,39 × 10⁶) ≈ 2,53 × 10⁷ m²/s².",
+      "v = √(2,53 × 10⁷) ≈ 5,03 × 10³ m/s.",
+      "Jadi sekitar 5,0 km/s, kurang dari separuh kelajuan lepas Bumi — alasan misi ke Mars lebih mudah lepas dari permukaan Mars daripada kembali ke Bumi."
+    ]
+  },
+  {
+    "id": "f4-08",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Satelit orbit rendah bergerak 7,9 km/s pada radius orbit 6.371 km dari pusat Bumi. Berapa percepatan sentripetalnya, dalam m/s²?",
+    "jawaban": 9.8,
+    "toleransiRel": 0.03,
+    "satuan": "m/s²",
+    "pembahasan": [
+      "Percepatan sentripetal a = v²/r.",
+      "Ubah satuan: v = 7,9 × 10³ m/s dan r = 6,371 × 10⁶ m.",
+      "a = (7,9 × 10³)² / (6,371 × 10⁶) ≈ 6,24 × 10⁷ / 6,371 × 10⁶ ≈ 9,8 m/s².",
+      "Hasilnya sama dengan g di permukaan — masuk akal, karena pada orbit rendah gravitasi Bumi belum banyak melemah."
+    ]
+  },
+  {
+    "id": "f4-09",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Satelit di orbit rendah (radius 6.371 km dari pusat Bumi) memiliki periode sekitar 84 menit. Berapa periode satelit lain yang mengorbit pada radius 4 kali lipat, dalam jam?",
+    "jawaban": 11.3,
+    "toleransiRel": 0.03,
+    "satuan": "jam",
+    "pembahasan": [
+      "Hukum Kepler ketiga: T² ∝ r³, sehingga T ∝ r^(3/2).",
+      "Jika radius menjadi 4 kali, periode menjadi 4^(3/2) = 8 kali periode semula.",
+      "8 × 84 menit = 672 menit.",
+      "672 menit = 11,2 jam, dibulatkan 11,3 jam bila memakai periode 84,5 menit. Periksa kewajaran: orbit yang jauh lebih tinggi memang jauh lebih lambat, tetapi tidak berbanding lurus dengan radius."
+    ]
+  },
+  {
+    "id": "f4-10",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Mengapa satelit dalam orbit lingkaran tidak jatuh ke Bumi? Turunkan perkiraan kelajuan orbit rendah dari hukum gravitasi dan jelaskan mengapa satelit pada orbit lebih tinggi bergerak lebih lambat.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan bahwa satelit sebenarnya terus jatuh bebas, tetapi kecepatan tangensialnya membuat permukaan Bumi melengkung menjauh dengan laju yang sama.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menurunkan v = √(GM/r) dengan menyamakan GMm/r² dengan mv²/r, dan menyebut massa satelit saling menghilang.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung perkiraan angka, misalnya v ≈ 7,9 km/s memakai g = 9,8 m/s² dan R = 6.371 km.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menjelaskan v ∝ 1/√r memakai energi atau gaya: radius lebih besar berarti gravitasi lebih lemah dan energi potensial lebih tinggi, sehingga kelajuan orbit lebih kecil.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Satelit tetap jatuh, tetapi ia juga bergerak mendatar sangat cepat. Setiap detik jatuhnya dibelokkan oleh gravitasi, sementara permukaan Bumi melengkung ke bawah dengan laju yang sama, sehingga jarak ke permukaan tidak berkurang. Inilah orbit: jatuh bebas yang terus-menerus meleset dari Bumi. Untuk orbit lingkaran, gravitasi menjadi gaya sentripetal: GMm/r² = mv²/r. Massa satelit saling menghilang, sehingga v = √(GM/r). Di dekat permukaan, GM/R² = g = 9,8 m/s², jadi v = √(gR) = √(9,8 × 6.371 × 10³) ≈ 7,9 km/s. Karena v ∝ 1/√r, satelit pada radius lebih besar bergerak lebih lambat. Secara energi, orbit yang lebih tinggi memiliki energi potensial lebih besar (kurang negatif) dan energi kinetik lebih kecil, tetapi energi mekanik totalnya tetap negatif selama orbitnya terikat.",
+    "pembahasan": [
+      "Inti jawaban pertama: satelit tidak bebas dari gravitasi, melainkan jatuh bebas terus-menerus; kecepatan tangensialnya membuatnya terus melewati lengkungan Bumi.",
+      "Penurunan wajib: samakan GMm/r² dengan mv²/r, hilangkan m, lalu peroleh v = √(GM/r). Di permukaan, GM/R² = g, sehingga v = √(gR) ≈ 7,9 km/s.",
+      "Jelaskan ketergantungan pada radius: v ∝ 1/√r. Orbit lebih tinggi memiliki gravitasi lebih lemah dan energi potensial lebih besar, sehingga kelajuan orbitnya lebih kecil meskipun periodenya lebih panjang."
+    ]
+  },
+  {
+    "id": "f4-11",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah benda bergerak dengan kecepatan awal 3 m/s dan percepatan tetap 2 m/s² selama 4 s. Berapa kecepatan akhirnya?",
+    "opsi": ["11 m/s", "8 m/s", "14 m/s", "5 m/s"],
+    "jawaban": 0,
+    "pembahasan": ["Untuk percepatan tetap, v=v₀+at.", "v=3+(2)(4)=11 m/s.", "Kecepatan akhir lebih besar dari awal karena percepatan searah gerak."]
+  },
+  {
+    "id": "f4-12",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah wahana bergerak melingkar dengan laju 6 m/s pada jari-jari 3 m. Berapa percepatan sentripetalnya?",
+    "opsi": ["12 m/s²", "2 m/s²", "18 m/s²", "6 m/s²"],
+    "jawaban": 0,
+    "pembahasan": ["Gunakan a_c=v²/r.", "a_c=6²/3=12 m/s².", "Percepatan mengarah ke pusat lintasan meskipun laju tetap."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-13",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah benda bermassa 2 kg mengalami percepatan 3 m/s². Berapa resultan gaya yang bekerja padanya?",
+    "opsi": ["6 N", "1,5 N", "5 N", "9 N"],
+    "jawaban": 0,
+    "pembahasan": ["Hukum kedua Newton menyatakan F=ma.", "F=2×3=6 N.", "Satuan kg·m/s² sama dengan newton."]
+  },
+  {
+    "id": "f4-14",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah satelit mengorbit pada radius 3R dari pusat planet. Jika percepatan gravitasi permukaan adalah g₀, berapa percepatan gravitasinya pada orbit tersebut?",
+    "opsi": ["g₀/9", "g₀/3", "3g₀", "9g₀"],
+    "jawaban": 0,
+    "pembahasan": ["Percepatan gravitasi berbanding terbalik dengan kuadrat jarak dari pusat: g=GM/r².", "Pada r=3R, g/g₀=R²/(3R)²=1/9.", "Jadi medan gravitasi masih ada, tetapi nilainya sepersembilan permukaan."]
+  },
+  {
+    "id": "f4-15",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Diagram membandingkan dua orbit lingkaran berjari-jari r dan 4r. Jika satelit yang sama berpindah dari r ke 4r, berapa rasio energi mekanik akhirnya terhadap awal?",
+    "opsi": ["1/4", "4", "1/2", "2"],
+    "jawaban": 0,
+    "pembahasan": ["Energi mekanik orbit lingkaran adalah E=−GMm/(2r).", "Pada radius 4r, E₂=−GMm/(8r)=E₁/4.", "Keduanya negatif; rasio bertanda E₂/E₁=1/4, artinya orbit lebih tinggi kurang terikat."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-16",
+    "topik": "mekanika",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "soal": "Gunakan diagram perbandingan orbit lingkaran. Jika satelit A berada pada r dan periode A=2 jam, berapa periode satelit B pada orbit 4r mengelilingi benda pusat yang sama?",
+    "opsi": ["16 jam", "8 jam", "4 jam", "32 jam"],
+    "jawaban": 0,
+    "pembahasan": ["Hukum Kepler ketiga memberi T∝r^(3/2).", "T_B/T_A=4^(3/2)=8, sehingga T_B=8×2=16 jam.", "Orbit lebih besar memiliki periode jauh lebih panjang karena jarak tempuh dan kelajuan yang lebih rendah."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-17",
+    "topik": "mekanika",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "soal": "Diagram dua orbit melingkar menunjukkan B pada radius empat kali A. Jika laju A adalah 8 km/s, berapa laju B?",
+    "opsi": ["4 km/s", "2 km/s", "8 km/s", "16 km/s"],
+    "jawaban": 0,
+    "pembahasan": ["Kelajuan orbit lingkaran v∝1/√r.", "v_B/v_A=√(r_A/r_B)=1/2, sehingga v_B=4 km/s.", "Radius empat kali menyebabkan laju menjadi setengah, bukan seperempat."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-18",
+    "topik": "mekanika",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "soal": "Dari diagram dua orbit lingkaran, orbit B memiliki radius 4 kali orbit A. Jika periode B adalah 24 hari, berapa periode A?",
+    "opsi": ["3 hari", "6 hari", "12 hari", "48 hari"],
+    "jawaban": 0,
+    "pembahasan": ["Periode memenuhi T∝r^(3/2), jadi T_B/T_A=4^(3/2)=8.", "T_A=T_B/8=24/8=3 hari.", "Orbit bagian dalam bergerak lebih cepat dan memerlukan waktu lebih singkat untuk satu putaran."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-19",
+    "topik": "mekanika",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "soal": "Pada diagram orbit lingkaran, orbit luar berjari-jari 4r sementara orbit dalam r. Jika kelajuan pada orbit dalam 8 km/s, berapa kelajuan pada orbit luar?",
+    "jawaban": 4,
+    "toleransiRel": 0.01,
+    "satuan": "km/s",
+    "pembahasan": ["Kelajuan orbit lingkaran memenuhi v=√(GM/r), sehingga v∝r⁻¹/².", "Maka v_luar/v_dalam=√(r/4r)=1/2 dan v_luar=8/2=4 km/s.", "Orbit luar bergerak lebih lambat, konsisten dengan ketergantungan akar terbalik pada radius."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-20",
+    "topik": "mekanika",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "soal": "Diagram orbit lingkaran membandingkan orbit berjari-jari r dan 4r. Jika percepatan gravitasi pada orbit r adalah 12 m/s², berapa percepatan pada orbit 4r?",
+    "jawaban": 0.75,
+    "toleransiRel": 0.01,
+    "satuan": "m/s²",
+    "pembahasan": ["Percepatan gravitasi mengikuti g∝1/r².", "Pada radius empat kali, g₂/g₁=1/16, sehingga g₂=12/16=0,75 m/s².", "Gravitasi melemah cepat terhadap radius, tetapi tetap menjadi percepatan sentripetal satelit."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-21",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan benar mengenai gaya dan gerak.",
+    "opsi": ["Resultan gaya nol berarti percepatan nol", "Percepatan searah dengan resultan gaya", "Gaya sentripetal selalu mengarah menjauhi pusat", "Gaya memiliki satuan newton"],
+    "jawaban": [0, 1, 3],
+    "pembahasan": ["Dari F_net=ma, jika gaya total nol maka percepatan nol.", "Arah percepatan mengikuti arah resultan gaya menurut hukum kedua Newton.", "Gaya sentripetal mengarah menuju pusat; satuan gaya adalah N=kg·m/s²."]
+  },
+  {
+    "id": "f4-22",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan benar tentang satelit dalam orbit lingkaran.",
+    "opsi": ["Energi potensial dengan acuan nol di tak hingga bernilai negatif", "Kelajuan orbit memenuhi v=√(GM/r)", "Energi mekanik total orbit lingkaran bernilai negatif", "Di orbit tidak ada gaya gravitasi"],
+    "jawaban": [0, 1, 2],
+    "pembahasan": ["Energi potensial gravitasi adalah −GMm/r.", "Menyamakan gravitasi dan sentripetal memberi v=√(GM/r).", "Energi totalnya −GMm/(2r), menandakan orbit terikat; gravitasi tetap bekerja di orbit."]
+  },
+  {
+    "id": "f4-23",
+    "topik": "mekanika",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah benda bermassa 3 kg diberi gaya resultan 12 N. Berapa percepatannya?",
+    "jawaban": 4,
+    "toleransiRel": 0.01,
+    "satuan": "m/s²",
+    "pembahasan": ["Gunakan hukum kedua Newton a=F/m.", "a=12/3=4 m/s².", "Satuan N/kg sama dengan m/s²."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-24",
+    "topik": "mekanika",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Satelit bermassa 500 kg bergerak dengan kelajuan 4 km/s. Berapa energi kinetiknya dalam joule?",
+    "jawaban": 4e9,
+    "toleransiRel": 0.01,
+    "satuan": "J",
+    "pembahasan": ["Ubah kelajuan menjadi 4.000 m/s.", "E_k=½mv²=½×500×(4.000)²=4,0×10⁹ J.", "Pastikan kelajuan diubah ke SI sebelum menghitung energi dalam joule."]
+  },
+  {
+    "id": "f4-25",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Pada diagram orbit, sebuah planet berjari-jari R memiliki satelit pada ketinggian h=R di atas permukaan. Jika percepatan gravitasi permukaan g₀, berapa rasio g/g₀ di posisi satelit?",
+    "jawaban": 0.25,
+    "toleransiRel": 0.01,
+    "satuan": "tanpa satuan",
+    "pembahasan": ["Jarak dari pusat planet pada ketinggian h=R adalah r=R+h=2R.", "Karena g∝1/r², maka g/g₀=R²/(2R)²=1/4.", "Gravitasi berkurang menjadi seperempat nilai permukaan saat jarak pusat menjadi dua kali."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-26",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah benda dijatuhkan dari keadaan diam dan jatuh bebas selama 3,0 s. Gunakan g=9,8 m/s². Berapa jarak jatuhnya?",
+    "jawaban": 44.1,
+    "toleransiRel": 0.01,
+    "satuan": "m",
+    "pembahasan": ["Untuk jatuh bebas dari diam, s=½gt².", "s=0,5×9,8×(3,0)²=44,1 m.", "Jarak bertambah sebagai kuadrat waktu pada percepatan tetap."]
+  },
+  {
+    "id": "f4-27",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Gunakan perbandingan orbit pada diagram. Periode satelit adalah 2 jam pada radius r. Berapa periodenya pada radius 9r mengelilingi benda pusat yang sama?",
+    "jawaban": 54,
+    "toleransiRel": 0.01,
+    "satuan": "jam",
+    "pembahasan": ["Hukum Kepler ketiga memberi T∝r^(3/2).", "Peningkatan radius sembilan kali memperbesar periode 9^(3/2)=27 kali.", "T₂=27×2 jam=54 jam."],
+    "gambar": "orbit-lingkaran-rasio"
+  },
+  {
+    "id": "f4-28",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Sebuah satelit bermassa 800 kg berada pada orbit lingkaran berjari-jari 7,0×10⁶ m mengelilingi Bumi. Gunakan GM=3,98×10¹⁴ m³/s² untuk menurunkan dan menghitung kelajuan orbitnya, lalu jelaskan mengapa massanya tidak memengaruhi hasil.",
+    "rubrik": [{"poin":"Menyamakan gaya gravitasi GMm/r² dengan gaya sentripetal mv²/r.","bobot":2},{"poin":"Menghilangkan massa satelit dan menurunkan v=√(GM/r).","bobot":2},{"poin":"Menghitung v≈7,54×10³ m/s atau sekitar 7,5 km/s.","bobot":1},{"poin":"Menjelaskan massa satelit muncul pada kedua ruas sehingga saling meniadakan.","bobot":1}],
+    "jawabanTeladan":"Untuk orbit lingkaran, GMm/r²=mv²/r. Membagi dengan m dan menyusun ulang memberi v²=GM/r, sehingga v=√(GM/r). Substitusi menghasilkan v=√[(3,98×10¹⁴)/(7,0×10⁶)]=√(5,686×10⁷)≈7,54×10³ m/s=7,54 km/s. Massa satelit saling menghilang dari persamaan, jadi untuk radius sama semua satelit ideal memiliki kelajuan orbit yang sama.",
+    "pembahasan": ["Penurunan harus menunjukkan bahwa gravitasi menyediakan gaya sentripetal.", "Periksa unit GM/r adalah m²/s² sehingga akarnya m/s; massa satelit tidak tersisa."]
+  },
+  {
+    "id": "f4-29",
+    "topik": "mekanika",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa astronot dalam wahana yang mengorbit mengalami keadaan tanpa bobot meskipun gravitasi Bumi masih bekerja. Hubungkan penjelasan dengan gaya sentripetal dan gerak jatuh bebas.",
+    "rubrik": [{"poin":"Menyatakan bahwa gravitasi tetap bekerja pada wahana dan astronot di orbit.","bobot":2},{"poin":"Menjelaskan bahwa gravitasi menyediakan percepatan sentripetal bagi orbit.","bobot":2},{"poin":"Menjelaskan bahwa astronot dan wahana jatuh bebas bersama sehingga tidak ada gaya normal yang dirasakan sebagai berat.","bobot":1},{"poin":"Membedakan keadaan tanpa bobot dari tidak adanya gravitasi.","bobot":1}],
+    "jawabanTeladan":"Gravitasi Bumi tidak hilang pada orbit; gaya gravitasi justru membelokkan gerak wahana dan menjadi gaya sentripetal. Wahana dan astronot sama-sama terus jatuh bebas mengelilingi Bumi dengan percepatan yang hampir sama. Karena lantai wahana tidak menekan astronot seperti saat diam di permukaan, gaya normal yang dirasakan hampir nol dan muncul keadaan tanpa bobot. Jadi tanpa bobot bukan berarti tanpa gravitasi.",
+    "pembahasan": ["Tekankan bahwa orbit adalah jatuh bebas melingkar, bukan wilayah tanpa gravitasi.", "Sensasi berat berkaitan dengan gaya kontak/normal yang hilang saat astronot dan wahana jatuh bersama."]
+  },
+  {
+    "id": "f4-30",
+    "topik": "mekanika",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Pada diagram dua orbit lingkaran, radius orbit luar empat kali radius dalam. Jelaskan bagaimana hukum Newton menghasilkan v∝r⁻¹/², lalu tentukan perubahan kelajuan dan periode ketika satelit berpindah ke orbit luar.",
+    "rubrik": [{"poin":"Menurunkan v=√(GM/r) dengan menyamakan gravitasi dan gaya sentripetal.","bobot":2},{"poin":"Menjelaskan ketergantungan v∝r⁻¹/² dari hukum Newton.","bobot":2},{"poin":"Menghitung v₂/v₁=1/2 untuk r₂/r₁=4.","bobot":1},{"poin":"Menggunakan T∝r^(3/2) dan memperoleh T₂/T₁=8.","bobot":1}],
+    "jawabanTeladan":"Persamaan gravitasi dan sentripetal memberi GMm/r²=mv²/r, sehingga v=√(GM/r), atau v∝r⁻¹/². Jika radius menjadi 4 kali, v₂/v₁=4⁻¹/²=1/2. Periode memenuhi T∝r^(3/2), sehingga T₂/T₁=4^(3/2)=8. Satelit di orbit lebih tinggi bergerak lebih lambat, tetapi memerlukan periode lebih panjang.",
+    "pembahasan": ["Tunjukkan bahwa gravitasi menyediakan gaya sentripetal, kemudian sederhanakan untuk memperoleh v sebagai fungsi radius.", "Gunakan rasio radius empat kali untuk kedua prediksi: kelajuan setengah dan periode delapan kali."],
+    "gambar": "orbit-lingkaran-rasio"
+  }
+]

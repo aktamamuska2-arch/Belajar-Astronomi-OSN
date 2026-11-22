@@ -1,0 +1,292 @@
+<Tujuan>
+
+- Membaca dan mengekstraksi parameter kurva cahaya fotometri: kedalaman transit ($\delta$), durasi transit ($T_{14}$), dan periode fotometri bintang variabel.
+- Memahami teknik pelipatan fase (*phase folding*) data deret waktu fotometri untuk menemukan periode intrinsik bintang variabel atau biner gerhana.
+- Melakukan linearisasi hubungan fisik berpangkat menggunakan transformasi logaritmik dan menentukan parameter fisis dari gradien serta intersep regresi kuadrat terkecil.
+- Menerapkan hukum perambatan ketidakpastian multivariabel kuadratur Gauss ($\sigma_f$) dan menghitung simpangan baku rata-rata ($\sigma / \sqrt{N}$).
+- Menjelaskan tahapan reduksi citra digital CCD astronomi: koreksi frame bias, arus gelap (*dark current*), *flat field*, fotometri bukaan (*aperture photometry*), dan perhitungan *Signal-to-Noise Ratio* ($SNR$).
+- Menyelesaikan rantai analitis olimpiade: mengolah data kurva cahaya observasional dengan propagasi ketidakpastian formal untuk menurunkan besaran fisik bintang/planet beserta batas galatnya.
+
+</Tujuan>
+
+<Prasyarat babIds={['f3', 'a5']} />
+
+<p className="lead">Bab ini merupakan jembatan pamungkas dari teori astrofisika menuju dunia observasi astronomi empiris. Pada kompetisi OSN tingkat Provinsi, Nasional, hingga IOAA, sesi analisis data dan observasi menguji ketelitian mengolah deret waktu fotometri, mereduksi citra CCD, menarik garis kecocokan terbaik (*best-fit*), dan menyajikan laporan angka dengan ketidakpastian ilmiah yang sahih.</p>
+
+## 1. Fotometri Deret Waktu & Kurva Cahaya Transit
+
+<Poin judul="1 · Ekstraksi Parameter Transit Fotometri" defaultOpen>
+
+Pengamatan fotometri diferensial merekam rasio fluks bintang target terhadap beberapa bintang pembanding stabil di bidang pandang yang sama. Kurva cahaya transit eksoplanet dicirikan oleh penurunan fluks periodik berbentuk trapesium simetris.
+
+<Gambar id="kurva-transit-data" judul="Kurva Cahaya Transit dengan Batas Galat" caption="Fluks terstandar menunjukkan kedalaman transit delta dan titik kontak t1 hingga t4 dengan bilah ketidakpastian pengukuran (error bar)." />
+
+Tiga parameter observasional primer:
+1. **Kedalaman Transit ($\delta$)**:
+   $$\delta = \frac{F_{\text{kontinu}} - F_{\text{dasar}}}{F_{\text{kontinu}}} = \left(\frac{R_p}{R_*}\right)^2$$
+2. **Durasi Total Transit ($T_{14} = t_4 - t_1$)**:
+   Waktu dari awal ingress hingga akhir egress:
+   $$T_{14} \approx \frac{P}{\pi} \frac{R_*}{a} \sqrt{\left(1 + \frac{R_p}{R_*}\right)^2 - b^2}$$
+3. **Durasi Fase Datar ($T_{23} = t_3 - t_2$)**:
+   Waktu selama seluruh piringan planet berada di dalam piringan bintang:
+   $$T_{23} \approx \frac{P}{\pi} \frac{R_*}{a} \sqrt{\left(1 - \frac{R_p}{R_*}\right)^2 - b^2}$$
+
+Di mana $b = \frac{a \cos i}{R_*}$ adalah parameter impak.
+
+<Contoh judul="Ekstraksi Radius Planet dari Data Fotometri">
+
+<Langkah>
+
+Dari data fotometri CCD, fluks normalisasi di luar transit adalah $F_{\text{out}} = 1{,}0000 \pm 0{,}0003$, dan fluks rata-rata di dasar transit adalah $F_{\text{in}} = 0{,}9844 \pm 0{,}0004$.
+
+</Langkah>
+
+<Langkah>
+
+Hitung kedalaman transit:
+$$\delta = F_{\text{out}} - F_{\text{in}} = 1{,}0000 - 0{,}9844 = 0{,}0156 \quad (1{,}56\%)$$
+Galat kedalaman: $\sigma_\delta = \sqrt{\sigma_{\text{out}}^2 + \sigma_{\text{in}}^2} = \sqrt{(0{,}0003)^2 + (0{,}0004)^2} = 0{,}0005$.
+
+</Langkah>
+
+<Langkah>
+
+Rasio radius planet terhadap bintang:
+$$\frac{R_p}{R_*} = \sqrt{\delta} = \sqrt{0{,}0156} \approx 0{,}1249$$
+Jika radius bintang induk $R_* = 1{,}10\ R_\odot = 7{,}656 \times 10^5\ \mathrm{km}$:
+$$R_p = 0{,}1249 \times 7{,}656 \times 10^5\ \mathrm{km} \approx 95.620\ \mathrm{km} \approx 1{,}34\ R_J$$
+Objek ini teridentifikasi sebagai eksoplanet kelas *Hot Jupiter*.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Bintang Variabel & Pelipatan Fase (Phase Folding)
+
+<Poin judul="2 · Kurva Cahaya Variabel & Pelipatan Fase">
+
+Bintang variabel (seperti variabel Cepheid, RR Lyrae, atau sistem biner gerhana) memancarkan fluks yang bervariasi secara periodik. Data observasi sering kali terpotong oleh siang hari atau cuaca buruk. Untuk mengungkap kurva cahaya utuh, digunakan teknik **pelipatan fase (*phase folding*)**.
+
+<Gambar id="kurva-cahaya-variabel" judul="Kurva Cahaya Bintang Variabel" caption="Variasi magnitudo terhadap waktu menunjukkan kenaikan tajam dan penurunan landai yang khas dari denyut pulsasi Cepheid." />
+
+Jika periode variasi adalah $P$ dan waktu acuan adalah $T_0$, fase orbital $\phi$ untuk setiap waktu observasi $t_i$ didefinisikan sebagai:
+
+$$\phi_i = \frac{t_i - T_0}{P} - \left\lfloor \frac{t_i - T_0}{P} \right\rfloor \in [0, 1)$$
+
+Dengan memplot fluks atau magnitudo terhadap fase $\phi$, seluruh titik data dari ratusan siklus berbeda runtuh (*collapse*) ke dalam satu kurva siklus tunggal yang sangat rapat dan ber-SNR tinggi. Periode yang tepat $P$ ditemukan dengan meminimalkan dispersi data (misal metode *string-length* atau periodogram Lomb-Scargle).
+
+</Poin>
+
+## 3. Linearisasi & Regresi Kuadrat Terkecil
+
+<Poin judul="3 · Transformasi Logaritmik & Kemiringan Garis Lurus">
+
+Banyak fenomena astrofisika diatur oleh hukum perpangkatan non-linier $y = k \cdot x^n$. Dengan menerapkan logaritma pada kedua sisi, persamaan non-linier terlinierkan menjadi persamaan garis lurus:
+
+$$\log y = n \log x + \log k$$
+
+Sumbu absis dinyatakan oleh $X = \log x$ dan sumbu ordinat oleh $Y = \log y$. Gradien garis lurus mewakili pangkat eksponen $n$, dan titik potong sumbu (*intercept*) mewakili nilai konstan $\log k$.
+
+| Hubungan Fisika | Bentuk Asal | Transformasi Linier | Kemiringan ($m$) | Intersep ($c$) |
+|---|---|---|---|---|
+| Hukum Kepler III | $P^2 \propto a^3$ | $\log P = \frac{3}{2}\log a + c$ | $1{,}5$ | $-\frac{1}{2}\log(M_*)$ |
+| Stefan–Boltzmann | $F = \sigma T^4$ | $\log F = 4\log T + \log \sigma$ | $4{,}0$ | $\log \sigma$ |
+| Massa–Luminositas | $L \propto M^\alpha$ | $\log L = \alpha \log M + c$ | $\approx 3{,}5\text{--}4{,}0$ | $\log L_\odot$ |
+| Modulus Jarak | $m - M = 5\log d - 5$ | $(m - M) = 5\log d - 5$ | $5{,}0$ | $-5$ ($d$ dlm pc) |
+
+<Gambar id="skala-log" judul="Linearisasi Skala Logaritmik" caption="Hubungan eksponensial dan hukum pangkat berubah menjadi garis lurus pada kertas grafik log-log." />
+
+### Regresi Kuadrat Terkecil Linier (OLS)
+
+Untuk $N$ pasang data $(x_i, y_i)$, kemiringan terbaik $m$ dan intersep $c$ dari garis $y = mx + c$ dihitung melalui:
+
+$$m = \frac{N \sum (x_i y_i) - (\sum x_i)(\sum y_i)}{N \sum (x_i^2) - (\sum x_i)^2}, \qquad c = \bar{y} - m\bar{x}$$
+
+Koefisien korelasi Pearson $r$ menyatakan kekuatan hubungan linier:
+
+$$r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}$$
+
+Nilai $R^2 = r^2$ ($0 \le R^2 \le 1$) menyatakan fraksi varians data yang berhasil dijelaskan oleh model regresi linier.
+
+</Poin>
+
+## 4. Statistika & Propagasi Galat Gauss
+
+<Poin judul="4 · Perambatan Ketidakpastian Kuadratur Gauss">
+
+Setiap angka observasi astronomi wajib disertai batas ketidakpastian $\pm \sigma$. Galat dibedakan menjadi:
+- **Galat Acak (*Random Error*)**: Fluktuasi statistik (misal derau tembakan foton Poisson). Simpangan baku rata-rata berkurang seiring penambahan jumlah sampel independen $N$:
+  $$\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{N}}$$
+- **Galat Sistematis (*Systematic Error*)**: Pergeseran nilai ke satu arah akibat kalibrasi alat yang bias (misalnya salah menetapkan titik nol magnitudo). Galat ini tidak dapat direduksi dengan menambah sampel.
+
+### Rumus Umum Propagasi Galat Gauss
+
+Jika besaran target $f$ bergantung pada beberapa variabel independen $x, y, z, \dots$ yang memiliki ketidakpastian $\sigma_x, \sigma_y, \sigma_z, \dots$:
+
+$$\sigma_f^2 = \left(\frac{\partial f}{\partial x}\right)^2 \sigma_x^2 + \left(\frac{\partial f}{\partial y}\right)^2 \sigma_y^2 + \left(\frac{\partial f}{\partial z}\right)^2 \sigma_z^2 + \dots$$
+
+<Catatan variasi="awas">
+
+Untuk perkalian dan pembagian sederhana $f = k \cdot \frac{x^a y^b}{z^c}$, galat kuadratur bekerja pada **galat fraksional/relatif**:
+$$\left(\frac{\sigma_f}{f}\right)^2 = a^2 \left(\frac{\sigma_x}{x}\right)^2 + b^2 \left(\frac{\sigma_y}{y}\right)^2 + c^2 \left(\frac{\sigma_z}{z}\right)^2$$
+
+</Catatan>
+
+</Poin>
+
+## 5. Reduksi Citra Digital CCD & Fotometri Bukaan
+
+<Poin judul="5 · Kalibrasi CCD, Derau Foton & Signal-to-Noise Ratio (SNR)">
+
+Data mentah dari kamera CCD astronomi mengandung derau elektronik dan ketidakseragaman respons optik. Sebelum fluks bintang dapat diukur, citra mentah (*raw frame*, $R$) harus direduksi melalui persamaan standar:
+
+$$C = \frac{R - \text{Bias} - \text{Dark}}{\text{Flat}_{\text{norm}}}$$
+
+1. **Bias Frame**: Eksposur 0 detik tanpa cahaya, merekam tegangan offset elektronik dari konverter ADC detektor.
+2. **Dark Frame**: Eksposur berdurasi sama dengan citra sains dengan shutter tertutup, merekam akumulasi elektron termal (*dark current*) yang bergantung pada suhu pendinginan sensor.
+3. **Flat Field**: Eksposur pada sumber cahaya seragam (layar senja atau kubah), dikurangi bias/dark dan dinormalisasi ke rata-rata bernilai $1{,}0$. Flat field mengoreksi *vignetting* optik, debu pada filter, serta variasi sensitivitas pixel-ke-pixel (*pixel response non-uniformity*).
+
+### Fotometri Bukaan (*Aperture Photometry*) & Derau Poisson
+
+Fluks bersih bintang dihitung dengan mengintegrasikan hitungan elektron (*counts*) di dalam bukaan lingkaran konsentris beradius $r_*$, lalu dikurangi kontribusi latar langit (*sky background*) yang diukur dari cincin anulus di sekeliling bintang.
+
+Berdasarkan persamaan CCD (*CCD Equation*), rasio sinyal terhadap derau (*Signal-to-Noise Ratio*, $SNR$) adalah:
+
+$$SNR = \frac{N_*}{\sqrt{N_* + n_{\text{pix}} \left(N_{\text{sky}} + N_{\text{dark}} + \sigma_{\text{ron}}^2\right)}}$$
+
+Di mana $N_*$ adalah total elektron dari bintang, $n_{\text{pix}}$ adalah jumlah pixel di dalam bukaan, $N_{\text{sky}}$ adalah elektron latar belakang per pixel, dan $\sigma_{\text{ron}}$ adalah derau baca (*read-out noise*) kamera. Pada batas fotometri tinggi ($N_* \gg n_{\text{pix}} N_{\text{sky}}$), derau didominasi oleh fluktuasi Poisson foton bintang sehingga $SNR \approx \sqrt{N_*}$.
+
+</Poin>
+
+## 6. Rantai Analitis Olimpiade: Fitting Kurva & Penurunan Parameter Fisis
+
+<Poin judul="6 · Rantai Olimpiade: Analisis Data Transit & Propagasi Galat">
+
+Dalam soal analisis data tingkat olimpiade, siswa diminta memadukan pembacaan kurva cahaya, regresi linier, dan propagasi galat untuk menurunkan massa jenis planet beserta batas ketidakpastiannya.
+
+<Contoh judul="Penurunan Kerapatan Eksoplanet dan Propagasi Ketidakpastian">
+
+<Langkah>
+
+**Data Observasi**:
+Bintang induk beradius $R_* = (1{,}00 \pm 0{,}02)\ R_\odot$ dan bermassa $M_* = (1{,}00 \pm 0{,}03)\ M_\odot$.
+Kurva transit menghasilkan kedalaman $\delta = 0{,}0100 \pm 0{,}0004$ ($1{,}00\%$).
+Kecepatan radial memberikan massa planet $M_p = (0{,}80 \pm 0{,}04)\ M_J$.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1: Radius Planet dan Galatnya**:
+Hubungan radius: $R_p = R_* \delta^{1/2}$.
+Nilai numerik:
+$$R_p = 1{,}00\ R_\odot \times \sqrt{0{,}0100} = 0{,}100\ R_\odot = 69.600\ \mathrm{km} \approx 0{,}974\ R_J$$
+Galat relatif radius:
+$$\frac{\sigma_{R_p}}{R_p} = \sqrt{\left(\frac{\sigma_{R_*}}{R_*}\right)^2 + \left(\frac{1}{2}\frac{\sigma_\delta}{\delta}\right)^2}$$
+Substitusi galat fraksional:
+$$\frac{\sigma_{R_*}}{R_*} = \frac{0{,}02}{1{,}00} = 0{,}02 \quad (2\%)$$
+$$\frac{1}{2}\frac{\sigma_\delta}{\delta} = \frac{1}{2} \left(\frac{0{,}0004}{0{,}0100}\right) = \frac{1}{2} (0{,}04) = 0{,}02 \quad (2\%)$$
+$$\frac{\sigma_{R_p}}{R_p} = \sqrt{(0{,}02)^2 + (0{,}02)^2} = \sqrt{0{,}0008} \approx 0{,}0283 \quad (2{,}83\%)$$
+Maka radius planet dilaporkan sebagai $R_p = 0{,}974 \pm 0{,}028\ R_J$.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2: Volume dan Kerapatan Rata-Rata Planet**:
+Volume planet bola: $V_p = \frac{4}{3}\pi R_p^3 \implies \rho_p = \frac{M_p}{V_p} \propto \frac{M_p}{R_p^3}$.
+Nilai rata-rata kerapatan:
+$$M_p = 0{,}80 \times 1{,}898 \times 10^{27}\ \mathrm{kg} \approx 1{,}518 \times 10^{27}\ \mathrm{kg}$$
+$$R_p = 69.600\ \mathrm{km} = 6{,}96 \times 10^7\ \mathrm{m} \implies V_p = \frac{4}{3}\pi (6{,}96 \times 10^7)^3 \approx 1{,}412 \times 10^{24}\ \mathrm{m^3}$$
+$$\rho_p = \frac{1{,}518 \times 10^{27}\ \mathrm{kg}}{1{,}412 \times 10^{24}\ \mathrm{m^3}} \approx 1075\ \mathrm{kg/m^3} \approx 1{,}08\ \mathrm{g/cm^3}$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3: Propagasi Ketidakpastian Kerapatan**:
+Karena $\rho_p \propto M_p R_p^{-3}$, galat relatif kerapatan adalah:
+$$\frac{\sigma_{\rho_p}}{\rho_p} = \sqrt{\left(\frac{\sigma_{M_p}}{M_p}\right)^2 + \left(3\frac{\sigma_{R_p}}{R_p}\right)^2}$$
+Galat fraksional massa: $\frac{\sigma_{M_p}}{M_p} = \frac{0{,}04}{0{,}80} = 0{,}05$ (5%).
+Suku radius: $3 \times \frac{\sigma_{R_p}}{R_p} = 3 \times 0{,}0283 \approx 0{,}0849$ (8,49%).
+Kuadratur galat:
+$$\frac{\sigma_{\rho_p}}{\rho_p} = \sqrt{(0{,}05)^2 + (0{,}0849)^2} = \sqrt{0{,}0025 + 0{,}0072} = \sqrt{0{,}0097} \approx 0{,}0985 \quad (9{,}85\%)$$
+Galat absolut kerapatan:
+$$\sigma_{\rho_p} = 0{,}0985 \times 1{,}08\ \mathrm{g/cm^3} \approx 0{,}11\ \mathrm{g/cm^3}$$
+Hasil akhir ilmiah dilaporkan sebagai:
+$$\rho_p = 1{,}08 \pm 0{,}11\ \mathrm{g/cm^3}$$
+Perhatikan bagaimana faktor pangkat 3 pada radius melipatgandakan kontribusi ketidakpastian radius terhadap ketidakpastian kerapatan akhir!
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek Pemahaman
+
+<CekPaham
+  id="l6-cek-1"
+  pertanyaan="Sebuah bintang diamati sebanyak 25 kali secara independen dengan simpangan baku pengukuran 0,50 magnitudo. Berapakah simpangan baku nilai rata-rata (standar error) dari magnitudo bintang tersebut?"
+  opsi={[
+    '0,10 magnitudo',
+    '0,02 magnitudo',
+    '0,25 magnitudo',
+    '0,50 magnitudo'
+  ]}
+  jawaban={0}
+  penjelasan="Standar error rata-rata diberikan oleh sigma_mean = sigma / sqrt(N). Substitusi sigma = 0,50 dan N = 25 memberikan 0,50 / sqrt(25) = 0,50 / 5 = 0,10 magnitudo."
+/>
+
+<CekPaham
+  id="l6-cek-2"
+  pertanyaan="Pada plot regresi logaritma log(L) terhadap log(M) untuk bintang deret utama, kemiringan garis lurus terbaik yang diperoleh secara empiris adalah sekitar..."
+  opsi={[
+    '3,5 hingga 4,0',
+    '1,5',
+    '2,0',
+    '0,5'
+  ]}
+  jawaban={0}
+  penjelasan="Hubungan massa-luminositas bintang deret utama bermassa menengah adalah L ∝ M^(3,5-4,0). Dalam grafik log-log, log L = alpha log M + c, sehingga gradien garis lurus tepat sama dengan eksponen pangkatnya yaitu 3,5 hingga 4,0."
+/>
+
+<CekPaham
+  id="l6-cek-3"
+  pertanyaan="Tahapan kalibrasi citra CCD yang bertujuan menghilangkan variasi sensitivitas pixel-ke-pixel dan vignetting optik teleskop adalah..."
+  opsi={[
+    'Pembagian dengan Flat Field yang telah dinormalisasi',
+    'Pengurangan dengan Bias frame',
+    'Pengurangan dengan Dark frame',
+    'Penerapan filter median kosmik'
+  ]}
+  jawaban={0}
+  penjelasan="Flat field merekam respons detektor terhadap penyinaran seragam. Mengalikan atau membagi citra dengan master flat menormalkan efisiensi kuantum tiap pixel dan mengoreksi penurunan intensitas di tepi bidang pandang (vignetting)."
+/>
+
+<Refleksi
+  id="l6-refleksi-1"
+  pertanyaan="Mengapa dalam sains astronomi, angka hasil pengukuran yang dilaporkan tanpa batas ketidakpastian (misalnya 'R = 1,2 R_J' tanpa '+/- 0,1 R_J') dianggap tidak bermakna secara ilmiah? Jelaskan hubungannya dengan pengujian hipotesis dan perbandingan model."
+/>
+
+## 8. Nilai & Rumus Penting
+
+<Konstanta
+  data={[
+    { simbol: 'Kedalaman transit', nilai: 'δ = (Rp / R*)²', satuan: '—' },
+    { simbol: 'Durasi transit', nilai: 'T₁₄ ≈ (P/π) (R*/a) √((1+Rp/R*)² − b²)', satuan: 'jam' },
+    { simbol: 'Parameter impak', nilai: 'b = (a cos i) / R*', satuan: '—' },
+    { simbol: 'Propagasi galat', nilai: 'σf² = Σ (∂f/∂xi)² σi²', satuan: '—' },
+    { simbol: 'Galat rata-rata', nilai: 'σ_mean = σ / √N', satuan: '—' },
+    { simbol: 'SNR Poisson', nilai: 'SNR ≈ √N_*', satuan: '—' },
+    { simbol: 'Reduksi CCD', nilai: 'C = (Raw − Bias − Dark) / Flat_norm', satuan: 'ADU / elektron' }
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Selamat! Dengan menyelesaikan bab ini, Anda telah menguasai seluruh spektrum kurikulum astronomi kompetisi: dari dasar matematika dan mekanika langit hingga fotometri observasional dan analisis data tingkat lanjut.
+
+</Catatan>

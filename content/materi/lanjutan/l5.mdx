@@ -1,0 +1,176 @@
+<Tujuan>
+
+- Memakai Hukum Hubble untuk menaksir jarak galaksi dan skala waktu alam semesta.
+- Menghubungkan redshift dengan faktor skala dan menghitung suhu CMB pada masa lalu.
+- Menjelaskan arti parameter densitas dan mengapa Ω menentukan geometri serta nasib alam semesta.
+- Menjelaskan CMB sebagai sisa radiasi dari alam semesta awal.
+
+</Tujuan>
+
+<Prasyarat babIds={['l4', 'a5']} />
+
+<p className="lead">Bab ini memakai semua alat sebelumnya pada skala terbesar: galaksi sebagai penanda, garis spektrum sebagai pengukur kecepatan, dan benda hitam sebagai termometer. Hasilnya adalah gambaran alam semesta yang mengembang — dan bukti bahwa dulu ia jauh lebih panas dan rapat.</p>
+
+## 1. Hukum Hubble
+
+<Poin judul="1 · Semakin jauh, semakin cepat menjauh" defaultOpen>
+
+Pada 1929 Hubble menemukan bahwa galaksi jauh menjauh dengan kecepatan yang sebanding jaraknya:
+
+$$v = H_0 d.$$
+
+Dengan $v$ dalam km/s dan $d$ dalam Mpc, nilai $H_0$ sekitar 70 (km/s)/Mpc. Konstanta ini bukan kecepatan, melainkan laju ekspansi per satuan jarak.
+
+<Contoh judul="Jarak dari redshift">
+
+<Langkah>
+
+Sebuah galaksi memiliki kecepatan resesi $v = 7\,000$ km/s.
+
+</Langkah>
+
+<Langkah>
+
+$d = v/H_0 = 7\,000/70 = 100$ Mpc.
+
+</Langkah>
+
+<Langkah>
+
+Ubah ke tahun cahaya: 100 Mpc × 3,26 juta tahun cahaya/Mpc ≈ 326 juta tahun cahaya.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: cahaya yang kita lihat kini berangkat saat galaksi berjarak lebih dekat; jarak "sekarang" lebih besar dari jarak tempuh cahaya karena ruang ikut mengembang.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Redshift dan faktor skala
+
+<Poin judul="2 · Ruang yang mengembang">
+
+Redshift kosmologis didefinisikan dari pergeseran garis spektrum:
+
+$$z = \frac{\lambda_{\mathrm{obs}} - \lambda_0}{\lambda_0}.$$
+
+Hubungannya dengan faktor skala $a(t)$ — ukuran relatif alam semesta, dengan $a_0 = 1$ saat ini:
+
+$$1 + z = \frac{a_0}{a} = \frac{\lambda_{\mathrm{obs}}}{\lambda_0}.$$
+
+Galaksi dengan $z = 1$ kita lihat pada saat alam semesta berukuran separuh sekarang. Untuk $z$ kecil, rumus ini identik bentuknya dengan Doppler, tetapi tafsirannya berbeda: bukan galaksi bergerak menembus ruang, melainkan ruang di antara kita dan galaksi yang mengembang sehingga panjang gelombang ikut teregang.
+
+<Gambar id="ekspansi-redshift" />
+
+</Poin>
+
+## 3. Parameter densitas dan geometri
+
+<Poin judul="3 · Ω menentukan nasib">
+
+Persamaan Friedmann menghubungkan laju ekspansi dengan isi alam semesta:
+
+$$H^{2} = \frac{8\pi G}{3}\rho - \frac{kc^{2}}{a^{2}} + \frac{\Lambda c^{2}}{3},$$
+
+dengan $k$ kelengkungan dan $\Lambda$ konstanta kosmologis. Densitas kritis yang membuat $k = 0$:
+
+$$\rho_c = \frac{3H_0^{2}}{8\pi G} \approx 9 \times 10^{-27}\ \mathrm{kg/m^{3}}.$$
+
+Parameter densitas $\Omega = \rho/\rho_c$. Pengamatan CMB menunjukkan $\Omega_{\mathrm{total}} \approx 1$ (datar), dengan $\Omega_m \approx 0{,}3$ dan $\Omega_\Lambda \approx 0{,}7$. Materi gelap mendominasi $\Omega_m$, sedangkan energi gelap menggerakkan ekspansi yang makin cepat.
+
+<Contoh judul="Densitas kritis">
+
+<Langkah>
+
+$H_0 = 70\ \mathrm{(km/s)/Mpc} = 70 \times 10^{3}/(3{,}086 \times 10^{22})\ \mathrm{s^{-1}} \approx 2{,}27 \times 10^{-18}\ \mathrm{s^{-1}}$.
+
+</Langkah>
+
+<Langkah>
+
+$H_0^{2} \approx 5{,}15 \times 10^{-36}\ \mathrm{s^{-2}}$.
+
+</Langkah>
+
+<Langkah>
+
+$\rho_c = 3H_0^{2}/(8\pi G) = 1{,}55 \times 10^{-35}/(1{,}68 \times 10^{-9}) \approx 9{,}2 \times 10^{-27}\ \mathrm{kg/m^{3}}$.
+
+</Langkah>
+
+<Langkah>
+
+Bandingkan: sekitar lima atom hidrogen per meter kubik. Alam semesta memang sangat renggang — tetapi sangat besar.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="awas">
+
+Waktu Hubble $t_H = 1/H_0 \approx 14$ miliar tahun bukan berarti umur alam semesta persis sama. Untuk komposisi dengan materi dan energi gelap, umur sebenarnya sekitar 13,8 miliar tahun — kedekatannya kebetulan yang membantu untuk estimasi kasar.
+
+</Catatan>
+
+</Poin>
+
+## 4. Cosmic Microwave Background
+
+<Poin judul="4 · Sisa api alam semesta awal">
+
+Sekitar 380.000 tahun setelah Big Bang, suhu turun cukup sehingga elektron dan proton bergabung menjadi hidrogen netral. Alam semesta menjadi transparan, dan cahaya saat itu merambat bebas hingga sekarang sebagai **CMB**.
+
+CMB adalah benda hitam hampir sempurna dengan suhu 2,725 K. Saat dipancarkan ($z \approx 1\,100$), suhunya:
+
+$$T(z) = T_0(1+z) \approx 2{,}725 \times 1\,100 \approx 3\,000\ \mathrm{K}.$$
+
+Naik-turun mikrokelvin pada peta CMB adalah benih struktur: daerah yang sedikit lebih rapat kemudian tumbuh menjadi galaksi dan gugus galaksi.
+
+</Poin>
+
+## 5. Cek pemahaman
+
+<CekPaham
+  id="l5-cek-1"
+  pertanyaan="Dengan H₀ = 70 (km/s)/Mpc, berapa jarak galaksi yang menjauh dengan 2.100 km/s?"
+  opsi={['30 Mpc', '3 Mpc', '147 Mpc', '210 Mpc']}
+  jawaban={0}
+  penjelasan="d = v/H₀ = 2.100/70 = 30 Mpc. Sekitar 98 juta tahun cahaya."
+/>
+
+<CekPaham
+  id="l5-cek-2"
+  pertanyaan="Jika CMB hari ini 2,725 K, berapa suhunya saat alam semesta berukuran separuh (z = 1)?"
+  opsi={['1,36 K', '2,725 K', '5,45 K', '27,25 K']}
+  jawaban={2}
+  penjelasan="T = T₀(1+z) = 2,725 × 2 = 5,45 K. Suhu naik saat faktor skala mengecil."
+/>
+
+<Refleksi
+  id="l5-refleksi-1"
+  pertanyaan="Mengapa redshift kosmologis bukan sekadar galaksi bergerak menjauh di dalam ruang? Apa bedanya dengan Doppler bintang yang kita pelajari di L1?"
+/>
+
+## 6. Nilai yang sering dipakai
+
+<Konstanta
+  data={[
+    { simbol: 'H₀', nilai: '70', satuan: '(km/s)/Mpc' },
+    { simbol: '1 Mpc', nilai: '3,086 × 10²²', satuan: 'm' },
+    { simbol: 'T₀ CMB', nilai: '2,725', satuan: 'K' },
+    { simbol: 'z rekombinasi', nilai: '~1.100', satuan: '—' },
+    { simbol: 'ρc', nilai: '9,2 × 10⁻²⁷', satuan: 'kg/m³' },
+    { simbol: 'Ωm, ΩΛ', nilai: '0,3 dan 0,7', satuan: '—' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+L6 akan memakai kosmologi sebagai salah satu konteks analisis data, sedangkan ujian sering menggabungkan Hubble dengan modulus jarak dari A5. Tiga hubungan inti: $v = H_0 d$, $1 + z = a_0/a$, dan $\rho_c = 3H_0^{2}/(8\pi G)$.
+
+</Catatan>

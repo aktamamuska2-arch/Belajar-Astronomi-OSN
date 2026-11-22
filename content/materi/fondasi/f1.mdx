@@ -1,0 +1,409 @@
+<Tujuan>
+
+- Menggunakan notasi ilmiah dan satuan astronomi (AU, ly, pc, M☉, L☉, R☉) dengan benar dalam perhitungan.
+- Memanipulasi persamaan fisika secara aljabar untuk mengisolasi besaran yang dicari.
+- Menerapkan sifat-sifat logaritma basis 10 dan membaca skala logaritmik pada grafik astronomi.
+- Menggunakan aproksimasi sudut kecil untuk situasi yang relevan.
+- Melakukan estimasi Fermi (order of magnitude) untuk besaran astronomis.
+- Merangkai hubungan logaritmik berantai seperti hukum Pogson, modulus jarak, dan paralaks.
+
+</Tujuan>
+
+<Prasyarat babIds={[]} />
+
+<p className="lead">Sebelum bisa bicara tentang bintang, galaksi, atau lubang hitam, seorang astronom harus fasih berbicara dalam bahasa angka: notasi ilmiah yang ringkas, satuan khusus yang praktis, logaritma yang melinearkan skala kosmik, dan estimasi yang memberi konteks sebelum kalkulator dibuka. Bab ini membangun fondasi bahasa itu — pondasi yang akan dipakai di setiap bab berikutnya.</p>
+
+## 1. Notasi ilmiah dan satuan astronomi
+
+<Poin judul="1 · Notasi ilmiah & satuan astronomi" defaultOpen>
+
+Notasi ilmiah menuliskan bilangan sebagai $a \times 10^{n}$ dengan $1 \leq a < 10$. Ini penting karena astronomi beroperasi pada rentang skala yang tak tertandingi — dari milimeter (gelombang mikro) hingga ratusan Megaparsek.
+
+**Satuan SI yang sering muncul:**
+
+| Besaran | Satuan | Simbol |
+|---|---|---|
+| Panjang | meter | m |
+| Massa | kilogram | kg |
+| Waktu | sekon | s |
+| Energi | Joule | J |
+| Daya | Watt | W |
+
+**Satuan astronomi khusus:**
+
+| Simbol | Nama | Setara SI |
+|---|---|---|
+| AU | Satuan Astronomi | $1{,}496 \times 10^{11}$ m |
+| ly | Tahun cahaya | $9{,}461 \times 10^{15}$ m |
+| pc | Parsek | $3{,}086 \times 10^{16}$ m $= 3{,}26$ ly |
+| $M_\odot$ | Massa Matahari | $1{,}989 \times 10^{30}$ kg |
+| $L_\odot$ | Luminositas Matahari | $3{,}828 \times 10^{26}$ W |
+| $R_\odot$ | Jari-jari Matahari | $6{,}957 \times 10^{8}$ m |
+
+Konversi parsek–AU: $1\text{ pc} = 206{,}265$ AU. Ini bukan kebetulan — parsek didefinisikan sebagai jarak di mana 1 AU tampak membentuk sudut 1 arcsec.
+
+<Contoh judul="Konversi dan notasi ilmiah">
+
+<Langkah>
+
+Bintang Proxima Centauri berjarak $1{,}295$ pc. Nyatakan dalam AU dan dalam meter.
+
+</Langkah>
+
+<Langkah>
+
+Konversi ke AU: $1{,}295 \times 206{,}265 \approx 267{,}1$ AU.
+
+</Langkah>
+
+<Langkah>
+
+Konversi ke meter: $1{,}295 \times 3{,}086 \times 10^{16} \approx 3{,}996 \times 10^{16}$ m.
+
+</Langkah>
+
+<Langkah>
+
+Cek dengan tahun cahaya: $1{,}295 \times 3{,}26 \approx 4{,}22$ ly, sesuai literatur. Konsisten.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="tips">
+
+Saat mengkonversi satuan astronomi, selalu tuliskan faktor konversi eksplisit dan batalkan satuannya secara aljabar. Kesalahan satuan adalah salah satu penyebab utama jawaban salah di OSN — dan mudah dihindari dengan kebiasaan ini.
+
+</Catatan>
+
+</Poin>
+
+## 2. Aljabar: menyusun dan memanipulasi persamaan
+
+<Poin judul="2 · Aljabar & manipulasi persamaan">
+
+Kemampuan mengisolasi variabel dari persamaan fisika adalah keterampilan paling mendasar. Strateginya:
+
+1. Identifikasi besaran yang dicari.
+2. Isolasi besaran itu dengan melakukan operasi aljabar yang sama di kedua ruas.
+3. Substitusi nilai dan hitung — termasuk satuannya.
+
+Contoh persamaan yang sering muncul di astronomi:
+
+$$F = \frac{GM_1 M_2}{r^2}, \quad L = 4\pi R^2 \sigma T^4, \quad m - M = 5\log\left(\frac{d}{10\text{ pc}}\right).$$
+
+<Contoh judul="Isolasi variabel: jari-jari bintang dari luminositas dan suhu">
+
+<Langkah>
+
+Diberikan $L = 4\pi R^2 \sigma T^4$. Cari $R$.
+
+</Langkah>
+
+<Langkah>
+
+Bagi kedua ruas dengan $4\pi \sigma T^4$:
+
+$$R^2 = \frac{L}{4\pi \sigma T^4}.$$
+
+</Langkah>
+
+<Langkah>
+
+Ambil akar kuadrat: $R = \sqrt{\dfrac{L}{4\pi \sigma T^4}}$.
+
+</Langkah>
+
+<Langkah>
+
+Substitusi nilai dalam rasio: $L = 4L_\odot$, $T = \sqrt{2}\, T_\odot$. Karena $L_\odot = 4\pi R_\odot^2 \sigma T_\odot^4$:
+
+$$\frac{R}{R_\odot} = \sqrt{\frac{L/L_\odot}{(T/T_\odot)^4}} = \sqrt{\frac{4}{(\sqrt{2})^4}} = \sqrt{\frac{4}{4}} = 1.$$
+
+Bintang ini bereukuran sama dengan Matahari tetapi lebih panas, sehingga tiap satuan luas memancarkan lebih banyak energi — maka luminositasnya lebih besar.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="info">
+
+Rasio dimensi (seperti $L/L_\odot$, $T/T_\odot$) sangat berguna di OSN karena konstanta-konstanta seperti $\sigma$ dan $4\pi$ hilang. Biasakan menyatakan besaran bintang dalam satuan matahari.
+
+</Catatan>
+
+</Poin>
+
+## 3. Logaritma basis 10 dan skala log
+
+<Poin judul="3 · Logaritma & skala log">
+
+Logaritma basis 10, ditulis $\log_{10}$ atau cukup $\log$, adalah invers dari perpangkatan 10:
+
+$$\log(10^x) = x, \quad 10^{\log x} = x.$$
+
+**Sifat-sifat penting:**
+
+$$\log(ab) = \log a + \log b$$
+$$\log\left(\frac{a}{b}\right) = \log a - \log b$$
+$$\log(a^n) = n\log a$$
+$$\log 1 = 0, \quad \log 10 = 1, \quad \log 100 = 2$$
+
+Hubungan dengan logaritma natural: $\ln x = (\ln 10)\,\log x \approx 2{,}3026\,\log x$.
+
+<Gambar id="skala-log" />
+
+Skala logaritmik memampatkan rentang besar ke ukuran yang bisa dibaca. Sumbu skala-log memberi jarak yang sama untuk setiap faktor 10, bukan untuk selisih 10. Inilah mengapa bintang dengan kecerahan berbeda $10^{10}$ kali bisa digambar dalam satu grafik yang nyaman.
+
+<Gambar id="kepler-loglog" />
+
+Pada grafik log-log (kedua sumbu skala log), hubungan pangkat $y = kx^n$ tampak sebagai garis lurus dengan kemiringan $n$.
+
+<Contoh judul="Skala log dan perbandingan magnitudo — hukum Pogson">
+
+<Langkah>
+
+Hukum Pogson menyatakan: selisih 5 magnitudo setara dengan faktor 100 dalam fluks:
+
+$$m_1 - m_2 = -2{,}5\log\frac{F_1}{F_2}.$$
+
+</Langkah>
+
+<Langkah>
+
+Bintang A memiliki $m_A = 2{,}0$ dan bintang B $m_B = 7{,}0$. Berapa rasio fluks $F_A/F_B$?
+
+</Langkah>
+
+<Langkah>
+
+$$m_A - m_B = -5 = -2{,}5\log\frac{F_A}{F_B} \implies \log\frac{F_A}{F_B} = 2.$$
+
+</Langkah>
+
+<Langkah>
+
+$$\frac{F_A}{F_B} = 10^2 = 100.$$
+
+Bintang A 100 kali lebih terang dari bintang B. Nilai magnitudo lebih kecil = lebih terang.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 4. Aproksimasi sudut kecil
+
+<Poin judul="4 · Aproksimasi sudut kecil">
+
+Untuk sudut $\theta$ yang sangat kecil (dalam radian):
+
+$$\sin\theta \approx \theta, \quad \tan\theta \approx \theta, \quad \cos\theta \approx 1 - \frac{\theta^2}{2} \approx 1.$$
+
+Kesalahan aproksimasi $\sin\theta \approx \theta$ hanya $\approx \theta^2/6$; untuk $\theta = 0{,}1$ rad ($\approx 5{,}7°$), kesalahannya kurang dari 0,2%.
+
+**Aplikasi langsung di astronomi:**
+
+Ukuran sudut objek: jika benda berdiameter $d$ berada pada jarak $D$, sudut tampaknya (dalam radian) adalah
+
+$$\theta = \frac{d}{D}.$$
+
+Paralaks: bintang pada jarak $d$ (dalam parsek) memiliki paralaks tahunan
+
+$$p'' = \frac{1}{d[\text{pc}]} \quad (\text{dalam arcsec}).$$
+
+<Contoh judul="Ukuran sudut Matahari dilihat dari Bumi">
+
+<Langkah>
+
+Diameter Matahari $D_\odot = 1{,}392 \times 10^9$ m, jarak Bumi–Matahari $r = 1$ AU $= 1{,}496 \times 10^{11}$ m.
+
+</Langkah>
+
+<Langkah>
+
+Sudut tampak dalam radian: $\theta = D_\odot / r = (1{,}392 \times 10^9)/(1{,}496 \times 10^{11}) \approx 9{,}30 \times 10^{-3}$ rad.
+
+</Langkah>
+
+<Langkah>
+
+Konversi ke derajat: $9{,}30 \times 10^{-3} \times (180/\pi) \approx 0{,}533°$. Matahari tampak sekitar setengah derajat di langit.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="awas">
+
+Aproksimasi sudut kecil gagal untuk sudut yang signifikan. Untuk sudut $\theta > 10°$, selalu gunakan $\sin\theta$ atau $\tan\theta$ yang sesungguhnya. Di soal tentang paralaks atau ukuran sudut planet, aproksimasi sudut kecil hampir selalu valid.
+
+</Catatan>
+
+</Poin>
+
+## 5. Estimasi Fermi
+
+<Poin judul="5 · Estimasi Fermi & order of magnitude">
+
+Estimasi Fermi adalah teknik memperkirakan besaran yang tampaknya tidak diketahui dengan memecahnya menjadi faktor-faktor yang bisa diperkirakan. Tujuannya bukan jawaban tepat, melainkan **order of magnitude** — faktor 10 yang benar.
+
+**Strategi:**
+
+1. Bagi masalah menjadi sub-besaran yang bisa diperkirakan.
+2. Kalikan semua sub-besaran.
+3. Periksa: apakah hasilnya masuk akal secara fisik?
+
+<Contoh judul="Berapa banyak atom hidrogen di Matahari?">
+
+<Langkah>
+
+Massa Matahari $M_\odot \approx 2 \times 10^{30}$ kg. Matahari terdiri dari sekitar 75% hidrogen.
+
+</Langkah>
+
+<Langkah>
+
+Massa hidrogen $\approx 0{,}75 \times 2 \times 10^{30} = 1{,}5 \times 10^{30}$ kg.
+
+</Langkah>
+
+<Langkah>
+
+Massa satu atom hidrogen (proton) $m_p \approx 1{,}67 \times 10^{-27}$ kg.
+
+</Langkah>
+
+<Langkah>
+
+Jumlah atom $\approx \dfrac{1{,}5 \times 10^{30}}{1{,}67 \times 10^{-27}} \approx 9 \times 10^{56}$ atom hidrogen.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 6. Rantai logaritmik berantai (olimpiade)
+
+<Poin judul="6 · Rantai olimpiade: Pogson + modulus jarak + paralaks">
+
+Soal OSN tingkat lanjut sering meminta rantai panjang: dari **paralaks** ke **jarak**, ke **modulus jarak**, ke **magnitudo absolut**, ke **luminositas**, ke **jari-jari**. Setiap langkah menggunakan satu rumus logaritmik.
+
+**Rumus-rumus kunci dalam rantai:**
+
+$$p'' = \frac{1}{d[\text{pc}]} \tag{paralaks}$$
+
+$$\mu = m - M = 5\log d[\text{pc}] - 5 \tag{modulus jarak}$$
+
+$$m_1 - m_2 = -2{,}5\log\frac{F_1}{F_2} \tag{Pogson}$$
+
+$$\frac{L}{L_\odot} = \left(\frac{R}{R_\odot}\right)^2 \left(\frac{T}{T_\odot}\right)^4 \tag{Stefan–Boltzmann rasio}$$
+
+<Contoh judul="Rantai olimpiade: dari paralaks ke luminositas" olimpiade>
+
+<Langkah>
+
+**Data:** Sebuah bintang memiliki paralaks $p = 0{,}05''$, magnitudo semu $m = 8{,}2$, suhu $T = 6000$ K. Hitung luminositasnya dalam $L_\odot$ (gunakan $M_\odot = 4{,}83$, $T_\odot = 5778$ K).
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 — Jarak dari paralaks:**
+
+$$d = \frac{1}{p''} = \frac{1}{0{,}05} = 20 \text{ pc}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 — Modulus jarak:**
+
+$$\mu = 5\log(20) - 5 = 5 \times 1{,}301 - 5 = 1{,}505.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 — Magnitudo absolut:**
+
+$$M = m - \mu = 8{,}2 - 1{,}505 = 6{,}70.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 4 — Luminositas:**
+
+$$M - M_\odot = -2{,}5\log\frac{L}{L_\odot} \implies 6{,}70 - 4{,}83 = -2{,}5\log\frac{L}{L_\odot}.$$
+
+$$\log\frac{L}{L_\odot} = \frac{-1{,}87}{2{,}5} = -0{,}748 \implies \frac{L}{L_\odot} \approx 0{,}178.$$
+
+</Langkah>
+
+<Langkah>
+
+**Cek:** Bintang dengan $T \approx T_\odot$ dan $L \approx 0{,}18\,L_\odot$ menyiratkan $R \approx 0{,}42\,R_\odot$ — sebuah bintang tipe-K kerdil. Masuk akal secara fisik.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="f1-cek-1"
+  pertanyaan="Sebuah bintang berjarak 50 pc. Berapa paralaks tahunannya dalam arcsec?"
+  opsi={['0,02 arcsec', '0,05 arcsec', '0,10 arcsec', '50 arcsec']}
+  jawaban={0}
+  penjelasan="Paralaks p = 1/d(pc) = 1/50 = 0,02 arcsec. Parsek didefinisikan tepat sehingga hubungan ini berlaku secara definisi."
+/>
+
+<CekPaham
+  id="f1-cek-2"
+  pertanyaan="Dua bintang memiliki magnitudo semu 1,0 dan 6,0. Berapa rasio fluks bintang pertama terhadap bintang kedua?"
+  opsi={['100', '10', '5', '50']}
+  jawaban={0}
+  penjelasan="Δm = 5, dan setiap 5 magnitudo setara faktor 100 dalam fluks (hukum Pogson). Jadi F₁/F₂ = 100."
+/>
+
+<CekPaham
+  id="f1-cek-3"
+  pertanyaan="Sebuah bintang memiliki luminositas 4 L☉ dan jari-jari 2 R☉. Berapa suhunya relatif terhadap suhu Matahari?"
+  opsi={['T☉/√2', 'T☉', '√2 · T☉', '2T☉']}
+  jawaban={1}
+  penjelasan="Dari L/L☉ = (R/R☉)²(T/T☉)⁴, diperoleh 4 = 2²(T/T☉)⁴ = 4(T/T☉)⁴. Jadi (T/T☉)⁴ = 1 dan T = T☉."
+/>
+
+<Refleksi
+  id="f1-refleksi-1"
+  pertanyaan="Mengapa astronomer menggunakan satuan AU, pc, dan M☉ daripada satuan SI seperti meter dan kilogram? Apa keuntungan dan kerugiannya dalam perhitungan sehari-hari?"
+/>
+
+## 8. Nilai dan konstanta yang sering dipakai
+
+<Konstanta
+  data={[
+    { simbol: '1 AU', nilai: '1,496 × 10¹¹', satuan: 'm' },
+    { simbol: '1 pc', nilai: '3,086 × 10¹⁶', satuan: 'm' },
+    { simbol: '1 pc', nilai: '206 265', satuan: 'AU' },
+    { simbol: '1 ly', nilai: '9,461 × 10¹⁵', satuan: 'm' },
+    { simbol: 'M☉', nilai: '1,989 × 10³⁰', satuan: 'kg' },
+    { simbol: 'L☉', nilai: '3,828 × 10²⁶', satuan: 'W' },
+    { simbol: 'R☉', nilai: '6,957 × 10⁸', satuan: 'm' },
+    { simbol: 'M☉ (abs)', nilai: '4,83', satuan: 'mag' },
+    { simbol: 'log 2', nilai: '0,3010', satuan: '—' },
+    { simbol: 'log 3', nilai: '0,4771', satuan: '—' },
+    { simbol: 'log 5', nilai: '0,6990', satuan: '—' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rantai logaritmik yang dibangun di bab ini — paralaks → jarak → modulus → magnitudo absolut → luminositas — adalah tulang punggung banyak soal OSN. Di bab-bab berikutnya (terutama A5 tentang fotometri bintang), rantai ini akan diperluas dengan koreksi serapan debu dan indeks warna.
+
+</Catatan>

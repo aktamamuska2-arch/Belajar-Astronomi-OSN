@@ -1,0 +1,447 @@
+[
+  {
+    "id": "l5-01",
+    "topik": "kosmologi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Dengan H₀ = 70 (km/s)/Mpc, berapa kecepatan resesi galaksi berjarak 50 Mpc?",
+    "opsi": [
+      "350 km/s",
+      "3.500 km/s",
+      "700 km/s",
+      "7.000 km/s"
+    ],
+    "jawaban": 1,
+    "pembahasan": [
+      "Hukum Hubble: v = H₀d.",
+      "v = 70 × 50 = 3.500 km/s.",
+      "Perhatikan satuan: H₀ sudah dalam km/s per Mpc, jadi jarak cukup dimasukkan dalam Mpc."
+    ]
+  },
+  {
+    "id": "l5-02",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Galaksi dengan kecepatan resesi 14.000 km/s berada pada jarak sekitar...",
+    "opsi": [
+      "200 Mpc",
+      "100 Mpc",
+      "20 Mpc",
+      "980 Mpc"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "d = v/H₀ = 14.000/70.",
+      "d = 200 Mpc.",
+      "Sekitar 650 juta tahun cahaya; pada jarak ini efek ekspansi sudah jelas terlihat pada spektrum."
+    ]
+  },
+  {
+    "id": "l5-03",
+    "topik": "kosmologi",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Galaksi berjarak 100 Mpc. Dengan H₀ = 70 (km/s)/Mpc, berapa kecepatan resesinya dalam km/s?",
+    "jawaban": 7000,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": [
+      "v = H₀d = 70 × 100.",
+      "v = 7.000 km/s.",
+      "Kecepatan ini bukan gerak galaksi menembus ruang, melainkan akibat ekspansi ruang di antara kita dan galaksi."
+    ]
+  },
+  {
+    "id": "l5-04",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Taksir waktu Hubble 1/H₀ dalam miliar tahun jika H₀ = 70 (km/s)/Mpc.",
+    "jawaban": 14,
+    "toleransiRel": 0.03,
+    "satuan": "miliar tahun",
+    "pembahasan": [
+      "Ubah H₀: 70 km/s/Mpc = 70 × 10³/(3,086 × 10²²) s⁻¹ ≈ 2,27 × 10⁻¹⁸ s⁻¹.",
+      "1/H₀ ≈ 4,41 × 10¹⁷ s.",
+      "4,41 × 10¹⁷/(3,156 × 10⁷) ≈ 1,4 × 10¹⁰ tahun ≈ 14 miliar tahun."
+    ]
+  },
+  {
+    "id": "l5-05",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Galaksi teramati dengan redshift z = 2. Saat cahayanya dipancarkan, faktor skala alam semesta adalah...",
+    "opsi": [
+      "1/2 dari sekarang",
+      "1/3 dari sekarang",
+      "3 kali sekarang",
+      "2 kali sekarang"
+    ],
+    "jawaban": 1,
+    "pembahasan": [
+      "Hubungan redshift dan faktor skala: 1 + z = a₀/a.",
+      "1 + 2 = 3, sehingga a = a₀/3.",
+      "Alam semesta saat itu berukuran sepertiga sekarang, dan suhu CMB tiga kali lebih tinggi."
+    ]
+  },
+  {
+    "id": "l5-06",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Suhu CMB saat ini 2,725 K. Berapa suhunya pada redshift z = 9, dalam kelvin?",
+    "jawaban": 27.3,
+    "toleransiRel": 0.02,
+    "satuan": "K",
+    "pembahasan": [
+      "Suhu radiasi berskala T = T₀(1 + z).",
+      "T = 2,725 × (1 + 9) = 27,25 K.",
+      "Pada masa itu alam semesta sepuluh kali lebih kecil dan radiasinya sepuluh kali lebih panas."
+    ]
+  },
+  {
+    "id": "l5-07",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Garis Hα dengan panjang gelombang laboratorium 656,28 nm berasal dari galaksi ber-redshift z = 0,5. Pada panjang gelombang berapa garis itu teramati?",
+    "opsi": [
+      "984 nm",
+      "328 nm",
+      "1.313 nm",
+      "656 nm"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Redshift: λ_obs = λ₀(1 + z).",
+      "λ_obs = 656,28 × 1,5 = 984,4 nm.",
+      "Garis bergeser ke inframerah dekat — alasan survei galaksi jauh sering dilakukan di inframerah."
+    ]
+  },
+  {
+    "id": "l5-08",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang kosmologi standar.",
+    "opsi": [
+      "Ekspansi alam semesta meregangkan panjang gelombang foton yang merambat.",
+      "CMB hampir berupa benda hitam sempurna dengan suhu 2,7 K.",
+      "Parameter densitas total Ω_total kira-kira sama dengan 1.",
+      "Konstanta Hubble H₀ memiliki satuan kecepatan.",
+      "Ω_Λ sekitar 0,7 dan berkaitan dengan ekspansi yang makin cepat."
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Ekspansi membuat faktor skala bertambah, sehingga panjang gelombang ikut teregang (redshift kosmologis).",
+      "CMB adalah benda hitam 2,725 K dengan anisotropi hanya orde 10⁻⁵.",
+      "H₀ bersatuan (km/s)/Mpc, bukan km/s — pernyataan 3 salah."
+    ]
+  },
+  {
+    "id": "l5-09",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang Cosmic Microwave Background.",
+    "opsi": [
+      "Dipancarkan saat alam semesta menjadi transparan, sekitar 380.000 tahun setelah Big Bang.",
+      "Spektrumnya sangat dekat dengan benda hitam 2,725 K.",
+      "Anisotropinya sangat kecil, orde 10⁻⁵ dari suhu rata-rata.",
+      "Berasal dari cakram galaksi Bima Sakti.",
+      "Keberadaannya sudah diprediksi sebelum akhirnya terdeteksi."
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "CMB dilepaskan pada rekombinasi (z ≈ 1.100), ketika elektron dan proton membentuk hidrogen netral dan foton bisa merambat bebas.",
+      "Spektrumnya adalah benda hitam terbaik yang pernah diukur, dengan anisotropi orde 10⁻⁵.",
+      "CMB bersifat kosmologis, bukan emisi galaksi kita — pernyataan 3 salah."
+    ]
+  },
+  {
+    "id": "l5-10",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah galaksi pada jarak 60 Mpc mengamati garis dengan kecepatan resesi 4.200 km/s. Berapa H₀ yang tersirat, dan apa artinya jika galaksi lain pada 120 Mpc diukur dengan cara sama?",
+    "opsi": [
+      "H₀ = 70 (km/s)/Mpc; galaksi kedua menunjukkan 8.400 km/s",
+      "H₀ = 42 (km/s)/Mpc; galaksi kedua menunjukkan 5.040 km/s",
+      "H₀ = 140 (km/s)/Mpc; galaksi kedua menunjukkan 16.800 km/s",
+      "H₀ = 84 (km/s)/Mpc; galaksi kedua menunjukkan 10.080 km/s"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "H₀ = v/d = 4.200/60 = 70 (km/s)/Mpc.",
+      "Hukum Hubble bersifat linear: jarak dua kali lipat memberi kecepatan dua kali lipat.",
+      "Pada 120 Mpc, v = 70 × 120 = 8.400 km/s."
+    ]
+  },
+  {
+    "id": "l5-11",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Hitung densitas kritis alam semesta untuk H₀ = 70 (km/s)/Mpc, dalam satuan 10⁻²⁷ kg/m³.",
+    "jawaban": 9.2,
+    "toleransiRel": 0.05,
+    "satuan": "10⁻²⁷ kg/m³",
+    "pembahasan": [
+      "Ubah H₀ ≈ 2,27 × 10⁻¹⁸ s⁻¹, sehingga H₀² ≈ 5,15 × 10⁻³⁶ s⁻².",
+      "ρc = 3H₀²/(8πG) = 1,55 × 10⁻³⁵/(1,68 × 10⁻⁹).",
+      "ρc ≈ 9,2 × 10⁻²⁷ kg/m³, setara sekitar lima atom hidrogen per meter kubik."
+    ]
+  },
+  {
+    "id": "l5-12",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan bagaimana Hukum Hubble dan CMB bersama-sama mendukung model Big Bang panas. Mengapa ekspansi tidak memiliki pusat?",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan bahwa semua galaksi menjauh dengan v ∝ d, konsisten dengan ruang yang mengembang seragam.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan bahwa ekspansi seragam tidak memiliki pusat: setiap titik tampak sebagai pusat bagi pengamat di titik itu.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghubungkan CMB dengan keadaan awal yang panas dan rapat, serta pendinginan akibat ekspansi.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyebut prediksi dan ciri CMB (benda hitam 2,7 K, anisotropi kecil) sebagai bukti kuat.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "Hukum Hubble menunjukkan bahwa galaksi menjauh dengan kecepatan sebanding jaraknya. Pola ini bukan gerak acak, melainkan tanda ruang itu sendiri mengembang secara seragam. Karena ekspansi terjadi di semua tempat sekaligus, tidak ada pusat: pengamat di galaksi mana pun akan melihat galaksi lain menjauh dengan pola yang sama. Bila kita mundurkan ekspansi, seluruh ruang menjadi lebih rapat dan panas — itulah keadaan awal Big Bang. CMB mendukung gambaran ini: radiasi sisa dari masa ketika alam semesta cukup dingin untuk membentuk hidrogen netral, teramati sebagai benda hitam 2,725 K yang datang dari segala arah dengan anisotropi sangat kecil. Keseragaman dan spektrumnya sulit dijelaskan tanpa fase awal yang panas dan rapat.",
+    "pembahasan": [
+      "Hukum Hubble v = H₀d konsisten dengan ekspansi ruang yang seragam; tidak ada titik pusat karena setiap titik mengembang menjauh dari titik lain dengan pola yang sama.",
+      "Mundur dalam waktu, faktor skala mengecil dan suhu naik; CMB adalah sisa radiasi dari masa ketika alam semesta menjadi transparan.",
+      "CMB berupa benda hitam hampir sempurna 2,725 K dengan anisotropi orde 10⁻⁵ — bukti kuat keadaan awal yang panas, rapat, dan hampir seragam."
+    ]
+  },
+  {
+    "id": "l5-13",
+    "topik": "kosmologi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "hubble-diagram",
+    "soal": "Pada diagram Hubble (gambar), titik-titik lokal mengikuti garis lurus melalui asal dengan kemiringan H₀ = 70 (km/s)/Mpc. Dalam pendekatan Hubble lokal, berapa kecepatan resesi galaksi pada d = 30 Mpc?",
+    "opsi": ["210 km/s", "2.100 km/s", "4.900 km/s", "70.030 km/s"],
+    "jawaban": 1,
+    "pembahasan": ["Untuk galaksi lokal pada jarak yang cukup kecil, gunakan pendekatan linear v ≈ H₀d; ini bukan rumus umum untuk mengubah semua redshift menjadi kecepatan pada z besar.", "v ≈ 70 × 30 = 2.100 km/s.", "Satuan Mpc saling menghapus dan tersisa km/s; kemiringan garis pada diagram adalah H₀."]
+  },
+  {
+    "id": "l5-14",
+    "topik": "kosmologi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "ekspansi-redshift",
+    "soal": "Pada diagram ekspansi (gambar), sebuah foton dipancarkan ketika faktor skala a = 0,4 dari nilai sekarang a₀ = 1. Berapa redshift kosmologis sumbernya?",
+    "opsi": ["z = 0,4", "z = 1,5", "z = 2,5", "z = 4"],
+    "jawaban": 1,
+    "pembahasan": ["Gunakan hubungan faktor skala yang berlaku untuk redshift kosmologis: 1 + z = a₀/a.", "1 + z = 1/0,4 = 2,5, jadi z = 1,5.", "Redshift berasal dari peregangan panjang gelombang oleh ekspansi; pada z sebesar ini jangan menafsirkan z sebagai v/c dengan pendekatan kecepatan rendah."]
+  },
+  {
+    "id": "l5-15",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "hubble-diagram",
+    "soal": "Pada bagian lokal diagram Hubble, sebuah galaksi berada di d = 40 Mpc dan memiliki redshift z = 0,0093. Untuk z ≪ 1, gunakan pendekatan Doppler-resesi nonrelativistik v ≈ cz dengan c = 3,00 × 10⁵ km/s, lalu v ≈ H₀d. Berapa H₀ yang terestimasi?",
+    "opsi": ["35 km/s/Mpc", "70 km/s/Mpc", "140 km/s/Mpc", "3,0 × 10⁵ km/s/Mpc"],
+    "jawaban": 1,
+    "pembahasan": ["Syarat z ≪ 1 dipenuhi secara kasar untuk z = 0,0093, sehingga pendekatan v ≈ cz memadai untuk estimasi ini.", "v ≈ 3,00 × 10⁵ × 0,0093 = 2.790 km/s.", "H₀ ≈ v/d = 2.790/40 = 69,75 ≈ 70 km/s/Mpc; pembulatan data menjelaskan hasil perkiraan."]
+  },
+  {
+    "id": "l5-16",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "ekspansi-redshift",
+    "soal": "Pada diagram peregangan gelombang (gambar), garis yang panjang gelombang diamnya 500 nm teramati pada 1.500 nm. Berapa z dan faktor skala saat cahaya dipancarkan relatif terhadap sekarang?",
+    "opsi": ["z = 2 dan a/a₀ = 1/3", "z = 3 dan a/a₀ = 1/4", "z = 2 dan a/a₀ = 1/2", "z = 0,5 dan a/a₀ = 2/3"],
+    "jawaban": 0,
+    "pembahasan": ["Dari definisi redshift spektral z = (λ_obs − λ₀)/λ₀ = (1.500 − 500)/500 = 2.", "Hubungan kosmologis tepatnya 1 + z = a₀/a, sehingga a/a₀ = 1/(1+z) = 1/3.", "Ini adalah redshift kosmologis; pendekatan v ≈ cz hanya berlaku untuk z kecil dan tidak digunakan untuk z = 2."]
+  },
+  {
+    "id": "l5-17",
+    "topik": "kosmologi",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "hubble-diagram",
+    "soal": "Diagram Hubble (gambar) menunjukkan dua galaksi lokal: A pada 40 Mpc dengan v = 2.900 km/s dan B pada 100 Mpc dengan v = 7.100 km/s. Anggap gerak peculiar dan galat cukup kecil, serta gunakan v ≈ H₀d hanya untuk rezim lokal. Estimasi H₀ paling wajar dari kedua titik adalah…",
+    "opsi": ["30 km/s/Mpc", "70 km/s/Mpc", "100 km/s/Mpc", "5.000 km/s/Mpc"],
+    "jawaban": 1,
+    "pembahasan": ["Tiap titik memberi estimasi H₀ = v/d: A memberi 2.900/40 = 72,5 km/s/Mpc dan B memberi 7.100/100 = 71 km/s/Mpc.", "Kedua taksiran konsisten dengan kemiringan sekitar 70 km/s/Mpc; beda kecil dapat berasal dari gerak peculiar dan galat.", "Menggabungkan titik dengan rentang jarak berbeda membantu mengestimasi kemiringan garis, tetapi hubungan linear ini dipakai di sini sebagai pendekatan lokal, bukan ekstrapolasi ber-redshift tinggi."]
+  },
+  {
+    "id": "l5-18",
+    "topik": "kosmologi",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "ekspansi-redshift",
+    "soal": "Diagram ekspansi menunjukkan foton dari galaksi dengan z = 3. Garis spektrum diamnya 400 nm. Berapa panjang gelombang teramati, dan bagaimana faktor skala saat emisi dibanding sekarang?",
+    "opsi": ["1.200 nm dan a/a₀ = 1/3", "1.600 nm dan a/a₀ = 1/4", "1.600 nm dan a/a₀ = 1/3", "100 nm dan a/a₀ = 4"],
+    "jawaban": 1,
+    "pembahasan": ["Redshift didefinisikan melalui λ_obs = λ₀(1+z), sehingga λ_obs = 400 × 4 = 1.600 nm.", "Faktor skala saat emisi memenuhi a/a₀ = 1/(1+z) = 1/4.", "Kedua hasil saling konsisten: panjang gelombang teregang empat kali seiring faktor skala bertambah empat kali; z = 3 tidak boleh disamakan dengan v/c secara nonrelativistik."]
+  },
+  {
+    "id": "l5-19",
+    "topik": "kosmologi",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "hubble-diagram",
+    "soal": "Pada diagram Hubble lokal, sebuah galaksi memiliki v ≈ 7.000 km/s dan d ≈ 100 Mpc. Jika kedua nilai masing-masing memiliki ketidakpastian independen 5% dan 10%, gunakan v ≈ H₀d dan galat relatif kuadratur untuk menaksir ketidakpastian relatif H₀ = v/d. Berapa hasilnya?",
+    "opsi": ["5%", "11%", "15%", "50%"],
+    "jawaban": 1,
+    "pembahasan": ["Estimasi pusatnya adalah H₀ ≈ 7.000/100 = 70 km/s/Mpc; v ≈ H₀d dipakai sebagai pendekatan lokal.", "Untuk hasil bagi dua galat independen, galat relatif kuadratur ≈ √(0,05² + 0,10²) = √0,0125 ≈ 0,112.", "Ketidakpastian relatif sekitar 11%. Ini mengabaikan kovariansi dan galat sistematis serta mengasumsikan kedua galat independen."]
+  },
+  {
+    "id": "l5-20",
+    "topik": "kosmologi",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "gambar": "ekspansi-redshift",
+    "soal": "Berdasarkan konsep ekspansi dan redshift kosmologis pada gambar, pilih semua pernyataan yang benar.",
+    "opsi": ["Panjang gelombang foton bertambah sebanding faktor skala alam semesta", "Hubungan 1 + z = a₀/a berlaku untuk redshift kosmologis", "Setiap nilai z dapat langsung diubah menjadi v = cz tanpa syarat", "Untuk z ≪ 1, v ≈ cz dapat menjadi pendekatan resesi lokal", "Redshift kosmologis berarti foton kehilangan frekuensi karena ekspansi ruang"],
+    "jawaban": [0, 1, 3, 4],
+    "pembahasan": ["Panjang gelombang kosmologis teregang bersama faktor skala, sehingga λ_obs/λ_emit = a₀/a = 1+z.", "Untuk z kecil, hubungan v ≈ cz berguna sebagai pendekatan nonrelativistik; pada z besar hubungan ini bukan hukum umum.", "Frekuensi berbanding terbalik dengan panjang gelombang, jadi frekuensi teramati turun. Redshift tidak berarti semua galaksi memiliki kecepatan resesi cz dalam ruang lokal."]
+  },
+  {
+    "id": "l5-21",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "hubble-diagram",
+    "soal": "Pada diagram Hubble lokal, sebaran titik mendekati garis v = H₀d. Pilih semua interpretasi yang benar untuk data ber-redshift rendah.",
+    "opsi": ["Kemiringan garis v terhadap d mengestimasi H₀", "Intersep bukan nol dapat menandakan kalibrasi atau kecepatan titik acuan yang perlu diperiksa", "Sebaran di sekitar garis dapat timbul dari gerak peculiar dan galat", "H₀ bersatuan km/s, sama dengan kecepatan tiap galaksi", "Pada jarak dua kali lebih besar, model linear lokal memprediksi v dua kali lebih besar"],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": ["Dalam plot v terhadap d, kemiringan adalah H₀ dengan satuan (km/s)/Mpc.", "Model lokal ideal melalui asal; intersep yang menyimpang perlu diperiksa terhadap kalibrasi, kerangka acuan, dan sampel.", "Gerak peculiar dan ketidakpastian pengukuran menghasilkan sebaran. Prediksi linear dan penggandaan v hanya diterapkan dalam pendekatan lokal ber-z rendah."]
+  },
+  {
+    "id": "l5-22",
+    "topik": "kosmologi",
+    "level": "fondasi",
+    "tipe": "isian",
+    "gambar": "ekspansi-redshift",
+    "soal": "Pada diagram redshift, panjang gelombang diam sebuah garis 600 nm dan teramati pada 900 nm. Hitung redshift z.",
+    "jawaban": 0.5,
+    "toleransiRel": 0.02,
+    "satuan": "tanpa satuan",
+    "pembahasan": ["Gunakan definisi z = (λ_obs − λ₀)/λ₀.", "z = (900 − 600)/600 = 300/600 = 0,5.", "Redshift adalah bilangan tak berdimensi; hasil positif berarti garis bergeser ke panjang gelombang lebih besar."]
+  },
+  {
+    "id": "l5-23",
+    "topik": "kosmologi",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "hubble-diagram",
+    "soal": "Titik galaksi lokal pada diagram Hubble berada di d = 80 Mpc dengan v = 5.600 km/s. Gunakan pendekatan lokal v ≈ H₀d. Berapa H₀ dalam (km/s)/Mpc?",
+    "jawaban": 70,
+    "toleransiRel": 0.02,
+    "satuan": "(km/s)/Mpc",
+    "pembahasan": ["Untuk data lokal, kemiringan v terhadap d memberi H₀ ≈ v/d.", "H₀ ≈ 5.600/80 = 70 (km/s)/Mpc.", "Ini memakai hukum Hubble linear sebagai pendekatan jarak rendah; H₀ bukan kecepatan tanpa satuan jarak."]
+  },
+  {
+    "id": "l5-24",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "ekspansi-redshift",
+    "soal": "Panjang gelombang teramati suatu garis adalah 1,2 kali panjang gelombang diamnya. Berapa faktor skala saat emisi a/a₀? Gunakan hubungan redshift kosmologis.",
+    "jawaban": 0.8333,
+    "toleransiRel": 0.02,
+    "satuan": "tanpa satuan",
+    "pembahasan": ["λ_obs/λ₀ = 1 + z = 1,2, sehingga z = 0,2.", "Untuk redshift kosmologis, a/a₀ = 1/(1+z) = 1/1,2 = 0,8333.", "Jadi alam semesta saat emisi berukuran sekitar 83,3% dari ukuran sekarang; hubungan faktor skala ini tidak memerlukan v ≈ cz."]
+  },
+  {
+    "id": "l5-25",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "hubble-diagram",
+    "soal": "Dua galaksi lokal pada diagram Hubble berjarak 35 Mpc dan 85 Mpc. Dengan H₀ = 70 (km/s)/Mpc dan pendekatan resesi lokal v ≈ H₀d, hitung selisih kecepatan resesi keduanya dalam km/s.",
+    "jawaban": 3500,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": ["Selisih jarak Δd = 85 − 35 = 50 Mpc.", "Dalam model lokal linear, Δv ≈ H₀Δd = 70 × 50 = 3.500 km/s.", "Ini perbandingan kecepatan resesi kosmologis untuk jarak rendah; gerak peculiar dapat menambah selisih pada data nyata."]
+  },
+  {
+    "id": "l5-26",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "ekspansi-redshift",
+    "soal": "CMB saat ini bersuhu 2,725 K. Pada zaman yang faktor skalanya a = a₀/5, hitung suhu CMB. Gunakan T ∝ 1/a.",
+    "jawaban": 13.625,
+    "toleransiRel": 0.02,
+    "satuan": "K",
+    "pembahasan": ["Jika a = a₀/5, maka 1+z = a₀/a = 5.", "Suhu radiasi T = T₀(1+z) = 2,725 × 5 = 13,625 K.", "Radiasi lebih panas saat alam semesta lebih kecil; hasil memakai hukum skala suhu radiasi, bukan pendekatan Doppler v ≈ cz."]
+  },
+  {
+    "id": "l5-27",
+    "topik": "kosmologi",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "hubble-diagram",
+    "soal": "Pada dua titik lokal diagram Hubble, galaksi A (d = 50 Mpc, v = 3.600 km/s) dan B (d = 110 Mpc, v = 7.400 km/s). Gunakan v ≈ H₀d untuk tiap galaksi, lalu rata-ratakan dua taksiran H₀ dengan bobot sama. Berapa H₀ dalam (km/s)/Mpc?",
+    "jawaban": 69.636,
+    "toleransiRel": 0.02,
+    "satuan": "(km/s)/Mpc",
+    "pembahasan": ["A memberi H₀,A = 3.600/50 = 72 (km/s)/Mpc.", "B memberi H₀,B = 7.400/110 ≈ 67,27 (km/s)/Mpc.", "Rata-rata sama bobotnya (72 + 67,27)/2 ≈ 69,64 (km/s)/Mpc. Sebaran masuk akal akibat galat dan gerak peculiar; asumsi linear hanya untuk rezim lokal."]
+  },
+  {
+    "id": "l5-28",
+    "topik": "kosmologi",
+    "level": "penalaran",
+    "tipe": "esai",
+    "gambar": "hubble-diagram",
+    "soal": "Jelaskan cara menafsirkan diagram Hubble pada gambar: arti kemiringan garis, alasan titik-titik tidak tepat berada pada garis, serta syarat penggunaan v ≈ H₀d. Bedakan pendekatan lokal ini dari hubungan redshift kosmologis dengan faktor skala.",
+    "rubrik": [
+      {"poin": "Mengidentifikasi kemiringan plot v terhadap d sebagai H₀ dengan satuan (km/s)/Mpc.", "bobot": 2},
+      {"poin": "Menjelaskan sebaran titik melalui gerak peculiar dan galat pengukuran/kalibrasi.", "bobot": 2},
+      {"poin": "Menyatakan v ≈ H₀d dan v ≈ cz adalah pendekatan untuk jarak/redshift rendah, bukan aturan universal pada z besar.", "bobot": 2},
+      {"poin": "Membedakan hubungan kosmologis 1+z = a₀/a dari pendekatan kecepatan nonrelativistik.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Pada plot kecepatan terhadap jarak, kemiringan garis adalah H₀ karena v ≈ H₀d; satuannya (km/s)/Mpc. Titik nyata menyebar di sekitar garis akibat kecepatan peculiar galaksi, galat jarak dan kecepatan, serta kemungkinan kalibrasi. Hukum linear dan v ≈ cz merupakan pendekatan untuk galaksi lokal dengan z ≪ 1. Pada redshift tinggi, z tidak boleh langsung dibaca sebagai v/c dengan rumus nonrelativistik. Untuk ekspansi kosmologis, hubungan yang mengaitkan spektrum dengan sejarah ukuran alam semesta ialah 1+z = a₀/a, dan interpretasi jarak–kecepatan memerlukan model kosmologi yang sesuai.",
+    "pembahasan": ["Kemiringan diagram v–d mengukur laju ekspansi saat ini pada pendekatan lokal.", "Sebaran tidak otomatis membantah ekspansi; gerak peculiar dan galat menyumbang residu.", "v ≈ cz berlaku sebagai pendekatan redshift kecil, sedangkan hubungan faktor skala berlaku bagi redshift kosmologis."]
+  },
+  {
+    "id": "l5-29",
+    "topik": "kosmologi",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "ekspansi-redshift",
+    "soal": "Gunakan diagram peregangan panjang gelombang pada gambar untuk menjelaskan hubungan antara redshift, faktor skala, dan suhu CMB. Untuk sumber dengan z = 4, hitung a/a₀ dan suhu CMB jika T₀ = 2,725 K. Tegaskan mengapa z = 4 tidak dapat diperlakukan sebagai kecepatan v = 4c.",
+    "rubrik": [
+      {"poin": "Menjelaskan λ_obs/λ_emit = 1+z = a₀/a untuk redshift kosmologis.", "bobot": 2},
+      {"poin": "Menghitung a/a₀ = 1/(1+4) = 0,2.", "bobot": 2},
+      {"poin": "Menggunakan T(z) = T₀(1+z) dan memperoleh 13,625 K.", "bobot": 2},
+      {"poin": "Menegaskan z bukan kecepatan; v ≈ cz hanya pendekatan nonrelativistik untuk z ≪ 1.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Dalam ekspansi kosmologis panjang gelombang foton ikut teregang, sehingga λ_obs/λ_emit = 1+z = a₀/a. Untuk z = 4 diperoleh a/a₀ = 1/5 = 0,2: alam semesta saat emisi berukuran seperlima ukuran sekarang. Suhu radiasi berbanding terbalik dengan faktor skala, jadi T(z) = T₀(1+z) = 2,725 × 5 = 13,625 K. Redshift adalah ukuran peregangan spektral, bukan kecepatan dalam satuan c; rumus v ≈ cz hanya pendekatan bagi z yang jauh lebih kecil dari satu dan tidak sah untuk z = 4.",
+    "pembahasan": ["Kaitkan redshift dengan peregangan panjang gelombang dan rasio faktor skala.", "Hitung faktor skala 0,2 dan suhu masa lalu 13,625 K.", "Jangan menafsirkan z = 4 sebagai v = 4c; redshift kosmologis besar memerlukan interpretasi ekspansi ruang."]
+  },
+  {
+    "id": "l5-30",
+    "topik": "kosmologi",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "hubble-diagram",
+    "soal": "Dua galaksi lokal ditandai pada diagram Hubble (gambar): A berjarak 40 Mpc dan memiliki v = 2.800 km/s; B berjarak 90 Mpc dan memiliki v = 6.600 km/s. Gunakan v ≈ H₀d hanya dalam rezim lokal. Hitung taksiran H₀ masing-masing dan jelaskan apakah keduanya mendukung satu nilai ekspansi yang sama, dengan menyebut sumber kemungkinan selisih.",
+    "rubrik": [
+      {"poin": "Menghitung H₀,A = v_A/d_A = 70 (km/s)/Mpc.", "bobot": 2},
+      {"poin": "Menghitung H₀,B = v_B/d_B ≈ 73,3 (km/s)/Mpc.", "bobot": 2},
+      {"poin": "Menyimpulkan keduanya konsisten secara kasar dengan H₀ sekitar 70–73 (km/s)/Mpc.", "bobot": 2},
+      {"poin": "Menyebut gerak peculiar, ketidakpastian jarak/kecepatan, dan batas pendekatan lokal sebagai sumber perbedaan.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Untuk A, H₀,A ≈ 2.800/40 = 70 (km/s)/Mpc. Untuk B, H₀,B ≈ 6.600/90 = 73,3 (km/s)/Mpc. Kedua nilai mendukung kemiringan ekspansi lokal sekitar 70–73 (km/s)/Mpc; selisih beberapa persen tidak mengejutkan karena gerak peculiar dan galat pengukuran jarak atau kecepatan. Perhitungan ini menggunakan v ≈ H₀d dalam rezim lokal dan tidak dimaksudkan sebagai hubungan linear universal pada redshift tinggi.",
+    "pembahasan": ["Bagi kecepatan dengan jarak untuk masing-masing titik, dengan satuan menghasilkan (km/s)/Mpc.", "Bandingkan hasil sekitar 70 dan 73,3; konsistensi dinilai terhadap galat dan sebaran data.", "Sebutkan bahwa hukum linear adalah pendekatan lokal dan sumber residu dapat berupa gerak peculiar serta galat."]
+  }
+]

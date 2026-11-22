@@ -1,0 +1,257 @@
+<Tujuan>
+
+- Menghitung gaya Coulomb, medan listrik, dan gaya magnet pada muatan bergerak.
+- Menganalisis rangkaian sederhana: hukum Ohm, daya, susunan seri dan paralel.
+- Memakai model Bohr dan energi foton untuk menjelaskan garis spektrum.
+- Menghitung defek massa dan energi ikat inti atom.
+- Menjelaskan mengapa fusi dan fisi melepaskan energi lewat kurva energi ikat per nukleon.
+
+</Tujuan>
+
+<Prasyarat babIds={['f5']} />
+
+<p className="lead">Spektrum bintang, reaksi di inti Matahari, dan kerja detektor cahaya semuanya berakar pada listrik, magnet, dan fisika kuantum. Bab ini bukan kursus elektronika; tujuannya memberi tiga alat yang akan muncul lagi dan lagi: gaya pada muatan, energi foton, dan energi ikat inti.</p>
+
+## 1. Muatan, medan, dan gaya
+
+<Poin judul="1 · Gaya Coulomb & medan listrik" defaultOpen>
+
+Dua muatan titik tarik-menarik atau tolak-menolak dengan gaya
+
+$$F = k\frac{|q_1 q_2|}{r^{2}}, \qquad k = 9 \times 10^{9}\ \mathrm{N\,m^{2}/C^{2}}.$$
+
+Gaya ini berbanding terbalik dengan kuadrat jarak — pola yang sama dengan gravitasi Newton, tetapi bisa tarik **dan** tolak karena ada dua jenis muatan.
+
+Medan listrik didefinisikan sebagai gaya per satuan muatan uji:
+
+$$E = \frac{F}{q}.$$
+
+Arah medan menjauh dari muatan positif dan menuju muatan negatif. Garis medan tidak pernah berpotongan: satu titik hanya punya satu arah medan resultan.
+
+<Contoh judul="Gaya antara dua muatan mikro">
+
+<Langkah>
+
+Dua muatan $+2\ \mu\mathrm{C}$ dan $+3\ \mu\mathrm{C}$ terpisah $0{,}1$ m. Berapa besar gayanya?
+
+</Langkah>
+
+<Langkah>
+
+$F = 9 \times 10^{9} \times \dfrac{(2 \times 10^{-6})(3 \times 10^{-6})}{(0{,}1)^{2}}$.
+
+</Langkah>
+
+<Langkah>
+
+$F = 9 \times 10^{9} \times \dfrac{6 \times 10^{-12}}{10^{-2}} = 9 \times 10^{9} \times 6 \times 10^{-10} = 5{,}4$ N.
+
+</Langkah>
+
+<Langkah>
+
+Kedua muatan positif, jadi gaya tolak-menolak sebesar 5,4 N pada masing-masing muatan. Perhatikan betapa kecilnya muatan ini tetapi betapa besarnya gaya dibanding berat benda sehari-hari — gaya listrik memang jauh lebih kuat daripada gravitasi.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Muatan dalam medan magnet
+
+<Poin judul="2 · Gaya Lorentz & gerak melingkar">
+
+Muatan yang bergerak dalam medan magnet merasakan gaya
+
+$$F = qvB\sin\theta,$$
+
+dengan $\theta$ sudut antara kecepatan dan medan. Arahnya tegak lurus keduanya (aturan tangan kanan). Dua akibat penting:
+
+- Karena gaya selalu tegak lurus kecepatan, gaya magnet **tidak melakukan usaha** dan tidak mengubah kelajuan, hanya arahnya.
+- Jika $\mathbf{v} \perp \mathbf{B}$, muatan bergerak melingkar dengan jari-jari
+
+$$r = \frac{mv}{qB}.$$
+
+Inilah dasar spektrometer massa dan siklotron: partikel dengan $m/q$ berbeda membelok dengan radius berbeda.
+
+<Catatan variasi="awas">
+
+Muatan yang diam tidak merasakan gaya magnet, sebesar apa pun medannya. Gaya Lorentz butuh kecepatan — berbeda dengan gaya listrik yang bekerja meskipun muatan diam.
+
+</Catatan>
+
+</Poin>
+
+## 3. Rangkaian sederhana
+
+<Poin judul="3 · Hukum Ohm & daya">
+
+Hukum Ohm untuk resistor:
+
+$$V = IR.$$
+
+Daya yang diubah menjadi panas:
+
+$$P = VI = I^{2}R = \frac{V^{2}}{R}.$$
+
+Dalam susunan **seri**, arus sama di semua komponen dan hambatan total dijumlahkan: $R_{\text{seri}} = R_1 + R_2 + \cdots$. Dalam susunan **paralel**, tegangan sama dan kebalikan hambatan dijumlahkan:
+
+$$\frac{1}{R_{\parallel}} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots$$
+
+Baterai nyata punya hambatan dalam $r$, sehingga arusnya $I = \mathcal{E}/(R + r)$ dan tegangan jepitnya $\mathcal{E} - Ir$. Semakin besar arus yang ditarik, semakin turun tegangan yang tersedia.
+
+<Contoh judul="Seri atau paralel?">
+
+<Langkah>
+
+Dua resistor $4\ \Omega$ dan $6\ \Omega$ dihubungkan ke baterai 12 V tanpa hambatan dalam. Hitung arus untuk kedua susunan.
+
+</Langkah>
+
+<Langkah>
+
+Seri: $R = 10\ \Omega$, sehingga $I = 12/10 = 1{,}2$ A.
+
+</Langkah>
+
+<Langkah>
+
+Paralel: $1/R = 1/4 + 1/6 = 5/12$, sehingga $R = 2{,}4\ \Omega$ dan $I = 12/2{,}4 = 5$ A.
+
+</Langkah>
+
+<Langkah>
+
+Paralel memberi hambatan lebih kecil dan arus lebih besar. Daya total juga naik dari $14{,}4$ W (seri) menjadi 60 W (paralel) — alasan lampu rumah disusun paralel agar masing-masing mendapat tegangan penuh dan bisa dinyalakan terpisah.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 4. Atom dan kuantum pengantar
+
+<Poin judul="4 · Tingkat energi & foton">
+
+Atom hidrogen dalam model Bohr hanya boleh berada pada tingkat energi
+
+$$E_n = -\frac{13{,}6\ \mathrm{eV}}{n^{2}}, \qquad n = 1, 2, 3, \ldots$$
+
+Tingkat $n=1$ adalah keadaan dasar; energi negatif menandakan elektron terikat. Untuk pindah dari tingkat bawah ke atas, atom menyerap foton dengan energi persis selisihnya; saat turun, atom memancarkan foton:
+
+$$hf = E_{\text{atas}} - E_{\text{bawah}}.$$
+
+Karena tingkat energinya diskret, spektrum atom berupa **garis-garis tajam**, bukan pelangi kontinu. Garis inilah yang dipakai astronom untuk mengenali unsur di bintang.
+
+Untuk pindah dari $n=3$ ke $n=2$:
+
+$$E = 13{,}6\left(\frac{1}{4} - \frac{1}{9}\right) \approx 1{,}89\ \mathrm{eV}.$$
+
+<Gambar id="tingkat-energi-hidrogen" />
+
+<Catatan variasi="tips">
+
+Jalan pintas yang sering dipakai: $E(\mathrm{eV}) \approx 1240/\lambda(\mathrm{nm})$. Foton 656 nm berarti $1240/656 \approx 1{,}9$ eV — cocok dengan transisi $n=3\to2$ di atas.
+
+</Catatan>
+
+</Poin>
+
+## 5. Inti atom dan defek massa
+
+<Poin judul="5 · Energi ikat inti">
+
+Inti atom terdiri dari $Z$ proton dan $N$ neutron, dengan nomor massa $A = Z + N$. Massa inti **lebih kecil** daripada jumlah massa nukleon penyusunnya. Selisih itu disebut defek massa:
+
+$$\Delta m = Zm_p + Nm_n - m_{\text{inti}}.$$
+
+Energi yang setara dengannya adalah energi ikat, yaitu energi yang harus diberikan untuk membongkar inti menjadi nukleon bebas:
+
+$$B = \Delta m\, c^{2}.$$
+
+Dalam satuan praktis, $1\ \mathrm{u} = 931{,}5\ \mathrm{MeV}/c^{2}$. Energi ikat per nukleon $B/A$ mengukur seberapa rapat inti terikat:
+
+- Naik tajam untuk inti ringan, memuncak di sekitar besi (Fe-56) pada $\sim 8{,}8$ MeV per nukleon.
+- Turun perlahan untuk inti berat.
+
+Karena itu **fusi** inti ringan (menuju besi) dan **fisi** inti berat sama-sama melepaskan energi: keduanya bergerak menuju puncak kurva $B/A$.
+
+<Contoh judul="Energi ikat deuteron">
+
+<Langkah>
+
+Deuteron: $m_p = 1{,}007276$ u, $m_n = 1{,}008665$ u, $m_d = 2{,}013553$ u.
+
+</Langkah>
+
+<Langkah>
+
+$\Delta m = 1{,}007276 + 1{,}008665 - 2{,}013553 = 0{,}002388$ u.
+
+</Langkah>
+
+<Langkah>
+
+$B = 0{,}002388 \times 931{,}5 \approx 2{,}22$ MeV.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: sekitar 2,2 MeV per dua nukleon, atau 1,1 MeV per nukleon. Bandingkan dengan 8,8 MeV per nukleon di besi — inti ringan masih jauh dari puncak, sehingga fusi hidrogen menjadi helium melepaskan energi besar per reaksi.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="awas">
+
+Jangan menjumlahkan massa proton dan elektron saat menghitung massa atom hidrogen tanpa konsistensi: data tabel massa atom sudah termasuk elektron. Selalu periksa apakah yang diberikan massa inti atau massa atom.
+
+</Catatan>
+
+</Poin>
+
+## 6. Cek pemahaman
+
+<CekPaham
+  id="f6-cek-1"
+  pertanyaan="Berapa energi foton dengan panjang gelombang 124 nm?"
+  opsi={['10 eV', '1 eV', '100 eV', '0,1 eV']}
+  jawaban={0}
+  penjelasan="E ≈ 1240/124 = 10 eV. Foton ini berada di ultraviolet dan cukup untuk mengionisasi banyak atom."
+/>
+
+<CekPaham
+  id="f6-cek-2"
+  pertanyaan="Dua resistor 6 Ω disusun paralel. Berapa hambatan totalnya?"
+  opsi={['3 Ω', '12 Ω', '6 Ω', '1,5 Ω']}
+  jawaban={0}
+  penjelasan="1/R = 1/6 + 1/6 = 1/3, sehingga R = 3 Ω. Dua hambatan sama besar yang diparalel selalu menghasilkan setengahnya."
+/>
+
+<Refleksi
+  id="f6-refleksi-1"
+  pertanyaan="Mengapa massa inti lebih kecil daripada jumlah massa nukleonnya? Di mana 'massa yang hilang' itu, dan mengapa fakta ini penting bagi energi bintang?"
+/>
+
+## 7. Nilai yang sering dipakai
+
+<Konstanta
+  data={[
+    { simbol: 'k (Coulomb)', nilai: '9,0 × 10⁹', satuan: 'N·m²/C²' },
+    { simbol: 'e', nilai: '1,60 × 10⁻¹⁹', satuan: 'C' },
+    { simbol: 'mₑ', nilai: '9,11 × 10⁻³¹', satuan: 'kg' },
+    { simbol: 'mₚ', nilai: '1,6726 × 10⁻²⁷', satuan: 'kg' },
+    { simbol: '1 u', nilai: '931,5', satuan: 'MeV/c²' },
+    { simbol: 'hc', nilai: '1.240', satuan: 'eV·nm' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Bab A5 dan L1 akan memakai aturan $E = 1240/\lambda$ untuk garis spektrum, sedangkan L2 memakai defek massa untuk reaksi fusi di pusat bintang. Simpan hubungan $P = I^{2}R$ dan $B = \Delta m c^{2}$ sebagai dua rumus yang paling sering muncul.
+
+</Catatan>

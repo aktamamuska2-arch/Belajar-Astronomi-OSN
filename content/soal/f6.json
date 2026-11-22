@@ -1,0 +1,327 @@
+[
+  {
+    "id": "f6-01",
+    "topik": "listrik-modern",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Dua muatan titik +2 μC dan +3 μC terpisah 0,1 m. Berapa besar gaya Coulomb di antara keduanya? (k = 9 × 10⁹ N·m²/C²)",
+    "opsi": [
+      "5,4 N",
+      "54 N",
+      "0,54 N",
+      "2,7 N"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "F = k|q₁q₂|/r².",
+      "q₁q₂ = (2 × 10⁻⁶)(3 × 10⁻⁶) = 6 × 10⁻¹² C² dan r² = 1 × 10⁻² m².",
+      "F = 9 × 10⁹ × 6 × 10⁻¹² / 1 × 10⁻² = 5,4 N.",
+      "Karena kedua muatan sejenis, gaya tolak-menolak. Bandingkan: ini jauh lebih besar daripada berat benda bermassa 0,5 kg, menandakan kuatnya gaya listrik."
+    ]
+  },
+  {
+    "id": "f6-02",
+    "topik": "listrik-modern",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah proton (m = 1,67 × 10⁻²⁷ kg, q = 1,6 × 10⁻¹⁹ C) masuk tegak lurus ke medan magnet 0,5 T dengan kelajuan 2 × 10⁶ m/s. Berapa jari-jari lintasan lingkarannya?",
+    "opsi": [
+      "4,2 cm",
+      "2,1 cm",
+      "8,4 cm",
+      "42 cm"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gaya magnet menjadi gaya sentripetal: qvB = mv²/r, sehingga r = mv/(qB).",
+      "r = (1,67 × 10⁻²⁷ × 2 × 10⁶)/(1,6 × 10⁻¹⁹ × 0,5).",
+      "r = 3,34 × 10⁻²¹ / 8,0 × 10⁻²⁰ ≈ 0,042 m = 4,2 cm.",
+      "Periksa: energi proton sekitar 20 keV, dan jari-jari beberapa sentimeter masuk akal untuk medan setengah tesla."
+    ]
+  },
+  {
+    "id": "f6-03",
+    "topik": "listrik-modern",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Baterai dengan GGL 12 V dan hambatan dalam 1 Ω dihubungkan ke resistor 5 Ω. Berapa tegangan jepit baterai?",
+    "opsi": [
+      "10 V",
+      "12 V",
+      "2 V",
+      "8 V"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Arus: I = GGL/(R + r) = 12/(5 + 1) = 2 A.",
+      "Tegangan jepit: V = GGL − Ir = 12 − 2 × 1 = 10 V.",
+      "Tegangan ini sama dengan IR = 2 × 5 = 10 V, konsisten.",
+      "Semakin besar arus, semakin besar 'kehilangan' tegangan di hambatan dalam — alasan baterai lama (r besar) tegangannya drop saat diberi beban."
+    ]
+  },
+  {
+    "id": "f6-04",
+    "topik": "listrik-modern",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Manakah transisi atom hidrogen berikut yang memancarkan foton dengan panjang gelombang paling pendek?",
+    "opsi": [
+      "n = 3 ke n = 1",
+      "n = 3 ke n = 2",
+      "n = 4 ke n = 2",
+      "n = 2 ke n = 1"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Energi foton sama dengan selisih tingkat: E = 13,6(1/n_bawah² − 1/n_atas²); makin besar E, makin pendek λ karena λ = 1240/E(nm·eV).",
+      "3→2: 13,6(1/4 − 1/9) ≈ 1,89 eV.",
+      "4→2: 13,6(1/4 − 1/16) ≈ 2,55 eV.",
+      "2→1: 13,6(1 − 1/4) = 10,2 eV.",
+      "3→1: 13,6(1 − 1/9) ≈ 12,1 eV — paling besar, jadi λ paling pendek (≈102 nm).",
+      "Cara cepat: semakin jauh 'turun' menuju n = 1, semakin besar energinya; transisi 3→1 melewati celah energi terbesar di antara pilihan."
+    ]
+  },
+  {
+    "id": "f6-05",
+    "topik": "listrik-modern",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang medan listrik dan medan magnet.",
+    "opsi": [
+      "Garis medan listrik dari muatan positif mengarah keluar menjauhi muatan",
+      "Gaya magnet tidak melakukan usaha pada muatan karena tegak lurus kecepatan",
+      "Muatan listrik yang diam tidak merasakan gaya magnet",
+      "Garis medan listrik boleh berpotongan di titik netral",
+      "Gaya Coulomb berbanding lurus dengan jarak antar muatan"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Konvensi arah medan: keluar dari muatan positif, masuk ke muatan negatif.",
+      "Usaha = F·s; gaya magnet selalu tegak lurus perpindahan, jadi hasil kali titiknya nol dan kelajuan partikel tidak berubah.",
+      "Gaya Lorentz F = qvB sin θ memuat v; bila v = 0 gaya nol, berbeda dengan gaya listrik yang tetap bekerja.",
+      "Jika dua garis medan berpotongan, di titik itu medan punya dua arah sekaligus — mustahil karena medan di satu titik tunggal.",
+      "Hukum Coulomb berbanding terbalik dengan r², bukan berbanding lurus dengan r."
+    ]
+  },
+  {
+    "id": "f6-06",
+    "topik": "listrik-modern",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang inti atom dan energi ikat.",
+    "opsi": [
+      "Energi ikat per nukleon mencapai maksimum di sekitar besi (Fe-56)",
+      "Fusi inti ringan dan fisi inti berat sama-sama dapat melepaskan energi",
+      "Defek massa setara dengan energi ikat inti melalui E = Δm c²",
+      "Nomor massa A sama dengan jumlah proton saja",
+      "Energi ikat per nukleon terus naik tanpa batas untuk inti yang lebih berat"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Kurva B/A naik untuk inti ringan lalu memuncak di sekitar 8,8 MeV per nukleon dekat besi, kemudian turun perlahan.",
+      "Keduanya bergerak menuju inti yang lebih terikat: fusi ringan naik ke puncak, fisi berat juga naik menuju puncak dari sisi kanan.",
+      "B = Δm c²; massa yang 'hilang' muncul sebagai energi ikat yang menahan nukleon bersama.",
+      "A = Z + N, yaitu jumlah proton dan neutron. Proton saja hanya Z, bukan A.",
+      "Setelah besi, B/A justru turun perlahan karena tolakan Coulomb antarproton melemahkan ikatan — alasan inti sangat berat tidak stabil terhadap fisi."
+    ]
+  },
+  {
+    "id": "f6-07",
+    "topik": "listrik-modern",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah resistor 20 Ω dialiri arus 0,5 A. Berapa daya yang diubah menjadi panas, dalam watt?",
+    "jawaban": 5,
+    "toleransiRel": 0.02,
+    "satuan": "W",
+    "pembahasan": [
+      "P = I²R = (0,5)² × 20.",
+      "P = 0,25 × 20 = 5 W.",
+      "Periksa lewat tegangan: V = IR = 10 V, sehingga P = VI = 5 W — hasilnya sama."
+    ]
+  },
+  {
+    "id": "f6-08",
+    "topik": "listrik-modern",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Foton dengan energi 3,1 eV memiliki panjang gelombang berapa, dalam nanometer? Gunakan hc = 1240 eV·nm.",
+    "jawaban": 400,
+    "toleransiRel": 0.02,
+    "satuan": "nm",
+    "pembahasan": [
+      "λ = hc/E = 1240/3,1.",
+      "λ ≈ 400 nm.",
+      "Itu di batas ultraviolet–violet; foton dengan energi sedikit lebih rendah tampak sebagai cahaya biru-ungu."
+    ]
+  },
+  {
+    "id": "f6-09",
+    "topik": "listrik-modern",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Inti helium-4 memiliki massa 4,002603 u; massa proton 1,007276 u dan neutron 1,008665 u. Berapa energi ikat total inti helium-4, dalam MeV? (1 u = 931,5 MeV/c²)",
+    "jawaban": 27.3,
+    "toleransiRel": 0.02,
+    "satuan": "MeV",
+    "pembahasan": [
+      "Inti He-4: Z = 2, N = 2, sehingga jumlah massa nukleon bebas = 2 × 1,007276 + 2 × 1,008665 = 4,031882 u.",
+      "Defek massa Δm = 4,031882 − 4,002603 = 0,029279 u.",
+      "B = 0,029279 × 931,5 ≈ 27,3 MeV.",
+      "Energi ikat per nukleon ≈ 27,3/4 ≈ 6,8 MeV — cukup tinggi untuk inti ringan, menandakan He-4 sangat stabil."
+    ]
+  },
+  {
+    "id": "f6-10",
+    "topik": "listrik-modern",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa fusi hidrogen menjadi helium melepaskan energi, padahal reaksi itu 'menambah' nukleon menjadi inti yang lebih berat. Gunakan konsep defek massa dan kurva energi ikat per nukleon dalam penjelasanmu.",
+    "rubrik": [
+      {
+        "poin": "Menyatakan bahwa massa inti hasil lebih kecil daripada jumlah massa nukleon penyusunnya (defek massa).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghubungkan defek massa dengan energi yang dilepas melalui E = Δm c² dan menyebut energi ikat per nukleon sebagai ukurannya.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan kurva B/A: inti ringan memiliki B/A kecil, inti sekitar besi memiliki B/A maksimum, sehingga fusi menuju besi melepaskan energi.",
+        "bobot": 1
+      },
+      {
+        "poin": "Memberi angka contoh yang masuk akal, misalnya 0,7% massa hidrogen berubah menjadi energi atau sekitar 6,8 MeV per nukleon untuk He-4.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Kuncinya bukan jumlah nukleon, melainkan seberapa kuat mereka terikat. Massa inti helium-4 lebih kecil daripada massa empat proton bebas (atau dua proton dan dua neutron) yang menyusunnya. Selisih massa, yaitu defek massa Δm, muncul sebagai energi ikat B = Δm c². Karena inti hasil lebih terikat, energi total sistem turun dan kelebihannya dilepaskan sebagai foton dan energi kinetik. Kurva energi ikat per nukleon menjelaskan arah reaksi: B/A untuk hidrogen praktis nol, untuk helium-4 sekitar 6,8 MeV per nukleon, dan puncaknya di sekitar 8,8 MeV per nukleon dekat besi. Selama fusi bergerak menuju puncak kurva, energi dilepaskan; itulah sebabnya bintang dapat bersinar miliaran tahun. Dalam reaksi 4 H → He-4, sekitar 0,7% massa awal berubah menjadi energi, kira-kira 26,7 MeV per inti helium yang terbentuk.",
+    "pembahasan": [
+      "Jawaban harus menyebut defek massa: massa inti hasil < jumlah massa nukleon bebas.",
+      "Defek massa dikonversi menjadi energi ikat B = Δm c²; energi inilah yang dilepas saat inti terbentuk.",
+      "Kurva B/A memberi arah: inti ringan berada jauh di bawah puncak (Fe-56), sehingga fusi ke arah yang lebih terikat melepaskan energi.",
+      "Angka contoh (0,7% massa, ~26,7 MeV per He-4, atau 6,8 MeV per nukleon) menunjukkan jawaban dipahami secara kuantitatif, bukan sekadar hafalan."
+    ]
+  },
+  {
+    "id": "f6-11", "topik": "listrik-modern", "level": "fondasi", "tipe": "pilihan-ganda", "gambar": "segitiga-vektor",
+    "soal": "Muatan uji +2 μC berada dalam medan listrik 3 × 10⁴ N/C. Berapa besar gaya listriknya?",
+    "opsi": ["0,06 N", "6 N", "1,5 × 10¹⁰ N", "0,006 N"], "jawaban": 0,
+    "pembahasan": ["Gaya pada muatan dalam medan listrik adalah F = qE.", "F = (2 × 10⁻⁶ C)(3 × 10⁴ N/C) = 6 × 10⁻² N = 0,06 N.", "Karena muatannya positif, arah gaya sama dengan arah medan; gambar vektor mengingatkan bahwa arah juga perlu diperhatikan."]
+  },
+  {
+    "id": "f6-12", "topik": "listrik-modern", "level": "fondasi", "tipe": "pilihan-ganda", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Dalam model Bohr, berapa energi foton yang dipancarkan saat elektron hidrogen turun dari n = 3 ke n = 2? (Eₙ = −13,6/n² eV)",
+    "opsi": ["1,89 eV", "5,67 eV", "12,1 eV", "0,66 eV"], "jawaban": 0,
+    "pembahasan": ["Energi foton adalah selisih tingkat atas dan bawah dalam besar positif.", "ΔE = 13,6(1/2² − 1/3²) = 13,6(1/4 − 1/9) = 13,6 × 5/36 = 1,89 eV.", "Transisi turun memancarkan foton; besar selisihnya sesuai jarak tingkat pada diagram."]
+  },
+  {
+    "id": "f6-13", "topik": "listrik-modern", "level": "menengah", "tipe": "pilihan-ganda", "gambar": "segitiga-vektor",
+    "soal": "Muatan 4 μC mengalami gaya listrik 0,12 N. Berapa besar medan listrik di tempat muatan itu?",
+    "opsi": ["3,0 × 10⁴ N/C", "4,8 × 10⁻⁷ N/C", "0,48 N/C", "3,0 × 10⁻⁵ N/C"], "jawaban": 0,
+    "pembahasan": ["Definisi medan listrik E = F/q.", "E = 0,12/(4 × 10⁻⁶) = 3,0 × 10⁴ N/C.", "Medan adalah gaya per muatan positif satuan dan tidak bergantung pada besar muatan uji yang dipilih."]
+  },
+  {
+    "id": "f6-14", "topik": "listrik-modern", "level": "menengah", "tipe": "pilihan-ganda", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Elektron hidrogen berpindah dari n = 2 ke n = 1. Berapa panjang gelombang foton yang dipancarkan? Gunakan hc = 1240 eV·nm.",
+    "opsi": ["122 nm", "656 nm", "486 nm", "13,6 nm"], "jawaban": 0,
+    "pembahasan": ["Selisih energi transisi 2→1 adalah 13,6(1 − 1/4) = 10,2 eV.", "Panjang gelombang λ = hc/E = 1240/10,2 = 121,6 nm.", "Dibulatkan menjadi 122 nm, berada di ultraviolet; diagram tingkat energi memperlihatkan transisi dengan energi besar."]
+  },
+  {
+    "id": "f6-15", "topik": "listrik-modern", "level": "penalaran", "tipe": "pilihan-ganda", "gambar": "segitiga-vektor",
+    "soal": "Elektron bergerak ke kanan tegak lurus medan magnet yang masuk bidang kertas. Ke arah mana gaya magnetnya?",
+    "opsi": ["Ke bawah", "Ke atas", "Ke kanan", "Tidak ada gaya"], "jawaban": 0,
+    "pembahasan": ["Untuk muatan positif, aturan tangan kanan pada v × B memberi gaya ke atas: kanan silang masuk bidang menghasilkan atas.", "Elektron bermuatan negatif, sehingga arah gayanya berlawanan dengan v × B, yaitu ke bawah.", "Besarnya qvB tidak mengubah arah; gaya tetap tegak lurus kecepatan dan medan, seperti penguraian vektor pada gambar."]
+  },
+  {
+    "id": "f6-16", "topik": "listrik-modern", "level": "penalaran", "tipe": "pilihan-ganda", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Pada diagram tingkat hidrogen, foton transisi 3→2 memiliki energi 1,89 eV. Berapa panjang gelombangnya?",
+    "opsi": ["656 nm", "124 nm", "486 nm", "1.240 nm"], "jawaban": 0,
+    "pembahasan": ["Gunakan λ = hc/E dengan hc = 1240 eV·nm.", "λ = 1240/1,89 = 656,1 nm, sekitar 656 nm.", "Energi 1,89 eV lebih kecil daripada transisi menuju n = 1, sehingga panjang gelombangnya lebih panjang; ini garis Balmer Hα."]
+  },
+  {
+    "id": "f6-17", "topik": "listrik-modern", "level": "olimpiade", "tipe": "pilihan-ganda", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Dari diagram hidrogen, elektron turun dari n = 4 ke n = 2. Berapa panjang gelombang fotonnya? (Eₙ = −13,6/n² eV; hc = 1240 eV·nm)",
+    "opsi": ["486 nm", "656 nm", "122 nm", "410 nm"], "jawaban": 0,
+    "pembahasan": ["Energi foton = 13,6(1/2² − 1/4²) = 13,6(1/4 − 1/16) = 2,55 eV.", "λ = 1240/2,55 = 486 nm.", "Transisi berakhir di n = 2 dan berada dalam deret Balmer. Posisi tingkat pada diagram memberi energi selisih, bukan jarak geometris yang seragam."]
+  },
+  {
+    "id": "f6-18", "topik": "listrik-modern", "level": "olimpiade", "tipe": "pilihan-ganda", "gambar": "segitiga-vektor",
+    "soal": "Proton bergerak dengan v = 3 × 10⁵ m/s tegak lurus medan B = 0,20 T. Jika m = 1,67 × 10⁻²⁷ kg dan q = 1,60 × 10⁻¹⁹ C, berapa jari-jari lintasannya?",
+    "opsi": ["1,57 cm", "0,52 cm", "15,7 cm", "0,16 m"], "jawaban": 0,
+    "pembahasan": ["Untuk v tegak lurus B, gaya magnet menjadi gaya sentripetal dan r = mv/(qB).", "r = (1,67 × 10⁻²⁷)(3 × 10⁵)/[(1,60 × 10⁻¹⁹)(0,20)] = 1,57 × 10⁻² m.", "Jadi r ≈ 1,57 cm. Gaya selalu tegak lurus kecepatan, sehingga kelajuan konstan dan arah vektor terus berubah."]
+  },
+  {
+    "id": "f6-19", "topik": "listrik-modern", "level": "penalaran", "tipe": "pilihan-jamak", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Berdasarkan tingkat energi hidrogen, pilih semua pernyataan yang benar tentang transisi elektron.",
+    "opsi": ["Transisi turun memancarkan foton", "Energi foton sama dengan besar selisih dua tingkat", "Transisi dengan selisih energi lebih besar menghasilkan panjang gelombang lebih pendek", "Elektron boleh memiliki energi antara tingkat Bohr yang diizinkan", "Semua transisi menuju n = 2 memiliki energi foton sama"], "jawaban": [0, 1, 2],
+    "pembahasan": ["Saat elektron turun, energi sistem berkurang dan kelebihannya dipancarkan sebagai foton.", "Konservasi energi memberi E_foton = |E_atas − E_bawah|.", "Karena E = hc/λ, energi lebih besar berarti panjang gelombang lebih pendek.", "Model Bohr dalam konteks ini memiliki tingkat energi diskret, bukan energi sembarang di antaranya.", "Tingkat awal berbeda memberi selisih energi berbeda meskipun tingkat akhirnya sama; diagram menunjukkan jarak tingkat makin rapat pada n tinggi."]
+  },
+  {
+    "id": "f6-20", "topik": "listrik-modern", "level": "penalaran", "tipe": "pilihan-jamak", "gambar": "segitiga-vektor",
+    "soal": "Pilih semua pernyataan yang benar tentang gaya magnet pada partikel bermuatan bergerak.",
+    "opsi": ["Gaya nol jika v sejajar B", "Gaya magnet tegak lurus kecepatan", "Gaya magnet dapat membelokkan lintasan tanpa mengubah kelajuan", "Partikel diam selalu mengalami gaya magnet qB", "Arah gaya pada elektron berlawanan dengan v × B"], "jawaban": [0, 1, 2, 4],
+    "pembahasan": ["Besar gaya adalah |q|vB sin θ; bila sejajar, θ = 0 dan sin θ = 0.", "Arah Lorentz tegak lurus v dan B, sebagaimana hubungan arah pada diagram vektor.", "Karena gaya tidak melakukan usaha, besar kelajuan tetap; arah gerak dapat berubah.", "Kecepatan nol membuat qvB sin θ = 0, jadi partikel diam tidak merasakan gaya magnet.", "v × B memberi arah bagi muatan positif; muatan negatif membalik arah tersebut."]
+  },
+  {
+    "id": "f6-21", "topik": "listrik-modern", "level": "fondasi", "tipe": "isian", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Berapakah energi foton dalam eV jika panjang gelombangnya 400 nm? Gunakan hc = 1240 eV·nm.", "jawaban": 3.1, "toleransiRel": 0.02, "satuan": "eV",
+    "pembahasan": ["Energi foton E = hc/λ.", "E = 1240/400 = 3,10 eV.", "Nilai energi meningkat saat panjang gelombang menurun; spektrum garis pada diagram terkait dengan energi transisi diskret."]
+  },
+  {
+    "id": "f6-22", "topik": "listrik-modern", "level": "fondasi", "tipe": "isian",
+    "soal": "Arus 2 A mengalir melalui resistor 6 Ω. Berapa tegangan pada resistor?",
+    "jawaban": 12, "toleransiRel": 0.02, "satuan": "V",
+    "pembahasan": ["Hukum Ohm menyatakan V = IR.", "V = 2 × 6 = 12 V.", "Arah arus dan penurunan tegangan mengikuti rangkaian, sedangkan besar tegangan ditentukan oleh hasil kali arus dan hambatan."]
+  },
+  {
+    "id": "f6-23", "topik": "listrik-modern", "level": "menengah", "tipe": "isian",
+    "soal": "Resistor 3 Ω dan 6 Ω disusun paralel. Berapa hambatan ekuivalennya?",
+    "jawaban": 2, "toleransiRel": 0.02, "satuan": "Ω",
+    "pembahasan": ["Untuk paralel, 1/R = 1/3 + 1/6 = 1/2.", "Maka R = 2 Ω.", "Hambatan ekuivalen lebih kecil daripada setiap cabang; tegangan sama pada kedua resistor dan arus cabang dijumlahkan."]
+  },
+  {
+    "id": "f6-24", "topik": "listrik-modern", "level": "menengah", "tipe": "isian", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Energi foton transisi hidrogen 3→2 adalah 1,89 eV. Berapa panjang gelombangnya dalam nm? Gunakan hc = 1240 eV·nm.", "jawaban": 656, "toleransiRel": 0.02, "satuan": "nm",
+    "pembahasan": ["Energi transisi adalah energi foton yang dipancarkan.", "λ = hc/E = 1240/1,89 = 656,1 nm.", "Dibulatkan menjadi 656 nm, konsisten dengan garis merah Hα dari transisi Balmer 3→2 pada diagram."]
+  },
+  {
+    "id": "f6-25", "topik": "listrik-modern", "level": "penalaran", "tipe": "isian", "gambar": "segitiga-vektor",
+    "soal": "Muatan 2 μC mengalami gaya 0,08 N dalam medan listrik. Berapa kuat medannya dalam N/C?",
+    "jawaban": 40000, "toleransiRel": 0.02, "satuan": "N/C",
+    "pembahasan": ["E = F/q.", "q = 2 μC = 2 × 10⁻⁶ C, sehingga E = 0,08/(2 × 10⁻⁶) = 4,0 × 10⁴ N/C.", "Medan merupakan besaran vektor; besar yang ditemukan tidak menyatakan arahnya, yang bergantung pada tanda muatan uji dan arah gaya."]
+  },
+  {
+    "id": "f6-26", "topik": "listrik-modern", "level": "penalaran", "tipe": "isian", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Atom hidrogen menyerap foton untuk berpindah dari n = 1 ke n = 3. Berapa energi foton yang diperlukan dalam eV?",
+    "jawaban": 12.09, "toleransiRel": 0.02, "satuan": "eV",
+    "pembahasan": ["Energi tingkat Bohr Eₙ = −13,6/n² eV.", "ΔE = E₃ − E₁ = −13,6/9 − (−13,6) = 13,6(1 − 1/9) = 12,09 eV.", "Atom harus menyerap energi tersebut untuk naik tingkat; besar transisi ditunjukkan sebagai jarak energi pada diagram."]
+  },
+  {
+    "id": "f6-27", "topik": "listrik-modern", "level": "olimpiade", "tipe": "isian", "gambar": "segitiga-vektor",
+    "soal": "Proton berkelajuan 4 × 10⁶ m/s masuk tegak lurus medan magnet 0,50 T. Hitung jari-jari lintasannya dalam cm. Gunakan m = 1,67 × 10⁻²⁷ kg dan q = 1,60 × 10⁻¹⁹ C.",
+    "jawaban": 8.35, "toleransiRel": 0.03, "satuan": "cm",
+    "pembahasan": ["Untuk gerak tegak lurus, gaya magnet menjadi gaya sentripetal dan r = mv/(qB).", "r = (1,67 × 10⁻²⁷)(4 × 10⁶)/[(1,60 × 10⁻¹⁹)(0,50)] = 0,0835 m.", "Konversi ke sentimeter: 0,0835 m = 8,35 cm. Kelajuan konstan karena gaya Lorentz selalu tegak lurus kecepatan."]
+  },
+  {
+    "id": "f6-28", "topik": "listrik-modern", "level": "olimpiade", "tipe": "esai", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Gunakan diagram tingkat energi hidrogen untuk membandingkan foton transisi 4→2 dan 3→2. Hitung energi serta panjang gelombang masing-masing, kemudian jelaskan garis mana yang lebih biru. Gunakan Eₙ = −13,6/n² eV dan hc = 1240 eV·nm.",
+    "rubrik": [{"poin":"Menghitung ΔE₄→₂ = 13,6(1/4 − 1/16) ≈ 2,55 eV.","bobot":2},{"poin":"Menghitung ΔE₃→₂ = 13,6(1/4 − 1/9) ≈ 1,89 eV.","bobot":1},{"poin":"Menentukan λ₄→₂ ≈ 486 nm dan λ₃→₂ ≈ 656 nm dari λ = hc/E.","bobot":2},{"poin":"Menyimpulkan 4→2 lebih biru karena energinya lebih tinggi dan panjang gelombangnya lebih pendek.","bobot":1}],
+    "jawabanTeladan":"Dari tingkat Bohr, energi foton 4→2 adalah 13,6(1/2² − 1/4²) = 2,55 eV; maka λ = 1240/2,55 ≈ 486 nm. Untuk transisi 3→2, energinya 13,6(1/2² − 1/3²) = 1,89 eV dan λ = 1240/1,89 ≈ 656 nm. Diagram menunjukkan tingkat energi makin rapat pada n lebih tinggi, sehingga lompatan dari n=4 ke n=2 memberikan energi lebih besar daripada 3→2. Foton 4→2 memiliki panjang gelombang lebih pendek dan tampak lebih biru; keduanya merupakan garis deret Balmer.",
+    "pembahasan": ["Selisih energi adalah besar energi tingkat awal dikurangi energi tingkat akhir; elektron turun sehingga energi dilepas.","Untuk 4→2 didapat 2,55 eV, sedangkan 3→2 menghasilkan 1,89 eV.","Gunakan λ (nm) = 1240/E (eV), menghasilkan sekitar 486 nm dan 656 nm.","Energi lebih tinggi berkaitan dengan panjang gelombang lebih pendek; karena itu transisi 4→2 lebih biru."]
+  },
+  {
+    "id": "f6-29", "topik": "listrik-modern", "level": "olimpiade", "tipe": "esai", "gambar": "segitiga-vektor",
+    "soal": "Sebuah partikel bermuatan negatif bergerak ke timur tegak lurus medan magnet yang arahnya masuk bidang kertas. Tentukan arah gaya, jelaskan mengapa lintasannya dapat melengkung tetapi kelajuannya tetap, dan prediksi perubahan jari-jari jika kelajuan digandakan sementara m, |q|, dan B tetap.",
+    "rubrik": [{"poin":"Menggunakan v × B untuk muatan positif lalu membalik arah karena partikel bermuatan negatif; gaya menuju selatan.","bobot":2},{"poin":"Menyatakan gaya magnet tegak lurus kecepatan sehingga usaha nol dan kelajuan tidak berubah.","bobot":2},{"poin":"Menghubungkan gaya sentripetal dengan r = mv/(|q|B).","bobot":1},{"poin":"Menyimpulkan penggandaan kelajuan menggandakan jari-jari lintasan.","bobot":1}],
+    "jawabanTeladan":"Untuk muatan positif yang bergerak ke timur dengan B masuk bidang, aturan tangan kanan pada v × B memberi arah gaya ke utara. Karena partikel bermuatan negatif, arahnya berlawanan, yaitu ke selatan. Gaya Lorentz selalu tegak lurus kecepatan, maka F·v = 0 dan daya/usaha magnet nol: gaya mengubah arah gerak tetapi tidak besar kelajuannya. Untuk v tegak lurus B, qvB = mv²/r sehingga r = mv/(|q|B). Jika v digandakan dengan m, |q|, dan B tetap, r juga menjadi dua kali.",
+    "pembahasan": ["Tentukan arah v × B untuk muatan positif lebih dulu: timur silang masuk bidang mengarah utara.","Tanda negatif membalik arah, jadi gaya pada partikel mengarah selatan.","Gaya selalu normal terhadap lintasan; ia menyediakan percepatan sentripetal tanpa melakukan usaha.","Dari r = mv/(|q|B), jari-jari linear terhadap kelajuan sehingga v dua kali memberi r dua kali."]
+  },
+  {
+    "id": "f6-30", "topik": "listrik-modern", "level": "olimpiade", "tipe": "esai", "gambar": "tingkat-energi-hidrogen",
+    "soal": "Sebuah foton 10,2 eV berinteraksi dengan atom hidrogen yang elektronnya mula-mula di n = 1. Gunakan diagram tingkat energi untuk menentukan apakah foton dapat diserap, tingkat akhir elektron, dan panjang gelombang foton. Jelaskan mengapa foton berenergi sedikit berbeda tidak menghasilkan eksitasi yang sama pada atom terisolasi.",
+    "rubrik": [{"poin":"Menghitung energi eksitasi 1→2 sebesar 13,6(1 − 1/4) = 10,2 eV dan menyimpulkan foton dapat diserap.","bobot":2},{"poin":"Menentukan tingkat akhir n = 2 dengan konservasi energi.","bobot":1},{"poin":"Menghitung panjang gelombang λ = 1240/10,2 ≈ 122 nm.","bobot":2},{"poin":"Menjelaskan tingkat energi diskret: foton harus cocok dengan selisih energi transisi untuk diserap dalam eksitasi tersebut.","bobot":1}],
+    "jawabanTeladan":"Energi eksitasi dari n=1 ke n=2 adalah ΔE = 13,6(1 − 1/2²) = 13,6 × 3/4 = 10,2 eV. Jadi foton 10,2 eV tepat dapat diserap dan mengangkat elektron ke n=2. Panjang gelombangnya λ = hc/E = 1240/10,2 ≈ 121,6 nm atau 122 nm, di ultraviolet. Atom terisolasi memiliki tingkat energi diskret, sehingga eksitasi 1→2 memerlukan energi foton tepat sebesar selisih tingkat; foton dengan energi lain tidak mendorong transisi yang sama (dengan mengabaikan lebar garis dan proses tambahan). Diagram membantu membedakan besar energi transisi dari sekadar urutan tingkat.",
+    "pembahasan": ["Hitung celah energi 1→2 dari Eₙ = −13,6/n² eV, hasilnya 10,2 eV.","Energi foton cocok dengan celah itu, maka absorpsi membawa elektron dari n=1 ke n=2.","Konversi energi ke λ menggunakan hc = 1240 eV·nm memberi 121,6 nm.","Karena tingkat atom diskret, absorpsi resonan mensyaratkan energi yang sesuai dengan transisi; energinya tidak kontinu."]
+  }
+]

@@ -1,0 +1,278 @@
+<Tujuan>
+
+- Menghitung perbesaran teleskop, rasio fokus (f-number), dan kekuatan pengumpulan cahaya dari data apertur dan panjang fokus.
+- Menurunkan dan menerapkan kriteria Rayleigh untuk daya pisah angular difraksi pada teleskop optik, radio, dan VLBI.
+- Menjelaskan parameter seeing atmosfer (ukuran Fried $r_0$, FWHM seeing) dan prinsip kerja optik adaptif.
+- Menganalisis fungsi detektor CCD, efisiensi kuantum (QE), kisi difraksi, dan resolusi spektral $R = \lambda/\Delta\lambda$.
+- Menerapkan sistem fotometri UBVRI: filter, zero-point, transformasi warna, dan fotometri diferensial.
+- Menghitung resolusi spektral minimum untuk memisahkan garis spektrum ganda dari bintang biner dan menentukan kecepatan radial minimum yang terdeteksi.
+
+</Tujuan>
+
+<Prasyarat babIds={['f6', 'a5']} />
+
+<p className="lead">Teleskop bukan sekadar alat "memperbesar" langit. Tugas sejatinya adalah mengumpulkan cahaya sebanyak mungkin dan memisahkan detail sehalus mungkin. Bab ini membangun pemahaman berlapis dari desain optik, batas difraksi, efek atmosfer, hingga instrumen modern — rantai konsep yang sering muncul di soal olimpiade bertingkat.</p>
+
+## 1. Teleskop: perbesaran, pengumpul cahaya, dan rasio fokus
+
+<Poin judul="1 · Desain teleskop & spesifikasi optik" defaultOpen>
+
+**Refraktor** memakai lensa objektif untuk membentuk bayangan; **reflektor** memakai cermin cekung primer. Reflektor umumnya lebih ekonomis per milimeter apertur dan bebas aberasi kromatik, tetapi memerlukan kolimasi berkala.
+
+**Perbesaran teleskop** ditentukan oleh pasangan objektif–okuler:
+
+$$\boxed{M = \frac{f_{\text{obj}}}{f_{\text{ok}}}}$$
+
+Perbesaran yang berguna secara maksimal dibatasi oleh difraksi dan seeing: $M_{\max} \approx 2D[\text{mm}]$.
+
+**Rasio fokus (f-number):**
+
+$$N = \frac{f_{\text{obj}}}{D}$$
+
+Sistem "cepat" (f/4–f/5) cocok untuk fotografi medan luas; sistem "lambat" (f/10–f/15) cocok untuk planet dan Bulan.
+
+**Kekuatan pengumpulan cahaya** berbanding dengan luas penampang objektif:
+
+$$\frac{\text{Cahaya teleskop}}{\text{Cahaya mata}} = \left(\frac{D}{D_{\text{pupil}}}\right)^2$$
+
+Teleskop 200 mm vs. pupil mata 7 mm: $(200/7)^2 \approx 816$ kali lebih banyak cahaya.
+
+<Gambar id="refraktor" />
+
+<Catatan variasi="tips">
+
+Tiga angka yang wajib diketahui untuk setiap teleskop: diameter $D$ (kumpul cahaya + resolusi), panjang fokus $f$ (skala gambar: $\text{skala} = 206.265''/f[\text{mm}]$ per mm di fokus), dan f-ratio $N$ (cocok untuk objek apa).
+
+</Catatan>
+
+</Poin>
+
+## 2. Daya pisah angular: kriteria Rayleigh, difraksi, dan VLBI
+
+<Poin judul="2 · Kriteria Rayleigh & batas daya pisah">
+
+Ketika cahaya melewati bukaan lingkaran berdiameter $D$, pola difraksi membentuk **cakram Airy** dikelilingi gelang-gelang. Dua sumber titik tepat dapat dipisahkan bila puncak satu cakram jatuh tepat pada minimum pertama cakram lainnya (**kriteria Rayleigh**):
+
+$$\boxed{\theta_{\min} = 1{,}22\,\frac{\lambda}{D}}$$
+
+dengan $\theta_{\min}$ dalam radian. Dalam detik busur:
+
+$$\theta_{\min}('') = 1{,}22 \times \frac{\lambda[\text{m}]}{D[\text{m}]} \times 206.265 \approx \frac{0{,}252\,[\mu\text{m}]}{D[\text{m}]} \times \lambda[\mu\text{m}]$$
+
+<Gambar id="pola-airy" />
+
+**Perbandingan daya pisah berbagai instrumen** ($\lambda_{\text{opt}} = 550\ \text{nm} = 0{,}55\ \mu\text{m}$):
+
+| Instrumen | $D$ | $\theta_{\min}$ |
+|---|---|---|
+| Mata manusia | 7 mm | $\approx 20''$ |
+| Teleskop optik 200 mm | 200 mm | $\approx 0{,}69''$ |
+| VLT/Keck (8–10 m) | 8 m | $\approx 0{,}017''$ |
+| Teleskop radio 25 m @ 21 cm | 25 m | $\approx 1{,}5°$ |
+| VLBI baseline 8.000 km @ 1,3 cm | $8 \times 10^6$ m | $\approx 0{,}0003''$ |
+
+VLBI (Very Long Baseline Interferometry) mencapai resolusi $\mu$as dengan menggunakan baseline antarbenua atau bahkan antarplanet — lebih tajam dari teleskop optik mana pun.
+
+**Batas efektif di Bumi:** Tanpa optik adaptif, seeing atmosfer biasanya membatasi resolusi pada $1'' - 2''$. Apertur lebih besar dari $\approx 15\ \text{cm}$ di langit biasa tidak menghasilkan gambar lebih tajam tanpa koreksi seeing.
+
+</Poin>
+
+## 3. Seeing atmosfer: ukuran Fried dan optik adaptif
+
+<Poin judul="3 · Seeing atmosfer & optik adaptif">
+
+**Seeing** adalah degradasi resolusi angular akibat turbulensi lapisan atmosfer yang menyebabkan variasi indeks bias udara secara spasial dan temporal. Kualitas seeing dinyatakan dengan:
+
+**Parameter Fried ($r_0$):** Diameter efektif apertur di mana panjang koherensi gelombang depan masih terjaga. Untuk apertur $D \gg r_0$, resolusi efektif terbatas bukan oleh difraksi $D$, melainkan oleh difraksi $r_0$:
+
+$$\mathrm{FWHM}_{\text{seeing}} \approx 1{,}22\,\frac{\lambda}{r_0}$$
+
+Nilai $r_0$ khas: $5 - 20\ \text{cm}$ di observatorium kelas dunia (Mauna Kea, La Palma, Paranal). Di daerah dataran rendah, $r_0 \lesssim 5\ \text{cm}$.
+
+**Optik Adaptif (Adaptive Optics, AO):** Sistem yang mengukur deformasi gelombang depan secara real-time menggunakan bintang panduan (natural guide star atau laser guide star), lalu mengoreksinya dengan cermin deformabel berkecepatan tinggi. Dengan AO, teleskop 8–10 m dapat mendekati batas difraksinya di pita inframerah dekat ($\lambda \gtrsim 1\ \mu\text{m}$), mencapai $\theta \approx 0{,}04'' - 0{,}05''$.
+
+</Poin>
+
+## 4. Detektor dan spektrograf: CCD, QE, kisi difraksi, resolusi spektral
+
+<Poin judul="4 · CCD, kisi difraksi & resolusi spektral R = λ/Δλ">
+
+**CCD (Charge-Coupled Device):** Sensor semikonduktor yang mengubah foton menjadi elektron via efek fotolistrik. Keunggulan dibanding mata:
+- **Efisiensi kuantum (QE):** hingga $>90\%$ pada pita merah–inframerah dekat (mata $\lesssim 5\%$).
+- **Respons linear** terhadap jumlah foton: jumlah elektron $\propto$ fluks $\times$ waktu eksposur.
+- **Penyimpanan digital:** dapat diakumulasi, dikalibrasi, dan dianalisis secara numerik.
+
+**Signal-to-Noise Ratio (SNR):** Untuk bintang terbatas derau foton (*photon-noise limited*):
+$$\mathrm{SNR} = \frac{N_{\text{sinyal}}}{\sqrt{N_{\text{sinyal}} + N_{\text{langit}} + N_{\text{baca}}^2}}$$
+Jika derau langit dan baca dapat diabaikan: $\mathrm{SNR} \approx \sqrt{N_{\text{sinyal}}}$.
+
+**Kisi difraksi (diffraction grating):** Memecah cahaya berdasarkan panjang gelombang. Untuk kisi dengan $N_g$ alur/mm dan lebar total $W$ (mm), resolusi spektral orde $m$:
+$$R = m N_g W$$
+
+**Resolusi spektral:**
+$$\boxed{R = \frac{\lambda}{\Delta\lambda}}$$
+
+$\Delta\lambda$ adalah panjang gelombang terkecil yang masih dapat dibedakan dari $\lambda$. Contoh nilai $R$:
+- $R \sim 500$: spektroskopi kasar, klasifikasi tipe spektral
+- $R \sim 5.000$: identifikasi garis absorpsi, kecepatan radial $\sim 60\ \text{km/s}$
+- $R \sim 50.000$: kecepatan radial presisi $\sim 6\ \text{km/s}$, studi bintang biner
+
+**Hubungan $R$ dan kecepatan radial terdeteksi** (via efek Doppler):
+$$\frac{\Delta\lambda}{\lambda} = \frac{v}{c} \implies v_{\min} = \frac{c}{R}$$
+
+<Gambar id="spektrum-absorpsi" />
+
+</Poin>
+
+## 5. Sistem fotometri UBVRI: filter, zero-point, transformasi warna
+
+<Poin judul="5 · Fotometri UBVRI & indeks warna">
+
+Sistem fotometri standar **Johnson–Cousins UBVRI** mendefinisikan lima pita filter:
+
+| Filter | Panjang gelombang tengah | Lebar pita (FWHM) |
+|---|---|---|
+| U (Ultraviolet) | 365 nm | 70 nm |
+| B (Blue) | 445 nm | 100 nm |
+| V (Visual) | 551 nm | 90 nm |
+| R (Red) | 658 nm | 160 nm |
+| I (Infrared dekat) | 806 nm | 150 nm |
+
+**Magnitudo instrumental** $m_{\text{inst}}$ diukur langsung dari fluks CCD, lalu dikalibrasi ke sistem standar menggunakan bintang standar fotometrik:
+$$m_{\text{std}} = m_{\text{inst}} + \mathrm{ZP} - k \times X$$
+
+dengan $\mathrm{ZP}$ = zero-point instrumen, $k$ = koefisien kepunahan atmosfer, $X$ = airmass.
+
+**Indeks warna** (perbedaan magnitudo antara dua filter) merupakan ukuran warna/suhu bintang:
+$$B - V = m_B - m_V$$
+Bintang panas (tipe O, B): $B - V \approx -0{,}3$. Bintang dingin (tipe K, M): $B - V \approx +1{,}5$.
+
+**Fotometri diferensial:** Mengukur perubahan magnitudo bintang target relatif terhadap bintang perbandingan (*comparison star*) di lapangan yang sama. Kesalahan sistematis dari kepunahan atmosfer sebagian besar terkompensasi karena kedua bintang diamati pada airmass yang hampir sama.
+
+</Poin>
+
+## 6. Rantai olimpiade: resolusi spektral + Doppler + kecepatan radial minimum
+
+<Poin judul="6 · Rantai olimpiade: spektrograf biner & kecepatan radial minimum">
+
+<Contoh judul="Rantai olimpiade: Merancang spektrograf untuk bintang biner & menentukan v_r minimum">
+
+<Langkah>
+
+**Data soal:** Sebuah bintang biner spektroskopi menunjukkan garis absorpsi H$\alpha$ ($\lambda_0 = 656{,}28\ \text{nm}$) yang terpecah menjadi dua komponen terpisah saat kedua bintang bergerak mendekati/menjauhi pengamat. Separasi minimal yang diamati antara dua komponen garis adalah $\Delta\lambda_{\text{obs}} = 0{,}060\ \text{nm}$.
+
+Spektrograf yang digunakan memiliki kisi difraksi dengan $N_g = 1.200\ \text{alur/mm}$, lebar kisi efektif $W = 10\ \text{cm}$, beroperasi pada orde $m = 1$.
+
+**Pertanyaan:** (a) Hitung resolusi spektral $R$ spektrograf tersebut. (b) Apakah spektrograf mampu memisahkan dua komponen H$\alpha$ yang terpisah $\Delta\lambda = 0{,}060\ \text{nm}$? (c) Hitung kecepatan radial minimum yang dapat dideteksi oleh spektrograf ini. (d) Jika komponen garis terpisah $\Delta\lambda = 0{,}060\ \text{nm}$, berapakah kecepatan radial semi-amplitudo bintang biner tersebut?
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 — Hitung resolusi spektral:**
+
+$$R = m \times N_g[\text{alur/mm}] \times W[\text{mm}] = 1 \times 1.200 \times 100 = 120.000.$$
+
+Resolusi spektral minimum yang dapat dipisahkan:
+$$\Delta\lambda_{\min} = \frac{\lambda_0}{R} = \frac{656{,}28\ \text{nm}}{120.000} \approx 0{,}00547\ \text{nm} \approx 5{,}47 \times 10^{-3}\ \text{nm}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 — Cek kemampuan memisahkan komponen H$\alpha$:**
+
+Separasi yang diamati $\Delta\lambda_{\text{obs}} = 0{,}060\ \text{nm} \gg \Delta\lambda_{\min} = 0{,}00547\ \text{nm}$.
+
+Karena $\Delta\lambda_{\text{obs}} \approx 11 \times \Delta\lambda_{\min}$, dua komponen garis **dengan mudah** dapat dipisahkan oleh spektrograf ini.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 — Kecepatan radial minimum terdeteksi:**
+
+Kecepatan radial minimal yang setara dengan resolusi spektral:
+$$v_{\min} = \frac{c}{R} = \frac{3 \times 10^5\ \text{km/s}}{120.000} = 2{,}5\ \text{km/s}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 4 — Kecepatan radial semi-amplitudo dari $\Delta\lambda_{\text{obs}}$:**
+
+Separasi garis $\Delta\lambda = 0{,}060\ \text{nm}$ disebabkan oleh dua bintang bergerak dengan kecepatan radial $+v$ dan $-v$ relatif terhadap pusat massa. Pergeseran total $\Delta\lambda = 2v\lambda_0/c$:
+$$v = \frac{c \times \Delta\lambda}{2\lambda_0} = \frac{3 \times 10^5 \times 0{,}060}{2 \times 656{,}28}\ \text{km/s} = \frac{18.000}{1.312{,}56} \approx 13{,}72\ \text{km/s}.$$
+
+Kecepatan radial semi-amplitudo bintang biner adalah $K \approx \mathbf{13{,}7\ \text{km/s}}$.
+
+</Langkah>
+
+</Contoh>
+
+<Gambar id="doppler-geser" />
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="a7-cek-1"
+  pertanyaan="Teleskop dengan f_obj = 900 mm memakai okuler 15 mm. Berapa perbesarannya, dan berapa diameter minimum apertur agar perbesaran ini masih berguna (di bawah M_maks = 2D[mm])?"
+  opsi={['60×; apertur minimal 30 mm', '60×; apertur minimal 15 mm', '45×; apertur minimal 22,5 mm', '15×; apertur minimal 7,5 mm']}
+  jawaban={0}
+  penjelasan="M = 900/15 = 60×. Agar berguna, D ≥ M/2 = 60/2 = 30 mm. Teleskop dengan apertur < 30 mm pada perbesaran 60× hanya membesar kabur."
+/>
+
+<CekPaham
+  id="a7-cek-2"
+  pertanyaan="Dua bintang terpisah sudut 0,5 detik busur. Teleskop mana yang BARU CUKUP memisahkan keduanya pada λ = 550 nm menurut kriteria Rayleigh (θ = 1,22λ/D)?"
+  opsi={['D ≈ 275 mm', 'D ≈ 55 mm', 'D ≈ 550 mm', 'D ≈ 138 mm']}
+  jawaban={0}
+  penjelasan="θ_min = 0,5'' = 0,5/206265 rad ≈ 2,424×10⁻⁶ rad. D = 1,22λ/θ = 1,22 × 550×10⁻⁹ / 2,424×10⁻⁶ ≈ 0,277 m ≈ 277 mm. Jawaban terdekat 275 mm."
+/>
+
+<CekPaham
+  id="a7-cek-3"
+  pertanyaan="Sebuah spektrograf memiliki resolusi R = 30.000 pada λ = 589 nm (garis Na). Berapakah kecepatan radial minimum yang dapat diukur, dan berapakah Δλ minimum yang dapat dipisahkan?"
+  opsi={[
+    'v_min = 10 km/s; Δλ_min ≈ 0,020 nm',
+    'v_min = 30 km/s; Δλ_min ≈ 0,020 nm',
+    'v_min = 10 km/s; Δλ_min ≈ 0,002 nm',
+    'v_min = 100 km/s; Δλ_min ≈ 0,200 nm'
+  ]}
+  jawaban={0}
+  penjelasan="v_min = c/R = 3×10⁵/30000 = 10 km/s. Δλ_min = λ/R = 589/30000 ≈ 0,01963 nm ≈ 0,020 nm."
+/>
+
+<Refleksi
+  id="a7-refleksi-1"
+  pertanyaan="Mengapa observatorium luar angkasa seperti Teleskop Luar Angkasa Hubble dengan apertur 'hanya' 2,4 meter dapat menghasilkan gambar lebih tajam (dalam batas difraksi) daripada teleskop darat berdiameter 8–10 meter tanpa optik adaptif? Hubungkan dengan konsep seeing, parameter Fried r₀, dan batas difraksi teoritis."
+/>
+
+## 8. Konstanta dan nilai penting
+
+<Konstanta
+  data={[
+    { simbol: 'Pupil mata (gelap)', nilai: '6–7', satuan: 'mm' },
+    { simbol: 'Faktor Rayleigh', nilai: '1,22', satuan: 'dimensionless' },
+    { simbol: 'Seeing khas observatorium', nilai: '0,5–1,5', satuan: 'detik busur' },
+    { simbol: 'Parameter Fried r₀ (Mauna Kea)', nilai: '15–20', satuan: 'cm' },
+    { simbol: 'QE CCD peak', nilai: '>90', satuan: '%' },
+    { simbol: 'Hα', nilai: '656,28', satuan: 'nm' },
+    { simbol: 'Na D doublet', nilai: '589,0 / 589,6', satuan: 'nm' },
+    { simbol: 'Pusat pita V (Johnson)', nilai: '551', satuan: 'nm' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rumus-rumus kunci bab A7:
+1. $M = f_{\text{obj}}/f_{\text{ok}}$; $N = f_{\text{obj}}/D$
+2. $\theta_{\min} = 1{,}22\,\lambda/D$ (radian) $\approx 0{,}252\,\lambda[\mu\text{m}]/D[\text{m}]$ (detik busur)
+3. $R = \lambda/\Delta\lambda = m N_g W$
+4. $v_{\min} = c/R$; $\Delta\lambda/\lambda = v/c$
+5. $\mathrm{SNR} \approx \sqrt{N_{\text{foton}}}$ (batas derau foton)
+6. Indeks warna $B - V$: semakin biru $\rightarrow$ semakin negatif
+
+</Catatan>

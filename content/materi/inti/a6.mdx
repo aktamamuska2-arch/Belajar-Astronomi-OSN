@@ -1,0 +1,281 @@
+<Tujuan>
+
+- Menjelaskan struktur dinamis Tata Surya, model pembentukan nebula surya, dan signifikansi garis salju (*snow line*) terhadap komposisi planet.
+- Memahami struktur interior Matahari (inti, radiatif, konvektif) serta mekanisme siklus magnetik 11 tahun dan fenomena aktivitas surya.
+- Membandingkan karakteristik fisik planet kebumian dan planet Jovian, serta menghitung kesetimbangan temperatur radiatif planet ($T_{\mathrm{eq}}$).
+- Mengidentifikasi dinamika benda kecil Tata Surya (asteroid, komet, sabuk Kuiper, awan Oort) serta efek pasang surut dan batas Roche.
+- Menafsirkan kurva cahaya transit eksoplanet secara kuantitatif: kedalaman transit, durasi transit total ($T_{14}$), dan parameter impak ($b$).
+- Menyelesaikan rantai analitis olimpiade: menggabungkan data transit fotometri, hukum Kepler, dan kecepatan radial untuk menurunkan densitas rata-rata ($\rho_p$) serta struktur atmosfer eksoplanet.
+
+</Tujuan>
+
+<Prasyarat babIds={['a4', 'a5']} />
+
+<p className="lead">Tata Surya adalah laboratorium kosmik terdekat tempat interaksi gravitasi Newton, radiasi elektromagnetik, dan termodinamika terpadu membentuk arsitektur dunia yang teratur. Dari fotosfer bergolak Matahari hingga batuan beku di Sabuk Kuiper, prinsip fisika yang sama kini menjadi kunci utama dalam mendeteksi dan mengkarakterisasi ribuan eksoplanet di penjuru galaksi kita.</p>
+
+## 1. Struktur dan Pembentukan Tata Surya
+
+<Poin judul="1 · Cakram Protoplanet & Garis Salju (Snow Line)" defaultOpen>
+
+Tata Surya terbentuk sekitar 4,57 miliar tahun lalu melalui keruntuhan gravitasi dari sebuah awan molekul raksasa (*solar nebula*). Kekekalan momentum sudut menyebabkan awan yang runtuh memipih membentuk **cakram akresi protoplanet** yang berotasi di sekitar protobintang pusat.
+
+Gradien temperatur radial di dalam cakram menentukan jenis material yang dapat terkondensasi pada jarak tertentu:
+
+$$T(r) \propto r^{-1/2} \quad \text{atau} \quad r^{-3/4}$$
+
+<Gambar id="skala-tata-surya" judul="Skala Tata Surya & Garis Salju" caption="Kondensasi batuan dan logam terjadi di wilayah dalam, sedangkan senyawa volatil membeku di luar garis salju (2,7 AU)." />
+
+Pada jarak kritis sekitar $r \approx 2{,}7\ \mathrm{AU}$ dari Matahari muda, temperatur cakram turun di bawah titik beku air ($\approx 150\text{--}170\ \mathrm{K}$ pada tekanan rendah cakram). Batas radial ini disebut **garis salju (*snow line*)**:
+1. **Di dalam garis salju ($r < 2{,}7\ \mathrm{AU}$)**: Hanya unsur refraktori (silikat, besi, nikel) yang dapat memadat. Kerapatan massa padatan rendah, menghasilkan planet kebumian (*terrestrial*) yang berukuran relatif kecil dan berdensitas tinggi ($\rho \approx 4\text{--}5{,}5\ \mathrm{g/cm^3}$).
+2. **Di luar garis salju ($r > 2{,}7\ \mathrm{AU}$)**: Senyawa volatil berlimpah ($H_2O, CH_4, NH_3$) membeku menjadi es padat. Kerapatan massa padat meningkat hingga 4–5 kali lipat, memungkinkan inti protoplanet tumbuh cepat melampaui massa kritis ($\approx 10\ M_\oplus$) sebelum gas cakram terdisipasi, memicu akresi gas tak terkendali (*runaway gas accretion*) yang melahirkan raksasa gas Jupiter dan Saturnus.
+
+</Poin>
+
+## 2. Struktur Interior & Aktivitas Matahari
+
+<Poin judul="2 · Lapisan Surya, Dinamo Magnetik & Siklus 11 Tahun">
+
+Matahari adalah bintang deret utama tipe spektrum G2V dengan massa $M_\odot = 1{,}989 \times 10^{30}\ \mathrm{kg}$, radius $R_\odot = 6{,}96 \times 10^8\ \mathrm{m}$, dan luminositas bolometrik $L_\odot = 3{,}828 \times 10^{26}\ \mathrm{W}$.
+
+Secara radial dari pusat ke luar, Matahari tersusun atas:
+1. **Inti ($0 \le r \le 0{,}25\ R_\odot$)**: Reaksi fusi nuklir rantai $p\text{-}p$ mendominasi, menghasilkan helium pada suhu sentral $T_c \approx 1{,}5 \times 10^7\ \mathrm{K}$ dan kerapatan $\rho_c \approx 150\ \mathrm{g/cm^3}$.
+2. **Zona Radiatif ($0{,}25\ R_\odot \le r \le 0{,}7\ R_\odot$)**: Energi ditransfer melalui absorpsi dan emisi foton berulang. Opasitas gas cukup rendah sehingga gradien temperatur radiatif lebih kecil daripada gradien adiabatik. Waktu difusi foton mencapai $\sim 10^5$ tahun.
+3. **Zona Konvektif ($0{,}7\ R_\odot \le r \le 1{,}0\ R_\odot$)**: Opasitas meningkat tajam akibat rekombinasi elektron parsial pada hidrogen/helium, memicu instabilitas konveksi Schwarzschild: sel-sel gas panas naik dan gas dingin turun.
+4. **Fotosfer**: Lapisan optis tipis ($\tau \approx 2/3$) dengan ketebalan $\approx 400\ \mathrm{km}$, memancarkan spektrum kontinu mendekati benda hitam pada temperatur efektif $T_{\mathrm{eff}} \approx 5778\ \mathrm{K}$.
+5. **Kromosfer & Korona**: Lapisan atmosfer luar. Korona mengalami pemanasan magnetik non-termal (*magnetic reconnection* dan gelombang Alfvén) hingga mencapai temperatur ekstrem $T \sim 1\text{--}3 \times 10^6\ \mathrm{K}$.
+
+<Catatan variasi="awas">
+
+**Bintik Matahari (*sunspot*)** memiliki suhu fotosfer yang lebih dingin ($T \approx 3800\text{--}4200\ \mathrm{K}$) dibandingkan fotosfer tenang ($5778\ \mathrm{K}$). Medan magnet lokal yang sangat kuat ($B \sim 0{,}1\text{--}0{,}4\ \mathrm{Tesla}$) menekan konveksi termal dari bawah. Berdasarkan hukum Stefan-Boltzmann, fluks bintik adalah $(4000/5778)^4 \approx 0{,}23$ kali fluks fotosfer normal, sehingga tampak gelap karena efek kontras pengamatan.
+
+</Catatan>
+
+Aktivitas magnetik Matahari memiliki siklus kuasi-periodik **11 tahun** (siklus bintik) atau **22 tahun** (siklus magnetik lengkap Hale, memperhitungkan pembalikan kutub magnetik).
+
+</Poin>
+
+## 3. Komparasi Planet & Temperatur Kesetimbangan
+
+<Poin judul="3 · Planet Kebumian, Gas, Es & Kesetimbangan Termal">
+
+Planet terbagi dalam dua keluarga besar:
+- **Planet Kebumian**: Merkurius, Venus, Bumi, dan Mars. Dicirikan oleh litosfer padat, mantel silikat, inti logam besi-nikel, serta ketiadaan cincin.
+- **Planet Raksasa**:
+  - *Raksasa Gas*: Jupiter dan Saturnus, didominasi oleh mantel hidrogen metalik cair dan atmosfer tebal $H_2/He$.
+  - *Raksasa Es*: Uranus dan Neptunus, memiliki mantel tebal berupa air, amonia, dan metana dalam kondisi superkritis/beku bertekanan tinggi.
+
+### Temperatur Kesetimbangan Radiatif ($T_{\mathrm{eq}}$)
+
+Jika sebuah planet berada pada jarak $d$ dari bintang induk (luminositas $L_*$, radius $R_*$, suhu efektif $T_*$), daya radiasi yang diserap oleh penampang planet $\pi R_p^2$ dengan Albedo Bond $A$ adalah:
+
+$$P_{\mathrm{in}} = (1 - A) \cdot \frac{L_*}{4\pi d^2} \cdot \pi R_p^2 = (1 - A) \frac{\sigma T_*^4 \cdot 4\pi R_*^2}{4\pi d^2} \cdot \pi R_p^2$$
+
+Daya yang dipancarkan kembali oleh planet ke seluruh luas permukaannya ($4\pi R_p^2$, asumsi redistribusi panas seragam cepat):
+
+$$P_{\mathrm{out}} = 4\pi R_p^2 \cdot \sigma T_{\mathrm{eq}}^4$$
+
+Dengan menyamakan $P_{\mathrm{in}} = P_{\mathrm{out}}$, diperoleh temperatur kesetimbangan planet:
+
+$$T_{\mathrm{eq}} = T_* \left(\frac{R_*}{2d}\right)^{1/2} (1 - A)^{1/4}$$
+
+<Contoh judul="Temperatur Efektif Bumi Tanpa dan Dengan Efek Rumah Kaca">
+
+<Langkah>
+
+Bumi menerima radiasi surya ($T_\odot = 5778\ \mathrm{K}, R_\odot = 6{,}96 \times 10^8\ \mathrm{m}$) pada jarak $d = 1\ \mathrm{AU} = 1{,}496 \times 10^{11}\ \mathrm{m}$. Albedo Bond rata-rata Bumi adalah $A \approx 0{,}30$.
+
+</Langkah>
+
+<Langkah>
+
+Hitung rasio radius terhadap jarak:
+$$\frac{R_\odot}{2d} = \frac{6{,}96 \times 10^8}{2 \times 1{,}496 \times 10^{11}} \approx 2{,}326 \times 10^{-3} \implies \left(\frac{R_\odot}{2d}\right)^{1/2} \approx 0{,}04823$$
+
+</Langkah>
+
+<Langkah>
+
+Faktor reflektivitas: $(1 - A)^{1/4} = (0{,}70)^{1/4} \approx 0{,}9147$.
+Maka temperatur kesetimbangan teoretis:
+$$T_{\mathrm{eq}} = 5778 \times 0{,}04823 \times 0{,}9147 \approx 255\ \mathrm{K} \quad (-18^\circ\mathrm{C})$$
+
+Temperatur rata-rata permukaan aktual Bumi adalah $\sim 288\ \mathrm{K}\ (+15^\circ\mathrm{C})$. Selisih $\Delta T \approx +33\ \mathrm{K}$ berasal dari **efek rumah kaca alami** atmosfer ($H_2O, CO_2$). Pada Venus ($A \approx 0{,}77$, namun atmosfer 96% $CO_2$ bertekanan 92 bar), pemanasan rumah kaca runaway melonjakkan suhu permukaan hingga $\sim 737\ \mathrm{K}$.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 4. Satelit, Benda Kecil & Batas Pasang Surut Roche
+
+<Poin judul="4 · Komet, Asteroid & Batas Roche">
+
+Selain planet, Tata Surya dihuni oleh populasi benda kecil:
+- **Asteroid**: Terkonsentrasi di Sabuk Utama ($2{,}1\text{--}3{,}3\ \mathrm{AU}$), resonansi orbital dengan Jupiter menciptakan celah-celah kosong (*Kirkwood gaps*).
+- **Komet**: Terdiri dari batuan dan es volatil. Saat mendekati perihelion, radiasi surya menyublimkan es membentuk koma dan dua ekor: ekor debu (melengkung mengikuti lintasan radiasi) dan ekor ion (lurus menjauhi Matahari akibat dorongan angin surya bermuatan).
+
+### Batas Roche Pasang Surut
+
+Jika suatu benda satelit alami yang hanya diikat oleh gravitasinya sendiri (fluida) mendekati planet induk bermassa $M$ dan radius $R$, gaya pasang surut diferensial akan merobek satelit tersebut ketika berada di dalam **Batas Roche** ($d_R$):
+
+$$d_R \approx 2{,}44 \cdot R \left(\frac{\rho_M}{\rho_m}\right)^{1/3}$$
+
+di mana $\rho_M$ adalah massa jenis planet primer dan $\rho_m$ adalah massa jenis satelit. Cincin planet raksasa (seperti cincin Saturnus) berada di dalam batas Roche, sehingga partikel es dan debu tidak dapat berakresi membentuk satelit baru.
+
+</Poin>
+
+## 5. Fotometri Transit Eksoplanet
+
+<Poin judul="5 · Analisis Kurva Cahaya Transit">
+
+Ketika eksoplanet melintas di depan piringan bintang induknya sepanjang garis pandang pengamat (inklinasi orbit $i \approx 90^\circ$), fluks bintang mengalami penurunan teratur.
+
+<Gambar id="kurva-transit" judul="Kurva Cahaya Transit Simetris" caption="Penurunan fluks relatif delta sebanding dengan rasio kuadrat radius (Rp/R*)^2. Durasi total ditandai dari kontak pertama t1 hingga kontak keempat t4." />
+
+<Interaktif jenis="orbit" />
+
+Parameter kuantitatif kurva transit:
+1. **Kedalaman Transit ($\delta$)**:
+   $$\delta = \frac{\Delta F}{F_0} = \left(\frac{R_p}{R_*}\right)^2$$
+2. **Parameter Impak ($b$)**:
+   Jarak proyeksi terdekat antara pusat planet dan pusat bintang pada bidang langit (dalam satuan radius bintang $R_*$):
+   $$b = \frac{a \cos i}{R_*} \left(\frac{1 - e^2}{1 + e \sin \omega}\right) \approx \frac{a \cos i}{R_*} \quad (\text{untuk orbit sirkular})$$
+   Transit hanya terjadi jika $b \le 1 + R_p/R_*$.
+3. **Durasi Total Transit ($T_{14} = t_4 - t_1$)**:
+   Waktu dari kontak luar pertama hingga kontak luar terakhir:
+   $$T_{14} \approx \frac{P}{\pi} \frac{R_*}{a} \sqrt{\left(1 + \frac{R_p}{R_*}\right)^2 - b^2}$$
+4. **Durasi Fase Penuh/Datar ($T_{23} = t_3 - t_2$)**:
+   Waktu ketika seluruh piringan planet berada di dalam piringan bintang:
+   $$T_{23} \approx \frac{P}{\pi} \frac{R_*}{a} \sqrt{\left(1 - \frac{R_p}{R_*}\right)^2 - b^2}$$
+
+</Poin>
+
+## 6. Rantai Analitis Olimpiade: Karakterisasi Lengkap Eksoplanet
+
+<Poin judul="6 · Rantai Karakterisasi: Transit + Doppler + Kepler">
+
+Dalam soal kompetisi olimpiade (OSN/IOAA), data transit tidak pernah berdiri sendiri. Data fotometri transit selalu dipadukan dengan data spektroskopi kecepatan radial (*radial velocity*) untuk mengungkap **massa jenis rata-rata ($\rho_p$)** dan komposisi interior planet.
+
+<Contoh judul="Rantai Penurunan Densitas dan Gravitasi Permukaan Eksoplanet">
+
+<Langkah>
+
+**Data Pengamatan**:
+Sebuah bintang identik dengan Matahari ($M_* = 1{,}0\ M_\odot$, $R_* = 1{,}0\ R_\odot$) memiliki kurva transit periodik dengan periode $P = 4{,}00\ \text{hari}$ dan kedalaman transit konstan $\delta = 1{,}21\% = 0{,}0121$. Spektroskopi kecepatan radial menunjukkan gerak goyangan bintang (*radial velocity reflex*) dengan semi-amplitudo $K = 125\ \mathrm{m/s}$ pada orbit sirkular berinklinasi $i \approx 90^\circ$.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1: Radius Planet ($R_p$) dari Kedalaman Transit**:
+$$R_p = R_* \sqrt{\delta} = 1{,}0\ R_\odot \times \sqrt{0{,}0121} = 0{,}11\ R_\odot$$
+Karena $R_\odot = 696.000\ \mathrm{km}$ dan $R_J \approx 71.492\ \mathrm{km}$:
+$$R_p = 0{,}11 \times 696.000\ \mathrm{km} \approx 76.560\ \mathrm{km} \approx 1{,}071\ R_J$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2: Sumbu Semimayor ($a$) dari Hukum Kepler III**:
+$$P = 4{,}00\ \text{hari} = \frac{4{,}00}{365{,}25}\ \text{tahun} \approx 0{,}01095\ \text{tahun}$$
+Dengan $M_* \approx 1{,}0\ M_\odot$ dan $M_p \ll M_*$:
+$$a = \left(P_{\text{thn}}^2 M_*\right)^{1/3} = (0{,}01095^2 \times 1{,}0)^{1/3} \approx 0{,}0493\ \mathrm{AU} \approx 7{,}375 \times 10^9\ \mathrm{m}$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3: Massa Planet ($M_p$) dari Semi-Amplitudo Kecepatan Radial**:
+Kecepatan orbital bintang terhadap pusat massa adalah:
+$$K = \left(\frac{2\pi G}{P}\right)^{1/3} \frac{M_p \sin i}{(M_* + M_p)^{2/3}} \approx \frac{M_p}{M_*} \sqrt{\frac{G M_*}{a}}$$
+Kecepatan orbital planet: $v_p = \sqrt{G M_* / a} \approx \sqrt{1{,}327 \times 10^{20} / 7{,}375 \times 10^9} \approx 134{,}1\ \mathrm{km/s} = 134.100\ \mathrm{m/s}$.
+Maka rasio massa:
+$$\frac{M_p}{M_*} \approx \frac{K}{v_p} = \frac{125}{134.100} \approx 9{,}32 \times 10^{-4}$$
+$$M_p \approx 9{,}32 \times 10^{-4} \times 1{,}989 \times 10^{30}\ \mathrm{kg} \approx 1{,}854 \times 10^{27}\ \mathrm{kg} \approx 0{,}977\ M_J$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 4: Kerapatan Rata-rata ($\rho_p$)**:
+Volume planet:
+$$V_p = \frac{4}{3} \pi R_p^3 = \frac{4}{3} \pi (7{,}656 \times 10^7\ \mathrm{m})^3 \approx 1{,}879 \times 10^{24}\ \mathrm{m^3}$$
+Kerapatan rata-rata:
+$$\rho_p = \frac{M_p}{V_p} = \frac{1{,}854 \times 10^{27}\ \mathrm{kg}}{1{,}879 \times 10^{24}\ \mathrm{m^3}} \approx 987\ \mathrm{kg/m^3} \approx 0{,}99\ \mathrm{g/cm^3}$$
+Densitas ini sedikit di bawah densitas Jupiter ($1{,}33\ \mathrm{g/cm^3}$), karakteristik klasik dari kelas **Hot Jupiter** yang mengalami pemuaian atmosfer (*inflated atmosphere*) akibat insolasi radiasi tinggi pada orbit jarak dekat ($a < 0{,}05\ \mathrm{AU}$).
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek Pemahaman
+
+<CekPaham
+  id="a6-cek-1"
+  pertanyaan="Sebuah eksoplanet menyebabkan kedalaman transit sebesar 0,04% pada bintang deret utama bertipe mirip Matahari (R★ = 1,0 R☉). Berapakah perkiraan radius eksoplanet tersebut dalam kelipatan radius Bumi (R⊕ ≈ 0,00915 R☉)?"
+  opsi={[
+    'Sekitar 2,2 R⊕',
+    'Sekitar 0,4 R⊕',
+    'Sekitar 4,4 R⊕',
+    'Sekitar 11,0 R⊕'
+  ]}
+  jawaban={0}
+  penjelasan="Kedalaman transit δ = (Rp/R★)² = 0,0004. Maka Rp/R★ = √0,0004 = 0,02 R★ = 0,02 R☉. Dinyatakan dalam radius Bumi: Rp = 0,02 / 0,00915 R⊕ ≈ 2,19 R⊕ (kategori sub-Neptunus/Super-Earth)."
+/>
+
+<CekPaham
+  id="a6-cek-2"
+  pertanyaan="Jika jarak sebuah planet dari Matahari dilipatgandakan menjadi 4 kali jarak semula dan albedonya tetap, bagaimanakah perubahan temperatur kesetimbangan radiatif planet tersebut?"
+  opsi={[
+    'Turun menjadi 1/2 dari temperatur semula',
+    'Turun menjadi 1/4 dari temperatur semula',
+    'Turun menjadi 1/√2 dari temperatur semula',
+    'Tetap sama karena albedo tidak berubah'
+  ]}
+  jawaban={0}
+  penjelasan="Rumus kesetimbangan termal menyatakan Teq ∝ d^(-1/2). Jika d baru = 4d, maka Teq baru = 4^(-1/2) Teq = (1/√4) Teq = 1/2 Teq semula."
+/>
+
+<CekPaham
+  id="a6-cek-3"
+  pertanyaan="Mengapa bintik Matahari (sunspot) tampak gelap pada fotosfer Matahari?"
+  opsi={[
+    'Karena suhunya lebih dingin (~4000 K) akibat medan magnet kuat menghambat arus konveksi panas dari bawah',
+    'Karena medan magnet menyerap 100% foton spektrum optik yang datang',
+    'Karena gas di bintik Matahari mengalami kondensasi menjadi partikel debu padat',
+    'Karena bintik Matahari merupakan lubang fisik yang memperlihatkan zona radiatif yang gelap'
+  ]}
+  jawaban={0}
+  penjelasan="Medan magnet kuat (orde ribuan Gauss) menahan fluida plasma dan menekan sirkulasi konvektif vertikal. Akibatnya aliran energi dari bawah terhambat sehingga suhunya turun ke ~4000 K, tampak kontras gelap dibandingkan fotosfer sekitar yang bersuhu ~5800 K."
+/>
+
+<Refleksi
+  id="a6-refleksi-1"
+  pertanyaan="Dalam survei fotometri transit seperti Kepler atau TESS, probabilitas geometris transit adalah P_tr ≈ (R* + Rp)/a ≈ R*/a. Mengapa deteksi Hot Jupiter jauh lebih melimpah dalam survei awal dibandingkan planet mirip Bumi, meskipun planet kebumian mungkin lebih umum secara populasi galaksi?"
+/>
+
+## 8. Nilai & Konstanta Penting
+
+<Konstanta
+  data={[
+    { simbol: 'L☉', nilai: '3,828 × 10²⁶', satuan: 'W' },
+    { simbol: 'R☉', nilai: '6,960 × 10⁸', satuan: 'm' },
+    { simbol: 'M☉', nilai: '1,989 × 10³⁰', satuan: 'kg' },
+    { simbol: 'T_eff,☉', nilai: '5.778', satuan: 'K' },
+    { simbol: '1 AU', nilai: '1,496 × 10¹¹', satuan: 'm' },
+    { simbol: 'R⊕', nilai: '6.371', satuan: 'km' },
+    { simbol: 'M⊕', nilai: '5,972 × 10²⁴', satuan: 'kg' },
+    { simbol: 'R_J', nilai: '71.492', satuan: 'km' },
+    { simbol: 'M_J', nilai: '1,898 × 10²⁷', satuan: 'kg' },
+    { simbol: 'σ (Stefan-Boltzmann)', nilai: '5,670 × 10⁻⁸', satuan: 'W m⁻² K⁻⁴' }
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Pemahaman tentang orbit transit dan kesetimbangan termal pada bab ini akan menjadi landasan langsung dalam analisis data kurva cahaya observasional pada Bab **L6 (Analisis Data & Praktikum)** dan sistem bintang ganda pada Bab **L3 (Bintang Ganda & Eksoplanet)**.
+
+</Catatan>

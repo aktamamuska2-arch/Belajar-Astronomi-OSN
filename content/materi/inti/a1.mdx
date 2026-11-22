@@ -1,0 +1,244 @@
+<Tujuan>
+
+- Mengonversi satuan jarak astronomis: Meter, Satuan Astronomi (AU), Tahun Cahaya (ly), dan Parsek (pc).
+- Menguasai geometri paralaks trigonometri tahunan dan perambatan ketidakpastian jarak ($d = 1/p$).
+- Menganalisis skala logaritmik Pogson, rasio fluks, dan magnitudo gabungan bintang.
+- Mengenali batas 88 rasi resmi IAU, asterisme populer, dan sistem koordinat peta langit.
+- Menerapkan aproksimasi sudut kecil untuk menentukan diameter fisik dan diameter sudut benda langit.
+- Memahami struktur tangga jarak kosmik (*Cosmic Distance Ladder*) dan pengaruh polusi cahaya (Skala Bortle) terhadap magnitudo batas.
+
+</Tujuan>
+
+<Prasyarat babIds={['f1']} />
+
+<p className="lead">Sebelum melangkah ke perhitungan orbit atau spektroskopi rumit, kita membutuhkan dua bahasa universal astronomi: ukuran jarak yang menjembatani ruang antarbintang dan skala magnitudo Pogson yang sengaja terbalik. Bab ini membangun peta mental skala alam semesta — dari ukuran sudut Bulan dan paralaks bintang terdekat hingga batas terjauh galaksi yang teramati.</p>
+
+## 1. Satuan jarak astronomis dan paralaks trigonometri
+
+<Poin judul="1 · AU, tahun cahaya, parsek & paralaks" defaultOpen>
+
+Ruang angkasa begitu luas sehingga satuan meter atau kilometer menjadi tidak praktis. Astronom mendefinisikan tiga satuan bertingkat:
+1. **Satuan Astronomi ($\mathrm{AU}$)**: Jarak rata-rata Bumi–Matahari, didefinisikan tepat sebesar $1\ \mathrm{AU} = 1{,}495978707 \times 10^{11}\ \mathrm{m}$. Digunakan di lingkungan Tata Surya.
+2. **Tahun Cahaya ($\mathrm{ly}$)**: Jarak tempuh foton dalam ruang hampa selama satu tahun Julian ($365{,}25\ \text{hari}$):
+   $$1\ \mathrm{ly} = c \times (365{,}25 \times 86.400\ \mathrm{s}) \approx 9{,}461 \times 10^{15}\ \mathrm{m} \approx 63.241\ \mathrm{AU}.$$
+3. **Parsek ($\mathrm{pc}$)**: Singkatan dari *parallax second*, yaitu jarak di mana panjang $1\ \mathrm{AU}$ membentang sudut tepat satu detik busur ($1''$):
+   $$1\ \mathrm{pc} = \frac{1\ \mathrm{AU}}{\tan(1'')} \approx \frac{1{,}496 \times 10^{11}\ \mathrm{m}}{1/206.265\ \mathrm{rad}} \approx 3{,}086 \times 10^{16}\ \mathrm{m} \approx 3{,}262\ \mathrm{ly} \approx 206.265\ \mathrm{AU}.$$
+
+<Gambar id="paralaks-tahunan" />
+
+Saat Bumi berevolusi mengitari Matahari, bintang dekat tampak bergeser bolak-balik membentuk elips paralaks kecil terhadap latar belakang bintang-bintang yang sangat jauh. Setengah dari sudut pergeseran total disebut **paralaks trigonometri tahunan ($p$)**:
+
+$$d = \frac{1}{p}$$
+
+dengan $d$ dalam parsek ($\mathrm{pc}$) dan $p$ dalam detik busur ($''$). Bintang terdekat dengan Tata Surya, Proxima Centauri, memiliki $p \approx 0{,}768''$, sehingga berjarak $d \approx 1{,}30\ \mathrm{pc} \approx 4{,}24\ \mathrm{ly}$.
+
+</Poin>
+
+## 2. Skala Pogson dan magnitudo tampak
+
+<Poin judul="2 · Skala Pogson & rasio fluks">
+
+Pada abad ke-2 SM, Hipparchus mengelompokkan bintang tampak menjadi enam kelas kecerlangan (bintang paling terang magnitudo 1, bintang paling redup magnitudo 6). Pada tahun 1856, Norman Pogson memformalkan skala ini secara logaritmik:
+
+$$m_1 - m_2 = -2{,}5 \log_{10}\!\left(\frac{F_1}{F_2}\right) \iff \frac{F_1}{F_2} = 10^{-0{,}4(m_1 - m_2)} = 100^{(m_2 - m_1)/5}$$
+
+<Gambar id="tangga-magnitudo" />
+
+<Interaktif jenis="magnitudo" />
+
+Prinsip-prinsip utama skala magnitudo:
+- **Terbalik**: Semakin kecil nilainya, semakin terang objek tersebut ($m_{\text{Sirius}} = -1{,}46$, $m_{\text{Bulan Purnama}} \approx -12{,}7$, $m_\odot \approx -26{,}74$).
+- **Faktor 100**: Selisih 5 magnitudo setara dengan perbandingan fluks tepat 100 kali lipat.
+- **Satu magnitudo**: Selisih 1 magnitudo setara rasio fluks $\sqrt[5]{100} \approx 2{,}5119$ kali.
+- **Fluks gabungan**: Jika dua bintang dengan magnitudo $m_1$ dan $m_2$ berada berdekatan dan tidak terpisahkan, magnitudo totalnya adalah:
+  $$m_{\text{tot}} = -2{,}5 \log_{10}(10^{-0{,}4 m_1} + 10^{-0{,}4 m_2})$$
+
+</Poin>
+
+## 3. Rasi bintang, asterisme, dan pembagian langit IAU
+
+<Poin judul="3 · Rasi bintang & peta langit">
+
+Pada tahun 1928, Persatuan Astronomi Internasional (IAU) membagi seluruh bola langit menjadi tepat **88 rasi resmi** dengan batas-batas batas garis bujur dan deklinasi yang tegas.
+
+Perbedaan fundamental:
+- **Rasi Bintang (*Constellation*)**: Wilayah resmi pada bola langit (seperti provinsi geografis). Setiap titik di langit malam termasuk ke dalam salah satu dari 88 rasi. Bintang-bintang dalam satu rasi biasanya tidak memiliki ikatan gravitasi dan berada pada jarak fisik yang sangat berbeda dari Bumi.
+- **Asterisme**: Pola bintang populer yang mudah dikenali namun bukan rasi resmi (misalnya *Biduk Besar / Big Dipper* yang merupakan bagian dari rasi Ursa Major, atau *Segitiga Musim Panas* yang dibentuk oleh Vega, Deneb, dan Altair).
+
+</Poin>
+
+## 4. Geometri sudut kecil dan diameter sudut
+
+<Poin judul="4 · Aproksimasi sudut kecil & ukuran sudut">
+
+Karena jarak objek langit ($d$) jauh melampaui ukuran linier fisiknya ($D$), sudut subtended ($\theta$) selalu sangat kecil ($\theta \ll 1\ \text{rad}$). Dalam batas ini berlaku aproksimasi sudut kecil:
+
+$$\theta \approx \frac{D}{d} \quad (\theta\text{ dalam radian})$$
+
+Konversi sudut yang wajib dikuasai:
+$$1\ \text{radian} = \frac{180^\circ}{\pi} \approx 57{,}2958^\circ \approx 3.437{,}75' \approx 206.265''$$
+
+Maka ukuran sudut $\theta$ dalam detik busur ($''$) dapat langsung dihitung via:
+
+$$\theta\,('') = 206.265 \times \frac{D}{d}$$
+
+<Contoh judul="Ukuran sudut Matahari vs Bulan">
+
+<Langkah>
+
+Diameter fisik Bulan $D_{\text{Bulan}} = 3.474\ \mathrm{km}$ pada jarak rata-rata $d_{\text{Bulan}} = 384.400\ \mathrm{km}$.
+$$\theta_{\text{Bulan}} = \frac{3.474}{384.400}\ \text{rad} \approx 9{,}037 \times 10^{-3}\ \text{rad} \approx 0{,}518^\circ \approx 31{,}1'.$$
+
+</Langkah>
+
+<Langkah>
+
+Diameter fisik Matahari $D_\odot = 1{,}392 \times 10^6\ \mathrm{km}$ pada jarak $d_\odot = 1{,}496 \times 10^8\ \mathrm{km}$.
+$$\theta_\odot = \frac{1{,}392 \times 10^6}{1{,}496 \times 10^8}\ \text{rad} \approx 9{,}305 \times 10^{-3}\ \text{rad} \approx 0{,}533^\circ \approx 32{,}0'.$$
+
+</Langkah>
+
+<Langkah>
+
+Karena diameter sudut keduanya hampir identik ($\sim 0{,}5^\circ = 30'$), Bulan dapat menutupi fotosfer Matahari secara pas saat terjadi Gerhana Matahari Total.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 5. Tangga jarak kosmik (Cosmic Distance Ladder)
+
+<Poin judul="5 · Tangga jarak kosmik">
+
+Tidak ada instrumen tunggal yang dapat mengukur jarak dari Tata Surya hingga tepi alam semesta. Astronom menyusun serangkaian metode bertingkat di mana setiap anak tangga mengalibrasi anak tangga berikutnya:
+1. **Radar Ranging**: Mengukur jarak di Tata Surya (terutama 1 AU).
+2. **Paralaks Trigonometri (Gaia/Hipparcos)**: Menjangkau bintang-bintang hingga jarak beberapa kiloparsek ($d \lesssim 10\ \mathrm{kpc}$).
+3. **Fitting Deret Utama Gugus (*Main-Sequence Fitting*)**: Menentukan jarak gugus bintang hingga puluhan kiloparsek di Bima Sakti dan Awan Magellan.
+4. **Variabel Cepheid & RR Lyrae**: Menggunakan relasi Periode–Luminositas Leavitt untuk menjangkau galaksi-galaksi tetangga hingga $\sim 30\ \mathrm{Mpc}$.
+5. **Supernova Tipe Ia & Relasi Tully-Fisher**: Lilin standar sangat terang untuk mengukur jarak ekstragalaksi hingga ratusan megaparsek ($> 1\ \mathrm{Gpc}$).
+6. **Hukum Hubble-Lemaître**: Mengukur jarak kosmologis melalui pergeseran merah resesi galaksi ($v = H_0 d$).
+
+</Poin>
+
+## 6. Kerapatan fluks dan batas pengamatan (Polusi Cahaya)
+
+<Poin judul="6 · Magnitudo limit & skala Bortle">
+
+Kualitas langit malam menentukan kecerahan objek paling redup yang dapat dilihat oleh pengamat, yang disebut **magnitudo batas (*limiting magnitude*)**:
+- Di langit gelap pedalaman murni (*Bortle 1*): mata manusia dapat melihat bintang hingga magnitudo tampak $m \approx +7{,}5$ hingga $+8{,}0$.
+- Di pedesaan tipikal (*Bortle 3–4*): batas mata bugil $m \approx +6{,}0$ hingga $+6{,}5$.
+- Di pinggiran kota (*Bortle 6*): batas mata bugil turun ke $m \approx +5{,}0$.
+- Di pusat kota metropolis berpolusi cahaya parah (*Bortle 9*): hanya bintang paling terang dan planet yang tampak ($m \le +3{,}0$).
+
+Penggunaan teleskop dengan diameter bukaan $D$ mengumpulkan cahaya lebih banyak sebanding dengan $(D / D_{\text{pupil}})^2$, di mana diameter pupil mata adaptasi gelap adalah $D_{\text{pupil}} \approx 6 - 7\ \mathrm{mm}$. Penguatan daya kumpul cahaya ini memperluas magnitudo batas teleskopik hingga:
+
+$$m_{\text{limit}} \approx m_{\text{mata}} + 5 \log_{10}\!\left(\frac{D}{D_{\text{pupil}}}\right)$$
+
+<Contoh judul="Soal Olimpiade Rantai: Penentuan Jarak, Diameter Linier, dan Magnitudo Absolut">
+
+<Langkah>
+
+Sebuah satelit astrometri mendeteksi bintang variabel di dekat bidang galaksi dengan sudut paralaks trigonometri $p = 0{,}0125''$ (detik busur) dan magnitudo tampak visual rata-rata $m_V = 9{,}50$. Interferometri optik mengukur diameter sudut piringan bintang tersebut sebesar $\theta = 1{,}80\ \mathrm{mas}$ (mili-detik busur). Tentukan:\
+(a) Jarak bintang dari Bumi dalam satuan parsek dan tahun cahaya.\
+(b) Diameter fisik bintang dalam satuan kilometer dan dalam satuan diameter Matahari ($D_\odot = 1{,}392 \times 10^6\ \mathrm{km}$).\
+(c) Magnitudo absolut visual bintang tersebut ($M_V$), abaikan serapan debu.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 (Kalkulasi Jarak):**
+$$d = \frac{1}{p} = \frac{1}{0{,}0125''} = 80\ \mathrm{pc}.$$
+Dalam tahun cahaya:
+$$d = 80 \times 3{,}262\ \mathrm{ly} \approx 260{,}96\ \mathrm{ly} \approx 261\ \mathrm{ly}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 (Diameter Fisik Bintang):**
+Ubah diameter sudut ke radian:
+$$\theta = 1{,}80\ \mathrm{mas} = 1{,}80 \times 10^{-3}'' = \frac{1{,}80 \times 10^{-3}}{206.265}\ \text{rad} \approx 8{,}727 \times 10^{-9}\ \text{rad}.$$
+Jarak dalam meter:
+$$d = 80 \times (3{,}086 \times 10^{16}\ \mathrm{m}) = 2{,}4688 \times 10^{18}\ \mathrm{m}.$$
+Diameter linier:
+$$D = \theta \times d = (8{,}727 \times 10^{-9}) \times (2{,}4688 \times 10^{18}\ \mathrm{m}) \approx 2{,}154 \times 10^{10}\ \mathrm{m} = 2{,}154 \times 10^7\ \mathrm{km}.$$
+Dalam satuan diameter Matahari:
+$$\frac{D}{D_\odot} = \frac{2{,}154 \times 10^7\ \mathrm{km}}{1{,}392 \times 10^6\ \mathrm{km}} \approx 15{,}48\ D_\odot.$$
+Bintang ini adalah bintang raksasa oranye atau subraksasa terang.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 (Magnitudo Absolut Visual):**
+Modulus jarak:
+$$m_V - M_V = 5\log_{10} d - 5 = 5\log_{10}(80) - 5.$$
+Karena $\log_{10}(80) = \log_{10}(8) + 1 \approx 0{,}9031 + 1 = 1{,}9031$:
+$$5\log_{10}(80) - 5 = 5(1{,}9031) - 5 = 9{,}515 - 5 = 4{,}515\ \mathrm{mag}.$$
+Maka magnitudo absolut visual bintang adalah:
+$$M_V = m_V - 4{,}515 = 9{,}50 - 4{,}515 = +4{,}985 \approx +4{,}99\ \mathrm{mag}.$$
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="a1-cek-1"
+  pertanyaan="Bintang terdekat dengan Bumi memiliki paralaks trigonometri p = 0,768 detik busur. Berapakah jaraknya dalam satuan parsek?"
+  opsi={['1,30 pc', '0,77 pc', '3,26 pc', '4,24 pc']}
+  jawaban={0}
+  penjelasan="d = 1 / p = 1 / 0,768'' ≈ 1,302 pc (setara dengan 1,302 × 3,26 ly ≈ 4,24 tahun cahaya)."
+/>
+
+<CekPaham
+  id="a1-cek-2"
+  pertanyaan="Sebuah bintang A memiliki magnitudo tampak m_A = 2,0 dan bintang B memiliki magnitudo tampak m_B = 4,5. Berapakah rasio perbandingan fluks cahaya F_A / F_B?"
+  opsi={['10 kali', '2,5 kali', '100 kali', '6,25 kali']}
+  jawaban={0}
+  penjelasan="Selisih magnitudo delta m = 4,5 - 2,0 = 2,5 magnitudo. Rasio fluks F_A / F_B = 100^(2,5 / 5) = 100^0,5 = sqrt(100) = 10 kali lipat."
+/>
+
+<CekPaham
+  id="a1-cek-3"
+  pertanyaan="Dua bintang yang tidak terpisahkan oleh mata masing-masing memiliki magnitudo tampak 5,00. Berapakah magnitudo gabungan sistem tersebut?"
+  opsi={['4,25', '10,00', '2,50', '5,75']}
+  jawaban={0}
+  penjelasan="Fluks total adalah dua kali fluks satu bintang: F_tot = 2F_1. Maka m_tot = m_1 - 2,5 log10(2) = 5,00 - 2,5(0,3010) = 5,00 - 0,7525 ≈ 4,25 magnitudo."
+/>
+
+<Refleksi
+  id="a1-refleksi-1"
+  pertanyaan="Mengapa misi astrometri luar angkasa seperti wahana antariksa Gaia mampu mengukur paralaks dengan ketelitian mencapai mikro-detik busur, sementara teleskop berbasis darat di permukaan Bumi terhambat pada batas milidetik busur? Jelaskan pengaruh turbulensi atmosfer (seeing)."
+/>
+
+## 8. Konstanta penting skala alam semesta
+
+<Konstanta
+  data={[
+    { simbol: '1 AU', nilai: '1,49598 × 10¹¹', satuan: 'm' },
+    { simbol: '1 ly', nilai: '9,4607 × 10¹⁵', satuan: 'm' },
+    { simbol: '1 pc', nilai: '3,0857 × 10¹⁶', satuan: 'm' },
+    { simbol: '1 pc', nilai: '3,2616', satuan: 'ly' },
+    { simbol: '1 pc', nilai: '206.265', satuan: 'AU' },
+    { simbol: '1 radian', nilai: '206.265', satuan: 'detik busur' },
+    { simbol: 'Matahari m_V', nilai: '−26,74', satuan: 'mag' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rumus-rumus kunci bab A1:
+1. $d = 1/p$ (dengan $d$ dalam $\mathrm{pc}$, $p$ dalam detik busur)
+2. $m_1 - m_2 = -2{,}5 \log_{10}(F_1 / F_2)$
+3. $\theta = D / d$ (dalam radian) $\implies \theta\,('') = 206.265 \times (D/d)$
+4. $m_{\text{tot}} = m_1 - 2{,}5\log_{10}(1 + 10^{-0{,}4(m_2 - m_1)})$
+5. $m - M = 5\log_{10} d - 5$
+
+</Catatan>

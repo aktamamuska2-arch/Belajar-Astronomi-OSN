@@ -1,0 +1,250 @@
+<Tujuan>
+
+- Memakai persamaan kinematika untuk gerak lurus dan jatuh bebas.
+- Menghubungkan gaya, percepatan, dan gerak melingkar lewat $a = v^{2}/r$.
+- Memakai energi dan momentum untuk menaksir kelajuan orbit dan lepas.
+- Menurunkan kecepatan dan periode orbit lingkaran dari hukum gravitasi Newton.
+
+</Tujuan>
+
+<Prasyarat babIds={['f2', 'f3']} />
+
+<p className="lead">Mekanika adalah mesin di balik orbit. Sebelum membahas Kepler dan Hohmann di Mekanika Langit, kita latih dulu tiga hal yang akan dipakai terus: kinematika, hukum Newton pada gerak melingkar, dan energi gravitasi. Semua soal orbit pada akhirnya adalah salah satu dari ketiganya.</p>
+
+## 1. Kinematika: posisi, kecepatan, percepatan
+
+<Poin judul="1 · Kinematika" defaultOpen>
+
+Untuk percepatan tetap $a$, tiga persamaan berikut menutup hampir semua kebutuhan:
+
+$$v = v_{0} + at, \qquad s = v_{0}t + \tfrac{1}{2}at^{2}, \qquad v^{2} = v_{0}^{2} + 2as.$$
+
+Jatuh bebas adalah kasus khusus dengan $a = g \approx 9{,}8\ \mathrm{m/s^{2}}$ ke bawah. Yang sering dilupakan: persamaan ini hanya berlaku bila percepatan **tetap**. Orbit bukan gerak percepatan tetap — arah percepatan terus berubah — sehingga tidak boleh diselesaikan dengan rumus di atas.
+
+<Contoh judul="Menjatuhkan batu dari ketinggian 45 m">
+
+<Langkah>
+
+Ambil arah ke bawah positif dengan $v_{0} = 0$ dan $a = 9{,}8\ \mathrm{m/s^{2}}$.
+
+</Langkah>
+
+<Langkah>
+
+Dari $s = \tfrac{1}{2}at^{2}$: $45 = 4{,}9t^{2}$, sehingga $t^{2} = 9{,}18$ dan $t \approx 3{,}03\ \mathrm{s}$.
+
+</Langkah>
+
+<Langkah>
+
+Kecepatan saat menyentuh tanah: $v = gt = 9{,}8 \times 3{,}03 \approx 29{,}7\ \mathrm{m/s}$ (sekitar 107 km/jam).
+
+</Langkah>
+
+<Langkah>
+
+Periksa dengan energi: $v = \sqrt{2gh} = \sqrt{2 \times 9{,}8 \times 45} \approx 29{,}7\ \mathrm{m/s}$. Dua metode memberi hasil sama — pemeriksaan silang seperti ini menyelamatkan banyak jawaban.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Hukum Newton dan gerak melingkar
+
+<Poin judul="2 · Hukum Newton & gerak melingkar">
+
+Hukum kedua Newton menulis $\vec{F}_{\mathrm{total}} = m\vec{a}$. Pada gerak melingkar beraturan, laju tetap tetapi arah kecepatan berubah, sehingga selalu ada percepatan yang menuju pusat:
+
+$$a_{c} = \frac{v^{2}}{r}.$$
+
+Untuk satelit, satu-satunya gaya adalah gravitasi, dan gaya itu **berperan sebagai** gaya sentripetal:
+
+$$\frac{GMm}{r^{2}} = \frac{mv^{2}}{r}.$$
+
+Perhatikan bahwa massa satelit $m$ lenyap dari kedua ruas. Inilah sebabnya semua satelit pada radius orbit yang sama bergerak dengan kecepatan yang sama, terlepas dari massanya — salah satu hasil paling penting di astronomi.
+
+<Contoh judul="Kecepatan satelit orbit rendah">
+
+<Langkah>
+
+Di permukaan Bumi, $g = GM/R^{2} = 9{,}8\ \mathrm{m/s^{2}}$ dan $R = 6{,}371\ \mathrm{km}$. Untuk orbit tepat di permukaan (abaikan atmosfer), $v = \sqrt{GM/R} = \sqrt{gR}$.
+
+</Langkah>
+
+<Langkah>
+
+$v = \sqrt{9{,}8 \times 6{,}371 \times 10^{3}} = \sqrt{6{,}24 \times 10^{7}} \approx 7{,}9 \times 10^{3}\ \mathrm{m/s}$.
+
+</Langkah>
+
+<Langkah>
+
+Periode: $T = 2\pi R / v = 2\pi \times 6{,}371 \times 10^{3} / 7{,}9 \times 10^{3} \approx 5{,}1 \times 10^{3}\ \mathrm{s}$.
+
+</Langkah>
+
+<Langkah>
+
+Sekitar 84 menit. Inilah periode khas satelit orbit rendah (ISS sekitar 90 menit karena orbitnya sedikit lebih tinggi). Semakin tinggi orbit, semakin lambat satelitnya.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 3. Energi dan momentum
+
+<Poin judul="3 · Energi & momentum">
+
+Energi kinetik tetap $\tfrac{1}{2}mv^{2}$. Energi potensial gravitasi tidak boleh ditulis $mgh$ untuk jarak jauh; bentuk yang benar (dengan acuan nol di tak hingga) adalah
+
+$$E_{p} = -\frac{GMm}{r}.$$
+
+Tanda negatif berarti sistem terikat: untuk memisahkan massa sampai tak hingga, kita harus **menambah** energi. Untuk orbit lingkaran, hubungan energi kinetik dan potensialnya sangat rapi:
+
+$$E_{k} = \frac{GMm}{2r}, \qquad E_{\mathrm{mekanik}} = -\frac{GMm}{2r}.$$
+
+Kelajuan lepas (escape velocity) diperoleh saat energi mekanik nol:
+
+$$v_{\mathrm{lepas}} = \sqrt{\frac{2GM}{R}} = \sqrt{2gR}.$$
+
+Untuk Bumi hasilnya sekitar 11,2 km/s — sekitar $\sqrt{2}$ kali kelajuan orbit rendah, bukan dua kali lipat.
+
+Momentum $p = mv$ kekal bila tidak ada gaya luar. Dalam sistem bintang ganda, kedua bintang mengelilingi pusat massa bersama dengan momentum total nol, sehingga
+
+$$m_{1}r_{1} = m_{2}r_{2}.$$
+
+Bintang yang lebih masif bergerak pada lingkaran yang lebih kecil — informasi ini yang nanti dipakai untuk menimbang bintang.
+
+<Contoh judul="Kelajuan lepas dari Bumi">
+
+<Langkah>
+
+Gunakan bentuk $v_{\mathrm{lepas}} = \sqrt{2gR}$ dengan $g = 9{,}8\ \mathrm{m/s^{2}}$ dan $R = 6{,}371\ \mathrm{km}$.
+
+</Langkah>
+
+<Langkah>
+
+$v_{\mathrm{lepas}} = \sqrt{2 \times 9{,}8 \times 6{,}371 \times 10^{3}} = \sqrt{1{,}25 \times 10^{8}}$.
+
+</Langkah>
+
+<Langkah>
+
+$v_{\mathrm{lepas}} \approx 1{,}12 \times 10^{4}\ \mathrm{m/s} = 11{,}2\ \mathrm{km/s}$.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: roket perlu sekitar 11 km/s untuk meninggalkan Bumi sepenuhnya, dibandingkan 7,9 km/s hanya untuk mengorbit. Selisih energi itulah yang membuat misi antarplanet jauh lebih mahal daripada menempatkan satelit.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 4. Gravitasi Newton dan orbit lingkaran
+
+<Poin judul="4 · Gravitasi Newton & orbit lingkaran">
+
+Hukum gravitasi Newton:
+
+$$F = \frac{GMm}{r^{2}}, \qquad g = \frac{GM}{r^{2}}.$$
+
+Percepatan gravitasi $g$ yang kita rasakan di permukaan hanyalah nilai khusus rumus ini pada $r = R$. Menyamakan gravitasi dengan gaya sentripetal memberi kecepatan orbit lingkaran
+
+$$v = \sqrt{\frac{GM}{r}} \propto \frac{1}{\sqrt{r}}$$
+
+dan, setelah satu putaran penuh, hukum Kepler ketiga versi lingkaran:
+
+$$T^{2} = \frac{4\pi^{2}r^{3}}{GM}.$$
+
+Bentuk ini menjelaskan pola yang akan dipakai di Mekanika Langit: periode bertambah cepat ketika radius bertambah (pangkat $3/2$), dan $GM$ bisa ditentukan dari pengamatan $T$ dan $r$ — cara astronom "menimbang" Bumi, Matahari, dan bintang.
+
+<Gambar id="orbit-lingkaran-rasio" />
+
+<Interaktif jenis="orbit" />
+
+<Contoh judul="Jari-jari orbit geostasioner">
+
+<Langkah>
+
+Geostasioner berarti periodenya satu hari sideris, $T \approx 86\,164\ \mathrm{s}$ (23 jam 56 menit). Gunakan $GM = gR^{2} = 9{,}8 \times (6{,}371 \times 10^{6})^{2} \approx 3{,}98 \times 10^{14}\ \mathrm{m^{3}/s^{2}}$.
+
+</Langkah>
+
+<Langkah>
+
+Susun hukum Kepler: $r^{3} = GM T^{2} / (4\pi^{2})$.
+
+</Langkah>
+
+<Langkah>
+
+$r^{3} \approx \dfrac{3{,}98 \times 10^{14} \times (8{,}6164 \times 10^{4})^{2}}{39{,}48} \approx 7{,}49 \times 10^{22}\ \mathrm{m^{3}}$.
+
+</Langkah>
+
+<Langkah>
+
+$r \approx 4{,}22 \times 10^{7}\ \mathrm{m} = 42\,200\ \mathrm{km}$ dari pusat Bumi, atau ketinggian sekitar 35.800 km di atas permukaan. Satelit pada ketinggian ini tampak diam terhadap titik di Bumi — dasar satelit komunikasi.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 5. Cek pemahaman
+
+<CekPaham
+  id="f4-cek-1"
+  pertanyaan="Satelit B mengorbit pada radius 4 kali radius orbit satelit A. Berapa perbandingan kecepatan orbit A terhadap B?"
+  opsi={['2 : 1', '1 : 2', '4 : 1', '1 : 4']}
+  jawaban={0}
+  penjelasan="v ∝ 1/√r, sehingga v_A/v_B = √(r_B/r_A) = √4 = 2. Satelit yang lebih jauh bergerak lebih lambat."
+/>
+
+<CekPaham
+  id="f4-cek-2"
+  pertanyaan="Mengapa astronot di stasiun luar angkasa terasa tanpa bobot?"
+  opsi={[
+    'Karena di orbit tidak ada gravitasi sama sekali',
+    'Karena astronot dan stasiun jatuh bebas bersama mengelilingi Bumi',
+    'Karena massa astronot menjadi nol',
+    'Karena Bumi berhenti menarik mereka'
+  ]}
+  jawaban={1}
+  penjelasan="Gravitasi tetap bekerja dan justru menjadi gaya sentripetal. Tanpa bobot muncul karena astronot, stasiun, dan semua benda di dalamnya mengalami percepatan jatuh yang sama — tidak ada yang menekan lantai."
+/>
+
+<Refleksi
+  id="f4-refleksi-1"
+  pertanyaan="Satelit geostasioner berada jauh lebih tinggi daripada satelit orbit rendah, tetapi justru bergerak lebih lambat. Jelaskan dengan rumus energi atau gaya mengapa ini harus terjadi."
+/>
+
+## 6. Konstanta yang sering muncul
+
+<Konstanta
+  data={[
+    { simbol: 'G', nilai: '6,674 × 10⁻¹¹', satuan: 'N·m²/kg²' },
+    { simbol: 'g', nilai: '9,8', satuan: 'm/s²' },
+    { simbol: 'R Bumi', nilai: '6.371', satuan: 'km' },
+    { simbol: 'M Bumi', nilai: '5,972 × 10²⁴', satuan: 'kg' },
+    { simbol: 'v orbit rendah', nilai: '7,9', satuan: 'km/s' },
+    { simbol: 'v lepas Bumi', nilai: '11,2', satuan: 'km/s' },
+    { simbol: 'Hari sideris', nilai: '86.164', satuan: 's' },
+  ]}
+/>
+
+<Catatan variasi="awas">
+
+Jangan mencampur $g$ permukaan dengan percepatan gravitasi di orbit. Pada $r = 2R$, nilai $g$ turun menjadi seperempatnya. Rumus $mgh$ juga hanya berlaku untuk ketinggian kecil; untuk orbit dan benda langit, gunakan $E_{p} = -GMm/r$ dengan acuan tak hingga.
+
+</Catatan>

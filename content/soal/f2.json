@@ -1,0 +1,446 @@
+[
+  {
+    "id": "f2-01",
+    "topik": "trigonometri-vektor",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Sudut 30° dinyatakan dalam radian sama dengan…",
+    "opsi": [
+      "π/3",
+      "π/6",
+      "π/4",
+      "π/12"
+    ],
+    "jawaban": 1,
+    "pembahasan": [
+      "Satu putaran penuh adalah 360° = 2π rad, sehingga 180° = π rad.",
+      "Bagi kedua ruas dengan 6: 30° = π/6 rad ≈ 0,524 rad.",
+      "Periksa dengan rumus konversi: 30 × π/180 = π/6. Arah konversi derajat ke radian selalu mengalikan dengan π/180.",
+      "Sebagai patokan cepat: 30° adalah seperdua belas putaran, dan seperdua belas dari 2π juga π/6."
+    ]
+  },
+  {
+    "id": "f2-02",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah tongkat sepanjang 10 m dipasang tegak lurus garis pandang pada jarak 50 m dari pengamat. Berapa sudut yang dibentuk tongkat itu di mata pengamat?",
+    "opsi": [
+      "11,3°",
+      "5,7°",
+      "78,7°",
+      "0,2°"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Bentuk situasinya segitiga siku-siku: sisi depan 10 m, sisi samping 50 m.",
+      "Gunakan tangen: tan θ = 10/50 = 0,2.",
+      "Maka θ = arctan(0,2) ≈ 11,3°.",
+      "Periksa dengan pendekatan sudut kecil: 10/50 = 0,2 rad ≈ 11,5°. Hasil eksak 11,3° dekat, tetapi belum identik — sudut 11° sudah di ambang batas aproksimasi."
+    ]
+  },
+  {
+    "id": "f2-03",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah pesawat ruang angkasa memiliki dua dorongan yang saling tegak lurus: 6 satuan ke arah timur dan 8 satuan ke arah utara. Berapa besar dorongan totalnya?",
+    "opsi": [
+      "14 satuan",
+      "10 satuan",
+      "2 satuan",
+      "7 satuan"
+    ],
+    "jawaban": 1,
+    "pembahasan": [
+      "Dua vektor tegak lurus membentuk segitiga siku-siku, sehingga resultannya dihitung dengan Pythagoras.",
+      "R² = 6² + 8² = 36 + 64 = 100.",
+      "R = 10 satuan.",
+      "Perhatikan: menjumlahkan langsung 6 + 8 = 14 hanya benar bila kedua dorongan searah. Sudut 90° membuat resultan lebih pendek."
+    ]
+  },
+  {
+    "id": "f2-04",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Spektrum sebuah bintang menunjukkan pergeseran Doppler yang setara dengan 34,6 km/s. Jika sudut antara arah gerak bintang dan garis pandang adalah 30°, berapa kecepatan total bintang itu?",
+    "opsi": [
+      "40 km/s",
+      "34,6 km/s",
+      "60 km/s",
+      "69,3 km/s"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Spektrum hanya mengukur komponen kecepatan sepanjang garis pandang: v_r = v cos θ, dengan θ sudut terhadap garis pandang.",
+      "Yang diketahui v_r, bukan v: v = v_r / cos 30° = 34,6 / 0,866.",
+      "v ≈ 40 km/s. Jadi 34,6 km/s adalah proyeksi, bukan kecepatan sebenarnya.",
+      "Tafsir fisis: bintang yang bergerak tegak lurus garis pandang tidak memperlihatkan pergeseran Doppler sama sekali. Tanpa informasi sudut, kecepatan total tidak dapat ditentukan dari spektrum saja."
+    ]
+  },
+  {
+    "id": "f2-05",
+    "topik": "trigonometri-vektor",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang trigonometri dasar.",
+    "opsi": [
+      "Untuk sudut kecil, sin θ ≈ θ bila θ dinyatakan dalam radian",
+      "Pada aturan sinus berlaku a/sin A = b/sin B",
+      "Dua vektor sama besar yang membentuk 120° menghasilkan resultan sama besar dengan masing-masing vektor",
+      "cos 45° = 0,5",
+      "Satu radian sama dengan satu derajat"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Aproksimasi sin θ ≈ θ hanya berlaku dalam radian; dalam derajat angkanya berbeda jauh. Ini alasan sudut dalam astronomi selalu ditulis dalam radian saat memakai aproksimasi.",
+      "Aturan sinus membandingkan sisi dengan sinus sudut di hadapannya. Bentuk kesetaraan ini berlaku untuk semua segitiga, bukan hanya yang siku-siku.",
+      "Dua vektor sama besar dengan sudut 120° membentuk segitiga sama sisi saat dijumlahkan, sehingga resultannya tepat sebesar masing-masing vektor.",
+      "cos 45° = √2/2 ≈ 0,707, bukan 0,5. Yang bernilai 0,5 adalah cos 60°."
+    ]
+  },
+  {
+    "id": "f2-06",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Sebuah vektor kecepatan besarnya 100 km/s dan membentuk sudut 30° terhadap garis pandang. Pilih semua pernyataan yang benar.",
+    "opsi": [
+      "Komponen radialnya sekitar 86,6 km/s",
+      "Komponen tangensialnya 50 km/s",
+      "Komponen radial bisa lebih besar daripada besar vektor total",
+      "Perkalian titik dua vektor memakai sinus sudut di antara keduanya",
+      "Resultan dua vektor bisa lebih kecil daripada besar salah satu vektor"
+    ],
+    "jawaban": [0, 1, 4],
+    "pembahasan": [
+      "Komponen radial adalah proyeksi ke garis pandang: 100 cos 30° = 100 × 0,866 ≈ 86,6 km/s.",
+      "Komponen tangensial tegak lurus garis pandang: 100 sin 30° = 50 km/s.",
+      "Proyeksi tidak mungkin melebihi panjang vektor aslinya — komponen selalu lebih kecil atau sama besar.",
+      "Perkalian titik memakai kosinus, bukan sinus: A·B = AB cos θ. Sinus muncul pada besar hasil perkalian silang.",
+      "Jika dua vektor hampir berlawanan arah, resultannya bisa sangat kecil — bahkan nol bila sama besar dan tepat berlawanan."
+    ]
+  },
+  {
+    "id": "f2-07",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah bintang memiliki paralaks 0,77 detik busur. Berapa jarak bintang itu dari Bumi, dalam parsek?",
+    "jawaban": 1.3,
+    "toleransiRel": 0.02,
+    "satuan": "pc",
+    "pembahasan": [
+      "Hubungan paralaks dan jarak untuk sudut kecil: p (detik busur) = 1 / d (parsek).",
+      "Susun untuk jarak: d = 1 / p = 1 / 0,77.",
+      "d ≈ 1,30 pc. Ini jarak bintang terdekat, sebanding dengan Proxima Centauri.",
+      "Periksa kewajaran: paralaks 1'' berarti 1 pc, dan paralaks yang lebih kecil dari 1'' berarti jarak lebih besar dari 1 pc. Hasil 1,30 pc masuk akal."
+    ]
+  },
+  {
+    "id": "f2-08",
+    "topik": "trigonometri-vektor",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Berapa panjang busur 2° di ekuator Bumi? Gunakan jari-jari Bumi 6.371 km.",
+    "jawaban": 222.4,
+    "toleransiRel": 0.02,
+    "satuan": "km",
+    "pembahasan": [
+      "Ubah sudut ke radian: 2° × π/180 = 0,034907 rad.",
+      "Panjang busur s = Rθ = 6.371 × 0,034907.",
+      "Hasilnya ≈ 222,4 km.",
+      "Sebagai pemeriksaan cepat: 1° di ekuator sekitar 111 km, jadi 2° sekitar 222 km. Konsisten."
+    ]
+  },
+  {
+    "id": "f2-09",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Dua bintang tampak terpisah 1,5° di langit dan keduanya berjarak 100 pc dari Bumi. Berapa pemisahan linier keduanya dalam ruang, dalam parsek? Gunakan pendekatan sudut kecil.",
+    "jawaban": 2.62,
+    "toleransiRel": 0.02,
+    "satuan": "pc",
+    "pembahasan": [
+      "Ubah pemisahan sudut ke radian: θ = 1,5° × π/180 = 0,02618 rad.",
+      "Untuk sudut kecil, ukuran linier = jarak × sudut: s = dθ = 100 pc × 0,02618.",
+      "s ≈ 2,62 pc, setara sekitar 540.000 AU.",
+      "Tafsir: pemisahan 1,5° terlihat lebar di langit, tetapi pada jarak 100 pc itu berarti ratusan ribu AU — jauh lebih besar daripada ukuran Tata Surya. Jarak sudut saja tidak cukup untuk menyimpulkan jarak fisik tanpa mengetahui jaraknya."
+    ]
+  },
+  {
+    "id": "f2-10",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa pendekatan sudut kecil θ ≈ s/d sah untuk menghitung ukuran sudut benda langit, tetapi tidak boleh dipakai sembarangan. Sertakan satu contoh angka dan batas keberlakuannya.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan asal rumus dari definisi radian: panjang busur s = Rθ, sehingga untuk busur yang hampir lurus θ ≈ s/d.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghubungkan dengan sin θ ≈ tan θ ≈ θ dan menyebut syarat θ jauh lebih kecil dari 1 radian (praktisnya di bawah sekitar 10°).",
+        "bobot": 2
+      },
+      {
+        "poin": "Memberi contoh angka yang benar, misalnya diameter sudut Bulan sekitar 0,009 rad, atau 1 AU pada 1 pc memberi 1 detik busur.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menyebut akibat bila sudut terlalu besar, misalnya kesalahan persen pada 10–20 derajat atau perlunya aturan kosinus/trigonometri eksak.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Rumus θ = s/d berasal dari definisi radian: busur lingkaran berjari-jari d sepanjang s membentuk sudut θ = s/d. Untuk sudut kecil, busur itu hampir berupa garis lurus dan hampir sama dengan tali busur maupun garis singgung, sehingga sin θ ≈ tan θ ≈ θ bila θ dalam radian. Karena itu benda berukuran s pada jarak d tampak bersudut s/d; misalnya Bulan berdiameter 3.474 km pada jarak 384.400 km tampak sekitar 0,009 rad, atau 0,52°. Batasnya: aproksimasi memburuk saat sudut membesar. Pada 10°, sin θ berbeda sekitar 0,5% dari θ dan tan θ sekitar 1%; pada 20–30° kesalahannya sudah berapa persen sehingga soal presisi harus memakai trigonometri eksak atau aturan kosinus. Selalu tulis asumsi sudut kecil dan periksa apakah sudutnya memang kecil dibanding 1 radian.",
+    "pembahasan": [
+      "Jawaban yang lengkap harus menurunkan θ ≈ s/d dari definisi radian, bukan hanya menyebut rumusnya. Busur lingkaran berjari-jari d sepanjang s membentuk sudut s/d.",
+      "Syarat keberlakuan adalah θ jauh lebih kecil dari 1 radian, sehingga busur, tali busur, dan garis singgung hampir berimpit: sin θ ≈ tan θ ≈ θ.",
+      "Contoh angka yang kuat: diameter sudut Bulan sekitar 0,009 rad, atau 1 AU pada jarak 1 pc memberi 1 detik busur. Batas: pada 10° kesalahan aproksimasi sudah sekitar 0,5–1%, dan makin besar sudutnya makin perlu trigonometri eksak."
+    ]
+  },
+  {
+    "id": "f2-11",
+    "topik": "trigonometri-vektor",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "lingkaran-satuan",
+    "soal": "Pada lingkaran satuan (gambar), koordinat titik pada sudut 60° adalah…",
+    "opsi": ["(1/2, √3/2)", "(√3/2, 1/2)", "(−1/2, √3/2)", "(√3/2, −1/2)"],
+    "jawaban": 0,
+    "pembahasan": ["Pada lingkaran satuan, koordinat sudut θ adalah (cos θ, sin θ).", "cos 60° = 1/2 dan sin 60° = √3/2.", "Sudut 60° di kuadran pertama memiliki kedua koordinat positif, jadi titiknya (1/2, √3/2)."]
+  },
+  {
+    "id": "f2-12",
+    "topik": "trigonometri-vektor",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-vektor",
+    "soal": "Dua vektor tegak lurus pada gambar memiliki komponen 5 satuan ke timur dan 12 satuan ke utara. Berapa besar resultannya?",
+    "opsi": ["7 satuan", "13 satuan", "17 satuan", "60 satuan"],
+    "jawaban": 1,
+    "pembahasan": ["Vektor yang tegak lurus membentuk segitiga siku-siku.", "Besar resultan R = √(5² + 12²) = √169 = 13.", "Menjumlahkan besar 5 + 12 hanya tepat untuk vektor searah, bukan yang tegak lurus."]
+  },
+  {
+    "id": "f2-13",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-vektor",
+    "soal": "Sebuah vektor kecepatan 20 km/s membentuk sudut 60° terhadap garis pandang. Berapa besar komponen radialnya?",
+    "opsi": ["10 km/s", "17,3 km/s", "20 km/s", "34,6 km/s"],
+    "jawaban": 0,
+    "pembahasan": ["Komponen radial adalah proyeksi vektor pada arah garis pandang.", "Dengan sudut θ terhadap garis pandang, v_r = v cos θ = 20 cos 60°.", "Karena cos 60° = 0,5, diperoleh v_r = 10 km/s; komponen ini tidak melebihi kecepatan total."]
+  },
+  {
+    "id": "f2-14",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-vektor",
+    "soal": "Segitiga pada gambar mempunyai dua sisi 7 km dan 9 km dengan sudut apit 60°. Berapa panjang sisi yang berhadapan dengan sudut 60°?",
+    "opsi": ["√67 km ≈ 8,19 km", "√130 km ≈ 11,40 km", "16 km", "2 km"],
+    "jawaban": 0,
+    "pembahasan": ["Gunakan aturan kosinus c² = a² + b² − 2ab cos C.", "c² = 7² + 9² − 2(7)(9)cos 60° = 49 + 81 − 63 = 67.", "Jadi c = √67 ≈ 8,19 km, sesuai karena sudut apit 60° lebih kecil dari 90° dan sisi ketiga lebih pendek daripada √(7²+9²)."]
+  },
+  {
+    "id": "f2-15",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "lingkaran-satuan",
+    "soal": "Titik pada lingkaran satuan berada pada sudut 150° dari sumbu x positif. Berapa koordinatnya?",
+    "opsi": ["(−√3/2, 1/2)", "(√3/2, −1/2)", "(−1/2, √3/2)", "(1/2, −√3/2)"],
+    "jawaban": 0,
+    "pembahasan": ["Koordinat pada lingkaran satuan ialah (cos θ, sin θ).", "150° = 180° − 30° berada di kuadran II: cos 150° = −cos 30° = −√3/2 dan sin 150° = sin 30° = 1/2.", "Tanda negatif hanya untuk komponen x di kuadran II, sehingga pilihan pertama benar."]
+  },
+  {
+    "id": "f2-16",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-vektor",
+    "soal": "Dua perpindahan berturut-turut adalah 8 km ke timur lalu 6 km ke utara. Arah resultan diukur dari timur ke utara. Berapa sudutnya?",
+    "opsi": ["36,9°", "53,1°", "90°", "143,1°"],
+    "jawaban": 0,
+    "pembahasan": ["Komponen resultan adalah 8 km ke timur dan 6 km ke utara.", "tan θ = 6/8 = 0,75, sehingga θ = arctan(0,75) ≈ 36,9°.", "Sudut diukur dari arah timur menuju utara; membalik rasio akan memberi sudut komplemennya, 53,1° dari utara."]
+  },
+  {
+    "id": "f2-17",
+    "topik": "trigonometri-vektor",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-vektor",
+    "soal": "Pada diagram komponen vektor, A = (3, 4) dan B = (−4, 3). Berapa sudut terkecil antara A dan B?",
+    "opsi": ["0°", "45°", "90°", "180°"],
+    "jawaban": 2,
+    "pembahasan": ["Perkalian titik A·B = 3(−4) + 4(3) = −12 + 12 = 0.", "Karena A·B = |A||B|cos θ dan kedua vektor tidak nol, cos θ = 0.", "Maka sudut terkecilnya 90°; pemeriksaan komponen juga menunjukkan panjang masing-masing 5."]
+  },
+  {
+    "id": "f2-18",
+    "topik": "trigonometri-vektor",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-vektor",
+    "soal": "Pada segitiga posisi (gambar), dua sisi dari titik pengamat ke dua bintang adalah 5 pc dan 7 pc, dengan sudut pisah 60°. Berapa jarak fisik kedua bintang?",
+    "opsi": ["√39 pc ≈ 6,24 pc", "12 pc", "√74 pc ≈ 8,60 pc", "2 pc"],
+    "jawaban": 0,
+    "pembahasan": ["Jarak kedua bintang adalah sisi yang berhadapan dengan sudut apit 60°.", "Aturan kosinus memberi d² = 5² + 7² − 2(5)(7)cos 60° = 25 + 49 − 35 = 39.", "Jadi d = √39 ≈ 6,24 pc. Jaraknya lebih kecil dari 5 + 7 karena sudut apit tidak 180°."]
+  },
+  {
+    "id": "f2-19",
+    "topik": "trigonometri-vektor",
+    "level": "olimpiade",
+    "tipe": "pilihan-jamak",
+    "gambar": "lingkaran-satuan",
+    "soal": "Perhatikan koordinat dan proyeksi pada lingkaran satuan (gambar). Pilih semua pernyataan yang benar.",
+    "opsi": ["Koordinat titik pada sudut θ adalah (cos θ, sin θ)", "sin²θ + cos²θ = 1", "Untuk θ = 0°, koordinatnya (0, 1)", "cos 60° = 1/2", "Nilai sinus selalu positif di semua kuadran"],
+    "jawaban": [0, 1, 3],
+    "pembahasan": ["Pada lingkaran berjari-jari satu, proyeksi horizontal dan vertikal berturut-turut adalah cos θ dan sin θ.", "Identitas sin²θ + cos²θ = 1 mengikuti jarak titik dari pusat yang selalu satu; cos 60° = 1/2.", "Pada 0° koordinatnya (1,0), dan sinus negatif di kuadran III serta IV, jadi pernyataan 3 dan 4 salah."]
+  },
+  {
+    "id": "f2-20",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "segitiga-vektor",
+    "soal": "Pada diagram, vektor A = (3, 4) dan B = (−3, 4). Pilih semua pernyataan benar.",
+    "opsi": ["|A| = 5", "A + B = (0, 8)", "A·B = 7", "Besar resultan A + B adalah 8", "Kedua vektor memiliki arah sama"],
+    "jawaban": [0, 1, 2, 3],
+    "pembahasan": ["|A| = √(3²+4²) = 5; penjumlahan komponen memberi A+B = (3−3,4+4) = (0,8).", "Besar resultannya √(0²+8²) = 8.", "A·B = 3(−3)+4(4) = 7, sehingga pernyataan tentang perkalian titik juga benar. Vektor tidak searah karena komponen x berbeda tanda."]
+  },
+  {
+    "id": "f2-21",
+    "topik": "trigonometri-vektor",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "lingkaran-satuan",
+    "soal": "Sebuah sudut pada lingkaran satuan adalah 120°. Nyatakan sudut tersebut dalam radian sebagai nilai desimal hingga tiga angka di belakang koma.",
+    "jawaban": 2.094,
+    "toleransiRel": 0.005,
+    "satuan": "rad",
+    "pembahasan": ["Konversi derajat ke radian memakai θ(rad) = θ(derajat) × π/180.", "120° × π/180° = 2π/3 rad.", "Dengan π ≈ 3,14159, 2π/3 ≈ 2,094 rad."]
+  },
+  {
+    "id": "f2-22",
+    "topik": "trigonometri-vektor",
+    "level": "fondasi",
+    "tipe": "isian",
+    "gambar": "lingkaran-satuan",
+    "soal": "Titik pada lingkaran satuan memiliki sudut θ = 30°. Berapa koordinat x = cos θ?",
+    "jawaban": 0.866,
+    "toleransiRel": 0.005,
+    "satuan": "tanpa satuan",
+    "pembahasan": ["Koordinat horizontal pada lingkaran satuan adalah x = cos θ.", "cos 30° = √3/2.", "√3/2 ≈ 0,866; koordinat tidak memiliki satuan karena lingkaran berjari-jari satu."]
+  },
+  {
+    "id": "f2-23",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "segitiga-vektor",
+    "soal": "Dalam segitiga, sisi a = 5 m berhadapan dengan sudut A = 30°. Sisi b berhadapan dengan sudut B = 90°. Tentukan b dalam meter.",
+    "jawaban": 10,
+    "toleransiRel": 0.02,
+    "satuan": "m",
+    "pembahasan": ["Aturan sinus menyatakan a/sin A = b/sin B.", "b = a sin B/sin A = 5 × 1/(1/2) = 10 m.", "Sudut terbesar 90° berhadapan dengan sisi terbesar 10 m, konsisten dengan geometri segitiga."]
+  },
+  {
+    "id": "f2-24",
+    "topik": "trigonometri-vektor",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "segitiga-vektor",
+    "soal": "Vektor A = (−6, 8) satuannya km. Berapa besar vektor A?",
+    "jawaban": 10,
+    "toleransiRel": 0.01,
+    "satuan": "km",
+    "pembahasan": ["Besar vektor dari komponen ortogonal adalah √(Ax² + Ay²).", "|A| = √((-6)² + 8²) = √(36+64) = √100.", "Jadi |A| = 10 km; tanda negatif menunjukkan arah x, bukan panjang negatif."]
+  },
+  {
+    "id": "f2-25",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "segitiga-vektor",
+    "soal": "Dua vektor mempunyai besar 10 dan 6 satuan dan sudut apit 120°. Hitung besar resultan keduanya.",
+    "jawaban": 8.718,
+    "toleransiRel": 0.01,
+    "satuan": "satuan",
+    "pembahasan": ["Besar jumlah vektor memenuhi R² = A² + B² + 2AB cos θ.", "R² = 10² + 6² + 2(10)(6)cos 120° = 100+36−60 = 76.", "R = √76 ≈ 8,718 satuan. Karena sudutnya tumpul, resultan lebih kecil daripada 10+6."]
+  },
+  {
+    "id": "f2-26",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "segitiga-vektor",
+    "soal": "Vektor perpindahan A = (7, −2) km dan B = (−3, 8) km. Hitung komponen y dari resultan A + B dalam km.",
+    "jawaban": 6,
+    "toleransiRel": 0.01,
+    "satuan": "km",
+    "pembahasan": ["Komponen vektor dijumlahkan terpisah pada sumbu yang sama.", "Komponen y resultan adalah A_y + B_y = −2 + 8 = 6 km.", "Komponen x adalah 7 − 3 = 4 km, tetapi yang diminta hanya komponen y; tanda positif berarti ke arah sumbu y positif."]
+  },
+  {
+    "id": "f2-27",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "segitiga-vektor",
+    "soal": "Sebuah vektor memiliki komponen tegak lurus 9 km dan 12 km. Berapa besar vektor tersebut?",
+    "jawaban": 15,
+    "toleransiRel": 0.01,
+    "satuan": "km",
+    "pembahasan": ["Komponen saling tegak lurus menjadi kaki segitiga siku-siku.", "Besar vektor = √(9² + 12²) = √225 = 15 km.", "Pemeriksaan: resultan harus lebih besar dari setiap komponen (15 > 12) tetapi lebih kecil dari jumlahnya (15 < 21)."]
+  },
+  {
+    "id": "f2-28",
+    "topik": "trigonometri-vektor",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "segitiga-vektor",
+    "soal": "Dua vektor A = (4, 3) dan B = (x, 4) pada diagram saling tegak lurus. Tentukan x dan jelaskan pemeriksaan yang memastikan hasilnya benar.",
+    "rubrik": [
+      {"poin": "Menyatakan bahwa dua vektor tegak lurus jika perkalian titiknya nol.", "bobot": 2},
+      {"poin": "Menuliskan A·B = 4x + 3(4) = 0.", "bobot": 2},
+      {"poin": "Menyelesaikan persamaan dan memperoleh x = −3.", "bobot": 2},
+      {"poin": "Memeriksa substitusi: (4,3)·(−3,4) = −12 + 12 = 0.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Syarat tegak lurus adalah A·B = 0. Maka (4,3)·(x,4) = 4x + 3(4) = 0, sehingga 4x = −12 dan x = −3. Pemeriksaan dengan substitusi memberi (4,3)·(−3,4) = −12 + 12 = 0, jadi kedua vektor memang tegak lurus.",
+    "pembahasan": ["Perkalian titik adalah nol untuk vektor tegak lurus.", "Persamaan 4x + 12 = 0 memberi x = −3.", "Substitusi menghasilkan perkalian titik nol, sehingga jawaban konsisten."]
+  },
+  {
+    "id": "f2-29",
+    "topik": "trigonometri-vektor",
+    "level": "penalaran",
+    "tipe": "esai",
+    "gambar": "segitiga-vektor",
+    "soal": "Dengan mengacu pada gambar komponen vektor, jelaskan cara memperoleh besar dan arah resultan dua vektor yang diberikan melalui komponen kartesius. Gunakan contoh A = (3, 4) dan B = (−1, 2), lalu tunjukkan pemeriksaan hasil.",
+    "rubrik": [
+      {"poin": "Menjelaskan komponen searah dijumlahkan per sumbu untuk memperoleh R = (Aₓ+Bₓ, Aᵧ+Bᵧ).", "bobot": 2},
+      {"poin": "Menghitung contoh R = (2,6) dan besar |R| = √40 ≈ 6,32.", "bobot": 2},
+      {"poin": "Menentukan arah dari sumbu x positif θ = arctan(6/2) ≈ 71,6° serta menyebut kuadran dengan tepat.", "bobot": 2},
+      {"poin": "Memberi pemeriksaan konsistensi melalui tanda komponen/kuadran atau penghitungan ulang besar vektor.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Jumlahkan komponen pada sumbu yang sama: R = A+B = (3−1, 4+2) = (2,6). Besarnya |R| = √(2²+6²) = √40 ≈ 6,32 satuan. Arahnya dari sumbu x positif adalah arctan(6/2) ≈ 71,6°; karena kedua komponen positif, vektor berada di kuadran I. Pemeriksaan Pythagoras dan tanda komponen konsisten dengan arah timur-laut pada diagram.",
+    "pembahasan": ["Vektor dijumlahkan dengan menjumlahkan komponen x dan y terpisah.", "Panjang resultan diperoleh dari Pythagoras dan arah dari rasio komponen dengan kuadran yang benar.", "Untuk contoh ini R = (2,6), besar sekitar 6,32, dan arahnya sekitar 71,6° di kuadran I."]
+  },
+  {
+    "id": "f2-30",
+    "topik": "trigonometri-vektor",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "segitiga-vektor",
+    "soal": "Pada diagram segitiga posisi, sebuah pengamat melihat dua bintang pada jarak 5 pc dan 7 pc dengan sudut pisah 60°. Jelaskan dan hitung jarak fisik kedua bintang memakai aturan kosinus; kemudian jelaskan mengapa jarak bukan sekadar selisih atau jumlah kedua jarak pandang.",
+    "rubrik": [
+      {"poin": "Mengidentifikasi dua jarak pandang sebagai sisi-sisi yang mengapit sudut 60° dan jarak bintang sebagai sisi di hadapan sudut itu.", "bobot": 2},
+      {"poin": "Menerapkan aturan kosinus d² = 5² + 7² − 2(5)(7)cos60° = 39 pc².", "bobot": 2},
+      {"poin": "Memperoleh d = √39 ≈ 6,24 pc dengan satuan yang benar.", "bobot": 2},
+      {"poin": "Menjelaskan peran sudut: hasil berbeda dari jumlah maupun selisih jarak dan berada di antara keduanya untuk konfigurasi ini.", "bobot": 2}
+    ],
+    "jawabanTeladan": "Dua garis pandang sepanjang 5 pc dan 7 pc membentuk sudut 60° pada pengamat, sehingga aturan kosinus memberi jarak antarbintang d² = 5²+7²−2(5)(7)cos60° = 25+49−35 = 39 pc². Jadi d = √39 ≈ 6,24 pc. Jarak ini bukan jumlah 12 pc karena garis pandang tidak searah, dan bukan selisih 2 pc karena kedua bintang tidak berada pada arah yang sama; sudut pisah menentukan sisi ketiga segitiga.",
+    "pembahasan": ["Gambar membentuk segitiga dengan sudut apit di pengamat, sehingga jarak antarbintang adalah sisi lawan sudut.", "Aturan kosinus memberi d² = 39 pc² dan d ≈ 6,24 pc.", "Jumlah dan selisih jarak pandang hanya berlaku pada konfigurasi segaris khusus, bukan sudut 60°."]
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "id": "l2-01",
+    "topik": "listrik-modern",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Rantai proton–proton menggabungkan empat proton menjadi inti helium. Berapa energi yang dilepaskan per inti helium?",
+    "opsi": [
+      "Sekitar 26,7 MeV",
+      "Sekitar 13,6 eV",
+      "Sekitar 511 keV",
+      "Sekitar 8,8 MeV"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Massa inti helium sekitar 0,7% lebih kecil daripada massa empat proton.",
+      "E = Δm c² ≈ 0,007 × 4m_p c² ≈ 26,7 MeV.",
+      "13,6 eV adalah energi ionisasi hidrogen; 511 keV adalah massa elektron; 8,8 MeV adalah energi ikat per nukleon di besi."
+    ]
+  },
+  {
+    "id": "l2-02",
+    "topik": "evolusi-bintang",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Mengapa tahap deret utama berlangsung paling lama dalam evolusi bintang?",
+    "opsi": [
+      "Karena fusi hidrogen di inti menyediakan energi paling efisien per reaksi",
+      "Karena hidrogen adalah bahan bakar paling melimpah dan laju konsumsinya relatif stabil",
+      "Karena bintang tidak berevolusi selama di deret utama",
+      "Karena tekanan degenerasi menopang inti"
+    ],
+    "jawaban": 1,
+    "pembahasan": [
+      "Hidrogen adalah unsur paling melimpah, dan fusi hidrogen di inti berlangsung dengan laju yang hampir konstan selama miliaran tahun.",
+      "Sekitar 90% umur bintang dihabiskan di tahap ini; tahap lanjutan jauh lebih singkat.",
+      "Pernyataan 3 salah: bintang tetap berevolusi perlahan, hanya saja posisinya di HR diagram tidak banyak bergeser."
+    ]
+  },
+  {
+    "id": "l2-03",
+    "topik": "evolusi-bintang",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Matahari berenergi 3,83 × 10²⁶ W. Jika setiap inti helium melepaskan 4,2 × 10⁻¹² J dan memakai empat proton, berapa massa hidrogen yang diubah per detik, dalam satuan 10¹¹ kg/s?",
+    "jawaban": 6.1,
+    "toleransiRel": 0.05,
+    "satuan": "10¹¹ kg/s",
+    "pembahasan": [
+      "Laju helium = L/E = 3,83 × 10²⁶/(4,2 × 10⁻¹²) ≈ 9,1 × 10³⁷ per detik.",
+      "Tiap helium memakai empat proton, jadi laju proton ≈ 3,6 × 10³⁸ per detik.",
+      "Massa = 3,6 × 10³⁸ × 1,67 × 10⁻²⁷ ≈ 6 × 10¹¹ kg/s."
+    ]
+  },
+  {
+    "id": "l2-04",
+    "topik": "evolusi-bintang",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Batas Chandrasekhar menentukan massa maksimum katai putih. Nilainya sekitar...",
+    "opsi": [
+      "0,5 M☉",
+      "1,4 M☉",
+      "3 M☉",
+      "8 M☉"
+    ],
+    "jawaban": 1,
+    "pembahasan": [
+      "Tekanan degenerasi elektron hanya mampu menopang katai putih hingga sekitar 1,4 M☉.",
+      "8 M☉ adalah ambang massa awal untuk berakhir supernova, bukan batas katai putih.",
+      "Katai putih yang melewati batas ini di sistem ganda dapat meledak sebagai supernova tipe Ia."
+    ]
+  },
+  {
+    "id": "l2-05",
+    "topik": "listrik-modern",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Berapa persen massa empat proton yang hilang menjadi energi saat bergabung menjadi inti helium?",
+    "jawaban": 0.7,
+    "toleransiRel": 0.05,
+    "satuan": "persen",
+    "pembahasan": [
+      "Massa inti helium sekitar 99,3% massa empat proton.",
+      "Selisihnya sekitar 0,7%.",
+      "Fraksi kecil ini dikalikan c² menghasilkan energi besar — sekitar 26,7 MeV per inti helium."
+    ]
+  },
+  {
+    "id": "l2-06",
+    "topik": "evolusi-bintang",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Dua bintang bermassa sama, tetapi jari-jari bintang B 10 kali bintang A. Dengan Pc ∝ M²/R⁴, bagaimana tekanan pusat bintang B dibandingkan A?",
+    "opsi": [
+      "100 kali lebih kecil",
+      "10 kali lebih kecil",
+      "10⁴ kali lebih kecil",
+      "Sama saja"
+    ],
+    "jawaban": 2,
+    "pembahasan": [
+      "Pc sebanding dengan M²/R⁴.",
+      "Untuk M sama dan R 10 kali lebih besar: Pc,B/Pc,A = (1/10)⁴ = 10⁻⁴.",
+      "Jadi 10⁴ kali lebih kecil. Tekanan pusat rendah inilah ciri selubung raksasa yang mengembang."
+    ]
+  },
+  {
+    "id": "l2-07",
+    "topik": "evolusi-bintang",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang akhir hidup bintang.",
+    "opsi": [
+      "Bintang bermassa awal di atas sekitar 8 M☉ dapat berakhir sebagai supernova inti runtuh.",
+      "Bintang seperti Matahari berakhir sebagai katai putih dengan nebula planet.",
+      "Proses triple-alpha menggabungkan tiga helium menjadi karbon.",
+      "Katai putih ditopang oleh tekanan degenerasi elektron.",
+      "Matahari akan berakhir sebagai supernova tipe II."
+    ],
+    "jawaban": [0, 1, 2, 3],
+    "pembahasan": [
+      "Ambang sekitar 8 M☉ memisahkan akhir katai putih dari supernova inti runtuh.",
+      "Triple-alpha: 3 He-4 → C-12, berjalan efisien di atas 10⁸ K.",
+      "Matahari terlalu ringan untuk supernova inti runtuh — pernyataan 4 salah."
+    ]
+  },
+  {
+    "id": "l2-08",
+    "topik": "evolusi-bintang",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang interior bintang.",
+    "opsi": [
+      "Gradien tekanan menyeimbangkan gravitasi dalam keseimbangan hidrostatik.",
+      "Laju pembangkitan energi sangat sensitif terhadap suhu.",
+      "Siklus CNO mendominasi fusi hidrogen di bintang masif.",
+      "Fusi hidrogen di inti berlangsung sepanjang seluruh hidup bintang.",
+      "Teorema virial menghubungkan energi termal dan energi gravitasi."
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Keseimbangan hidrostatik: dP/dr = −GM(r)ρ/r².",
+      "Reaksi fusi sangat sensitif terhadap T; siklus CNO lebih dominan pada bintang masif.",
+      "Pernyataan 3 salah: fusi hidrogen inti berhenti setelah inti menjadi helium, lalu bintang beralih ke pembakaran kulit."
+    ]
+  },
+  {
+    "id": "l2-09",
+    "topik": "listrik-modern",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Proses triple-alpha: 3 He-4 (masing-masing 4,0026 u) menjadi C-12 (12,000 u). Berapa energi yang dilepaskan dalam MeV? Gunakan 1 u = 931,5 MeV/c².",
+    "jawaban": 7.3,
+    "toleransiRel": 0.05,
+    "satuan": "MeV",
+    "pembahasan": [
+      "Massa sebelum: 3 × 4,0026 = 12,0078 u; sesudah: 12,000 u.",
+      "Defek massa Δm ≈ 0,0078 u.",
+      "E = 0,0078 × 931,5 ≈ 7,3 MeV."
+    ]
+  },
+  {
+    "id": "l2-10",
+    "topik": "evolusi-bintang",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Setelah hidrogen di inti bintang seperti Matahari habis, apa yang terjadi?",
+    "opsi": [
+      "Inti mengerut dan memanas, selubung mengembang dan mendingin",
+      "Inti mengembang dan mendingin, selubung mengerut",
+      "Bintang langsung menjadi katai putih",
+      "Bintang meledak sebagai supernova"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Tanpa fusi hidrogen, tekanan inti berkurang sehingga inti mengerut dan suhunya naik.",
+      "Pembakaran hidrogen pindah ke kulit tipis di sekitar inti, dan energi itu mendorong selubung mengembang.",
+      "Hasilnya bintang bergerak ke kanan atas HR diagram: raksasa merah."
+    ]
+  },
+  {
+    "id": "l2-11",
+    "topik": "evolusi-bintang",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Dengan t ∝ M^−2,5 dan umur Matahari 10 miliar tahun, berapa umur deret utama bintang 2 M☉ dalam miliar tahun?",
+    "jawaban": 1.8,
+    "toleransiRel": 0.05,
+    "satuan": "miliar tahun",
+    "pembahasan": [
+      "t/t☉ = 2^−2,5 = 1/5,66.",
+      "t ≈ 10/5,66 ≈ 1,77 miliar tahun.",
+      "Bintang 2 M☉ hidup sekitar lima kali lebih singkat daripada Matahari."
+    ]
+  },
+  {
+    "id": "l2-12",
+    "topik": "evolusi-bintang",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Uraikan evolusi Matahari dari deret utama hingga menjadi katai putih. Jelaskan pula mengapa bintang yang jauh lebih masif tidak berakhir dengan cara yang sama.",
+    "rubrik": [
+      {
+        "poin": "Menyebut deret utama (fusi hidrogen inti) sebagai tahap terpanjang.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan tahap raksasa merah: inti mengerut, selubung mengembang, pembakaran kulit.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyebut pembakaran helium, pelepasan nebula planet, dan katai putih yang ditopang degenerasi elektron.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan bintang masif (>8 M☉) menyintesis unsur berat hingga besi lalu runtuh menjadi supernova dan bintang neutron/lubang hitam.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "Matahari membakar hidrogen di intinya selama sekitar 10 miliar tahun. Setelah hidrogen inti habis, inti mengerut dan memanas sementara selubung mengembang dan mendingin, sehingga bintang menjadi raksasa merah. Inti kemudian menyalakan helium menjadi karbon melalui triple-alpha, lalu pembakaran berlanjut di kulit. Akhirnya selubung terlepas sebagai nebula planet dan tersisa inti karbon–oksigen yang ditopang tekanan degenerasi elektron: katai putih, dengan massa di bawah batas Chandrasekhar 1,4 M☉. Bintang dengan massa awal di atas sekitar 8 M☉ memiliki suhu inti cukup tinggi untuk menyintesis unsur yang lebih berat secara berurutan hingga besi. Karena fusi besi tidak lagi menghasilkan energi, inti runtuh, memicu supernova, dan menyisakan bintang neutron atau lubang hitam.",
+    "pembahasan": [
+      "Evolusi bintang rendah–sedang: deret utama → raksasa merah → pembakaran helium → nebula planet → katai putih.",
+      "Bintang masif dapat melanjutkan fusi hingga besi; inti besi tidak dapat menyatu lebih lanjut secara eksotermik, sehingga terjadi keruntuhan inti.",
+      "Batas Chandrasekhar membatasi massa katai putih; pelanggarannya di sistem ganda memicu supernova tipe Ia."
+    ]
+  },
+  {
+    "id":"l2-13","topik":"listrik-modern","level":"fondasi","tipe":"pilihan-ganda","gambar":"tingkat-energi-hidrogen",
+    "soal":"Pada diagram tingkat energi hidrogen, transisi elektron dari tingkat n=3 ke n=2 menghasilkan foton. Bagaimana energi foton dibandingkan transisi n=2 ke n=1?",
+    "opsi":["Lebih kecil, karena selisih energi n=3 dan n=2 lebih kecil", "Lebih besar, karena n=3 lebih tinggi", "Sama, karena tiap transisi hidrogen memiliki energi sama", "Tidak ada foton yang dipancarkan"],"jawaban":0,
+    "pembahasan":["Tingkat energi hidrogen mengikuti E_n = −13,6/n² eV dan makin rapat pada n tinggi.","ΔE(3→2)=13,6(1/4−1/9)≈1,89 eV, sedangkan ΔE(2→1)=10,2 eV.","Foton membawa selisih energi transisi; panjang gelombang berbanding terbalik dengan energinya."]
+  },
+  {
+    "id":"l2-14","topik":"evolusi-bintang","level":"fondasi","tipe":"pilihan-ganda","gambar":"hr-evolusi",
+    "soal":"Pada lintasan evolusi bintang bermassa seperti Matahari, ke arah mana bintang bergerak pada diagram HR setelah hidrogen inti habis dan selubung mengembang?",
+    "opsi":["Ke kanan atas: lebih dingin di permukaan dan lebih terang", "Ke kiri bawah: lebih panas dan lebih redup", "Tetap di titik yang sama", "Ke kanan bawah: lebih dingin dan lebih redup"],"jawaban":0,
+    "pembahasan":["Penghentian fusi hidrogen inti diikuti pengerutan inti dan pembakaran kulit.","Selubung mengembang dan mendingin, sementara luminositas total meningkat; bintang menjadi raksasa merah.","Pada diagram HR, suhu menurun ke kanan dan luminositas meningkat ke atas."]
+  },
+  {
+    "id":"l2-15","topik":"listrik-modern","level":"fondasi","tipe":"pilihan-ganda","gambar":"tingkat-energi-hidrogen",
+    "soal":"Energi ikat elektron hidrogen pada keadaan dasar n=1 bernilai −13,6 eV. Berapa energi minimum yang harus diberikan untuk mengionisasi atom dari keadaan dasar?",
+    "opsi":["13,6 eV", "−13,6 eV", "3,4 eV", "0 eV"],"jawaban":0,
+    "pembahasan":["Elektron bebas didefinisikan memiliki energi nol pada tak hingga.","Perubahan dari −13,6 eV ke 0 eV memerlukan masukan energi 13,6 eV.","Nilai 3,4 eV adalah besar energi ikat pada tingkat n=2, bukan keadaan dasar."]
+  },
+  {
+    "id":"l2-16","topik":"evolusi-bintang","level":"fondasi","tipe":"isian","gambar":"hr-skematis",
+    "soal":"Pada diagram HR, sumbu horizontal suhu efektif menurun dari kiri ke kanan. Sebuah bintang berada di kiri atas, yaitu daerah suhu tinggi dan luminositas tinggi. Jika luminositasnya 100 L☉, berapa √(L/L☉)?",
+    "jawaban":10,"toleransiRel":0.01,"satuan":"kali",
+    "pembahasan":["Luminositas pada titik tersebut adalah L/L☉ = 100.","Akar kuadratnya √100 = 10.","Besaran ini berguna dalam hubungan Stefan–Boltzmann karena radius sebanding dengan √L pada suhu tetap."]
+  },
+  {
+    "id":"l2-17","topik":"evolusi-bintang","level":"penalaran","tipe":"pilihan-ganda","gambar":"hr-skematis",
+    "soal":"Dua bintang berada pada deret utama. Bintang A memiliki luminositas 16 L☉ dan B 1 L☉. Jika pendekatan L ∝ M^3,5 berlaku, berapa rasio massa A/B?",
+    "opsi":["Sekitar 2,2", "16", "4", "Sekitar 0,45"],"jawaban":0,
+    "pembahasan":["Dari L_A/L_B=(M_A/M_B)^3,5, diperoleh M_A/M_B=16^(1/3,5).","16^(1/3,5)≈2,21.","Luminositas berubah jauh lebih cepat daripada massa; bintang A hanya sekitar 2,2 kali lebih masif dalam pendekatan ini."]
+  },
+  {
+    "id":"l2-18","topik":"listrik-modern","level":"penalaran","tipe":"pilihan-ganda","gambar":"tingkat-energi-hidrogen",
+    "soal":"Pada diagram tingkat hidrogen, transisi n=4 ke n=2 menghasilkan panjang gelombang 486 nm. Jika transisi n=3 ke n=2 memiliki energi foton lebih kecil, panjang gelombangnya dibandingkan 486 nm adalah...",
+    "opsi":["Lebih panjang", "Lebih pendek", "Sama", "Tidak dapat dipancarkan"],"jawaban":0,
+    "pembahasan":["Energi foton E=hc/λ.","Energi transisi 3→2 lebih kecil daripada 4→2 karena tingkat n makin rapat pada n tinggi.","Untuk energi lebih kecil, panjang gelombang lebih besar; transisi itu berada pada λ sekitar 656 nm."]
+  },
+  {
+    "id":"l2-19","topik":"evolusi-bintang","level":"olimpiade","tipe":"esai","gambar":"hr-evolusi",
+    "soal":"Jejak HR menunjukkan bintang meninggalkan deret utama, menuju daerah lebih dingin dan lebih terang, lalu bergeser ke kiri setelah penyalaan helium. Tafsirkan urutan ini dan jelaskan perubahan pada inti serta selubung yang menyebabkannya.",
+    "rubrik":[
+      {"poin":"Membaca gerak ke kanan atas sebagai suhu permukaan turun dan luminositas meningkat; mengidentifikasinya sebagai fase raksasa merah.","bobot":2},
+      {"poin":"Menjelaskan hidrogen inti habis, inti mengerut dan memanas, serta pembakaran hidrogen kulit mendorong selubung mengembang.","bobot":2},
+      {"poin":"Mengaitkan penyalaan helium/triple-alpha dengan perubahan struktur inti dan pergeseran ke suhu permukaan lebih tinggi.","bobot":2},
+      {"poin":"Membedakan lintasan pada diagram HR dari lintasan ruang dan menyatakan akhir bintang bermassa rendah-menengah berupa katai putih setelah pelepasan selubung.","bobot":2}
+    ],
+    "jawabanTeladan":"Sumbu suhu HR menurun ke kanan dan luminositas meningkat ke atas. Bintang yang bergerak ke kanan atas mendingin di permukaan tetapi menjadi lebih terang, ciri raksasa merah. Hidrogen inti telah habis; inti mengerut dan memanas sementara pembakaran hidrogen di kulit menambah energi dan mengembangkan selubung. Saat helium menyala melalui triple-alpha, perubahan struktur dapat membuat bintang berkontraksi dan bergeser ke kiri. Ini adalah lintasan perubahan sifat fisik, bukan gerak bintang di ruang. Bintang bermassa rendah-menengah kemudian melepaskan selubung dan menyisakan katai putih.",
+    "pembahasan":["Arah sumbu HR harus diperhatikan untuk menafsirkan lintasan.","Pembakaran kulit dan pengembangan selubung menyebabkan fase raksasa merah.","Penyalaan helium mengubah struktur, sedangkan model evolusi menjelaskan sebab lintasan."]
+  },
+  {
+    "id":"l2-20","topik":"evolusi-bintang","level":"penalaran","tipe":"esai","gambar":"hr-iso-radius",
+    "soal":"Pada diagram HR dengan garis jari-jari konstan, dua bintang memiliki suhu efektif sama dan luminositas X 100 kali luminositas Y. Turunkan rasio jari-jari keduanya dan jelaskan bagaimana kesimpulan itu tampak pada diagram.",
+    "rubrik":[
+      {"poin":"Menuliskan hukum Stefan–Boltzmann L=4πR²σT⁴.","bobot":2},
+      {"poin":"Menggunakan suhu sama untuk memperoleh L_X/L_Y=(R_X/R_Y)².","bobot":2},
+      {"poin":"Menghitung R_X/R_Y=√100=10.","bobot":2},
+      {"poin":"Menjelaskan bahwa bintang X berada pada luminositas lebih tinggi dan garis radius konstan menunjukkan perubahan suhu yang relevan; asumsi suhu sama harus dinyatakan.","bobot":2}
+    ],
+    "jawabanTeladan":"Hukum Stefan–Boltzmann adalah L=4πR²σT⁴. Karena kedua bintang memiliki suhu efektif sama, faktor 4πσT⁴ saling menghilangkan sehingga L_X/L_Y=(R_X/R_Y)². Dengan L_X/L_Y=100, diperoleh R_X/R_Y=√100=10. Jadi bintang X memiliki radius sepuluh kali Y. Pada diagram HR, X terletak lebih tinggi dalam luminositas; penarikan radius dari garis iso-radius hanya sah dengan membaca suhu dan luminositas bersama-sama.",
+    "pembahasan":["Pada suhu sama, luminositas berbanding dengan luas permukaan R².","Akar kuadrat rasio luminositas menghasilkan rasio radius.","Diagram HR memberi luminositas dan suhu, yang bersama-sama menentukan radius."]
+  },
+  {
+    "id":"l2-21","topik":"listrik-modern","level":"penalaran","tipe":"pilihan-jamak","gambar":"tingkat-energi-hidrogen",
+    "soal":"Berdasarkan diagram tingkat energi hidrogen, pilih semua pernyataan yang benar.",
+    "opsi":["Energi tingkat terikat negatif jika energi elektron bebas ditetapkan nol", "Transisi elektron ke tingkat lebih rendah memancarkan foton", "Tingkat energi makin rapat saat bilangan kuantum utama meningkat", "Panjang gelombang foton berbanding lurus dengan energi foton"],"jawaban":[0,1,2],
+    "pembahasan":["Energi elektron terikat bernilai negatif terhadap tingkat ionisasi E=0.","Elektron turun tingkat dengan melepaskan energi foton sebesar selisih tingkat.","E_n=−13,6/n² eV membuat tingkat makin rapat saat n bertambah; λ=hc/E sehingga panjang gelombang justru berbanding terbalik dengan energi."]
+  },
+  {
+    "id":"l2-22","topik":"evolusi-bintang","level":"olimpiade","tipe":"pilihan-jamak","gambar":"hr-skematis",
+    "soal":"Diagram HR menunjukkan tiga objek: A berada di kanan atas, B di kiri bawah, dan C sepanjang deret utama. Pilih semua interpretasi yang benar.",
+    "opsi":["A konsisten dengan raksasa merah yang dingin dan terang", "B konsisten dengan katai putih yang panas tetapi redup", "C membakar hidrogen di inti selama deret utama", "Suhu bertambah ke kanan pada diagram HR konvensional", "Posisi diagram saja memberi riwayat evolusi lengkap satu bintang tanpa model"],"jawaban":[0,1,2],
+    "pembahasan":["Sumbu suhu HR konvensional menurun ke kanan, sehingga kanan atas berarti lebih dingin dan lebih terang.","Kiri bawah merupakan daerah katai putih: suhu tinggi tetapi radius kecil dan luminositas rendah.","Deret utama menunjukkan pembakaran hidrogen inti; satu posisi HR sendiri tidak menentukan seluruh sejarah evolusi.","Interpretasi ketiganya memerlukan pembacaan kedua sumbu, bukan satu koordinat saja."]
+  },
+  {
+    "id":"l2-23","topik":"listrik-modern","level":"penalaran","tipe":"isian","gambar":"tingkat-energi-hidrogen",
+    "soal":"Pada atom hidrogen, berapa energi foton transisi n=3 ke n=2 dalam eV? Gunakan E_n=−13,6/n² eV.",
+    "jawaban":1.89,"toleransiRel":0.03,"satuan":"eV",
+    "pembahasan":["E_3=−13,6/9≈−1,51 eV dan E_2=−13,6/4=−3,40 eV.","Energi foton adalah |E_2−E_3|≈1,89 eV.","Transisi ke tingkat lebih rendah memancarkan foton, bukan menyerapnya."]
+  },
+  {
+    "id":"l2-24","topik":"evolusi-bintang","level":"menengah","tipe":"isian","gambar":"hr-iso-radius",
+    "soal":"Dua bintang memiliki suhu efektif sama, tetapi luminositas bintang A 25 kali luminositas B. Berdasarkan L∝R² pada suhu tetap, berapa R_A/R_B?",
+    "jawaban":5,"toleransiRel":0.02,"satuan":"kali",
+    "pembahasan":["Hukum Stefan–Boltzmann: L=4πR²σT⁴.","Pada suhu sama, L_A/L_B=(R_A/R_B)².","R_A/R_B=√25=5."]
+  },
+  {
+    "id":"l2-25","topik":"evolusi-bintang","level":"olimpiade","tipe":"pilihan-ganda","gambar":"hr-skematis",
+    "soal":"Sebuah bintang deret utama memiliki T=2T☉ dan L=16L☉. Dari L/L☉=(R/R☉)²(T/T☉)⁴, tentukan jari-jarinya.",
+    "opsi":["R☉", "2R☉", "4R☉", "8R☉"],"jawaban":0,
+    "pembahasan":["R²/R☉²=(L/L☉)/(T/T☉)⁴.","R²/R☉²=16/2⁴=1, jadi R=R☉.","Luminositas besar di sini dijelaskan oleh suhu tinggi, bukan radius yang lebih besar."]
+  },
+  {
+    "id":"l2-26","topik":"listrik-modern","level":"olimpiade","tipe":"pilihan-ganda","gambar":"tingkat-energi-hidrogen",
+    "soal":"Pada diagram energi hidrogen, atom berada pada n=2. Berapa energi minimum yang perlu diserap untuk mencapai batas ionisasi n=∞?",
+    "opsi":["3,4 eV", "13,6 eV", "10,2 eV", "0,85 eV"],"jawaban":0,
+    "pembahasan":["E_2=−13,6/4=−3,4 eV dan batas ionisasi adalah 0 eV.","Energi yang diperlukan adalah 0−(−3,4)=3,4 eV.","10,2 eV adalah selisih n=1 ke n=2; 13,6 eV adalah energi ionisasi dari keadaan dasar."]
+  },
+  {
+    "id":"l2-27","topik":"listrik-modern","level":"olimpiade","tipe":"isian","gambar":"tingkat-energi-hidrogen",
+    "soal":"Pada diagram hidrogen, elektron tereksitasi dari n=2 menyerap foton hingga n=4 lalu kembali langsung ke n=1. Hitung energi total yang dipancarkan saat transisi turun, dalam eV, dengan E_n=−13,6/n².",
+    "jawaban":12.75,"toleransiRel":0.03,"satuan":"eV",
+    "pembahasan":["Energi transisi 2→4 yang diserap adalah E_4−E_2=(−0,85)−(−3,40)=2,55 eV.","Saat kembali dari n=4 ke n=1, energi yang dipancarkan adalah E_4−E_1=(−0,85)−(−13,6)=12,75 eV.","Energi foton yang dipancarkan lebih besar daripada energi eksitasi awal karena elektron turun melewati keadaan dasar yang lebih rendah; nilai-nilai ini mengikuti tingkat energi hidrogen.","Periksa tanda: energi foton yang dipancarkan adalah positif sebesar penurunan energi atom."]
+  },
+  {
+    "id":"l2-28","topik":"evolusi-bintang","level":"menengah","tipe":"isian","gambar":"hr-iso-radius",
+    "soal":"Sebuah bintang berluminositas 9L☉ dan bersuhu 2T☉. Berapa jari-jarinya dalam satuan R☉? Gunakan hukum Stefan–Boltzmann.",
+    "jawaban":0.75,"toleransiRel":0.03,"satuan":"R☉",
+    "pembahasan":["L/L☉=(R/R☉)²(T/T☉)⁴.","R/R☉=√(9/2⁴)=√(9/16)=3/4.","Walau luminositas tiga kali Matahari, suhu dua kali membuat radiusnya hanya 0,75 R☉."]
+  },
+  {
+    "id":"l2-29","topik":"evolusi-bintang","level":"penalaran","tipe":"isian","gambar":"hr-evolusi",
+    "soal":"Pada satu titik lintasan HR, bintang memiliki L=100L☉ dan T=0,5T☉. Berapa jari-jari dalam R☉? Gunakan L∝R²T⁴.",
+    "jawaban":40,"toleransiRel":0.03,"satuan":"R☉",
+    "pembahasan":["R/R☉=√[(L/L☉)/(T/T☉)⁴].","R/R☉=√[100/(0,5)⁴]=√1600=40.","Bintang yang jauh lebih dingin tetapi cukup terang harus memiliki permukaan sangat luas, konsisten dengan raksasa merah."]
+  },
+  {
+    "id":"l2-30","topik":"evolusi-bintang","level":"olimpiade","tipe":"esai","gambar":"hr-evolusi",
+    "soal":"Tafsirkan lintasan evolusi skematis pada diagram HR untuk sebuah bintang bermassa awal sekitar 1 M☉: jelaskan perubahan setelah hidrogen inti habis, makna gerak menuju daerah raksasa merah, penyalaan helium, serta keadaan akhir. Bedakan informasi yang langsung dibaca dari diagram dengan penjelasan fisik yang memerlukan model bintang.",
+    "rubrik":[
+      {"poin":"Membaca sumbu dengan benar: suhu menurun ke kanan, luminositas meningkat ke atas; lintasan menuju kanan atas berarti permukaan mendingin dan luminositas meningkat.","bobot":2},
+      {"poin":"Menjelaskan H inti habis menyebabkan inti mengerut/memanas, pembakaran kulit hidrogen dan pengembangan selubung menjadi raksasa merah.","bobot":2},
+      {"poin":"Menjelaskan penyalaan helium (triple-alpha) mengubah struktur dan dapat membawa bintang menuju suhu permukaan lebih tinggi dibanding puncak raksasa merah.","bobot":2},
+      {"poin":"Menguraikan pelepasan selubung sebagai nebula planet dan sisa inti karbon-oksigen sebagai katai putih yang mendingin; membedakan lintasan observasional dari inferensi model.","bobot":2}
+    ],
+    "jawabanTeladan":"Pada diagram HR, suhu turun ke kanan dan luminositas naik ke atas. Setelah hidrogen inti habis, inti kehilangan sumber tekanan fusi, mengerut dan memanas; hidrogen terbakar di kulit sehingga selubung mengembang serta mendingin. Bintang bergerak ke kanan atas dan menjadi raksasa merah. Saat inti mencapai kondisi untuk fusi helium melalui proses triple-alpha, perubahan sumber energi dan struktur dapat membuat bintang bergerak kembali ke suhu lebih tinggi. Setelah bahan bakar inti habis, bintang bermassa Matahari melepaskan selubung sebagai nebula planet dan menyisakan katai putih karbon-oksigen yang mendingin. Diagram hanya memberikan suhu dan luminositas teramati pada tahap-tahap lintasan; urutan pembakaran dan perubahan inti disimpulkan dengan model struktur serta evolusi bintang.",
+    "pembahasan":["Arah sumbu HR penting agar gerak lintasan tidak ditafsirkan terbalik.","Kehabisan H inti mengubah keseimbangan dan memicu pembakaran kulit serta pengembangan selubung.","Fusi helium mengubah lintasan; bintang bermassa rendah berakhir sebagai katai putih setelah kehilangan selubung.","Diagram HR memetakan sifat permukaan; mekanisme interior memerlukan teori/model evolusi."]
+  }
+]

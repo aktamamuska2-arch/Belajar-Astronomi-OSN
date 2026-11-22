@@ -1,0 +1,269 @@
+<Tujuan>
+
+- Menguasai ketiga Hukum Kepler dan penerapannya dalam koordinat heliosentris dan barisentris.
+- Menurunkan dan menerapkan persamaan energi vis-viva untuk menentukan kecepatan di setiap titik orbit elips, parabola, dan hiperbola.
+- Memahami elemen orbital Keplerian 3D dan persamaan gerak transendental Kepler ($M = E - e\sin E$).
+- Menghitung transfer orbital Hohmann, impuls kecepatan $\Delta v$, anggaran delta-v misi, dan waktu jendela peluncuran (*launch window*).
+- Menganalisis masalah dua benda, orbit relatif mengelilingi pusat massa (*barycenter*), dan penentuan massa total sistem biner.
+- Menjelaskan konsep perturbasi gravitasi, presesi apsidal, dan batas pasang surut gravitasi (*Roche limit*).
+
+</Tujuan>
+
+<Prasyarat babIds={['f4', 'f3']} />
+
+<p className="lead">Mekanika langit adalah cabang astrofisika tertua sekaligus paling presisi. Berakar dari penemuan empiris Johannes Kepler dan formulasi gravitasi universal Isaac Newton, bidang ini menjelaskan tarian orbit planet, komet, wahana antariksa antarplanet, hingga tarian sepasang lubang hitam supermasif. Bab ini menyatukan geometri irisan kerucut dengan hukum kekekalan energi dan momentum sudut menjadi alat prediksi lintasan benda langit.</p>
+
+## 1. Tiga Hukum Kepler dan geometri elips
+
+<Poin judul="1 · Tiga hukum Kepler & geometri elips" defaultOpen>
+
+Johannes Kepler merumuskan tiga hukum empiris gerak planet:
+1. **Hukum I (Bentuk Lintasan)**: Setiap planet bergerak mengitari Matahari dalam lintasan elips, dengan Matahari berada pada salah satu titik fokusnya.
+2. **Hukum II (Kekekalan Momentum Sudut)**: Garis hubung (*radius vektor*) antara Matahari dan planet menyapu luas area yang sama dalam selang waktu yang sama ($dA/dt = \text{konstan}$). Konsekuensinya, kelajuan planet mencapai maksimum di perihelion dan minimum di aphelion.
+3. **Hukum III (Harmonik Periode)**: Kuadrat periode orbit planet sebanding dengan pangkat tiga sumbu semimayor lintasannya:
+
+$$T^2 = \frac{4\pi^2}{G(M + m)} a^3$$
+
+Untuk sistem Tata Surya di mana massa planet $m \ll M_\odot$, jika $T$ dinyatakan dalam tahun bumi dan $a$ dalam satuan astronomi ($\mathrm{AU}$), persamaannya menjadi:
+
+$$T^2 \approx a^3$$
+
+<Gambar id="elips-orbit" />
+
+<Gambar id="kepler-loglog" />
+
+<Interaktif jenis="orbit" />
+
+Geometri elips didefinisikan oleh sumbu semimayor $a$ dan eksentrisitas $e$ ($0 \le e < 1$). Jarak perihelion ($r_p$) dan aphelion ($r_a$) memenuhi:
+
+$$r_p = a(1 - e), \qquad r_a = a(1 + e), \qquad r_p + r_a = 2a$$
+
+Parameter bentuk lainnya adalah sumbu semiminor $b = a\sqrt{1 - e^2}$ dan semi-latus rectum $p = a(1 - e^2)$.
+
+</Poin>
+
+## 2. Persamaan Vis-Viva dan energi mekanik orbit
+
+<Poin judul="2 · Persamaan Vis-Viva & klasifikasi lintasan">
+
+Energi mekanik total per satuan massa ($\mathcal{E}$) untuk benda yang mengorbit massa $M$ adalah konstan dan hanya bergantung pada sumbu semimayor $a$:
+
+$$\mathcal{E} = \frac{1}{2}v^2 - \frac{GM}{r} = -\frac{GM}{2a}$$
+
+Dari persamaan ini diperoleh rumus terpenting mekanika orbit, yaitu **persamaan Vis-Viva**:
+
+$$v^2 = GM\left(\frac{2}{r} - \frac{1}{a}\right)$$
+
+Klasifikasi bentuk lintasan berdasarkan energi mekanik orbital:
+* **Elips ($a > 0, \mathcal{E} < 0$)**: Lintasan tertutup terikat gravitasi. Kecepatan orbit lingkaran ($r = a$) adalah $v_c = \sqrt{GM/r}$.
+* **Parabola ($a \to \infty, \mathcal{E} = 0$)**: Lintasan terbuka lepas kritis. Kecepatan lepas (*escape velocity*) adalah:
+  $$v_{\text{esc}} = \sqrt{\frac{2GM}{r}} = \sqrt{2}\,v_c \approx 1{,}414\,v_c$$
+* **Hiperbola ($a < 0, \mathcal{E} > 0$)**: Lintasan terbuka tak terikat dengan kecepatan sisa hiperbolik pada jarak tak hingga $v_\infty = \sqrt{-GM/a} = \sqrt{v^2 - 2GM/r}$.
+
+<Gambar id="orbit-lingkaran-rasio" />
+
+Di perihelion dan aphelion, kecepatan tegak lurus terhadap radius vektor, sehingga dari kekekalan momentum sudut $h = r_p v_p = r_a v_a$:
+
+$$\frac{v_p}{v_a} = \frac{r_a}{r_p} = \frac{1 + e}{1 - e}$$
+
+</Poin>
+
+## 3. Elemen orbit Keplerian 3D dan Persamaan Kepler
+
+<Poin judul="3 · Elemen orbit 3D & persamaan Kepler">
+
+Untuk mendeskripsikan orbit dan posisi benda langit secara unik dalam ruang 3 dimensi terhadap bidang acuan (misal bidang ekliptika), digunakan enam **elemen orbital Keplerian**:
+1. $a$ (sumbu semimayor): menentukan ukuran orbit dan energi.
+2. $e$ (eksentrisitas): menentukan bentuk elips.
+3. $i$ (inklinasi): sudut kemiringan bidang orbit terhadap bidang acuan.
+4. $\Omega$ (bujur titik simpul naik / *longitude of ascending node*): orientasi persilangan orbit di bidang acuan.
+5. $\omega$ (argumen periapsis): orientasi elips di dalam bidang orbitnya sendiri diukur dari simpul naik ke perihelion.
+6. $\nu$ atau $f$ (anomali sejati / *true anomaly*): sudut posisi aktual benda langit diukur dari titik perihelion.
+
+Untuk menghubungkan waktu tempuh $t$ dengan posisi sudut $\nu$, digunakan dua sudut perantara:
+- **Anomali Rata-rata ($M$)**: Sudut orbit seragam khayalan: $M = n(t - t_p) = \frac{2\pi}{T}(t - t_p)$.
+- **Anomali Eksentrik ($E$)**: Sudut pada lingkaran bantu berjejari $a$.
+
+Keduanya dihubungkan oleh **Persamaan Transendental Kepler**:
+
+$$M = E - e\sin E$$
+
+Setelah nilai $E$ diperoleh secara numerik (misal metode Newton-Raphson), sudut posisi sejati $\nu$ dan jarak $r$ dihitung melalui:
+
+$$\tan\left(\frac{\nu}{2}\right) = \sqrt{\frac{1+e}{1-e}} \tan\left(\frac{E}{2}\right), \qquad r = a(1 - e\cos E)$$
+
+</Poin>
+
+## 4. Transfer orbit Hohmann dan manuver antarplanet
+
+<Poin judul="4 · Transfer Hohmann & impuls delta-v">
+
+Transfer orbital dua impuls paling efisien antara dua orbit lingkaran koplanar adalah **transfer elips Hohmann**. Elips transfer memiliki perihelion pada orbit awal ($r_1$) dan aphelion pada orbit tujuan ($r_2$):
+
+$$a_{\text{trans}} = \frac{r_1 + r_2}{2}$$
+
+<Gambar id="transfer-hohmann" />
+
+Waktu tempuh transfer adalah setengah dari periode elips transfer:
+
+$$t_{\text{trans}} = \frac{1}{2} T_{\text{trans}} = \frac{1}{2} \sqrt{\frac{4\pi^2 a_{\text{trans}}^3}{GM}} = \pi \sqrt{\frac{a_{\text{trans}}^3}{GM}}$$
+
+Perubahan kecepatan yang dibutuhkan terdiri atas dua pembakaran roket impulsif ($\Delta v$):
+1. **Impuls 1 (di perihelion elips transfer)**:
+   $$\Delta v_1 = v_{p,\text{trans}} - v_{c1} = \sqrt{GM}\left(\sqrt{\frac{2}{r_1} - \frac{1}{a_{\text{trans}}}} - \sqrt{\frac{1}{r_1}}\right)$$
+2. **Impuls 2 (di aphelion elips transfer)**:
+   $$\Delta v_2 = v_{c2} - v_{a,\text{trans}} = \sqrt{GM}\left(\sqrt{\frac{1}{r_2}} - \sqrt{\frac{2}{r_2} - \frac{1}{a_{\text{trans}}}}\right)$$
+
+Total anggaran kecepatan misi adalah $\Delta v_{\text{tot}} = |\Delta v_1| + |\Delta v_2|$.
+
+</Poin>
+
+## 5. Masalah dua benda dan pusat massa (Barycenter)
+
+<Poin judul="5 · Masalah dua benda & gerak relatif">
+
+Dalam kenyataan fisis, planet tidak mengitari Matahari yang diam di ruang angkasa, melainkan kedua objek mengitari **pusat massa bersama (*barycenter*)**:
+
+$$m_1 r_1 = m_2 r_2, \qquad r_1 + r_2 = r$$
+
+Dengan mendefinisikan massa tereduksi $\mu = \frac{m_1 m_2}{m_1 + m_2}$, gerak relatif sistem dua benda setara dengan gerak satu partikel bermassa $\mu$ yang mengitari massa total $M_{\text{tot}} = m_1 + m_2$ pada jarak relatif $r$.
+
+Hukum Kepler III bentuk umum Newton untuk sistem biner:
+
+$$T^2 = \frac{4\pi^2 a^3}{G(M_1 + M_2)}$$
+
+Jika $a$ dalam $\mathrm{AU}$, $T$ dalam tahun, dan massa dalam $M_\odot$, persamaan disederhanakan menjadi:
+
+$$M_1 + M_2 = \frac{a^3}{T^2}$$
+
+Inilah "timbangan kosmik" terandal dalam astronomi: dengan mengukur periode orbit dan pemisahan sudut sistem bintang biner, astronom dapat menentukan massa total bintang secara langsung.
+
+</Poin>
+
+## 6. Perturbasi orbit, presesi apsidal, dan batas Roche
+
+<Poin judul="6 · Perturbasi & batas pasang surut Roche">
+
+Orbit Keplerian murni hanya berlaku untuk dua massa titik ideal tanpa gangguan luar. Di alam semesta nyata, lintasan mengalami **perturbasi**:
+1. **Penggepengan Planet (*Oblateness* $J_2$)**: Planet yang berputar tidak bulat sempurna melainkan pepat di kutub. Gaya gravitasi non-bola ini memicu presesi garis simpul (*nodal precession*) dan presesi apsidal (*apsidal precession*).
+2. **Relativitas Umum Einstein**: Medan gravitasi kuat menyebabkan pergeseran perihelion tambahan, seperti presesi perihelion Merkurius sebesar $43''$ busur per abad.
+
+Ketika benda langit kecil berkerapatan $\rho_m$ mendekati benda masif primer berkerapatan $\rho_M$ dan radius $R_M$, gaya pasang surut diferensial (*tidal force*) dapat merobek benda kecil jika melampaui gaya gravitasi internalnya. Batas jarak kritis ini disebut **Batas Roche (*Roche limit*)**:
+
+$$d_{\text{Roche}} \approx 2{,}44\, R_M \left(\frac{\rho_M}{\rho_m}\right)^{1/3}$$
+
+Di dalam batas Roche, komet atau bulan yang rapuh akan hancur terpecah-pecah menjadi cincin puing, seperti sistem cincin Saturnus.
+
+<Contoh judul="Soal Rantai Olimpiade: Perhitungan Lengkap Manuver Transfer Hohmann Bumi–Mars">
+
+<Langkah>
+
+Sebuah wahana antariksa bermassa $m_0 = 1.000\ \mathrm{kg}$ diberangkatkan dari orbit lingkaran parkir rendah Bumi ($r_1 = 1{,}00\ \mathrm{AU}$) menuju orbit lingkaran Mars ($r_2 = 1{,}524\ \mathrm{AU}$). Asumsikan gravitasi Matahari $GM_\odot = 1{,}327 \times 10^{20}\ \mathrm{m^3\,s^{-2}}$, $1\ \mathrm{AU} = 1{,}496 \times 10^{11}\ \mathrm{m}$, dan kecepatan orbit Bumi $v_{\text{Bumi}} = 29{,}78\ \mathrm{km/s}$.\
+(a) Tentukan sumbu semimayor dan eksentrisitas elips transfer.\
+(b) Hitung waktu tempuh perjalanan dalam satuan hari.\
+(c) Hitung total impuls $\Delta v_{\text{tot}} = \Delta v_1 + \Delta v_2$ yang dibutuhkan dalam $\mathrm{km/s}$.
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 (Geometri Elips Transfer):**
+Sumbu semimayor:
+$$a_t = \frac{r_1 + r_2}{2} = \frac{1{,}00 + 1{,}524}{2} = 1{,}262\ \mathrm{AU}.$$
+Eksentrisitas:
+$$e = \frac{r_2 - r_1}{r_2 + r_1} = \frac{1{,}524 - 1{,}00}{1{,}524 + 1{,}00} = \frac{0{,}524}{2{,}524} \approx 0{,}2076.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 (Waktu Tempuh):**
+Periode elips transfer dari Hukum Kepler III:
+$$T_t = a_t^{3/2} = (1{,}262)^{1{,}5} \approx 1{,}4178\ \text{tahun}.$$
+Waktu tempuh perjalanan menuju Mars adalah setengah periode:
+$$t_{\text{trans}} = \frac{T_t}{2} = \frac{1{,}4178}{2} \approx 0{,}7089\ \text{tahun} \approx 0{,}7089 \times 365{,}25\ \text{hari} \approx 259\ \text{hari}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 (Kalkulasi Impuls Kecepatan):**
+Kecepatan orbit Bumi: $v_{c1} = 29{,}78\ \mathrm{km/s}$.\
+Kecepatan perihelion elips transfer pada $r_1 = 1{,}00\ \mathrm{AU}$:
+$$v_{p,t} = v_{\text{Bumi}} \sqrt{\frac{2}{1} - \frac{1}{1{,}262}} = 29{,}78 \times \sqrt{2 - 0{,}7924} = 29{,}78 \times \sqrt{1{,}2076} \approx 32{,}73\ \mathrm{km/s}.$$
+Impuls pertama:
+$$\Delta v_1 = 32{,}73 - 29{,}78 = 2{,}95\ \mathrm{km/s}.$$
+Kecepatan orbit Mars: $v_{c2} = v_{\text{Bumi}} / \sqrt{1{,}524} = 29{,}78 / 1{,}2345 \approx 24{,}12\ \mathrm{km/s}$.\
+Kecepatan aphelion elips transfer pada $r_2 = 1{,}524\ \mathrm{AU}$:
+$$v_{a,t} = v_{p,t} \left(\frac{r_1}{r_2}\right) = 32{,}73 \times \frac{1{,}00}{1{,}524} \approx 21{,}48\ \mathrm{km/s}.$$
+Impuls kedua:
+$$\Delta v_2 = v_{c2} - v_{a,t} = 24{,}12 - 21{,}48 = 2{,}64\ \mathrm{km/s}.$$
+Total anggaran delta-v:
+$$\Delta v_{\text{tot}} = \Delta v_1 + \Delta v_2 = 2{,}95 + 2{,}64 = 5{,}59\ \mathrm{km/s}.$$
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="a4-cek-1"
+  pertanyaan="Sebuah komet memiliki orbit elips mengitari Matahari dengan sumbu semimayor a = 4,0 AU dan eksentrisitas e = 0,75. Berapakah perbandingan kecepatan komet di perihelion dibanding kecepatan di aphelion (v_p / v_a)?"
+  opsi={['7', '4', '1,75', '16']}
+  jawaban={0}
+  penjelasan="Kekekalan momentum sudut h = r_p v_p = r_a v_a, sehingga v_p / v_a = r_a / r_p = a(1+e) / a(1-e) = (1 + 0,75) / (1 - 0,75) = 1,75 / 0,25 = 7."
+/>
+
+<CekPaham
+  id="a4-cek-2"
+  pertanyaan="Sebuah satelit buatan mengorbit Bumi pada orbit lingkaran di ketinggian h dengan kelajuan orbit v_c = 7,5 km/s. Berapakah kelajuan minimum yang harus diberikan pada satelit tersebut agar ia dapat lepas sepenuhnya dari tarikan gravitasi Bumi?"
+  opsi={['10,6 km/s', '15,0 km/s', '7,5 km/s', '11,2 km/s']}
+  jawaban={0}
+  penjelasan="Kelajuan lepas dari jarak r memenuhi v_esc = sqrt(2) × v_c. Maka v_esc = 1,4142 × 7,5 km/s ≈ 10,61 km/s."
+/>
+
+<CekPaham
+  id="a4-cek-3"
+  pertanyaan="Dua buah bintang dalam sistem biner berputar mengitari pusat massa bersama (barycenter). Jika bintang A berada pada jarak dua kali lebih jauh dari pusat massa dibanding bintang B (r_A = 2 r_B), bagaimanakah perbandingan massa kedua bintang?"
+  opsi={[
+    'Massa bintang B adalah dua kali massa bintang A (M_B = 2 M_A)',
+    'Massa bintang A adalah dua kali massa bintang B (M_A = 2 M_B)',
+    'Kedua bintang memiliki massa yang sama',
+    'Massa bintang B adalah empat kali massa bintang A'
+  ]}
+  jawaban={0}
+  penjelasan="Definisi pusat massa: M_A × r_A = M_B × r_B. Karena r_A = 2 r_B, maka M_A × (2 r_B) = M_B × r_B => M_B = 2 M_A."
+/>
+
+<Refleksi
+  id="a4-refleksi-1"
+  pertanyaan="Mengapa transfer Hohmann hanya dapat diluncurkan pada jendela peluncuran (launch window) waktu tertentu yang berjarak sekitar 26 bulan untuk misi Bumi ke Mars? Jelaskan peran periode sinodis dalam penyelarasan fase planet."
+/>
+
+## 8. Konstanta penting mekanika orbit
+
+<Konstanta
+  data={[
+    { simbol: 'GM☉', nilai: '1,3271 × 10²⁰', satuan: 'm³·s⁻²' },
+    { simbol: 'GM⊕', nilai: '3,9860 × 10¹⁴', satuan: 'm³·s⁻²' },
+    { simbol: '1 AU', nilai: '1,49598 × 10¹¹', satuan: 'm' },
+    { simbol: 'v_Bumi (rata-rata)', nilai: '29,78', satuan: 'km/s' },
+    { simbol: 'G', nilai: '6,6743 × 10⁻¹¹', satuan: 'm³·kg⁻¹·s⁻²' },
+    { simbol: '1 tahun sideris', nilai: '3,1558 × 10⁷', satuan: 's' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rumus-rumus kunci bab A4:
+1. $T^2 = [4\pi^2 / G(M_1 + M_2)] a^3$
+2. $v^2 = GM (2/r - 1/a)$
+3. $r_p = a(1-e), \quad r_a = a(1+e)$
+4. $v_{\text{esc}} = \sqrt{2GM/r} = \sqrt{2}\,v_c$
+5. $a_{\text{trans}} = (r_1 + r_2)/2, \quad t_{\text{trans}} = \pi \sqrt{a_{\text{trans}}^3 / GM}$
+6. $M_1 r_1 = M_2 r_2$
+
+</Catatan>

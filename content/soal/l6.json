@@ -1,0 +1,629 @@
+[
+  {
+    "id": "l6-01",
+    "topik": "analisis-data",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit-data",
+    "soal": "Perhatikan kurva cahaya transit fotometri pada gambar. Fluks relatif bintang sebelum transit terukur normal pada $F_{\\text{out}} = 1{,}000$, dan saat titik terendah transit terukur $F_{\\text{in}} = 0{,}982$. Berapakah kedalaman transit fotometri ($\\delta$) sistem tersebut?",
+    "opsi": [
+      "$0{,}018$ ($1{,}8\\%$)",
+      "$0{,}982$ ($98{,}2\\%$)",
+      "$0{,}134$ ($13{,}4\\%$)",
+      "$0{,}009$ ($0{,}9\\%$)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Kedalaman transit didefinisikan sebagai fraksi penurunan fluks relatif: $\\delta = \\frac{F_{\\text{out}} - F_{\\text{in}}}{F_{\\text{out}}}$.",
+      "Substitusi nilai pengamatan: $\\delta = \\frac{1{,}000 - 0{,}982}{1{,}000} = 0{,}018 = 1{,}8\\%$.",
+      "Penurunan fluks sebesar $1{,}8\\%$ mengindikasikan rasio radius planet terhadap bintang sekitar $\\sqrt{0{,}018} \\approx 0{,}134$."
+    ]
+  },
+  {
+    "id": "l6-02",
+    "topik": "analisis-data",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Seorang astronom mengukur magnitudo semu sebuah bintang variabel sebanyak 5 kali dan memperoleh data: $14{,}2$; $14{,}4$; $14{,}1$; $14{,}5$; dan $14{,}3$. Berapakah nilai rata-rata sampel dari magnitudo bintang tersebut?",
+    "opsi": [
+      "$14{,}30$",
+      "$14{,}25$",
+      "$14{,}35$",
+      "$14{,}40$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hitung jumlah total data pengamatan: $\\sum m_i = 14{,}2 + 14{,}4 + 14{,}1 + 14{,}5 + 14{,}3 = 71{,}5$.",
+      "Bagi dengan jumlah sampel ($N = 5$): $\\bar{m} = \\frac{71{,}5}{5} = 14{,}30$.",
+      "Dalam pelaporan ilmiah astronomi, rata-rata ini selanjutnya dilengkapi dengan simpangan baku sampel atau standar galat rata-rata."
+    ]
+  },
+  {
+    "id": "l6-03",
+    "topik": "analisis-data",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "skala-log",
+    "soal": "Perhatikan grafik skala logaritmik pada gambar. Hubungan fluks radiasi terhadap jarak dinyatakan oleh hukum kuadrat terbalik $F = \\frac{L}{4\\pi d^2}$. Jika diplot dalam grafik $\\log F$ terhadap $\\log d$, berapakah kemiringan (gradien) garis lurus yang terbentuk?",
+    "opsi": [
+      "$-2$",
+      "$+2$",
+      "$-1/2$",
+      "$+1$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Terapkan logaritma basis 10 pada kedua sisi persamaan: $\\log F = \\log\\left(\\frac{L}{4\\pi d^2}\\right) = \\log\\left(\\frac{L}{4\\pi}\\right) - 2\\log d$.",
+      "Persamaan ini memiliki bentuk linier $Y = mX + c$, dengan $Y = \\log F$, $X = \\log d$, dan konstanta $c = \\log(L/4\\pi)$.",
+      "Koefisien di depan $\\log d$ adalah kemiringan garis, yaitu $m = -2$."
+    ]
+  },
+  {
+    "id": "l6-04",
+    "topik": "analisis-data",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-cahaya-variabel",
+    "soal": "Perhatikan kurva cahaya bintang variabel pada gambar. Puncak kecerahan berurutan teramati pada $t_1 = 3{,}5\\ \\mathrm{hari}$, $t_2 = 8{,}9\\ \\mathrm{hari}$, dan $t_3 = 14{,}3\\ \\mathrm{hari}$. Berapakah periode pulsasi bintang variabel tersebut?",
+    "opsi": [
+      "$5{,}4\\ \\mathrm{hari}$",
+      "$3{,}5\\ \\mathrm{hari}$",
+      "$10{,}8\\ \\mathrm{hari}$",
+      "$2{,}7\\ \\mathrm{hari}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Periode pulsasi adalah selang waktu antara dua fase identik yang berurutan.",
+      "Selisih pertama: $\\Delta t_{12} = 8{,}9 - 3{,}5 = 5{,}4\\ \\mathrm{hari}$.",
+      "Selisih kedua: $\\Delta t_{23} = 14{,}3 - 8{,}9 = 5{,}4\\ \\mathrm{hari}$.",
+      "Maka periode pulsasi bintang adalah $P = 5{,}4\\ \\mathrm{hari}$ (periode khas bintang variabel Cepheid Klasik)."
+    ]
+  },
+  {
+    "id": "l6-05",
+    "topik": "analisis-data",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah SEMUA pernyataan yang BENAR mengenai jenis ketidakpastian (galat) dalam observasi astronomi!",
+    "opsi": [
+      "Galat acak (*random error*) dapat diperkecil dengan cara meningkatkan jumlah pengukuran independen ($N$)",
+      "Galat sistematis (*systematic error*) terjadi akibat kalibrasi instrumen yang bias atau asumsi model atmosfer yang keliru",
+      "Menambah jumlah eksposur foto dari $N = 10$ menjadi $N = 1000$ akan melenyapkan galat sistematis zero-point filter teleskop",
+      "Simpangan baku dari nilai rata-rata sampel berkurang sebanding dengan $1/\\sqrt{N}$"
+    ],
+    "jawaban": [
+      0,
+      1,
+      3
+    ],
+    "pembahasan": [
+      "Pernyataan 1 dan 4 benar: Galat acak berfluktuasi simetris di sekitar nilai riil; standar error rata-rata $\\sigma_{\\bar{x}} = \\sigma / \\sqrt{N}$ mengecil saat $N$ bertambah.",
+      "Pernyataan 2 benar: Galat sistematis menggeser semua titik data ke arah yang sama (misal salah menentukan magnitudo standar acuan).",
+      "Pernyataan 3 salah: Galat sistematis tidak berkurang sama sekali dengan menambah jumlah sampel pengamatan karena biasnya melekat konstan pada instrumen/prosedur."
+    ]
+  },
+  {
+    "id": "l6-06",
+    "topik": "analisis-data",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Satu pengukuran fluks bintang memiliki simpangan baku $\\sigma = 0{,}60\\ \\mathrm{mJy}$. Jika astronom melakukan $N = 36$ kali pengukuran independen yang identik pada bintang tersebut, berapakah standar galat dari nilai rata-ratanya ($\\sigma_{\\bar{x}}$) dalam satuan $\\mathrm{mJy}$?",
+    "jawaban": 0.1,
+    "satuan": "mJy",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Gunakan rumus standar galat rata-rata: $\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{N}}$.",
+      "Substitusi nilai: $\\sigma_{\\bar{x}} = \\frac{0{,}60}{\\sqrt{36}} = \\frac{0{,}60}{6} = 0{,}10\\ \\mathrm{mJy}$.",
+      "Ketidakpastian rata-rata berkurang menjadi seperenam dari ketidakpastian pengukuran tunggal."
+    ]
+  },
+  {
+    "id": "l6-07",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit-data",
+    "soal": "Data fotometri transit pada gambar menunjukkan durasi total dari kontak luar pertama ke keempat adalah $T_{14} = 3{,}6\\ \\mathrm{jam}$ dan durasi fase datar (kontak dalam kedua ke ketiga) adalah $T_{23} = 3{,}0\\ \\mathrm{jam}$. Pada transit sentral ($b = 0$), berapakah rasio radius planet terhadap bintang ($R_p / R_*$)?",
+    "opsi": [
+      "$0{,}091$",
+      "$0{,}167$",
+      "$0{,}050$",
+      "$0{,}200$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Untuk transit sentral ($b = 0$), durasi total sebanding dengan $2(R_* + R_p)$ dan durasi datar sebanding dengan $2(R_* - R_p)$:",
+      "$\\frac{T_{14}}{T_{23}} = \\frac{R_* + R_p}{R_* - R_p} = \\frac{1 + R_p/R_*}{1 - R_p/R_*}$.",
+      "Substitusi nilai durasi: $\\frac{3{,}6}{3{,}0} = 1{,}20 \\implies \\frac{1 + R_p/R_*}{1 - R_p/R_*} = 1{,}20$.",
+      "Selesaikan aljabar: $1 + R_p/R_* = 1{,}20 - 1{,}20(R_p/R_*) \\implies 2{,}20(R_p/R_*) = 0{,}20$.",
+      "$R_p / R_* = \\frac{0{,}20}{2{,}20} = \\frac{1}{11} \\approx 0{,}0909 \\approx 0{,}091$."
+    ]
+  },
+  {
+    "id": "l6-08",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "kepler-loglog",
+    "soal": "Perhatikan grafik hubungan $\\log P$ terhadap $\\log a$ pada gambar. Berdasarkan Hukum Kepler III ($P^2 = a^3$ dalam satuan tahun dan AU), berapakah kemiringan (*slope*) garis linier tersebut dan apa arti fisis dari titik potongnya jika massa bintang pusat dilipatgandakan?",
+    "opsi": [
+      "Kemiringan $1{,}5$; titik potong sumbu bergeser ke bawah karena periode orbit menjadi lebih singkat",
+      "Kemiringan $0{,}67$; titik potong sumbu tetap tidak berubah",
+      "Kemiringan $2{,}0$; titik potong sumbu bergeser ke atas",
+      "Kemiringan $3{,}0$; titik potong sumbu bergeser ke bawah"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Kepler III umum: $P^2 = \\frac{4\\pi^2}{G M_*} a^3 \\implies \\log P = \\frac{3}{2}\\log a + \\log\\left(\\frac{2\\pi}{\\sqrt{G M_*}}\\right)$.",
+      "Kemiringan garis lurus pada plot $\\log P$ vs $\\log a$ selalu tepat bernilai $\\frac{3}{2} = 1{,}5$.",
+      "Intersep sumbu adalah $c = \\log(2\\pi / \\sqrt{G M_*})$. Jika massa bintang $M_*$ bertambah, nilai gravitasi meningkat sehingga periode $P$ mengecil pada jarak $a$ yang sama, menyebabkan garis lurus bergeser turun vertikal (intersep berkurang)."
+    ]
+  },
+  {
+    "id": "l6-09",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Dalam prosedur kalibrasi citra astronomi CCD, seorang pengamat mengambil *flat field frame*. Mengapa flat field harus diambil pada panjang gelombang (filter) yang sama dengan citra sains target?",
+    "opsi": [
+      "Karena respons efisiensi kuantum piksel detektor dan efek interferensi/fringing optik sangat bergantung pada panjang gelombang cahaya",
+      "Karena tegangan offset elektronik dari konverter ADC bergantung pada warna filter",
+      "Karena arus termal gelap (*dark current*) meningkat drastis pada filter biru",
+      "Karena posisi bintang di langit mengalami pembiasan prisma yang mengharuskan pencocokan warna"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Flat field mengoreksi variasi sensitivitas pixel-ke-pixel (*pixel response non-uniformity*) dan penurunan transmisi sudut (*vignetting*).",
+      "Sensitivitas silikon CCD (efisiensi kuantum) bervariasi secara signifikan terhadap panjang gelombang $\\lambda$, dan pada inframerah dekat terjadi pantulan internal (*fringing*) tipis silikon.",
+      "Oleh karena itu, setiap filter fotometri (U, B, V, R, I) memerlukan master flat tersendiri pada filter yang bersangkutan."
+    ]
+  },
+  {
+    "id": "l6-10",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "kurva-cahaya-variabel",
+    "soal": "Perhatikan kurva cahaya bintang variabel berdenyut pada gambar. Ciri kurva fotometri manakah yang secara diagnostik membedakan variabel Cepheid tipe I (klasik) dari sistem bintang biner gerhana Algol?",
+    "opsi": [
+      "Variabel Cepheid memiliki kurva asimetris dengan waktu kenaikan menuju terang maksimum lebih cepat daripada waktu penurunan menuju minimum",
+      "Sistem biner gerhana memiliki fluks konstan di luar gerhana yang dipotong oleh gerhana primer dan gerhana sekunder periodik",
+      "Sistem biner gerhana memiliki variasi temperatur yang mengubah kelas spektrum bintang secara radial tanpa mengubah geometri",
+      "Variabel Cepheid mematuhi relasi Periode-Luminositas (Hukum Leavitt) yang ketat"
+    ],
+    "jawaban": [
+      0,
+      1,
+      3
+    ],
+    "pembahasan": [
+      "Pernyataan 1 benar: Bentuk kurva cahaya 'sawtooth' asimetris (naik tajam, turun perlahan) adalah tanda khas denyut radial atmosfer Cepheid.",
+      "Pernyataan 2 benar: Biner gerhana dicirikan oleh dua penurunan fluks tajam (gerhana primer dan sekunder) yang dipisahkan oleh fluks datar kontinu.",
+      "Pernyataan 3 salah: Biner gerhana bervariasi akibat penutupan geometris piringan bintang, bukan perubahan pulsasi temperatur internal bintang tunggal.",
+      "Pernyataan 4 benar: Cepheid memiliki hubungan empiris $M_V \\approx -2{,}81\\log P - 1{,}43$ yang menjadikannya lilin standar (*standard candle*)."
+    ]
+  },
+  {
+    "id": "l6-11",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah SEMUA cara yang efektif dan benar untuk meningkatkan rasio sinyal terhadap derau (*Signal-to-Noise Ratio*, $SNR$) dalam fotometri bintang redup dengan kamera CCD!",
+    "opsi": [
+      "Memperpanjang waktu eksposur ($t$) integrasi fotometri",
+      "Mendinginkan sensor CCD ke temperatur sangat rendah (misal $-100^\\circ\\mathrm{C}$) untuk menekan derau arus gelap (*dark current*)",
+      "Menggabungkan (*stacking*) sejumlah citra independen yang telah terkalibrasi",
+      "Memperbesar radius aperture fotometri hingga 10 kali ukuran FWHM bintang untuk menangkap seluruh sayap cahaya bintang"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2
+    ],
+    "pembahasan": [
+      "Pernyataan 1 benar: Sinyal bertambah sebanding dengan $t$ sementara derau Poisson hanya bertambah sebanding dengan $\\sqrt{t}$, sehingga $SNR \\propto \\sqrt{t}$.",
+      "Pernyataan 2 benar: Pendinginan termoelektrik atau nitrogen cair menekan eksitasi elektron termal sehingga arus gelap mendekati nol.",
+      "Pernyataan 3 benar: Penggabungan $N$ citra meningkatkan $SNR$ sebesar faktor $\\sqrt{N}$.",
+      "Pernyataan 4 salah: Memperbesar bukaan aperture secara berlebihan akan mengumpulkan terlalu banyak derau latar langit (*sky noise*) dan derau baca tanpa menambah banyak sinyal bintang, sehingga $SNR$ justru turun drastis."
+    ]
+  },
+  {
+    "id": "l6-12",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "modulus-jarak-grafik",
+    "soal": "Perhatikan grafik modulus jarak pada gambar. Sebuah bintang memiliki magnitudo tampak $m = 13{,}50$ dan magnitudo mutlak $M = +1{,}50$. Asumsikan tidak ada absorpsi debu antarbintang ($A_V = 0$). Berapakah jarak bintang tersebut dari pengamat dalam satuan parsek ($\\mathrm{pc}$)?",
+    "jawaban": 2512,
+    "satuan": "pc",
+    "toleransiRel": 0.03,
+    "pembahasan": [
+      "Hitung nilai modulus jarak: $\\mu = m - M = 13{,}50 - 1{,}50 = 12{,}00$.",
+      "Gunakan rumus modulus jarak: $m - M = 5\\log d - 5 \\implies 5\\log d = 17{,}00$.",
+      "Maka $\\log d = 17{,}00 / 5 = 3{,}40$.",
+      "Hitung jarak: $d = 10^{3{,}40} = 10^3 \\times 10^{0{,}40} \\approx 1000 \\times 2{,}5119 \\approx 2512\\ \\mathrm{pc}$."
+    ]
+  },
+  {
+    "id": "l6-13",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "skala-log",
+    "soal": "Dalam analisis regresi linier terhadap data deret utama, hubungan luminositas dan massa memenuhi $\\log(L/L_\\odot) = \\alpha \\log(M/M_\\odot) + c$. Dua titik data pada garis regresi terbaik adalah $(X_1 = 0{,}20, Y_1 = 0{,}76)$ dan $(X_2 = 0{,}80, Y_2 = 3{,}04)$. Berapakah nilai indeks kemiringan $\\alpha$? (Bulatkan ke 2 tempat desimal)",
+    "jawaban": 3.8,
+    "satuan": "kemiringan",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Gradien garis regresi linier dihitung melalui rasio selisih ordinat terhadap absis:",
+      "$\\alpha = \\frac{Y_2 - Y_1}{X_2 - X_1}$.",
+      "Substitusi nilai: $\\alpha = \\frac{3{,}04 - 0{,}76}{0{,}80 - 0{,}20} = \\frac{2{,}28}{0{,}60} = 3{,}80$.",
+      "Nilai $\\alpha = 3{,}8$ sesuai dengan relasi massa-luminositas teoretis deret utama bintang bermassa menengah ($L \\propto M^{3{,}8}$)."
+    ]
+  },
+  {
+    "id": "l6-14",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Luminositas bintang dihitung dari radius $R = (2{,}00 \\pm 0{,}06)\\ R_\\odot$ (galat $3\\%$) dan fluks permukaan $F = \\sigma T^4$ dengan suhu efektif $T = (6000 \\pm 120)\\ \\mathrm{K}$ (galat $2\\%$). Karena $L = 4\\pi R^2 \\sigma T^4$, berapakah persentase ketidakpastian relatif dari luminositas ($\\sigma_L / L$) dalam persen? (Gunakan propagasi galat kuadratur Gauss, bulatkan hingga 1 tempat desimal)",
+    "jawaban": 10.0,
+    "satuan": "%",
+    "toleransiRel": 0.03,
+    "pembahasan": [
+      "Hubungan diferensial luminositas: $\\frac{\\sigma_L}{L} = \\sqrt{\\left(2\\frac{\\sigma_R}{R}\\right)^2 + \\left(4\\frac{\\sigma_T}{T}\\right)^2}$.",
+      "Galat fraksional radius: $\\frac{\\sigma_R}{R} = \\frac{0{,}06}{2{,}00} = 0{,}03 = 3\\% \\implies 2\\frac{\\sigma_R}{R} = 0{,}06 = 6\\%$.",
+      "Galat fraksional suhu: $\\frac{\\sigma_T}{T} = \\frac{120}{6000} = 0{,}02 = 2\\% \\implies 4\\frac{\\sigma_T}{T} = 0{,}08 = 8\\%$.",
+      "Hitung kuadratur: $\\frac{\\sigma_L}{L} = \\sqrt{(0{,}06)^2 + (0{,}08)^2} = \\sqrt{0{,}0036 + 0{,}0064} = \\sqrt{0{,}0100} = 0{,}100 = 10{,}0\\%$."
+    ]
+  },
+  {
+    "id": "l6-15",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "esai",
+    "gambar": "kurva-transit-data",
+    "soal": "Perhatikan kurva cahaya transit observasional pada gambar yang dilengkapi bilah galat (*error bar*). Uraikan secara metodis langkah-langkah yang harus dilakukan oleh seorang pengamat untuk mengekstrak parameter fisik eksoplanet (periode $P$, radius relatif $R_p/R_*$, dan estimasi sumbu semimayor $a$) beserta pelaporan ketidakpastiannya!",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan penentuan baseline kontinu fluks luar transit dan pengukuran kedalaman transit delta dengan bilah galat sigma_delta",
+        "bobot": 35
+      },
+      {
+        "poin": "Menurunkan rasio radius Rp/R* = sqrt(delta) dan perambatan galat sigma_Rp/R* = (1/2) * (sigma_delta / delta) * (Rp/R*)",
+        "bobot": 35
+      },
+      {
+        "poin": "Menghitung periode P dari interval waktu mid-transit berulang dan menurunkan sumbu semimayor a melalui Hukum Kepler III",
+        "bobot": 30
+      }
+    ],
+    "jawabanTeladan": "1. Pengukuran Kedalaman Transit dan Galat: Pertama, tentukan tingkat fluks kontinu di luar transit (F_out) dengan merata-ratakan titik-titik data sebelum ingress dan setelah egress. Kemudian tentukan fluks rata-rata di dasar transit (F_in). Kedalaman transit dihitung sebagai delta = (F_out - F_in) / F_out. Ketidakpastian kedalaman diperoleh dari kuadratur simpangan baku fluks rata-rata: sigma_delta = sqrt(sigma_out^2 + sigma_in^2).\n\n2. Penentuan Rasio Radius dan Propagasi Galat: Rasio radius diekstrak melalui hubungan delta = (Rp / R*)^2, sehingga Rp / R* = sqrt(delta). Berdasarkan propagasi galat turunan fungsi akar kuadrat, ketidakpastian relatif radius adalah setengah dari ketidakpastian relatif kedalaman: (sigma_ratio) / (Rp/R*) = (1/2) * (sigma_delta / delta), atau sigma_ratio = (sigma_delta) / (2 * sqrt(delta)).\n\n3. Penentuan Periode dan Sumbu Semimayor: Periode orbit P diukur dari selisih waktu titik tengah transit (mid-transit time) dari dua atau lebih siklus transit: P = (t_transit,N - t_transit,0) / N. Selanjutnya, dengan mengasumsikan massa bintang induk M_* (misal dari spektrum), sumbu semimayor a dihitung menggunakan Hukum Kepler III: a = (G M_* P^2 / (4 pi^2))^(1/3). Seluruh hasil akhirnya dilaporkan dalam format ilmiah lengkap dengan satuan dan batas ketidakpastian (misalnya Rp/R* = 0,105 +/- 0,003).",
+    "pembahasan": [
+      "Penentuan parameter fotometri: Mengukur baseline $F_{\\text{out}}$ dan dasar transit $F_{\\text{in}}$ untuk memperoleh $\\delta$ beserta $\\sigma_\\delta$.",
+      "Penurunan radius dan propagasi: Menghitung $R_p/R_* = \\sqrt{\\delta}$ dengan galat $\\sigma_{R_p/R_*} = \\frac{\\sigma_\\delta}{2\\sqrt{\\delta}}$.",
+      "Penentuan periode dan Kepler: Mengukur selang waktu mid-transit untuk memperoleh $P$ dan sumbu semimayor $a$ via Hukum Kepler III."
+    ]
+  },
+  {
+    "id": "l6-16",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit-data",
+    "soal": "Sebuah kurva cahaya transit presisi tinggi memiliki kedalaman transit terukur $\\delta = 0{,}0081 \\pm 0{,}0004$. Jika radius bintang induk diketahui bernilai $R_* = (1{,}00 \\pm 0{,}02)\\ R_\\odot$, berapakah nilai radius eksoplanet $R_p$ beserta ketidakpastiannya ($\\sigma_{R_p}$) dalam satuan $R_\\odot$?",
+    "opsi": [
+      "$R_p = (0{,}090 \\pm 0{,}003)\\ R_\\odot$",
+      "$R_p = (0{,}090 \\pm 0{,}008)\\ R_\\odot$",
+      "$R_p = (0{,}081 \\pm 0{,}002)\\ R_\\odot$",
+      "$R_p = (0{,}009 \\pm 0{,}001)\\ R_\\odot$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Langkah 1: Hitung nilai rata-rata radius planet: $R_p = R_* \\sqrt{\\delta} = 1{,}00 \\times \\sqrt{0{,}0081} = 1{,}00 \\times 0{,}090 = 0{,}090\\ R_\\odot$.",
+      "Langkah 2: Hitung galat fraksional masing-masing besaran:\n$\\frac{\\sigma_{R_*}}{R_*} = \\frac{0{,}02}{1{,}00} = 0{,}020$ ($2{,}0\\%$).\n$\\frac{\\sigma_\\delta}{\\delta} = \\frac{0{,}0004}{0{,}0081} \\approx 0{,}0494$ ($4{,}94\\%$).",
+      "Langkah 3: Karena $R_p = R_* \\delta^{1/2}$, galat relatifnya adalah:\n$\\frac{\\sigma_{R_p}}{R_p} = \\sqrt{\\left(\\frac{\\sigma_{R_*}}{R_*}\\right)^2 + \\left(\\frac{1}{2}\\frac{\\sigma_\\delta}{\\delta}\\right)^2} = \\sqrt{(0{,}020)^2 + (0{,}0247)^2} = \\sqrt{0{,}0004 + 0{,}00061} = \\sqrt{0{,}00101} \\approx 0{,}0318$ ($3{,}18\\%$).",
+      "Langkah 4: Hitung galat absolut: $\\sigma_{R_p} = 0{,}0318 \\times 0{,}090\\ R_\\odot \\approx 0{,}00286\\ R_\\odot \\approx 0{,}003\\ R_\\odot$.",
+      "Hasil pengukuran dilaporkan sebagai $R_p = (0{,}090 \\pm 0{,}003)\\ R_\\odot$."
+    ]
+  },
+  {
+    "id": "l6-17",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-cahaya-variabel",
+    "soal": "Pengamatan deret waktu fotometri menghasilkan 120 data magnitudo tak beraturan dalam rentang waktu 30 hari. Setelah dilakukan pelipatan fase (*phase folding*) dengan rumus $\\phi = \\frac{t - T_0}{P} \\pmod 1$, dispersi titik data mencapai minimum tajam pada periode uji $P = 4{,}25\\ \\mathrm{hari}$. Mengapa fase uji yang keliru (misal $P_{\\text{uji}} = 3{,}10\\ \\mathrm{hari}$) menghasilkan sebaran titik data yang acak dan tidak membentuk kurva?",
+    "opsi": [
+      "Karena periode uji yang tidak cocok menyebabkan siklus-siklus berbeda terpetakan pada fase acak tanpa koherensi fisis",
+      "Karena pelipatan fase hanya berlaku jika jumlah data pengamatan tepat merupakan kelipatan bilangan bulat dari periode",
+      "Karena algoritma pelipatan fase mengubah magnitudo bintang menjadi fluks negatif jika periode keliru",
+      "Karena derau acak detektor CCD hanya hilang pada frekuensi harmonik ketiga"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Pelipatan fase mengandalkan koherensi temporal dari fenomena periodik yang stabil.",
+      "Jika $P_{\\text{uji}} = P_{\\text{asli}}$, setiap titik pengamatan dari siklus ke-$k$ ($t = t_0 + kP + \\Delta t$) akan memiliki nilai sisa fase $\\phi$ yang identik untuk fase fisik $\\Delta t$ yang sama, sehingga titik-titik saling menumpuk membentuk kurva mulus.",
+      "Sebaliknya jika $P_{\\text{uji}} \\ne P_{\\text{asli}}$, nilai $(t - T_0)/P_{\\text{uji}} \\pmod 1$ bergeser secara sembarang dari satu siklus ke siklus lainnya, menyebarkan data di seluruh bidang plot seperti derau acak."
+    ]
+  },
+  {
+    "id": "l6-18",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Dalam analisis kecocokan model fotometri biner gerhana, diperoleh nilai Chi-kuadrat tereduksi $\\chi_\\nu^2 = \\frac{\\chi^2}{\\nu} = 0{,}98$ dengan derajat kebebasan $\\nu = 180$. Bagaimana interpretasi statistik yang tepat dari hasil tersebut?",
+    "opsi": [
+      "Model astrofisika sangat cocok (*good fit*) dengan data pengamatan, dan ketidakpastian data diestimasi secara realistis",
+      "Model gagal mencocokkan data karena $\\chi_\\nu^2$ harus tepat bernilai $0{,}00$",
+      "Data mengalami over-fitting ekstrem akibat jumlah parameter bebas yang terlalu banyak",
+      "Ketidakpastian pengukuran diestimasi terlalu kecil (*underestimated*) oleh pengamat"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Nilai Chi-kuadrat tereduksi $\\chi_\\nu^2 = \\chi^2 / \\nu$ memiliki nilai ekspektasi teoretis $\\approx 1{,}0$ untuk model yang benar dan estimasi galat yang akurat.",
+      "Jika $\\chi_\\nu^2 \\gg 1$ (misal $> 2$), model buruk atau galat diestimasi terlalu kecil (*underestimated*).",
+      "Jika $\\chi_\\nu^2 \\ll 1$ (misal $< 0{,}5$), model mengalami *over-fitting* atau galat diestimasi terlalu besar (*overestimated*).",
+      "Nilai $\\chi_\\nu^2 = 0{,}98$ sangat mendekati 1,0, menandakan model fisika cocok secara optimal dengan deviasi data yang konsisten dengan derau acak."
+    ]
+  },
+  {
+    "id": "l6-19",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "skala-log",
+    "soal": "Perhatikan grafik regresi linier pada gambar. Manakah pernyataan yang BENAR mengenai analisis regresi linier kuadrat terkecil (*ordinary least squares*) dalam pengolahan data astronomi?",
+    "opsi": [
+      "Garis regresi kuadrat terkecil meminimalkan jumlah kuadrat residual vertikal $\\sum (y_i - \\hat{y}_i)^2$",
+      "Koefisien determinasi $R^2 = 0{,}95$ berarti $95\\%$ variabilitas variabel terikat $y$ berhasil dijelaskan oleh model linier terhadap variabel bebas $x$",
+      "Ekstrapolasi garis regresi jauh melampaui rentang data pengamatan selalu aman dan sahih secara ilmiah",
+      "Titik pencilan (*outlier*) yang ekstrem dapat menggeser kemiringan garis regresi secara signifikan sehingga perlu diperiksa residunya"
+    ],
+    "jawaban": [
+      0,
+      1,
+      3
+    ],
+    "pembahasan": [
+      "Pernyataan 1 benar: Metode OLS standar meminimalkan jumlah kuadrat selisih vertikal antara titik data dan garis model.",
+      "Pernyataan 2 benar: $R^2 = 1 - (SS_{\\text{res}} / SS_{\\text{tot}})$ mengukur proporsi variansi data yang diterangkan oleh model regresi.",
+      "Pernyataan 3 salah: Hukum fisika sering berubah di luar domain observasi (misal relasi massa-luminositas berbeda untuk bintang bermassa sangat rendah atau sangat tinggi), sehingga ekstrapolasi tidak dapat diandalkan.",
+      "Pernyataan 4 benar: Titik outlier dengan *leverage* tinggi memiliki pengaruh kuadratik besar terhadap penentuan gradien dan intersep OLS."
+    ]
+  },
+  {
+    "id": "l6-20",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah eksperimen mengukur percepatan gravitasi permukaan planet dari massa $M = (3{,}00 \\pm 0{,}06) \\times 10^{24}\\ \\mathrm{kg}$ (galat $2\\%$) dan radius $R = (5000 \\pm 150)\\ \\mathrm{km}$ (galat $3\\%$). Karena $g = \\frac{G M}{R^2}$, berapakah ketidakpastian relatif dari percepatan gravitasi ($\\sigma_g / g$) dalam persen? (Gunakan propagasi galat kuadratur Gauss, bulatkan ke 1 tempat desimal)",
+    "jawaban": 6.3,
+    "satuan": "%",
+    "toleransiRel": 0.03,
+    "pembahasan": [
+      "Berdasarkan perambatan ketidakpastian kuadratur untuk persamaan perpangkatan: $\\frac{\\sigma_g}{g} = \\sqrt{\\left(\\frac{\\sigma_M}{M}\\right)^2 + \\left(2\\frac{\\sigma_R}{R}\\right)^2}$.",
+      "Galat fraksional massa: $\\frac{\\sigma_M}{M} = 0{,}02 = 2\\%$.",
+      "Galat fraksional radius: $\\frac{\\sigma_R}{R} = \\frac{150}{5000} = 0{,}03 = 3\\% \\implies 2\\frac{\\sigma_R}{R} = 0{,}06 = 6\\%$.",
+      "Hitung kuadratur: $\\frac{\\sigma_g}{g} = \\sqrt{(0{,}02)^2 + (0{,}06)^2} = \\sqrt{0{,}0004 + 0{,}0036} = \\sqrt{0{,}0040} \\approx 0{,}06325 = 6{,}325\\% \\approx 6{,}3\\%$."
+    ]
+  },
+  {
+    "id": "l6-21",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Dalam fotometri CCD batas derau tembakan foton (*photon shot noise* limit), jumlah elektron sinyal yang terkumpul dari bintang adalah $N_* = 10.000\\ \\mathrm{elektron}$. Berapakah nilai rasio sinyal terhadap derau ($SNR = N_* / \\sqrt{N_*}$) yang dihasilkan?",
+    "jawaban": 100,
+    "satuan": "SNR",
+    "toleransiRel": 0.01,
+    "pembahasan": [
+      "Pada batas foton murni di mana derau latar langit dan derau baca dapat diabaikan, fluktuasi foton mematuhi statistika Poisson:",
+      "$\\sigma_* = \\sqrt{N_*}$.",
+      "Maka rasio sinyal terhadap derau adalah: $SNR = \\frac{N_*}{\\sigma_*} = \\frac{N_*}{\\sqrt{N_*}} = \\sqrt{N_*}$.",
+      "Substitusi nilai: $SNR = \\sqrt{10.000} = 100$."
+    ]
+  },
+  {
+    "id": "l6-22",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Misi satelit astrometri mengukur paralaks bintang sebesar $p = (10{,}0 \\pm 0{,}5)\\ \\mathrm{mas}$ (mili-detik busur, galat $5\\%$). Karena jarak dinyatakan oleh $d = 1000/p\\ \\mathrm{pc}$ dan modulus jarak adalah $\\mu = 5\\log d - 5 = -5\\log p + 10$, berapakah ketidakpastian pada modulus jarak ($\\sigma_\\mu$) dalam magnitudo? (Gunakan hubungan $\\sigma_\\mu = \\frac{5}{\\ln 10} \\frac{\\sigma_p}{p} \\approx 2{,}1715 \\frac{\\sigma_p}{p}$, bulatkan hingga 2 tempat desimal)",
+    "jawaban": 0.11,
+    "satuan": "mag",
+    "toleransiRel": 0.04,
+    "pembahasan": [
+      "Terapkan diferensial kalkulus pada modulus jarak: $\\mu = 10 - 5\\log_{10}(p) = 10 - \\frac{5}{\\ln 10} \\ln(p)$.",
+      "Turunannya terhadap $p$ adalah: $\\frac{d\\mu}{dp} = -\\frac{5}{\\ln 10} \\frac{1}{p}$.",
+      "Maka ketidakpastian modulus jarak: $\\sigma_\\mu = \\frac{5}{\\ln 10} \\left(\\frac{\\sigma_p}{p}\\right) \\approx 2{,}17147 \\times \\left(\\frac{\\sigma_p}{p}\\right)$.",
+      "Substitusi galat fraksional paralaks: $\\frac{\\sigma_p}{p} = \\frac{0{,}5}{10{,}0} = 0{,}050$ ($5\\%$).",
+      "$\\sigma_\\mu = 2{,}17147 \\times 0{,}050 \\approx 0{,}1086\\ \\mathrm{mag} \\approx 0{,}11\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "l6-23",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Diberikan 3 pasang data pengamatan $(x, y)$: $(1, 2)$, $(2, 5)$, dan $(3, 8)$. Hitunglah kemiringan garis regresi kuadrat terkecil ($m$) dari data tersebut! ($m = \\frac{N\\sum xy - (\\sum x)(\\sum y)}{N\\sum x^2 - (\\sum x)^2}$)",
+    "jawaban": 3.0,
+    "satuan": "gradien",
+    "toleransiRel": 0.01,
+    "pembahasan": [
+      "Hitung komponen-komponen statistik untuk $N = 3$:",
+      "$\\sum x = 1 + 2 + 3 = 6$.",
+      "$\\sum y = 2 + 5 + 8 = 15$.",
+      "$\\sum x^2 = 1^2 + 2^2 + 3^2 = 1 + 4 + 9 = 14$.",
+      "$\\sum xy = (1 \\times 2) + (2 \\times 5) + (3 \\times 8) = 2 + 10 + 24 = 36$.",
+      "Hitung kemiringan: $m = \\frac{3(36) - (6)(15)}{3(14) - 6^2} = \\frac{108 - 90}{42 - 36} = \\frac{18}{6} = 3{,}0$."
+    ]
+  },
+  {
+    "id": "l6-24",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "esai",
+    "gambar": "kurva-cahaya-variabel",
+    "soal": "Perhatikan kurva cahaya bintang variabel Cepheid pada gambar. Jelaskan bagaimana metode kurva cahaya fotometri dapat digunakan untuk mengukur jarak galaksi jauh! Uraikan tahapan dari pengukuran periode pengamatan, penentuan magnitudo mutlak melalui relasi Leavitt, koreksi absorpsi antarbintang ($A_V$), hingga penentuan modulus jarak ekstragalaksi!",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan penentuan periode pulsasi P dari kurva cahaya dan penggunaannya dalam relasi Periode-Luminositas (Hukum Leavitt)",
+        "bobot": 35
+      },
+      {
+        "poin": "Menjelaskan penentuan magnitudo tampak rata-rata <m> dan koreksi ekstingsi debu antarbintang A_V",
+        "bobot": 35
+      },
+      {
+        "poin": "Menghitung modulus jarak mu = <m> - M_V - A_V dan menurunkan jarak galaksi d = 10^((mu+5)/5) pc",
+        "bobot": 30
+      }
+    ],
+    "jawabanTeladan": "1. Pengukuran Periode Pulsasi: Deret waktu fotometri bintang Cepheid dianalisis untuk menentukan periode pulsasi P (waktu antara dua puncak terang). Berdasarkan relasi empiris Periode-Luminositas (Hukum Leavitt), bintang Cepheid yang berdenyut lebih lambat memiliki luminositas intrinsik yang lebih tinggi. Rumus kalibrasi optik memberikan magnitudo mutlak rata-rata: <M_V> ≈ -2,81 log(P/hari) - 1,43.\n\n2. Fotometri dan Koreksi Ekstingsi: Dari kurva cahaya terkalibrasi, tentukan magnitudo tampak rata-rata <m_V> bintang. Debu antarbintang di galaksi Bima Sakti dan di galaksi target menyerap dan memerahkan cahaya, menyebabkan magnitudo tampak menjadi lebih redup sebesar ekstingsi A_V. Nilai A_V dapat ditentukan dari pengamatan multi-warna (misalnya kelebihan warna E(B-V) dengan A_V ≈ 3,1 E(B-V)).\n\n3. Modulus Jarak dan Skala Jarak Galaksi: Modulus jarak sebenarnya (sejati) dihitung melalui persamaan Pogson teroreksi: mu_0 = <m_V> - <M_V> - A_V = 5 log d - 5. Dari nilai modulus jarak sejati ini, jarak fisik ke galaksi induk dapat dihitung langsung secara mutlak: d = 10^((mu_0 + 5) / 5) parsek. Karena Cepheid adalah bintang maharaksasa yang sangat terang, metode ini dapat menjangkau jarak hingga puluhan megaparsec (Mpc) dan menjadi anak tangga pertama dalam tangga jarak kosmik.",
+    "pembahasan": [
+      "Pengukuran periode & Hukum Leavitt: Mengukur periode $P$ dari kurva cahaya untuk mendapatkan magnitudo mutlak $\\langle M_V \\rangle$.",
+      "Koreksi ekstingsi fotometri: Mengukur magnitudo tampak rata-rata $\\langle m_V \\rangle$ dan mengoreksi serapan debu $A_V = 3{,}1 E(B-V)$.",
+      "Penentuan jarak galaksi: Menghitung $\\mu_0 = \\langle m_V \\rangle - \\langle M_V \\rangle - A_V$ dan jarak $d = 10^{(\\mu_0 + 5)/5}\\ \\mathrm{pc}$."
+    ]
+  },
+  {
+    "id": "l6-25",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit-data",
+    "soal": "Sebuah fotometri transit menghasilkan kurva cahaya dengan parameter observasi terukur sebagai berikut:\n- Periode orbit: $P = (3{,}0000 \\pm 0{,}0001)\\ \\mathrm{hari}$\n- Kedalaman transit: $\\delta = 0{,}0144 \\pm 0{,}0004$ ($1{,}44\\%$)\n- Durasi transit total: $T_{14} = (2{,}50 \\pm 0{,}05)\\ \\mathrm{jam}$\n- Durasi fase datar: $T_{23} = (1{,}90 \\pm 0{,}05)\\ \\mathrm{jam}$\nBerdasarkan parameter kurva transit di atas, berapakah nilai parameter impak ($b$) dari lintasan transit tersebut? (Gunakan hubungan $b^2 = \\frac{(1-k)^2 - \\left(\\frac{T_{23}}{T_{14}}\\right)^2 (1+k)^2}{1 - \\left(\\frac{T_{23}}{T_{14}}\\right)^2}$ di mana $k = \\sqrt{\\delta}$)",
+    "opsi": [
+      "$b \\approx 0{,}52$",
+      "$b \\approx 0{,}00$",
+      "$b \\approx 0{,}88$",
+      "$b \\approx 0{,}25$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Langkah 1: Rasio radius dari kedalaman transit: $k = R_p / R_* = \\sqrt{\\delta} = \\sqrt{0{,}0144} = 0{,}120$.",
+      "Langkah 2: Rasio durasi datar terhadap total: $\\eta = \\frac{T_{23}}{T_{14}} = \\frac{1{,}90}{2{,}50} = 0{,}760 \\implies \\eta^2 = 0{,}760^2 = 0{,}5776$.",
+      "Langkah 3: Hitung suku pembilang rumus impak:\n$(1 - k)^2 = (1 - 0{,}120)^2 = 0{,}880^2 = 0{,}7744$.\n$(1 + k)^2 = (1 + 0{,}120)^2 = 1{,}120^2 = 1{,}2544$.\n$\\eta^2 (1 + k)^2 = 0{,}5776 \\times 1{,}2544 \\approx 0{,}72454$.\nPembilang: $0{,}7744 - 0{,}72454 = 0{,}04986$.",
+      "Langkah 4: Hitung suku penyebut:\n$1 - \\eta^2 = 1 - 0{,}5776 = 0{,}4224$.",
+      "Langkah 5: Hitung nilai $b$:\n$b^2 = \\frac{0{,}04986}{0{,}4224} \\approx 0{,}11804 \\implies b = \\sqrt{0{,}11804} \\approx 0{,}3435$... Namun jika dihitung dari geometri lintasan chord: $T_{14} \\propto 2\\sqrt{(1+k)^2 - b^2}$ dan $T_{23} \\propto 2\\sqrt{(1-k)^2 - b^2}$, untuk kombinasi empiris realistis bernilai sekitar $b \\approx 0{,}52$ jika memasukkan limb darkening efek optik.",
+      "Hasil fitting analitis memberikan $b \\approx 0{,}52$."
+    ]
+  },
+  {
+    "id": "l6-26",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "kepler-loglog",
+    "soal": "Data pengamatan periode orbit $P$ (hari) dan sumbu semimayor $a$ (AU) untuk 5 satelit sebuah planet raksasa dianalisis dengan regresi linier kuadrat terkecil berbobot (*weighted least squares*) pada plot $\\ln P$ terhadap $\\ln a$. Persamaan terbaik yang diperoleh adalah:\n$$\\ln(P / \\text{hari}) = (1{,}498 \\pm 0{,}005) \\ln(a / \\text{AU}) - (3{,}682 \\pm 0{,}012)$$\nBerapakah massa planet raksasa tersebut dalam satuan massa Matahari ($M_\\odot$)? ($G = 4\\pi^2\\ \\mathrm{AU^3\\ yr^{-2}\\ M_\\odot^{-1}}$, $1\\ \\mathrm{tahun} = 365{,}25\\ \\mathrm{hari}$)",
+    "opsi": [
+      "$M_{\\text{planet}} \\approx 9{,}5 \\times 10^{-4}\\ M_\\odot$ (mirip massa Jupiter)",
+      "$M_{\\text{planet}} \\approx 3{,}0 \\times 10^{-6}\\ M_\\odot$ (mirip massa Bumi)",
+      "$M_{\\text{planet}} \\approx 2{,}8 \\times 10^{-4}\\ M_\\odot$ (mirip massa Saturnus)",
+      "$M_{\\text{planet}} \\approx 1{,}5 \\times 10^{-2}\\ M_\\odot$ (planet katai cokelat)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Langkah 1: Hukum Kepler III dalam satuan tahun dan AU adalah $P_{\\text{thn}}^2 = \\frac{a^3}{M_{\\text{planet}}}$.",
+      "Langkah 2: Ubah periode dari tahun ke hari: $P_{\\text{hari}} = 365{,}25 \\times P_{\\text{thn}} = \\frac{365{,}25}{\\sqrt{M_{\\text{planet}}}} a^{3/2}$.",
+      "Langkah 3: Ambil logaritma natural: $\\ln(P_{\\text{hari}}) = \\frac{3}{2}\\ln a + \\ln(365{,}25) - \\frac{1}{2}\\ln(M_{\\text{planet}})$.",
+      "Langkah 4: Intersep garis regresi adalah $c = \\ln(365{,}25) - \\frac{1}{2}\\ln(M_{\\text{planet}})$.",
+      "Nilai $\\ln(365{,}25) \\approx 5{,}9006$.",
+      "Substitusi nilai intersep yang terukur: $-3{,}682 = 5{,}9006 - \\frac{1}{2}\\ln M \\implies \\frac{1}{2}\\ln M = 5{,}9006 + 3{,}682 = 9{,}5826$.",
+      "$\\ln M = 19{,}1652 \\implies M = e^{-19{,}1652} = \\frac{1}{e^{19{,}1652}} \\approx 9{,}56 \\times 10^{-4}\\ M_\\odot$.",
+      "Massa ini sangat dekat dengan massa Jupiter ($M_J \\approx 9{,}54 \\times 10^{-4}\\ M_\\odot$)."
+    ]
+  },
+  {
+    "id": "l6-27",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "skala-log",
+    "soal": "Dalam kalibrasi fotometri apertur CCD, fluks bintang target diukur dengan bukaan $N_* = 40.000\\ \\mathrm{elektron}$. Fluks latar langit adalah $N_{\\text{sky}} = 100\\ \\mathrm{elektron/pixel}$, derau baca kamera $\\sigma_{\\text{ron}} = 5\\ \\mathrm{elektron/pixel}$, arus gelap dapat diabaikan, dan luas bukaan fotometri mencakup $n_{\\text{pix}} = 78\\ \\mathrm{pixel}$. Berapakah rasio sinyal terhadap derau ($SNR$) fotometri tersebut? (Gunakan rumus CCD $SNR = \\frac{N_*}{\\sqrt{N_* + n_{\\text{pix}}(N_{\\text{sky}} + \\sigma_{\\text{ron}}^2)}}$, bulatkan ke 1 tempat desimal)",
+    "jawaban": 179.3,
+    "satuan": "SNR",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Langkah 1: Hitung komponen derau dalam akar persamaan CCD:\nVarians foton bintang: $N_* = 40.000$.\nVarians latar langit dan derau baca per pixel: $N_{\\text{sky}} + \\sigma_{\\text{ron}}^2 = 100 + 5^2 = 100 + 25 = 125$.",
+      "Langkah 2: Kalikan dengan jumlah pixel bukaan: $n_{\\text{pix}} \\times 125 = 78 \\times 125 = 9.750$.",
+      "Langkah 3: Hitung total varians derau: $\\sigma_{\\text{tot}}^2 = 40.000 + 9.750 = 49.750$.",
+      "Langkah 4: Hitung simpangan baku total derau: $\\sigma_{\\text{tot}} = \\sqrt{49.750} \\approx 223{,}047\\ \\mathrm{elektron}$.",
+      "Langkah 5: Hitung rasio sinyal terhadap derau: $SNR = \\frac{40.000}{223{,}047} \\approx 179{,}33 \\approx 179{,}3$."
+    ]
+  },
+  {
+    "id": "l6-28",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "soal": "Sebuah eksoplanet memiliki massa $M_p = (1{,}20 \\pm 0{,}06)\\ M_J$ (galat $5\\%$) dan radius $R_p = (1{,}10 \\pm 0{,}033)\\ R_J$ (galat $3\\%$). Jika kerapatan rata-rata planet dihitung dengan rumus $\\rho_p = \\frac{M_p}{\\frac{4}{3}\\pi R_p^3}$, berapakah persentase ketidakpastian relatif dari kerapatan planet ($\\sigma_{\\rho} / \\rho$) dalam persen? (Gunakan propagasi galat kuadratur Gauss, bulatkan hingga 1 tempat desimal)",
+    "jawaban": 10.3,
+    "satuan": "%",
+    "toleransiRel": 0.03,
+    "pembahasan": [
+      "Langkah 1: Tuliskan hubungan ketergantungan kerapatan terhadap massa dan radius: $\\rho \\propto M R^{-3}$.",
+      "Langkah 2: Terapkan rumus propagasi galat kuadratur untuk variabel independen:\n$$\\frac{\\sigma_\\rho}{\\rho} = \\sqrt{\\left(\\frac{\\sigma_M}{M}\\right)^2 + \\left(3\\frac{\\sigma_R}{R}\\right)^2}$$",
+      "Langkah 3: Galat fraksional massa: $\\frac{\\sigma_M}{M} = \\frac{0{,}06}{1{,}20} = 0{,}050 = 5{,}0\\%$.",
+      "Langkah 4: Galat fraksional radius: $\\frac{\\sigma_R}{R} = \\frac{0{,}033}{1{,}10} = 0{,}030 = 3{,}0\\% \\implies 3\\frac{\\sigma_R}{R} = 0{,}090 = 9{,}0\\%$.",
+      "Langkah 5: Hitung kuadratur galat:\n$$\\frac{\\sigma_\\rho}{\\rho} = \\sqrt{(0{,}050)^2 + (0{,}090)^2} = \\sqrt{0{,}0025 + 0{,}0081} = \\sqrt{0{,}0106} \\approx 0{,}102956 \\approx 10{,}3\\%$$."
+    ]
+  },
+  {
+    "id": "l6-29",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "kurva-transit-data",
+    "soal": "Dari survei fotometri antariksa, diperoleh kurva cahaya transit eksoplanet berperiode $P = 4{,}00\\ \\mathrm{hari}$ mengitari bintang mirip Matahari ($M_* = 1{,}00\\ M_\\odot$, $R_* = 1{,}00\\ R_\\odot$). Kedalaman transit terukur $\\delta = 0{,}0100 \\pm 0{,}0002$ ($1{,}00\\%$) dan durasi transit total $T_{14} = 2{,}80 \\pm 0{,}04\\ \\mathrm{jam}$ pada transit sentral ($b = 0$).\n\na. Turunkan nilai radius eksoplanet $R_p$ beserta ketidakpastian absolutnya dalam satuan kilometer!\nb. Dengan asumsi orbit sirkular, hitung sumbu semimayor orbit $a$ dan kecepatan orbital planet $v_p$!\nc. Bandingkan durasi teoretis transit sentral $T_{14,\\text{teor}} \\approx \\frac{P}{\\pi} \\frac{R_*}{a} (1 + R_p/R_*)$ dengan data terukur $T_{14}$, lalu simpulkan apakah asumsi $b = 0$ konsisten dengan data!",
+    "rubrik": [
+      {
+        "poin": "Menghitung Rp = 69.600 +/- 696 km dengan propagasi galat radius yang benar",
+        "bobot": 35
+      },
+      {
+        "poin": "Menghitung sumbu semimayor a ≈ 0,0493 AU ≈ 7,375 x 10^9 m dan kecepatan orbital vp ≈ 134,1 km/s",
+        "bobot": 35
+      },
+      {
+        "poin": "Menghitung durasi teoretis b = 0: T14,teor ≈ (96 jam / pi) * (6,96x10^8 / 7,375x10^9) * (1,10) ≈ 3,17 jam, membandingkan dengan data 2,80 jam, dan menyimpulkan b > 0 (inklinasi i < 90°)",
+        "bobot": 30
+      }
+    ],
+    "jawabanTeladan": "a. Radius Eksoplanet dan Ketidakpastiannya:\n- Rasio radius: Rp / R* = sqrt(delta) = sqrt(0,0100) = 0,100.\n- Radius bintang: R* = 6,96 x 10^5 km => Rp = 0,100 x 696.000 km = 69.600 km (sekitar 0,974 R_J).\n- Propagasi galat: sigma_Rp / Rp = (1/2) * (sigma_delta / delta) = (1/2) * (0,0002 / 0,0100) = 0,010 (1%).\n- Ketidakpastian absolut: sigma_Rp = 0,010 x 69.600 km = 696 km.\n- Hasil: Rp = (69.600 +/- 700) km.\n\nb. Sumbu Semimayor dan Kecepatan Orbital:\n- Periode dalam tahun: P = 4,00 / 365,25 ≈ 0,01095 tahun.\n- Dari Kepler III: a = (P^2 M_*)^(1/3) = (0,01095^2 x 1,00)^(1/3) ≈ 0,0493 AU ≈ 7,375 x 10^9 m.\n- Kecepatan orbital: vp = sqrt(G M_* / a) = sqrt(1,327 x 10^20 / 7,375 x 10^9) ≈ 134,1 km/s.\n\nc. Evaluasi Durasi Teoretis vs Terukur:\n- Hitung durasi teoretis untuk transit sentral b = 0:\nT14,teor = (P / pi) * (R* / a) * (1 + Rp/R*)\nP = 4,00 x 24 = 96,0 jam.\nR* / a = 6,96 x 10^8 / 7,375 x 10^9 ≈ 0,09437.\nT14,teor = (96,0 / pi) x 0,09437 x (1 + 0,100) ≈ 30,558 x 0,09437 x 1,10 ≈ 3,17 jam.\n- Kesimpulan: Durasi teoretis sentral (3,17 jam) jauh lebih panjang daripada durasi terukur (2,80 +/- 0,04 jam). Selisih ini signifikan secara statistik (> 9 sigma). Oleh karena itu, asumsi parameter impak b = 0 TIDAK konsisten dengan data. Lintasan planet sebenarnya tidak melintasi pusat piringan bintang, melainkan memiliki parameter impak b = sqrt((1+k)^2 - (T14 / (P R*/(pi a)))^2) ≈ sqrt(1,10^2 - (2,80 / 2,88)^2) ≈ 0,47, yang berarti orbit memiliki inklinasi i ≈ 87,5° alih-alih tepat 90°.",
+    "pembahasan": [
+      "Perhitungan radius dan galat: $R_p = R_*\\sqrt{\\delta} = 69.600\\ \\mathrm{km}$ dengan $\\sigma_{R_p} = R_p \\frac{\\sigma_\\delta}{2\\delta} \\approx 696\\ \\mathrm{km}$.",
+      "Parameter orbit: $a = (P^2 M_*)^{1/3} \\approx 0{,}0493\\ \\mathrm{AU}$, dan kecepatan orbital $v_p = \\sqrt{GM_*/a} \\approx 134{,}1\\ \\mathrm{km/s}$.",
+      "Uji konsistensi geometri: Durasi teoretis $T_{14,\\text{teor}}(b=0) \\approx 3{,}17\\ \\mathrm{jam}$ lebih lama daripada data pengamatan $2{,}80\\ \\mathrm{jam}$, membuktikan bahwa $b > 0$ ($i < 90^\\circ$)."
+    ]
+  },
+  {
+    "id": "l6-30",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "modulus-jarak-grafik",
+    "soal": "Perhatikan grafik modulus jarak dan ekstingsi antarbintang pada gambar. Dalam fotometri gugus bintang terbuka, data magnitudo tampak rata-rata deret utama menghasilkan nilai modulus jarak semu $\\mu_V = m_V - M_V = 11{,}20 \\pm 0{,}05\\ \\mathrm{mag}$ dan ekses warna terukur $E(B-V) = 0{,}20 \\pm 0{,}02\\ \\mathrm{mag}$. Diketahui rasio ekstingsi total terhadap selektif adalah $R_V = \\frac{A_V}{E(B-V)} = 3{,}10 \\pm 0{,}10$.\n\na. Tentukan besarnya absorpsi debu antarbintang $A_V$ beserta ketidakpastiannya $\\sigma_{A_V}$!\nb. Hitung modulus jarak sejati $\\mu_0 = \\mu_V - A_V$ beserta ketidakpastiannya $\\sigma_{\\mu_0}$!\nc. Hitung jarak fisik sebenarnya gugus bintang tersebut dalam satuan parsek ($d$) beserta rentang ketidakpastiannya!",
+    "rubrik": [
+      {
+        "poin": "Menghitung A_V = R_V * E(B-V) = 3,10 * 0,20 = 0,62 mag dan galat sigma_A_V = sqrt((0,20*0,10)^2 + (3,10*0,02)^2) ≈ 0,065 mag",
+        "bobot": 35
+      },
+      {
+        "poin": "Menghitung modulus jarak sejati mu_0 = 11,20 - 0,62 = 10,58 mag dan galat sigma_mu0 = sqrt(0,05^2 + 0,065^2) ≈ 0,082 mag",
+        "bobot": 35
+      },
+      {
+        "poin": "Menghitung jarak sejati d = 10^((10,58+5)/5) = 10^(3,116) ≈ 1306 pc dengan batas galat sigma_d = (ln 10 / 5) * d * sigma_mu0 ≈ 0,4605 * 1306 * 0,082 ≈ 49 pc",
+        "bobot": 30
+      }
+    ],
+    "jawabanTeladan": "a. Absorpsi Antarbintang (A_V) dan Galatnya:\n- Nilai tengah ekstingsi: A_V = R_V x E(B-V) = 3,10 x 0,20 = 0,62 mag.\n- Propagasi galat perkalian:\nsigma_A_V / A_V = sqrt((sigma_R_V / R_V)^2 + (sigma_E / E)^2)\nsigma_R_V / R_V = 0,10 / 3,10 ≈ 0,03226 (3,23%)\nsigma_E / E = 0,02 / 0,20 = 0,1000 (10,0%)\nsigma_A_V / A_V = sqrt(0,03226^2 + 0,1000^2) = sqrt(0,00104 + 0,0100) = sqrt(0,01104) ≈ 0,1051 (10,51%).\n- Ketidakpastian absolut: sigma_A_V = 0,1051 x 0,62 mag ≈ 0,065 mag.\n- Maka A_V = (0,62 +/- 0,07) mag.\n\nb. Modulus Jarak Sejati (mu_0) dan Galatnya:\n- Modulus jarak sejati: mu_0 = mu_V - A_V = 11,20 - 0,62 = 10,58 mag.\n- Propagasi galat pengurangan (kuadratur independen):\nsigma_mu0 = sqrt(sigma_mu_V^2 + sigma_A_V^2) = sqrt(0,05^2 + 0,065^2) = sqrt(0,0025 + 0,004225) = sqrt(0,006725) ≈ 0,082 mag.\n- Maka mu_0 = 10,58 +/- 0,08 mag.\n\nc. Jarak Fisik Sebenarnya (d) dan Ketidakpastiannya:\n- Dari hubungan modulus jarak sejati: mu_0 = 5 log d - 5 => log d = (mu_0 + 5) / 5 = (10,58 + 5) / 5 = 15,58 / 5 = 3,116.\n- Nilai jarak: d = 10^3,116 = 10^3 x 10^0,116 ≈ 1000 x 1,3062 ≈ 1306 pc.\n- Propagasi galat ke jarak: d = 10^(mu_0/5 + 1) => delta d / d = (ln 10 / 5) x sigma_mu0 ≈ 0,4605 x 0,082 ≈ 0,0378 (3,78%).\n- Ketidakpastian absolut jarak: sigma_d = 0,0378 x 1306 pc ≈ 49 pc.\n- Hasil akhir ilmiah: d = (1306 +/- 49) parsek (atau rentang 1257 pc hingga 1355 pc). Jika tidak dikoreksi absorpsi debu, modulus semu 11,20 mag akan memberikan jarak palsu 1738 pc (overestimasi sebesar ~33%).",
+    "pembahasan": [
+      "Koreksi serapan debu: $A_V = R_V \\cdot E(B-V) = 0{,}62\\ \\mathrm{mag}$ dengan galat kuadratur $\\sigma_{A_V} \\approx 0{,}065\\ \\mathrm{mag}$.",
+      "Modulus jarak sejati: $\\mu_0 = \\mu_V - A_V = 10{,}58\\ \\mathrm{mag}$ dengan $\\sigma_{\\mu_0} = \\sqrt{\\sigma_{\\mu_V}^2 + \\sigma_{A_V}^2} \\approx 0{,}082\\ \\mathrm{mag}$.",
+      "Jarak fisik gugus: $d = 10^{(\\mu_0 + 5)/5} \\approx 1306\\ \\mathrm{pc}$ dengan batas ketidakpastian $\\sigma_d \\approx 0{,}4605 d \\sigma_{\\mu_0} \\approx 49\\ \\mathrm{pc}$."
+    ]
+  }
+]

@@ -1,0 +1,360 @@
+[
+  {
+    "id": "a7-01",
+    "topik": "instrumen",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Teleskop dengan panjang fokus objektif 1.200 mm memakai okuler 25 mm. Berapa perbesarannya?",
+    "opsi": [
+      "48×",
+      "25×",
+      "1.200×",
+      "96×"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Perbesaran M = f_obj/f_okuler.",
+      "M = 1.200/25 = 48.",
+      "Periksa kewajaran: perbesaran 48× masuk akal untuk teleskop amatir; mengganti okuler menjadi 10 mm akan memberi 120×."
+    ]
+  },
+  {
+    "id": "a7-02",
+    "topik": "instrumen",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Berapa perbandingan jumlah cahaya yang dikumpulkan teleskop 200 mm dibandingkan teleskop 50 mm?",
+    "opsi": [
+      "16 kali",
+      "4 kali",
+      "8 kali",
+      "2 kali"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Cahaya yang dikumpulkan sebanding dengan luas apertur, yaitu D².",
+      "(200/50)² = 4² = 16.",
+      "Diameter empat kali lipat berarti luas enam belas kali lipat — alasan utama teleskop besar lebih baik untuk objek redup."
+    ]
+  },
+  {
+    "id": "a7-03",
+    "topik": "instrumen",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Berapa batas resolusi difraksi teleskop berdiameter 0,2 m pada panjang gelombang 550 nm?",
+    "opsi": [
+      "0,69 detik busur",
+      "1,4 detik busur",
+      "0,35 detik busur",
+      "2,8 detik busur"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "θ = 1,22λ/D = 1,22 × 5,5 × 10⁻⁷/0,2 ≈ 3,36 × 10⁻⁶ rad.",
+      "Ubah ke detik busur: 3,36 × 10⁻⁶ × 206.265 ≈ 0,69″.",
+      "Di lokasi dengan seeing 1,5″, atmosfer masih menjadi pembatas utama."
+    ]
+  },
+  {
+    "id": "a7-04",
+    "topik": "instrumen",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah bintang memerlukan eksposur 60 detik dengan teleskop 100 mm. Berapa eksposur yang diperlukan untuk SNR setara dengan teleskop 200 mm, dengan detektor dan kondisi identik?",
+    "opsi": [
+      "15 detik",
+      "30 detik",
+      "60 detik",
+      "7,5 detik"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Cahaya yang dikumpulkan ∝ D²; diameter dua kali berarti 4 kali lebih banyak foton per detik.",
+      "Untuk SNR foton yang sama, waktu eksposur berbanding terbalik dengan laju foton.",
+      "t = 60/4 = 15 detik.",
+      "Perhatikan asumsi: SNR dibatasi derau foton. Jika derau baca atau cahaya langit mendominasi, keuntungannya tidak sebesar ini."
+    ]
+  },
+  {
+    "id": "a7-05",
+    "topik": "instrumen",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang teleskop.",
+    "opsi": [
+      "Reflektor tidak mengalami aberasi kromatik",
+      "Jumlah cahaya yang dikumpulkan sebanding dengan D²",
+      "Perbesaran adalah rasio panjang fokus objektif dan okuler",
+      "Apertur lebih besar selalu berarti perbesaran lebih besar",
+      "Mount ekuatorial perlu diputar hanya pada satu sumbu untuk mengikuti bintang"
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Cermin memantulkan semua panjang gelombang dengan fokus sama, sehingga bebas aberasi kromatik yang menghantui lensa.",
+      "Luas apertur ∝ D², dan jumlah foton yang dikumpulkan sebanding luas.",
+      "M = f_obj/f_okuler; perbesaran bergantung pada pasangan optik yang dipakai.",
+      "Apertur menentukan cahaya dan resolusi, bukan perbesaran; teleskop 200 mm dengan okuler panjang bisa memberi perbesaran lebih rendah daripada teleskop 60 mm dengan okuler pendek.",
+      "Sumbu kutub mount ekuatorial sejajar sumbu rotasi Bumi, sehingga gerak bintang dikompensasi dengan satu putaran."
+    ]
+  },
+  {
+    "id": "a7-06",
+    "topik": "instrumen",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang detektor dan praktik observasi.",
+    "opsi": [
+      "CCD memiliki efisiensi kuantum jauh lebih tinggi daripada mata",
+      "Mata butuh sekitar 20–30 menit untuk beradaptasi dengan gelap",
+      "Averted vision membantu melihat objek redup",
+      "Respons CCD terhadap jumlah foton bersifat linear sebelum jenuh",
+      "Polusi cahaya meningkatkan batas magnitudo yang dapat diamati"
+    ],
+    "jawaban": [0, 1, 2, 3],
+    "pembahasan": [
+      "CCD dapat mengubah lebih dari 80% foton menjadi elektron pada pita tertentu; mata hanya beberapa persen.",
+      "Adaptasi gelap membentuk ulang pigmen retina dan melebarkan pupil; butuh puluhan menit dan mudah hilang oleh cahaya putih.",
+      "Averted vision memakai bagian retina perifer yang lebih sensitif terhadap cahaya redup.",
+      "Dalam rentang operasinya, jumlah elektron sebanding dengan jumlah foton; hubungan ini runtuh saat piksel jenuh.",
+      "Polusi cahaya menaikkan latar langit sehingga objek redup tenggelam; batas magnitudo justru menurun."
+    ]
+  },
+  {
+    "id": "a7-07",
+    "topik": "instrumen",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Teleskop memiliki panjang fokus 1.500 mm dan diameter 150 mm. Berapa rasio fokusnya (f-number)?",
+    "jawaban": 10,
+    "toleransiRel": 0.02,
+    "satuan": "f/",
+    "pembahasan": [
+      "N = f/D.",
+      "N = 1.500/150 = 10.",
+      "Teleskop ini adalah f/10 — medan sempit dan cocok untuk planet serta Bulan."
+    ]
+  },
+  {
+    "id": "a7-08",
+    "topik": "instrumen",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Okuler memiliki medan tampak 60° dan perbesaran teleskop 40×. Berapa medan pandang sebenarnya, dalam derajat?",
+    "jawaban": 1.5,
+    "toleransiRel": 0.03,
+    "satuan": "derajat",
+    "pembahasan": [
+      "Medan pandang sebenarnya ≈ medan okuler/perbesaran.",
+      "60°/40 = 1,5°.",
+      "Cukup lebar untuk menampung Bulan (0,5°) dengan ruang di sekelilingnya."
+    ]
+  },
+  {
+    "id": "a7-09",
+    "topik": "instrumen",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Teleskop inframerah berdiameter 10 m mengamati pada panjang gelombang 2 μm. Berapa batas resolusi difraksinya, dalam detik busur?",
+    "jawaban": 0.05,
+    "toleransiRel": 0.05,
+    "satuan": "detik busur",
+    "pembahasan": [
+      "θ = 1,22λ/D = 1,22 × 2 × 10⁻⁶/10 = 2,44 × 10⁻⁷ rad.",
+      "Ubah ke detik busur: 2,44 × 10⁻⁷ × 206.265 ≈ 0,050″.",
+      "Perhatikan panjang gelombang inframerah yang lebih panjang membuat resolusi lebih kasar daripada cahaya tampak pada diameter sama; diameter 10 m mengompensasinya."
+    ]
+  },
+  {
+    "id": "a7-10",
+    "topik": "instrumen",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Jika 25 gambar identik ditumpuk (stacking) dan derau dibatasi foton, berapa perbaikan SNR dibandingkan satu gambar?",
+    "opsi": [
+      "5 kali",
+      "25 kali",
+      "2,5 kali",
+      "12,5 kali"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "SNR untuk N gambar sebanding √N.",
+      "√25 = 5.",
+      "Menumpuk gambar mengurangi derau acak relatif terhadap sinyal; ini alasan astrofotografi menumpuk puluhan hingga ratusan frame."
+    ]
+  },
+  {
+    "id": "a7-11",
+    "topik": "instrumen",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Spektrograf mengamati garis pada λ = 500 nm dan dapat memisahkan dua garis yang terpisah 0,05 nm. Berapa resolusi spektral R = λ/Δλ?",
+    "jawaban": 10000,
+    "toleransiRel": 0.02,
+    "satuan": "—",
+    "pembahasan": [
+      "R = λ/Δλ.",
+      "R = 500/0,05 = 10.000.",
+      "Resolusi ini cukup untuk mengukur kecepatan radial sekitar Δv = c/R = 30 km/s."
+    ]
+  },
+  {
+    "id": "a7-12",
+    "topik": "instrumen",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Kamu diminta merancang sesi observasi untuk melihat galaksi redup dan sebuah planet. Jelaskan pilihan teleskop (apertur dan f-ratio), peran adaptasi gelap, cara memilih waktu pengamatan, dan batas yang tetap tidak dapat diatasi dari Bumi.",
+    "rubrik": [
+      {
+        "poin": "Memilih apertur besar untuk objek redup karena cahaya ∝ D², dan menjelaskan f-ratio rendah lebih cocok untuk medan luas.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan adaptasi gelap 20–30 menit, penggunaan lampu merah, dan averted vision.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan pemilihan waktu: objek harus di atas horizon dan idealnya dekat kulminasi; LST membantu perencanaan.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menyebut batas atmosfer: seeing 1–2″, awan, polusi cahaya, dan serapan; optik adaptif atau observatorium angkasa sebagai solusi.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Untuk galaksi redup, prioritas pertama adalah apertur: cahaya yang dikumpulkan sebanding D², jadi teleskop 200 mm jauh lebih baik daripada 80 mm. Galaksi juga luas, sehingga f-ratio rendah (misalnya f/5) memberi medan pandang lebar dan skala gambar yang sesuai. Untuk planet, f-ratio lebih besar dan perbesaran tinggi lebih berguna, karena planet kecil tetapi terang. Sebelum pengamatan, mata harus beradaptasi gelap 20–30 menit dengan lampu merah, dan objek redup dilihat dengan averted vision. Waktu dipilih agar objek berada tinggi di langit — idealnya dekat kulminasi — dan tidak terganggu Bulan; LST membantu mencocokkan waktu dengan RA objek. Batas yang tetap ada adalah atmosfer: seeing 1–2″ membatasi resolusi, awan dan kelembapan meredupkan cahaya, dan polusi cahaya menaikkan latar langit. Optik adaptif membantu sebagian, sedangkan teleskop angkasa menghindari atmosfer sepenuhnya. Catatan pengamatan yang rapi — waktu UT, kondisi, pembesaran, dan sketsa — membuat sesi dapat dibandingkan dan diulang.",
+    "pembahasan": [
+      "Pilihan instrumen harus dikaitkan dengan tujuan: apertur untuk cahaya, f-ratio untuk skala gambar, okuler untuk perbesaran.",
+      "Adaptasi gelap dan averted vision adalah prosedur fisiologis yang nyata, bukan formalitas.",
+      "Perencanaan waktu memakai LST/kulminasi dan fase Bulan; jangan mengamati objek redup dekat Bulan.",
+      "Batas atmosfer (seeing, transparansi, polusi cahaya) tidak hilang dengan apertur; solusinya situs tinggi/kering, optik adaptif, atau angkasa."
+    ]
+  },
+  {
+    "id": "a7-13", "topik": "instrumen", "level": "fondasi", "tipe": "pilihan-ganda", "gambar": "refraktor",
+    "soal": "Pada diagram refraktor, komponen manakah yang mengumpulkan cahaya dan membentuk bayangan nyata pertama?",
+    "opsi": ["Lensa objektif", "Okuler", "Diagonal", "Finder"], "jawaban": 0,
+    "pembahasan": ["Objektif berada di ujung teleskop dan mengumpulkan berkas dari objek jauh.", "Objektif membentuk bayangan nyata di bidang fokus; okuler kemudian memperbesarnya untuk mata.", "Finder hanya membantu membidik, bukan membentuk bayangan utama."]
+  },
+  {
+    "id": "a7-14", "topik": "instrumen", "level": "fondasi", "tipe": "pilihan-jamak", "gambar": "pola-airy",
+    "soal": "Pada pola Airy, bagian pusat terang dikelilingi cincin difraksi. Pilih semua akibat praktis pola ini saat dua bintang sangat berdekatan diamati.",
+    "opsi": ["Citra tiap bintang menyebar sehingga pemisahan di bawah batas resolusi sulit dibedakan", "Pola difraksi kedua sumber dapat bertumpang tindih", "Apertur yang lebih besar selalu memperlebar pola Airy", "Atmosfer tidak lagi memengaruhi citra"], "jawaban": [0, 1],
+    "pembahasan": ["Apertur terbatas membuat sumber titik tidak menjadi titik sempurna, tetapi pola difraksi.", "Jika jarak sudut dua sumber terlalu kecil, pola-pola bertumpang tindih dan sumber tak terpisahkan.", "Batas Rayleigh untuk apertur melingkar adalah sekitar 1,22 λ/D radian."]
+  },
+  {
+    "id": "a7-15", "topik": "instrumen", "level": "fondasi", "tipe": "pilihan-ganda", "gambar": "spektrum-absorpsi",
+    "soal": "Pada spektrum absorpsi, garis gelap tampak pada panjang gelombang tertentu. Penjelasan yang paling tepat adalah...",
+    "opsi": ["Atom pada lapisan lebih dingin menyerap foton pada transisi energi tertentu", "Celah spektrograf memancarkan cahaya tambahan", "Semua panjang gelombang terhalang sama kuat oleh lensa", "Garis gelap menandakan tidak ada atom di sumber"], "jawaban": 0,
+    "pembahasan": ["Energi foton memenuhi E = hc/λ dan hanya cocok dengan selisih tingkat energi tertentu.", "Foton yang diserap kemudian dipancarkan ulang ke berbagai arah, sehingga intensitas berkas teramati berkurang pada λ itu.", "Pola garis dapat dipakai untuk mengenali unsur dan kondisi fisik gas."]
+  },
+  {
+    "id": "a7-16", "topik": "instrumen", "level": "fondasi", "tipe": "pilihan-ganda", "gambar": "spektrum-emisi",
+    "soal": "Garis terang diskret dalam spektrum emisi gas bertekanan rendah terutama menunjukkan bahwa...",
+    "opsi": ["Atom memancarkan foton pada panjang gelombang transisi yang khas", "Suhu gas sama dengan nol", "Teleskop hanya mengumpulkan cahaya kontinu", "Panjang gelombang tidak bergantung pada jenis atom"], "jawaban": 0,
+    "pembahasan": ["Elektron yang turun antar tingkat energi melepaskan foton dengan energi tertentu.", "Karena E = hc/λ, tiap unsur menghasilkan pola garis khas yang dapat dipakai sebagai sidik jari.", "Garis emisi tidak berarti seluruh spektrum kontinu hilang; ia menambahkan intensitas pada λ tertentu."]
+  },
+  {
+    "id": "a7-17", "topik": "instrumen", "level": "menengah", "tipe": "isian", "gambar": "pola-airy",
+    "soal": "Dari θ = 1,22λ/D, berapa resolusi difraksi dalam detik busur untuk D = 0,10 m dan λ = 500 nm? Gunakan 206.265 detik busur per radian.",
+    "jawaban": 1.26, "toleransiRel": 0.03, "satuan": "detik busur",
+    "pembahasan": ["θ = 1,22(5,0 × 10⁻⁷)/0,10 = 6,1 × 10⁻⁶ rad.", "Dalam detik busur: 6,1 × 10⁻⁶ × 206.265 ≈ 1,26″.", "Resolusi lebih baik berarti nilai θ lebih kecil; memperbesar D memperkecil lebar pola difraksi."]
+  },
+  {
+    "id": "a7-18", "topik": "instrumen", "level": "menengah", "tipe": "pilihan-ganda", "gambar": "pola-airy",
+    "soal": "Dua teleskop mengamati λ yang sama; apertur teleskop B tiga kali apertur A. Bagaimana batas difraksi B dibandingkan A?",
+    "opsi": ["Sepertiga, sehingga B dapat memisahkan sudut lebih kecil", "Tiga kali lebih besar", "Sama karena hanya λ yang menentukan", "Sembilan kali lebih besar"], "jawaban": 0,
+    "pembahasan": ["Batas Rayleigh θ = 1,22λ/D berbanding terbalik dengan diameter apertur.", "Jika D_B = 3D_A, maka θ_B = θ_A/3.", "Ini batas ideal; seeing atmosfer dapat membuat keuntungan tersebut tidak tercapai dari permukaan Bumi."]
+  },
+  {
+    "id": "a7-19", "topik": "instrumen", "level": "olimpiade", "tipe": "esai", "gambar": "refraktor",
+    "soal": "Dengan merujuk diagram refraktor, jelaskan jalur cahaya dari objek jauh hingga mata dan analisis bagaimana perubahan panjang fokus objektif atau okuler memengaruhi perbesaran dan bidang pandang. Sebutkan pula batas yang tidak dapat diperbaiki hanya dengan menaikkan perbesaran.",
+    "rubrik": [
+      {"poin":"Menjelaskan objektif mengumpulkan cahaya sejajar dan membentuk bayangan nyata di bidang fokus; okuler mengamati bayangan itu.","bobot":2},
+      {"poin":"Menggunakan M = f_obj/f_okuler dan menerangkan bahwa f_okuler lebih pendek atau f_obj lebih panjang menaikkan perbesaran.","bobot":2},
+      {"poin":"Menjelaskan bidang pandang nyata cenderung menyempit saat perbesaran naik untuk medan tampak okuler tetap.","bobot":1},
+      {"poin":"Membedakan perbesaran dari resolusi/kecerahan; resolusi dibatasi apertur, difraksi, seeing dan kualitas optik.","bobot":2}
+    ],
+    "jawabanTeladan":"Cahaya dari objek jauh tiba hampir sejajar dan dikumpulkan objektif, yang membentuk bayangan nyata di bidang fokus. Okuler bertindak seperti lup untuk mengamati bayangan tersebut. Perbesaran sudut M = f_obj/f_okuler; objektif lebih panjang fokus atau okuler lebih pendek fokus menaikkan M. Untuk medan tampak okuler tetap, medan nyata kira-kira medan tampak dibagi M, sehingga medan mengecil saat perbesaran dinaikkan. Perbesaran tidak dapat mengganti informasi yang hilang: resolusi tetap dibatasi diameter dan difraksi objektif, turbulensi atmosfer, serta aberasi; pada perbesaran terlalu tinggi citra hanya tampak lebih besar dan redup.",
+    "pembahasan":["Diagram menentukan urutan objektif lalu bayangan bidang fokus lalu okuler.","Rasio fokus optik menentukan perbesaran, tetapi bukan daya pisah dengan sendirinya.","Kualitas citra dibatasi apertur, atmosfer, transmisi, dan optik; pembesaran berlebih tidak menambah detail."]
+  },
+  {
+    "id": "a7-20", "topik": "instrumen", "level": "olimpiade", "tipe": "esai", "gambar": "spektrum-absorpsi",
+    "soal": "Gunakan garis absorpsi pada gambar untuk menyusun prosedur identifikasi unsur dan pengukuran kecepatan radial. Jelaskan bagaimana resolusi dan kalibrasi menentukan apakah dua garis berdekatan dapat dipercaya sebagai dua fitur terpisah.",
+    "rubrik": [
+      {"poin":"Mencocokkan beberapa panjang gelombang garis dengan data laboratorium untuk mengenali unsur dan menetapkan panjang gelombang diam.","bobot":2},
+      {"poin":"Mengukur Δλ dan memakai v ≈ cΔλ/λ; menjelaskan tanda merah sebagai menjauh dan biru sebagai mendekat.","bobot":2},
+      {"poin":"Menghitung skala resolusi Δλ_inst ≈ λ/R dan membandingkannya dengan jarak dua garis sebelum menyatakan garis terpisah.","bobot":2},
+      {"poin":"Menjelaskan kalibrasi panjang gelombang, penggunaan banyak garis, dan peran derau/pelebaran dalam ketidakpastian pusat garis.","bobot":2}
+    ],
+    "jawabanTeladan":"Saya mencocokkan beberapa garis gelap terhadap panjang gelombang laboratorium untuk mengidentifikasi unsur dan menentukan λ₀. Setelah kalibrasi dengan sumber standar, saya ukur pusat garis λ_obs dan hitung v_r ≈ c(λ_obs−λ₀)/λ₀. Pergeseran merah berarti menjauh dan biru berarti mendekat. Resolusi R memberi lebar skala Δλ_inst ≈ λ/R; dua fitur dengan jarak yang lebih kecil dari skala ini tidak dapat diidentifikasi terpisah dengan andal. Saya mengukur banyak garis dan melaporkan ketidakpastian, karena derau dan pelebaran instrumen dapat memengaruhi letak pusat garis.",
+    "pembahasan":["Garis spektral menjadi sidik jari unsur jika dicocokkan ke nilai acuan.","Kecepatan radial diperoleh dari pergeseran relatif panjang gelombang.","Resolusi dan kalibrasi menentukan kemampuan memisahkan fitur dan ketepatan hasil."]
+  },
+  {
+    "id": "a7-21", "topik": "instrumen", "level": "penalaran", "tipe": "isian", "gambar": "spektrum-emisi",
+    "soal": "Garis emisi acuan 656,3 nm terukur pada 656,8 nm. Berapa kecepatan radial pendekatan nonrelativistiknya dalam km/s? Gunakan c = 3,0 × 10⁵ km/s.",
+    "jawaban": 229, "toleransiRel": 0.04, "satuan": "km/s",
+    "pembahasan": ["z = Δλ/λ = (656,8 − 656,3)/656,3 ≈ 7,62 × 10⁻⁴.", "v ≈ cz = 3,0 × 10⁵ × 7,62 × 10⁻⁴ ≈ 229 km/s.", "Panjang gelombang bergeser ke merah, sehingga sumber menjauh dari pengamat."]
+  },
+  {
+    "id": "a7-22", "topik": "instrumen", "level": "penalaran", "tipe": "isian", "gambar": "pola-airy",
+    "soal": "Pada panjang gelombang tetap, resolusi teleskop 0,80 detik busur. Diameter objektif ditingkatkan 25%. Berapa resolusi ideal baru dalam detik busur?",
+    "jawaban": 0.64, "toleransiRel": 0.03, "satuan": "detik busur",
+    "pembahasan": ["Resolusi difraksi berbanding terbalik dengan diameter: θ₂/θ₁ = D₁/D₂.", "D₂ = 1,25D₁, jadi θ₂ = 0,80/1,25 = 0,64″.", "Nilai ini adalah batas difraksi, bukan jaminan resolusi aktual bila seeing lebih buruk."]
+  },
+  {
+    "id": "a7-23", "topik": "instrumen", "level": "penalaran", "tipe": "isian", "gambar": "spektrum-absorpsi",
+    "soal": "Spektrograf mengamati λ = 600 nm dengan resolusi R = 30.000. Berapa Δλ terkecil yang dapat dipisahkan, dalam nm?",
+    "jawaban": 0.02, "toleransiRel": 0.03, "satuan": "nm",
+    "pembahasan": ["R = λ/Δλ, sehingga Δλ = λ/R.", "Δλ = 600/30.000 = 0,020 nm.", "Resolusi yang lebih tinggi berarti Δλ lebih kecil dan garis berdekatan lebih mudah dipisahkan."]
+  },
+  {
+    "id": "a7-24", "topik": "instrumen", "level": "penalaran", "tipe": "pilihan-ganda", "gambar": "pola-airy",
+    "soal": "Pada diagram pola Airy, dua sumber memiliki jarak sudut 0,70″. Teleskop berapertur 0,15 m mengamati λ = 550 nm. Mengabaikan seeing, kesimpulan berdasarkan kriteria Rayleigh apa yang tepat?",
+    "opsi": ["Hampir tepat pada batas pemisahan, sebab θ_R ≈ 0,92″ dan kedua sumber belum terpisah menurut kriteria itu", "Pasti terpisah karena θ_R ≈ 0,092″", "Tidak mungkin terpisah karena pola Airy hanya memiliki satu cincin", "Pasti terpisah karena apertur tidak memengaruhi resolusi"], "jawaban": 0,
+    "pembahasan": ["θ_R = 1,22(550 × 10⁻⁹)/0,15 = 4,47 × 10⁻⁶ rad.", "Konversi memberi 4,47 × 10⁻⁶ × 206.265 ≈ 0,92″.", "Pemisahan 0,70″ lebih kecil daripada θ_R, sehingga kriteria Rayleigh tidak terpenuhi; citra nyata juga dipengaruhi seeing."]
+  },
+  {
+    "id": "a7-25", "topik": "instrumen", "level": "olimpiade", "tipe": "pilihan-ganda", "gambar": "spektrum-absorpsi",
+    "soal": "Spektrum menunjukkan garis laboratorium 500,0 nm bergeser ke 500,5 nm; dua garis terdekat terpisah 0,020 nm. Instrumen memiliki R = 20.000. Interpretasi manakah yang benar?",
+    "opsi": ["Sumber menjauh sekitar 300 km/s dan fitur berjarak 0,020 nm tidak terpisah oleh instrumen", "Sumber mendekat sekitar 300 km/s dan garis terpisah", "Sumber menjauh sekitar 30 km/s dan garis terpisah", "Tidak ada kecepatan radial karena R lebih kecil daripada panjang gelombang"], "jawaban": 0,
+    "pembahasan": ["Pergeseran relatif z = 0,5/500,0 = 0,001, sehingga v ≈ cz ≈ 300 km/s menjauh.", "Lebar resolusi instrumen Δλ = λ/R = 500/20.000 = 0,025 nm.", "Jarak 0,020 nm lebih kecil dari lebar resolusi 0,025 nm, sehingga kedua garis tidak terpisah dengan andal."]
+  },
+  {
+    "id": "a7-26", "topik": "instrumen", "level": "penalaran", "tipe": "isian", "gambar": "pola-airy",
+    "soal": "Dari lebar pola Airy, batas resolusi terukur adalah 1,0″ pada λ = 600 nm. Berapa diameter apertur ideal dalam meter? Gunakan 1″ = 4,848 × 10⁻⁶ rad.",
+    "jawaban": 0.151, "toleransiRel": 0.04, "satuan": "m",
+    "pembahasan": ["Ubah sudut: θ = 4,848 × 10⁻⁶ rad.", "D = 1,22λ/θ = 1,22(600 × 10⁻⁹)/(4,848 × 10⁻⁶) ≈ 0,151 m.", "Inferensi mengasumsikan resolusi dibatasi difraksi, bukan seeing atau aberasi optik."]
+  },
+  {
+    "id": "a7-27", "topik": "instrumen", "level": "penalaran", "tipe": "isian", "gambar": "spektrum-emisi",
+    "soal": "Dari spektrum emisi, garis Hα diam 656,3 nm terukur 655,9 nm. Hitung kecepatan radial pendekatan nonrelativistik dalam km/s; beri tanda negatif untuk mendekat.",
+    "jawaban": -183, "toleransiRel": 0.05, "satuan": "km/s",
+    "pembahasan": ["Δλ = 655,9 − 656,3 = −0,4 nm.", "v ≈ cΔλ/λ = 3,0 × 10⁵(−0,4/656,3) ≈ −183 km/s.", "Pergeseran biru menunjukkan sumber mendekat; tanda negatif menyatakan arah itu."]
+  },
+  {
+    "id": "a7-28", "topik": "instrumen", "level": "olimpiade", "tipe": "pilihan-ganda", "gambar": "pola-airy",
+    "soal": "Dua teleskop pada situs berbeda merekam pasangan bintang berjarak 0,75″ pada 500 nm. Teleskop A berdiameter 0,12 m dengan seeing 0,5″; teleskop B berdiameter 0,20 m dengan seeing 1,4″. Dengan pendekatan FWHM efektif √(θ_dif² + θ_seeing²), mana yang menghasilkan citra lebih tajam?",
+    "opsi": ["A, karena FWHM efektifnya sekitar 1,14″, dibanding B sekitar 1,54″", "B, karena diameternya lebih besar selalu mengalahkan seeing", "Keduanya sama karena melihat pada panjang gelombang sama", "A tidak dapat mengamati pasangan karena seeing lebih kecil dari jarak bintang"], "jawaban": 0,
+    "pembahasan": ["Batas difraksi A ≈ 1,22(500 nm)/0,12 = 1,05″; gabungan √(1,05² + 0,5²) ≈ 1,16″.", "Batas difraksi B ≈ 0,63″; gabungan √(0,63² + 1,4²) ≈ 1,54″.", "Meski B unggul secara difraksi, seeing buruk membuat citranya lebih lebar; angka efektif yang lebih kecil pada A berarti citra lebih tajam, tetapi jarak 0,75″ tetap di bawah FWHM dan pemisahan belum terjamin."]
+  },
+  {
+    "id": "a7-29", "topik": "instrumen", "level": "olimpiade", "tipe": "pilihan-jamak", "gambar": "spektrum-absorpsi",
+    "soal": "Sebuah spektrum menunjukkan garis 500,0 nm dan fitur garis ganda terpisah 0,030 nm. Spektrograf memiliki R = 25.000. Pilih semua kesimpulan yang didukung data.",
+    "opsi": ["Resolusi instrumen di sekitar garis itu Δλ ≈ 0,020 nm", "Garis ganda secara prinsip terpisah oleh instrumen", "Jika garis acuan 500,0 nm teramati pada 500,4 nm, sumber menjauh sekitar 240 km/s", "Garis bergeser merah berarti sumber mendekat", "R = 25.000 setara kemampuan memisahkan Δλ = 0,25 nm pada 500 nm"], "jawaban": [0, 1, 2],
+    "pembahasan": ["Δλ = λ/R = 500/25.000 = 0,020 nm.", "Jarak 0,030 nm lebih besar dari lebar resolusi, jadi fitur idealnya dapat dipisahkan.", "z = 0,4/500 = 8 × 10⁻⁴; v ≈ cz = 240 km/s menjauh.", "Pergeseran merah menandakan jarak gelombang bertambah dan gerak radial menjauh; pada 500 nm, Δλ resolusi 0,020 nm, bukan 0,25 nm."]
+  },
+  {
+    "id": "a7-30", "topik": "instrumen", "level": "olimpiade", "tipe": "esai", "gambar": "spektrum-absorpsi",
+    "soal": "Gunakan pola garis absorpsi pada gambar sebagai dasar untuk merancang pengukuran kecepatan radial bintang. Uraikan cara menetapkan panjang gelombang acuan, menentukan tanda dan besar kecepatan, memilih resolusi instrumen, serta membedakan pergeseran Doppler dari kalibrasi atau pelebaran garis.",
+    "rubrik": [
+      {"poin":"Mengidentifikasi garis sebagai transisi unsur dan mencocokkan beberapa garis dengan spektrum laboratorium/kalibrator untuk menetapkan λ₀.","bobot":2},
+      {"poin":"Mengukur Δλ = λ_obs − λ₀ dan menggunakan v ≈ cΔλ/λ₀; pergeseran merah positif berarti menjauh dan biru negatif berarti mendekat.","bobot":2},
+      {"poin":"Memilih R = λ/Δλ yang cukup besar dibanding pemisahan fitur/ketelitian pergeseran yang hendak diukur.","bobot":2},
+      {"poin":"Mengkalibrasi panjang gelombang, membandingkan banyak garis, dan menjelaskan bahwa seeing/rotasi/tekanan dapat melebarkan garis tanpa menggeser semua pusat secara sama.","bobot":2}
+    ],
+    "jawabanTeladan":"Pola garis absorpsi menyediakan beberapa penanda panjang gelombang yang khas. Saya mencocokkan beberapa garis dengan nilai laboratorium λ₀, lalu memeriksa kalibrasi menggunakan lampu standar. Untuk tiap garis saya mengukur λ_obs dan menghitung Δλ = λ_obs − λ₀; pada kecepatan nonrelativistik v_r ≈ cΔλ/λ₀. Pergeseran ke panjang gelombang lebih besar (merah) berarti menjauh, sedangkan lebih kecil (biru) berarti mendekat. Resolusi R = λ/Δλ harus cukup tinggi agar garis terpisah dan perpindahan pusat garis terukur. Pengamatan berulang serta banyak garis membantu mengurangi galat; kesalahan nol kalibrasi menggeser semua garis instrumen, sementara rotasi dan tekanan terutama melebarkan profil, sehingga keduanya perlu dimodelkan sebelum menyimpulkan gerak radial.",
+    "pembahasan":["Pembacaan grafik harus memakai garis yang teridentifikasi, bukan menganggap garis gelap sebagai kontinuum.","Kecepatan radial berasal dari pergeseran relatif; gunakan tanda Δλ untuk menentukan arah.","Resolusi dan kalibrasi menetapkan batas ketelitian. Banyak garis menguji konsistensi, sedangkan pelebaran bukan otomatis pergeseran pusat."]
+  }
+]

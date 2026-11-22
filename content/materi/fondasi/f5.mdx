@@ -1,0 +1,345 @@
+<Tujuan>
+
+- Menghubungkan panjang gelombang, frekuensi, dan kelajuan cahaya, serta membaca spektrum elektromagnetik.
+- Menghitung energi foton dengan $E = hf = hc/\lambda$ dan menentukan pita spektrum dari panjang gelombangnya.
+- Memakai persamaan lensa tipis dan perbesaran teleskop refraktor untuk sistem optik sederhana.
+- Menghitung batas resolusi sudut teleskop akibat difraksi (kriteria Rayleigh) dan menjelaskan peran seeing.
+- Memakai Hukum Wien dan Stefan–Boltzmann untuk menaksir suhu, luminositas, dan radius bintang.
+- Menerapkan Efek Doppler untuk mengukur kecepatan radial bintang dari geseran garis spektrum.
+
+</Tujuan>
+
+<Prasyarat babIds={['f3', 'f4']} />
+
+<p className="lead">Cahaya adalah pembawa hampir semua informasi astronomi. Kita tidak bisa menyentuh bintang, tetapi kita bisa mengukur warnanya, membelokkannya dengan lensa, dan membaca pergeseran garis spektrumnya. Bab ini mengumpulkan alat gelombang, optik, dan radiasi yang akan dipakai berulang di bab A5, A7, dan L1.</p>
+
+## 1. Gelombang elektromagnetik dan spektrum
+
+<Poin judul="1 · Gelombang EM & energi foton" defaultOpen>
+
+Untuk semua gelombang, kelajuan sama dengan panjang gelombang dikali frekuensi:
+
+$$c = \lambda f.$$
+
+Di ruang hampa semua gelombang elektromagnetik bergerak dengan $c = 3{,}00 \times 10^{8}\ \mathrm{m/s}$, dan yang membedakan hanyalah panjang gelombangnya:
+
+| Pita | Panjang gelombang |
+|---|---|
+| Sinar gamma | $< 10^{-11}$ m |
+| Sinar-X | $10^{-11}$–$10^{-8}$ m |
+| Ultraviolet | $10^{-8}$–$4 \times 10^{-7}$ m |
+| Cahaya tampak | $4$–$7 \times 10^{-7}$ m |
+| Inframerah | $7 \times 10^{-7}$–$10^{-3}$ m |
+| Radio | $> 10^{-3}$ m |
+
+Energi satu foton sebanding dengan frekuensinya:
+
+$$E = hf = \frac{hc}{\lambda},$$
+
+dengan $h = 6{,}63 \times 10^{-34}\ \mathrm{J\cdot s}$ adalah konstanta Planck. Jalan pintas praktis: $E\ (\mathrm{eV}) \approx 1240/\lambda\ (\mathrm{nm})$.
+
+<Contoh judul="Energi foton sinar-X dan cahaya merah">
+
+<Langkah>
+
+Foton sinar-X dengan $\lambda = 0{,}1\ \mathrm{nm}$: $E = 1240/0{,}1 = 12\,400\ \mathrm{eV} = 12{,}4\ \mathrm{keV}$.
+
+</Langkah>
+
+<Langkah>
+
+Foton merah dengan $\lambda = 700\ \mathrm{nm}$: $E = 1240/700 \approx 1{,}77\ \mathrm{eV}$.
+
+</Langkah>
+
+<Langkah>
+
+Perbandingan: foton sinar-X sekitar 7000 kali lebih energetik daripada foton cahaya merah. Ini menjelaskan mengapa sinar-X menembus jaringan biologis tetapi cahaya tampak tidak.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Optik geometri dan teleskop refraktor
+
+<Poin judul="2 · Lensa, teleskop refraktor & perbesaran">
+
+Lensa tipis memetakan jarak objek $s$ dan jarak bayangan $s'$ melalui:
+
+$$\frac{1}{f} = \frac{1}{s} + \frac{1}{s'}.$$
+
+Perbesaran linear $M = s'/s$. Untuk objek di tak hingga ($s \to \infty$), semua berkas sejajar difokuskan di titik fokus sehingga $s' = f$.
+
+<Gambar id="refraktor" />
+
+Teleskop refraktor terdiri dari dua lensa:
+- **Lensa objektif** (panjang fokus $f_\text{obj}$): mengumpulkan cahaya dan membentuk bayangan nyata di titik fokusnya.
+- **Lensa okuler** (panjang fokus $f_\text{ok}$): dipakai seperti kaca pembesar untuk memperbesar bayangan tersebut.
+
+Perbesaran sudut teleskop (objek di tak hingga):
+
+$$M_\theta = \frac{f_\text{obj}}{f_\text{ok}}.$$
+
+Dua konsep berbeda sering tertukar:
+- **Jumlah cahaya** yang dikumpulkan bergantung pada **luas aperture** (diameter $D$).
+- **Kemampuan memperbesar sudut** bergantung pada rasio panjang fokus, bukan diameter.
+
+<Contoh judul="Perbesaran dan resolusi teleskop refraktor">
+
+<Langkah>
+
+Teleskop dengan $f_\text{obj} = 900\ \mathrm{mm}$ dan $f_\text{ok} = 25\ \mathrm{mm}$. Perbesaran: $M_\theta = 900/25 = 36\times$.
+
+</Langkah>
+
+<Langkah>
+
+Jika diameter objektif $D = 90\ \mathrm{mm}$ dan $\lambda = 550\ \mathrm{nm}$, batas difraksi: $\theta = 1{,}22 \times 5{,}5 \times 10^{-7} / 0{,}09 \approx 7{,}5 \times 10^{-6}\ \mathrm{rad} \approx 1{,}5''$.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: perbesaran 36× berguna hanya jika seeing lebih baik dari $1{,}5''$; jika tidak, menaikkan perbesaran lebih lanjut hanya memperbesarkan blur atmosfer tanpa menambah detail.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 3. Difraksi dan daya pisah teleskop
+
+<Poin judul="3 · Difraksi & kriteria Rayleigh">
+
+Cahaya yang melewati bukaan melingkar tidak membentuk titik sempurna, melainkan pola cincin yang disebut pola Airy. Ukuran pola itu menetapkan batas resolusi sudut teleskop (kriteria Rayleigh):
+
+$$\theta_\text{min} = 1{,}22\ \frac{\lambda}{D},$$
+
+dengan $\theta_\text{min}$ dalam radian. Semakin besar diameter $D$ atau semakin pendek panjang gelombang $\lambda$, semakin kecil $\theta_\text{min}$ — semakin rapat dua sumber dapat dipisahkan.
+
+<Gambar id="pola-airy" />
+
+Di permukaan Bumi, turbulensi atmosfer menambah kabur yang disebut **seeing**, biasanya $1''$–$2''$. Ini sering lebih besar daripada batas difraksi teleskop besar, sehingga teleskop raksasa di darat belum tentu mencapai batas teoretisnya tanpa optik adaptif.
+
+Teleskop radio harus berdiameter jauh lebih besar karena $\lambda_\text{radio} \gg \lambda_\text{tampak}$. Interferometri baseline panjang (VLBI) menggabungkan beberapa teleskop untuk mendapat $D$ efektif raksasa.
+
+<Catatan variasi="tips">
+
+Untuk mengubah radian ke detik busur: $\theta'' = \theta_\text{rad} \times 206\,265$. Dalam satuan praktis: $\theta'' \approx 0{,}252 \times \lambda(\mu\mathrm{m}) / D(\mathrm{m})$.
+
+</Catatan>
+
+</Poin>
+
+## 4. Efek Doppler dan kecepatan radial
+
+<Poin judul="4 · Efek Doppler & geser spektrum">
+
+Jika sumber cahaya bergerak relatif terhadap pengamat dengan kecepatan radial $v_r$, panjang gelombang yang diamati bergeser. Untuk $v_r \ll c$:
+
+$$\frac{\Delta\lambda}{\lambda_0} = \frac{v_r}{c},$$
+
+dengan $\Delta\lambda = \lambda_\text{obs} - \lambda_0$. Konvensi: $v_r > 0$ bila sumber menjauh (redshift, garis bergeser ke panjang gelombang lebih panjang); $v_r < 0$ bila sumber mendekat (blueshift).
+
+<Gambar id="doppler-geser" />
+
+Dalam astronomi bintang ganda atau planet yang mengorbit bintang, kecepatan radial berubah secara periodik — itulah prinsip metode kecepatan radial untuk mencari planet ekstra-surya. Lebar garis spektrum yang terbentang juga bisa mengukur rotasi bintang.
+
+<Contoh judul="Kecepatan radial dari geseran garis Hα">
+
+<Langkah>
+
+Garis Hα laboratorium $\lambda_0 = 656{,}28\ \mathrm{nm}$, teramati di $\lambda_\text{obs} = 656{,}58\ \mathrm{nm}$.
+
+</Langkah>
+
+<Langkah>
+
+$\Delta\lambda = 656{,}58 - 656{,}28 = 0{,}30\ \mathrm{nm}$.
+
+</Langkah>
+
+<Langkah>
+
+$v_r = c\, \Delta\lambda / \lambda_0 = 3{,}0 \times 10^5 \times (0{,}30 / 656{,}28) \approx 137\ \mathrm{km/s}$.
+
+</Langkah>
+
+<Langkah>
+
+Garis bergeser ke merah ($\Delta\lambda > 0$), jadi bintang menjauh dari pengamat dengan $v_r \approx 137\ \mathrm{km/s}$.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 5. Radiasi benda hitam dan luminositas bintang
+
+<Poin judul="5 · Wien, Stefan–Boltzmann & luminositas">
+
+Semua benda memancarkan radiasi; panjang gelombang puncaknya bergeser ke arah pendek saat suhu naik (Hukum Wien):
+
+$$\lambda_\text{max} = \frac{b}{T}, \qquad b = 2{,}898 \times 10^{-3}\ \mathrm{m\cdot K}.$$
+
+<Gambar id="kurva-benda-hitam" />
+
+Total daya yang dipancarkan per satuan luas mengikuti Stefan–Boltzmann:
+
+$$j = \sigma T^{4}, \qquad \sigma = 5{,}67 \times 10^{-8}\ \mathrm{W\,m^{-2}\,K^{-4}}.$$
+
+Untuk bintang berbentuk bola berjari-jari $R$, luminositasnya:
+
+$$L = 4\pi R^{2} \sigma T^{4}.$$
+
+Rasio dua bintang memberikan cara cepat membandingkan tanpa perlu menghitung $\sigma$ dan $4\pi$:
+
+$$\frac{L_1}{L_2} = \left(\frac{R_1}{R_2}\right)^{2}\left(\frac{T_1}{T_2}\right)^{4}.$$
+
+<Gambar id="warna-suhu" />
+
+<Contoh judul="Raksasa merah vs. Matahari">
+
+<Langkah>
+
+Raksasa merah: $R_* = 10\,R_\odot$, $T_* = 3\,000\ \mathrm{K}$; Matahari $T_\odot = 5\,800\ \mathrm{K}$.
+
+</Langkah>
+
+<Langkah>
+
+$\dfrac{L_*}{L_\odot} = 10^{2} \times \left(\dfrac{3\,000}{5\,800}\right)^{4} = 100 \times (0{,}517)^{4} \approx 100 \times 0{,}0716 \approx 7{,}2$.
+
+</Langkah>
+
+<Langkah>
+
+Meskipun permukaannya lebih dingin, radius 10 kali lipat membuat luminositas total sekitar 7,2 kali Matahari. Ini ciri raksasa merah: dingin tetapi terang.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="awas">
+
+Suhu selalu dalam kelvin dalam rumus radiasi. $T = 27^\circ$C adalah 300 K, bukan 27 K — kesalahan ini mengubah hasil pangkat empat sebesar lebih dari sepuluh ribu kali.
+
+</Catatan>
+
+</Poin>
+
+## 6. Rantai olimpiade: teleskop, difraksi, dan spektrograf grating
+
+<Poin judul="6 · Rantai olimpiade: resolusi & kecepatan rotasi bintang">
+
+Soal olimpiade bertingkat sering menggabungkan beberapa konsep sekaligus. Rantai paling umum di bab ini adalah:
+
+1. **Teleskop refraktor** → perbesaran dan pengumpulan cahaya.
+2. **Kriteria Rayleigh** → batas resolusi sudut.
+3. **Pola Airy** → syarat dua sumber dapat dipisahkan.
+4. **Spektrograf grating** → resolusi panjang gelombang $R = \lambda/\Delta\lambda = mN$ (orde $m$, $N$ celah).
+5. **Efek Doppler** → kecepatan radial atau rotasi dari lebar garis.
+
+<Contoh judul="Kecepatan rotasi bintang dari lebar garis spektrum" olimpiade>
+
+<Langkah>
+
+**Situasi:** Bintang berputar sehingga tepi yang mendekati pengamat bergerak dengan $+v_\text{rot}$ dan tepi yang menjauh dengan $-v_\text{rot}$. Lebar total garis yang terdifus oleh rotasi adalah $\Delta\lambda_\text{rot}$.
+
+</Langkah>
+
+<Langkah>
+
+Hubungan Doppler untuk dua tepi: selisih $\Delta\lambda = 2 \lambda_0 v_\text{rot}/c$. Jadi kecepatan rotasi ekuatorial:
+
+$$v_\text{rot} = \frac{c\, \Delta\lambda_\text{rot}}{2\lambda_0}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Syarat instrumental:** Spektrograf harus mampu memisahkan pelebaran ini, yaitu resolusi $R = \lambda_0/\delta\lambda_\text{instr} \ge \lambda_0/\Delta\lambda_\text{rot}$. Maka syarat minimum celah grating: $N \ge \lambda_0/(m\, \Delta\lambda_\text{rot})$.
+
+</Langkah>
+
+<Langkah>
+
+**Contoh angka:** Garis NaD di $\lambda_0 = 589\ \mathrm{nm}$, lebar garis karena rotasi $\Delta\lambda_\text{rot} = 0{,}20\ \mathrm{nm}$, orde $m=1$.
+- $v_\text{rot} = (3{,}0 \times 10^5 \times 0{,}20)/(2 \times 589) \approx 51\ \mathrm{km/s}$.
+- Jumlah celah minimum: $N \ge 589/0{,}20 = 2\,945$ celah.
+
+</Langkah>
+
+<Langkah>
+
+**Periksa:** Bintang tipe A cepat berputar memang punya $v \sin i$ puluhan hingga ratusan km/s — hasil konsisten.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="f5-cek-1"
+  pertanyaan="Foton dengan panjang gelombang 400 nm memiliki energi berapa dalam eV?"
+  opsi={['3,1 eV', '1,8 eV', '0,31 eV', '31 eV']}
+  jawaban={0}
+  penjelasan="E ≈ 1240/400 = 3,1 eV. Foton ini berada di batas ungu–ultraviolet."
+/>
+
+<CekPaham
+  id="f5-cek-2"
+  pertanyaan="Jika diameter teleskop digandakan (panjang gelombang tetap), apa yang terjadi pada batas resolusi difraksinya?"
+  opsi={[
+    'Sudut batas menjadi separuh',
+    'Sudut batas menjadi dua kali',
+    'Sudut batas menjadi seperempat',
+    'Tidak berubah',
+  ]}
+  jawaban={0}
+  penjelasan="θ ≈ 1,22λ/D berbanding terbalik dengan diameter. Menggandakan D membuat θ menjadi separuh — dua bintang yang dua kali lebih rapat bisa dipisahkan."
+/>
+
+<CekPaham
+  id="f5-cek-3"
+  pertanyaan="Garis spektrum suatu bintang teramati pada panjang gelombang yang lebih panjang daripada nilai laboratorium. Ini berarti…"
+  opsi={[
+    'Bintang menjauh dari pengamat (redshift)',
+    'Bintang mendekat ke pengamat (blueshift)',
+    'Bintang lebih panas dari rata-rata',
+    'Teleskop mengalami aberasi kromatik',
+  ]}
+  jawaban={0}
+  penjelasan="Pergeseran ke panjang gelombang lebih panjang adalah redshift: Δλ > 0 berarti v_r > 0, yaitu sumber menjauh."
+/>
+
+<Refleksi
+  id="f5-refleksi-1"
+  pertanyaan="Mengapa astronom membangun teleskop raksasa, padahal perbesaran sudah bisa didapat dari lensa okuler kecil? Kaitkan jawabanmu dengan jumlah cahaya, batas difraksi, dan resolusi spektral."
+/>
+
+## 8. Nilai yang sering dipakai
+
+<Konstanta
+  data={[
+    { simbol: 'c', nilai: '3,00 × 10⁸', satuan: 'm/s' },
+    { simbol: 'h (Planck)', nilai: '6,63 × 10⁻³⁴', satuan: 'J·s' },
+    { simbol: 'hc', nilai: '1.240', satuan: 'eV·nm' },
+    { simbol: 'σ (Stefan–Boltzmann)', nilai: '5,67 × 10⁻⁸', satuan: 'W·m⁻²·K⁻⁴' },
+    { simbol: 'b (Wien)', nilai: '2,898 × 10⁻³', satuan: 'm·K' },
+    { simbol: '1 detik busur', nilai: '4,85 × 10⁻⁶', satuan: 'radian' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Bab A5 akan memakai Hukum Wien dan Stefan–Boltzmann untuk diagram warna–suhu, sedangkan A7 memakai difraksi untuk memilih teleskop. Simpan empat rumus inti: $c = \lambda f$, $E = hc/\lambda$, $\theta_\text{min} = 1{,}22\lambda/D$, dan $L = 4\pi R^{2}\sigma T^{4}$.
+
+</Catatan>

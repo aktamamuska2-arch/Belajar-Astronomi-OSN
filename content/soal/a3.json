@@ -1,0 +1,635 @@
+[
+  {
+    "id": "a3-01",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Berapa panjang satu hari sideris dibandingkan satu hari solar rata-rata?",
+    "opsi": [
+      "Sekitar 4 menit lebih pendek",
+      "Sekitar 4 menit lebih panjang",
+      "Tepat sama",
+      "Sekitar 1 jam lebih pendek"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Satu hari sideris adalah waktu antara dua kulminasi bintang yang sama: 23 jam 56 menit 4 detik.",
+      "Satu hari solar rata-rata 24 jam, jadi selisihnya sekitar 3 menit 56 detik ≈ 4 menit lebih pendek.",
+      "Penyebabnya: selama Bumi berputar, Bumi juga bergerak mengelilingi Matahari, sehingga Matahari tampak bergeser sedikit ke timur setiap hari."
+    ]
+  },
+  {
+    "id": "a3-02",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada bujur 120°E, UT menunjukkan pukul 00.00. Berapa perkiraan waktu sideris lokal?",
+    "opsi": [
+      "8 jam",
+      "12 jam",
+      "0 jam",
+      "16 jam"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "LST ≈ UT + λ/15 = 0 + 120/15 = 0 + 8 = 8 jam.",
+      "Jadi waktu sideris lokal sekitar 08.00.",
+      "Perhatikan satuannya: bujur dibagi 15° per jam karena Bumi berputar 360° dalam 24 jam."
+    ]
+  },
+  {
+    "id": "a3-03",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Bulan mengelilingi Bumi dalam 27,3 hari relatif terhadap bintang. Mengapa fase Bulan berulang setiap 29,5 hari, bukan 27,3 hari?",
+    "opsi": [
+      "Karena selama itu Bumi juga bergerak mengelilingi Matahari, sehingga Bulan perlu mengejar posisi relatif terhadap Matahari",
+      "Karena Bulan berputar lebih lambat saat purnama",
+      "Karena gravitasi Matahari menghentikan rotasi Bulan",
+      "Karena orbit Bulan berbentuk lingkaran sempurna"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Periode sideris 27,3 hari mengukur satu putaran penuh terhadap bintang.",
+      "Namun arah Matahari juga bergeser karena Bumi mengorbit, sekitar 27° per bulan.",
+      "Bulan membutuhkan tambahan sekitar 2,2 hari untuk kembali ke fase yang sama: 27,3 + 2,2 ≈ 29,5 hari sinodis.",
+      "Perbedaan ini juga menjelaskan mengapa Bulan baru datang lebih lambat daripada kulminasi bintang yang sama."
+    ]
+  },
+  {
+    "id": "a3-04",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Setiap bulan ada satu Bulan baru, tetapi gerhana Matahari tidak terjadi setiap bulan. Penjelasan yang paling tepat adalah…",
+    "opsi": [
+      "Orbit Bulan miring sekitar 5° terhadap ekliptika, sehingga bayangannya biasanya lewat di atas atau di bawah Bumi",
+      "Bulan terlalu kecil untuk menutupi Matahari kecuali pada bulan tertentu",
+      "Bumi berputar terlalu cepat sehingga bayangan Bulan tidak pernah jatuh di daratan",
+      "Gerhana Matahari hanya terjadi saat Bumi berada di aphelion"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Bidang orbit Bulan membentuk sudut sekitar 5,1° dengan bidang orbit Bumi (ekliptika).",
+      "Pada kebanyakan Bulan baru, Bulan berada di atas atau di bawah garis Bumi–Matahari, sehingga umbra tidak menyentuh Bumi.",
+      "Gerhana mungkin terjadi bila Bulan baru berada dekat simpul, yaitu titik potong orbit Bulan dengan ekliptika.",
+      "Karena simpul bergeser perlahan, musim gerhana terjadi beberapa minggu setiap sekitar setengah tahun."
+    ]
+  },
+  {
+    "id": "a3-05",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang hari sideris dan hari solar.",
+    "opsi": [
+      "Hari sideris lebih pendek daripada hari solar",
+      "Bintang yang sama terbit sekitar 4 menit lebih awal setiap malam",
+      "Hari solar didefinisikan dari kulminasi Matahari ke kulminasi berikutnya",
+      "Hari sideris panjangnya tepat 24 jam",
+      "Selisih kedua jenis hari murni akibat rotasi Bumi, tanpa peran gerak orbit"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2
+    ],
+    "pembahasan": [
+      "Hari sideris 23 j 56 m, lebih pendek sekitar 4 menit daripada 24 jam.",
+      "Akumulasi 4 menit per hari membuat bintang terbit lebih awal, sekitar 2 jam per bulan.",
+      "Hari solar mengukur kembali ke meridian relatif terhadap Matahari, sehingga panjangnya ditetapkan 24 jam rata-rata.",
+      "Hari sideris adalah 23 j 56 m 04 s, bukan 24 jam.",
+      "Selisih muncul justru karena gerak orbit Bumi: Bumi harus berputar sedikit ekstra agar Matahari kembali ke meridian."
+    ]
+  },
+  {
+    "id": "a3-06",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang fase Bulan dan gerhana.",
+    "opsi": [
+      "Gerhana Matahari hanya mungkin terjadi saat Bulan baru",
+      "Gerhana Bulan hanya mungkin terjadi saat purnama",
+      "Gerhana Matahari total terjadi di wilayah yang dilalui umbra Bulan",
+      "Gerhana terjadi setiap bulan baru dan setiap purnama",
+      "Gerhana Matahari cincin terjadi ketika cakram Bulan tampak lebih kecil daripada Matahari"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "pembahasan": [
+      "Pada Bulan baru, Bulan berada di antara Bumi dan Matahari; hanya fase ini yang bisa menghasilkan gerhana Matahari.",
+      "Pada purnama, Bumi berada di antara Matahari dan Bulan; hanya fase ini yang bisa menghasilkan gerhana Bulan.",
+      "Umbra adalah bayangan inti; pengamat di dalamnya melihat cakram Matahari tertutup penuh.",
+      "Karena orbit Bulan miring, kebanyakan Bulan baru/purnama tidak sejajar simpul, sehingga tidak ada gerhana.",
+      "Cincin muncul saat Bulan berada lebih jauh (atau Matahari lebih dekat) sehingga ukuran sudut Bulan lebih kecil daripada Matahari."
+    ]
+  },
+  {
+    "id": "a3-07",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah pengamatan dijadwalkan pada UT 03.00. Pukul berapa waktu WITA (UTC+8)? Tulis dalam jam desimal.",
+    "jawaban": 11,
+    "toleransiRel": 0.02,
+    "satuan": "jam",
+    "pembahasan": [
+      "WITA = UTC+8.",
+      "03.00 UT + 8 jam = 11.00 WITA.",
+      "Dalam jam desimal, hasilnya 11,0."
+    ]
+  },
+  {
+    "id": "a3-08",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Pada bujur 45°E, UT menunjukkan pukul 18.00. Berapa perkiraan waktu sideris lokal, dalam jam desimal?",
+    "jawaban": 21,
+    "toleransiRel": 0.02,
+    "satuan": "jam",
+    "pembahasan": [
+      "LST ≈ UT + λ/15.",
+      "λ/15 = 45/15 = 3 jam.",
+      "LST ≈ 18 + 3 = 21,0 jam."
+    ]
+  },
+  {
+    "id": "a3-09",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah bintang berkulminasi pukul 22.00 malam ini. Kira-kira berapa menit lebih awal bintang itu berkulminasi besok malam?",
+    "jawaban": 4,
+    "toleransiRel": 0.1,
+    "satuan": "menit",
+    "pembahasan": [
+      "Hari sideris lebih pendek sekitar 3 menit 56 detik daripada hari solar.",
+      "Karena itu kulminasi bintang yang sama datang sekitar 4 menit lebih awal setiap hari solar.",
+      "Besok bintang akan berkulminasi sekitar pukul 21.56.",
+      "Konsekuensi jangka panjang: dalam sebulan, kulminasi bergeser sekitar 2 jam."
+    ]
+  },
+  {
+    "id": "a3-10",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Kira-kira pukul berapa Bulan purnama terbit?",
+    "opsi": [
+      "Sekitar pukul 18.00, saat Matahari terbenam",
+      "Sekitar pukul 06.00, saat Matahari terbit",
+      "Sekitar pukul 12.00, tengah hari",
+      "Sekitar pukul 24.00, tengah malam"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Pada purnama, elongasi Bulan 180°: Bulan berada berseberangan dengan Matahari.",
+      "Karena itu Bulan terbit ketika Matahari terbenam, sekitar pukul 18.00, dan terbenam saat Matahari terbit.",
+      "Bandingkan: Bulan baru terbit sekitar pukul 06.00, kuartal pertama sekitar tengah hari, kuartal akhir sekitar tengah malam."
+    ]
+  },
+  {
+    "id": "a3-11",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Bulan baru terjadi pada 1 Januari. Sekitar tanggal berapa (dalam Januari) purnama berikutnya? Gunakan bulan sinodis 29,5 hari.",
+    "jawaban": 15,
+    "toleransiRel": 0.05,
+    "satuan": "tanggal",
+    "pembahasan": [
+      "Dari bulan baru ke purnama adalah setengah siklus sinodis: 29,5/2 = 14,75 hari.",
+      "1 Januari + 14,75 hari ≈ 15 Januari (sore).",
+      "Perhatikan: yang dipakai adalah bulan sinodis, bukan sideris, karena fase bergantung pada posisi relatif terhadap Matahari."
+    ]
+  },
+  {
+    "id": "a3-12",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa gerhana hanya dapat terjadi pada musim gerhana tertentu, bukan setiap bulan baru atau purnama. Gunakan konsep bidang orbit Bulan, simpul, dan pergeseran simpul dalam penjelasanmu.",
+    "rubrik": [
+      {
+        "poin": "Menyebut orbit Bulan miring sekitar 5° terhadap ekliptika sehingga Bulan biasanya berada di atas atau di bawah garis Bumi–Matahari.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan bahwa gerhana memerlukan Bulan dekat simpul, yaitu titik potong orbit Bulan dengan ekliptika.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan pergeseran simpul (siklus sekitar 18,6 tahun) sehingga musim gerhana berulang beberapa kali setahun.",
+        "bobot": 1
+      },
+      {
+        "poin": "Membedakan syarat gerhana Matahari (Bulan baru) dan gerhana Bulan (purnama) serta menyebut jenis total/cincin/sebagian.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Fase Bulan hanya menentukan posisi Bulan terhadap Matahari, tetapi gerhana membutuhkan kesejajaran tiga benda. Bidang orbit Bulan tidak berimpit dengan ekliptika, melainkan miring sekitar 5,1°. Akibatnya, pada kebanyakan Bulan baru Bulan lewat sedikit di atas atau di bawah garis Bumi–Matahari, sehingga umbra-nya tidak menyentuh Bumi; pada kebanyakan purnama, Bulan juga melewati atas atau bawah umbra Bumi. Gerhana hanya mungkin bila Bulan berada dekat simpul, yaitu titik potong orbit Bulan dengan ekliptika, dan simpul itu searah dengan Matahari. Karena garis simpul bergeser perlahan dengan siklus sekitar 18,6 tahun, ada dua musim gerhana per tahun, masing-masing beberapa minggu, ketika syarat itu terpenuhi. Gerhana Matahari hanya terjadi pada Bulan baru dan terlihat total hanya di jalur umbra yang sempit; gerhana Bulan hanya terjadi pada purnama dan terlihat dari sisi malam Bumi. Inilah sebabnya gerhana bukan peristiwa bulanan, melainkan peristiwa musiman yang dapat diramalkan.",
+    "pembahasan": [
+      "Syarat pertama: fase yang tepat (Bulan baru untuk gerhana Matahari, purnama untuk gerhana Bulan).",
+      "Syarat kedua: Bulan dekat simpul, sehingga kesejajaran tiga benda benar-benar terjadi; inklinasi 5° membuat kebanyakan fase tidak menghasilkan gerhana.",
+      "Syarat ketiga: simpul bergeser dengan siklus 18,6 tahun, menciptakan dua musim gerhana per tahun.",
+      "Jawaban lengkap menyebut geometri umbra/penumbra dan membedakan jenis gerhana total, cincin, dan sebagian."
+    ]
+  },
+  {
+    "id": "a3-13",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "fase-bulan",
+    "soal": "Pada fase kuartal pertama, kira-kira pukul berapa Bulan transit meridian?",
+    "opsi": [
+      "18.00",
+      "12.00",
+      "00.00",
+      "06.00"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Pada kuartal pertama elongasi Bulan sekitar 90° ke timur dari Matahari.",
+      "Bulan berada sekitar seperempat putaran langit setelah Matahari, sehingga transit sekitar enam jam sesudah tengah hari, yaitu pukul 18.00.",
+      "Tabel fase pada diagram memberi pasangan terbit–transit–terbenam: 12.00–18.00–00.00."
+    ]
+  },
+  {
+    "id": "a3-14",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "bola-langit",
+    "soal": "Sebuah bintang memiliki RA = 8h dan LST = 8h. Berapakah hour angle-nya dan apa posisinya?",
+    "opsi": [
+      "0h, sedang berkulminasi",
+      "8h, di barat meridian",
+      "−8h, di timur meridian",
+      "12h, di bawah horizon"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hour angle HA = LST − RA.",
+      "HA = 8h − 8h = 0h.",
+      "HA nol berarti bintang berada pada meridian dan sedang transit/berkulminasi; diagram bola langit menunjukkan meridian pengamat."
+    ]
+  },
+  {
+    "id": "a3-15",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "fase-bulan",
+    "soal": "Bulan baru terjadi pada 10 Mei. Sekitar kapan fase kuartal pertama terjadi? Gunakan periode sinodis 29,5 hari.",
+    "opsi": [
+      "17–18 Mei",
+      "24–25 Mei",
+      "10 Juni",
+      "3 Mei"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Bulan baru ke kuartal pertama menempuh seperempat siklus sinodis.",
+      "29,5/4 = 7,375 hari.",
+      "Sekitar 10 Mei + 7,4 hari, yaitu 17–18 Mei; pada fase itu elongasi mendekati 90°."
+    ]
+  },
+  {
+    "id": "a3-16",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "gerhana-geometri",
+    "soal": "Pada sketsa gerhana Matahari, pengamat berada di penumbra Bulan. Apa yang diamati?",
+    "opsi": [
+      "Gerhana Matahari sebagian",
+      "Gerhana Matahari total",
+      "Gerhana Bulan total",
+      "Tidak ada gerhana karena penumbra tidak memiliki cahaya"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Umbra adalah bayangan inti dengan Matahari tertutup penuh; penumbra hanya menghalangi sebagian cakram Matahari.",
+      "Karena pengamat berada di penumbra, ia melihat gerhana Matahari sebagian.",
+      "Geometri bayangan pada gambar membedakan umbra gelap dan penumbra di sekelilingnya."
+    ]
+  },
+  {
+    "id": "a3-17",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "fase-bulan",
+    "soal": "Fraksi piringan Bulan yang tersinari adalah 0,5 dan Bulan sedang membesar (waxing). Berapa elongasi yang paling sesuai?",
+    "opsi": [
+      "90°",
+      "0°",
+      "180°",
+      "270°"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Fraksi iluminasi k = (1 − cos ε)/2.",
+      "Untuk k = 0,5, cos ε = 0 sehingga ε = 90° atau 270°.",
+      "Bulan membesar berarti bergerak menuju purnama dari Bulan baru, jadi pilih elongasi 90° (kuartal pertama), bukan 270°."
+    ]
+  },
+  {
+    "id": "a3-18",
+    "topik": "waktu-kalender",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "bola-langit",
+    "soal": "LST saat ini 5h 20m dan RA bintang 7h 50m. Dengan HA = LST − RA (rentang bertanda −12h hingga +12h), bintang berada di mana dan berapa lama sideris lagi menuju kulminasi atas?",
+    "opsi": [
+      "Di timur meridian; 2h 30m lagi",
+      "Di barat meridian; 2h 30m lagi",
+      "Di timur meridian; 21h 30m lagi",
+      "Sedang berkulminasi"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "HA = 5h20m − 7h50m = −2h30m.",
+      "HA negatif berarti bintang masih di timur meridian, belum transit.",
+      "LST bertambah searah waktu sideris; diperlukan 2h30m untuk mencapai RA bintang. Gambar bola langit memberi acuan meridian dan arah timur-barat."
+    ]
+  },
+  {
+    "id": "a3-19",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "fase-bulan",
+    "soal": "Bulan purnama terbit sekitar pukul 18.00. Sekitar pukul berapa Bulan berada pada kulminasi atas?",
+    "opsi": [
+      "00.00",
+      "18.00",
+      "06.00",
+      "12.00"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Bulan bergerak semu sekitar 15° per jam dari timur ke barat bersama langit.",
+      "Dari terbit di horizon timur ke kulminasi meridian diperlukan kira-kira enam jam.",
+      "Maka kulminasi purnama sekitar tengah malam (18.00 + 6 jam); ia kemudian terbenam sekitar 06.00."
+    ]
+  },
+  {
+    "id": "a3-20",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "gerhana-geometri",
+    "soal": "Pilih semua pernyataan yang benar tentang geometri gerhana pada diagram.",
+    "opsi": [
+      "Gerhana Matahari total terlihat dari wilayah umbra Bulan",
+      "Pengamat di penumbra Bulan melihat gerhana Matahari sebagian",
+      "Gerhana Bulan terjadi saat Bulan masuk bayangan Bumi",
+      "Gerhana cincin terjadi ketika antumbra Bulan mencapai Bumi",
+      "Gerhana Matahari dapat terjadi saat purnama"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pembahasan": [
+      "Umbra Bulan menghasilkan cakram Matahari tertutup penuh di jalur yang sempit.",
+      "Penumbra menutupi sebagian cakram saja, sehingga tampak gerhana sebagian.",
+      "Pada gerhana Bulan, Bumi berada di antara Matahari dan Bulan dan bayangan Bumi jatuh ke Bulan.",
+      "Jika umbra Bulan berujung sebelum mencapai permukaan Bumi, antumbra menghasilkan gerhana cincin.",
+      "Gerhana Matahari mensyaratkan Bulan baru; purnama adalah fase yang memungkinkan gerhana Bulan."
+    ]
+  },
+  {
+    "id": "a3-21",
+    "topik": "waktu-kalender",
+    "level": "olimpiade",
+    "tipe": "pilihan-jamak",
+    "gambar": "fase-bulan",
+    "soal": "Gunakan hubungan fraksi iluminasi k = (1 − cos ε)/2 dan fase pada diagram. Pilih semua pernyataan yang benar.",
+    "opsi": [
+      "Pada ε = 0°, k = 0 dan terjadi Bulan baru",
+      "Pada ε = 90°, k = 0,5 dan terjadi kuartal",
+      "Pada ε = 180°, k = 1 dan terjadi purnama",
+      "Pada ε = 270°, k = 0,5 dan terjadi kuartal akhir",
+      "Pada ε = 180°, Bulan berada di antara Bumi dan Matahari"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pembahasan": [
+      "k = (1 − cos 0°)/2 = 0; posisi segaris konjungsi adalah fase baru.",
+      "cos 90° = 0, jadi k = 1/2, fase kuartal pertama.",
+      "cos 180° = −1, jadi k = 1, piringan tampak penuh.",
+      "cos 270° = 0 menghasilkan setengah piringan; posisi ini adalah kuartal akhir.",
+      "Pada elongasi 180°, Bumi berada di antara arah Matahari dan Bulan; Bulan beroposisi, bukan berada di antara keduanya."
+    ]
+  },
+  {
+    "id": "a3-22",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "bola-langit",
+    "soal": "Pada bujur 75°W, UT pukul 10.00. Dengan pendekatan LST ≈ UT + λ/15 jam (bujur timur positif), berapa LST dalam jam pada rentang 0–24?",
+    "jawaban": 5,
+    "toleransiRel": 0.02,
+    "satuan": "jam",
+    "pembahasan": [
+      "Bujur barat berarti λ = −75°.",
+      "λ/15 = −5 jam, sehingga LST ≈ 10 − 5 = 5 jam.",
+      "Hasil berada di rentang 0–24 dan mengabaikan beda kecil antara waktu sideris dan solar sebagaimana asumsi pendekatan soal."
+    ]
+  },
+  {
+    "id": "a3-23",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "fase-bulan",
+    "soal": "Jika Bulan baru terjadi pada hari ke-1, berapa hari kira-kira sampai kuartal akhir? Gunakan periode sinodis 29,5 hari.",
+    "jawaban": 22.125,
+    "toleransiRel": 0.03,
+    "satuan": "hari",
+    "pembahasan": [
+      "Dari Bulan baru menuju kuartal akhir, fase menempuh tiga perempat siklus sinodis.",
+      "Selang waktu = (3/4) × 29,5 = 22,125 hari.",
+      "Jadi kuartal akhir terjadi sekitar 22,1 hari setelah Bulan baru; diagram fase menunjukkan tiga seperempat putaran relatif."
+    ]
+  },
+  {
+    "id": "a3-24",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "bola-langit",
+    "soal": "LST = 14h 10m dan RA sebuah bintang = 11h 40m. Hitung hour angle bintang dalam jam desimal.",
+    "jawaban": 2.5,
+    "toleransiRel": 0.02,
+    "satuan": "jam",
+    "pembahasan": [
+      "HA = LST − RA.",
+      "14h10m − 11h40m = 2h30m.",
+      "Dalam jam desimal, 2h30m = 2 + 30/60 = 2,5 h; HA positif menunjukkan bintang telah melewati meridian ke arah barat."
+    ]
+  },
+  {
+    "id": "a3-25",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Bulan baru terjadi pada tanggal 1 Juni. Kira-kira berapa hari setelah tanggal tersebut Bulan baru berikutnya terjadi? Gunakan bulan sinodis 29,5 hari.",
+    "jawaban": 29.5,
+    "toleransiRel": 0.03,
+    "satuan": "hari setelah 1 Juni",
+    "pembahasan": [
+      "Satu siklus fase dari Bulan baru ke Bulan baru berikutnya adalah satu bulan sinodis, sekitar 29,5 hari.",
+      "Jadi waktunya 29,5 hari setelah 1 Juni, sekitar penghujung Juni hingga 1 Juli.",
+      "Nilai jawaban menyatakan selang hari setelah tanggal acuan, bukan nomor tanggal kalender; bulan sinodis bukan bilangan bulat hari."
+    ]
+  },
+  {
+    "id": "a3-26",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "isian",
+    "gambar": "fase-bulan",
+    "soal": "Sudut fase Bulan ε = 120°. Berapa fraksi piringan Bulan yang tersinari? Gunakan k = (1 − cos ε)/2 dan cos 120° = −0,5.",
+    "jawaban": 0.75,
+    "toleransiRel": 0.02,
+    "satuan": "fraksi",
+    "pembahasan": [
+      "Masukkan nilai cosinus ke rumus iluminasi.",
+      "k = [1 − (−0,5)]/2 = 1,5/2 = 0,75.",
+      "Tiga perempat cakram tersinari; ε antara 90° dan 180° menandakan fase cembung membesar sebagaimana urutan fase pada gambar."
+    ]
+  },
+  {
+    "id": "a3-27",
+    "topik": "waktu-kalender",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "bola-langit",
+    "soal": "Pada suatu saat LST = 18h 20m. Bintang X memiliki RA = 16h 50m. Tentukan HA, nyatakan apakah bintang berada di timur atau barat meridian, dan hitung perkiraan waktu solar hingga kulminasi berikutnya. Jelaskan pendekatan yang digunakan.",
+    "rubrik": [
+      {
+        "poin": "Menggunakan HA = LST − RA dan memperoleh +1h 30m.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menafsirkan HA positif sebagai bintang telah melewati meridian dan berada di barat.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menentukan waktu hingga kulminasi atas berikutnya sebagai 24h − 1h30m = 22h30m sideris.",
+        "bobot": 1
+      },
+      {
+        "poin": "Mengonversi dengan 1 hari sideris ≈ 0,99727 hari solar sehingga selang ≈22h26m solar dan menjelaskan pembulatan.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "HA = LST − RA = 18h20m − 16h50m = +1h30m. Hour angle positif berarti bintang sudah melewati meridian dan berada di sisi barat. Kulminasi berikutnya memerlukan satu putaran sideris hampir penuh: 24h − 1h30m = 22h30m sideris. Karena 1 hari sideris = 0,99727 hari solar, selang solar kira-kira 22,5 × 0,99727 = 22,438 hari solar = 22h26m. Jadi kulminasi berikutnya sekitar 22 jam 26 menit solar setelah pengamatan. Jika diminta perkiraan kasar, selisih solar-sideris hanya beberapa menit sehingga 22h30m adalah pendekatan awal.",
+    "pembahasan": [
+      "Selisihkan LST dan RA, jaga satuan jam-menit: +1h30m.",
+      "Tanda positif menyatakan transit telah berlalu; diagram meridian mengarahkan sisi barat.",
+      "Untuk transit berikutnya tambahkan 24 jam sideris dikurangi HA yang telah berlalu.",
+      "Koreksi ke waktu solar dengan faktor 0,99727 menghasilkan sekitar 22h26m; pendekatan kasar dapat membulatkan ke 22h30m."
+    ]
+  },
+  {
+    "id": "a3-28",
+    "topik": "waktu-kalender",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "fase-bulan",
+    "soal": "Diketahui periode sideris Bulan 27,321 hari dan periode orbit Bumi 365,25 hari. Turunkan hubungan periode sinodis, hitung nilai perkiraannya, lalu jelaskan mengapa siklus fase lebih lama daripada satu orbit Bulan terhadap bintang.",
+    "rubrik": [
+      {
+        "poin": "Mengenali bahwa kecepatan sudut relatif Bulan terhadap Matahari adalah 1/T_sid − 1/T_Bumi.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menuliskan 1/T_sin = 1/27,321 − 1/365,25 dan/atau bentuk T_sin = T_sid T_Bumi/(T_Bumi − T_sid).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung T_sin ≈ 29,53 hari.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menjelaskan bahwa Bumi bergerak sepanjang orbit saat Bulan menyelesaikan orbit sideris sehingga Bulan harus bergerak lebih jauh untuk menyamai geometri fase.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Periode sideris 27,321 hari mengukur satu orbit Bulan relatif terhadap bintang jauh. Namun fase bergantung pada posisi Bulan relatif terhadap Matahari, dan selama Bulan mengorbit Bumi, Bumi juga maju mengelilingi Matahari. Kecepatan sudut relatifnya adalah 1/T_sin = 1/T_sid − 1/T_Bumi. Maka T_sin = T_sid T_Bumi/(T_Bumi − T_sid) = (27,321 × 365,25)/(365,25 − 27,321) ≈ 29,53 hari. Nilai ini lebih panjang daripada periode sideris karena Bulan harus menempuh tambahan sudut setelah Bumi bergerak, agar konfigurasi Matahari–Bumi–Bulan dan fase yang sama terulang.",
+    "pembahasan": [
+      "Fase berulang saat sudut relatif Bulan–Matahari kembali sama, bukan saat Bulan hanya kembali ke bintang latar.",
+      "Kecepatan relatif adalah selisih kecepatan sudut orbit Bulan dan Bumi: 1/T_sin = 1/T_sid − 1/T_Bumi.",
+      "Substitusi angka menghasilkan T_sin sekitar 29,53 hari.",
+      "Gerak maju Bumi membuat Bulan perlu waktu tambahan untuk kembali ke fase yang sama; gambar fase menggambarkan posisi relatif tersebut."
+    ]
+  },
+  {
+    "id": "a3-29",
+    "topik": "waktu-kalender",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "gerhana-geometri",
+    "soal": "Jelaskan mengapa gerhana Matahari cincin terjadi ketika Bulan baru tetapi tidak menutupi seluruh Matahari. Gunakan geometri umbra/antumbra pada gambar, bandingkan ukuran sudut Bulan dan Matahari, serta bedakan dari gerhana total.",
+    "rubrik": [
+      {
+        "poin": "Menyatakan Bulan baru dan kesejajaran dekat simpul sebagai syarat geometri gerhana Matahari.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menjelaskan umbra Bulan menyempit dan berujung sebelum mencapai Bumi saat Bulan tampak lebih kecil/jauh.",
+        "bobot": 2
+      },
+      {
+        "poin": "Mengidentifikasi wilayah di belakang ujung umbra sebagai antumbra, tempat tampak cincin terang Matahari.",
+        "bobot": 2
+      },
+      {
+        "poin": "Membedakan gerhana total: umbra mencapai permukaan Bumi dan cakram Matahari tertutup seluruhnya.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Gerhana Matahari hanya mungkin saat Bulan baru dan Bulan berada dekat simpul orbit sehingga Matahari, Bulan, dan Bumi hampir segaris. Jika Bulan sedang relatif jauh, diameter sudutnya lebih kecil daripada diameter sudut Matahari. Kerucut umbra menyempit dan berujung sebelum mencapai permukaan Bumi. Pengamat di belakang ujung itu berada di antumbra: Bulan tampak berada di depan Matahari tetapi tidak menutup seluruh cakramnya, sehingga tersisa cincin cahaya Matahari. Pada gerhana total, Bulan tampak cukup besar dan umbranya mencapai Bumi; pengamat di jalur umbra melihat cakram Matahari tertutup penuh.",
+    "pembahasan": [
+      "Fase Bulan baru menempatkan Bulan di antara Bumi dan Matahari; dekat simpul memastikan kesegarisan.",
+      "Jarak Bulan lebih besar dapat membuat ukuran sudutnya lebih kecil daripada Matahari.",
+      "Dalam keadaan itu umbra berakhir sebelum Bumi dan antumbra mencapai pengamat, menghasilkan cincin terang.",
+      "Gerhana total berbeda karena umbra Bulan menyentuh Bumi dan cakram Matahari tertutup seluruhnya."
+    ]
+  },
+  {
+    "id": "a3-30",
+    "topik": "waktu-kalender",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "bola-langit",
+    "soal": "Pengamat berada pada bujur 75° BT dan UT saat ini 22.00. Dengan pendekatan LST ≈ UT + λ/15 (mod 24), berapa LST dalam jam?",
+    "jawaban": 3,
+    "toleransiRel": 0.02,
+    "satuan": "jam",
+    "pembahasan": [
+      "Bujur timur 75° memberi tambahan waktu sideris 75°/15° per jam = 5 jam.",
+      "LST ≈ 22 + 5 = 27 jam. Kurangi 24 jam untuk kembali ke satu putaran: LST = 3 jam.",
+      "Hasilnya dalam rentang 0–24 jam; gambar bola langit membantu mengaitkan waktu sideris lokal dengan rotasi langit relatif terhadap meridian."
+    ]
+  }
+]

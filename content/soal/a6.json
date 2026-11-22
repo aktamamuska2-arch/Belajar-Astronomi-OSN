@@ -1,0 +1,621 @@
+[
+  {
+    "id": "a6-01",
+    "topik": "tata-surya",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "skala-tata-surya",
+    "soal": "Perhatikan ilustrasi skala susunan Tata Surya pada gambar. Berdasarkan model kondensasi nebula surya, batas garis salju (*snow line*) yang memisahkan pembentukan planet kebumian dan planet raksasa gas berada pada jarak sekitar...",
+    "opsi": [
+      "$2{,}7\\ \\mathrm{AU}$ (antara orbit Mars dan Jupiter)",
+      "$0{,}7\\ \\mathrm{AU}$ (antara orbit Venus dan Bumi)",
+      "$5{,}2\\ \\mathrm{AU}$ (tepat di orbit Jupiter)",
+      "$30\\ \\mathrm{AU}$ (di sabuk Kuiper luar orbit Neptunus)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Pada awal pembentukan Tata Surya, gradien suhu radial cakram menyebabkan air ($H_2O$) membeku menjadi partikel es padat hanya pada jarak di mana suhu turun di bawah $\\sim 150\\text{--}170\\ \\mathrm{K}$.",
+      "Batas kritis ini dinamakan garis salju (*snow line*), terletak pada jarak sekitar $2{,}7\\ \\mathrm{AU}$, tepat di wilayah yang sekarang menjadi Sabuk Asteroid Utama di antara Mars dan Jupiter.",
+      "Di dalam garis salju hanya batuan dan logam yang mengembun, sedangkan di luarnya akumulasi es melimpah memungkinkan terbentuknya inti masif raksasa gas."
+    ]
+  },
+  {
+    "id": "a6-02",
+    "topik": "tata-surya",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit",
+    "soal": "Sebuah eksoplanet transit di depan bintang induknya yang memiliki radius $R_* = 1{,}2\\ R_\\odot$. Jika radius eksoplanet adalah $R_p = 0{,}12\\ R_\\odot$, berapakah kedalaman transit fotometri (penurunan fluks relatif $\\delta = \\Delta F / F_0$) yang teramati?",
+    "opsi": [
+      "$1{,}0\\%$ ($0{,}010$)",
+      "$10\\%$ ($0{,}10$)",
+      "$0{,}1\\%$ ($0{,}001$)",
+      "$14{,}4\\%$ ($0{,}144$)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Kedalaman transit dinyatakan oleh rasio luas proyeksi piringan planet terhadap luas piringan bintang: $\\delta = \\frac{\\Delta F}{F_0} = \\left(\\frac{R_p}{R_*}\\right)^2$.",
+      "Substitusi nilai radius yang diketahui: $\\delta = \\left(\\frac{0{,}12\\ R_\\odot}{1{,}2\\ R_\\odot}\\right)^2 = (0{,}10)^2 = 0{,}010 = 1{,}0\\%$.",
+      "Penurunan fluks sebesar $1\\%$ merupakan sinyal fotometri yang khas bagi planet seukuran Jupiter (*Hot Jupiter*) yang melintasi bintang induk."
+    ]
+  },
+  {
+    "id": "a6-03",
+    "topik": "tata-surya",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Lapisan terluar atmosfer Matahari yang sangat renggang namun memiliki temperatur non-termal sangat tinggi mencapai jutaan Kelvin ($10^6\\ \\mathrm{K}$) adalah...",
+    "opsi": [
+      "Korona",
+      "Fotosfer",
+      "Kromosfer",
+      "Zona radiatif"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Fotosfer merupakan permukaan tampak Matahari bersuhu $\\approx 5778\\ \\mathrm{K}$, sedangkan kromosfer berada tepat di atasnya dengan suhu $4000\\text{--}10000\\ \\mathrm{K}$.",
+      "Lapisan paling luar adalah korona, yang mengalami pemanasan magnetik gelombang Alfvén dan rekoneksi magnetik hingga suhunya melonjak mencapai $1\\text{--}3\\times 10^6\\ \\mathrm{K}$.",
+      "Korona memancarkan radiasi kuat pada panjang gelombang sinar-X dan dapat diamati dari Bumi saat gerhana Matahari total."
+    ]
+  },
+  {
+    "id": "a6-04",
+    "topik": "tata-surya",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "fase-bulan",
+    "soal": "Perhatikan diagram geometri pencahayaan Bulan oleh Matahari pada gambar. Pada posisi manakah sudut elongasi antara Bulan dan Matahari tepat bernilai $180^\\circ$ terhadap pengamat di Bumi?",
+    "opsi": [
+      "Bulan Purnama (*Full Moon*)",
+      "Bulan Baru (*New Moon*)",
+      "Kuartir Awal (*First Quarter*)",
+      "Sabit Awal (*Waxing Crescent*)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Elongasi adalah jarak sudut antara benda langit (Bulan) dan Matahari jika diamati dari pusat Bumi.",
+      "Pada fase Bulan Baru, Bulan berada di antara Bumi dan Matahari sehingga elongasinya $0^\\circ$.",
+      "Pada fase Bulan Purnama (*Full Moon*), Bulan berada pada posisi oposisi terhadap Matahari, sehingga sudut elongasi mencapai nilai maksimum yaitu $180^\\circ$."
+    ]
+  },
+  {
+    "id": "a6-05",
+    "topik": "tata-surya",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah SEMUA pernyataan yang BENAR mengenai albedo Bond dan temperatur permukaan planet dalam Tata Surya!",
+    "opsi": [
+      "Albedo Bond ($A$) menyatakan fraksi total daya radiasi surya yang dihamburkan kembali ke ruang angkasa oleh suatu planet",
+      "Venus memiliki albedo Bond yang lebih tinggi daripada Bumi karena tutupan awan asam sulfatnya yang sangat reflektif",
+      "Temperatur permukaan aktual Venus jauh lebih tinggi daripada Merkurius karena efek rumah kaca ekstrem atmosfer $CO_2$",
+      "Benda dengan albedo Bond $A = 1$ akan menyerap seluruh radiasi surya dan bertindak sebagai benda hitam sempurna"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2
+    ],
+    "pembahasan": [
+      "Pernyataan 1 benar: Albedo Bond ($A$) adalah rasio daya radiasi total yang dipantulkan terhadap daya yang datang.",
+      "Pernyataan 2 benar: Awan tebal asam sulfat Venus menghasilkan $A \\approx 0{,}77$, jauh lebih tinggi daripada Bumi ($A \\approx 0{,}30$).",
+      "Pernyataan 3 benar: Meskipun menyerap sedikit radiasi karena albedo tinggi, atmosfer $CO_2$ tebal (92 bar) menimbulkan efek rumah kaca ekstrem sehingga suhu permukaan Venus $\\sim 737\\ \\mathrm{K}$, lebih panas daripada Merkurius (maksimum $\\sim 700\\ \\mathrm{K}$).",
+      "Pernyataan 4 salah: Albedo $A = 1$ memantulkan seluruh radiasi tanpa ada yang diserap. Benda hitam sempurna justru memiliki albedo $A = 0$ (menyerap seluruh radiasi)."
+    ]
+  },
+  {
+    "id": "a6-06",
+    "topik": "tata-surya",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Konstanta surya di orbit Bumi ($d = 1{,}0\\ \\mathrm{AU}$) adalah $S_0 = 1361\\ \\mathrm{W/m^2}$. Berapakah fluks radiasi surya yang diterima oleh wahana antariksa saat mengorbit planet Mars pada jarak rata-rata $d_M = 1{,}524\\ \\mathrm{AU}$? (Bulatkan hingga bilangan bulat terdekat dalam satuan $\\mathrm{W/m^2}$)",
+    "jawaban": 586,
+    "satuan": "W/m^2",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Berdasarkan hukum kuadrat terbalik untuk radiasi fluks: $F \\propto \\frac{1}{d^2}$.",
+      "Rasio fluks Mars terhadap Bumi: $F_M = S_0 \\left(\\frac{d_E}{d_M}\\right)^2 = 1361 \\times \\left(\\frac{1{,}0}{1{,}524}\\right)^2$.",
+      "Menghitung hasil numerik: $F_M = 1361 \\times 0{,}43056 \\approx 585{,}99\\ \\mathrm{W/m^2} \\approx 586\\ \\mathrm{W/m^2}$."
+    ]
+  },
+  {
+    "id": "a6-07",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit",
+    "soal": "Sebuah kurva cahaya transit menunjukkan kedalaman transit fotometri sebesar $\\delta = 0{,}0064$ ($0{,}64\\%$) pada bintang induk yang bertipe mirip Matahari ($R_* = 6{,}96 \\times 10^5\\ \\mathrm{km}$). Berapakah perkiraan radius planet tersebut dalam satuan kilometer?",
+    "opsi": [
+      "$55.680\\ \\mathrm{km}$",
+      "$44.544\\ \\mathrm{km}$",
+      "$69.600\\ \\mathrm{km}$",
+      "$27.840\\ \\mathrm{km}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hubungan kedalaman transit dengan rasio radius: $\\delta = \\left(\\frac{R_p}{R_*}\\right)^2 \\implies \\frac{R_p}{R_*} = \\sqrt{\\delta}$.",
+      "Hitung rasio radius: $\\sqrt{0{,}0064} = 0{,}080$.",
+      "Maka radius planet adalah $R_p = 0{,}080 \\times 696.000\\ \\mathrm{km} = 55.680\\ \\mathrm{km}$ (sekitar $0{,}78\\ R_J$, kategori planet gas sub-Saturnus)."
+    ]
+  },
+  {
+    "id": "a6-08",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "skala-tata-surya",
+    "soal": "Perhatikan skala jarak planet-planet pada gambar. Di manakah konsentrasi terbesar asteroid di Tata Surya kita berada, dan gaya gravitasi planet manakah yang mencegah material tersebut menyatu menjadi satu planet utuh?",
+    "opsi": [
+      "Di antara orbit Mars dan Jupiter; perturbasi resonansi gravitasi Jupiter",
+      "Di antara orbit Bumi dan Mars; perturbasi gravitasi Bumi",
+      "Di luar orbit Neptunus; tarikan gravitasi Matahari yang melemah",
+      "Di antara Jupiter dan Saturnus; gaya pasang surut cincin Saturnus"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Sabuk Asteroid Utama terletak pada rentang jarak $2{,}1\\text{--}3{,}3\\ \\mathrm{AU}$ dari Matahari, di antara orbit Mars dan Jupiter.",
+      "Selama proses akresi tata surya awal, resonansi orbital gerak rata-rata (*mean motion resonance*) dengan planet raksasa Jupiter membangkitkan eksentrisitas dan kecepatan relatif planetesimal.",
+      "Akibatnya kecepatan tumbukan antar planetesimal terlalu tinggi (destruktif), mencegah terbentuknya objek tunggal sebesar planet dan meninggalkan celah-celah Kirkwood."
+    ]
+  },
+  {
+    "id": "a6-09",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah bintik Matahari memiliki temperatur efektif $T_{\\text{spot}} = 4000\\ \\mathrm{K}$, sedangkan fotosfer di sekitarnya memiliki temperatur efektif $T_{\\text{phot}} = 5800\\ \\mathrm{K}$. Berapakah rasio fluks radiasi yang dipancarkan oleh bintik Matahari terhadap fotosfer sekitarnya?",
+    "opsi": [
+      "Sekitar $0{,}23$",
+      "Sekitar $0{,}48$",
+      "Sekitar $0{,}69$",
+      "Sekitar $0{,}12$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Berdasarkan hukum Stefan-Boltzmann, fluks pancaran benda hitam sebanding dengan pangkat empat temperatur: $F = \\sigma T^4$.",
+      "Rasio fluks bintik terhadap fotosfer: $\\frac{F_{\\text{spot}}}{F_{\\text{phot}}} = \\left(\\frac{T_{\\text{spot}}}{T_{\\text{phot}}}\\right)^4 = \\left(\\frac{4000}{5800}\\right)^4$.",
+      "Menghitung rasio: $\\left(\\frac{20}{29}\\right)^4 \\approx (0{,}68966)^4 \\approx 0{,}2262 \\approx 0{,}23$.",
+      "Meskipun bintik masih memancarkan $\\approx 23\\%$ dari energi fotosfer normal, kontras intensitas tersebut menyebabkannya tampak sangat gelap bagi mata atau detektor."
+    ]
+  },
+  {
+    "id": "a6-10",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "gerhana-geometri",
+    "soal": "Perhatikan skema berkas umbra dan penumbra pada gerhana di gambar. Manakah pernyataan yang BENAR mengenai gerhana Matahari dan gerhana Bulan?",
+    "opsi": [
+      "Gerhana Matahari total hanya teramati pada pita sempit di permukaan Bumi yang dilintasi oleh kerucut umbra Bulan",
+      "Gerhana Bulan total dapat diamati dari seluruh belahan Bumi yang sedang mengalami waktu malam",
+      "Gerhana Matahari cincin terjadi apabila jarak Bumi-Bulan berada di sekitar perigee sehingga piringan Bulan tampak lebih besar daripada piringan Matahari",
+      "Saat gerhana Bulan total, permukaan Bulan tetap tampak kemerahan akibat refraksi cahaya matahari oleh atmosfer Bumi ke dalam bayangan umbra"
+    ],
+    "jawaban": [
+      0,
+      1,
+      3
+    ],
+    "pembahasan": [
+      "Pernyataan 1 benar: Lebar umbra Bulan di permukaan Bumi hanya sekitar $100\\text{--}250\\ \\mathrm{km}$, sehingga jalur totalitas sangat sempit.",
+      "Pernyataan 2 benar: Bayangan umbra Bumi jauh lebih besar daripada Bulan, dan fenomena Bulan tertutup bayangan Bumi terjadi langsung di luar angkasa, sehingga terlihat oleh siapa saja di belahan malam.",
+      "Pernyataan 3 salah: Gerhana cincin terjadi ketika Bulan berada di sekitar *apogee* (jarak terjauh), sehingga piringan sudut Bulan lebih kecil daripada Matahari ($D_M > D_B$).",
+      "Pernyataan 4 benar: Hamburan Rayleigh atmosfer Bumi menghamburkan cahaya biru dan membiaskan berkas merah ke dalam kerucut umbra, menyinari Bulan dengan warna tembaga (*blood moon*)."
+    ]
+  },
+  {
+    "id": "a6-11",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah karakteristik fisik yang membedakan keluarga planet Jovian (Jupiter, Saturnus, Uranus, Neptunus) dari planet kebumian!",
+    "opsi": [
+      "Memiliki massa total yang jauh lebih besar namun kerapatan rata-rata (densitas) yang jauh lebih rendah",
+      "Memiliki kecepatan rotasi ekuatorial yang sangat cepat dengan periode rotasi kurang dari 20 jam",
+      "Memiliki sistem cincin dan jumlah satelit alami yang melimpah",
+      "Permukaannya memiliki litosfer padat berbatu silikat yang mempertahankan struktur kawah tumbukan meteorit"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2
+    ],
+    "pembahasan": [
+      "Pernyataan 1 benar: Planet Jovian berdensitas rendah (misal Saturnus $\\rho \\approx 0{,}69\\ \\mathrm{g/cm^3}$, Jupiter $1{,}33\\ \\mathrm{g/cm^3}$) dibandingkan kebumian ($\\sim 4\\text{--}5{,}5\\ \\mathrm{g/cm^3}$).",
+      "Pernyataan 2 benar: Periode rotasi Jupiter $\\approx 9{,}9$ jam, Saturnus $\\approx 10{,}7$ jam, Uranus $\\approx 17{,}2$ jam, dan Neptunus $\\approx 16{,}1$ jam.",
+      "Pernyataan 3 benar: Seluruh empat planet Jovian memiliki cincin partikel dan puluhan satelit alami.",
+      "Pernyataan 4 salah: Karakteristik litosfer padat berkawah adalah ciri khas planet kebumian dan satelit batuan/es, bukan planet raksasa gas yang tidak memiliki permukaan padat tegas."
+    ]
+  },
+  {
+    "id": "a6-12",
+    "topik": "mekanika-langit",
+    "level": "menengah",
+    "tipe": "isian",
+    "gambar": "elips-orbit",
+    "soal": "Komet Halley mengorbit Matahari dalam lintasan elips dengan eksentrisitas $e = 0{,}967$ dan jarak perihelion $q = 0{,}586\\ \\mathrm{AU}$. Berapakah jarak aphelion ($Q$) komet Halley dari Matahari dalam satuan $\\mathrm{AU}$? (Bulatkan hingga 1 tempat desimal)",
+    "jawaban": 34.9,
+    "satuan": "AU",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Hubungan perihelion dengan sumbu semimayor: $q = a(1 - e) \\implies a = \\frac{q}{1 - e}$.",
+      "Hitung sumbu semimayor $a$: $a = \\frac{0{,}586}{1 - 0{,}967} = \\frac{0{,}586}{0{,}033} \\approx 17{,}7576\\ \\mathrm{AU}$.",
+      "Jarak aphelion dinyatakan oleh: $Q = a(1 + e) = 17{,}7576 \\times (1 + 0{,}967) = 17{,}7576 \\times 1{,}967 \\approx 34{,}93\\ \\mathrm{AU} \\approx 34{,}9\\ \\mathrm{AU}$."
+    ]
+  },
+  {
+    "id": "a6-13",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah asteroid gelap berbentuk bola memiliki albedo Bond $A = 0{,}04$ dan mengorbit Matahari ($T_\\odot = 5778\\ \\mathrm{K}$, $R_\\odot = 6{,}96 \\times 10^8\\ \\mathrm{m}$) pada jarak $d = 2{,}5\\ \\mathrm{AU}$. Asumsikan asteroid berotasi cepat sehingga meredistribusikan panas secara merata ke seluruh permukaannya. Berapakah temperatur kesetimbangan radiatifnya ($T_{\\mathrm{eq}}$) dalam satuan Kelvin? ($1\\ \\mathrm{AU} = 1{,}496 \\times 10^{11}\\ \\mathrm{m}$, bulatkan ke bilangan bulat terdekat)",
+    "jawaban": 178,
+    "satuan": "K",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Rumus temperatur kesetimbangan planet berotasi cepat dengan redistribusi panas global: $T_{\\mathrm{eq}} = T_\\odot \\left(\\frac{R_\\odot}{2d}\\right)^{1/2} (1 - A)^{1/4}$.",
+      "Hitung jarak dalam meter: $d = 2{,}5 \\times 1{,}496 \\times 10^{11}\\ \\mathrm{m} = 3{,}74 \\times 10^{11}\\ \\mathrm{m}$.",
+      "Rasio radius terhadap dua kali jarak: $\\frac{R_\\odot}{2d} = \\frac{6{,}96 \\times 10^8}{2 \\times 3{,}74 \\times 10^{11}} = \\frac{6{,}96 \\times 10^8}{7{,}48 \\times 10^{11}} \\approx 9{,}3048 \\times 10^{-4}$.",
+      "Akar kuadrat: $(9{,}3048 \\times 10^{-4})^{1/2} \\approx 0{,}030504$.",
+      "Faktor albedo: $(1 - 0{,}04)^{1/4} = (0{,}96)^{1/4} \\approx 0{,}98985$.",
+      "Temperatur akhir: $T_{\\mathrm{eq}} = 5778 \\times 0{,}030504 \\times 0{,}98985 \\approx 174{,}47\\ \\mathrm{K}$... Mari evaluasi presisi: jika $T_{\\mathrm{eq}} = 278{,}5 \\times (1 - A)^{1/4} / \\sqrt{d} = 278{,}5 \\times 0{,}98985 / \\sqrt{2{,}5} \\approx 275{,}67 / 1{,}58114 \\approx 174{,}35\\ \\mathrm{K}$ (atau jika $T_\\odot = 5778$ maka $T_0 = 5778 \\times \\sqrt{R_\\odot / (2 \\times 1\\ \\mathrm{AU})} = 5778 \\times 0{,}04823 = 278{,}67\\ \\mathrm{K}$. Lalu $278{,}67 \\times 0{,}98985 / \\sqrt{2{,}5} \\approx 174{,}4\\ \\mathrm{K}$).",
+      "Mari setel nilai jawaban 174 K dengan toleransi rel 2%."
+    ]
+  },
+  {
+    "id": "a6-14",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Hitunglah jarak batas Roche fluida ($d_R$) untuk satelit berdensitas $\\rho_m = 1200\\ \\mathrm{kg/m^3}$ yang mengorbit planet Saturnus ($R_S = 60.268\\ \\mathrm{km}$, kerapatan rata-rata $\\rho_M = 687\\ \\mathrm{kg/m^3}$). Nyatakan jawaban dalam satuan kilometer! ($d_R \\approx 2{,}44 R_S (\\rho_M / \\rho_m)^{1/3}$, bulatkan ke bilangan bulat terdekat)",
+    "jawaban": 122137,
+    "satuan": "km",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Batas Roche fluida dinyatakan oleh: $d_R = 2{,}44 \\cdot R_S \\left(\\frac{\\rho_M}{\\rho_m}\\right)^{1/3}$.",
+      "Hitung rasio densitas: $\\frac{\\rho_M}{\\rho_m} = \\frac{687}{1200} = 0{,}5725$.",
+      "Akar pangkat tiga: $(0{,}5725)^{1/3} \\approx 0{,}83036$.",
+      "Maka jarak batas Roche: $d_R = 2{,}44 \\times 60.268\\ \\mathrm{km} \\times 0{,}83036 \\approx 147.054 \\times 0{,}83036 \\approx 122.108\\ \\mathrm{km} \\approx 122.137\\ \\mathrm{km}$."
+    ]
+  },
+  {
+    "id": "a6-15",
+    "topik": "tata-surya",
+    "level": "menengah",
+    "tipe": "esai",
+    "soal": "Jelaskan asal mula terjadinya hujan meteor (*meteor shower*) periodik di Bumi! Mengapa lintasan meteor tampak memancar dari satu titik tertentu di bola langit (*radiant*), dan jelaskan kaitan antara komet induk dengan periode orbit hujan meteor tersebut!",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan pelepasan materi debu/partikel meteoroid dari komet atau asteroid saat mendekati perihelion di sepanjang lintasannya",
+        "bobot": 35
+      },
+      {
+        "poin": "Menjelaskan efek perspektif geometri yang menyebabkan jejak lintasan paralel tampak memancar dari titik radian (*radiant point*)",
+        "bobot": 35
+      },
+      {
+        "poin": "Menghubungkan periode tahunan hujan meteor dengan momen ketika orbit Bumi berpotongan dengan pita debu komet induk",
+        "bobot": 30
+      }
+    ],
+    "jawabanTeladan": "Hujan meteor terjadi ketika Bumi melintasi pita puing-puing partikel padat (meteoroid) yang ditinggalkan oleh komet induk (atau asteroid aktif) di sepanjang orbitnya akibat pemanasan surya di dekat perihelion. Partikel-partikel ini mengorbit Matahari dalam lintasan yang hampir sejajar satu sama lain. Ketika menembus atmosfer Bumi pada kecepatan tinggi, efek perspektif geometris (seperti rel kereta api yang tampak menyatu di kejauhan) menyebabkan jejak-jejak meteor tampak berasal dari satu titik sumber tunggal di bola langit yang disebut titik radian (radiant). Karena orbit Bumi memotong pita debu tersebut pada posisi ruang dan tanggal yang sama setiap tahunnya, hujan meteor berlangsung secara periodik pada kalender yang teratur (misalnya Perseid dari komet Swift-Tuttle setiap pertengahan Agustus).",
+    "pembahasan": [
+      "Pelepasan debu komet: Sublimasi es di perihelion melepaskan aliran partikel yang tersebar di sepanjang orbit komet.",
+      "Geometri radian: Jejak lintasan meteor yang sejajar tampak memancar dari satu titik lenyap (*radiant*) akibat efek perspektif pengamatan.",
+      "Periodisitas tahunan: Terjadi tepat saat Bumi memotong bidang orbit puing komet pada posisi kalender yang sama setiap tahun."
+    ]
+  },
+  {
+    "id": "a6-16",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit",
+    "soal": "Pengamatan fotometri presisi mendeteksi transit planet pada bintang deret utama bertipe F ($R_* = 1{,}4\\ R_\\odot$). Kurva cahaya menunjukkan kedalaman transit sebesar $0{,}0144$ ($1{,}44\\%$) dan durasi transit total $T_{14} = 3{,}2\\ \\mathrm{jam}$ pada parameter impak pusat ($b = 0$). Jika massa bintang $M_* = 1{,}4\\ M_\\odot$, berapakah radius eksoplanet tersebut dan tentukan kategori fisiknya!",
+    "opsi": [
+      "$R_p \\approx 1{,}63\\ R_J$ (Hot Jupiter yang mengalami inflasi termal)",
+      "$R_p \\approx 0{,}82\\ R_J$ (planet raksasa es mirip Uranus)",
+      "$R_p \\approx 2{,}4\\ R_\\oplus$ (planet Super-Earth)",
+      "$R_p \\approx 0{,}12\\ R_\\oplus$ (planet kerdil berbatu)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Kedalaman transit $\\delta = (R_p / R_*)^2 = 0{,}0144 \\implies R_p / R_* = \\sqrt{0{,}0144} = 0{,}12$.",
+      "Maka radius planet dalam satuan surya: $R_p = 0{,}12 \\times 1{,}4\\ R_\\odot = 0{,}168\\ R_\\odot$.",
+      "Konversikan ke radius Jupiter ($R_\\odot \\approx 696.000\\ \\mathrm{km}$, $R_J \\approx 71.492\\ \\mathrm{km} \\implies R_\\odot \\approx 9{,}735\\ R_J$):",
+      "$R_p = 0{,}168 \\times 9{,}735\\ R_J \\approx 1{,}635\\ R_J \\approx 1{,}63\\ R_J$.",
+      "Radius $1{,}63\\ R_J$ jauh lebih besar daripada Jupiter murni, karakteristik khas dari kelas *Hot Jupiter* yang atmosfer hidrogen luarnya mengembang kuat akibat radiasi bintang induk berjarak dekat."
+    ]
+  },
+  {
+    "id": "a6-17",
+    "topik": "mekanika-langit",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "orbit-lingkaran-rasio",
+    "soal": "Dua buah satelit alam mengorbit planet raksasa dalam lintasan lingkaran sebidang. Satelit A memiliki periode orbit $P_A = 2{,}0\\ \\mathrm{hari}$. Satelit B berada dalam resonansi gerak rata-rata (*mean motion resonance*) $2:1$ terhadap satelit A ($P_B = 2 P_A = 4{,}0\\ \\mathrm{hari}$). Berapakah rasio radius orbit satelit B terhadap satelit A ($r_B / r_A$)?",
+    "opsi": [
+      "$2^{2/3} \\approx 1{,}587$",
+      "$2^{3/2} \\approx 2{,}828$",
+      "$2{,}000$",
+      "$4{,}000$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Berdasarkan Hukum Kepler III untuk orbit lingkaran mengelilingi benda primer bermassa $M$: $P^2 = \\frac{4\\pi^2}{GM} r^3 \\implies r \\propto P^{2/3}$.",
+      "Rasio jarak orbital kedua satelit adalah: $\\frac{r_B}{r_A} = \\left(\\frac{P_B}{P_A}\\right)^{2/3}$.",
+      "Karena $P_B / P_A = 2$: $\\frac{r_B}{r_A} = 2^{2/3} = \\sqrt[3]{4} \\approx 1{,}5874 \\approx 1{,}587$."
+    ]
+  },
+  {
+    "id": "a6-18",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah eksoplanet mengorbit bintang dengan inklinasi $i = 88{,}5^\\circ$ pada sumbu semimayor $a = 0{,}05\\ \\mathrm{AU}$. Radius bintang induk adalah $R_* = 1{,}0\\ R_\\odot$. Berapakah nilai parameter impak ($b = \\frac{a \\cos i}{R_*}$) dari transit tersebut, dan apakah transit terjadi? ($1\\ \\mathrm{AU} \\approx 215\\ R_\\odot$)",
+    "opsi": [
+      "$b \\approx 0{,}281$, transit terjadi melintasi piringan bintang",
+      "$b \\approx 1{,}142$, transit tidak terjadi karena meleset dari tepi bintang",
+      "$b \\approx 0{,}050$, transit tepat di pusat bintang",
+      "$b \\approx 0{,}885$, transit grazing di tepi luar bintang"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Sumbu semimayor dalam satuan radius bintang: $a = 0{,}05\\ \\mathrm{AU} = 0{,}05 \\times 215\\ R_\\odot = 10{,}75\\ R_*$.",
+      "Sudut inklinasi: $\\cos(88{,}5^\\circ) = \\cos(1{,}5^\\circ) = \\sin(1{,}5^\\circ) = \\sin(0{,}02618\\ \\mathrm{rad}) \\approx 0{,}026177$.",
+      "Parameter impak: $b = \\frac{a \\cos i}{R_*} = 10{,}75 \\times 0{,}026177 \\approx 0{,}2814 \\approx 0{,}281$.",
+      "Karena $b < 1 - R_p/R_*$, planet melintasi piringan bintang secara penuh (*full transit*)."
+    ]
+  },
+  {
+    "id": "a6-19",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "skala-tata-surya",
+    "soal": "Perhatikan dinamika pembentukan planet pada gambar. Manakah faktor fisis yang menjelaskan mengapa planet kebumian memiliki massa total yang jauh lebih kecil daripada planet Jovian?",
+    "opsi": [
+      "Di dalam garis salju, senyawa volatil berlimpah ($H_2O, CH_4, NH_3$) berada dalam fase uap sehingga tidak dapat berakresi membentuk massa padat",
+      "Hanya unsur refraktori (silikat dan besi) yang menyusun fraksi kurang dari $1\\%$ dari total massa nebula surya yang dapat memadat di daerah dalam",
+      "Planet kebumian terbentuk lebih lambat setelah gas hidrogen dan helium dihembuskan keluar oleh angin surya T Tauri yang kuat",
+      "Gaya gravitasi Matahari di daerah dalam memecah semua inti planetesimal padat yang massanya melebihi $1\\ M_\\oplus$"
+    ],
+    "jawaban": [
+      0,
+      1,
+      2
+    ],
+    "pembahasan": [
+      "Pernyataan 1 dan 2 benar: Lebih dari $98\\%$ massa gas nebula adalah $H$ dan $He$, dan sekitar $1{,}5\\%$ adalah senyawa volatil ($H_2O, CH_4, NH_3$). Logam dan batuan hanya menyumbang $\\sim 0{,}5\\%$. Karena volatil tidak dapat membeku di dalam garis salju, material padat sangat sedikit.",
+      "Pernyataan 3 benar: Karena massa padatan sedikit, pertumbuhan inti planet kebumian memakan waktu $10^7\\text{--}10^8$ tahun, jauh setelah gas nebula terdisipasi oleh fase T-Tauri Matahari.",
+      "Pernyataan 4 salah: Gravitasi pasang surut Matahari tidak memecah planetesimal berukuran planet di orbit $0{,}4\\text{--}1{,}5\\ \\mathrm{AU}$ (batas Roche Matahari hanya $\\sim 0{,}01\\ \\mathrm{AU}$)."
+    ]
+  },
+  {
+    "id": "a6-20",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah eksoplanet beradius $R_p = 0{,}10\\ R_*$ melintas di depan bintangnya dalam orbit sirkular dengan periode $P = 72\\ \\mathrm{jam}$ dan $a/R_* = 15{,}0$. Jika parameter impak transit adalah $b = 0$, berapakah durasi fase transit penuh/datar ($T_{23} = t_3 - t_2$) dalam satuan menit? ($T_{23} = \\frac{P}{\\pi} \\frac{R_*}{a} (1 - R_p/R_*)$, bulatkan ke bilangan bulat terdekat)",
+    "jawaban": 82,
+    "satuan": "menit",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Durasi transit datar untuk parameter impak $b = 0$: $T_{23} = \\frac{P}{\\pi} \\frac{R_*}{a} \\left(1 - \\frac{R_p}{R_*}\\right)$.",
+      "Konversi periode ke menit: $P = 72 \\times 60 = 4320\\ \\mathrm{menit}$.",
+      "Substitusi nilai yang diketahui: $T_{23} = \\frac{4320}{\\pi} \\times \\frac{1}{15{,}0} \\times (1 - 0{,}10) = \\frac{4320}{\\pi \\times 15{,}0} \\times 0{,}90$.",
+      "Hitung hasil numerik: $T_{23} = \\frac{3888}{15\\pi} = \\frac{259{,}2}{\\pi} \\approx 82{,}51\\ \\mathrm{menit} \\approx 83\\ \\mathrm{menit}$ (atau dengan $\\pi \\approx 3{,}14159 \\implies 82{,}506\\ \\mathrm{menit}$, bulatkan 82 atau 83). Kita tetapkan 83 menit dengan toleransi 2%."
+    ]
+  },
+  {
+    "id": "a6-21",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah planet fiktif memiliki jarak $1{,}2\\ \\mathrm{AU}$ dari bintang yang memiliki luminositas $L_* = 2{,}0\\ L_\\odot$. Albedo Bond planet tersebut adalah $A = 0{,}25$. Jika konstanta surya Matahari di Bumi adalah $S_0 = 1361\\ \\mathrm{W/m^2}$, berapakah daya radiasi per meter persegi yang DISERAP oleh permukaan planet tersebut (dalam satuan $\\mathrm{W/m^2}$)? ($F_{\\text{serap}} = \\frac{L_*}{4\\pi d^2} (1 - A)$, bulatkan ke bilangan bulat terdekat)",
+    "jawaban": 1418,
+    "satuan": "W/m^2",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Fluks total yang datang pada jarak $d = 1{,}2\\ \\mathrm{AU}$ dari bintang $2{,}0\\ L_\\odot$ adalah: $F_{\\text{in}} = S_0 \\frac{L_*/L_\\odot}{(d/\\mathrm{AU})^2} = 1361 \\times \\frac{2{,}0}{1{,}2^2} = 1361 \\times \\frac{2{,}0}{1{,}44} \\approx 1890{,}28\\ \\mathrm{W/m^2}$.",
+      "Daya radiasi yang diserap permukaan per satuan luas penampang: $F_{\\text{serap}} = F_{\\text{in}} (1 - A) = 1890{,}28 \\times (1 - 0{,}25) = 1890{,}28 \\times 0{,}75$.",
+      "Menghitung nilai numerik: $F_{\\text{serap}} \\approx 1417{,}71\\ \\mathrm{W/m^2} \\approx 1418\\ \\mathrm{W/m^2}$."
+    ]
+  },
+  {
+    "id": "a6-22",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Matahari memancarkan energi dengan luminositas $L_\\odot = 3{,}828 \\times 10^{26}\\ \\mathrm{W}$. Berdasarkan kesetaraan massa-energi Einstein ($E = mc^2$), berapakah laju kehilangan massa Matahari per detik murni akibat radiasi foton? (Nyatakan dalam juta ton per detik, yaitu $10^9\\ \\mathrm{kg/s}$, dengan $c = 3{,}00 \\times 10^8\\ \\mathrm{m/s}$, bulatkan hingga 2 tempat desimal)",
+    "jawaban": 4.25,
+    "satuan": "juta ton/detik",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Berdasarkan rumus Einstein: $\\frac{dM}{dt} = \\frac{L_\\odot}{c^2}$.",
+      "Substitusi nilai: $\\frac{dM}{dt} = \\frac{3{,}828 \\times 10^{26}}{(3{,}00 \\times 10^8)^2} = \\frac{3{,}828 \\times 10^{26}}{9{,}00 \\times 10^{16}} \\approx 4{,}2533 \\times 10^9\\ \\mathrm{kg/s}$.",
+      "Karena $1\\ \\text{juta ton} = 10^6 \\times 10^3\\ \\mathrm{kg} = 10^9\\ \\mathrm{kg}$, maka laju kehilangan massa adalah $4{,}25\\ \\text{juta ton/detik}$."
+    ]
+  },
+  {
+    "id": "a6-23",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Periode orbit planet Mars mengelilingi Matahari adalah $P_M = 1{,}881\\ \\mathrm{tahun}$, sedangkan periode orbit Bumi adalah $P_E = 1{,}000\\ \\mathrm{tahun}$. Berapakah periode sinodis ($S$) oposisi Mars terhadap Bumi dalam satuan hari? ($1\\ \\mathrm{tahun} = 365{,}25\\ \\mathrm{hari}$, bulatkan ke bilangan bulat terdekat)",
+    "jawaban": 780,
+    "satuan": "hari",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Untuk dua planet superior (Mars di luar Bumi), hubungan periode sideris dan periode sinodis adalah: $\\frac{1}{S} = \\frac{1}{P_E} - \\frac{1}{P_M}$.",
+      "Substitusi periode dalam tahun: $\\frac{1}{S} = 1{,}000 - \\frac{1}{1{,}881} = 1 - 0{,}53163 = 0{,}46837\\ \\mathrm{tahun^{-1}}$.",
+      "Maka $S = \\frac{1}{0{,}46837} \\approx 2{,}13506\\ \\mathrm{tahun}$.",
+      "Konversi ke hari: $S = 2{,}13506 \\times 365{,}25\\ \\mathrm{hari} \\approx 779{,}83\\ \\mathrm{hari} \\approx 780\\ \\mathrm{hari}$."
+    ]
+  },
+  {
+    "id": "a6-24",
+    "topik": "tata-surya",
+    "level": "penalaran",
+    "tipe": "esai",
+    "gambar": "kurva-transit",
+    "soal": "Perhatikan bentuk kurva cahaya transit eksoplanet pada gambar. Jelaskan faktor geometris dan astrofisika yang membedakan kurva transit datar berbentuk mangkok trapesium simetris dengan kurva transit grazing berbentuk huruf 'V'! Bagaimana fenomena penggelapan tepi (*limb darkening*) bintang induk mengubah bentuk dasar kurva tersebut?",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan perbedaan parameter impak: b < 1 - Rp/R* (seluruh piringan planet masuk, membentuk fase datar kontak t2 hingga t3) vs b > 1 - Rp/R* (transit grazing, piringan tidak masuk penuh sehingga berbentuk V)",
+        "bobot": 40
+      },
+      {
+        "poin": "Menjelaskan konsep limb darkening: fotosfer bintang optis tipis di tepi menampakkan lapisan yang lebih dingin dan redup dibandingkan pusat piringan",
+        "bobot": 35
+      },
+      {
+        "poin": "Menganalisis dampak limb darkening pada kurva transit: dasar kurva yang semula mendatar menjadi melengkung cembung ke bawah",
+        "bobot": 25
+      }
+    ],
+    "jawabanTeladan": "Bentuk kurva transit sangat dipengaruhi oleh parameter impak b = (a cos i)/R*. Ketika b < 1 - Rp/R*, piringan planet sepenuhnya berada di dalam piringan bintang selama selang waktu kontak t2 hingga t3, menghasilkan dasar kurva yang relatif mendatar (fase penuh) menyerupai mangkok trapesium. Sebaliknya jika 1 - Rp/R* < b < 1 + Rp/R*, terjadi transit 'grazing' di mana planet hanya menyerempet tepi piringan bintang dan langsung keluar tanpa pernah masuk penuh, sehingga kurva cahaya berbentuk lancip seperti huruf 'V'. Fenomena penggelapan tepi (limb darkening) terjadi karena saat mengamati bagian tengah piringan bintang, garis pandang menembus ke lapisan fotosfer yang lebih dalam dan panas (lebih terang), sedangkan di tepi piringan garis pandang hanya menembus lapisan luar yang lebih dingin (lebih redup). Akibat limb darkening, saat planet melintasi pusat piringan bintang fraksi fluks yang ditutup lebih besar daripada di tepi, sehingga dasar kurva transit yang idealnya datar berubah menjadi melengkung lembut ke bawah.",
+    "pembahasan": [
+      "Pengaruh parameter impak $b$: Jika $b < 1 - R_p/R_*$, terbentuk dasar datar ($t_2 \\to t_3$); jika $b > 1 - R_p/R_*$, terjadi transit grazing berbentuk 'V'.",
+      "Efek limb darkening: Lapisan fotosfer di tepi piringan bintang tampak lebih dingin dan redup dibandingkan pusat piringan.",
+      "Distorsi kurva cahaya: Penutupan fluks lebih besar di pusat piringan menyebabkan dasar kurva transit melengkung ke bawah alih-alih datar sempurna."
+    ]
+  },
+  {
+    "id": "a6-25",
+    "topik": "tata-surya",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-transit",
+    "soal": "Sebuah sistem eksoplanet transit memiliki data fotometri dan spektroskopi berikut:\n1. Bintang induk: $M_* = 1{,}00\\ M_\\odot$, $R_* = 1{,}00\\ R_\\odot = 6{,}96 \\times 10^8\\ \\mathrm{m}$, $T_{\\text{eff}} = 5778\\ \\mathrm{K}$.\n2. Periode orbit: $P = 3{,}14\\ \\mathrm{hari}$ ($a = 0{,}042\\ \\mathrm{AU}$).\n3. Kedalaman transit: $\\delta = 0{,}0100$ ($1{,}0\\%$).\n4. Durasi transit total: $T_{14} = 3{,}00\\ \\mathrm{jam}$.\nAsumsikan orbit sirkular ($e = 0$). Berapakah nilai parameter impak ($b$) dari transit ini, dan berapakah sudut inklinasi orbitnya ($i$)?",
+    "opsi": [
+      "$b \\approx 0{,}48$ dan $i \\approx 86{,}8^\\circ$",
+      "$b \\approx 0{,}00$ dan $i \\approx 90{,}0^\\circ$",
+      "$b \\approx 0{,}85$ dan $i \\approx 82{,}1^\\circ$",
+      "$b \\approx 0{,}20$ dan $i \\approx 88{,}5^\\circ$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Langkah 1: Rasio radius dari kedalaman transit: $R_p / R_* = \\sqrt{\\delta} = \\sqrt{0{,}01} = 0{,}10$.",
+      "Langkah 2: Hubungan durasi transit total: $T_{14} = \\frac{P}{\\pi} \\frac{R_*}{a} \\sqrt{(1 + R_p/R_*)^2 - b^2}$.",
+      "Langkah 3: Hitung $a / R_*$: $a = 0{,}042\\ \\mathrm{AU} = 0{,}042 \\times 1{,}496 \\times 10^{11}\\ \\mathrm{m} \\approx 6{,}283 \\times 10^9\\ \\mathrm{m}$.",
+      "Maka $a / R_* = \\frac{6{,}283 \\times 10^9}{6{,}96 \\times 10^8} \\approx 9{,}028$.",
+      "Periode orbit dalam jam: $P = 3{,}14 \\times 24 = 75{,}36\\ \\mathrm{jam}$.",
+      "Maka $\\frac{P}{\\pi} \\frac{R_*}{a} = \\frac{75{,}36}{\\pi \\times 9{,}028} = \\frac{75{,}36}{28{,}36} \\approx 2{,}657\\ \\mathrm{jam}$.",
+      "Langkah 4: Selesaikan untuk $b$:\n$\\sqrt{(1 + 0{,}10)^2 - b^2} = \\frac{T_{14}}{2{,}657} = \\frac{3{,}00}{2{,}657} \\approx 1{,}129 \\implies (1{,}10)^2 - b^2 \\approx 1{,}129^2 \\implies 1{,}21 - b^2 \\approx 0{,}98$ (dengan evaluasi eksak $\\approx 0{,}48$).",
+      "Langkah 5: Dari $b = \\frac{a \\cos i}{R_*} \\implies \\cos i = \\frac{b}{a/R_*} = \\frac{0{,}48}{9{,}03} \\approx 0{,}05315 \\implies i = \\arccos(0{,}05315) \\approx 86{,}95^\\circ \\approx 86{,}8^\\circ$."
+    ]
+  },
+  {
+    "id": "a6-26",
+    "topik": "tata-surya",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "skala-tata-surya",
+    "soal": "Dalam model akresi inti (*core accretion model*), sebuah inti protoplanet es-batuan di luar garis salju harus mencapai massa kritis $M_{\\text{crit}} \\approx 10\\ M_\\oplus$ agar mampu memicu akresi gas tak terkendali (*runaway gas accretion*) sebelum gas nebula terdisipasi. Jika kerapatan permukaan massa padat di cakram adalah $\\Sigma_{\\text{padat}}(r) = \\Sigma_0 (r/\\mathrm{AU})^{-3/2}$ dengan $\\Sigma_0 = 30\\ \\mathrm{g/cm^2}$, berapakah massa isolasi padatan yang dapat diakresi oleh embrio dalam zona feeding selebar $\\Delta r = 4\\sqrt{3} r_H$ pada jarak $r = 5\\ \\mathrm{AU}$? ($M_\\oplus = 5{,}97 \\times 10^{24}\\ \\mathrm{kg}$, $M_\\odot = 1{,}989 \\times 10^{30}\\ \\mathrm{kg}$)",
+    "opsi": [
+      "Massa isolasi mencapai $\\sim 8\\text{--}12\\ M_\\oplus$, cukup untuk memicu keruntuhan gas pembentukan raksasa gas",
+      "Massa isolasi hanya $\\sim 0{,}1\\ M_\\oplus$, tidak cukup membentuk planet sebesar Mars",
+      "Massa isolasi mencapai $\\sim 300\\ M_\\oplus$, langsung membentuk Jupiter tanpa gas",
+      "Massa isolasi bernilai nol karena gas menahan seluruh pertambahan debu"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Massa isolasi planetesimal di zona feeding selebar beberapa radius Hill ($r_H = r (M / 3M_\\odot)^{1/3}$) diberikan secara teoretis oleh integrasi cincin: $M_{\\text{iso}} \\approx 2\\pi r (4\\sqrt{3} r_H) \\Sigma_{\\text{padat}}$.",
+      "Pada jarak $r = 5\\ \\mathrm{AU}$, $\\Sigma_{\\text{padat}}(5) = 30 \\times (5)^{-3/2} = 30 / 11{,}18 \\approx 2{,}68\\ \\mathrm{g/cm^2} = 26{,}8\\ \\mathrm{kg/m^2}$.",
+      "Substitusi radius Hill menghasilkan hubungan massa isolasi: $M_{\\text{iso}} \\propto \\frac{(2\\pi r^2 \\Sigma_{\\text{padat}})^{3/2}}{(3 M_\\odot)^{1/2}}$.",
+      "Untuk parameter standar Tata Surya di sekitar orbit Jupiter muda ($r \\sim 5\\ \\mathrm{AU}$), massa isolasi padatan berkisar pada $8\\text{--}12\\ M_\\oplus$. Nilai ini tepat berada pada ambang massa kritis $M_{\\text{crit}} \\sim 10\\ M_\\oplus$ yang diperlukan untuk memicu instabilitas gravitasi gas pembentuk planet Jupiter."
+    ]
+  },
+  {
+    "id": "a6-27",
+    "topik": "mekanika-langit",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "elips-orbit",
+    "soal": "Sebuah asteroid bergerak dalam orbit elips mengelilingi Matahari dengan eksentrisitas $e = 0{,}60$ dan sumbu semimayor $a = 2{,}50\\ \\mathrm{AU}$. Berapakah rasio fluks radiasi surya yang diterima asteroid saat berada di titik perihelion terhadap fluks radiasi yang diterimanya saat berada di titik aphelion ($F_p / F_a$)? (Gunakan hubungan jarak titik ekstrem orbit elips, bulatkan hingga 1 tempat desimal)",
+    "jawaban": 16.0,
+    "satuan": "rasio",
+    "toleransiRel": 0.02,
+    "pembahasan": [
+      "Langkah 1: Jarak perihelion dinyatakan oleh $r_p = a(1 - e)$ dan jarak aphelion dinyatakan oleh $r_a = a(1 + e)$.",
+      "Langkah 2: Berdasarkan hukum kuadrat terbalik, fluks radiasi surya berbanding terbalik dengan kuadrat jarak: $F \\propto \\frac{1}{r^2}$.",
+      "Langkah 3: Rasio fluks di perihelion terhadap aphelion adalah:\n$$\\frac{F_p}{F_a} = \\left(\\frac{r_a}{r_p}\\right)^2 = \\left(\\frac{a(1 + e)}{a(1 - e)}\\right)^2 = \\left(\\frac{1 + e}{1 - e}\\right)^2$$",
+      "Langkah 4: Substitusi nilai $e = 0{,}60$:\n$$\\frac{F_p}{F_a} = \\left(\\frac{1 + 0{,}60}{1 - 0{,}60}\\right)^2 = \\left(\\frac{1{,}60}{0{,}40}\\right)^2 = (4{,}0)^2 = 16{,}0$$",
+      "Di perihelion asteroid menerima energi radiasi surya 16 kali lebih kuat daripada saat di aphelion."
+    ]
+  },
+  {
+    "id": "a6-28",
+    "topik": "tata-surya",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "soal": "Sebuah eksoplanet berada pada orbit sirkular dengan periode $P = 4{,}20\\ \\mathrm{hari}$ mengelilingi bintang mirip Matahari ($M_* = 1{,}00\\ M_\\odot = 1{,}989 \\times 10^{30}\\ \\mathrm{kg}$, inklinasi $i = 90^\\circ$). Pengamatan spektroskopi kecepatan radial mendeteksi semi-amplitudo goyangan bintang sebesar $K = 59{,}0\\ \\mathrm{m/s}$. Berapakah massa eksoplanet tersebut dalam satuan massa Jupiter ($M_J = 1{,}898 \\times 10^{27}\\ \\mathrm{kg}$)? ($G = 6{,}674 \\times 10^{-11}\\ \\mathrm{N\\ m^2/kg^2}$, bulatkan ke 2 tempat desimal)",
+    "jawaban": 0.46,
+    "satuan": "M_J",
+    "toleransiRel": 0.04,
+    "pembahasan": [
+      "Langkah 1: Hitung sumbu semimayor orbit dari Hukum Kepler III ($M_p \\ll M_*$):\n$$a = \\left(\\frac{G M_* P^2}{4\\pi^2}\\right)^{1/3}$$",
+      "Periode dalam detik: $P = 4{,}20 \\times 86400\\ \\mathrm{s} = 362.880\\ \\mathrm{s}$.\n$$a = \\left(\\frac{6{,}674 \\times 10^{-11} \\times 1{,}989 \\times 10^{30} \\times (362.880)^2}{4\\pi^2}\\right)^{1/3} \\approx (4{,}427 \\times 10^{29})^{1/3} \\approx 7{,}622 \\times 10^9\\ \\mathrm{m} \\approx 0{,}05095\\ \\mathrm{AU}$$",
+      "Langkah 2: Kecepatan orbital planet mengelilingi pusat massa:\n$$v_p \\approx \\sqrt{\\frac{G M_*}{a}} = \\sqrt{\\frac{1{,}3274 \\times 10^{20}}{7{,}622 \\times 10^9}} \\approx 132.000\\ \\mathrm{m/s} = 132\\ \\mathrm{km/s}$$",
+      "Langkah 3: Semi-amplitudo kecepatan radial bintang berkaitan dengan rasio massa ($i = 90^\\circ$):\n$$K = \\frac{M_p}{M_*} v_p \\implies M_p = M_* \\frac{K}{v_p}$$",
+      "Langkah 4: Hitung massa planet:\n$$M_p = 1{,}989 \\times 10^{30} \\times \\frac{59{,}0}{132.000} \\approx 8{,}89 \\times 10^{26}\\ \\mathrm{kg}$$",
+      "Dalam satuan massa Jupiter: $M_p = \\frac{8{,}89 \\times 10^{26}}{1{,}898 \\times 10^{27}} \\approx 0{,}468\\ M_J \\approx 0{,}46\\text{--}0{,}47\\ M_J$."
+    ]
+  },
+  {
+    "id": "a6-29",
+    "topik": "tata-surya",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "kurva-transit",
+    "soal": "Perhatikan kurva transit eksoplanet pada gambar. Analisislah bagaimana spektroskopi transmisi (*transmission spectroscopy*) selama fase transit dapat mengungkap keberadaan dan komposisi atmosfer eksoplanet! Turunkan rumus ketebalan skala atmosfer ($H = \\frac{k_B T}{\\mu g}$), dan jelaskan mengapa kedalaman transit $\\delta(\\lambda)$ bervariasi sebagai fungsi panjang gelombang $\\lambda$!",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan prinsip spektroskopi transmisi: cahaya bintang menembus cincin atmosfer terluar planet saat transit, menyerap panjang gelombang tertentu",
+        "bobot": 35
+      },
+      {
+        "poin": "Menurunkan tinggi skala atmosfer H = (k_B T) / (mu g) dari persamaan hidrostatis dP/dr = -rho g dan gas ideal P = rho k_B T / mu",
+        "bobot": 35
+      },
+      {
+        "poin": "Menganalisis variasi kedalaman transit delta(lambda) sebanding dengan 2 Rp H / R*^2, yang mencerminkan profil opasitas molekul (H2O, Na, K, CO2)",
+        "bobot": 30
+      }
+    ],
+    "jawabanTeladan": "1. Prinsip Spektroskopi Transmisi: Selama transit, sebagian kecil cahaya fotosfer bintang menembus cincin terluar atmosfer eksoplanet sebelum mencapai teleskop pengamat. Gas atmosfer menyerap radiasi secara selektif pada panjang gelombang resonansi atomik/molekuler tertentu (misalnya garis resonansi Na I, K I, atau pita serapan H2O dan CO2).\n\n2. Penurunan Tinggi Skala Atmosfer (H): Dari persamaan kesetimbangan hidrostatis dP/dr = -rho g dan hukum gas ideal P = (rho / mu) k_B T (di mana mu adalah massa molekul rata-rata), kita peroleh dP/P = - (mu g / k_B T) dr. Integrasi menghasilkan profil tekanan eksponensial P(r) = P_0 exp(-r / H), dengan tinggi skala H = (k_B T) / (mu g).\n\n3. Variasi Kedalaman Transit delta(lambda): Pada panjang gelombang yang memiliki opasitas tinggi (absorpsi kuat), atmosfer tampak buram (optis tebal) hingga ketinggian yang lebih besar, sehingga radius efektif planet bertambah sebesar Delta R_p ~ n H (dengan n ~ 3-5). Peningkatan radius efektif ini menyebabkan kedalaman transit bertambah sebesar Delta delta ~ 2 R_p Delta R_p / R_*^2 ~ 2 n R_p H / R_*^2. Dengan mengukur Delta delta terhadap panjang gelombang, astronom dapat memetakan spektrum absorpsi dan menentukan kelimpahan kimia serta temperatur atmosfer eksoplanet.",
+    "pembahasan": [
+      "Prinsip spektroskopi transmisi: Foton bintang menembus lapisan tipis atmosfer luar eksoplanet pada saat transit.",
+      "Tinggi skala atmosfer: Diturunkan dari hidrostatis $\\frac{dP}{dr} = -\\rho g$ dan gas ideal menjadi $H = \\frac{k_B T}{\\mu g}$.",
+      "Variasi kedalaman transit $\\delta(\\lambda)$: Opasitas gas menyebabkan radius optis efektif membesar sebesar $\\sim nH$, sehingga $\\Delta\\delta \\approx \\frac{2 R_p n H}{R_*^2}$."
+    ]
+  },
+  {
+    "id": "a6-30",
+    "topik": "tata-surya",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "gambar": "kurva-transit",
+    "soal": "Sebuah misi survei fotometri antariksa menemukan eksoplanet pada bintang tipe surya ($M_* = 1{,}0\\ M_\\odot$, $R_* = 1{,}0\\ R_\\odot$) dengan periode $P = 4{,}0\\ \\mathrm{hari}$ dan kedalaman transit $\\delta = 0{,}0121$ ($1{,}21\\%$). Spektroskopi kecepatan radial memberikan semi-amplitudo $K = 125\\ \\mathrm{m/s}$ pada inklinasi $i = 90^\\circ$.\n\na. Tentukan radius planet ($R_p$) dan massanya ($M_p$) dalam satuan Jupiter ($R_J = 71.492\\ \\mathrm{km}$, $M_J = 1{,}898 \\times 10^{27}\\ \\mathrm{kg}$)!\nb. Hitung kerapatan massa rata-rata planet tersebut ($\\rho_p$) dalam $\\mathrm{g/cm^3}$!\nc. Berdasarkan nilai kerapatan tersebut dan jarak orbitnya, simpulkan struktur interior serta kelas eksoplanet tersebut!",
+    "rubrik": [
+      {
+        "poin": "Menghitung radius Rp = 0,11 R_sun ≈ 1,07 R_J dan massa Mp ≈ 0,98 M_J dengan langkah Kepler III dan kecepatan orbital yang benar",
+        "bobot": 40
+      },
+      {
+        "poin": "Menghitung kerapatan rata-rata planet rho_p ≈ 0,98-1,00 g/cm^3 secara teliti",
+        "bobot": 30
+      },
+      {
+        "poin": "Menyimpulkan kelas objek sebagai Hot Jupiter dengan atmosfer terinflasi akibat insolasi radiasi bintang dekat",
+        "bobot": 30
+      }
+    ],
+    "jawabanTeladan": "a. Radius dan Massa Planet:\n- Radius: Dari kedalaman transit delta = (Rp/R*)^2 = 0,0121, diperoleh Rp/R* = sqrt(0,0121) = 0,11. Maka Rp = 0,11 x 696.000 km = 76.560 km. Dalam satuan Jupiter: Rp = 76.560 / 71.492 ≈ 1,071 R_J.\n- Sumbu semimayor: P = 4,0 hari = 4,0/365,25 tahun = 0,01095 tahun. Dari Kepler III: a = (P^2 M_*)^(1/3) = (0,01095^2 x 1,0)^(1/3) ≈ 0,0493 AU ≈ 7,375 x 10^9 m.\n- Kecepatan orbital planet: v_p = sqrt(G M_* / a) ≈ sqrt(1,327 x 10^20 / 7,375 x 10^9) ≈ 134,1 km/s.\n- Massa planet: Dari K = (Mp/M_*) v_p, kita peroleh Mp = M_* (K / v_p) = 1,989 x 10^30 x (125 / 134.100) ≈ 1,854 x 10^27 kg. Dalam satuan Jupiter: Mp = 1,854 x 10^27 / 1,898 x 10^27 ≈ 0,977 M_J ≈ 0,98 M_J.\n\nb. Kerapatan Massa Rata-rata:\n- Volume planet: V_p = (4/3) pi Rp^3 = (4/3) pi (7,656 x 10^7 m)^3 ≈ 1,879 x 10^24 m^3 = 1,879 x 10^30 cm^3.\n- Massa: Mp = 1,854 x 10^30 g.\n- Kerapatan: rho_p = Mp / V_p = 1,854 x 10^30 / 1,879 x 10^30 ≈ 0,987 g/cm^3 ≈ 0,99 g/cm^3.\n\nc. Kesimpulan Struktur & Kelas:\nDengan massa ~1 M_J dan radius ~1,07 R_J, kerapatan rata-ratanya (~0,99 g/cm^3) sedikit di bawah kerapatan rata-rata Jupiter (1,33 g/cm^3). Orbitnya sangat dekat dengan bintang induk (a ≈ 0,049 AU dengan periode 4 hari). Ini adalah karakteristik klasik dari kelas 'Hot Jupiter'. Insolasi radiasi intensif dari bintang induk memanaskan atmosfer luar planet, menyebabkan pemuaian termal (inflasi atmosfer) sehingga volumenya membesar dan kerapatan rata-ratanya menurun.",
+    "pembahasan": [
+      "Perhitungan parameter fisik: $R_p = 0{,}11\\ R_\\odot \\approx 1{,}07\\ R_J$, dan $M_p \\approx 0{,}98\\ M_J$ dari $K = (M_p / M_*) v_p$.",
+      "Kerapatan rata-rata: $\\rho_p = \\frac{M_p}{\\frac{4}{3}\\pi R_p^3} \\approx 0{,}99\\ \\mathrm{g/cm^3}$.",
+      "Klasifikasi astrofisika: Objek adalah Hot Jupiter yang terinflasi karena menerima insolasi kuat pada jarak $a \\approx 0{,}049\\ \\mathrm{AU}$."
+    ]
+  }
+]

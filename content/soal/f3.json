@@ -1,0 +1,418 @@
+[
+  {
+    "id": "f3-01",
+    "topik": "kalkulus",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Posisi sebuah benda mengikuti s = 4t³ meter, dengan t dalam sekon. Berapa kecepatannya pada t = 2 s?",
+    "opsi": [
+      "48 m/s",
+      "24 m/s",
+      "96 m/s",
+      "32 m/s"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Kecepatan adalah turunan posisi: v = ds/dt.",
+      "Turunkan 4t³: v = 12t².",
+      "Pada t = 2 s: v = 12 × 4 = 48 m/s.",
+      "Periksa dimensi: t³ memiliki satuan s³, dikali koefisien 4 m/s³, lalu diturunkan menjadi m/s² × s = m/s. Konsisten."
+    ]
+  },
+  {
+    "id": "f3-02",
+    "topik": "kalkulus",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Kecepatan sebuah benda bertambah mengikuti v = 3t m/s. Berapa perpindahannya dari t = 0 sampai t = 4 s?",
+    "opsi": [
+      "24 m",
+      "12 m",
+      "48 m",
+      "6 m"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Perpindahan adalah integral kecepatan: Δs = ∫3t dt = 1,5t².",
+      "Evaluasi dari 0 sampai 4 s: 1,5 × 16 = 24 m.",
+      "Cek dengan luas: daerah di bawah garis v = 3t berbentuk segitiga dengan alas 4 s dan tinggi 12 m/s, luas ½ × 4 × 12 = 24 m."
+    ]
+  },
+  {
+    "id": "f3-03",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Hukum Kepler ketiga menyatakan T² ∝ a³. Pada grafik log T terhadap log a, berapa kemiringan garis lurusnya?",
+    "opsi": [
+      "1,5",
+      "2",
+      "3",
+      "0,67"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Ambil logaritma: 2 log T = 3 log a + konstan, sehingga log T = 1,5 log a + konstan.",
+      "Bentuk y = mx + c menunjukkan kemiringan m = 1,5.",
+      "Jadi T ∝ a^(3/2), bukan T ∝ a³ — pangkat pada T yang dibagi dua."
+    ]
+  },
+  {
+    "id": "f3-04",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Fluks bintang berbanding terbalik dengan kuadrat jarak, F ∝ 1/d². Jika jarak terukur memiliki ketidakpastian 5%, berapa perkiraan ketidakpastian fluksnya?",
+    "opsi": [
+      "10%",
+      "5%",
+      "2,5%",
+      "25%"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Untuk pangkat, galat relatif dikalikan nilai pangkat: ΔF/F = |−2| × Δd/d.",
+      "ΔF/F = 2 × 5% = 10%.",
+      "Tafsirkan: jarak adalah besaran yang sangat menentukan fluks. Kesalahan 5% pada jarak menjadi 10% pada fluks, sehingga jarak harus diukur lebih teliti daripada fluks yang diinginkan."
+    ]
+  },
+  {
+    "id": "f3-05",
+    "topik": "kalkulus",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang hubungan posisi, kecepatan, percepatan, dan grafiknya.",
+    "opsi": [
+      "Turunan posisi terhadap waktu adalah kecepatan",
+      "Turunan kecepatan terhadap waktu adalah percepatan",
+      "Luas di bawah kurva kecepatan–waktu adalah perpindahan",
+      "Turunan percepatan terhadap waktu adalah kecepatan",
+      "Integral posisi terhadap waktu menghasilkan percepatan"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Definisi kecepatan: v = ds/dt.",
+      "Definisi percepatan: a = dv/dt.",
+      "Perpindahan adalah akumulasi kecepatan: Δs = ∫v dt, yaitu luas di bawah kurva v–t.",
+      "Turunan percepatan disebut sentakan (jerk), bukan kecepatan.",
+      "Integral posisi terhadap waktu memiliki satuan m·s, bukan m/s² — bukan percepatan."
+    ]
+  },
+  {
+    "id": "f3-06",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang statistik dan galat pengukuran.",
+    "opsi": [
+      "Simpangan baku sampel membagi jumlah kuadrat selisih dengan n − 1",
+      "Menambahkan konstanta yang sama ke semua data tidak mengubah simpangan baku",
+      "Galat acak pada rata-rata berkurang sebanding 1/√n",
+      "Merata-ratakan banyak pengukuran menghilangkan galat sistematis",
+      "Simpangan baku selalu sama dengan galat baku rata-rata"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pembagi n − 1 memberi estimasi tak bias varians populasi dari sampel.",
+      "Pergeseran tetap mengubah rata-rata, tetapi jarak antar-data tetap — simpangan baku tidak berubah.",
+      "Galat baku rata-rata s/√n: empat kali lebih banyak data menurunkan galat acak menjadi separuh.",
+      "Galat sistematis bergeser satu arah; merata-ratakan justru mengunci nilai yang salah dengan keyakinan tinggi.",
+      "Galat baku rata-rata adalah s/√n, lebih kecil dari simpangan baku sampel kecuali n = 1."
+    ]
+  },
+  {
+    "id": "f3-07",
+    "topik": "analisis-data",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Lima pengukuran kecepatan radial sebuah bintang: 10,0; 10,2; 9,8; 10,1; 9,9 km/s. Berapa rata-ratanya, dalam km/s?",
+    "jawaban": 10,
+    "toleransiRel": 0.01,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Jumlahkan: 10,0 + 10,2 + 9,8 + 10,1 + 9,9 = 50,0 km/s.",
+      "Bagi dengan n = 5: 50,0/5 = 10,0 km/s.",
+      "Perhatikan bahwa data simetris di sekitar 10,0 — jumlah simpangan positif sama dengan jumlah simpangan negatif."
+    ]
+  },
+  {
+    "id": "f3-08",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Lima pengukuran kecepatan: 2; 4; 4; 4; 6 m/s. Berapa simpangan baku sampelnya, dalam m/s?",
+    "jawaban": 1.41,
+    "toleransiRel": 0.02,
+    "satuan": "m/s",
+    "pembahasan": [
+      "Rata-rata: (2 + 4 + 4 + 4 + 6)/5 = 4 m/s.",
+      "Selisih: −2; 0; 0; 0; +2. Jumlah kuadrat = 4 + 0 + 0 + 0 + 4 = 8.",
+      "Simpangan baku sampel: s = √(8/4) = √2 ≈ 1,41 m/s.",
+      "Galat baku rata-rata = 1,41/√5 ≈ 0,63 m/s — jauh lebih kecil dari sebaran satu pengukuran."
+    ]
+  },
+  {
+    "id": "f3-09",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Kedalaman transit sebuah eksoplanet adalah 1% dari fluks bintang, sehingga (R_p/R★)² = 0,01. Jika jari-jari bintang 6,96 × 10⁸ m, berapa jari-jari planet dalam km?",
+    "jawaban": 69600,
+    "toleransiRel": 0.02,
+    "satuan": "km",
+    "pembahasan": [
+      "Akar kuadrat kedalaman transit: R_p/R★ = √0,01 = 0,1.",
+      "Jari-jari planet: 0,1 × 6,96 × 10⁸ = 6,96 × 10⁷ m.",
+      "Ubah ke km: 6,96 × 10⁷ m = 69.600 km, sekitar 11 kali jari-jari Bumi — seukuran planet raksasa gas.",
+      "Periksa arah: planet yang lebih kecil memberi transit lebih dangkal karena kedalaman sebanding kuadrat rasio jari-jari."
+    ]
+  },
+  {
+    "id": "f3-10",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Seorang siswa mengukur magnitudo bintang berulang kali. Jelaskan mengapa pengulangan menurunkan galat acak tetapi tidak menghilangkan galat sistematis, lalu jelaskan mengapa grafik log–log dipakai untuk menguji hukum pangkat seperti hukum Kepler.",
+    "rubrik": [
+      {
+        "poin": "Membedakan galat acak (tersebar dua arah, berkurang saat dirata-ratakan sebanding 1/√n) dan galat sistematis (bergeser satu arah karena kalibrasi atau bias, tidak hilang dengan pengulangan).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyebut rumus galat baku rata-rata s/√n dan menafsirkan bahwa 4 kali lebih banyak data menurunkan galat acak menjadi separuh, bukan seperempat.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan linearisasi hukum pangkat y = kx^n menjadi log y = n log x + log k, sehingga kemiringan grafik log–log langsung memberi pangkat n.",
+        "bobot": 1
+      },
+      {
+        "poin": "Memberi contoh penerapan, misalnya T² ∝ a³ memberi kemiringan 1,5 pada grafik log T terhadap log a, atau modulus jarak linear terhadap jarak dalam skala logaritmik.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Galat acak berasal dari fluktuasi yang tidak terkendali — getaran udara, derau detektor, perubahan seeing. Karena arahnya acak, rata-rata dari banyak pengukuran mendekati nilai sebenarnya, dan galat baku rata-rata mengecil sebanding 1/√n: empat kali lebih banyak pengukuran hanya menurunkan galat menjadi separuh. Galat sistematis berbeda: kalibrasi yang salah, bias warna, atau kesalahan nol alat menggeser semua pengukuran ke arah yang sama. Merata-ratakan data seperti ini justru menghasilkan angka yang sangat presisi tetapi tetap salah — presisi tinggi bukan jaminan akurasi. Karena itu astronom mengkalibrasi alat dan membandingkan dengan standar, bukan hanya menambah jumlah pengukuran. Untuk menguji hukum pangkat y = kx^n, kedua ruas dilogaritmakan: log y = n log x + log k. Pada grafik log y terhadap log x, data seharusnya membentuk garis lurus dengan kemiringan n. Contohnya hukum Kepler T² ∝ a³ menjadi kemiringan 1,5 pada grafik log T terhadap log a. Penyimpangan dari garis lurus menunjukkan kesalahan data atau fisika tambahan, sehingga linearisasi sekaligus menjadi alat diagnosis.",
+    "pembahasan": [
+      "Inti pembeda: galat acak simetris dan mengecil dengan 1/√n, sedangkan galat sistematis bergeser satu arah dan tidak hilang dengan pengulangan.",
+      "Kutip galat baku rata-rata s/√n dan tafsirkan konsekuensinya untuk jumlah eksposur atau jumlah pengukuran.",
+      "Jelaskan linearisasi log–log: log y = n log x + log k, kemiringan = pangkat n; beri contoh Kepler dengan kemiringan 1,5."
+    ]
+  },
+  {
+    "id": "f3-11",
+    "topik": "kalkulus",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Posisi sebuah wahana dinyatakan x(t)=5+2t meter. Berapa kecepatannya?",
+    "opsi": ["2 m/s", "5 m/s", "2t m/s", "7 m/s"],
+    "jawaban": 0,
+    "pembahasan": ["Kecepatan adalah turunan posisi terhadap waktu, v=dx/dt.", "Turunan 5+2t adalah 2, sehingga kecepatannya 2 m/s konstan.", "Suku posisi tetap 5 m tidak berkontribusi pada laju perubahan."]
+  },
+  {
+    "id": "f3-12",
+    "topik": "kalkulus",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Kecepatan suatu benda v(t)=6t−2 m/s. Berapa perpindahannya dari t=1 s sampai t=3 s?",
+    "opsi": ["20 m", "16 m", "24 m", "8 m"],
+    "jawaban": 0,
+    "pembahasan": ["Perpindahan adalah integral kecepatan: ∫₁³(6t−2)dt=[3t²−2t]₁³.", "Nilai antiturunan pada t=3 adalah 21 dan pada t=1 adalah 1, jadi selisihnya 20 m.", "Kecepatan positif pada interval ini, sehingga perpindahan juga positif."]
+  },
+  {
+    "id": "f3-13",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada grafik log y terhadap log x, garis melalui titik (1,2) dan (3,6). Jika y=kxⁿ, berapa eksponen n?",
+    "opsi": ["2", "4", "1/2", "3"],
+    "jawaban": 0,
+    "pembahasan": ["Kemiringan garis adalah (6−2)/(3−1)=2.", "Pada hubungan berpangkat, log y=log k+n log x, sehingga kemiringan sama dengan n.", "Maka eksponen n=2; konstanta k menentukan intersep dan tidak diperlukan di sini."],
+    "gambar": "kepler-loglog"
+  },
+  {
+    "id": "f3-14",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Kurva transit menunjukkan penurunan fluks berbentuk segitiga, berdurasi 4 jam dengan kedalaman maksimum 0,02 dari fluks normal. Berapa integral kehilangan fluks dalam satuan jam × fluks normal?",
+    "opsi": ["0,04", "0,08", "0,02", "0,16"],
+    "jawaban": 0,
+    "pembahasan": ["Integral kehilangan fluks adalah luas segitiga di bawah kurva penurunan.", "Luasnya ½×4 jam×0,02=0,04 jam × fluks normal.", "Luas ini mengukur akumulasi fluks relatif yang terhalang sepanjang transit."],
+    "gambar": "kurva-transit-data"
+  },
+  {
+    "id": "f3-15",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Empat pengukuran independen memiliki simpangan baku sampel 6 satuan. Berapa galat baku rata-ratanya?",
+    "opsi": ["3 satuan", "1,5 satuan", "6 satuan", "12 satuan"],
+    "jawaban": 0,
+    "pembahasan": ["Galat baku rata-rata adalah s/√n.", "Dengan s=6 dan n=4, galat baku=6/2=3 satuan.", "Simpangan baku mengukur sebaran pengukuran individual, sedangkan galat baku mengukur ketidakpastian rata-rata."]
+  },
+  {
+    "id": "f3-16",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada grafik log T terhadap log a untuk orbit planet, a meningkat dari 1 AU menjadi 4 AU. Berdasarkan kemiringan Kepler 3/2, berapa faktor kenaikan periode T?",
+    "opsi": ["8", "4", "16", "2"],
+    "jawaban": 0,
+    "pembahasan": ["Kemiringan 3/2 menunjukkan T∝a^(3/2).", "Maka T₂/T₁=4^(3/2)=√(4³)=8.", "Hasilnya konsisten dengan T²∝a³."],
+    "gambar": "kepler-loglog"
+  },
+  {
+    "id": "f3-17",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada kurva cahaya transit, fluks normal 1,000 dan fluks minimum 0,984. Berapa kedalaman transit relatif?",
+    "opsi": ["0,016 atau 1,6%", "0,984 atau 98,4%", "0,008 atau 0,8%", "0,16 atau 16%"],
+    "jawaban": 0,
+    "pembahasan": ["Kedalaman transit δ=(F_normal−F_min)/F_normal.", "δ=(1,000−0,984)/1,000=0,016=1,6%.", "Kedalaman kecil ini dapat digunakan untuk menaksir rasio jari-jari melalui δ≈(R_p/R★)²."],
+    "gambar": "kurva-transit-data"
+  },
+  {
+    "id": "f3-18",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "soal": "Grafik kecepatan radial sebuah bintang memiliki puncak +12 km/s dan lembah −8 km/s. Berapa kecepatan sistemik (nilai tengah) dan semi-amplitudo K?",
+    "opsi": ["2 km/s dan 10 km/s", "0 km/s dan 20 km/s", "10 km/s dan 2 km/s", "2 km/s dan 20 km/s"],
+    "jawaban": 0,
+    "pembahasan": ["Kecepatan sistemik adalah titik tengah: (12+(−8))/2=2 km/s.", "Semi-amplitudo adalah setengah rentang: (12−(−8))/2=10 km/s.", "Nilai tengah dan amplitudo sama-sama dapat dibaca dari puncak serta lembah kurva."],
+    "gambar": "kurva-kecepatan-radial"
+  },
+  {
+    "id": "f3-19",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "soal": "Pada kurva cahaya variabel yang dilipat menurut fase, maksimum terjadi pada fase 0,15 dan maksimum berikutnya pada 1,15. Berapa jarak fase antara kedua maksimum?",
+    "jawaban": 1,
+    "toleransiRel": 0.001,
+    "satuan": "siklus",
+    "pembahasan": ["Selisih fase adalah 1,15−0,15=1,00.", "Fase bertambah satu ketika waktu bertambah satu periode, sehingga kedua maksimum dipisahkan satu siklus penuh.", "Pengulangan bentuk kurva dengan fase sama menandai siklus yang berulang."],
+    "gambar": "kurva-cahaya-variabel"
+  },
+  {
+    "id": "f3-20",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Grafik log y terhadap log x memiliki kemiringan 3. Jika x bertambah dua kali, berapa faktor kenaikan y menurut hubungan tersebut?",
+    "jawaban": 8,
+    "toleransiRel": 0.01,
+    "satuan": "kali",
+    "pembahasan": ["Kemiringan tiga berarti y∝x³.", "Untuk x₂/x₁=2, diperoleh y₂/y₁=2³=8.", "Kemiringan menunjukkan eksponen hubungan, bukan faktor pengali langsung."],
+    "gambar": "skala-log"
+  },
+  {
+    "id": "f3-21",
+    "topik": "kalkulus",
+    "level": "fondasi",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan benar tentang turunan dan integral gerak.",
+    "opsi": ["Jika posisi konstan, kecepatan nol", "Integral percepatan terhadap waktu memberi perubahan kecepatan", "Turunan kedua posisi terhadap waktu adalah percepatan", "Integral kecepatan terhadap waktu memberi percepatan"],
+    "jawaban": [0, 1, 2],
+    "pembahasan": ["Posisi konstan memiliki turunan waktu nol, yaitu kecepatan nol.", "Karena a=dv/dt, integral percepatan memberi perubahan kecepatan.", "Percepatan adalah turunan kedua posisi; integral kecepatan memberi perpindahan, bukan percepatan."]
+  },
+  {
+    "id": "f3-22",
+    "topik": "analisis-data",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan benar tentang pengukuran berulang dengan galat acak independen.",
+    "opsi": ["Galat baku rata-rata adalah s/√n", "Menambah jumlah pengukuran dapat mengurangi ketidakpastian rata-rata", "Galat sistematis tetap dapat menggeser semua pengukuran", "Jika n menjadi 9 kali, galat baku menjadi 1/9 semula"],
+    "jawaban": [0, 1, 2],
+    "pembahasan": ["Rumus galat baku rata-rata adalah s/√n.", "Sampel lebih banyak mengurangi galat acak pada rata-rata.", "Bias kalibrasi tidak hilang karena pengulangan; jika n naik sembilan kali, galat baku menjadi 1/3, bukan 1/9."]
+  },
+  {
+    "id": "f3-23",
+    "topik": "kalkulus",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Posisi sebuah wahana x(t)=3t² meter. Berapa kecepatannya pada t=2 s?",
+    "jawaban": 12,
+    "toleransiRel": 0.01,
+    "satuan": "m/s",
+    "pembahasan": ["Turunkan posisi: v=dx/dt=6t.", "Pada t=2 s, v=6×2=12 m/s.", "Satuan turunannya adalah meter per sekon, sesuai satuan kecepatan."]
+  },
+  {
+    "id": "f3-24",
+    "topik": "kalkulus",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Kecepatan satelit berubah menurut v(t)=4t m/s. Hitung perpindahan dari t=0 s sampai t=3 s.",
+    "jawaban": 18,
+    "toleransiRel": 0.01,
+    "satuan": "m",
+    "pembahasan": ["Perpindahan adalah ∫₀³4t dt=[2t²]₀³.", "Nilai batas menghasilkan 2×9−0=18 m.", "Cek luas grafik v–t: segitiga dengan alas 3 s dan tinggi 12 m/s memiliki luas 18 m."]
+  },
+  {
+    "id": "f3-25",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Enam pengukuran independen memiliki simpangan baku sampel 4,9 km/s. Berapa galat baku rata-rata, dalam km/s?",
+    "jawaban": 2,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": ["Galat baku rata-rata σ̄=s/√n.", "σ̄=4,9/√6≈4,9/2,449=2,00 km/s.", "Pengulangan mengurangi ketidakpastian rata-rata, tetapi simpangan baku tiap pengukuran tetap sekitar 4,9 km/s."]
+  },
+  {
+    "id": "f3-26",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Kedalaman transit eksoplanet adalah 0,0025 dan memenuhi δ=(R_p/R★)². Berapa rasio jari-jari R_p/R★?",
+    "jawaban": 0.05,
+    "toleransiRel": 0.01,
+    "satuan": "tanpa satuan",
+    "pembahasan": ["Ambil akar kuadrat kedua sisi: R_p/R★=√δ.", "√0,0025=0,05, sehingga rasio jari-jari adalah 0,05.", "Pangkat dua pada hubungan kedalaman penting; rasio jari-jari bukan 0,0025."]
+  },
+  {
+    "id": "f3-27",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "soal": "Pada grafik log f terhadap log x, kemiringan garis adalah 3 dan galat relatif x sebesar 2%. Menurut propagasi galat pangkat, berapa galat relatif f?",
+    "jawaban": 6,
+    "toleransiRel": 0.01,
+    "satuan": "%",
+    "pembahasan": ["Kemiringan 3 pada grafik log–log menunjukkan f∝x³.", "Untuk f=xⁿ, galat relatif kecil memenuhi σ_f/f=|n|σ_x/x, sehingga galat f=3×2%=6%.", "Pangkat yang dibaca dari grafik memperbesar galat relatif tiga kali."],
+    "gambar": "skala-log"
+  },
+  {
+    "id": "f3-28",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan perbedaan galat acak dan sistematis dalam pengukuran magnitudo bintang berulang. Uraikan pengaruh jumlah pengukuran pada galat acak dan berikan contoh sumber bagi kedua jenis galat.",
+    "rubrik": [{"poin":"Membedakan galat acak sebagai fluktuasi dua arah dan galat sistematis sebagai bias searah.","bobot":2},{"poin":"Menyebut galat baku rata-rata s/√n dan menjelaskan bahwa peningkatan n menurunkan galat acak.","bobot":2},{"poin":"Memberi contoh galat acak yang relevan seperti derau detektor atau variasi seeing.","bobot":1},{"poin":"Memberi contoh galat sistematis seperti kalibrasi nol magnitudo yang salah dan menyatakan pengulangan tidak menghilangkannya.","bobot":1}],
+    "jawabanTeladan":"Galat acak berfluktuasi ke dua arah, misalnya akibat derau detektor atau perubahan seeing. Ketika banyak pengukuran dirata-ratakan, galat baku rata-rata mengecil sebagai s/√n. Galat sistematis menggeser pengukuran ke satu arah, misalnya kalibrasi magnitudo nol yang salah. Pengulangan yang banyak dapat memberi rata-rata sangat presisi, tetapi tetap bias sampai kalibrasi diperbaiki.",
+    "pembahasan": ["Perbedaan utama bukan sekadar besar-kecil, melainkan pola fluktuasi dan apakah pengulangan menguranginya.", "Jawaban lengkap menghubungkan statistik s/√n dengan pengendalian bias melalui kalibrasi."]
+  },
+  {
+    "id": "f3-29",
+    "topik": "analisis-data",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Sebuah kurva transit berbentuk segitiga memiliki durasi 5 jam dan penurunan maksimum 0,012 dari fluks normal. Jelaskan cara memperkirakan luas kehilangan fluks dan arti fisis hasilnya.",
+    "rubrik": [{"poin":"Mengidentifikasi integral kehilangan fluks sebagai luas di bawah kurva penurunan terhadap waktu.","bobot":2},{"poin":"Menggunakan luas segitiga ½×alas×tinggi dengan nilai yang benar.","bobot":2},{"poin":"Memperoleh 0,030 jam dalam satuan fluks normal atau ekuivalennya.","bobot":1},{"poin":"Menjelaskan bahwa luas mewakili fluks relatif yang terhalang terakumulasi selama transit.","bobot":1}],
+    "jawabanTeladan":"Luas kehilangan fluks adalah integral kedalaman relatif terhadap waktu. Untuk bentuk segitiga, luas=½×5 jam×0,012=0,030 jam dalam satuan fluks normal. Besaran ini mengakumulasi kehilangan relatif sepanjang transit, tidak hanya menyatakan penurunan maksimum sesaat.",
+    "pembahasan": ["Bedakan luas integral dari kedalaman maksimum; keduanya membawa informasi berbeda.", "Penyebutan satuan relatif × waktu membantu memastikan integral ditafsirkan dengan benar."],
+    "gambar": "kurva-transit-data"
+  },
+  {
+    "id": "f3-30",
+    "topik": "analisis-data",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Grafik log T terhadap log a untuk planet di sekitar bintang yang sama berupa garis lurus dengan kemiringan terukur 1,48. Jelaskan makna kemiringan tersebut, bandingkan dengan prediksi Kepler, dan hitung rasio periode dua orbit jika rasio sumbu semi-mayornya 3.",
+    "rubrik": [{"poin":"Menjelaskan bahwa pada grafik log T terhadap log a kemiringan adalah eksponen hubungan T dan a.","bobot":2},{"poin":"Mengaitkan kemiringan terukur 1,48 dengan prediksi hukum Kepler 3/2=1,5 dan menyatakan kesesuaiannya dalam batas galat.","bobot":2},{"poin":"Menggunakan T₂/T₁=(a₂/a₁)^(3/2) dan memperoleh 3^(3/2)≈5,20.","bobot":1},{"poin":"Menjelaskan bahwa penyimpangan kecil dari 1,5 dapat berasal dari ketidakpastian pengukuran atau rentang data terbatas.","bobot":1}],
+    "jawabanTeladan":"Dari T∝aⁿ diperoleh log T=konstanta+n log a, sehingga kemiringan adalah n. Nilai terukur 1,48 dekat dengan prediksi hukum Kepler n=3/2=1,5 dan dapat dianggap konsisten jika ketidakpastian pengukuran mencakup selisih itu. Untuk a₂/a₁=3, rasio periode adalah 3^(3/2)=√27≈5,20. Selisih kecil pada kemiringan dapat disebabkan galat pengukuran atau rentang sampel terbatas.",
+    "pembahasan": ["Tafsir kemiringan log–log harus dinyatakan sebagai pangkat, bukan sebagai nilai periode.", "Gunakan hukum Kepler yang sama untuk menghitung rasio dan jelaskan bahwa kemiringan 1,48 merupakan hasil empiris yang dekat dengan 1,5."],
+    "gambar": "kepler-loglog"
+  }
+]

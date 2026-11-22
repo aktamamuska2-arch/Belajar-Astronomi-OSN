@@ -1,0 +1,343 @@
+[
+  {
+    "id": "l4-01",
+    "topik": "galaksi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Galaksi dengan cakram, lengan spiral, dan palang terang di pusatnya termasuk tipe...",
+    "opsi": [
+      "Elips E7",
+      "Lentikular S0",
+      "Spiral berpalang SBbc",
+      "Tak beraturan Irr"
+    ],
+    "jawaban": 2,
+    "pembahasan": [
+      "Adanya cakram dan lengan spiral menandakan galaksi spiral (S); adanya palang pusat menambahkan huruf B.",
+      "Huruf kecil b/c menyatakan lengan yang agak terbuka dan bulge berukuran sedang.",
+      "Bima Sakti sendiri tergolong SBbc, jadi contohnya mudah diingat."
+    ]
+  },
+  {
+    "id": "l4-02",
+    "topik": "galaksi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Gas pada radius 10 kpc mengorbit pusat galaksi dengan kecepatan 200 km/s. Berapa perkiraan massa galaksi di dalam radius itu?",
+    "opsi": [
+      "Sekitar 9 × 10¹⁰ M☉",
+      "Sekitar 9 × 10⁹ M☉",
+      "Sekitar 9 × 10¹¹ M☉",
+      "Sekitar 9 × 10⁸ M☉"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan M(<r) = v²r/G dengan r = 10 kpc = 3,086 × 10²⁰ m dan v = 2 × 10⁵ m/s.",
+      "v²r = 4 × 10¹⁰ × 3,086 × 10²⁰ ≈ 1,23 × 10³¹.",
+      "M = 1,23 × 10³¹/6,67 × 10⁻¹¹ ≈ 1,85 × 10⁴¹ kg ≈ 9,3 × 10¹⁰ M☉."
+    ]
+  },
+  {
+    "id": "l4-03",
+    "topik": "galaksi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada kurva rotasi galaksi yang datar, kecepatan orbit hampir konstan. Bagaimana massa di dalam radius r bergantung pada r?",
+    "opsi": [
+      "M ∝ r²",
+      "M ∝ r",
+      "M konstan",
+      "M ∝ 1/r"
+    ],
+    "jawaban": 1,
+    "pembahasan": [
+      "Dari M(<r) = v²r/G, bila v konstan maka massa sebanding langsung dengan r.",
+      "Artinya setiap lapisan tambahan menyumbang massa yang sama, meskipun cahayanya makin sedikit.",
+      "Inilah tanda khas halo materi gelap yang membentang jauh melewati bagian galaksi yang terlihat."
+    ]
+  },
+  {
+    "id": "l4-04",
+    "topik": "galaksi",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Matahari berjarak 8 kpc dari pusat galaksi dan bergerak 220 km/s. Berapa periode orbitnya dalam juta tahun?",
+    "jawaban": 220,
+    "toleransiRel": 0.05,
+    "satuan": "juta tahun",
+    "pembahasan": [
+      "Konversi: 8 kpc = 8 × 3,086 × 10¹⁹ m ≈ 2,47 × 10²⁰ m.",
+      "T = 2πr/v = 2π × 2,47 × 10²⁰/(2,2 × 10⁵) ≈ 7,05 × 10¹⁵ s.",
+      "7,05 × 10¹⁵ s/(3,156 × 10⁷ s/tahun) ≈ 2,2 × 10⁸ tahun ≈ 220 juta tahun."
+    ]
+  },
+  {
+    "id": "l4-05",
+    "topik": "galaksi",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Kurva rotasi sebuah galaksi datar: v = 200 km/s pada 8 kpc dan tetap 200 km/s pada 16 kpc. Berapa perbandingan massa di dalam 16 kpc terhadap massa di dalam 8 kpc?",
+    "jawaban": 2,
+    "toleransiRel": 0.03,
+    "satuan": "kali",
+    "pembahasan": [
+      "M(<r) = v²r/G, sehingga untuk v yang sama, M sebanding dengan r.",
+      "M(16)/M(8) = 16/8 = 2.",
+      "Massa berlipat dua saat radius berlipat dua — kurva datar menuntut tambahan massa yang tidak terlihat."
+    ]
+  },
+  {
+    "id": "l4-06",
+    "topik": "galaksi",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada radius 15 kpc, kecepatan rotasi galaksi 200 km/s. Massa bintang dan gas yang tampak di dalam radius itu diperkirakan 5 × 10¹⁰ M☉. Berapa kira-kira fraksi massa gelapnya?",
+    "opsi": [
+      "Sekitar 64%",
+      "Sekitar 36%",
+      "Sekitar 90%",
+      "Sekitar 14%"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Massa total: M = v²r/G dengan r = 15 kpc = 4,63 × 10²⁰ m.",
+      "M = (2 × 10⁵)² × 4,63 × 10²⁰/6,67 × 10⁻¹¹ ≈ 2,78 × 10⁴¹ kg ≈ 1,4 × 10¹¹ M☉.",
+      "Fraksi gelap = (1,4 − 0,5)/1,4 ≈ 0,64, yaitu sekitar 64%."
+    ]
+  },
+  {
+    "id": "l4-07",
+    "topik": "galaksi",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang materi antarbintang.",
+    "opsi": [
+      "Awan molekul dingin (~10–20 K) adalah tempat bintang baru lahir.",
+      "Garis 21 cm hidrogen netral dipakai memetakan kurva rotasi galaksi.",
+      "Daerah H II adalah gas panas terionisasi di sekitar bintang muda yang panas.",
+      "Debu membuat bintang tampak lebih biru daripada warna aslinya.",
+      "Debu menyerap cahaya biru lebih kuat daripada cahaya merah."
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Awan molekul dingin dan padat menyediakan bahan untuk runtuh membentuk bintang.",
+      "Garis 21 cm menembus debu sehingga ideal untuk memetakan gas di seluruh cakram.",
+      "Debu menghamburkan biru lebih efisien, sehingga bintang tampak lebih merah (reddening), bukan lebih biru — pernyataan 3 salah."
+    ]
+  },
+  {
+    "id": "l4-08",
+    "topik": "galaksi",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang struktur Bima Sakti.",
+    "opsi": [
+      "Matahari berjarak sekitar 8 kpc dari pusat galaksi.",
+      "Bulge didominasi bintang tua.",
+      "Halo berisi banyak gugus bola.",
+      "Matahari berada di pusat galaksi.",
+      "Diameter cakram sekitar 30 kpc."
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Matahari berada di cakram, sekitar 8 kpc dari pusat — bukan di pusat.",
+      "Bulge berisi bintang tua, sedangkan halo memuat bintang tua miskin logam dan gugus bola.",
+      "Cakram membentang sekitar 30 kpc, dengan tebal cakram tipis hanya beberapa ratus parsek."
+    ]
+  },
+  {
+    "id": "l4-09",
+    "topik": "galaksi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Apa makna urutan Hubble (E0–E7, S0, Sa–Sc, Irr) yang paling tepat?",
+    "opsi": [
+      "Urutan evolusi galaksi dari muda ke tua",
+      "Urutan jarak galaksi dari Bumi",
+      "Klasifikasi morfologi, bukan urutan evolusi",
+      "Urutan massa galaksi dari kecil ke besar"
+    ],
+    "jawaban": 2,
+    "pembahasan": [
+      "Diagram garpu tala Hubble mengelompokkan galaksi berdasarkan bentuk: elips, lentikular, spiral, dan tak beraturan.",
+      "Posisi pada diagram tidak menyatakan umur atau jarak.",
+      "Galaksi elips tidak 'berevolusi menjadi' spiral; keduanya bentuk yang berbeda, meskipun sejarah dinamiknya bisa saling terkait."
+    ]
+  },
+  {
+    "id": "l4-10",
+    "topik": "galaksi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Pada radius 20 kpc, kecepatan rotasi galaksi 250 km/s. Berapa massa di dalam radius itu, dalam satuan 10¹⁰ M☉?",
+    "jawaban": 29,
+    "toleransiRel": 0.05,
+    "satuan": "10¹⁰ M☉",
+    "pembahasan": [
+      "r = 20 kpc = 6,17 × 10²⁰ m dan v = 2,5 × 10⁵ m/s.",
+      "M = v²r/G = 6,25 × 10¹⁰ × 6,17 × 10²⁰/6,67 × 10⁻¹¹ ≈ 5,78 × 10⁴¹ kg.",
+      "5,78 × 10⁴¹/1,989 × 10³⁰ ≈ 2,9 × 10¹¹ M☉ = 29 × 10¹⁰ M☉."
+    ]
+  },
+  {
+    "id": "l4-11",
+    "topik": "galaksi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Apa perbedaan utama galaksi spiral tipe Sa dibandingkan Sc?",
+    "opsi": [
+      "Sa memiliki lengan lebih rapat dan bulge lebih besar",
+      "Sa tidak memiliki cakram",
+      "Sa seluruhnya berisi bintang muda",
+      "Sa lebih kecil daripada gugus bola"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Dalam urutan Sa → Sc, lengan spiral makin terbuka dan bulge makin kecil relatif terhadap cakram.",
+      "Sa juga relatif lebih kaya bintang tua dan lebih sedikit gas dibanding Sc.",
+      "Semua spiral tetap memiliki cakram; yang berubah adalah kerapatan lengan dan proporsi bulge."
+    ]
+  },
+  {
+    "id": "l4-12",
+    "topik": "galaksi",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan bagaimana kurva rotasi yang datar menjadi bukti adanya materi gelap. Mengapa gas dan debu yang tidak terlihat di optik tidak cukup menjelaskan massa tambahan tersebut?",
+    "rubrik": [
+      {
+        "poin": "Menuliskan M(<r) = v²r/G dan menyimpulkan bahwa v konstan berarti M ∝ r.",
+        "bobot": 2
+      },
+      {
+        "poin": "Membandingkan massa dinamis dengan massa bintang dan gas yang teramati, menunjukkan selisih besar.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan bahwa gas netral tetap terdeteksi lewat garis 21 cm dan CO, sehingga massanya sudah diperhitungkan.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyimpulkan perlunya komponen masif yang tidak memancarkan cahaya (halo materi gelap).",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "Kecepatan orbit lingkaran memenuhi v = √(GM(<r)/r), sehingga massa di dalam radius r adalah M(<r) = v²r/G. Pengamatan menunjukkan v hampir konstan sampai radius jauh di luar cahaya galaksi, sehingga massa harus bertambah sebanding r. Padahal massa bintang yang tampak dan gas yang terdeteksi (lewat emisi 21 cm untuk hidrogen netral dan CO untuk awan molekul) hanya menyumbang sebagian, dan jumlahnya tidak bertambah cukup cepat. Gas dan debu yang dingin tetap memancarkan atau menyerap pada panjang gelombang radio/inframerah, jadi tidak bisa bersembunyi dalam jumlah besar. Karena itu diperlukan komponen masif yang hampir tidak memancarkan cahaya — halo materi gelap yang membentang jauh melewati cakram.",
+    "pembahasan": [
+      "Kurva rotasi datar berarti v(r) konstan; dari M(<r) = v²r/G, massa di dalam r harus tumbuh linear terhadap r.",
+      "Massa bintang dan gas teramati jauh lebih kecil daripada massa dinamis pada radius besar, dan gas tambahan akan terdeteksi lewat radio atau inframerah.",
+      "Kesimpulannya, sebagian besar massa galaksi ada dalam bentuk yang tidak memancarkan cahaya secara signifikan, terdistribusi dalam halo yang luas."
+    ]
+  },
+  {
+    "id":"l4-13","topik":"galaksi","level":"fondasi","tipe":"pilihan-ganda","gambar":"kurva-rotasi",
+    "soal":"Pada sketsa kurva rotasi, sumbu vertikal menyatakan kecepatan orbit dan sumbu horizontal radius dari pusat. Jika bagian luar kurva mendatar, apa yang dapat disimpulkan tentang massa dinamis di dalam radius r?",
+    "opsi":["M(<r) terus bertambah kira-kira sebanding r","M(<r) menjadi nol","M(<r) tetap konstan","Kecepatan orbit harus turun sebagai 1/r²"],"jawaban":0,
+    "pembahasan":["Untuk orbit melingkar, v²=GM(<r)/r.","Jika v tetap, maka M(<r)=v²r/G dan bertambah sebanding r.","Kurva datar pada radius besar menunjukkan ada massa tambahan di luar distribusi cahaya yang tampak."]
+  },
+  {
+    "id":"l4-14","topik":"galaksi","level":"fondasi","tipe":"pilihan-ganda","gambar":"lensa-gravitasi",
+    "soal":"Pada gambar lensa gravitasi, mengapa citra sumber latar dapat tampak sebagai busur atau cincin di sekitar galaksi depan?",
+    "opsi":["Gravitasi galaksi depan membelokkan lintasan cahaya sumber latar","Galaksi depan memancarkan cahaya yang dipantulkan cermin","Rotasi Bumi menggandakan citra sumber","Debu mengubah semua cahaya menjadi orbit melingkar"],"jawaban":0,
+    "pembahasan":["Dalam relativitas umum, massa melengkungkan ruang-waktu dan lintasan cahaya ikut terdefleksi.","Susunan sumber, lensa, dan pengamat yang hampir segaris dapat menghasilkan busur atau cincin Einstein.","Bentuk citra bergantung pada geometri dan distribusi massa lensa, bukan pantulan optik."]
+  },
+  {
+    "id":"l4-15","topik":"galaksi","level":"fondasi","tipe":"pilihan-ganda","gambar":"doppler-geser",
+    "soal":"Garis spektrum galaksi pada diagram bergeser ke panjang gelombang yang lebih besar dibanding nilai laboratorium. Apa arti paling langsung dari pergeseran merah tersebut pada skala galaksi?",
+    "opsi":["Galaksi memiliki komponen kecepatan radial menjauh dari pengamat","Galaksi pasti berotasi searah jarum jam","Suhu galaksi bernilai nol","Panjang gelombang laboratorium berubah karena jarak"],"jawaban":0,
+    "pembahasan":["Pergeseran merah berarti panjang gelombang teramati lebih besar daripada panjang gelombang diam.","Untuk kecepatan kecil dibanding c, v_r/c≈Δλ/λ; tanda positif menunjukkan menjauh.","Pergeseran tidak dengan sendirinya memberi arah rotasi atau suhu galaksi."]
+  },
+  {
+    "id":"l4-16","topik":"galaksi","level":"fondasi","tipe":"pilihan-ganda","gambar":"kurva-rotasi",
+    "soal":"Dua titik pada kurva rotasi menunjukkan gas pada radius 8 kpc dan 16 kpc dengan kecepatan sama 200 km/s. Berapa rasio massa dinamis terkurung M(16 kpc)/M(8 kpc)?",
+    "opsi":["2","4","1/2","1"],"jawaban":0,
+    "pembahasan":["Gunakan M(<r)=v²r/G untuk orbit melingkar.","Karena v sama, rasio massa sama dengan rasio radius: 16/8=2.","Massa terkurung bertambah walaupun kecepatan rotasi tetap."]
+  },
+  {
+    "id":"l4-17","topik":"galaksi","level":"menengah","tipe":"pilihan-ganda","gambar":"kurva-rotasi",
+    "soal":"Kurva rotasi menunjukkan v=180 km/s pada r=10 kpc dan v=180 km/s pada r=20 kpc. Dengan M∝v²r, berapa kali massa terkurung bertambah?",
+    "opsi":["2 kali","4 kali","1/2 kali","Tidak berubah"],"jawaban":0,
+    "pembahasan":["Untuk kedua radius, v identik sehingga faktor v² saling meniadakan.","M₂/M₁=(180²×20)/(180²×10)=2.","Massa bertambah linear dengan r pada segmen kurva yang datar."]
+  },
+  {
+    "id":"l4-18","topik":"galaksi","level":"menengah","tipe":"pilihan-ganda","gambar":"lensa-gravitasi",
+    "soal":"Dalam konfigurasi lensa gravitasi sederhana, sumber latar tidak berubah tetapi massa lensa bertambah. Apa kecenderungan skala jari-jari cincin Einstein bila jarak geometri tetap?",
+    "opsi":["Bertambah sebanding akar massa lensa","Berkurang sebanding massa lensa","Tetap, karena hanya luminositas sumber yang menentukan","Menjadi nol"],"jawaban":0,
+    "pembahasan":["Untuk lensa titik, θ_E∝√M pada jarak-jarak tetap.","Massa lebih besar membelokkan cahaya lebih kuat dan memperbesar skala sudut cincin.","Cincin Einstein ditentukan oleh massa lensa dan geometri, bukan luminositas intrinsik sumber."]
+  },
+  {
+    "id":"l4-19","topik":"galaksi","level":"penalaran","tipe":"isian","gambar":"kurva-rotasi",
+    "soal":"Pada grafik, kecepatan naik hingga 220 km/s pada 5 kpc lalu tetap sekitar 220 km/s sampai 15 kpc. Dengan M(<r)=v²r/G, berapa perbandingan M(15 kpc)/M(5 kpc)?",
+    "jawaban":3,"toleransiRel":0.02,"satuan":"kali",
+    "pembahasan":["Kedua titik berada pada bagian datar, sehingga kecepatan sama.","Rasio massa=(v²·15)/(v²·5)=3.","Hasil ini menyatakan massa dinamis terkurung terus bertambah pada radius luar."]
+  },
+  {
+    "id":"l4-20","topik":"galaksi","level":"penalaran","tipe":"pilihan-jamak","gambar":"kurva-rotasi",
+    "soal":"Kurva rotasi terukur tetap datar hingga radius yang jauh melampaui cakram terang. Pilih semua kesimpulan yang didukung dengan asumsi orbit hampir melingkar.",
+    "opsi":["Massa dinamis terkurung terus bertambah dengan radius","Massa total harus mengikuti distribusi cahaya yang tampak saja","Ada indikasi komponen massa luas yang tidak mengikuti cahaya bintang","Kecepatan datar berarti gaya gravitasi nol","M(<r)≈v²r/G"],"jawaban":[0,2,4],
+    "pembahasan":["Dari kesetimbangan sentripetal dan gravitasi diperoleh M(<r)≈v²r/G.","Jika v datar, massa terkurung bertambah kira-kira linear terhadap r.","Kurva yang meluas melampaui cahaya menunjukkan massa tak bercahaya yang luas; gaya gravitasi tetap tidak nol."]
+  },
+  {
+    "id":"l4-21","topik":"galaksi","level":"penalaran","tipe":"isian","gambar":"kurva-rotasi",
+    "soal":"Pada bagian datar kurva rotasi, v=200 km/s pada r=12 kpc. Gunakan M=v²r/G, G=6,67×10⁻¹¹ SI, 1 kpc=3,086×10¹⁹ m, dan M☉=1,989×10³⁰ kg. Berapa massa terkurung dalam satuan 10¹⁰ M☉?",
+    "jawaban":11.1,"toleransiRel":0.04,"satuan":"10¹⁰ M☉",
+    "pembahasan":["r=12×3,086×10¹⁹=3,703×10²⁰ m dan v=2,00×10⁵ m/s.","M=v²r/G≈(4,00×10¹⁰)(3,703×10²⁰)/(6,67×10⁻¹¹)=2,22×10⁴¹ kg.","Dalam massa Matahari, M≈2,22×10⁴¹/1,989×10³⁰=1,12×10¹¹ M☉=11,2×10¹⁰ M☉."]
+  },
+  {
+    "id":"l4-22","topik":"galaksi","level":"penalaran","tipe":"isian","gambar":"doppler-geser",
+    "soal":"Pada spektrum galaksi, garis diam 500,0 nm terukur pada 501,0 nm. Untuk z kecil gunakan v≈cz dengan c=3,00×10⁵ km/s. Hitung kecepatan radial dalam km/s.",
+    "jawaban":600,"toleransiRel":0.02,"satuan":"km/s",
+    "pembahasan":["Δλ=501,0−500,0=1,0 nm, sehingga z=Δλ/λ₀=1/500=0,002.","Untuk redshift kecil, v≈cz=3,00×10⁵×0,002=600 km/s.","Pergeseran merah berarti komponen radialnya menjauh dalam pendekatan Doppler nonrelativistik."]
+  },
+  {
+    "id":"l4-23","topik":"galaksi","level":"penalaran","tipe":"isian","gambar":"kurva-rotasi",
+    "soal":"Kurva rotasi tetap pada 240 km/s dari r=10 kpc ke r=25 kpc. Berapa tambahan massa dinamis dalam selubung 10–25 kpc dalam satuan 10¹⁰ M☉? Gunakan ΔM=v²Δr/G, 1 kpc=3,086×10¹⁹ m, G=6,67×10⁻¹¹ SI, dan M☉=1,989×10³⁰ kg.",
+    "jawaban":20.1,"toleransiRel":0.05,"satuan":"10¹⁰ M☉",
+    "pembahasan":["Δr=15 kpc=4,629×10²⁰ m dan v=2,40×10⁵ m/s.","ΔM=v²Δr/G≈(5,76×10¹⁰)(4,629×10²⁰)/(6,67×10⁻¹¹)=4,00×10⁴¹ kg.","Konversi memberi ΔM≈2,01×10¹¹ M☉=20,1×10¹⁰ M☉; ini massa tambahan besar di wilayah luar."]
+  },
+  {
+    "id":"l4-24","topik":"galaksi","level":"penalaran","tipe":"isian","gambar":"lensa-gravitasi",
+    "soal":"Untuk lensa titik dengan geometri tetap, radius Einstein memenuhi θ_E∝√M. Jika radius sudut cincin terukur bertambah dari 1,2″ menjadi 1,8″, berapa faktor perubahan massa lensanya?",
+    "jawaban":2.25,"toleransiRel":0.02,"satuan":"kali",
+    "pembahasan":["Dengan geometri tetap, θ₂/θ₁=√(M₂/M₁).","M₂/M₁=(1,8/1,2)²=1,5²=2,25.","Massa lensa yang diinferensikan menjadi 2,25 kali; kesimpulan ini bergantung asumsi jarak geometri sama."]
+  },
+  {
+    "id":"l4-25","topik":"galaksi","level":"olimpiade","tipe":"pilihan-jamak","gambar":"kurva-rotasi",
+    "soal":"Dari grafik rotasi, kecepatan hampir konstan 200 km/s antara 8 dan 24 kpc, sementara cahaya bintang menurun tajam di luar 8 kpc. Pilih semua pernyataan yang konsisten dengan data dan model orbit melingkar.",
+    "opsi":["M(24 kpc)/M(8 kpc)≈3","Massa dinamis dalam selubung 8–24 kpc kira-kira dua kali M(<8 kpc)","Massa terkurung konstan karena kecepatan konstan","Kurva ini memberi bukti bahwa luminositas permukaan dan massa tidak berbanding sama di radius luar","Untuk v konstan, M(<r)∝r"],"jawaban":[0,1,3,4],
+    "pembahasan":["Dengan v sama, M(<r)=v²r/G sehingga M(24)/M(8)=24/8=3.","Massa selubung = M(24)−M(8)=3M(8)−M(8)=2M(8).","Karena cahaya turun tetapi massa dinamis terus bertambah, distribusi massa tidak mengikuti cahaya saja.","Kecepatan konstan bukan berarti massa konstan; massa terkurung tumbuh linear terhadap r."]
+  },
+  {
+    "id":"l4-26","topik":"galaksi","level":"olimpiade","tipe":"isian","gambar":"kurva-rotasi",
+    "soal":"Grafik menunjukkan bagian datar v=220 km/s pada r=20 kpc. Hitung massa dinamis di dalam radius itu dalam satuan 10¹¹ M☉. Gunakan M=v²r/G, 1 kpc=3,086×10¹⁹ m, G=6,67×10⁻¹¹ SI, dan M☉=1,989×10³⁰ kg.",
+    "jawaban":2.25,"toleransiRel":0.04,"satuan":"10¹¹ M☉",
+    "pembahasan":["r=20 kpc=6,172×10²⁰ m; v=2,20×10⁵ m/s.","M=(4,84×10¹⁰)(6,172×10²⁰)/(6,67×10⁻¹¹)≈4,48×10⁴¹ kg.","M≈4,48×10⁴¹/1,989×10³⁰=2,25×10¹¹ M☉; pembacaan titik grafik harus memakai radius dan kecepatan yang benar.","Hasil merupakan massa dinamis total di dalam radius, bukan massa bintang saja."]
+  },
+  {
+    "id":"l4-27","topik":"galaksi","level":"olimpiade","tipe":"isian","gambar":"kurva-rotasi",
+    "soal":"Kurva luar datar pada 200 km/s hingga 30 kpc. Dalam model M(<r)=v²r/G, berapa pertambahan massa dari 10 ke 30 kpc dalam satuan 10¹¹ M☉? Gunakan G=6,67×10⁻¹¹ SI, 1 kpc=3,086×10¹⁹ m, dan M☉=1,989×10³⁰ kg.",
+    "jawaban":1.86,"toleransiRel":0.05,"satuan":"10¹¹ M☉",
+    "pembahasan":["Δr=20 kpc=6,172×10²⁰ m dan v=2,00×10⁵ m/s.","ΔM=v²Δr/G=(4,00×10¹⁰)(6,172×10²⁰)/(6,67×10⁻¹¹)≈3,70×10⁴¹ kg.","Matahari: ΔM≈3,70×10⁴¹/1,989×10³⁰=1,86×10¹¹ M☉.","Massa tambahan pada radius luar tetap besar walau permukaan galaksi tampak redup."]
+  },
+  {
+    "id":"l4-28","topik":"galaksi","level":"olimpiade","tipe":"esai","gambar":"kurva-rotasi",
+    "soal":"Gunakan kurva rotasi yang mendatar hingga radius besar untuk menurunkan hubungan massa terkurung terhadap radius. Jelaskan bagaimana pembacaan grafik, perbandingan dengan cahaya bintang, dan pengamatan gas pada panjang gelombang radio mendukung atau membatasi inferensi halo materi gelap.",
+    "rubrik":[{"poin":"Membaca bahwa v hampir konstan pada radius luar dan memakai kesetimbangan orbit v²/r=GM(<r)/r² untuk memperoleh M(<r)=v²r/G∝r.","bobot":2},{"poin":"Menggunakan nilai grafik pada lebih dari satu radius untuk menunjukkan massa dinamis naik melampaui wilayah bercahaya.","bobot":2},{"poin":"Membandingkan massa dinamis dengan massa bintang dan menjelaskan adanya komponen massa yang tidak mengikuti cahaya optik.","bobot":2},{"poin":"Menyebut gas netral dapat dilacak melalui garis 21 cm dan molekul melalui tracer radio; data ini mengurangi kemungkinan massa baryonik tersembunyi menjelaskan seluruh selisih.","bobot":2}],
+    "jawabanTeladan":"Pada orbit melingkar, v²/r=GM(<r)/r² sehingga M(<r)=v²r/G. Kurva menunjukkan v hampir konstan pada radius luar; karena itu M(<r) bertambah hampir linear dengan r. Membandingkan titik misalnya pada 10 dan 20 kpc memberi massa terkurung kira-kira dua kali lebih besar pada radius kedua, meskipun cahaya cakram telah banyak berkurang. Massa bintang dari fotometri tidak cukup menjelaskan massa dinamis tersebut. Gas netral dipetakan dengan garis 21 cm dan gas molekuler dengan tracer radio seperti CO, sehingga kontribusinya juga dapat ditaksir. Selisih yang tersisa mendukung halo materi gelap, walau kesimpulan kuantitatif bergantung pada geometri, asumsi orbit, dan model massa baryonik.",
+    "pembahasan":["Gunakan hubungan gaya sentripetal dan gravitasi, lalu isolasi massa terkurung.","Grafik datar mengharuskan massa bertambah dengan radius; cek pada dua radius menghindari salah tafsir bahwa massa konstan.","Bandingkan massa dinamis dengan cahaya, tetapi perhitungkan gas yang terdeteksi pada radio sebelum menyimpulkan komponen gelap.","Kurva rotasi adalah bukti dinamis yang kuat, bukan pengukuran langsung komposisi partikel materi gelap."]
+  },
+  {
+    "id":"l4-29","topik":"galaksi","level":"olimpiade","tipe":"esai","gambar":"lensa-gravitasi",
+    "soal":"Pada citra lensa gravitasi, sebuah galaksi latar tampak sebagai busur yang hampir membentuk cincin. Jelaskan bagaimana massa lensa dan geometri menentukan skala cincin, bagaimana distorsi dapat mengungkap massa yang tidak bercahaya, dan mengapa satu citra saja belum selalu menentukan distribusi massa secara unik.",
+    "rubrik":[{"poin":"Menjelaskan pembelokan cahaya oleh gravitasi lensa dan syarat geometri hampir segaris untuk cincin Einstein.","bobot":2},{"poin":"Menyebut skala sudut Einstein bergantung pada massa lensa dan rasio jarak sumber-lensa-pengamat.","bobot":2},{"poin":"Mengaitkan pemodelan distorsi/citra dengan massa total termasuk massa gelap, bukan hanya cahaya lensa.","bobot":2},{"poin":"Menyebut degenerasi model/ketergantungan geometri dan perlunya informasi tambahan seperti beberapa citra, redshift, atau dinamika.","bobot":2}],
+    "jawabanTeladan":"Massa galaksi depan membelokkan cahaya galaksi latar. Bila sumber, lensa, dan pengamat hampir segaris, citra dapat membentuk cincin Einstein; ukuran sudutnya ditentukan oleh massa lensa dan jarak-jarak sistem. Dengan memodelkan posisi, bentuk, dan magnifikasi busur, astronom menaksir massa total dalam apertur lensa, termasuk komponen yang tidak memancarkan cahaya. Namun satu konfigurasi citra dapat cocok dengan lebih dari satu distribusi massa atau geometri jarak. Redshift sumber dan lensa, beberapa citra, serta pengukuran dinamika membantu memecahkan degenerasi tersebut.",
+    "pembahasan":["Baca cincin sebagai akibat pembelokan gravitasi, bukan struktur fisik di sekitar sumber.","Pemisahan peran massa dan geometri penting saat menafsirkan ukuran Einstein.","Lensa gravitasi menimbang massa total, sementara ketidakunikan model menuntut data tambahan.","Jawaban kuat membedakan apa yang dibaca langsung dari citra dan apa yang diinferensikan lewat model."]
+  },
+  {
+    "id":"l4-30","topik":"galaksi","level":"olimpiade","tipe":"esai","gambar":"kurva-rotasi",
+    "soal":"Diberikan kurva rotasi galaksi yang naik di bagian dalam lalu mendatar di radius luar, susun analisis kuantitatif untuk menguji apakah massa mengikuti cahaya. Nyatakan besaran yang dibaca, rumus massa dinamis, cara memasukkan ketidakpastian kecepatan dan radius, serta satu keterbatasan interpretasi.",
+    "rubrik":[{"poin":"Menjelaskan cara membaca v(r) dari grafik dan memilih radius dalam serta luar dengan satuan yang konsisten.","bobot":2},{"poin":"Menurunkan M(<r)=v²r/G dari orbit melingkar dan membandingkan dengan massa bercahaya dari fotometri.","bobot":2},{"poin":"Menggunakan propagasi relatif δM/M≈2δv/v+δr/r (batas konservatif) atau kuadratur untuk galat independen.","bobot":2},{"poin":"Menyebut keterbatasan seperti inklinasi, orbit nonmelingkar, kontribusi gas, atau ketidakpastian model distribusi massa.","bobot":2}],
+    "jawabanTeladan":"Saya kalibrasi sumbu grafik lalu baca v dan r pada beberapa titik, mengubah ke satuan SI atau memakai satuan astronomi terkalibrasi. Untuk orbit melingkar, v²/r=GM(<r)/r², sehingga M(<r)=v²r/G. Massa bercahaya dihitung terpisah dari fotometri dan estimasi gas; jika kurva v mendatar sementara luminositas permukaan turun, massa dinamis dapat terus naik lebih cepat daripada massa bercahaya. Untuk galat kecil independen, (σ_M/M)²≈(2σ_v/v)²+(σ_r/r)²; pendekatan konservatif menjumlahkan besar galat relatif. Perlu memperhitungkan inklinasi cakram, gerak nonmelingkar, serta kontribusi gas agar kurva tidak salah ditafsirkan. Ketidakcocokan mendukung halo luas, tetapi tidak sendirinya mengidentifikasi sifat mikrofisis materi gelap.",
+    "pembahasan":["Mulai dari kuantitas terukur pada kurva dan cek definisi radius serta inklinasi.","Turunkan massa dinamis dari hubungan orbit, lalu bandingkan dengan massa bercahaya dan gas.","Kecepatan masuk kuadrat sehingga galat v berpengaruh dua kali lipat secara relatif.","Nyatakan keterbatasan model sebelum menarik kesimpulan tentang halo."]
+  }
+]

@@ -1,0 +1,278 @@
+<Tujuan>
+
+- Memakai Hukum Wien dan Stefan–Boltzmann untuk menghubungkan warna, suhu efektif, radius, dan luminositas bintang.
+- Menghitung fluks dari luminositas dan jarak dengan hukum kuadrat terbalik.
+- Menguasai skala logaritmik Pogson, magnitudo tampak, magnitudo absolut, dan modulus jarak.
+- Memperhitungkan ekstingsi antarbintang $A_V$ dan kelebihan warna $E(B-V)$ saat mengestimasi jarak sejati.
+- Menganalisis sistem fotometri pita lebar Johnson-Cousins (UBVRI) dan koreksi bolometrik ($BC$).
+
+</Tujuan>
+
+<Prasyarat babIds={['f5', 'f3']} />
+
+<p className="lead">Fotometri adalah seni mengukur kuantitas radiasi elektromagnetik yang dipancarkan benda langit. Dari seberkas cahaya lemah yang ditangkap teleskop, astronom dapat menyimpulkan suhu permukaan, daya total (luminositas), ukuran fisik, hingga jarak objek yang membentang ribuan tahun cahaya. Bab ini memadukan hukum termodinamika radiasi benda hitam dengan skala logaritmik Pogson menjadi fondasi terpenting astrofisika observasional.</p>
+
+## 1. Benda hitam: warna dan suhu efektif
+
+<Poin judul="1 · Wien & Stefan–Boltzmann" defaultOpen>
+
+Fotosfer bintang memancarkan spektrum kontinu yang mendekati kurva radiasi benda hitam ideal (*blackbody radiation*). Dua hukum termodinamika mendasari interpretasi spektrum ini:
+
+$$\lambda_{\max} = \frac{b}{T}, \qquad b = 2{,}898 \times 10^{-3}\ \mathrm{m\cdot K}$$
+
+$$F_{\text{permukaan}} = \sigma T^{4}, \qquad \sigma = 5{,}670 \times 10^{-8}\ \mathrm{W\,m^{-2}\,K^{-4}}$$
+
+Dengan mengalikan pancaran fluks permukaan dengan luas bola bintang $4\pi R^{2}$, diperoleh **luminositas total**:
+
+$$L = 4\pi R^{2}\sigma T_{\text{eff}}^{4}$$
+
+Hukum Pergeseran Wien menyatakan bahwa puncak pancaran bergeser ke panjang gelombang lebih pendek (energi foton lebih tinggi) ketika suhu meningkat. Bintang dingin ($T \approx 3.000\ \mathrm{K}$) memiliki puncak radiasi di daerah inframerah dan tampak merah bagi mata kita, sedangkan bintang panas ($T \approx 20.000\ \mathrm{K}$) memuncak di ultraviolet dan tampak putih kebiruan.
+
+<Gambar id="kurva-benda-hitam" />
+
+<Contoh judul="Suhu efektif dan kelas warna dari puncak spektrum">
+
+<Langkah>
+
+Sebuah bintang teramati memiliki puncak emisi kontinu pada panjang gelombang $\lambda_{\max} = 380\ \mathrm{nm} = 3{,}8 \times 10^{-7}\ \mathrm{m}$.
+
+</Langkah>
+
+<Langkah>
+
+Gunakan Hukum Pergeseran Wien untuk mencari suhu efektif:
+$$T_{\text{eff}} = \frac{b}{\lambda_{\max}} = \frac{2{,}898 \times 10^{-3}\ \mathrm{m\cdot K}}{3{,}8 \times 10^{-7}\ \mathrm{m}} \approx 7.626\ \mathrm{K}.$$
+
+</Langkah>
+
+<Langkah>
+
+Bandingkan dengan Matahari ($T_\odot \approx 5.778\ \mathrm{K}$): bintang ini bersuhu lebih tinggi dan tergolong bintang kelas F awal atau A akhir dengan warna putih kekuningan hingga putih.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Fluks, luminositas, dan hukum kuadrat terbalik
+
+<Poin judul="2 · Hukum kuadrat terbalik">
+
+Luminositas $L$ adalah energi total yang dipancarkan bintang ke segala arah per satuan waktu ($\mathrm{Watt}$). Seiring radiasi merambat keluar, daya tersebut terdistribusi merata pada permukaan bola imajiner berjejari $d$. Fluks radiasi $F$ yang diterima pengamat pada jarak $d$ memenuhi:
+
+$$F = \frac{L}{4\pi d^{2}}$$
+
+Satuan fluks dalam SI adalah $\mathrm{W\,m^{-2}}$. Konsekuensi langsungnya: jika dua bintang memiliki luminositas intrinsik yang sama, rasio fluks teramati berbanding terbalik dengan kuadrat jaraknya:
+
+$$\frac{F_1}{F_2} = \left(\frac{d_2}{d_1}\right)^{2}$$
+
+<Catatan variasi="awas">
+
+Fluks yang langsung terukur oleh detektor biasanya terbatas pada jendela transmisi optik atau filter tertentu (fluks monokromatik atau fluks pita), bukan fluks bolometrik total. Konversi ke fluks total memerlukan koreksi transmisi atmosfer dan respons instrumen.
+
+</Catatan>
+
+</Poin>
+
+## 3. Skala Pogson dan modulus jarak
+
+<Poin judul="3 · Skala Pogson & modulus jarak">
+
+Pada tahun 1856, Norman Pogson memformalkan skala magnitudo kuno Hipparchos ke dalam hubungan matematis yang presisi: selisih 5 magnitudo didefinisikan tepat setara dengan rasio fluks 100 kali. Rasio fluks untuk selisih 1 magnitudo adalah $\sqrt[5]{100} \approx 2{,}512$:
+
+$$m_1 - m_2 = -2{,}5 \log_{10}\!\left(\frac{F_1}{F_2}\right)$$
+
+Skala magnitudo bersifat terbalik: **semakin kecil nilainya, semakin terang objek tersebut**.
+
+<Gambar id="tangga-magnitudo" />
+
+Untuk membandingkan kecerlangan intrinsik bintang tanpa distorsi jarak, didefinisikan **magnitudo absolut ($M$)**, yaitu magnitudo tampak yang akan dimiliki bintang seandainya ia berada pada jarak standar $d_0 = 10\ \mathrm{pc}$.
+
+Substitusi hukum kuadrat terbalik ke dalam rumus Pogson menghasilkan **modulus jarak**:
+
+$$\frac{F(d)}{F(10\ \mathrm{pc})} = \left(\frac{10\ \mathrm{pc}}{d}\right)^{2} \implies m - M = -2{,}5 \log_{10}\!\left(\frac{10}{d}\right)^{2} = 5\log_{10} d - 5$$
+
+dengan $d$ dinyatakan dalam parsek ($\mathrm{pc}$). Bentuk alternatif yang sering digunakan:
+
+$$m - M = 5\log_{10}\!\left(\frac{d}{10\ \mathrm{pc}}\right) \iff d = 10^{(m - M + 5)/5}\ \mathrm{pc}$$
+
+<Gambar id="modulus-jarak-grafik" />
+
+</Poin>
+
+## 4. Ekstingsi debu dan pemredihan antarbintang
+
+<Poin judul="4 · Ekstingsi debu & pemredihan">
+
+Medium antarbintang (*interstellar medium* / ISM) dipenuhi oleh partikel butiran debu silikat dan karbon mikro yang menghamburkan serta menyerap cahaya bintang. Efek ini menyebabkan dua fenomena fisis:
+1. **Ekstingsi ($A_\lambda$)**: Objek tampak lebih redup daripada seharusnya, sehingga nilai $m$ terukur menjadi lebih besar.
+2. **Pemredihan antarbintang (*interstellar reddening*)**: Hamburan oleh butiran debu lebih efisien pada panjang gelombang pendek (biru) dibanding panjang gelombang panjang (merah).
+
+Modulus jarak yang memperhitungkan ekstingsi pada pita visual ($V$) adalah:
+
+$$m_V - M_V = 5\log_{10} d - 5 + A_V$$
+
+Kelebihan warna didefinisikan sebagai selisih antara indeks warna teramati dengan indeks warna intrinsik bintang:
+
+$$E(B-V) = (B-V)_{\text{teramati}} - (B-V)_0$$
+
+Di lingkungan galaksi Bima Sakti secara rata-rata berlaku hubungan proporsionalitas empiris:
+
+$$A_V = R_V \times E(B-V), \qquad R_V \approx 3{,}1$$
+
+<Catatan variasi="awas">
+
+Jika ekstingsi $A_V$ diabaikan dalam perhitungan modulus jarak ($m_V - M_V = 5\log d - 5$), jarak $d$ yang diperoleh akan selalu **lebih besar (terestimasi terlalu jauh)** daripada jarak sebenarnya karena bintang tampak lebih redup akibat terhalang debu.
+
+</Catatan>
+
+</Poin>
+
+## 5. Sistem fotometri UBVRI dan indeks warna
+
+<Poin judul="5 · Sistem fotometri & suhu (B−V)">
+
+Untuk merekam distribusi fluks spektral secara kuantitatif, astronom menggunakan sistem filter standar Johnson-Cousins:
+- **Filter U** (Ultraviolet): berpusat di sekitar $\sim 365\ \mathrm{nm}$
+- **Filter B** (Biru): berpusat di sekitar $\sim 440\ \mathrm{nm}$
+- **Filter V** (Visual): berpusat di sekitar $\sim 550\ \mathrm{nm}$
+- **Filter R** (Merah): berpusat di sekitar $\sim 640\ \mathrm{nm}$
+- **Filter I** (Inframerah dekat): berpusat di sekitar $\sim 790\ \mathrm{nm}$
+
+Indeks warna $(B-V) = m_B - m_V$ merupakan indikator suhu permukaan yang sangat praktis:
+* Karena magnitudo terbalik, jika bintang sangat panas (pancaran biru $F_B$ jauh lebih kuat daripada $F_V$), maka $m_B < m_V$, sehingga $(B-V)$ bernilai kecil atau negatif (misal bintang O/B: $B-V \approx -0{,}3$ hingga $0{,}0$).
+* Bintang dingin memancarkan lebih banyak foton visual/merah ($F_V > F_B \implies m_B > m_V$), sehingga $(B-V)$ bernilai positif besar (misal bintang M: $B-V \approx +1{,}5$).
+
+<Gambar id="warna-suhu" />
+
+<Interaktif jenis="magnitudo" />
+
+</Poin>
+
+## 6. Koreksi bolometrik dan penentuan radius bintang
+
+<Poin judul="6 · Koreksi bolometrik & radius bintang">
+
+Mata manusia dan filter optik standar hanya menangkap sebagian kecil rentang radiasi elektromagnetik. Untuk menghubungkan magnitudo pada pita visual ($V$) dengan luminositas total di seluruh panjang gelombang ($L_{\text{bol}}$), digunakan **koreksi bolometrik ($BC$)**:
+
+$$m_{\text{bol}} = V + BC \qquad \text{dan} \qquad M_{\text{bol}} = M_V + BC$$
+
+*(Catatan konvensi modern IAU: $BC \le 0$, sehingga $M_{\text{bol}} = M_V + BC$; untuk bintang sangat panas atau sangat dingin yang memancarkan mayoritas energinya di luar pita visual, nilai $|BC|$ menjadi besar).*
+
+Dengan membandingkan magnitudo bolometrik absolut bintang terhadap Matahari ($M_{\text{bol},\odot} \approx +4{,}74$):
+
+$$M_{\text{bol}} - M_{\text{bol},\odot} = -2{,}5 \log_{10}\!\left(\frac{L}{L_\odot}\right)$$
+
+Jika digabungkan dengan Hukum Stefan–Boltzmann $L = 4\pi R^{2}\sigma T_{\text{eff}}^{4}$, kita memperoleh rumus penentuan radius bintang:
+
+$$\frac{L}{L_\odot} = \left(\frac{R}{R_\odot}\right)^{2} \left(\frac{T_{\text{eff}}}{T_{\text{eff},\odot}}\right)^{4} \implies \frac{R}{R_\odot} = \sqrt{\frac{L}{L_\odot}} \left(\frac{T_{\text{eff},\odot}}{T_{\text{eff}}}\right)^{2}$$
+
+<Contoh judul="Soal Rantai Olimpiade: Menentukan Radius Bintang dari Data Fotometri & Paralaks">
+
+<Langkah>
+
+Sebuah bintang memiliki sudut paralaks $p = 0{,}025''$, magnitudo tampak visual $m_V = 8{,}40$, kelebihan warna $E(B-V) = 0{,}10$, koreksi bolometrik $BC = -0{,}40$, dan suhu efektif $T_{\text{eff}} = 8.667\ \mathrm{K}$. Asumsikan $R_V = 3{,}1$ dan data Matahari: $M_{\text{bol},\odot} = +4{,}74$, $T_{\text{eff},\odot} = 5.778\ \mathrm{K}$. Tentukan radius bintang dalam satuan radius Matahari ($R_\odot$).
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 1 (Jarak dan Ekstingsi):**
+Jarak dari paralaks:
+$$d = \frac{1}{p} = \frac{1}{0{,}025} = 40\ \mathrm{pc}.$$
+Ekstingsi visual:
+$$A_V = R_V \times E(B-V) = 3{,}1 \times 0{,}10 = 0{,}31\ \mathrm{mag}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 2 (Magnitudo Absolut Visual & Bolometrik):**
+Modulus jarak terkoreksi:
+$$M_V = m_V - 5\log_{10} d + 5 - A_V = 8{,}40 - 5\log_{10}(40) + 5 - 0{,}31.$$
+Karena $\log_{10}(40) \approx 1{,}602$, maka:
+$$M_V = 8{,}40 - 8{,}01 + 5 - 0{,}31 = 5{,}08\ \mathrm{mag}.$$
+Magnitudo bolometrik absolut:
+$$M_{\text{bol}} = M_V + BC = 5{,}08 + (-0{,}40) = 4{,}68\ \mathrm{mag}.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 3 (Rasio Luminositas):**
+$$M_{\text{bol}} - M_{\text{bol},\odot} = 4{,}68 - 4{,}74 = -0{,}06.$$
+$$\frac{L}{L_\odot} = 10^{-0{,}4 \times (-0{,}06)} = 10^{0{,}024} \approx 1{,}057.$$
+
+</Langkah>
+
+<Langkah>
+
+**Langkah 4 (Radius Bintang):**
+Gunakan relasi Stefan-Boltzmann:
+$$\frac{R}{R_\odot} = \sqrt{\frac{L}{L_\odot}} \left(\frac{T_{\text{eff},\odot}}{T_{\text{eff}}}\right)^{2} = \sqrt{1{,}057} \times \left(\frac{5.778}{8.667}\right)^{2} \approx 1{,}028 \times (0{,}6667)^{2} \approx 1{,}028 \times 0{,}4444 \approx 0{,}457\ R_\odot.$$
+Jadi radius bintang tersebut adalah sekitar $0{,}46\ R_\odot$.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 7. Cek pemahaman
+
+<CekPaham
+  id="a5-cek-1"
+  pertanyaan="Bintang memiliki m = 10 dan M = 0 tanpa ekstingsi. Berapa jaraknya?"
+  opsi={['1 kpc', '100 pc', '10 kpc', '10 pc']}
+  jawaban={0}
+  penjelasan="m − M = 10 = 5 log d − 5, sehingga log d = 3 dan d = 1.000 pc = 1 kpc."
+/>
+
+<CekPaham
+  id="a5-cek-2"
+  pertanyaan="Dua bintang memiliki luminositas sama, tetapi bintang A berjarak 10 kali lebih jauh dibanding bintang B. Berapa selisih magnitudo tampak m_A − m_B?"
+  opsi={['+5 magnitudo', '−5 magnitudo', '+2,5 magnitudo', '+10 magnitudo']}
+  jawaban={0}
+  penjelasan="Fluks turun dengan kuadrat jarak (10² = 100 kali lebih kecil). Penurunan fluks 100 kali setara dengan kenaikan nilai magnitudo sebesar +5 (lebih redup)."
+/>
+
+<CekPaham
+  id="a5-cek-3"
+  pertanyaan="Jika debu antarbintang menyebabkan ekstingsi sebesar A_V = 2 magnitudo tetapi diabaikan saat menghitung jarak dari modulus m_V − M_V, bagaimana estimasi jarak yang diperoleh?"
+  opsi={['Terlalu besar sekitar 2,51 kali dari jarak sebenarnya', 'Terlalu kecil sekitar 2,51 kali dari jarak sebenarnya', 'Terlalu besar 2 kali dari jarak sebenarnya', 'Tidak terpengaruh karena ekstingsi hanya mengubah warna']}
+  jawaban={0}
+  penjelasan="5 log(d_semu) = m - M + 5, sedangkan 5 log(d_sejati) = m - M - A_V + 5. Maka 5 log(d_semu / d_sejati) = A_V = 2 => log(d_semu / d_sejati) = 0,4 => d_semu / d_sejati = 10^0,4 ≈ 2,512. Jarak terhitung 2,51 kali lebih jauh."
+/>
+
+<Refleksi
+  id="a5-refleksi-1"
+  pertanyaan="Mengapa dalam penentuan jarak gugus bintang terbuka di bidang Bima Sakti, astronom wajib mengukur indeks warna (B−V) selain magnitudo visual V? Jelaskan peran diagram warna–magnitudo dalam mengoreksi ekstingsi."
+/>
+
+## 8. Konstanta penting fotometri
+
+<Konstanta
+  data={[
+    { simbol: 'b (Wien)', nilai: '2,898 × 10⁻³', satuan: 'm·K' },
+    { simbol: 'σ (Stefan–Boltzmann)', nilai: '5,670 × 10⁻⁸', satuan: 'W·m⁻²·K⁻⁴' },
+    { simbol: 'L☉', nilai: '3,828 × 10²⁶', satuan: 'W' },
+    { simbol: 'M_bol,☉', nilai: '+4,74', satuan: 'mag' },
+    { simbol: 'M_V,☉', nilai: '+4,83', satuan: 'mag' },
+    { simbol: 'm_V,☉', nilai: '−26,74', satuan: 'mag' },
+    { simbol: 'Jarak acuan M', nilai: '10', satuan: 'pc' },
+    { simbol: 'R_V standar', nilai: '3,1', satuan: 'rasio' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+Rumus-rumus kunci yang harus selalu dikuasai:
+1. $L = 4\pi R^2 \sigma T^4$
+2. $F = L / (4\pi d^2)$
+3. $m_1 - m_2 = -2{,}5 \log_{10}(F_1 / F_2)$
+4. $m_V - M_V = 5\log_{10} d - 5 + A_V$
+5. $A_V = R_V \times E(B-V)$
+6. $M_{\text{bol}} - M_{\text{bol},\odot} = -2{,}5 \log_{10}(L / L_\odot)$
+
+</Catatan>

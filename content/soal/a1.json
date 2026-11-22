@@ -1,0 +1,570 @@
+[
+  {
+    "id": "a1-01",
+    "topik": "pengantar-astronomi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "paralaks-tahunan",
+    "soal": "Perhatikan geometri paralaks tahunan pada gambar. Sebuah bintang memiliki sudut paralaks tahunan $p = 0{,}05''$ (detik busur). Berapakah jarak bintang tersebut dari Bumi?",
+    "opsi": [
+      "$20\\ \\mathrm{pc}$",
+      "$2\\ \\mathrm{pc}$",
+      "$50\\ \\mathrm{pc}$",
+      "$5\\ \\mathrm{pc}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan definisi satuan parsec: $d = 1 / p$.",
+      "Substitusi nilai: $d = 1 / 0{,}05 = 20\\ \\mathrm{pc}$.",
+      "Dalam tahun cahaya, jarak ini setara dengan $20 \\times 3{,}262 \\approx 65{,}2\\ \\mathrm{ly}$."
+    ]
+  },
+  {
+    "id": "a1-02",
+    "topik": "pengantar-astronomi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Satu parsek ($\\mathrm{pc}$) didefinisikan sebagai jarak di mana panjang $1\\ \\mathrm{AU}$ membentang sudut sebesar...",
+    "opsi": [
+      "$1''$ (satu detik busur)",
+      "$1'$ (satu menit busur)",
+      "$1^\\circ$ (satu derajat busur)",
+      "$1\\ \\mathrm{rad}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Kata 'parsec' berasal dari penggabungan *parallax second*.",
+      "Satu parsek adalah jarak suatu objek jika radius orbit Bumi ($1\\ \\mathrm{AU}$) dilihat dari objek tersebut membentang sudut paralaks sebesar tepat $1''$ (satu detik busur).",
+      "$1\\ \\mathrm{pc} = 1\\ \\mathrm{AU} / \\tan(1'') \\approx 206.265\\ \\mathrm{AU} \\approx 3{,}26\\ \\mathrm{ly}$."
+    ]
+  },
+  {
+    "id": "a1-03",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "tangga-magnitudo",
+    "soal": "Perhatikan tangga magnitudo terbalik pada gambar. Bintang A memiliki magnitudo tampak $m_A = +2{,}0$ dan bintang B memiliki $m_B = +7{,}0$. Manakah pernyataan yang BENAR mengenai kecerahan kedua bintang?",
+    "opsi": [
+      "Bintang A tampak 100 kali lebih terang daripada bintang B",
+      "Bintang B tampak 100 kali lebih terang daripada bintang A",
+      "Bintang A tampak 5 kali lebih terang daripada bintang B",
+      "Bintang B tampak 5 kali lebih terang daripada bintang A"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Skala magnitudo Pogson bersifat logaritmik dan terbalik: nilai magnitudo lebih kecil berarti objek lebih terang.",
+      "Selisih magnitudo adalah $\\Delta m = 7{,}0 - 2{,}0 = 5{,}0$.",
+      "Rasio fluks: $F_A / F_B = 100^{(5{,}0 / 5)} = 100$. Bintang A tampak 100 kali lebih terang dari bintang B."
+    ]
+  },
+  {
+    "id": "a1-04",
+    "topik": "pengantar-astronomi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Persatuan Astronomi Internasional (IAU) secara resmi membagi seluruh bola langit malam menjadi tepat...",
+    "opsi": [
+      "88 rasi bintang",
+      "12 rasi bintang",
+      "13 rasi zodiak",
+      "48 rasi Ptolemaeus"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Pada tahun 1928, IAU menetapkan batas resmi yang membagi bola langit menjadi tepat 88 rasi bintang.",
+      "12 atau 13 adalah rasi yang dilewati ekliptika (zodiak), sedangkan 48 adalah katalog rasi kuno Ptolemaeus."
+    ]
+  },
+  {
+    "id": "a1-05",
+    "topik": "pengantar-astronomi",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah bintang memiliki jarak $d = 10{,}0\\ \\mathrm{pc}$. Berapakah jarak bintang tersebut dalam satuan tahun cahaya ($\\mathrm{ly}$)? (Gunakan konversi $1\\ \\mathrm{pc} = 3{,}262\\ \\mathrm{ly}$)",
+    "jawaban": 32.62,
+    "toleransiRel": 0.01,
+    "satuan": "ly",
+    "pembahasan": [
+      "Gunakan faktor konversi antara parsek dan tahun cahaya: $1\\ \\mathrm{pc} = 3{,}262\\ \\mathrm{ly}$.",
+      "Jarak dalam tahun cahaya: $d = 10{,}0\\ \\mathrm{pc} \\times 3{,}262\\ \\mathrm{ly/pc} = 32{,}62\\ \\mathrm{ly}$."
+    ]
+  },
+  {
+    "id": "a1-06",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Dua buah bintang memiliki perbedaan magnitudo tampak sebesar tepat $\\Delta m = 2{,}50$. Berapakah rasio perbandingan fluks cahaya ($F_1 / F_2$) antara bintang yang lebih terang terhadap yang lebih redup? (Gunakan rumus Pogson $F_1 / F_2 = 100^{(\\Delta m / 5)}$)",
+    "jawaban": 10,
+    "toleransiRel": 0.01,
+    "satuan": "rasio",
+    "pembahasan": [
+      "Berdasarkan formula Pogson: $F_1 / F_2 = 100^{(\\Delta m / 5)}$.",
+      "Substitusi nilai $\\Delta m = 2{,}50$: $F_1 / F_2 = 100^{(2{,}50 / 5)} = 100^{0{,}50} = \\sqrt{100} = 10$."
+    ]
+  },
+  {
+    "id": "a1-07",
+    "topik": "pengantar-astronomi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "skala-tata-surya",
+    "soal": "Perhatikan skala jarak planet Tata Surya dari Matahari pada gambar. Planet Neptunus berada pada jarak sekitar $30{,}0\\ \\mathrm{AU}$ dari Matahari. Berapakah jarak tersebut dalam satuan kilometer? (Gunakan $1\\ \\mathrm{AU} = 1{,}496 \\times 10^8\\ \\mathrm{km}$)",
+    "opsi": [
+      "$4{,}49 \\times 10^9\\ \\mathrm{km}$",
+      "$4{,}49 \\times 10^8\\ \\mathrm{km}$",
+      "$1{,}49 \\times 10^9\\ \\mathrm{km}$",
+      "$3{,}00 \\times 10^8\\ \\mathrm{km}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Konversikan satuan AU ke kilometer menggunakan definisi $1\\ \\mathrm{AU} = 1{,}496 \\times 10^8\\ \\mathrm{km}$.",
+      "Kalkulasi: $d = 30{,}0 \\times 1{,}496 \\times 10^8\\ \\mathrm{km} = 4{,}488 \\times 10^9\\ \\mathrm{km} \\approx 4{,}49 \\times 10^9\\ \\mathrm{km}$."
+    ]
+  },
+  {
+    "id": "a1-08",
+    "topik": "pengantar-astronomi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "paralaks-tahunan",
+    "soal": "Bintang Sirius memiliki paralaks trigonometri $p = 0{,}379''$. Mengapa metode paralaks trigonometri berbasis teleskop darat zaman dahulu sulit mendeteksi paralaks bintang-bintang lain yang berjarak lebih dari $100\\ \\mathrm{pc}$?",
+    "opsi": [
+      "Karena sudut paralaks menjadi lebih kecil dari $0{,}01''$, terdistorsi oleh turbulensi atmosfer (*seeing*)",
+      "Karena bintang di atas 100 pc tidak memiliki pergeseran paralaks sama sekali",
+      "Karena kecepatan orbit Bumi berubah-ubah secara ekstrem",
+      "Karena cahaya bintang terhalang total oleh cincin debu Tata Surya"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Jarak $100\\ \\mathrm{pc}$ setara sudut paralaks $p = 1 / 100 = 0{,}01'' = 10\\ \\mathrm{mas}$.",
+      "Teleskop berbasis darat terhambat oleh seeing atmosfer (turbulensi udara) yang memiliki lebar resolusi khas sekitar $0{,}5'' - 1{,}0''$, sehingga pergeseran di bawah $0{,}01''$ tenggelam dalam ketidakpastian.",
+      "Masalah ini baru dipecahkan oleh misi satelit luar angkasa seperti Hipparcos dan Gaia yang berada di atas atmosfer Bumi."
+    ]
+  },
+  {
+    "id": "a1-09",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "tangga-magnitudo",
+    "soal": "Perhatikan tangga magnitudo pada gambar. Bintang kutub utara Polaris memiliki magnitudo tampak $m = +2{,}0$. Di langit perkotaan dengan polusi cahaya sedang, magnitudo batas mata telanjang adalah $m_{\\text{limit}} = +4{,}0$. Berapa kali lebih terang bintang Polaris dibandingkan bintang paling redup yang masih dapat dilihat mata di kota tersebut?",
+    "opsi": [
+      "$6{,}3$ kali",
+      "$2{,}0$ kali",
+      "$2{,}5$ kali",
+      "$15{,}8$ kali"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Selisih magnitudo: $\\Delta m = 4{,}0 - 2{,}0 = 2{,}0$.",
+      "Rasio fluks: $F_1 / F_2 = 100^{(2{,}0 / 5)} = 100^{0{,}4} = 10^{0{,}8} \\approx 6{,}31$ kali.",
+      "Polaris tampak sekitar 6,3 kali lebih terang daripada bintang batas pandang mata."
+    ]
+  },
+  {
+    "id": "a1-10",
+    "topik": "pengantar-astronomi",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah semua pernyataan yang BENAR mengenai rasi bintang dan asterisme di bola langit:",
+    "opsi": [
+      "Bintang-bintang yang membentuk satu rasi pada umumnya tidak saling terikat gravitasi dan berada pada jarak yang berbeda-beda dari Bumi",
+      "Asterisme adalah pola bintang populer yang mudah dikenali namun bukan merupakan salah satu dari 88 rasi resmi IAU",
+      "Rasi bintang modern memiliki batas-batas geometris resmi yang mencakup seluruh luasan bola langit tanpa ada celah",
+      "Bintang terdekat ke Bumi selalu merupakan bintang paling terang di rasi tempat ia berada",
+      "Batas 88 rasi IAU berubah setiap bulan mengikuti revolusi Bumi"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pernyataan 1, 2, dan 3 benar secara definisi astronomi.",
+      "Pernyataan 4 salah: Bintang terdekat seperti Proxima Centauri (4,24 ly) bermagnitudo 11 dan tidak tampak oleh mata telanjang di rasi Centaurus.",
+      "Pernyataan 5 salah: Batas 88 rasi IAU bersifat tetap di bola langit."
+    ]
+  },
+  {
+    "id": "a1-11",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Mengenai skala magnitudo tampak dan fluks radiasi benda langit, manakah pernyataan yang BENAR?",
+    "opsi": [
+      "Matahari memiliki magnitudo tampak visual sekitar $m_V \\approx -26{,}74$",
+      "Bintang dengan magnitudo negatif memiliki kecerahan tampak yang lebih tinggi daripada bintang bermagnitudo positif",
+      "Dua bintang identik bermagnitudo $+6{,}0$ yang tampak menyatu akan menghasilkan magnitudo gabungan sekitar $+5{,}25$",
+      "Skala magnitudo Pogson adalah skala linier murni terhadap fluks radiasi",
+      "Mata manusia dapat melihat bintang hingga magnitudo $+15$ tanpa alat bantu teleskop"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pernyataan 1 dan 2 benar sesuai konvensi magnitudo Pogson.",
+      "Pernyataan 3 benar: $m_{\\text{tot}} = 6{,}0 - 2{,}5\\log_{10}(2) = 6{,}0 - 0{,}7525 \\approx 5{,}25$.",
+      "Pernyataan 4 salah: Skala Pogson bersifat logaritmik, bukan linier.",
+      "Pernyataan 5 salah: Batas mata bugil normal hanya sekitar magnitudo $+6$."
+    ]
+  },
+  {
+    "id": "a1-12",
+    "topik": "pengantar-astronomi",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah wahana antariksa berada pada jarak $d = 100\\ \\mathrm{AU}$ dari Matahari. Berapakah waktu yang dibutuhkan sinyal radio (kecepatan cahaya $c = 300.000\\ \\mathrm{km/s}$) untuk merambat dari wahana tersebut menuju stasiun Bumi? (Gunakan $1\\ \\mathrm{AU} = 1{,}496 \\times 10^8\\ \\mathrm{km}$, nyatakan jawaban dalam satuan jam, bulatkan ke 2 desimal)",
+    "jawaban": 13.85,
+    "toleransiRel": 0.02,
+    "satuan": "jam",
+    "pembahasan": [
+      "Jarak total: $d = 100 \\times 1{,}496 \\times 10^8\\ \\mathrm{km} = 1{,}496 \\times 10^{10}\\ \\mathrm{km}$.",
+      "Waktu tempuh cahaya: $t = d / c = 1{,}496 \\times 10^{10} / 300.000 = 49.867\\ \\mathrm{s}$.",
+      "Dalam jam: $t = 49.867 / 3600 \\approx 13{,}85\\ \\text{jam}$."
+    ]
+  },
+  {
+    "id": "a1-13",
+    "topik": "pengantar-astronomi",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Bintang Proxima Centauri memiliki paralaks $p = 0{,}768''$. Berapakah jaraknya dalam satuan parsek ($\\mathrm{pc}$)? (Bulatkan hingga 2 desimal)",
+    "jawaban": 1.3,
+    "toleransiRel": 0.02,
+    "satuan": "pc",
+    "pembahasan": [
+      "Hubungan paralaks dan jarak: $d = 1 / p$.",
+      "$d = 1 / 0{,}768'' \\approx 1{,}302\\ \\mathrm{pc} \\approx 1{,}30\\ \\mathrm{pc}$."
+    ]
+  },
+  {
+    "id": "a1-14",
+    "topik": "pengantar-astronomi",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Bulan memiliki diameter linier $3.474\\ \\mathrm{km}$ dan jarak rata-rata dari Bumi $384.400\\ \\mathrm{km}$. Menggunakan aproksimasi sudut kecil, berapakah diameter sudut Bulan dalam satuan menit busur ($'$)? (Bulatkan ke 1 desimal)",
+    "jawaban": 31.1,
+    "toleransiRel": 0.02,
+    "satuan": "menit busur",
+    "pembahasan": [
+      "$\\theta = D / d = 3.474 / 384.400\\ \\mathrm{rad} \\approx 9{,}0375 \\times 10^{-3}\\ \\mathrm{rad}$.",
+      "Ubah ke menit busur: kalikan dengan $3.437{,}75'/\\mathrm{rad}$:",
+      "$\\theta = 9{,}0375 \\times 10^{-3} \\times 3.437{,}75' \\approx 31{,}07' \\approx 31{,}1'$."
+    ]
+  },
+  {
+    "id": "a1-15",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah sistem bintang kembar tiga (*triple star*) terdiri atas tiga bintang yang identik, masing-masing bermagnitudo $m = 6{,}00$. Berapakah magnitudo tampak gabungan ketiga bintang tersebut? (Gunakan $\\log_{10}(3) \\approx 0{,}477$)",
+    "jawaban": 4.81,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "Fluks gabungan: $F_{\\text{tot}} = 3 F_1$.",
+      "Magnitudo total: $m_{\\text{tot}} = m_1 - 2{,}5\\log_{10}(3) = 6{,}00 - 2{,}5(0{,}4771) = 6{,}00 - 1{,}193 = 4{,}807 \\approx 4{,}81\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "a1-16",
+    "topik": "pengantar-astronomi",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "skala-log",
+    "soal": "Perhatikan perbandingan skala linier dan logaritmik pada gambar. Mengapa grafik logaritmik sangat penting digunakan saat memplot jarak objek-objek astronomi (dari satelit Bumi hingga kluster galaksi jauh)?",
+    "opsi": [
+      "Karena rentang jarak astronomi membentang lebih dari 20 orde magnitudo, sehingga pada sumbu linier semua objek dekat akan menumpuk di angka nol",
+      "Karena kecepatan cahaya berkurang secara logaritmik seiring jarak",
+      "Karena ruang angkasa memiliki kelengkungan non-Euclidean yang mengharuskan penggunaan logaritma alami",
+      "Karena instrumen teleskop hanya dapat merekam data dalam bilangan biner"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Jarak Bulan ($\\sim 10^8\\ \\mathrm{m}$) dan jarak batas alam semesta teramati ($\\sim 10^{26}\\ \\mathrm{m}$) berselisih faktor $10^{18}$.",
+      "Jika diplot pada sumbu linier berjarak 1 meter, Tata Surya bahkan tidak memakan ruang selebar satu atom.",
+      "Skala logaritmik memberikan ruang yang seimbang untuk setiap faktor 10, memungkinkan visualisasi bertingkat dari tata surya, bintang terdekat, Bima Sakti, hingga galaksi jauh."
+    ]
+  },
+  {
+    "id": "a1-17",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah teleskop kecil memiliki diameter bukaan $D = 100\\ \\mathrm{mm}$. Diameter pupil mata manusia saat adaptasi gelap adalah $d_{\\text{pupil}} = 5\\ \\mathrm{mm}$. Berapa kali lebih banyak cahaya yang dikumpulkan oleh lensa objektif teleskop tersebut dibandingkan pupil mata telanjang?",
+    "opsi": [
+      "$400$ kali",
+      "$20$ kali",
+      "$100$ kali",
+      "$2.000$ kali"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Daya kumpul cahaya sebanding dengan luas bukaan (kuadrat diameter):",
+      "$\\text{Rasio} = (D / d_{\\text{pupil}})^2 = (100 / 5)^2 = 20^2 = 400$ kali."
+    ]
+  },
+  {
+    "id": "a1-18",
+    "topik": "pengantar-astronomi",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "paralaks-tahunan",
+    "soal": "Perhatikan paralaks trigonometri pada gambar. Mengenai pengukuran paralaks bintang oleh satelit astrometri luar angkasa, manakah pernyataan yang BENAR?",
+    "opsi": [
+      "Basis pengukuran paralaks tahunan adalah radius rata-rata orbit Bumi ($1\\ \\mathrm{AU}$)",
+      "Bintang yang lebih jauh memiliki sudut paralaks tahunan yang lebih kecil",
+      "Jika ketidakpastian paralaks adalah $\\sigma_p$, maka perambatan galat fraksional jarak memenuhi $\\sigma_d / d = \\sigma_p / p$",
+      "Paralaks bintang dapat diukur tanpa memerlukan gerakan revolusi Bumi mengelilingi Matahari",
+      "Bintang di kutub ekliptika membentuk elips paralaks berupa garis lurus"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pernyataan 1 dan 2 benar: $d = 1/p$ dengan baseline $1\\ \\mathrm{AU}$.",
+      "Pernyataan 3 benar: Dari diferensial logaritmik $d = p^{-1} \\implies |\\Delta d / d| = |\\Delta p / p|$.",
+      "Pernyataan 4 salah: Revolusi Bumi adalah basis pengamatan paralaks tahunan.",
+      "Pernyataan 5 salah: Di kutub ekliptika elips paralaks berbentuk lingkaran sempurna (garis lurus terjadi di bidang ekliptika)."
+    ]
+  },
+  {
+    "id": "a1-19",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "soal": "Matahari memiliki magnitudo tampak $m = -26{,}74$ dan Bulan Purnama memiliki $m = -12{,}74$. Manakah kesimpulan fisis yang BENAR?",
+    "opsi": [
+      "Selisih magnitudo antara Matahari dan Bulan Purnama adalah tepat $14{,}00$ magnitudo",
+      "Matahari tampak sekitar $398.000$ kali lebih terang daripada Bulan Purnama bagi pengamat di Bumi",
+      "Fluks radiasi Matahari di Bumi melebihi fluks Bulan Purnama lebih dari seperempat juta kali",
+      "Bulan Purnama memancarkan cahaya melalui reaksi fusi sendiri",
+      "Matahari tampak lebih terang karena magnitudo absolutnya bernilai $-26{,}74$"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Selisih magnitudo: $\\Delta m = -12{,}74 - (-26{,}74) = 14{,}00$.",
+      "Rasio fluks: $F_\\odot / F_{\\text{Bulan}} = 100^{(14 / 5)} = 100^{2{,}8} = 10^{5{,}6} \\approx 398.107$ kali lipat.",
+      "Pernyataan 4 salah (Bulan hanya memantulkan sinar Matahari).",
+      "Pernyataan 5 salah ($-26{,}74$ adalah magnitudo tampak, bukan magnitudo absolut)."
+    ]
+  },
+  {
+    "id": "a1-20",
+    "topik": "pengantar-astronomi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah asteroid memiliki diameter linier $D = 100\\ \\mathrm{km}$. Ketika berada pada jarak terdekatnya dari Bumi yaitu $d = 0{,}50\\ \\mathrm{AU}$, berapakah diameter sudut asteroid tersebut dalam satuan detik busur ($''$)? (Gunakan $1\\ \\mathrm{AU} = 1{,}496 \\times 10^8\\ \\mathrm{km}$ dan $1\\ \\mathrm{rad} = 206.265''$, bulatkan ke 2 desimal)",
+    "jawaban": 0.28,
+    "toleransiRel": 0.05,
+    "satuan": "detik busur",
+    "pembahasan": [
+      "Jarak asteroid: $d = 0{,}50 \\times 1{,}496 \\times 10^8\\ \\mathrm{km} = 7{,}48 \\times 10^7\\ \\mathrm{km}$.",
+      "Diameter sudut: $\\theta = 206.265 \\times (D / d) = 206.265 \\times (100 / 7{,}48 \\times 10^7) \\approx 0{,}2757'' \\approx 0{,}28''$."
+    ]
+  },
+  {
+    "id": "a1-21",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Dua bintang terpisah sejauh $2''$ di langit malam. Bintang primer memiliki magnitudo tampak $m_1 = 3{,}00$ dan bintang sekunder memiliki $m_2 = 5{,}50$. Berapakah magnitudo tampak gabungan keduanya? (Gunakan rumus $m_{\\text{tot}} = m_1 - 2{,}5\\log_{10}(1 + 10^{-0{,}4(m_2 - m_1)})$, bulatkan ke 2 desimal)",
+    "jawaban": 2.9,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "$\\Delta m = m_2 - m_1 = 5{,}50 - 3{,}00 = 2{,}50$.",
+      "$10^{-0{,}4 \\times 2{,}50} = 10^{-1{,}0} = 0{,}10$.",
+      "$m_{\\text{tot}} = 3{,}00 - 2{,}5\\log_{10}(1 + 0{,}10) = 3{,}00 - 2{,}5\\log_{10}(1{,}10) = 3{,}00 - 2{,}5(0{,}04139) = 3{,}00 - 0{,}1035 \\approx 2{,}90\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "a1-22",
+    "topik": "pengantar-astronomi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Satelit Gaia mengukur paralaks sebuah bintang dengan presisi $\\sigma_p = 0{,}02\\ \\mathrm{mas}$ (mili-detik busur). Jika bintang tersebut memiliki nilai paralaks terukur $p = 0{,}20\\ \\mathrm{mas}$, berapakah persentase ketidakpastian jarak bintang tersebut ($\\sigma_d / d$)?",
+    "jawaban": 10,
+    "toleransiRel": 0.01,
+    "satuan": "persen",
+    "pembahasan": [
+      "Dari hubungan diferensial logaritmik $d = 1/p$:",
+      "$\\sigma_d / d = \\sigma_p / p = (0{,}02\\ \\mathrm{mas}) / (0{,}20\\ \\mathrm{mas}) = 0{,}10 = 10\\%$."
+    ]
+  },
+  {
+    "id": "a1-23",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa mata manusia memiliki batas magnitudo pengamatan langit sekitar m ≈ +6 pada malam gelap, dan bagaimana prinsip optik teleskop astronomi (melalui diameter objektif D) dapat memperluas batas pengamatan hingga magnitudo yang jauh lebih redup (misal m > +20). Turunkan rumus aproksimasi penguatan magnitudo limit teleskopik terhadap mata telanjang.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan batas mata bugil: diameter pupil manusia saat adaptasi gelap terbatas (d_pupil ≈ 6 - 7 mm) dan ambang batas sensitivitas fotoreseptor retina membutuhkan jumlah foton minimum per detik.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerangkan bahwa teleskop mengumpulkan foton sebanding dengan luas penampang lensa/cermin objektif: Luas ~ D^2.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menurunkan rumus rasio fluks F_tel / F_mata = (D / d_pupil)^2 dan formula magnitudo limit: Delta m = 2,5 log10(F_tel / F_mata) = 5 log10(D / d_pupil) sehingga m_limit ≈ m_mata + 5 log10(D / d_pupil).",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "1. Batas Pengamatan Mata Telanjang: Kecerahan objek astronomi yang dapat dideteksi mata manusia dibatasi oleh diameter pupil mata saat beradaptasi dalam kegelapan (d_pupil ≈ 6–7 mm). Luas bukaan yang kecil ini hanya mampu menangkap sejumlah kecil foton dari bintang redup. Agar sinyal visual dapat diteruskan oleh sel batang retina ke otak, diperlukan laju fluks foton minimum tertentu. Di langit gelap murni tanpa polusi cahaya, ambang batas deteksi mata manusia berada pada magnitudo tampak m_mata ≈ +6,0 hingga +6,5.\n2. Prinsip Pengumpulan Cahaya Teleskop: Teleskop berfungsi sebagai pupil buatan raksasa. Daya kumpul cahaya instrumen berbanding lurus dengan luas permukaan bukaan objektif (A = pi D^2 / 4). Dengan demikian, rasio fluks cahaya terkumpul antara teleskop berdiameter bukaan D terhadap pupil mata d_pupil adalah:\nF_tel / F_mata = (D / d_pupil)^2.\n3. Penurunan Rumus Magnitudo Batas: Berdasarkan formula Pogson, keuntungan magnitudo Delta m yang diperoleh dari peningkatan fluks cahaya adalah:\nDelta m = m_limit - m_mata = 2,5 log10(F_tel / F_mata) = 2,5 log10 [ (D / d_pupil)^2 ]\nDelta m = 5 log10(D / d_pupil).\nSehingga magnitudo batas teleskopik menjadi:\nm_limit ≈ m_mata + 5 log10(D / d_pupil).\nSebagai contoh, teleskop amatir berdiameter D = 200 mm dengan d_pupil = 6 mm menghasilkan penguatan Delta m = 5 log10(200 / 6) = 5 log10(33,33) = 5 × 1,523 ≈ 7,6 magnitudo, sehingga mampu menjangkau bintang hingga magnitudo m ≈ 6 + 7,6 = +13,6. Pada teleskop riset modern berdiameter 8–10 meter dan bantuan detektor CCD berwaktu eksposur panjang, magnitudo batas dapat mencapai m > +27.",
+    "pembahasan": [
+      "Pupil mata ($d \\approx 6\\ \\mathrm{mm}$) membatasi daya kumpul foton pada magnitudo $\\sim +6$.",
+      "Objektif teleskop mengumpulkan fluks dengan rasio $(D / d_{\\text{pupil}})^2$.",
+      "Penurunan: $\\Delta m = 5\\log_{10}(D / d_{\\text{pupil}}) \\implies m_{\\text{limit}} = m_{\\text{mata}} + 5\\log_{10}(D / d_{\\text{pupil}})$."
+    ]
+  },
+  {
+    "id": "a1-24",
+    "topik": "pengantar-astronomi",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Konsep Tangga Jarak Kosmik (*Cosmic Distance Ladder*) adalah salah satu pencapaian metodologis terpenting dalam astrofisika modern. Jelaskan mengapa para astronom tidak dapat menggunakan satu metode tunggal (seperti paralaks trigonometri) untuk mengukur seluruh jarak di alam semesta, dan jelaskan secara berurutan tiga anak tangga jarak utama beserta metode kalibrasinya.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan keterbatasan paralaks trigonometri: sudut paralaks berbanding terbalik dengan jarak (p = 1/d) sehingga untuk objek di luar Bima Sakti sudutnya mendekati nol dan berada di bawah batas resolusi instrumen manapun.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan anak tangga kedua (Lilin Standar lokal/gugus seperti Cepheid dan fitting deret utama) yang dikalibrasi oleh paralaks bintang-bintang dekat.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan anak tangga ketiga (Supernova Tipe Ia dan Hukum Hubble) yang dikalibrasi oleh Cepheid pada galaksi-galaksi terdekat untuk menjangkau skala kosmologis.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "1. Keterbatasan Metode Tunggal: Metode paralaks trigonometri adalah metode pengukuran jarak geometris murni yang paling andal tanpa asumsi fisis. Namun, karena p = 1/d, semakin jauh objek maka sudut paralaksnya mengecil secara drastis. Satelit astrometri tercanggih saat ini (Gaia) memiliki batas ketelitian sudut sekitar mikro-detik busur, yang membatasi jangkauan paralaks pada skala galaksi lokal (beberapa kiloparsek). Untuk galaksi lain yang berjarak jutaan parsek (Mpc), sudut paralaks menjadi jauh lebih kecil dari ukuran atom dilihat dari jarak ribuan kilometer, sehingga tidak mungkin diukur secara geometris langsung.\n2. Konsep Tangga Jarak Bertingkat: Astronom mengatasi kendala ini dengan membangun metode bertingkat di mana ketidakpastian dan kalibrasi diwariskan dari satu anak tangga ke anak tangga berikutnya:\n- Anak Tangga 1 (Geometri Fundamental): Radar astronomi mengukur 1 AU di Tata Surya, yang menjadi baseline untuk paralaks trigonometri bintang-bintang dekat di Bima Sakti.\n- Anak Tangga 2 (Lilin Standar Galaktik & Ekstragalaktik Dekat): Bintang variabel Cepheid di Bima Sakti yang jaraknya diketahui dari paralaks digunakan untuk mengalibrasi hubungan empiris Periode–Luminositas Leavitt. Bintang Cepheid yang sangat terang ini kemudian dapat diamati di galaksi-galaksi tetangga (seperti Andromeda atau gugus Virgo) hingga jarak ~30–40 Mpc untuk menentukan jarak galaksi induknya.\n- Anak Tangga 3 (Lilin Standar Kosmologis): Di galaksi-galaksi yang jaraknya telah diketahui melalui Cepheid, jika terjadi peristiwa Supernova Tipe Ia (ledakan katai putih bermassa batas Chandrasekhar), puncak luminositas absolut supernova tersebut terkalibrasi. Karena Supernova Ia sangat terang (dapat mengalahkan cahaya seluruh galaksinya), ia dapat terdeteksi hingga miliaran tahun cahaya (skala gigaparsek), yang pada akhirnya mengalibrasi Konstanta Hubble dan laju ekspansi alam semesta.",
+    "pembahasan": [
+      "Paralaks memiliki batas resolusi sudut pada jarak jauh ($p \\propto 1/d$).",
+      "Tangga jarak menghubungkan metode primer geometris dengan lilin standar sekunder (Cepheid) dan tersier (Supernova Ia).",
+      "Kalibrasi silang antar anak tangga memungkinkan penentuan jarak hingga batas alam semesta teramati."
+    ]
+  },
+  {
+    "id": "a1-25",
+    "topik": "pengantar-astronomi",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "paralaks-tahunan",
+    "soal": "Perhatikan diagram paralaks tahunan pada gambar. Sebuah bintang ganda visual memiliki pemisahan sudut $\\alpha = 2{,}50''$ (detik busur). Paralaks trigonometri sistem tersebut terukur $p = 0{,}050''$. Jika periode orbit kedua bintang mengitari pusat massa bersama adalah $T = 50{,}0\\ \\text{tahun}$, berapakah massa total sistem bintang ganda tersebut dalam satuan massa Matahari ($M_\\odot$)?",
+    "opsi": [
+      "$50{,}0\\ M_\\odot$",
+      "$25{,}0\\ M_\\odot$",
+      "$10{,}0\\ M_\\odot$",
+      "$2{,}0\\ M_\\odot$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Jarak sistem dalam parsek: $d = 1 / p = 1 / 0{,}050'' = 20{,}0\\ \\mathrm{pc}$.",
+      "Sumbu semimayor fisik orbit dalam $\\mathrm{AU}$ diperoleh dari pemisahan sudut:\n$$a\\ (\\mathrm{AU}) = \\alpha\\ ('') \\times d\\ (\\mathrm{pc}) = 2{,}50 \\times 20{,}0 = 50{,}0\\ \\mathrm{AU}.$$",
+      "Gunakan Hukum Kepler III bentuk umum Newton:\n$$M_1 + M_2 = \\frac{a^3}{T^2}.$$",
+      "Substitusi nilai: $a = 50{,}0\\ \\mathrm{AU}$ dan $T = 50{,}0\\ \\text{tahun}$:\n$$M_1 + M_2 = \\frac{50^3}{50^2} = 50{,}0\\ M_\\odot.$$"
+    ]
+  },
+  {
+    "id": "a1-26",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "tangga-magnitudo",
+    "soal": "Perhatikan tangga magnitudo pada gambar. Sebuah gugus bintang bola (*globular cluster*) terdiri atas $100.000$ bintang identik yang masing-masing memiliki magnitudo tampak individu $m = 16{,}50$. Berapakah magnitudo tampak terintegrasi (total) gugus bintang tersebut jika dilihat sebagai satu kesatuan objek?",
+    "opsi": [
+      "$4{,}00$",
+      "$6{,}50$",
+      "$11{,}50$",
+      "$1{,}50$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Fluks total gugus adalah jumlah fluks seluruh bintang: $F_{\\text{tot}} = N \\times F_1 = 10^5 F_1$.",
+      "Hubungan magnitudo total:\n$$m_{\\text{tot}} - m_1 = -2{,}5 \\log_{10}\\left(\\frac{F_{\\text{tot}}}{F_1}\\right) = -2{,}5 \\log_{10}(10^5) = -2{,}5 \\times 5 = -12{,}50.$$",
+      "Maka magnitudo total gugus:\n$$m_{\\text{tot}} = 16{,}50 - 12{,}50 = 4{,}00\\ \\mathrm{mag}.$$",
+      "Gugus yang terdiri dari bintang-bintang redup magnitudo 16,5 tampak bersinar cukup terang pada magnitudo 4,00, mudah dilihat mata telanjang di langit malam yang gelap."
+    ]
+  },
+  {
+    "id": "a1-27",
+    "topik": "pengantar-astronomi",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "skala-tata-surya",
+    "soal": "Perhatikan skala jarak planet pada gambar. Sebuah wahana antariksa berada pada jarak $d_1 = 1{,}00\\ \\mathrm{AU}$ dari Matahari dan menerima fluks energi surya sebesar $S_0 = 1.361\\ \\mathrm{W/m^2}$. Jika wahana tersebut meluncur menuju orbit planet Saturnus pada jarak rata-rata $d_2 = 9{,}58\\ \\mathrm{AU}$, berapakah fluks surya yang diterima panel surya wahana di orbit Saturnus dalam satuan $\\mathrm{W/m^2}$? (Gunakan hukum kuadrat terbalik $F \\propto 1/d^2$, bulatkan ke 2 desimal)",
+    "jawaban": 14.83,
+    "toleransiRel": 0.02,
+    "satuan": "W/m^2",
+    "pembahasan": [
+      "Gunakan hukum kuadrat terbalik untuk fluks energi radiasi: $S = S_0 (d_1 / d_2)^2$.",
+      "Kalkulasi: $S = 1.361 \\times (1{,}00 / 9{,}58)^2 = 1.361 / 91{,}7764 \\approx 14{,}8295\\ \\mathrm{W/m^2} \\approx 14{,}83\\ \\mathrm{W/m^2}$."
+    ]
+  },
+  {
+    "id": "a1-28",
+    "topik": "pengantar-astronomi",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "skala-log",
+    "soal": "Perhatikan skala logaritmik pada gambar. Sebuah galaksi elips raksasa berada pada jarak $d = 20{,}0\\ \\mathrm{Mpc}$ ($1\\ \\mathrm{Mpc} = 10^6\\ \\mathrm{pc}$). Teleskop luar angkasa mendeteksi bahwa diameter sudut mayor galaksi tersebut adalah $\\theta = 8{,}60'$ (menit busur). Berapakah diameter fisik linier galaksi tersebut dalam satuan kiloparsek ($\\mathrm{kpc}$)? (Gunakan $1\\ \\mathrm{rad} = 3.437{,}75'$, bulatkan ke 1 desimal)",
+    "jawaban": 50,
+    "toleransiRel": 0.03,
+    "satuan": "kpc",
+    "pembahasan": [
+      "Diameter sudut dalam radian: $\\theta = 8{,}60' / 3.437{,}75' \\approx 2{,}5016 \\times 10^{-3}\\ \\mathrm{rad}$.",
+      "Jarak dalam kiloparsek: $d = 20{,}0\\ \\mathrm{Mpc} = 20.000\\ \\mathrm{kpc}$.",
+      "Diameter linier fisik: $D = \\theta \\times d = (2{,}5016 \\times 10^{-3}) \\times 20.000\\ \\mathrm{kpc} \\approx 50{,}03\\ \\mathrm{kpc} \\approx 50{,}0\\ \\mathrm{kpc}$."
+    ]
+  },
+  {
+    "id": "a1-29",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah sistem bintang biner gerhana tidak terpisahkan terdiri atas bintang primer A dan bintang sekunder B. Di luar waktu gerhana, magnitudo tampak gabungan sistem adalah $m_{\\text{di luar}} = 8{,}20$. Saat gerhana primer berlangsung (bintang B menutupi sebagian bintang A), magnitudo tampak turun menjadi $m_{\\text{primer}} = 8{,}95$. Saat gerhana sekunder berlangsung (bintang A menutupi bintang B), magnitudo tampak turun menjadi $m_{\\text{sekunder}} = 8{,}40$.\n(a) Tentukan rasio fluks total sistem di luar gerhana terhadap saat gerhana primer ($F_{\\text{di luar}} / F_{\\text{primer}}$).\n(b) Hitung kontribusi fluks masing-masing bintang ($F_A$ dan $F_B$) relatif terhadap fluks total sistem $F_{\\text{di luar}}$, dengan asumsi gerhana sekunder adalah gerhana total (bintang B tertutup sempurna oleh piringan bintang A).\n(c) Tentukan magnitudo tampak individual masing-masing bintang ($m_A$ dan $m_B$).",
+    "rubrik": [
+      {
+        "poin": "Menghitung rasio fluks F_di luar / F_primer = 100^{(8,95 - 8,20)/5} = 100^{0,15} = 10^{0,30} ≈ 1,995 ≈ 2,00 kali.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menganalisis gerhana sekunder total di mana bintang B tertutup total sehingga fluks teramati murni berasal dari bintang A: F_primer = F_A => m_A = m_sekunder = 8,40.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung magnitudo bintang B dari hubungan fluks F_B = F_di luar - F_A: m_B = 8,20 - 2,5 log10(1 - 10^{-0,4(8,40 - 8,20)}) = 8,20 - 2,5 log10(1 - 0,8318) = 8,20 - 2,5 log10(0,1682) ≈ 8,20 + 1,936 ≈ 10,14.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Rasio fluks di luar gerhana terhadap gerhana primer:\nDelta m = m_primer - m_di luar = 8,95 - 8,20 = 0,75 magnitudo.\nF_di luar / F_primer = 100^{(0,75 / 5)} = 100^{0,15} = 10^{0,30} ≈ 1,995 (fluks turun menjadi sekitar setengahnya saat gerhana primer).\n\n(b) Kontribusi fluks masing-masing bintang:\nKarena gerhana sekunder adalah gerhana total di mana bintang B tertutup sempurna di belakang bintang A, maka seluruh cahaya yang terdeteksi saat gerhana sekunder murni berasal dari fotosfer bintang A:\nF_sekunder = F_A => m_A = 8,40.\nRasio fluks bintang A terhadap fluks total:\nF_A / F_tot = 10^{-0,4(m_A - m_tot)} = 10^{-0,4(8,40 - 8,20)} = 10^{-0,08} ≈ 0,8318 (sekitar 83,2% dari cahaya sistem).\nMaka kontribusi fluks bintang B adalah sisanya:\nF_B / F_tot = 1 - 0,8318 = 0,1682 (sekitar 16,8% dari cahaya sistem).\n\n(c) Magnitudo individual masing-masing bintang:\nMagnitudo bintang A:\nm_A = 8,40.\nMagnitudo bintang B:\nm_B = m_tot - 2,5 log10(F_B / F_tot) = 8,20 - 2,5 log10(0,1682)\nm_B = 8,20 - 2,5 (-0,7742) = 8,20 + 1,9355 ≈ 10,14.\nBintang A memiliki magnitudo 8,40 dan bintang B memiliki magnitudo 10,14.",
+    "pembahasan": [
+      "Rasio fluks dari selisih magnitudo: $F_{\\text{di luar}} / F_{\\text{primer}} = 100^{0{,}75/5} \\approx 2{,}00$.",
+      "Gerhana sekunder total menyisakan fluks bintang A murni, sehingga $m_A = 8{,}40$.",
+      "Fluks bintang B adalah $F_B = F_{\\text{tot}} - F_A = 0{,}1682 F_{\\text{tot}}$, menghasilkan magnitudo $m_B \\approx 10{,}14$."
+    ]
+  },
+  {
+    "id": "a1-30",
+    "topik": "pengantar-astronomi",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah gugus bintang terbuka diukur paralaks rata-ratanya oleh teleskop astrometri sebesar $p = 4{,}0\\ \\mathrm{mas}$ (mili-detik busur) dengan diameter sudut gugus $\\theta = 40{,}0'$. Kecepatan gerak diri (*proper motion*) rata-rata bintang anggota gugus adalah $\\mu = 0{,}020''/\\text{tahun}$ dan kecepatan radialnya adalah $v_r = 30{,}0\\ \\mathrm{km/s}$.\n(a) Tentukan jarak sejati gugus bintang tersebut dalam parsek.\n(b) Hitung radius fisik linier gugus bintang tersebut dalam parsek ($R_{\\text{gugus}}$).\n(c) Hitung kecepatan tangensial gugus ($v_t$) dalam $\\mathrm{km/s}$ dan tentukan besar kecepatan ruang total gugus ($v_{\\text{ruang}}$) relatif terhadap Matahari.",
+    "rubrik": [
+      {
+        "poin": "Menghitung jarak dari paralaks: p = 4,0 mas = 0,004'' => d = 1 / 0,004 = 250 pc.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung radius fisik gugus: theta_radius = 20' = 20 / 60 = 0,333° = 0,333 / 57,2958 rad ≈ 5,818 × 10^{-3} rad => R = theta × d = 5,818 × 10^{-3} × 250 pc ≈ 1,45 pc (diameter ≈ 2,9 pc).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung kecepatan tangensial v_t = 4,74 × mu('') × d(pc) = 4,74 × 0,020 × 250 = 23,7 km/s dan kecepatan ruang v_ruang = sqrt(v_r^2 + v_t^2) = sqrt(30^2 + 23,7^2) = sqrt(900 + 561,69) ≈ 38,2 km/s.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Jarak gugus bintang dari paralaks rata-rata:\np = 4,0 mas = 4,0 × 10^-3 detik busur = 0,004''.\nd = 1 / p = 1 / 0,004 = 250 pc.\n\n(b) Radius fisik linier gugus:\nDiameter sudut gugus adalah 40', sehingga radius sudutnya adalah:\ntheta_rad = 20' = (20 / 60)° = (1/3)°.\nKonversi ke radian: theta_rad = (1/3) × (pi / 180) = pi / 540 rad ≈ 5,8178 × 10^-3 rad.\nRadius linier fisik gugus:\nR_gugus = theta_rad × d = (5,8178 × 10^-3) × 250 pc ≈ 1,454 pc (sekitar 1,45 parsek atau diameter fisik sekitar 2,91 pc).\n\n(c) Kecepatan tangensial dan kecepatan ruang:\nHubungan kecepatan tangensial dari gerak diri mu (dalam detik busur/tahun) dan jarak d (dalam parsek):\nv_t = 4,74 × mu × d\nv_t = 4,74 × 0,020''/tahun × 250 pc = 4,74 × 5 = 23,70 km/s.\nKecepatan ruang total dihitung dari resultan vektor kecepatan radial v_r dan kecepatan tangensial v_t:\nv_ruang = sqrt(v_r^2 + v_t^2)\nv_ruang = sqrt((30,0)^2 + (23,70)^2) = sqrt(900 + 561,69) = sqrt(1.461,69) ≈ 38,23 km/s.\nKecepatan ruang sejati gugus bintang tersebut adalah sekitar 38,2 km/s.",
+    "pembahasan": [
+      "Jarak dari paralaks: $d = 1 / 0{,}004'' = 250\\ \\mathrm{pc}$.",
+      "Radius linier dari radius sudut: $R = \\theta_{\\text{rad}} d = (20' / 3437{,}75') \\times 250\\ \\mathrm{pc} \\approx 1{,}45\\ \\mathrm{pc}$.",
+      "Kecepatan tangensial $v_t = 4{,}74 \\mu d = 23{,}7\\ \\mathrm{km/s}$ dan kecepatan ruang total $v = \\sqrt{v_r^2 + v_t^2} \\approx 38{,}2\\ \\mathrm{km/s}$."
+    ]
+  }
+]

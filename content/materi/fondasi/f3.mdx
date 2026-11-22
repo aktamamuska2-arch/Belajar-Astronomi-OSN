@@ -1,0 +1,331 @@
+---
+id: f3
+judul: "Kalkulus & Analisis Data"
+topik: ["kalkulus", "analisis-data"]
+level: fondasi
+urutan: 3
+deskripsi: "Alat matematika inti: turunan, integral, deret Taylor, statistika, dan propagasi galat untuk analisis data astronomi"
+prasyarat: ["f1", "f2"]
+---
+
+import { Poin, Contoh, Langkah, CekPaham, Refleksi } from '@/mdx/MDXComponents'
+import { Gambar } from '@/components/figures'
+
+# Kalkulus & Analisis Data
+
+Astronomi modern bergantung pada kemampuan menganalisis data pengamatan secara kuantitatif. Bab ini membangun fondasi kalkulus dan statistika yang diperlukan untuk memahami perubahan besaran fisis, mengintegrasikan fluks, mengaproksimasi fungsi kompleks, serta mengestimasi ketidakpastian pengukuran.
+
+| Simbol | Nilai | Keterangan |
+|--------|-------|------------|
+| $\sigma$ | — | simpangan baku |
+| $\bar{x}$ | — | nilai rata-rata |
+| $e$ | $2{,}71828...$ | bilangan Euler |
+| $\pi$ | $3{,}14159...$ | pi |
+| $z_{95}$ | $1{,}96$ | faktor $z$ untuk CI 95% |
+
+---
+
+<Poin id="p1" judul="Laju Perubahan: Turunan Intuitif">
+
+**Turunan** suatu fungsi $f(x)$ menyatakan laju perubahan $f$ terhadap $x$:
+
+$$\frac{df}{dx} = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x}$$
+
+Dalam mekanika orbital, jika posisi benda dinyatakan sebagai $r(t)$, maka:
+
+| Besaran | Definisi | Satuan |
+|---------|----------|--------|
+| Posisi | $r(t)$ | m atau AU |
+| Kecepatan | $v = \dfrac{dr}{dt}$ | m/s |
+| Percepatan | $a = \dfrac{dv}{dt} = \dfrac{d^2r}{dt^2}$ | m/s² |
+
+**Aturan dasar turunan:**
+
+$$\frac{d}{dx}(x^n) = nx^{n-1}, \quad \frac{d}{dx}(\sin x) = \cos x, \quad \frac{d}{dx}(e^x) = e^x, \quad \frac{d}{dx}(\ln x) = \frac{1}{x}$$
+
+**Contoh orbital:** Jika posisi radial planet mengikuti $r(t) = r_0 + v_r t$, maka kecepatan radial $v_r = dr/dt = \text{konst}$.
+
+Untuk orbit lingkaran, posisi sudut $\theta(t) = \omega t$ sehingga kecepatan sudut $\omega = d\theta/dt$ konstan, dan kecepatan linear $v = r\omega$.
+
+</Poin>
+
+---
+
+<Poin id="p2" judul="Integral sebagai Luas: Fluks dan Energi">
+
+**Integral tentu** menyatakan luas di bawah kurva antara batas $a$ dan $b$:
+
+$$\int_a^b f(x)\,dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\,\Delta x$$
+
+**Teorema Fundamental Kalkulus:** Jika $F'(x) = f(x)$, maka:
+
+$$\int_a^b f(x)\,dx = F(b) - F(a)$$
+
+**Aplikasi astronomi — Fluks total dari bintang:**
+
+Luminositas total diperoleh dengan mengintegrasikan kerapatan fluks spektral $F_\lambda$ atas seluruh panjang gelombang:
+
+$$L = 4\pi R^2 \int_0^\infty F_\lambda\,d\lambda$$
+
+Untuk benda hitam (Planck), integral menghasilkan hukum Stefan-Boltzmann: $L = 4\pi R^2 \sigma T^4$.
+
+**Aplikasi — Energi yang diterima selama transit:**
+
+Selama transit bintang (durasi $\tau$), energi yang "hilang" dari pengamat adalah:
+
+$$\Delta E = \int_0^\tau \Delta F(t)\,dt \approx \bar{\Delta F} \cdot \tau$$
+
+<Gambar id="kurva-transit-data" keterangan="Kurva transit: fluks bintang sebagai fungsi waktu. Luas 'cekungan' mewakili energi yang terblokir oleh planet." />
+
+**Integral umum:**
+
+$$\int x^n\,dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1), \qquad \int e^x\,dx = e^x + C, \qquad \int \frac{dx}{x} = \ln|x| + C$$
+
+</Poin>
+
+---
+
+<Poin id="p3" judul="Deret Taylor dan Aproksimasi">
+
+**Deret Taylor** mengekspansi fungsi halus $f(x)$ di sekitar titik $a$:
+
+$$f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots$$
+
+**Aproksimasi binomial** (sangat sering dipakai di astrofisika):
+
+$$\boxed{(1+x)^n \approx 1 + nx} \quad \text{untuk } |x| \ll 1$$
+
+Ini diturunkan dari deret Taylor $(1+x)^n$ di sekitar $x=0$.
+
+**Contoh penting:**
+
+| Fungsi | Aproksimasi ($|x|\ll 1$) |
+|--------|--------------------------|
+| $(1+x)^n$ | $1 + nx$ |
+| $e^x$ | $1 + x$ |
+| $\ln(1+x)$ | $x$ |
+| $\sin x$ | $x$ (dalam radian) |
+| $\cos x$ | $1 - x^2/2$ |
+| $(1+x)^{-1}$ | $1 - x$ |
+
+**Aplikasi — Efek Doppler kecepatan rendah:**
+
+$$\frac{\lambda_{\rm obs}}{\lambda_0} = \sqrt{\frac{1+v/c}{1-v/c}} \approx 1 + \frac{v}{c} \quad (v \ll c)$$
+
+**Aplikasi — Paralaks kecil:**
+
+Jarak $d = 1/p$ (pc, $p$ dalam detik busur). Jika $p = p_0 + \delta p$ dengan $\delta p \ll p_0$:
+
+$$d \approx \frac{1}{p_0}\left(1 - \frac{\delta p}{p_0}\right)$$
+
+</Poin>
+
+---
+
+<Poin id="p4" judul="Statistika Dasar: Rata-rata, Simpangan Baku, Gauss">
+
+**Rata-rata sampel** dari $N$ pengukuran $\{x_1, x_2, \ldots, x_N\}$:
+
+$$\bar{x} = \frac{1}{N}\sum_{i=1}^N x_i$$
+
+**Simpangan baku sampel** (ukuran sebaran):
+
+$$s = \sqrt{\frac{1}{N-1}\sum_{i=1}^N (x_i - \bar{x})^2}$$
+
+**Galat standar rata-rata** (ketidakpastian estimasi $\bar{x}$):
+
+$$\sigma_{\bar{x}} = \frac{s}{\sqrt{N}}$$
+
+**Distribusi Gauss (Normal):**
+
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}} \exp\!\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)$$
+
+Properti: 68% data dalam $\mu \pm \sigma$, 95% dalam $\mu \pm 2\sigma$, 99,7% dalam $\mu \pm 3\sigma$.
+
+**Confidence Interval 95%:**
+
+$$\text{CI}_{95\%} = \bar{x} \pm 1{,}96\,\frac{s}{\sqrt{N}}$$
+
+<Gambar id="kurva-cahaya-variabel" keterangan="Kurva cahaya bintang variabel: fluktuasi acak di sekitar nilai rata-rata menggambarkan distribusi Gaussian." />
+
+**Regresi linear** (fitting $y = mx + b$):
+
+$$m = \frac{N\sum x_i y_i - (\sum x_i)(\sum y_i)}{N\sum x_i^2 - (\sum x_i)^2}, \qquad b = \bar{y} - m\bar{x}$$
+
+</Poin>
+
+---
+
+<Poin id="p5" judul="Propagasi Galat Kuadratur Gauss">
+
+Jika besaran $f$ bergantung pada variabel bebas $x_1, x_2, \ldots, x_n$ yang masing-masing memiliki ketidakpastian $\sigma_{x_i}$, maka ketidakpastian $f$ adalah:
+
+$$\boxed{\sigma_f^2 = \sum_{i=1}^n \left(\frac{\partial f}{\partial x_i}\right)^2 \sigma_{x_i}^2}$$
+
+Ini disebut **hukum propagasi galat kuadratur** (asumsi galat independen).
+
+**Kasus khusus penting:**
+
+| Fungsi $f$ | $\sigma_f$ |
+|-----------|------------|
+| $f = ax \pm by$ | $\sqrt{a^2\sigma_x^2 + b^2\sigma_y^2}$ |
+| $f = x \cdot y$ atau $f = x/y$ | $f\sqrt{(\sigma_x/x)^2 + (\sigma_y/y)^2}$ |
+| $f = x^n$ | $\|f\|\cdot n\,\sigma_x/x$ |
+| $f = \ln x$ | $\sigma_x/x$ |
+| $f = e^x$ | $f\,\sigma_x$ |
+
+**Contoh — Galat volume bola** $V = \frac{4}{3}\pi R^3$:
+
+$$\sigma_V = \frac{dV}{dR}\sigma_R = 4\pi R^2 \sigma_R \implies \frac{\sigma_V}{V} = 3\frac{\sigma_R}{R}$$
+
+**Contoh — Galat hukum Kepler ketiga** $P^2 = \frac{4\pi^2}{GM}a^3$:
+
+$$\frac{\sigma_M}{M} = \sqrt{\left(\frac{2\sigma_P}{P}\right)^2 + \left(\frac{3\sigma_a}{a}\right)^2}$$
+
+<Gambar id="skala-log" keterangan="Diagram log-log: linearisasi hubungan pangkat memudahkan analisis regresi dan estimasi galat." />
+
+</Poin>
+
+---
+
+<Poin id="p6" judul="Rantai Olimpiade: Galat Formal dari Fitting Kurva Transit">
+
+Ini adalah contoh analisis galat multi-variabel yang menggabungkan data transit dan kecepatan radial untuk menentukan kerapatan planet secara lengkap dengan propagasi ketidakpastian.
+
+**Langkah 1 — Jari-jari planet dari kedalaman transit:**
+
+Kedalaman transit $\delta = (R_p/R_*)^2$, sehingga:
+
+$$R_p = R_* \sqrt{\delta}$$
+
+Propagasi galat ($R_*$ dan $\delta$ independen):
+
+$$\frac{\sigma_{R_p}}{R_p} = \sqrt{\left(\frac{\sigma_{R_*}}{R_*}\right)^2 + \frac{1}{4}\left(\frac{\sigma_\delta}{\delta}\right)^2}$$
+
+**Langkah 2 — Massa planet dari kecepatan radial:**
+
+Fungsi massa: $M_p \sin i = \frac{K_* (M_*)^{2/3} P^{1/3}}{(2\pi G)^{1/3}}$
+
+Untuk $i \approx 90°$ (transit), $\sin i \approx 1$:
+
+$$M_p \approx \frac{K_* M_*^{2/3} P^{1/3}}{(2\pi G)^{1/3}}$$
+
+Galat relatif:
+
+$$\frac{\sigma_{M_p}}{M_p} = \sqrt{\left(\frac{\sigma_{K_*}}{K_*}\right)^2 + \frac{4}{9}\left(\frac{\sigma_{M_*}}{M_*}\right)^2 + \frac{1}{9}\left(\frac{\sigma_P}{P}\right)^2}$$
+
+**Langkah 3 — Kerapatan rata-rata planet:**
+
+$$\rho_p = \frac{M_p}{\frac{4}{3}\pi R_p^3} = \frac{3M_p}{4\pi R_p^3}$$
+
+Propagasi galat kerapatan:
+
+$$\frac{\sigma_{\rho_p}}{\rho_p} = \sqrt{\left(\frac{\sigma_{M_p}}{M_p}\right)^2 + \left(3\frac{\sigma_{R_p}}{R_p}\right)^2}$$
+
+**Langkah 4 — Substitusi dan evaluasi:**
+
+Substitusi $R_p = R_*\sqrt{\delta}$ ke dalam $\rho_p$:
+
+$$\rho_p = \frac{3M_p}{4\pi R_*^3 \delta^{3/2}}$$
+
+Maka galat total:
+
+$$\frac{\sigma_{\rho_p}}{\rho_p} = \sqrt{\left(\frac{\sigma_{M_p}}{M_p}\right)^2 + \left(3\frac{\sigma_{R_*}}{R_*}\right)^2 + \frac{9}{4}\left(\frac{\sigma_\delta}{\delta}\right)^2}$$
+
+Ini adalah ekspresi analitik lengkap untuk galat kerapatan planet dari observasi transit + RV.
+
+</Poin>
+
+---
+
+<Contoh id="c1" judul="Propagasi Galat pada Hukum Hubble">
+
+**Soal:** Jarak galaksi dihitung dengan $d = v/H_0$ di mana $v = 15000 \pm 300$ km/s dan $H_0 = 70 \pm 2$ km/s/Mpc. Hitung $d$ dan $\sigma_d$.
+
+<Langkah nomor={1}>
+Hitung nilai tengah:
+$$d = \frac{v}{H_0} = \frac{15000}{70} = 214{,}3 \text{ Mpc}$$
+</Langkah>
+
+<Langkah nomor={2}>
+Turunkan parsial: $\dfrac{\partial d}{\partial v} = \dfrac{1}{H_0}$, $\dfrac{\partial d}{\partial H_0} = -\dfrac{v}{H_0^2}$
+</Langkah>
+
+<Langkah nomor={3}>
+Terapkan propagasi galat:
+$$\sigma_d = d\sqrt{\left(\frac{\sigma_v}{v}\right)^2 + \left(\frac{\sigma_{H_0}}{H_0}\right)^2} = 214{,}3\sqrt{\left(\frac{300}{15000}\right)^2 + \left(\frac{2}{70}\right)^2}$$
+</Langkah>
+
+<Langkah nomor={4}>
+$$= 214{,}3\sqrt{(0{,}02)^2 + (0{,}0286)^2} = 214{,}3 \times 0{,}0349 \approx 7{,}5 \text{ Mpc}$$
+
+Jadi $d = 214 \pm 8$ Mpc.
+</Langkah>
+
+</Contoh>
+
+---
+
+<Contoh id="c2" judul="Rantai Olimpiade: Galat Modulus Jarak dari Paralaks">
+
+**Soal:** Bintang memiliki paralaks $\pi = 10{,}0 \pm 0{,}5$ mas dan magnitudo semu $m = 8{,}50 \pm 0{,}02$ mag. Tentukan modulus jarak $\mu$ beserta galat formalnya.
+
+<Langkah nomor={1}>
+**Jarak dari paralaks:** $d = 1000/\pi$ pc (dengan $\pi$ dalam mas).
+
+$$d = \frac{1000}{10{,}0} = 100 \text{ pc}, \qquad \sigma_d = d\frac{\sigma_\pi}{\pi} = 100 \times \frac{0{,}5}{10{,}0} = 5 \text{ pc}$$
+</Langkah>
+
+<Langkah nomor={2}>
+**Modulus jarak:** $\mu = 5\log_{10}(d/10)$
+
+$$\mu = 5\log_{10}(10) = 5{,}00 \text{ mag}$$
+
+$$\sigma_\mu = \frac{5}{\ln 10}\frac{\sigma_d}{d} = \frac{5}{2{,}3026} \times 0{,}05 = 0{,}109 \text{ mag}$$
+</Langkah>
+
+<Langkah nomor={3}>
+**Magnitudo absolut:** $M = m - \mu = 8{,}50 - 5{,}00 = 3{,}50$ mag.
+
+$$\sigma_M = \sqrt{\sigma_m^2 + \sigma_\mu^2} = \sqrt{(0{,}02)^2 + (0{,}109)^2} \approx 0{,}11 \text{ mag}$$
+</Langkah>
+
+<Langkah nomor={4}>
+Galat dominan berasal dari paralaks (0,109 mag) bukan fotometri (0,02 mag). Ini menunjukkan pentingnya astrometri presisi tinggi seperti misi Gaia untuk membatasi tangga jarak kosmik.
+
+Hasil akhir: $M = 3{,}50 \pm 0{,}11$ mag.
+</Langkah>
+
+</Contoh>
+
+---
+
+<CekPaham
+  id="cp1"
+  pertanyaan="Sebuah teleskop mengukur paralaks bintang $\pi = 2{,}5 \pm 0{,}1$ mas. Jika jarak dihitung dengan $d = 1000/\pi$ pc, berapa galat relatif $\sigma_d/d$?"
+  opsi={['2%', '4%', '10%', '25%']}
+  jawaban={1}
+  penjelasan="Untuk d = 1000π⁻¹, galat relatifnya σd/d = σπ/π = 0,1/2,5 = 4%."
+/>
+
+<CekPaham
+  id="cp2"
+  pertanyaan="Mengapa kita menggunakan kuadratur (jumlah kuadrat) dalam propagasi galat, bukan penjumlahan langsung?"
+  opsi={['Galat acak independen digabungkan sebagai jumlah kuadrat karena variansnya menjumlah.', 'Kuadratur selalu menghasilkan galat nol.', 'Penjumlahan langsung hanya berlaku untuk besaran yang tidak punya satuan.', 'Semua galat pengukuran pasti saling meniadakan.']}
+  jawaban={0}
+  penjelasan="Untuk galat acak independen, varians menjumlah sehingga simpangan baku total diperoleh dengan akar jumlah kuadrat. Penjumlahan langsung adalah batas konservatif untuk galat yang dapat berkorelasi atau bergerak searah."
+/>
+
+<CekPaham
+  id="cp3"
+  pertanyaan="Jika $σ_x/x = 2\%$ dan $f = x^3$, berapa $σ_f/f$?"
+  opsi={['2%', '3%', '6%', '8%']}
+  jawaban={2}
+  penjelasan="Untuk f = xⁿ, galat relatifnya |n|σx/x. Jadi σf/f = 3 × 2% = 6%."
+/>
+
+---
+
+<Refleksi>
+Analisis galat bukan sekadar formalitas — ia menentukan apakah hasil pengamatan bermakna. Misi Gaia mengukur paralaks dengan presisi $\sim$10–100 mikrodetik busur, mengurangi $\sigma_\pi/\pi$ hingga $<1\%$ untuk bintang-bintang dekat. Tanpa propagasi galat yang cermat, kita tidak dapat membandingkan model dengan data, mendeteksi planet, atau mengkalibrasi tangga jarak kosmik. Setiap besaran astronomi yang kita gunakan — dari jari-jari bintang hingga usia alam semesta — hadir bersama ketidakpastiannya.
+</Refleksi>

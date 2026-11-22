@@ -1,0 +1,593 @@
+[
+  {
+    "id": "l1-01",
+    "topik": "bintang",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Urutan kelas spektrum bintang dari suhu fotosfer paling tinggi ke paling rendah adalah...",
+    "opsi": [
+      "O, B, A, F, G, K, M",
+      "M, K, G, F, A, B, O",
+      "O, A, B, G, F, M, K",
+      "A, B, O, F, G, K, M"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Urutan klasifikasi spektrum Harvard mengurutkan bintang berdasarkan suhu permukaan dari terpanas ke terdingin: O, B, A, F, G, K, M.",
+      "Bintang kelas O memiliki suhu $> 30.000\\ \\mathrm{K}$ (biru), sedangkan kelas M memiliki suhu $< 3.700\\ \\mathrm{K}$ (merah).",
+      "Matahari adalah bintang kelas G2V dengan suhu efektif sekitar $5.778\\ \\mathrm{K}$."
+    ]
+  },
+  {
+    "id": "l1-02",
+    "topik": "spektroskopi",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Garis-garis absorpsi hidrogen deret Balmer (seperti $\\mathrm{H}\\alpha, \\mathrm{H}\\beta$) teramati paling kuat pada bintang kelas spektrum...",
+    "opsi": [
+      "A",
+      "O",
+      "G",
+      "M"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Garis absorpsi deret Balmer memerlukan elektron hidrogen berada pada tingkat energi eksitasi $n = 2$.",
+      "Pada bintang kelas A (suhu $\\sim 10.000\\ \\mathrm{K}$), fraksi atom hidrogen netral yang berada pada tingkat $n = 2$ mencapai nilai maksimum.",
+      "Pada bintang kelas O yang lebih panas, sebagian besar hidrogen telah terionisasi menjadi ion $\\mathrm{H}^+$, sedangkan pada kelas G dan M yang lebih dingin, mayoritas elektron berada di tingkat dasar $n = 1$."
+    ]
+  },
+  {
+    "id": "l1-03",
+    "topik": "bintang",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "hr-skematis",
+    "soal": "Perhatikan diagram Hertzsprung–Russell pada gambar. Di manakah posisi bintang-bintang deret utama (*main sequence*) membentang?",
+    "opsi": [
+      "Pita diagonal dari kiri atas (panas dan terang) ke kanan bawah (dingin dan redup)",
+      "Wilayah horizontal di bagian paling atas diagram",
+      "Sudut kanan atas diagram (dingin tetapi sangat terang)",
+      "Sudut kiri bawah diagram (panas tetapi sangat redup)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Deret utama membentang diagonal melintasi diagram HR dari kiri atas (bintang masif, panas, dan luminus) hingga kanan bawah (bintang bermassa rendah, dingin, dan redup).",
+      "Bintang menghabiskan sekitar 90% masa hidupnya di deret utama untuk melangsungkan fusi hidrogen menjadi helium di intinya.",
+      "Kanan atas adalah wilayah bintang raksasa dan superraksasa, sedangkan kiri bawah adalah katai putih."
+    ]
+  },
+  {
+    "id": "l1-04",
+    "topik": "bintang",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah bintang deret utama memiliki massa dua kali massa Matahari ($M = 2\\ M_\\odot$). Menggunakan hubungan empiris massa–luminositas $L \\propto M^{3{,}5}$, berapakah perkiraan luminositas bintang tersebut dalam satuan luminositas Matahari ($L_\\odot$)?",
+    "opsi": [
+      "$11{,}3\\ L_\\odot$",
+      "$7{,}0\\ L_\\odot$",
+      "$4{,}0\\ L_\\odot$",
+      "$16{,}0\\ L_\\odot$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan hubungan massa–luminositas: $L / L_\\odot = (M / M_\\odot)^{3{,}5}$.",
+      "Substitusi $M / M_\\odot = 2$: $L / L_\\odot = 2^{3{,}5} = 2^3 \\times 2^{0{,}5} = 8\\sqrt{2} \\approx 8 \\times 1{,}414 = 11{,}31\\ L_\\odot$.",
+      "Bintang yang massanya hanya dua kali lipat memancarkan daya lebih dari 11 kali lebih kuat."
+    ]
+  },
+  {
+    "id": "l1-05",
+    "topik": "spektroskopi",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Garis laboratorium diam $\\mathrm{H}\\alpha$ berada pada panjang gelombang $\\lambda_0 = 656{,}3\\ \\mathrm{nm}$. Ketika diamati dari sebuah bintang, garis tersebut terukur pada $\\lambda = 656{,}5\\ \\mathrm{nm}$. Berapakah besar pergeseran Doppler $\\Delta\\lambda = \\lambda - \\lambda_0$ dalam satuan nanometer ($\\mathrm{nm}$)?",
+    "jawaban": 0.2,
+    "toleransiRel": 0.05,
+    "satuan": "nm",
+    "pembahasan": [
+      "Pergeseran Doppler: $\\Delta\\lambda = \\lambda - \\lambda_0$.",
+      "$\\Delta\\lambda = 656{,}5\\ \\mathrm{nm} - 656{,}3\\ \\mathrm{nm} = +0{,}2\\ \\mathrm{nm}$.",
+      "Tanda positif menunjukkan pergeseran ke arah merah (*redshift*), artinya bintang sedang menjauhi pengamat."
+    ]
+  },
+  {
+    "id": "l1-06",
+    "topik": "bintang",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Matahari memiliki kelas spektrum G2V. Angka romawi 'V' pada klasifikasi Yerkes menunjukkan bahwa Matahari tergolong dalam kelas luminositas...",
+    "jawaban": 5,
+    "toleransiRel": 0.01,
+    "satuan": "kelas",
+    "pembahasan": [
+      "Kelas luminositas Yerkes (Morgan-Keenan) menggunakan angka romawi: I untuk superraksasa, II raksasa terang, III raksasa, IV subraksasa, dan V untuk deret utama (katai).",
+      "Matahari adalah bintang deret utama (kelas V)."
+    ]
+  },
+  {
+    "id": "l1-07",
+    "topik": "bintang",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "hr-iso-radius",
+    "soal": "Perhatikan garis-garis iso-radius (radius tetap) pada diagram HR di gambar. Mengapa garis radius konstan memiliki kemiringan miring ke kanan bawah pada bidang $\\log L$ terhadap $\\log T$?",
+    "opsi": [
+      "Karena untuk radius konstan, penurunan suhu harus diimbangi penurunan luminositas sebesar $L \\propto T^4$",
+      "Karena massa bintang meningkat seiring bertambahnya suhu",
+      "Karena bintang superraksasa memiliki kerapatan yang lebih tinggi dibanding katai putih",
+      "Karena panjang gelombang puncak bergeser ke ultraviolet saat radius membesar"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Stefan-Boltzmann: $L = 4\\pi R^2 \\sigma T^4$.",
+      "Dalam skala logaritma: $\\log_{10} L = 4\\log_{10} T + 2\\log_{10} R + \\text{konstanta}$.",
+      "Jika $R$ konstan, maka $\\log L$ berbanding lurus dengan $4\\log T$. Karena sumbu $T$ pada diagram HR terbalik (suhu turun ke kanan), maka saat bergerak ke kanan (suhu menurun), nilai $\\log L$ harus turun tajam sebesar empat kali perubahan $\\log T$."
+    ]
+  },
+  {
+    "id": "l1-08",
+    "topik": "spektroskopi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "spektrum-absorpsi",
+    "soal": "Perhatikan pita spektrum absorpsi pada gambar. Garis-garis gelap absorpsi pada spektrum bintang terbentuk karena...",
+    "opsi": [
+      "Foton kontinu dari fotosfer diserap oleh atom-atom gas yang lebih dingin di atmosfer luar bintang",
+      "Reaksi fusi nuklir di inti bintang menelan foton pada panjang gelombang tertentu",
+      "Debu antarbintang di luar tata surya menyerap seluruh cahaya tampak",
+      "Efek Doppler menghapus energi pada frekuensi resonansi"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Kirchoff tentang radiasi menyatakan bahwa gas dingin bertekanan rendah yang disinari oleh sumber kontinu akan menyerap panjang gelombang karakteristik atom gas tersebut.",
+      "Fotosfer bintang yang padat dan panas memancarkan spektrum kontinu, sedangkan atmosfer bintang yang lebih dingin di atasnya menyerap foton yang bersesuaian dengan transisi elektron, menghasilkan garis gelap absorpsi."
+    ]
+  },
+  {
+    "id": "l1-09",
+    "topik": "spektroskopi",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "doppler-geser",
+    "soal": "Perhatikan pergeseran garis spektrum pada gambar. Garis spektrum laboratorium pada $\\lambda_0 = 500{,}0\\ \\mathrm{nm}$ teramati bergeser menjadi $\\lambda = 499{,}5\\ \\mathrm{nm}$ pada spektrum sebuah bintang. Berapakah kecepatan radial bintang tersebut dan ke mana arah geraknya?",
+    "opsi": [
+      "$300\\ \\mathrm{km/s}$ mendekati pengamat",
+      "$300\\ \\mathrm{km/s}$ menjauhi pengamat",
+      "$150\\ \\mathrm{km/s}$ mendekati pengamat",
+      "$150\\ \\mathrm{km/s}$ menjauhi pengamat"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Pergeseran Doppler: $\\Delta\\lambda = \\lambda - \\lambda_0 = 499{,}5 - 500{,}0 = -0{,}5\\ \\mathrm{nm}$.",
+      "Kecepatan radial: $v_r = c \\times (\\Delta\\lambda / \\lambda_0) = (3 \\times 10^5\\ \\mathrm{km/s}) \\times (-0{,}5 / 500{,}0) = -300\\ \\mathrm{km/s}$.",
+      "Tanda negatif (*blueshift*) menunjukkan bintang sedang bergerak mendekati pengamat dengan laju $300\\ \\mathrm{km/s}$."
+    ]
+  },
+  {
+    "id": "l1-10",
+    "topik": "bintang",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah semua pernyataan yang BENAR mengenai sifat bintang deret utama berdasarkan diagram HR dan relasi massa-luminositas:",
+    "opsi": [
+      "Bintang deret utama yang lebih masif memiliki suhu fotosfer yang lebih tinggi",
+      "Bintang deret utama yang lebih masif memiliki masa hidup (*lifetime*) yang lebih singkat",
+      "Luminositas bintang deret utama bertambah sebanding dengan massa pangkat $\\sim 3{,}5$",
+      "Bintang katai merah kelas M memiliki masa hidup lebih pendek daripada bintang kelas O",
+      "Matahari berada di ujung kiri atas deret utama"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pernyataan 1 benar: Di deret utama, massa lebih besar menghasilkan tekanan inti lebih tinggi, suhu lebih panas, dan kelas spektrum lebih awal (O/B).",
+      "Pernyataan 2 benar: Laju pembakaran fusi ($L \\propto M^{3{,}5}$) jauh melampaui pasokan massa ($M$), sehingga bahan bakar inti habis jauh lebih cepat ($\\tau \\propto M^{-2{,}5}$).",
+      "Pernyataan 3 benar: Relasi empiris deret utama adalah $L \\propto M^{3{,}5}$.",
+      "Pernyataan 4 salah: Katai merah kelas M membakar bahan bakar sangat hemat sehingga dapat hidup triliunan tahun.",
+      "Pernyataan 5 salah: Matahari berada di tengah deret utama (G2V), bukan di kiri atas."
+    ]
+  },
+  {
+    "id": "l1-11",
+    "topik": "spektroskopi",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "spektrum-emisi",
+    "soal": "Perhatikan garis-garis terang emisi pada gambar. Manakah kondisi fisis di alam semesta yang menghasilkan spektrum emisi diskret murni?",
+    "opsi": [
+      "Gas tipis bertekanan rendah yang dipanaskan atau dieksitasi oleh radiasi ultraviolet",
+      "Nebula emisi (wilayah H II) di sekitar bintang muda masif kelas O dan B",
+      "Fotosfer padat benda hitam pada bintang",
+      "Atmosfer bintang dingin yang menyerap cahaya latar belakang",
+      "Awan debu gelap yang sangat padat"
+    ],
+    "jawaban": [0, 1],
+    "pembahasan": [
+      "Hukum Kirchhoff menyatakan bahwa gas panas berkerapatan rendah memancarkan spektrum emisi pada panjang gelombang diskret tertentu saat elektron bertransisi ke tingkat energi yang lebih rendah.",
+      "Wilayah H II di sekitar bintang O/B mengalami fotoionisasi oleh radiasi UV, lalu terjadi rekombinasi elektron yang memancarkan garis emisi terang (seperti garis emisi merah H$\\alpha$).",
+      "Fotosfer padat menghasilkan spektrum kontinu, sedangkan atmosfer dingin di depan sumber kontinu menghasilkan spektrum absorpsi."
+    ]
+  },
+  {
+    "id": "l1-12",
+    "topik": "bintang",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Bintang deret utama Vega (kelas A0V) memiliki massa sekitar $M = 2{,}1\\ M_\\odot$. Menggunakan aproksimasi masa hidup deret utama $\\tau_{\\text{MS}} = 10^{10}\\ \\text{tahun} \\times (M/M_\\odot)^{-2{,}5}$, berapakah perkiraan masa hidup bintang Vega di deret utama dalam satuan juta tahun? (Bulatkan hingga bilangan bulat terdekat)",
+    "jawaban": 1560,
+    "toleransiRel": 0.05,
+    "satuan": "juta tahun",
+    "pembahasan": [
+      "$\\tau_{\\text{MS}} = 10^{10} \\times (2{,}1)^{-2{,}5}\\ \\text{tahun}$.",
+      "$(2{,}1)^{2{,}5} = (2{,}1)^2 \\times \\sqrt{2{,}1} = 4{,}41 \\times 1{,}4491 \\approx 6{,}3908$.",
+      "$\\tau_{\\text{MS}} = 10^{10} / 6{,}3908 \\approx 1{,}5647 \\times 10^9\\ \\text{tahun} \\approx 1.560 - 1.565\\ \\text{juta tahun}$."
+    ]
+  },
+  {
+    "id": "l1-13",
+    "topik": "bintang",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Bintang superraksasa Betelgeuse memiliki luminositas sekitar $L = 100.000\\ L_\\odot$ dan suhu efektif $T_{\\text{eff}} = 3.500\\ \\mathrm{K}$. Jika suhu efektif Matahari adalah $T_\\odot = 5.778\\ \\mathrm{K}$, berapakah perkiraan radius Betelgeuse dalam satuan radius Matahari ($R_\\odot$)? (Gunakan $L \\propto R^2 T^4$, bulatkan ke bilangan bulat terdekat)",
+    "jawaban": 862,
+    "toleransiRel": 0.05,
+    "satuan": "R_sun",
+    "pembahasan": [
+      "Dari Stefan-Boltzmann: $L / L_\\odot = (R / R_\\odot)^2 (T / T_\\odot)^4$.",
+      "$(R / R_\\odot) = \\sqrt{L / L_\\odot} \\times (T_\\odot / T)^2$.",
+      "$\\sqrt{100.000} \\approx 316{,}23$.",
+      "Rasio suhu: $(5.778 / 3.500)^2 = (1{,}6509)^2 \\approx 2{,}725$.",
+      "Radius: $R / R_\\odot = 316{,}23 \\times 2{,}725 \\approx 862\\ R_\\odot$."
+    ]
+  },
+  {
+    "id": "l1-14",
+    "topik": "spektroskopi",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah spektrograf memiliki resolusi spektral $R = \\lambda / \\Delta\\lambda = 60.000$. Berapakah perbedaan kecepatan radial terkecil yang dapat dipisahkan instrumen tersebut dalam satuan $\\mathrm{km/s}$? (Gunakan $c = 300.000\\ \\mathrm{km/s}$)",
+    "jawaban": 5,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Dari efek Doppler: $\\Delta v = c \\times (\\Delta\\lambda / \\lambda)$.",
+      "Karena resolusi $R = \\lambda / \\Delta\\lambda$, maka $\\Delta\\lambda / \\lambda = 1 / R$.",
+      "$\\Delta v = c / R = 300.000\\ \\mathrm{km/s} / 60.000 = 5\\ \\mathrm{km/s}$."
+    ]
+  },
+  {
+    "id": "l1-15",
+    "topik": "bintang",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah bintang katai putih memiliki massa yang sama dengan massa Matahari ($M = 1{,}0\\ M_\\odot$), namun radiusnya hanya seukuran Bumi ($R = 6.371\\ \\mathrm{km} \\approx 0{,}00916\\ R_\\odot$). Berapakah rasio percepatan gravitasi permukaan katai putih tersebut dibandingkan gravitasi permukaan Matahari ($g_{\\text{wd}} / g_\\odot$)? (Gunakan $g = GM / R^2$, bulatkan hingga bilangan bulat terdekat)",
+    "jawaban": 11920,
+    "toleransiRel": 0.05,
+    "satuan": "rasio",
+    "pembahasan": [
+      "Gravitasi permukaan memenuhi: $g = GM / R^2$.",
+      "Rasio: $g_{\\text{wd}} / g_\\odot = (M_{\\text{wd}} / M_\\odot) \\times (R_\\odot / R_{\\text{wd}})^2$.",
+      "Karena $M_{\\text{wd}} = M_\\odot$, maka rasio gravitasi adalah $(1 / 0{,}00916)^2 \\approx (109{,}17)^2 \\approx 11.918 \\approx 11.920$ kali gravitasi Matahari."
+    ]
+  },
+  {
+    "id": "l1-16",
+    "topik": "bintang",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "hr-skematis",
+    "soal": "Perhatikan posisi bintang pada diagram HR di gambar. Mengapa bintang katai putih (kiri bawah) dapat memiliki suhu fotosfer yang sangat tinggi ($T > 20.000\\ \\mathrm{K}$) tetapi luminositas totalnya ratusan kali lebih redup daripada Matahari?",
+    "opsi": [
+      "Karena radius fisik katai putih sangat kecil (seukuran Bumi), sehingga luas permukaannya sangat sempit",
+      "Karena reaksi fusi di intinya menghasilkan foton inframerah yang tidak terdeteksi",
+      "Karena katai putih terhalang oleh selubung debu tebal yang menyerap cahayanya",
+      "Karena energi gravitasi katai putih menahan keluarnya radiasi secara total"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Luminositas adalah hasil kali luas permukaan bola dengan fluks pancaran: $L = 4\\pi R^2 \\sigma T^4$.",
+      "Meskipun suku $\\sigma T^4$ sangat tinggi akibat suhu $20.000\\ \\mathrm{K}$ (memancarkan daya per meter persegi puluhan kali lebih dahsyat daripada fotosfer Matahari), ukuran fisiknya hanya sebanding Bumi ($R \\sim 10^{-2}\\ R_\\odot$).",
+      "Faktor luas permukaan mengecil sebesar $R^2 \\sim 10^{-4}$, yang mendominasi dan menyebabkan luminositas totalnya sangat kecil ($L \\sim 10^{-3} - 10^{-2}\\ L_\\odot$)."
+    ]
+  },
+  {
+    "id": "l1-17",
+    "topik": "spektroskopi",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "doppler-geser",
+    "soal": "Perhatikan pergeseran Doppler pada gambar. Sebuah bintang berotasi pada sumbunya dengan kecepatan rotasi ekuator $v_{\\text{rot}}$ dan sudut inklinasi sumbu rotasi $i$. Efek rotasi ini menyebabkan garis spektrum bintang mengalami...",
+    "opsi": [
+      "Pelebaran simetris profil garis absorpsi dengan lebar yang sebanding dengan $v_{\\text{rot}} \\sin i$",
+      "Pergeseran permanen ke arah biru tanpa perubahan lebar profil",
+      "Pemisahan garis menjadi tiga komponen akibat efek Zeeman",
+      "Hilangnya garis absorpsi dan berubah menjadi garis emisi kontinu"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Salah satu sisi cakram bintang yang berotasi bergerak mendekati pengamat (mengalami pergeseran biru), sedangkan sisi sebaliknya bergerak menjauhi pengamat (mengalami pergeseran merah).",
+      "Cahaya terintegrasi dari seluruh piringan bintang yang tampak menghasilkan superposisi Doppler kontinu, yang memperlebar profil garis spektrum secara simetris.",
+      "Setengah lebar pelebaran rotasi sebanding langsung dengan proyeksi kecepatan rotasi pada garis pandang: $v \\sin i$."
+    ]
+  },
+  {
+    "id": "l1-18",
+    "topik": "bintang",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "hr-iso-radius",
+    "soal": "Dua bintang X dan Y memiliki suhu efektif yang sama persis ($T_X = T_Y$). Pada diagram HR, bintang X berada 5 magnitudo absolut lebih terang daripada bintang Y ($M_{V,X} - M_{V,Y} = -5$). Berdasarkan garis iso-radius dan hukum Stefan-Boltzmann, kesimpulan manakah yang BENAR?",
+    "opsi": [
+      "Luminositas bintang X adalah tepat 100 kali luminositas bintang Y",
+      "Radius fisik bintang X adalah 10 kali radius bintang Y",
+      "Bintang X berada pada kelas luminositas yang lebih tinggi (misalnya raksasa/superraksasa) dibanding Y",
+      "Kerapatan atmosfer dan gravitasi permukaan bintang X lebih besar dibanding bintang Y",
+      "Panjang gelombang puncak emisi bintang X lebih pendek daripada bintang Y"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Selisih 5 magnitudo absolut setara rasio luminositas 100 kali ($L_X / L_Y = 100$).",
+      "Dari Stefan-Boltzmann $L = 4\\pi R^2 \\sigma T^4$: karena suhu sama, $L_X / L_Y = (R_X / R_Y)^2 = 100 \\implies R_X / R_Y = 10$.",
+      "Bintang yang lebih besar pada suhu sama tergolong kelas luminositas lebih terang (misal raksasa vs deret utama).",
+      "Pernyataan 4 salah: bintang raksasa memiliki gravitasi permukaan $g = GM/R^2$ yang jauh lebih kecil.",
+      "Pernyataan 5 salah: karena suhu sama, panjang gelombang puncak Wien $\\lambda_{\\max} = b/T$ identik."
+    ]
+  },
+  {
+    "id": "l1-19",
+    "topik": "spektroskopi",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "soal": "Mengenai sistem klasifikasi spektrum Morgan-Keenan (MK) dan mekanisme pelebaran garis (*line broadening*), manakah pernyataan yang BENAR?",
+    "opsi": [
+      "Bintang superraksasa (kelas Ia) memiliki garis absorpsi yang jauh lebih sempit dibanding bintang deret utama (kelas V) pada kelas spektrum yang sama",
+      "Pelebaran tekanan (*pressure broadening*) diakibatkan oleh interaksi medan listrik mikro antarpartikel yang mengganggu tingkat energi atom (efek Stark)",
+      "Gravitasi permukaan $g = GM/R^2$ yang tinggi pada bintang katai menghasilkan tekanan fotosfer yang tinggi dan memperlebar sayap garis spektrum",
+      "Klasifikasi spektrum bintang semata-mata ditentukan oleh perbedaan kelimpahan unsur kimia pembentuk bintang",
+      "Garis-garis helium terionisasi (He II) mendominasi spektrum bintang kelas M"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pernyataan 1, 2, dan 3 benar: Tekanan dan gravitasi permukaan yang tinggi pada katai menghasilkan tumbukan antarpartikel yang kuat (Stark effect) sehingga memperlebar sayap garis. Superraksasa bertekanan rendah memiliki garis sangat sempit.",
+      "Pernyataan 4 salah: Sebagian besar bintang memiliki komposisi kimia yang sangat mirip (~73% H, 25% He, 2% logam); variasi spektrum terutama diatur oleh suhu permukaan (ionisasi Saha dan eksitasi Boltzmann).",
+      "Pernyataan 5 salah: He II hanya muncul pada bintang sangat panas kelas O."
+    ]
+  },
+  {
+    "id": "l1-20",
+    "topik": "bintang",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Dua buah bintang deret utama A dan B memiliki perbandingan massa $M_A / M_B = 4$. Menggunakan relasi $L \\propto M^{3{,}5}$, berapakah perbandingan luminositas $L_A / L_B$?",
+    "jawaban": 128,
+    "toleransiRel": 0.02,
+    "satuan": "rasio",
+    "pembahasan": [
+      "$L_A / L_B = (M_A / M_B)^{3{,}5} = 4^{3{,}5}$.",
+      "$4^{3{,}5} = 4^3 \\times 4^{0{,}5} = 64 \\times 2 = 128$."
+    ]
+  },
+  {
+    "id": "l1-21",
+    "topik": "spektroskopi",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah sistem bintang ganda spektroskopi bergaris ganda (SB2) memperlihatkan pemisahan panjang gelombang maksimum pada garis $\\mathrm{H}\\alpha$ ($\\lambda_0 = 656{,}3\\ \\mathrm{nm}$) sebesar $\\Delta\\lambda = 0{,}438\\ \\mathrm{nm}$. Berapakah kecepatan relatif kedua bintang satu sama lain sepanjang garis pandang dalam satuan $\\mathrm{km/s}$? (Gunakan $c = 300.000\\ \\mathrm{km/s}$)",
+    "jawaban": 200,
+    "toleransiRel": 0.02,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Pemisahan panjang gelombang total mencerminkan selisih kecepatan relatif kedua komponen: $v_{\\text{rel}} = c \\times (\\Delta\\lambda / \\lambda_0)$.",
+      "$v_{\\text{rel}} = (300.000\\ \\mathrm{km/s}) \\times (0{,}438 / 656{,}3) = 300.000 \\times 0{,}00066738 \\approx 200{,}2\\ \\mathrm{km/s} \\approx 200\\ \\mathrm{km/s}$."
+    ]
+  },
+  {
+    "id": "l1-22",
+    "topik": "bintang",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah bintang memiliki magnitudo bolometrik absolut $M_{\\text{bol}} = -0{,}26$. Jika magnitudo bolometrik absolut Matahari adalah $M_{\\text{bol},\\odot} = +4{,}74$, berapakah luminositas bintang tersebut dalam satuan luminositas Matahari ($L_\\odot$)?",
+    "jawaban": 100,
+    "toleransiRel": 0.02,
+    "satuan": "L_sun",
+    "pembahasan": [
+      "Selisih magnitudo: $\\Delta M_{\\text{bol}} = M_{\\text{bol},\\odot} - M_{\\text{bol}} = +4{,}74 - (-0{,}26) = 5{,}00$.",
+      "Rasio luminositas: $L / L_\\odot = 100^{(\\Delta M_{\\text{bol}} / 5)} = 100^{(5{,}00 / 5)} = 100\\ L_\\odot$."
+    ]
+  },
+  {
+    "id": "l1-23",
+    "topik": "spektroskopi",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa garis spektrum hidrogen netral (deret Balmer) mencapai intensitas maksimum pada bintang kelas A (~10.000 K), namun melemah pada bintang kelas O yang lebih panas dan juga melemah pada bintang kelas G/M yang lebih dingin. Hubungkan penjelasan Anda dengan konsep eksitasi Boltzmann dan ionisasi Saha.",
+    "rubrik": [
+      {
+        "poin": "Menyebutkan bahwa garis absorpsi Balmer mensyaratkan elektron berada pada tingkat eksitasi pertama (n = 2).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan faktor Boltzmann pada bintang dingin (kelas G/M): energi termal rendah membuat hampir seluruh elektron berada di tingkat dasar n = 1.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan faktor ionisasi Saha pada bintang panas (kelas O): energi termal sangat tinggi menyebabkan sebagian besar atom hidrogen terionisasi total menjadi proton dan elektron bebas.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "Pembentukan garis absorpsi deret Balmer memerlukan elektron atom hidrogen berada pada tingkat energi eksitasi n = 2. Intensitas garis bergantung pada jumlah atom hidrogen netral yang berada pada tingkat n = 2 per satuan volume fotosfer. Pada bintang dingin (kelas G dan M, T < 6000 K), berdasarkan distribusi eksitasi Boltzmann N_2 / N_1 = (g_2 / g_1) exp(-delta E / k_B T), energi kinetik partikel terlalu rendah sehingga lebih dari 99,99% elektron terperangkap di tingkat dasar n = 1, menghasilkan transisi Lyman di UV alih-alih Balmer di cahaya tampak. Sebaliknya, pada bintang sangat panas (kelas O, T > 30.000 K), persamaan ionisasi Saha menunjukkan bahwa energi termal fotosfer melebihi energi ikat hidrogen (13,6 eV), sehingga fraksi hidrogen netral sangat kecil karena hampir semuanya telah terionisasi menjadi ion H+ dan elektron bebas. Akibatnya, perkalian antara fraksi atom netral (Saha) dan fraksi eksitasi n = 2 (Boltzmann) mencapai kurva puncak optimal pada suhu sekitar 9.500 - 10.000 K, yaitu pada kelas spektrum A0.",
+    "pembahasan": [
+      "Transisi Balmer membutuhkan elektron hidrogen pada tingkat tereksitasi $n = 2$.",
+      "Pada suhu rendah, Boltzmann mendominasi: sebagian besar atom berada di keadaan dasar $n = 1$.",
+      "Pada suhu tinggi, Saha mendominasi: hampir semua atom hidrogen terionisasi.",
+      "Hasil kali kedua fungsi probabilitas mencapai puncak pada bintang kelas A ($\\\\sim 10.000\\ \\mathrm{K}$)."
+    ]
+  },
+  {
+    "id": "l1-24",
+    "topik": "bintang",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Bintang masif deret utama memiliki pasokan bahan bakar hidrogen di intinya jauh lebih banyak dibanding bintang bermassa kecil. Namun, mengapa masa hidup (*lifetime*) bintang masif justru ratusan hingga ribuan kali lebih singkat dibanding bintang bermassa kecil? Tunjukkan analisis perbandingan matematisnya dengan relasi massa–luminositas.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan bahwa masa hidup deret utama merupakan rasio antara persediaan bahan bakar inti (energi total) terhadap laju konsumsi energi (luminositas): tau ~ E / L.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerangkan bahwa bahan bakar inti sebanding dengan massa bintang: E ~ M c^2 ~ M.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menurunkan hubungan tau ~ M / M^3,5 = M^-2,5 menggunakan relasi massa-luminositas L ~ M^3,5.",
+        "bobot": 2
+      },
+      {
+        "poin": "Memberikan interpretasi fisis: laju pembakaran energi tumbuh sangat dahsyat seiring massa, melampaui pertambahan stok bahan bakar.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Masa hidup sebuah bintang di deret utama ditentukan oleh perbandingan antara cadangan total energi nuklir yang tersedia di inti dengan laju pelepasan energi bintang tersebut: tau = E_fusi / L. Cadangan massa hidrogen di zona inti yang dapat mengalami reaksi fusi termonuklir berbanding lurus dengan massa total bintang: E_fusi sebanding M. Namun, untuk menjaga kesetimbangan hidrostatik melawan tekanan gravitasi yang luar biasa pada bintang masif, suhu dan tekanan inti harus jauh lebih tinggi. Hal ini memicu laju reaksi rantai CNO yang sangat sensitif terhadap suhu, sehingga luminositas bintang deret utama tumbuh sangat pesat mengikuti relasi massa–luminositas L sebanding M^3,5. Substitusi ke persamaan masa hidup menghasilkan: tau sebanding M / M^3,5 = M^-2,5. Sebagai contoh, bintang 10 M_sun memiliki persediaan bahan bakar 10 kali lebih banyak, tetapi memancarkan luminositas sekitar 10^3,5 ≈ 3.162 kali luminositas Matahari. Akibatnya, bahan bakarnya habis 316 kali lebih cepat dari Matahari (hidup hanya ~30 juta tahun dibanding Matahari yang ~10 miliar tahun).",
+    "pembahasan": [
+      "Persamaan umur hidup: $\\tau \\propto E_{\\text{inti}} / L \\propto M / L$.",
+      "Relasi massa-luminositas: $L \\propto M^{3{,}5}$.",
+      "Penurunan: $\\tau \\propto M / M^{3{,}5} = M^{-2{,}5}$.",
+      "Luminositas yang boros menghabiskan pasokan bahan bakar dalam skala waktu jauh lebih singkat."
+    ]
+  },
+  {
+    "id": "l1-25",
+    "topik": "bintang",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "hr-iso-radius",
+    "soal": "Perhatikan diagram HR dengan garis iso-radius pada gambar. Sebuah bintang superraksasa biru memiliki suhu efektif $T_1 = 20.000\\ \\mathrm{K}$ dan radius $R_1 = 25\\ R_\\odot$. Bintang superraksasa merah memiliki $T_2 = 4.000\\ \\mathrm{K}$ dan radius $R_2 = 625\\ R_\\odot$. Berapakah perbandingan luminositas bolometrik antara superraksasa biru terhadap superraksasa merah ($L_1 / L_2$)?",
+    "opsi": [
+      "$1$",
+      "$5$",
+      "$25$",
+      "$0{,}2$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Luminositas memenuhi Hukum Stefan-Boltzmann: $L = 4\\pi R^2 \\sigma T^4$.",
+      "Rasio luminositas: $L_1 / L_2 = (R_1 / R_2)^2 \\times (T_1 / T_2)^4$.",
+      "Rasio radius: $R_1 / R_2 = 25 / 625 = 1 / 25$. Kuadratnya: $(R_1 / R_2)^2 = (1 / 25)^2 = 1 / 625$.",
+      "Rasio suhu: $T_1 / T_2 = 20.000 / 4.000 = 5$. Pangkat empatnya: $(T_1 / T_2)^4 = 5^4 = 625$.",
+      "Maka rasio luminositas: $L_1 / L_2 = (1 / 625) \\times 625 = 1$. Kedua bintang memiliki luminositas bolometrik yang sama persis."
+    ]
+  },
+  {
+    "id": "l1-26",
+    "topik": "spektroskopi",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "doppler-geser",
+    "soal": "Perhatikan grafik geseran Doppler pada gambar. Sebuah bintang biner spektroskopi bergaris tunggal (SB1) memiliki kurva kecepatan radial sinusoidal murni dengan semi-amplitudo $K = 30\\ \\mathrm{km/s}$ dan periode orbit lingkaran $P = 10{,}0\\ \\mathrm{hari}$. Berapakah nilai fungsi massa $f(m) = \\frac{m_2^3 \\sin^3 i}{(m_1 + m_2)^2}$ dari sistem tersebut dalam satuan massa Matahari ($M_\\odot$)? (Gunakan $G = 6{,}674 \\times 10^{-11}\\ \\mathrm{m^3\\,kg^{-1}\\,s^{-2}}$, $M_\\odot = 1{,}989 \\times 10^{30}\\ \\mathrm{kg}$)",
+    "opsi": [
+      "$0{,}028\\ M_\\odot$",
+      "$0{,}28\\ M_\\odot$",
+      "$1{,}45\\ M_\\odot$",
+      "$0{,}003\\ M_\\odot$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Persamaan fungsi massa biner spektroskopi orbit lingkaran adalah:\n$$f(m) = \\frac{P K^3}{2\\pi G}.$$",
+      "Ubah ke satuan SI: $P = 10{,}0\\ \\text{hari} = 864.000\\ \\mathrm{s}$; $K = 30.000\\ \\mathrm{m/s}$.",
+      "$K^3 = (3 \\times 10^4)^3 = 2{,}7 \\times 10^{13}\\ \\mathrm{m^3/s^3}$.",
+      "$f(m) = \\frac{864.000 \\times 2{,}7 \\times 10^{13}}{2\\pi \\times 6{,}674 \\times 10^{-11}} = \\frac{2{,}3328 \\times 10^{19}}{4{,}1934 \\times 10^{-10}} \\approx 5{,}563 \\times 10^{28}\\ \\mathrm{kg}$.",
+      "Bagi dengan $M_\\odot = 1{,}989 \\times 10^{30}\\ \\mathrm{kg}$:\n$$f(m) = \\frac{5{,}563 \\times 10^{28}}{1{,}989 \\times 10^{30}} \\approx 0{,}0280\\ M_\\odot.$$"
+    ]
+  },
+  {
+    "id": "l1-27",
+    "topik": "spektroskopi",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "spektrum-absorpsi",
+    "soal": "Perhatikan pita spektrum absorpsi pada gambar. Sebuah bintang memiliki garis absorpsi Fe I pada $\\lambda_0 = 550{,}000\\ \\mathrm{nm}$. Pengamatan spektroskopi resolusi tinggi menunjukkan bahwa garis tersebut mengalami pelebaran rotasi Doppler dengan lebar total penuh pada intensitas nol sebesar $\\Delta\\lambda_{\\text{rot}} = 0{,}183\\ \\mathrm{nm}$. Asumsikan sudut inklinasi rotasi bintang terhadap garis pandang adalah $i = 30^\\circ$. Berapakah kecepatan rotasi ekuator bintang tersebut ($v_{\\text{rot}}$) dalam satuan $\\mathrm{km/s}$? (Gunakan $c = 299.792\\ \\mathrm{km/s}$)",
+    "jawaban": 100,
+    "toleransiRel": 0.03,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Lebar total garis rotasi dari ujung biru ke ujung merah adalah $2 \\Delta\\lambda = 2 \\lambda_0 (v_{\\text{rot}} \\sin i / c)$.",
+      "Maka: $\\Delta\\lambda_{\\text{rot}} = 0{,}183\\ \\mathrm{nm} \\implies \\Delta\\lambda = 0{,}183 / 2 = 0{,}0915\\ \\mathrm{nm}$.",
+      "Kecepatan terproyeksi: $v_{\\text{rot}} \\sin i = c \\times (\\Delta\\lambda / \\lambda_0) = 299.792 \\times (0{,}0915 / 550{,}0) \\approx 49{,}915\\ \\mathrm{km/s} \\approx 50\\ \\mathrm{km/s}$.",
+      "Karena $i = 30^\\circ$, maka $\\sin 30^\\circ = 0{,}5$.",
+      "Kecepatan rotasi ekuator sejati: $v_{\\text{rot}} = 50 / \\sin 30^\\circ = 50 / 0{,}5 = 100\\ \\mathrm{km/s}$."
+    ]
+  },
+  {
+    "id": "l1-28",
+    "topik": "bintang",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "hr-skematis",
+    "soal": "Perhatikan diagram HR pada gambar. Sebuah bintang di deret utama memiliki suhu efektif $T = 29.000\\ \\mathrm{K}$ dan luminositas $L = 20.000\\ L_\\odot$. Diketahui suhu Matahari $T_\\odot = 5.800\\ \\mathrm{K}$ dan radius Matahari $R_\\odot = 696.000\\ \\mathrm{km}$. Berapakah radius bintang tersebut dalam satuan radius Matahari ($R_\\odot$)?",
+    "jawaban": 5.66,
+    "toleransiRel": 0.03,
+    "satuan": "R_sun",
+    "pembahasan": [
+      "Dari Hukum Stefan-Boltzmann: $L / L_\\odot = (R / R_\\odot)^2 (T / T_\\odot)^4$.",
+      "$(R / R_\\odot)^2 = (L / L_\\odot) \\times (T_\\odot / T)^4$.",
+      "Substitusi data: $T / T_\\odot = 29.000 / 5.800 = 5{,}0$.",
+      "$(T_\\odot / T)^4 = (1 / 5{,}0)^4 = 1 / 625$.",
+      "$(R / R_\\odot)^2 = 20.000 / 625 = 32$.",
+      "$R / R_\\odot = \\sqrt{32} \\approx 5{,}657 \\approx 5{,}66\\ R_\\odot$."
+    ]
+  },
+  {
+    "id": "l1-29",
+    "topik": "bintang",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah gugus bintang terbuka muda diamati menggunakan fotometri dan spektroskopi. Semua bintang di gugus tersebut diasumsikan terbentuk serentak dari awan molekul yang sama dan berada pada jarak yang sama dari Bumi.\n(a) Jelaskan bagaimana diagram Hertzsprung–Russell gugus tersebut menunjukkan tahap evolusi gugus melalui keberadaan titik belok (*turn-off point*).\n(b) Jika bintang pada titik belok memiliki kelas spektrum B5V dengan massa $M_{\\text{TO}} = 4{,}0\\ M_\\odot$, taksirlah usia gugus bintang tersebut dalam tahun (gunakan model masa hidup $\\tau_{\\text{MS}} \\approx 10^{10}\\ (M/M_\\odot)^{-2{,}5}\\ \\text{tahun}$).\n(c) Mengapa bintang-bintang bermassa sangat rendah ($M < 0{,}3\\ M_\\odot$) pada gugus yang sangat muda mungkin masih berada di sebelah kanan deret utama (fase pra-deret utama)?",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan konsep turn-off point sebagai titik transisi di mana bintang selesai membakar hidrogen di inti dan mulai bergerak menuju cabang raksasa.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung usia numerik gugus bintang: t ≈ 10^{10} × (4,0)^{-2,5} = 10^{10} / 32 ≈ 3,125 × 10^8 tahun (sekitar 310 - 313 juta tahun).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerangkan bahwa bintang bermassa rendah memiliki waktu kontraksi gravitasi pra-deret utama (skala waktu Kelvin-Helmholtz) yang sangat lambat sehingga belum sempat mencapai ZAMS.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Dalam gugus bintang, semua anggota memiliki usia dan komposisi awal yang sama. Titik belok (turn-off point) adalah posisi teratas di deret utama yang masih ditempati bintang. Bintang yang lebih masif dari massa turn-off memiliki usia hidup deret utama yang lebih pendek dari usia gugus, sehingga telah kehabisan hidrogen di inti dan berevolusi ke kanan atas menjadi raksasa merah. Posisi turn-off point secara langsung menandai massa bintang yang baru saja menyelesaikan fase deret utamanya.\n(b) Usia gugus sama dengan usia hidup bintang pada turn-off point:\nt ≈ 10^{10} × (M_TO / M_sun)^{-2,5} tahun.\nUntuk M_TO = 4,0 M_sun:\n4,0^{2,5} = 4^2 × sqrt(4) = 16 × 2 = 32.\nMaka usia gugus adalah:\nt ≈ 10^{10} / 32 = 3,125 × 10^8 tahun = 312,5 juta tahun.\n(c) Pembentukan bintang dari keruntuhan awan gas membutuhkan waktu kontraksi gravitasi (skala waktu Kelvin–Helmholtz t_KH ≈ GM^2 / RL). Bintang bermassa sangat rendah memiliki luminositas yang amat kecil sehingga memancarkan energi potensial gravitasinya sangat lambat. Akibatnya, pada gugus muda, bintang bermassa rendah belum selesai berkontraksi ke deret utama berzaman nol (ZAMS) dan masih berada di jalur Hayashi/Henyey di sebelah kanan deret utama.",
+    "pembahasan": [
+      "Turn-off point menandai massa bintang yang baru saja mengakhiri fusi hidrogen di inti deret utama.",
+      "Kalkulasi usia: $t \\approx 10^{10} / 4{,}0^{2{,}5} = 10^{10} / 32 \\approx 3{,}125 \\times 10^8\\ \\text{tahun}$.",
+      "Skala waktu kontraksi Kelvin-Helmholtz bintang bermassa rendah jauh lebih panjang dibanding bintang masif."
+    ]
+  },
+  {
+    "id": "l1-30",
+    "topik": "spektroskopi",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah sistem bintang biner gerhana spektroskopi bergaris ganda (double-lined eclipsing binary) memiliki orbit lingkaran dengan sudut inklinasi $i = 90^\\circ$ dan periode orbit $P = 5{,}0\\ \\text{hari}$. Spektroskopi Doppler memberikan semi-amplitudo kecepatan radial masing-masing bintang: $K_1 = 60\\ \\mathrm{km/s}$ dan $K_2 = 90\\ \\mathrm{km/s}$. Fotometri gerhana mencatat durasi kontak pertama ke keempat (gerhana total) adalah $\\Delta t_{\\text{total}} = 8{,}0\\ \\text{jam}$ dan durasi kontak kedua ke ketiga (fase minimum datar) adalah $\\Delta t_{\\text{datar}} = 2{,}0\\ \\text{jam}$.\n(a) Tentukan perbandingan massa kedua bintang ($M_1 / M_2$) dan hitung massa masing-masing bintang dalam satuan $M_\\odot$.\n(b) Hitung radius masing-masing bintang ($R_1$ dan $R_2$) dalam satuan kilometer dan dalam satuan $R_\\odot$.",
+    "rubrik": [
+      {
+        "poin": "Menghitung rasio massa M_1 / M_2 = K_2 / K_1 = 90 / 60 = 1,5.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menghitung pemisahan orbital a = v_rel × P / 2pi dan massa total via Hukum Kepler III sehingga diperoleh M_1 dan M_2 dalam M_sun.",
+        "bobot": 3
+      },
+      {
+        "poin": "Menghitung radius R_1 dan R_2 dari durasi gerhana: 2(R_1 + R_2) = v_rel × Delta t_total dan 2(R_1 - R_2) = v_rel × Delta t_datar.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Dari hukum kekekalan momentum pusat massa, rasio massa berbanding terbalik dengan rasio kecepatan radial:\nM_1 / M_2 = K_2 / K_1 = 90 / 60 = 1,5.\nKecepatan orbit relatif: v_rel = K_1 + K_2 = 60 + 90 = 150 km/s = 1,5 × 10^5 m/s.\nRadius orbit relatif: a = v_rel × P / (2pi) = (150 km/s × 5 × 86.400 s) / (2pi) = 6,48 × 10^7 km / 6,2832 ≈ 1,0313 × 10^7 km = 1,0313 × 10^10 m.\nDari Hukum Kepler III: G(M_1 + M_2) = 4pi^2 a^3 / P^2 = v_rel^3 P / (2pi).\nM_1 + M_2 = (1,5 × 10^5)^3 × (432.000) / (2pi × 6,674 × 10^-11) = (3,375 × 10^15 × 4,32 × 10^5) / (4,1934 × 10^-10) ≈ 3,477 × 10^30 kg ≈ 1,748 M_sun.\nKarena M_1 = 1,5 M_2, maka 2,5 M_2 = 1,748 M_sun => M_2 ≈ 0,70 M_sun dan M_1 ≈ 1,05 M_sun.\n\n(b) Untuk geometri gerhana sentral (i = 90°):\nDiameter gabungan: 2(R_1 + R_2) = v_rel × Delta t_total = 150 km/s × (8 × 3600 s) = 150 × 28.800 = 4,32 × 10^6 km => R_1 + R_2 = 2,16 × 10^6 km.\nSelisih diameter: 2(R_1 - R_2) = v_rel × Delta t_datar = 150 km/s × (2 × 3600 s) = 150 × 7.200 = 1,08 × 10^6 km => R_1 - R_2 = 0,54 × 10^6 km.\nJumlahkan kedua persamaan:\n2 R_1 = 2,70 × 10^6 km => R_1 = 1,35 × 10^6 km ≈ 1,94 R_sun.\nR_2 = 2,16 × 10^6 - 1,35 × 10^6 = 0,81 × 10^6 km ≈ 1,16 R_sun.",
+    "pembahasan": [
+      "Rasio massa dari semi-amplitudo: $M_1 / M_2 = K_2 / K_1 = 1{,}5$.",
+      "Pemisahan orbit: $a = v_{\\text{rel}} P / 2\\pi \\approx 1{,}031 \\times 10^7\\ \\mathrm{km}$.",
+      "Massa total dari Kepler III: $M_1 + M_2 \\approx 1{,}75\\ M_\\odot \\implies M_1 \\approx 1{,}05\\ M_\\odot, M_2 \\approx 0{,}70\\ M_\\odot$.",
+      "Radius dari durasi gerhana: $R_1 + R_2 = v_{\\text{rel}} \\Delta t_{\\text{tot}} / 2 = 2{,}16 \\times 10^6\\ \\mathrm{km}$ dan $R_1 - R_2 = 0{,}54 \\times 10^6\\ \\mathrm{km}$, sehingga $R_1 \\approx 1{,}94\\ R_\\odot$ dan $R_2 \\approx 1{,}16\\ R_\\odot$."
+    ]
+  }
+]

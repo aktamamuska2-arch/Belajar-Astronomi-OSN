@@ -1,0 +1,172 @@
+<Tujuan>
+
+- Menjelaskan keseimbangan hidrostatik antara gravitasi dan gradien tekanan.
+- Menjelaskan reaksi fusi hidrogen dan helium serta sumber energinya.
+- Mengurutkan tahap evolusi bintang bermassa rendah dan bermassa tinggi.
+- Memakai batas Chandrasekhar untuk menjelaskan akhir hidup katai putih.
+- Menghubungkan posisi di HR diagram dengan tahap evolusi.
+
+</Tujuan>
+
+<Prasyarat babIds={['l1', 'f6']} />
+
+<p className="lead">Di L1 kita mengukur bintang dari luar. Sekarang kita masuk ke dalam: mengapa bintang tidak runtuh, dari mana energinya, dan bagaimana ia berubah selama miliaran tahun. Semua jawabannya bertumpu pada dua penopang — tekanan dan fusi nuklir.</p>
+
+## 1. Keseimbangan hidrostatik
+
+<Poin judul="1 · Gravitasi versus tekanan" defaultOpen>
+
+Setiap lapisan bintang ditarik ke dalam oleh gravitasi dan didorong ke luar oleh perbedaan tekanan. Dalam kesetimbangan:
+
+$$\frac{dP}{dr} = -\frac{GM(r)\rho(r)}{r^{2}}.$$
+
+Tanda negatif berarti tekanan makin kecil ke arah luar. Bila gradien tekanan terlalu kecil, bintang runtuh; bila terlalu besar, bintang mengembang. Selama fusi menyuplai panas, keduanya seimbang.
+
+Tekanan pusat naik cepat bila massa besar dan radius kecil, kira-kira
+
+$$P_c \sim \frac{GM^{2}}{R^{4}}.$$
+
+Bintang masif memiliki tekanan dan suhu pusat jauh lebih tinggi — itulah sebabnya bintang masif bisa menyalakan reaksi yang tidak mungkin terjadi di Matahari.
+
+<Contoh judul="Membandingkan tekanan pusat">
+
+<Langkah>
+
+Dua bintang bermassa sama, tetapi bintang B beradius 10 kali bintang A.
+
+</Langkah>
+
+<Langkah>
+
+$P_c \propto M^{2}/R^{4}$, sehingga $P_{c,B}/P_{c,A} = (1/10)^{4} = 10^{-4}$.
+
+</Langkah>
+
+<Langkah>
+
+Bintang yang lebih besar memiliki tekanan pusat jauh lebih rendah. Inilah alasan raksasa merah dengan massa sekitar Matahari tetap stabil meskipun sangat besar: pusatnya lebih dingin dan reaksinya berlangsung di lapisan tipis.
+
+</Langkah>
+
+</Contoh>
+
+</Poin>
+
+## 2. Energi dari fusi nuklir
+
+<Poin judul="2 · Empat proton menjadi satu helium">
+
+Di inti Matahari, rantai proton–proton menggabungkan empat proton menjadi inti helium:
+
+$$4\,{}^{1}\mathrm{H} \rightarrow {}^{4}\mathrm{He} + 2e^{+} + 2\nu + \gamma.$$
+
+Massa inti helium sekitar 0,7% lebih kecil daripada massa empat proton. Selisihnya muncul sebagai energi:
+
+$$E = \Delta m\,c^{2} \approx 0{,}007 \times 4m_p c^{2} \approx 26{,}7\ \mathrm{MeV}.$$
+
+Bintang masif memakai siklus CNO yang lebih sensitif terhadap suhu. Setelah hidrogen inti habis, helium dapat menyatu melalui proses triple-alpha:
+
+$$3\,{}^{4}\mathrm{He} \rightarrow {}^{12}\mathrm{C} + \gamma,$$
+
+yang baru berjalan efisien di atas sekitar $10^{8}$ K.
+
+<Contoh judul="Berapa hidrogen yang dibakar Matahari per detik?">
+
+<Langkah>
+
+Energi per inti helium: $E \approx 4{,}2 \times 10^{-12}$ J (setara 26,7 MeV).
+
+</Langkah>
+
+<Langkah>
+
+Laju reaksi = $L_\odot/E = 3{,}83 \times 10^{26}/(4{,}2 \times 10^{-12}) \approx 9{,}1 \times 10^{37}$ helium per detik.
+
+</Langkah>
+
+<Langkah>
+
+Setiap helium memakai empat proton: $3{,}6 \times 10^{38}$ proton per detik, atau sekitar $6 \times 10^{11}$ kg hidrogen per detik.
+
+</Langkah>
+
+<Langkah>
+
+Tafsirkan: sekitar 600 juta ton hidrogen per detik — tetapi dibandingkan massa Matahari ($2 \times 10^{30}$ kg), laju ini masih sangat kecil.
+
+</Langkah>
+
+</Contoh>
+
+<Catatan variasi="awas">
+
+Fusi hanya terjadi di inti yang cukup panas. "Membakar" hidrogen bukan reaksi kimia; tidak ada oksigen yang diperlukan, dan hasilnya bukan abu melainkan helium plus energi ikat inti.
+
+</Catatan>
+
+</Poin>
+
+## 3. Tahap evolusi
+
+<Poin judul="3 · Dari awan ke katai putih atau ledakan">
+
+Urutan umum untuk bintang bermassa rendah dan sedang (seperti Matahari):
+
+1. **Awan molekul** runtuh menjadi protobintang.
+2. **Deret utama**: fusi hidrogen di inti; tahap terpanjang (~90% umur).
+3. **Subraksasa/raksasa merah**: inti hidrogen habis, inti mengerut dan memanas, selubung mengembang dan mendingin.
+4. **Pembakaran helium** di inti (triple-alpha), lalu kulit helium dan hidrogen.
+5. **AGB**: selubung terlepas sebagai nebula planet.
+6. **Katai putih**: inti karbon–oksigen yang ditopang tekanan degenerasi elektron.
+
+Bintang bermassa awal di atas sekitar 8 M☉ mengalami nasib berbeda: inti terus menyatu menjadi unsur lebih berat hingga besi, lalu runtuh. Hasilnya supernova tipe II dan sisa berupa bintang neutron atau lubang hitam.
+
+Katai putih tidak dapat melebihi **batas Chandrasekhar** sekitar 1,4 M☉. Bila katai putih di sistem ganda menyerap massa melewati batas itu, ia runtuh dan meledak sebagai supernova tipe Ia — lilin standar kosmologi.
+
+<Gambar id="hr-evolusi" />
+
+<Interaktif jenis="hr" />
+
+</Poin>
+
+## 4. Cek pemahaman
+
+<CekPaham
+  id="l2-cek-1"
+  pertanyaan="Tahap evolusi bintang mana yang paling lama?"
+  opsi={['Deret utama', 'Raksasa merah', 'Katai putih', 'Nebula planet']}
+  jawaban={0}
+  penjelasan="Fusi hidrogen di inti berlangsung sekitar 90% umur bintang. Tahap raksasa dan katai putih jauh lebih singkat."
+/>
+
+<CekPaham
+  id="l2-cek-2"
+  pertanyaan="Berapa batas massa maksimum katai putih sebelum runtuh?"
+  opsi={['8 M☉', '3 M☉', '1,4 M☉', '0,5 M☉']}
+  jawaban={2}
+  penjelasan="Batas Chandrasekhar sekitar 1,4 M☉. Di atas itu, tekanan degenerasi elektron tidak cukup menahan gravitasi."
+/>
+
+<Refleksi
+  id="l2-refleksi-1"
+  pertanyaan="Mengapa bintang seperti Matahari mengembang menjadi raksasa merah setelah hidrogen di intinya habis, padahal energi totalnya justru berkurang?"
+/>
+
+## 5. Nilai yang sering dipakai
+
+<Konstanta
+  data={[
+    { simbol: 'Energi pp-chain', nilai: '26,7', satuan: 'MeV per He' },
+    { simbol: 'Fraksi massa→energi', nilai: '0,7', satuan: '%' },
+    { simbol: 'Batas Chandrasekhar', nilai: '1,4', satuan: 'M☉' },
+    { simbol: 'Ambang triple-alpha', nilai: '~10⁸', satuan: 'K' },
+    { simbol: 'Ambang supernova', nilai: '~8', satuan: 'M☉' },
+    { simbol: 'Puncak kurva B/A', nilai: 'Fe-56', satuan: '~8,8 MeV/nukleon' },
+  ]}
+/>
+
+<Catatan variasi="info">
+
+L3 memakai akhir hidup bintang untuk menjelaskan bintang ganda sinar-X dan katai putih, sedangkan L5 memakai supernova tipe Ia sebagai lilin standar. Keterampilan inti L2: keseimbangan hidrostatik, fusi 4H→He, dan urutan evolusi sampai katai putih.
+
+</Catatan>

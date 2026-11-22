@@ -1,0 +1,579 @@
+[
+  {
+    "id": "a2-01",
+    "topik": "astronomi-bola",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "bola-langit",
+    "soal": "Perhatikan diagram bola langit pada gambar. Ketinggian Kutub Langit Utara (KLU) di atas horizon bagi seorang pengamat di permukaan Bumi selalu sama dengan...",
+    "opsi": [
+      "Nilai mutlak lintang geografis pengamat ($|\\|$)",
+      "Bujur geografis pengamat",
+      "Sudut deklinasi Matahari pada hari tersebut",
+      "Kemiringan ekliptika terhadap ekuator langit ($23{,}44^\\$)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Berdasarkan geometri bola langit, sumbu rotasi Bumi membentuk sudut dengan bidang horizon pengamat yang nilainya tepat sama dengan lintang geografis pengamat ($\\$).",
+      "Oleh karena itu, altitude kutub langit di belahan bumi utara adalah $a = +\\$, dan di belahan selatan adalah $a = |\\|$.",
+      "Misalnya, pengamat di lintang $30^\\\\ \\{LU}$ akan melihat KLU berada tepat pada ketinggian $30^\\$ di atas horizon utara."
+    ]
+  },
+  {
+    "id": "a2-02",
+    "topik": "astronomi-bola",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Jarak sudut antara zenith (titik tepat di atas kepala) dengan horizon astronomis adalah...",
+    "opsi": [
+      "$90^\\$",
+      "$180^\\$",
+      "$45^\\$",
+      "Tergantung pada lintang pengamat"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Secara definisi, garis vertikal yang menghubungkan Zenith dan Nadir tegak lurus terhadap bidang horizon astronomis.",
+      "Dengan demikian, sudut pemisah antara titik Zenith dan setiap titik di lingkaran horizon selalu tepat $90^\\$.",
+      "Jarak zenith suatu benda langit dinyatakan sebagai $z = 90^\\ - a$, di mana $a$ adalah altitude."
+    ]
+  },
+  {
+    "id": "a2-03",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Satu jam dalam satuan Asensio Rekta (RA) pada bola langit setara dengan sudut busur sebesar...",
+    "opsi": [
+      "$15^\\$",
+      "$1^\\$",
+      "$60^\\$",
+      "$360^\\$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Satu putaran penuh bola langit adalah $360^\\$, yang ditempuh Bumi dalam $24$ jam rotasi sideris.",
+      "Maka konversi sudut waktu ke sudut busur adalah $360^\\ / 24^{\\{h}} = 15^\\$ per jam.",
+      "Turunannya: $1^{\\{m}} = 15'$ (menit busur) dan $1^{\\{s}} = 15''$ (detik busur)."
+    ]
+  },
+  {
+    "id": "a2-04",
+    "topik": "astronomi-bola",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-bola",
+    "soal": "Perhatikan segitiga bola $P-Z-S$ pada gambar. Titik sudut $P$, $Z$, dan $S$ berturut-turut merepresentasikan...",
+    "opsi": [
+      "Kutub langit, Zenith pengamat, dan posisi Bintang",
+      "Pusat bumi, Zenith pengamat, dan Matahari",
+      "Kutub ekliptika, Zenith pengamat, dan Titik Aries",
+      "Horizon utara, Zenith pengamat, dan Kutub langit selatan"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Segitiga bola astronomi standar dibentuk oleh tiga titik sudut:",
+      "Titik $P$ = Kutub Langit (North/South Celestial Pole),",
+      "Titik $Z$ = Zenith pengamat,",
+      "Titik $S$ = Posisi benda langit / Bintang (*Star*)."
+    ]
+  },
+  {
+    "id": "a2-05",
+    "topik": "waktu-kalender",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah bintang melintasi meridian pengamat (kulminasi atas) pada saat Waktu Sideris Lokal $LST = 14^{\\{h}}30^{\\{m}}$. Berapakah Asensio Rekta ($\\$) bintang tersebut dalam satuan jam? (Tuliskan dalam format desimal, misal 14.5)",
+    "jawaban": 14.5,
+    "toleransiRel": 0.01,
+    "satuan": "jam",
+    "pembahasan": [
+      "Kulminasi atas terjadi tepat saat bintang berada di meridian lokal, sehingga sudut jamnya adalah $HA = 0^{\\{h}}$.",
+      "Dari rumus fundamental sudut jam: $LST = \\ + HA \\ LST = \\ + 0 \\ \\ = LST$.",
+      "Maka $\\ = 14^{\\{h}}30^{\\{m}} = 14{,}5^{\\{h}}$."
+    ]
+  },
+  {
+    "id": "a2-06",
+    "topik": "astronomi-bola",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Seorang pengamat berada di kota Pontianak tepat di ekuator Bumi ($\\ = 0^\\$). Berapakah ketinggian maksimum (altitude kulminasi atas) sebuah bintang yang memiliki deklinasi $\\ = +20^\\$ di langit pengamat tersebut dalam satuan derajat?",
+    "jawaban": 70,
+    "toleransiRel": 0.01,
+    "satuan": "derajat",
+    "pembahasan": [
+      "Rumus altitude kulminasi atas: $a_{\\{kulm}} = 90^\\ - |\\ - \\|$.",
+      "Substitusi $\\ = 0^\\$ dan $\\ = +20^\\$:",
+      "$a_{\\{kulm}} = 90^\\ - |0^\\ - 20^\\| = 90^\\ - 20^\\ = 70^\\$ di atas horizon utara."
+    ]
+  },
+  {
+    "id": "a2-07",
+    "topik": "astronomi-bola",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "bola-langit",
+    "soal": "Perhatikan bola langit pada gambar. Bagi seorang pengamat di Tokyo (lintang $\\ = +35{,}7^\\\\ \\{LU}$), berapakah batas deklinasi minimum ($\\$) agar suatu bintang tergolong sirkumpolar (tidak pernah terbenam di bawah horizon)?",
+    "opsi": [
+      "$\\ \\ +54{,}3^\\$",
+      "$\\ \\ +35{,}7^\\$",
+      "$\\ \\ -54{,}3^\\$",
+      "$\\ \\ +90{,}0^\\$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Syarat bintang sirkumpolar di belahan bumi utara adalah saat kulminasi bawah, altitude tetap berada di atas horizon ($a_{\\{bawah}} \\ 0^\\$).",
+      "$a_{\\{bawah}} = \\ + \\ - 90^\\ \\ 0^\\ \\ \\ \\ 90^\\ - \\$.",
+      "Substitusi $\\ = +35{,}7^\\$: $\\ \\ 90^\\ - 35{,}7^\\ = +54{,}3^\\$."
+    ]
+  },
+  {
+    "id": "a2-08",
+    "topik": "astronomi-bola",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-bola",
+    "soal": "Perhatikan sisi-sisi segitiga bola $P-Z-S$ pada gambar. Panjang busur sisi antara Zenith ($Z$) dan Kutub Langit ($P$) adalah...",
+    "opsi": [
+      "$90^\\ - \\$ (ko-lintang)",
+      "$90^\\ - \\$ (jarak kutub)",
+      "$90^\\ - a$ (jarak zenith)",
+      "$\\ + \\$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Ketinggian kutub langit di atas horizon adalah $\\$.",
+      "Karena jarak sudut antara horizon dan zenith adalah $90^\\$, maka jarak busur meridian dari Zenith ke Kutub Langit adalah tepat $90^\\ - \\$ (disebut ko-lintang).",
+      "Sisi $PS$ adalah jarak kutub ($90^\\ - \\$), dan sisi $ZS$ adalah jarak zenith ($90^\\ - a$)."
+    ]
+  },
+  {
+    "id": "a2-09",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Bintang Canopus memiliki asensio rekta $\\ = 6^{\\{h}}24^{\\{m}}$. Pada saat Waktu Sideris Lokal $LST = 9^{\\{h}}24^{\\{m}}$, berapakah nilai sudut jam ($HA$) bintang Canopus tersebut?",
+    "opsi": [
+      "$+3^{\\{h}}$ (berada di barat meridian)",
+      "$-3^{\\{h}}$ (berada di timur meridian)",
+      "$+15^{\\{h}}48^{\\{m}}$",
+      "$0^{\\{h}}$ (sedang transit)"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Rumus sudut jam: $HA = LST - \\$.",
+      "$HA = 9^{\\{h}}24^{\\{m}} - 6^{\\{h}}24^{\\{m}} = +3^{\\{h}} = +45^\\$.",
+      "Sudut jam positif berarti bintang telah melintasi meridian pengamat 3 jam yang lalu dan saat ini berada di belahan langit barat."
+    ]
+  },
+  {
+    "id": "a2-10",
+    "topik": "astronomi-bola",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "bola-langit",
+    "soal": "Perhatikan sistem bola langit pada gambar. Pilihlah semua pernyataan yang BENAR mengenai sistem koordinat langit:",
+    "opsi": [
+      "Koordinat horizontal (Altitude, Azimuth) suatu bintang nilainya berubah setiap detik akibat rotasi harian Bumi",
+      "Koordinat ekuatorial (Asensio Rekta, Deklinasi) bintang bernilai relatif tetap terhadap waktu pengamatan harian",
+      "Altitude kutub langit sama dengan nilai lintang geografis pengamat",
+      "Azimuth selalu diukur dari titik Zenith ke arah horizon",
+      "Deklinasi bintang selalu bernilai positif untuk semua bintang yang tampak"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Pernyataan 1, 2, dan 3 benar sesuai definisi sistem koordinat astronomi bola.",
+      "Pernyataan 4 salah: Azimuth diukur sepanjang lingkaran horizon (bukan dari Zenith).",
+      "Pernyataan 5 salah: Bintang di belahan langit selatan memiliki deklinasi negatif."
+    ]
+  },
+  {
+    "id": "a2-11",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Mengenai hubungan antara gerak semu Matahari di ekliptika dan panjang siang hari, manakah pernyataan yang BENAR?",
+    "opsi": [
+      "Pada tanggal 21 Maret dan 23 September (ekuinoks), deklinasi Matahari adalah tepat $\\_\\odot = 0^\\$",
+      "Pada saat ekuinoks, panjang siang hari di seluruh permukaan Bumi adalah tepat 12 jam (mengabaikan refraksi atmosfer)",
+      "Pada tanggal 21 Juni, belahan bumi utara mengalami panjang siang terpanjang dalam setahun",
+      "Di kutub utara Bumi, Matahari berada di atas horizon tanpa pernah terbenam selama 6 bulan berturut-turut",
+      "Panjang siang hari di khatulistiwa berfluktuasi antara 8 jam hingga 16 jam sepanjang tahun"
+    ],
+    "jawaban": [0, 1, 2, 3],
+    "pembahasan": [
+      "Pernyataan 1, 2, 3, dan 4 adalah fakta fundamental astronomi bola akibat kemiringan sumbu rotasi Bumi $\\varepsilon \\ 23{,}44^\\$.",
+      "Pernyataan 5 salah: Di khatulistiwa ($\\ = 0^\\$), panjang siang hari selalu konstan sekitar 12 jam sepanjang tahun."
+    ]
+  },
+  {
+    "id": "a2-12",
+    "topik": "astronomi-bola",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Pengamat berada di lintang $\\ = -7{,}0^\\$ (Lintang Selatan). Sebuah bintang memiliki deklinasi $\\ = -7{,}0^\\$. Berapakah altitude bintang tersebut saat mengalami kulminasi atas di langit dalam satuan derajat?",
+    "jawaban": 90,
+    "toleransiRel": 0.01,
+    "satuan": "derajat",
+    "pembahasan": [
+      "Altitude kulminasi atas: $a = 90^\\ - |\\ - \\|$.",
+      "$a = 90^\\ - |-7{,}0^\\ - (-7{,}0^\\)| = 90^\\ - 0^\\ = 90^\\$.",
+      "Bintang tersebut melintasi tepat di titik Zenith pengamat."
+    ]
+  },
+  {
+    "id": "a2-13",
+    "topik": "astronomi-bola",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Bagi pengamat di lintang $\\ = +60{,}0^\\\\ \\{LU}$, berapakah deklinasi maksimum sebuah bintang agar bintang tersebut TIDAK PERNAH terbit di atas horizon (selalu berada di bawah horizon)?",
+    "jawaban": -30,
+    "toleransiRel": 0.02,
+    "satuan": "derajat",
+    "pembahasan": [
+      "Syarat bintang tidak pernah terbit adalah $a_{\\{atas}} \\ 0^\\$.",
+      "$a_{\\{atas}} = 90^\\ - \\ + \\ \\ 0^\\ \\ \\ \\ \\ - 90^\\$.",
+      "Substitusi $\\ = +60^\\$: $\\ \\ 60^\\ - 90^\\ = -30^\\$."
+    ]
+  },
+  {
+    "id": "a2-14",
+    "topik": "waktu-kalender",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah bintang melintasi meridian pengamat pada pukul 21.00 waktu lokal pada tanggal 1 Mei. Sekitar pukul berapa waktu lokal bintang tersebut akan melintasi meridian pada tanggal 1 Juni (31 hari kemudian)? Asumsikan pergeseran harian waktu sideris terhadap waktu matahari adalah 4 menit per hari. (Tuliskan jam dalam format desimal, misal 19.0)",
+    "jawaban": 18.93,
+    "toleransiRel": 0.03,
+    "satuan": "jam",
+    "pembahasan": [
+      "Waktu sideris maju sekitar 3 menit 56 detik $\\ 3{,}93$ menit lebih cepat setiap hari relatif terhadap waktu matahari rata-rata (akibat gerak revolusi Bumi sekitar $1^\\$ per hari).",
+      "Dalam 31 hari, pergeseran waktu adalah $31 \\ 3{,}93\\ \\{menit} \\ 122\\ \\{menit} \\ 2\\ \\{jam}\\ 2\\ \\{menit}$.",
+      "Bintang akan transit lebih awal: $21.00 - 2^{\\{h}}02^{\\{m}} \\ 18.58$ atau $18{,}93 - 19{,}0^{\\{h}}$."
+    ]
+  },
+  {
+    "id": "a2-15",
+    "topik": "astronomi-bola",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Pengamat di Kutub Utara Bumi ($\\ = +90^\\$) mengamati sebuah bintang dengan deklinasi $\\ = +25^\\$. Berapakah altitude bintang tersebut saat kulminasi bawah dalam satuan derajat?",
+    "jawaban": 25,
+    "toleransiRel": 0.01,
+    "satuan": "derajat",
+    "pembahasan": [
+      "Di Kutub Utara, horizon berimpit dengan ekuator langit, sehingga altitude bintang sama dengan deklinasinya di sepanjang hari: $a = \\$.",
+      "Maka altitude bintang saat kulminasi atas maupun kulminasi bawah konstan pada $25^\\$ (bintang bergerak melingkar sejajar horizon)."
+    ]
+  },
+  {
+    "id": "a2-16",
+    "topik": "astronomi-bola",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-bola",
+    "soal": "Perhatikan segitiga bola $P-Z-S$ pada gambar. Sebuah bintang memiliki deklinasi $\\ = +30^\\$ dan sudut jam $HA = 0^{\\{h}}$ (sedang transit meridian). Pengamat berada pada lintang $\\ = +50^\\\\ \\{LU}$. Berapakah jarak zenith ($z$) bintang tersebut saat transit?",
+    "opsi": [
+      "$20^\\$",
+      "$70^\\$",
+      "$80^\\$",
+      "$10^\\$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Altitude saat transit: $a = 90^\\ - |\\ - \\| = 90^\\ - |50^\\ - 30^\\| = 90^\\ - 20^\\ = 70^\\$.",
+      "Jarak zenith didefinisikan sebagai $z = 90^\\ - a$.",
+      "Maka $z = 90^\\ - 70^\\ = 20^\\$ (atau langsung dari $|\\ - \\| = |50^\\ - 30^\\| = 20^\\$)."
+    ]
+  },
+  {
+    "id": "a2-17",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Pada tanggal 21 Juni (titik balik musim panas, $\\_\\odot = +23{,}44^\\$), di manakah batas lintang geografis terendah di belahan bumi utara tempat terjadinya fenomena Matahari tengah malam (*midnight sun*, Matahari tidak pernah terbenam selama 24 jam)?",
+    "opsi": [
+      "$+66{,}56^\\\\ \\{LU}$ (Lingkar Arktik)",
+      "$+23{,}44^\\\\ \\{LU}$ (Tropic of Cancer)",
+      "$+90{,}00^\\\\ \\{LU}$ (Kutub Utara)",
+      "$+45{,}00^\\\\ \\{LU}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Syarat Matahari sirkumpolar (tidak terbenam) adalah $\\_\\odot \\ 90^\\ - \\$.",
+      "Maka lintang batas minimum memenuhi $\\ \\ 90^\\ - \\_\\odot = 90^\\ - 23{,}44^\\ = +66{,}56^\\\\ \\{LU}$.",
+      "Garis lintang ini dikenal sebagai Lingkar Arktik (*Arctic Circle*)."
+    ]
+  },
+  {
+    "id": "a2-18",
+    "topik": "astronomi-bola",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "bola-langit",
+    "soal": "Pengamat berada di ekuator Bumi (lintang $\\ = 0^\\$). Berdasarkan bola langit pada gambar, manakah pernyataan yang BENAR mengenai penampakan langit di ekuator?",
+    "opsi": [
+      "Semua bintang di seluruh belahan langit utara dan selatan dapat terbit dan terbenam bagi pengamat di ekuator",
+      "Tidak ada satu pun bintang yang berstatus sirkumpolar di ekuator",
+      "Semua bintang berada tepat di atas horizon selama 12 jam sideris setiap hari (mengabaikan refraksi)",
+      "Kutub Langit Utara berada di titik Zenith",
+      "Ekuator langit melintasi titik Timur, Zenith, dan Barat"
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Di ekuator, kutub langit berada di horizon, sehingga lintasan harian bintang memotong horizon secara tegak lurus ($90^\\$).",
+      "Setiap bintang menempuh separuh lingkaran orbitnya di atas horizon (selama 12 jam) dan separuh di bawah horizon (12 jam).",
+      "Tidak ada bintang sirkumpolar (semua terbit dan terbenam).",
+      "Ekuator langit melewati Zenith tegak lurus dari Timur ke Barat."
+    ]
+  },
+  {
+    "id": "a2-19",
+    "topik": "astronomi-bola",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "segitiga-bola",
+    "soal": "Berdasarkan aturan kosinus dan sinus pada segitiga bola $P-Z-S$ di gambar, persamaan manakah yang BENAR?",
+    "opsi": [
+      "$\\ a = \\ \\ \\ \\ + \\ \\ \\ \\ \\(HA)$",
+      "$\\(HA_0) = -\\ \\ \\ \\$ saat bintang tepat terbit atau terbenam ($a = 0^\\$)",
+      "$\\ A_{\\{terbit}} = \\ \\ / \\ \\$",
+      "$\\ a = \\ \\ \\ \\ + \\ \\ \\ \\ \\(HA)$",
+      "$\\ z = \\ a$"
+    ],
+    "jawaban": [0, 1, 2, 4],
+    "pembahasan": [
+      "Aturan kosinus sisi segitiga bola $P-Z-S$ dengan sisi $z = 90^\\ - a$ memberikan $\\ z = \\ a = \\\\\\\\ + \\\\\\\\\\ HA$. (Opsi 1 dan 5 benar)",
+      "Saat terbit/terbenam, $a = 0^\\ \\ \\ a = 0 \\ \\ HA_0 = -\\\\\\\\$. (Opsi 2 benar)",
+      "Aturan sudut azimuth saat terbit memberikan $\\ A_{\\{terbit}} = \\\\ / \\\\$. (Opsi 3 benar)"
+    ]
+  },
+  {
+    "id": "a2-20",
+    "topik": "astronomi-bola",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Pengamat berada di lintang $\\ = +45^\\\\ \\{LU}$. Sebuah bintang memiliki deklinasi $\\ = +45^\\$. Berapakah nilai kosinus sudut jam terbit ($HA_0$) bintang tersebut? (Gunakan rumus $\\ HA_0 = -\\\\\\\\$)",
+    "jawaban": -1,
+    "toleransiRel": 0.01,
+    "satuan": "nilai",
+    "pembahasan": [
+      "$\\ HA_0 = -\\(45^\\) \\ \\(45^\\) = - (1) \\ (1) = -1$.",
+      "Karena $\\ HA_0 = -1$, maka $HA_0 = 180^\\ = 12^{\\{h}}$.",
+      "Artinya bintang berada di atas horizon selama $2 \\ 12^{\\{h}} = 24^{\\{h}}$ (tepat berada di batas sirkumpolar, menyentuh horizon utara saat kulminasi bawah tanpa terbenam)."
+    ]
+  },
+  {
+    "id": "a2-21",
+    "topik": "astronomi-bola",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Bagi pengamat di kota Jayapura (lintang $\\ = -2{,}5^\\$), Matahari berada pada deklinasi $\\_\\odot = +23{,}5^\\$ pada tanggal 21 Juni. Berapakah altitude Matahari saat kulminasi atas (tengah hari lokal) dalam satuan derajat?",
+    "jawaban": 64,
+    "toleransiRel": 0.02,
+    "satuan": "derajat",
+    "pembahasan": [
+      "$a_{\\{kulm}} = 90^\\ - |\\ - \\_\\odot|$.",
+      "$|\\ - \\_\\odot| = |-2{,}5^\\ - (+23{,}5^\\)| = |-26{,}0^\\| = 26{,}0^\\$.",
+      "$a_{\\{kulm}} = 90^\\ - 26{,}0^\\ = 64{,}0^\\$ di atas horizon utara."
+    ]
+  },
+  {
+    "id": "a2-22",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Kota A terletak pada bujur $105^\\\\ \\{BT}$ dan Kota B terletak pada bujur $120^\\\\ \\{BT}$. Berapakah selisih Waktu Sideris Lokal ($LST_B - LST_A$) antara kedua kota tersebut dalam satuan menit?",
+    "jawaban": 60,
+    "toleransiRel": 0.01,
+    "satuan": "menit",
+    "pembahasan": [
+      "Selisih bujur: $\\Delta\\lambda = 120^\\ - 105^\\ = 15^\\$.",
+      "Karena $15^\\$ setara dengan 1 jam waktu rotasi bola langit, maka selisih LST adalah tepat $1^{\\{h}} = 60\\ \\{menit}$.",
+      "Kota B yang lebih timur mengalami transit bintang 60 menit lebih awal daripada Kota A."
+    ]
+  },
+  {
+    "id": "a2-23",
+    "topik": "astronomi-bola",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa sistem koordinat ekuatorial (Asensio Rekta dan Deklinasi) dipilih sebagai sistem standar dalam katalog bintang internasional dibanding sistem koordinat horizontal (Altitude dan Azimuth). Sebutkan pula efek jangka panjang apa yang menyebabkan koordinat ekuatorial bintang di katalog harus selalu diperbarui dengan mencantumkan 'epoch' tertentu (misal J2000.0).",
+    "rubrik": [
+      {
+        "poin": "Menerangkan bahwa koordinat horizontal terikat pada lokasi pengamat (lintang/bujur) dan berubah setiap saat karena rotasi harian Bumi.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan bahwa koordinat ekuatorial terikat pada bola langit independen terhadap lokasi pengamat dan rotasi harian Bumi.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan fenomena presesi presisi sumbu rotasi Bumi (periode ~26.000 tahun) yang menggeser Titik Aries dan ekuator langit, sehingga memerlukan epoch standar (misal J2000.0).",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "1. Kelemahan Sistem Horizontal: Sistem Alt-Az berpusat pada pengamat lokal di permukaan Bumi. Akibat rotasi harian Bumi pada sumbunya, altitude dan azimuth suatu bintang berubah secara kontinu setiap detik. Selain itu, pada detik yang sama, dua pengamat di kota yang berbeda akan mengukur Alt-Az yang berlainan. Hal ini membuat koordinat horizontal tidak praktis untuk katalogisasi universal.\n2. Keunggulan Sistem Ekuatorial: Sistem ekuatorial (RA dan Dec) diproyeksikan dari sumbu rotasi Bumi dan ekuator langit ke latar bintang jauh. Karena ikut berputar bersama bola langit, nilai RA dan Dec suatu bintang bersifat konstan dan identik bagi semua astronom di seluruh dunia, kapan pun dan di mana pun pengamatan dilakukan.\n3. Peran Epoch dan Presesi Sumbu Bumi: Walaupun koordinat ekuatorial tidak dipengaruhi rotasi harian, sumbu rotasi Bumi mengalami gerak presesi kerucut (presesi ekuinoks) akibat torsi gravitasi Bulan dan Matahari pada tonjolan ekuator Bumi dengan periode sekitar 25.772 tahun. Presesi ini menggeser bidang ekuator langit dan Titik Aries (titik nol RA) sekitar 50,3 detik busur per tahun. Akibatnya, nilai RA dan Dec bintang mengalami pergeseran lambat dari tahun ke tahun, sehingga katalog astronomi modern wajib menyertakan epoch acuan tertentu (seperti J2000.0 yang merujuk pada posisi ekuinoks tanggal 1 Januari 2000 pukul 12.00 TT).",
+    "pembahasan": [
+      "Alt-Az bergantung waktu dan posisi lokal pengamat.",
+      "RA/Dec adalah koordinat geosentris/heliosentris yang stasioner terhadap rotasi harian.",
+      "Presesi sumbu Bumi ($\\ 26.000\\ \\{tahun}$) menggeser ekuinoks vernal Titik Aries, mensyaratkan pencantuman epoch standar."
+    ]
+  },
+  {
+    "id": "a2-24",
+    "topik": "waktu-kalender",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Turunkan persamaan busur semi-diurnal $\\(HA_0) = -\\\\\\\\$ untuk menghitung waktu terbit dan terbenam suatu benda langit dari aturan kosinus segitiga bola astronomi. Jelaskan bagaimana persamaan ini digunakan untuk membuktikan bahwa di kutub geografis Bumi, Matahari mengalami siang selama 6 bulan berturut-turut.",
+    "rubrik": [
+      {
+        "poin": "Menuliskan aturan kosinus segitiga bola P-Z-S: cos z = sin a = sin phi sin delta + cos phi cos delta cos HA.",
+        "bobot": 2
+      },
+      {
+        "poin": "Memasukkan kondisi terbit/terbenam di mana altitude a = 0 (jarak zenith z = 90° sehingga cos z = 0) dan menurunkan cos HA_0 = -tan phi tan delta.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerapkan pada lintang kutub phi = +90°: selama delta > 0 (musim semi dan panas utara dari Maret hingga September), Matahari selalu di atas horizon (siang 6 bulan).",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "1. Penurunan Persamaan: Pada segitiga bola astronomi P-Z-S, aturan kosinus untuk jarak zenith z adalah:\ncos z = cos(90° - phi) cos(90° - delta) + sin(90° - phi) sin(90° - delta) cos HA\ncos z = sin phi sin delta + cos phi cos delta cos HA.\nSaat benda langit tepat terbit atau terbenam di horizon sejati, ketinggiannya adalah a = 0°, sehingga jarak zenith z = 90° - 0° = 90°. Karena cos(90°) = 0, persamaan menjadi:\n0 = sin phi sin delta + cos phi cos delta cos(HA_0)\ncos phi cos delta cos(HA_0) = -sin phi sin delta\ncos(HA_0) = - (sin phi / cos phi) × (sin delta / cos delta) = -tan phi tan delta.\n\n2. Analisis Siang 6 Bulan di Kutub: Di Kutub Utara (phi = +90°), tan(90°) menuju tak hingga (+tak hingga). Pergerakan semu tahunan Matahari memiliki deklinasi delta_sun yang berubah dari 0° (21 Maret) hingga +23,44° (21 Juni) dan kembali ke 0° (23 September). Selama rentang 6 bulan ini, delta_sun > 0, sehingga suku (-tan phi tan delta) bernilai negatif tak hingga, yang berarti cos(HA_0) < -1 (tidak ada solusi terbenam riil). Secara fisis, altitude Matahari a = sin phi sin delta = sin(90°) sin delta = sin delta > 0°. Karena altitude selalu positif di atas horizon sepanjang hari, Matahari berputar melingkar di atas horizon tanpa pernah terbenam selama 6 bulan penuh.",
+    "pembahasan": [
+      "Aturan kosinus $P-Z-S$ dengan $z = 90^\\$ menghasilkan $\\ HA_0 = -\\\\\\\\$.",
+      "Di kutub $\\ = 90^\\$, altitude harian Matahari adalah $a = \\_\\odot$.",
+      "Selama $\\_\\odot > 0$ (21 Maret s.d. 23 September), $a > 0^\\$, sehingga Matahari tidak pernah terbenam."
+    ]
+  },
+  {
+    "id": "a2-25",
+    "topik": "astronomi-bola",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "segitiga-bola",
+    "soal": "Perhatikan segitiga bola $P-Z-S$ pada gambar. Seorang pengamat berada di kota Bandung (lintang $\\ = -6{,}9^\\$). Sebuah bintang memiliki deklinasi $\\ = +15{,}0^\\$ dan sedang berada pada sudut jam $HA = +45{,}0^\\$ ($3^{\\{h}}$ di barat meridian). Berapakah altitude bintang ($a$) tersebut pada saat itu?",
+    "opsi": [
+      "$43{,}8^\\$",
+      "$30{,}0^\\$",
+      "$52{,}4^\\$",
+      "$68{,}1^\\$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan aturan kosinus segitiga bola $P-Z-S$:\n$$\\ a = \\ \\ \\ \\ + \\ \\ \\ \\ \\(HA).$$",
+      "Evaluasi komponen trigonometri:\n$\\(-6{,}9^\\) = -0{,}1201$, $\\(-6{,}9^\\) = 0{,}9928$.\n$\\(15{,}0^\\) = 0{,}2588$, $\\(15{,}0^\\) = 0{,}9659$.\n$\\(45{,}0^\\) = 0{,}7071$.",
+      "Substitusi:\n$$\\ a = (-0{,}1201 \\ 0{,}2588) + (0{,}9928 \\ 0{,}9659 \\ 0{,}7071)$$\n$$\\ a = -0{,}0311 + 0{,}6781 = 0{,}6470.$$",
+      "Maka altitude: $a = \\(0{,}6470) \\ 43{,}8^\\$."
+    ]
+  },
+  {
+    "id": "a2-26",
+    "topik": "astronomi-bola",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "bola-langit",
+    "soal": "Perhatikan bola langit pada gambar. Seorang pengamat berada pada lintang $\\ = +40{,}0^\\\\ \\{LU}$. Pada saat ekuinoks musim semi ($\\_\\odot = 0{,}0^\\$), Matahari terbenam tepat di titik Barat ($A = 270^\\$). Pada sudut kemiringan berapakah lintasan harian Matahari memotong bidang horizon pengamat saat terbenam?",
+    "opsi": [
+      "$50{,}0^\\$",
+      "$40{,}0^\\$",
+      "$90{,}0^\\$",
+      "$23{,}4^\\$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Lintasan harian seluruh benda langit sejajar dengan ekuator langit.",
+      "Kemiringan bidang ekuator langit terhadap bidang horizon pengamat pada lintang $\\$ adalah tepat $90^\\ - |\\|$.",
+      "Untuk lintang $\\ = +40{,}0^\\$, sudut kemiringan lintasan terbenam Matahari terhadap horizon adalah $90^\\ - 40{,}0^\\ = 50{,}0^\\$."
+    ]
+  },
+  {
+    "id": "a2-27",
+    "topik": "astronomi-bola",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "segitiga-bola",
+    "soal": "Perhatikan segitiga bola pada gambar. Seorang pengamat berada di lintang $\\ = +30{,}0^\\\\ \\{LU}$. Bintang Rigel memiliki deklinasi $\\ = -8{,}2^\\$. Berapakah nilai sudut jam bintang Rigel saat terbenam ($HA_0$) dalam satuan derajat busur? (Gunakan rumus $\\ HA_0 = -\\\\\\\\$, bulatkan ke 2 desimal)",
+    "jawaban": 85.22,
+    "toleransiRel": 0.02,
+    "satuan": "derajat",
+    "pembahasan": [
+      "$\\(30{,}0^\\) = 0{,}57735$.",
+      "$\\(-8{,}2^\\) = -0{,}14408$.",
+      "$\\ HA_0 = -\\(30^\\) \\(-8{,}2^\\) = -(0{,}57735) \\ (-0{,}14408) = +0{,}08318$.",
+      "$HA_0 = \\(0{,}08318) \\ 85{,}22^\\$."
+    ]
+  },
+  {
+    "id": "a2-28",
+    "topik": "astronomi-bola",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "bola-langit",
+    "soal": "Perhatikan bola langit pada gambar. Sebuah bintang sirkumpolar di langit utara diamati memiliki altitude kulminasi atas $a_{\\{atas}} = 75{,}0^\\$ dan altitude kulminasi bawah $a_{\\{bawah}} = 15{,}0^\\$. Berapakah lintang geografis pengamat ($\\$) dalam satuan derajat?",
+    "jawaban": 45,
+    "toleransiRel": 0.01,
+    "satuan": "derajat",
+    "pembahasan": [
+      "Di belahan langit sirkumpolar, kutub langit berada tepat di tengah-tengah antara kulminasi atas dan kulminasi bawah:",
+      "$a_{\\{kutub}} = (a_{\\{atas}} + a_{\\{bawah}}) / 2$.",
+      "$a_{\\{kutub}} = (75{,}0^\\ + 15{,}0^\\) / 2 = 90{,}0^\\ / 2 = 45{,}0^\\$.",
+      "Karena ketinggian kutub langit sama dengan lintang pengamat, maka $\\ = +45{,}0^\\\\ \\{LU}$."
+    ]
+  },
+  {
+    "id": "a2-29",
+    "topik": "astronomi-bola",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Pengamat berada di kota Paris (lintang $\\ = +48{,}85^\\\\ \\{LU}$). Pada tanggal 21 Juni, deklinasi Matahari mencapai maksimum $\\_\\odot = +23{,}44^\\$.\n(a) Hitung sudut busur semi-diurnal Matahari saat terbenam ($HA_0$) dalam satuan jam dan menit.\n(b) Tentukan durasi total panjang siang hari di Paris pada hari tersebut (dalam jam dan menit, abaikan refraksi atmosfer).\n(c) Tentukan nilai azimuth titik terbit Matahari diukur dari titik Utara ke arah Timur.",
+    "rubrik": [
+      {
+        "poin": "Menghitung cos HA_0 = -tan(48,85°) tan(23,44°) = -1,144 × 0,4336 = -0,4960, sehingga HA_0 ≈ 119,74° ≈ 7 jam 59 menit.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung panjang siang D = 2 × HA_0 = 15 jam 58 menit (sekitar 16 jam).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung azimuth terbit cos A = sin delta / cos phi = sin(23,44°) / cos(48,85°) = 0,3978 / 0,6580 = 0,6045 => A_terbit ≈ 52,8° (timur laut).",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Sudut jam terbenam Matahari:\ncos(HA_0) = -tan(phi) tan(delta)\nphi = +48,85° => tan(phi) = 1,1444\ndelta = +23,44° => tan(delta) = 0,4335\ncos(HA_0) = - (1,1444 × 0,4335) = -0,4961.\nHA_0 = arccos(-0,4961) = 119,74°.\nUbah ke jam: HA_0 = 119,74° / 15°/jam = 7,983 jam = 7 jam 59 menit.\n\n(b) Panjang siang hari total:\nD = 2 × HA_0 = 2 × 7,983 jam = 15,966 jam = 15 jam 58 menit (mendekati 16 jam).\n\n(c) Azimuth terbit Matahari:\nSaat terbit (altitude a = 0°), aturan segitiga bola memberikan:\ncos(A_terbit) = sin(delta) / cos(phi)\nsin(23,44°) = 0,3978\ncos(48,85°) = 0,6580\ncos(A_terbit) = 0,3978 / 0,6580 = 0,6045.\nA_terbit = arccos(0,6045) = 52,8° (diukur dari Utara ke Timur, yaitu di arah Timur Laut).",
+    "pembahasan": [
+      "Kalkulasi semi-diurnal: $HA_0 = \\(-\\ 48{,}85^\\ \\ 23{,}44^\\) \\ 119{,}74^\\ = 7^{\\{h}}59^{\\{m}}$.",
+      "Panjang siang: $D = 2 \\ HA_0 \\ 15^{\\{h}}58^{\\{m}}$.",
+      "Azimuth terbit: $\\ A = \\\\ / \\\\ \\ A \\ 52{,}8^\\$."
+    ]
+  },
+  {
+    "id": "a2-30",
+    "topik": "astronomi-bola",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah teleskop di Observatorium Selatan mengamati dua bintang terang A dan B. Bintang A memiliki koordinat ekuatorial $(\\_A = 14^{\\{h}}00^{\\{m}}, \\_A = -60^\\)$ dan bintang B memiliki $(\\_B = 14^{\\{h}}00^{\\{m}}, \\_B = +20^\\)$. Pengamat berada pada lintang $\\ = -30^\\$.\n(a) Hitung jarak sudut terpendek (pemisahan busur lingkaran besar $\\$) antara kedua bintang tersebut di bola langit.\n(b) Tentukan altitude masing-masing bintang saat keduanya mengalami transit meridian secara serentak.\n(c) Pada saat bintang B tepat terbit di ufuk timur, berapakah altitude bintang A?",
+    "rubrik": [
+      {
+        "poin": "Menghitung pemisahan sudut: karena alpha_A = alpha_B, kedua bintang berada di lingkaran jam yang sama sehingga theta = |delta_B - delta_A| = 20° - (-60°) = 80°.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung altitude kulminasi: a_A = 90° - |-30° - (-60°)| = 60° (selatan zenith), a_B = 90° - |-30° - (+20°)| = 40° (utara zenith).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung HA saat B terbit: cos HA_B = -tan(-30°) tan(+20°) = +0,2102 => HA_B = -77,87°. Karena alpha sama, HA_A = HA_B = -77,87°. Masukkan ke rumus sin a_A = sin(-30°) sin(-60°) + cos(-30°) cos(-60°) cos(-77,87°) => sin a_A = 0,4330 + 0,0910 = 0,5240 => a_A ≈ 31,6°.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Pemisahan sudut antara bintang A dan B:\nKarena kedua bintang memiliki Asensio Rekta yang sama persis (alpha_A = alpha_B = 14h), keduanya terletak pada lingkaran deklinasi (lingkaran jam) yang sama.\nMaka jarak sudut busur lingkaran besar di antara keduanya langsung merupakan selisih nilai deklinasi:\ntheta = delta_B - delta_A = +20° - (-60°) = 80°.\n\n(b) Altitude saat transit meridian (kulminasi atas):\nUntuk bintang A (delta_A = -60°, phi = -30°):\na_A = 90° - |phi - delta_A| = 90° - |-30° - (-60°)| = 90° - 30° = 60° (di langit selatan).\nUntuk bintang B (delta_B = +20°, phi = -30°):\na_B = 90° - |phi - delta_B| = 90° - |-30° - 20°| = 90° - 50° = 40° (di langit utara).\n\n(c) Altitude bintang A saat bintang B tepat terbit:\nSaat bintang B terbit (altitude a_B = 0°):\ncos(HA_B) = -tan(phi) tan(delta_B) = -tan(-30°) tan(20°) = -(-0,57735) × (0,36397) = +0,21014.\nHA_B = -arccos(0,21014) = -77,87° (tanda negatif karena terbit di timur).\nKarena kedua bintang memiliki asensio rekta yang sama, maka pada saat itu sudut jam bintang A identik: HA_A = -77,87°.\nMasukkan ke rumus segitiga bola untuk bintang A:\nsin(a_A) = sin(phi) sin(delta_A) + cos(phi) cos(delta_A) cos(HA_A)\nsin(a_A) = sin(-30°) sin(-60°) + cos(-30°) cos(-60°) cos(-77,87°)\nsin(a_A) = (-0,5) × (-0,8660) + (0,8660) × (0,5) × (0,21014)\nsin(a_A) = 0,4330 + 0,0910 = 0,5240.\na_A = arcsin(0,5240) ≈ 31,6°.\nJadi saat bintang B baru saja menyentuh ufuk timur, bintang A sudah berada di ketinggian 31,6° di atas horizon.",
+    "pembahasan": [
+      "Pemisahan sudut lingkaran jam sama: $\\ = |\\_B - \\_A| = 80^\\$.",
+      "Altitude transit: $a_A = 60^\\$ dan $a_B = 40^\\$.",
+      "Sudut jam saat B terbit: $HA = -77{,}87^\\$. Substitusi ke aturan segitiga bola bintang A menghasilkan altitude $a_A \\ 31{,}6^\\$."
+    ]
+  }
+]

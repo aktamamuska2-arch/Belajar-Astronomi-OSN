@@ -1,0 +1,323 @@
+[
+  {
+    "id": "f5-01",
+    "topik": "gelombang-optik",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Cahaya merah dengan panjang gelombang 750 nm merambat di ruang hampa. Berapa frekuensinya?",
+    "opsi": [
+      "4,0 × 10¹⁴ Hz",
+      "2,25 × 10¹⁵ Hz",
+      "4,0 × 10⁵ Hz",
+      "2,5 × 10⁻¹⁵ Hz"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan c = λf, sehingga f = c/λ.",
+      "750 nm = 7,5 × 10⁻⁷ m, maka f = 3 × 10⁸ / (7,5 × 10⁻⁷) = 4,0 × 10¹⁴ Hz.",
+      "Periksa kewajaran: merah memiliki frekuensi lebih rendah daripada hijau (5,45 × 10¹⁴ Hz), dan hasil ini memang lebih kecil."
+    ]
+  },
+  {
+    "id": "f5-02",
+    "topik": "gelombang-optik",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah lensa cembung dengan panjang fokus 25 cm dipakai untuk membentuk bayangan benda yang terletak 100 cm di depan lensa. Di mana bayangan terbentuk?",
+    "opsi": [
+      "33,3 cm di belakang lensa",
+      "20,0 cm di belakang lensa",
+      "50,0 cm di belakang lensa",
+      "125 cm di depan lensa"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Persamaan lensa tipis: 1/f = 1/s + 1/s′.",
+      "1/s′ = 1/25 − 1/100 = (4 − 1)/100 = 3/100, sehingga s′ = 100/3 ≈ 33,3 cm.",
+      "Karena s > 2f, bayangan nyata, terbalik, dan diperkecil dengan |M| = 33,3/100 ≈ 0,33. Nilai positif s′ menandakan bayangan di belakang lensa."
+    ]
+  },
+  {
+    "id": "f5-03",
+    "topik": "gelombang-optik",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Bintang dengan suhu permukaan 5.800 K dipandang sebagai benda hitam. Pada panjang gelombang berapa radiasinya mencapai puncak?",
+    "opsi": [
+      "500 nm",
+      "290 nm",
+      "1.000 nm",
+      "1.700 nm"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Wien: λmax = b/T dengan b = 2,898 × 10⁻³ m·K.",
+      "λmax = 2,898 × 10⁻³ / 5.800 ≈ 5,0 × 10⁻⁷ m = 500 nm.",
+      "Itu di wilayah hijau-biru cahaya tampak, sesuai warna Matahari. Bintang yang tampak kemerahan memiliki puncak pada λ lebih panjang, artinya lebih dingin."
+    ]
+  },
+  {
+    "id": "f5-04",
+    "topik": "gelombang-optik",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Dua teleskop, berdiameter 8 cm dan 40 cm, mengamati pada panjang gelombang 550 nm. Jika seeing di lokasi sekitar 1,5″, pernyataan mana yang paling tepat?",
+    "opsi": [
+      "Teleskop 40 cm punya batas difraksi lima kali lebih kecil, tetapi pada seeing 1,5″ keduanya praktis dibatasi atmosfer",
+      "Teleskop 40 cm selalu lima kali lebih tajam karena diameter lima kali lebih besar",
+      "Teleskop 8 cm lebih tajam karena biasanya memiliki f-ratio lebih besar",
+      "Batas difraksi keduanya sama karena panjang gelombangnya sama"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Batas difraksi θ ≈ 1,22λ/D berbanding terbalik dengan diameter. Untuk D = 8 cm, θ ≈ 1,7″; untuk D = 40 cm, θ ≈ 0,34″.",
+      "Jadi secara teori teleskop 40 cm lima kali lebih tajam (1,7/0,34 = 5).",
+      "Namun seeing 1,5″ mengaburkan kedua bayangan melebihi batas difraksi teleskop besar, sehingga keunggulannya baru muncul dengan optik adaptif atau saat seeing sangat baik.",
+      "Kesimpulan: diameter tetap penting, tetapi kondisi atmosfer menetapkan lantai resolusi di pengamatan darat."
+    ]
+  },
+  {
+    "id": "f5-05",
+    "topik": "gelombang-optik",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilih semua pernyataan yang benar tentang gelombang elektromagnetik.",
+    "opsi": [
+      "Di ruang hampa, semua gelombang elektromagnetik merambat dengan kelajuan c",
+      "Energi satu foton sebanding dengan frekuensinya",
+      "Panjang gelombang ultraviolet lebih pendek daripada inframerah",
+      "Frekuensi gelombang radio lebih tinggi daripada sinar-X",
+      "Cahaya tampak mencakup semua panjang gelombang dari 100 nm sampai 1 mm"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Di ruang hampa, yang membedakan pita spektrum hanyalah λ dan f; kelajuannya tetap c = 3 × 10⁸ m/s.",
+      "E = hf: semakin tinggi frekuensi, semakin besar energi tiap foton. Itulah alasan UV dan sinar-X lebih energetik daripada radio.",
+      "Urutan panjang gelombang dari pendek ke panjang: gamma, X, UV, tampak, inframerah, radio. Jadi UV memang lebih pendek daripada inframerah.",
+      "Radio berada di ujung λ panjang (f rendah), sedangkan sinar-X di ujung λ pendek (f tinggi) — pernyataan keempat terbalik.",
+      "Cahaya tampak hanya sekitar 400–700 nm, jauh lebih sempit daripada rentang 100 nm–1 mm yang disebutkan."
+    ]
+  },
+  {
+    "id": "f5-06",
+    "topik": "gelombang-optik",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Untuk bintang yang dianggap benda hitam bola, pilih semua pernyataan yang benar.",
+    "opsi": [
+      "Luminositasnya sebanding dengan R²T⁴",
+      "Jika suhu naik 10% pada radius tetap, luminositas naik sekitar 46%",
+      "Jika radius digandakan pada suhu tetap, luminositas menjadi empat kali",
+      "Suhu dalam rumus Stefan–Boltzmann harus dinyatakan dalam Celsius",
+      "Daya per satuan luas bergantung pada massa bintang"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "L = 4πR²σT⁴, jadi L ∝ R²T⁴ — radius masuk pangkat dua, suhu pangkat empat.",
+      "(1,1)⁴ = 1,4641, sehingga luminositas naik sekitar 46%. Perubahan suhu kecil berdampak besar karena pangkat empat.",
+      "Radius dua kali: R² menjadi empat kali, sehingga L menjadi empat kali pada T tetap.",
+      "Rumus radiasi memakai suhu mutlak (kelvin). Memakai Celsius menghasilkan rasio yang salah total karena titik nolnya bergeser.",
+      "Daya per satuan luas j = σT⁴ hanya bergantung pada suhu; massa tidak muncul. Massa memengaruhi evolusi bintang, bukan pancaran permukaan saat ini."
+    ]
+  },
+  {
+    "id": "f5-07",
+    "topik": "gelombang-optik",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah benda memancarkan radiasi dengan puncak pada panjang gelombang 1,0 μm. Berapa suhu permukaannya jika dianggap benda hitam? Gunakan b = 2,898 × 10⁻³ m·K.",
+    "jawaban": 2900,
+    "toleransiRel": 0.02,
+    "satuan": "K",
+    "pembahasan": [
+      "Hukum Wien: T = b/λmax.",
+      "λmax = 1,0 × 10⁻⁶ m, sehingga T = 2,898 × 10⁻³ / 1,0 × 10⁻⁶ ≈ 2.898 K.",
+      "Bulatkan ke dua angka penting: sekitar 2,9 × 10³ K. Suhu ini khas bintang katai merah atau permukaan bintang yang lebih dingin daripada Matahari."
+    ]
+  },
+  {
+    "id": "f5-08",
+    "topik": "gelombang-optik",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Berapa batas resolusi difraksi teleskop berdiameter 2,0 m pada panjang gelombang 550 nm? Nyatakan dalam detik busur (1 rad = 206.265″).",
+    "jawaban": 0.069,
+    "toleransiRel": 0.03,
+    "satuan": "detik busur",
+    "pembahasan": [
+      "θ ≈ 1,22 λ/D = 1,22 × 5,5 × 10⁻⁷ / 2,0 ≈ 3,36 × 10⁻⁷ rad.",
+      "Ubah ke detik busur: 3,36 × 10⁻⁷ × 206.265 ≈ 0,069″.",
+      "Bandingkan dengan seeing 1–2″: tanpa optik adaptif, teleskop besar di darat tidak mencapai batas teoretis ini."
+    ]
+  },
+  {
+    "id": "f5-09",
+    "topik": "gelombang-optik",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Garis Hα dengan panjang gelombang laboratorium 656,28 nm teramati pada 656,58 nm. Berapa kecepatan radial bintang itu terhadap pengamat, dalam km/s? (c = 3,0 × 10⁵ km/s)",
+    "jawaban": 137,
+    "toleransiRel": 0.03,
+    "satuan": "km/s",
+    "pembahasan": [
+      "Pergeseran: Δλ = 656,58 − 656,28 = 0,30 nm.",
+      "Rumus Doppler non-relativistik: v_r = c Δλ/λ = 3,0 × 10⁵ × (0,30/656,28) ≈ 137 km/s.",
+      "Garis bergeser ke panjang gelombang lebih panjang (merah), jadi bintang menjauh dari pengamat dengan kelajuan sekitar 137 km/s.",
+      "Periksa asumsi: 137 km/s ≪ c, sehingga pendekatan v ≪ c sah dipakai."
+    ]
+  },
+  {
+    "id": "f5-10",
+    "topik": "gelombang-optik",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Dua bintang memiliki warna yang hampir sama, tetapi luminositas bintang A sekitar 100 kali bintang B. Apa yang dapat kamu simpulkan tentang radius keduanya? Jelaskan langkah penalaranmu dan mengapa warna saja tidak cukup untuk menentukan luminositas.",
+    "rubrik": [
+      {
+        "poin": "Menggunakan Hukum Wien untuk menyimpulkan bahwa warna serupa berarti suhu permukaan hampir sama.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menuliskan L ∝ R²T⁴ (atau rasio L_A/L_B = (R_A/R_B)²) sehingga pada T sama, L ∝ R².",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyimpulkan R_A ≈ 10 R_B dan memberi contoh angka yang konsisten.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menjelaskan bahwa warna hanya mengukur suhu permukaan, bukan ukuran; bintang dingin yang besar dan bintang panas yang kecil bisa tampak sama terang.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Warna bintang ditentukan oleh suhu permukaannya melalui Hukum Wien: puncak spektrum bergeser ke panjang gelombang pendek saat suhu naik. Jika dua bintang berwarna hampir sama, suhu permukaannya hampir sama, T_A ≈ T_B. Luminositas benda hitam bola adalah L = 4πR²σT⁴, sehingga pada suhu sama L ∝ R². Bintang A yang 100 kali lebih luminus harus memiliki radius √100 = 10 kali bintang B. Jadi A bukan bintang yang jauh lebih panas, melainkan jauh lebih besar — misalnya raksasa merah versus katai. Warna saja tidak cukup karena hanya memberi tahu suhu permukaan; luminositas juga bergantung pada luas permukaan. Dua bintang bisa tampak sama terang meskipun satu dingin dan besar, yang lain panas dan kecil. Untuk memisahkan keduanya, astronom menggabungkan warna (suhu) dengan luminositas atau jarak, misalnya lewat diagram HR.",
+    "pembahasan": [
+      "Langkah kunci pertama: warna ↔ suhu lewat Wien, bukan warna ↔ luminositas. Warna serupa berarti T hampir sama.",
+      "Langkah kedua: L = 4πR²σT⁴. Dengan T sama, perbandingan luminositas hanya memberi perbandingan R², sehingga L_A/L_B = 100 berarti R_A/R_B = 10.",
+      "Interpretasi fisis: bintang A bisa jadi raksasa yang dingin, sedangkan B katai; keduanya bisa memiliki warna serupa tetapi ukuran sangat berbeda.",
+      "Kesimpulan umum: warna adalah pengukur suhu permukaan; menentukan luminositas atau radius memerlukan informasi tambahan seperti jarak, magnitudo, atau spektrum detail."
+    ]
+  },
+  {
+    "id": "f5-11", "topik": "gelombang-optik", "level": "fondasi", "tipe": "pilihan-ganda", "gambar": "spektrum-emisi",
+    "soal": "Garis spektrum pada 500 nm menunjukkan berapa frekuensi? Gunakan c = 3,0 × 10⁸ m/s.",
+    "opsi": ["6,0 × 10¹⁴ Hz", "1,5 × 10¹¹ Hz", "6,0 × 10⁻¹⁴ Hz", "1,5 × 10¹⁵ Hz"], "jawaban": 0,
+    "pembahasan": ["Ubah panjang gelombang: 500 nm = 5,0 × 10⁻⁷ m.", "Gunakan c = λf, sehingga f = c/λ = (3,0 × 10⁸)/(5,0 × 10⁻⁷) = 6,0 × 10¹⁴ Hz.", "Frekuensi berada dalam kisaran cahaya tampak; cek bahwa nilai f besar karena λ sangat kecil."]
+  },
+  {
+    "id": "f5-12", "topik": "gelombang-optik", "level": "fondasi", "tipe": "pilihan-ganda", "gambar": "refraktor",
+    "soal": "Objektif teleskop memiliki fokus 800 mm dan okulernya 20 mm. Berapa perbesaran sudut teleskop untuk objek jauh?",
+    "opsi": ["40 kali", "16 kali", "0,025 kali", "780 kali"], "jawaban": 0,
+    "pembahasan": ["Untuk objek jauh, perbesaran sudut teleskop refraktor M = f_obj/f_ok.", "M = 800/20 = 40.", "Diameter objektif menentukan pengumpulan cahaya dan resolusi, bukan rasio perbesaran ini."]
+  },
+  {
+    "id": "f5-13", "topik": "gelombang-optik", "level": "menengah", "tipe": "pilihan-ganda", "gambar": "kurva-benda-hitam",
+    "soal": "Dua benda hitam memiliki suhu 3.000 K dan 6.000 K. Menurut pergeseran puncak kurva pada gambar, perbandingan panjang gelombang puncaknya λ₃₀₀₀/λ₆₀₀₀ adalah…",
+    "opsi": ["2", "1/2", "4", "1"], "jawaban": 0,
+    "pembahasan": ["Hukum Wien menyatakan λmaks T = konstan.", "Maka λ₃₀₀₀/λ₆₀₀₀ = T₆₀₀₀/T₃₀₀₀ = 6.000/3.000 = 2.", "Kurva bersuhu lebih tinggi berpuncak pada panjang gelombang lebih pendek, selaras dengan rasio tersebut."]
+  },
+  {
+    "id": "f5-14", "topik": "gelombang-optik", "level": "menengah", "tipe": "pilihan-ganda", "gambar": "pola-airy",
+    "soal": "Pada panjang gelombang yang sama, diameter teleskop dinaikkan dari 10 cm menjadi 30 cm. Bagaimana perubahan batas Rayleigh?",
+    "opsi": ["Menjadi sepertiga", "Menjadi tiga kali", "Menjadi sembilan kali", "Tidak berubah"], "jawaban": 0,
+    "pembahasan": ["Batas Rayleigh θ = 1,22λ/D, sehingga berbanding terbalik dengan diameter.", "Diameter bertambah tiga kali, maka θ baru = θ lama/3.", "Pola Airy menjadi lebih sempit; dua sumber yang lebih rapat dapat dipisahkan secara teoretis."]
+  },
+  {
+    "id": "f5-15", "topik": "gelombang-optik", "level": "penalaran", "tipe": "pilihan-ganda", "gambar": "spektrum-absorpsi",
+    "soal": "Garis absorpsi laboratorium pada 600,0 nm diamati pada 600,2 nm. Dengan c = 3,0 × 10⁵ km/s, perkiraan gerak radial sumber adalah…",
+    "opsi": ["Menjauh 100 km/s", "Mendekat 100 km/s", "Menjauh 1.000 km/s", "Diam"], "jawaban": 0,
+    "pembahasan": ["Δλ = 600,2 − 600,0 = 0,2 nm, yaitu pergeseran merah.", "v ≈ cΔλ/λ₀ = 3,0 × 10⁵ × (0,2/600) = 100 km/s.", "Tanda positif (panjang gelombang membesar) berarti sumber menjauh; 100 km/s jauh lebih kecil daripada c sehingga pendekatan nonrelativistik layak."]
+  },
+  {
+    "id": "f5-16", "topik": "gelombang-optik", "level": "penalaran", "tipe": "pilihan-ganda", "gambar": "kurva-benda-hitam",
+    "soal": "Dari kurva benda hitam, suhu bintang A dua kali suhu bintang B. Jika keduanya berjari-jari sama, berapa L_A/L_B?",
+    "opsi": ["16", "2", "4", "8"], "jawaban": 0,
+    "pembahasan": ["Luminositas bintang bola L = 4πR²σT⁴.", "Dengan radius sama, L_A/L_B = (T_A/T_B)⁴ = 2⁴ = 16.", "Kurva yang lebih panas bergeser ke panjang gelombang pendek dan memiliki pancaran total yang jauh lebih besar; kenaikan suhu dua kali bukan berarti luminositas hanya dua kali."]
+  },
+  {
+    "id": "f5-17", "topik": "gelombang-optik", "level": "penalaran", "tipe": "pilihan-ganda", "gambar": "doppler-geser",
+    "soal": "Pada spektrum gambar, garis teramati bergeser dari 500 nm menjadi 501 nm. Dengan c = 3,0 × 10⁵ km/s, manakah kesimpulan yang benar?",
+    "opsi": ["Sumber menjauh sekitar 600 km/s", "Sumber mendekat sekitar 600 km/s", "Sumber menjauh sekitar 60 km/s", "Sumber diam karena garis tetap tampak"], "jawaban": 0,
+    "pembahasan": ["Pergeseran Δλ = 1 nm positif, jadi garis mengalami redshift.", "v ≈ cΔλ/λ₀ = 3,0 × 10⁵ × 1/500 = 600 km/s.", "Sumber menjauh; perhitungan mengasumsikan v ≪ c dan memakai panjang gelombang diam 500 nm."]
+  },
+  {
+    "id": "f5-18", "topik": "gelombang-optik", "level": "olimpiade", "tipe": "pilihan-ganda", "gambar": "pola-airy",
+    "soal": "Pola Airy teleskop 1 memiliki diameter 2 m. Agar batas difraksinya sama pada pengamatan dengan panjang gelombang dua kali lebih besar, berapa diameter teleskop 2 diperlukan?",
+    "opsi": ["4 m", "1 m", "2 m", "8 m"], "jawaban": 0,
+    "pembahasan": ["Sudut Rayleigh θ = 1,22λ/D; agar θ tetap, rasio λ/D harus tetap.", "Jika λ₂ = 2λ₁, maka D₂ = 2D₁ = 4 m.", "Pola Airy pada panjang gelombang lebih panjang melebar; menggandakan diameter mengimbangi pelebaran itu."]
+  },
+  {
+    "id": "f5-19", "topik": "gelombang-optik", "level": "menengah", "tipe": "pilihan-jamak", "gambar": "kurva-benda-hitam",
+    "soal": "Pilih semua kesimpulan yang benar dari kurva benda hitam dan hukum radiasi.",
+    "opsi": ["Suhu lebih tinggi menggeser puncak ke panjang gelombang lebih pendek", "Luas di bawah kurva spektrum meningkat saat suhu naik", "λmaks berbanding lurus dengan suhu", "Pancaran per satuan luas berbanding T⁴", "Warna saja menentukan radius bintang"], "jawaban": [0, 1, 3],
+    "pembahasan": ["Hukum Wien: λmaks = b/T, sehingga suhu tinggi membuat puncak bergeser ke kiri (panjang gelombang pendek).", "Luas spektrum menyatakan daya total per luas permukaan; nilainya meningkat dengan suhu.", "Stefan–Boltzmann memberi j = σT⁴, jadi pernyataan keempat benar.", "Pernyataan ketiga membalik hukum Wien. Radius tidak ditentukan oleh warna saja; warna menaksir suhu, sementara luminositas atau ukuran perlu informasi lain."]
+  },
+  {
+    "id": "f5-20", "topik": "gelombang-optik", "level": "penalaran", "tipe": "pilihan-jamak", "gambar": "refraktor",
+    "soal": "Teleskop refraktor memakai objektif berdiameter 8 cm dan fokus 800 mm serta okuler fokus 20 mm. Pilih pernyataan yang benar.",
+    "opsi": ["Perbesarannya 40 kali", "Objektif mengumpulkan cahaya dan membentuk bayangan nyata", "Mengganti okuler dengan fokus 10 mm menghasilkan perbesaran 80 kali", "Menggandakan diameter menjadi 16 cm menggandakan perbesaran bila fokus tetap", "Objek di tak hingga difokuskan di bidang fokus objektif"], "jawaban": [0, 1, 2, 4],
+    "pembahasan": ["M = f_obj/f_ok = 800/20 = 40 kali.", "Objektif mengumpulkan cahaya dari objek jauh dan memfokuskannya sebagai bayangan nyata; gambar menunjukkan urutan objektif–fokus–okuler.", "Okuler 10 mm memberi M = 800/10 = 80 kali.", "Mengubah diameter saja mengubah pengumpulan cahaya dan batas difraksi, bukan rasio fokus yang menentukan perbesaran.", "Sinar dari objek sangat jauh hampir sejajar sehingga konvergen pada bidang fokus objektif."]
+  },
+  {
+    "id": "f5-21", "topik": "gelombang-optik", "level": "fondasi", "tipe": "isian", "gambar": "spektrum-emisi",
+    "soal": "Foton dengan panjang gelombang 620 nm memiliki energi berapa dalam eV? Gunakan hc = 1240 eV·nm.", "jawaban": 2, "toleransiRel": 0.02, "satuan": "eV",
+    "pembahasan": ["Hubungan energi foton adalah E = hc/λ.", "E = 1240/620 = 2,00 eV.", "Panjang gelombang merah lebih panjang daripada biru, maka energinya lebih kecil, sesuai E yang berbanding terbalik dengan λ."]
+  },
+  {
+    "id": "f5-22", "topik": "gelombang-optik", "level": "menengah", "tipe": "isian", "gambar": "refraktor",
+    "soal": "Objek berada 60 cm di depan lensa cembung dengan fokus 20 cm. Berapa jarak bayangan dalam cm?",
+    "jawaban": 30, "toleransiRel": 0.02, "satuan": "cm",
+    "pembahasan": ["Persamaan lensa tipis: 1/f = 1/s + 1/s′.", "1/s′ = 1/20 − 1/60 = 2/60 = 1/30 cm⁻¹, sehingga s′ = 30 cm.", "Jarak bayangan positif berarti bayangan nyata di sisi berlawanan lensa; karena s > 2f, ukurannya diperkecil."]
+  },
+  {
+    "id": "f5-23", "topik": "gelombang-optik", "level": "penalaran", "tipe": "isian", "gambar": "pola-airy",
+    "soal": "Gunakan θ = 1,22λ/D untuk teleskop D = 0,50 m pada λ = 500 nm. Berapa batas resolusi dalam detik busur? (1 rad = 206.265″)",
+    "jawaban": 0.252, "toleransiRel": 0.03, "satuan": "detik busur",
+    "pembahasan": ["Dalam SI, λ = 5,00 × 10⁻⁷ m dan D = 0,50 m.", "θ = 1,22(5,00 × 10⁻⁷)/0,50 = 1,22 × 10⁻⁶ rad.", "Konversi: θ = 1,22 × 10⁻⁶ × 206.265 = 0,252″. Ini batas ideal; seeing dapat lebih besar."]
+  },
+  {
+    "id": "f5-24", "topik": "gelombang-optik", "level": "penalaran", "tipe": "isian", "gambar": "kurva-benda-hitam",
+    "soal": "Dari hukum Stefan–Boltzmann, berapa rasio daya per satuan luas permukaan benda hitam 4.000 K terhadap 2.000 K?",
+    "jawaban": 16, "toleransiRel": 0.02, "satuan": "kali",
+    "pembahasan": ["Fluks permukaan j = σT⁴.", "Rasio j₁/j₂ = (4.000/2.000)⁴ = 2⁴ = 16.", "Luas di bawah kurva spektrum meningkat sesuai total daya; perbandingan ini tidak memerlukan nilai σ karena saling menghapus."]
+  },
+  {
+    "id": "f5-25", "topik": "gelombang-optik", "level": "olimpiade", "tipe": "isian", "gambar": "doppler-geser",
+    "soal": "Garis Hα diam 656,3 nm teramati pada 656,8 nm. Hitung kecepatan radial sumber dalam km/s memakai pendekatan Doppler v/c = Δλ/λ₀ dan c = 3,0 × 10⁵ km/s.",
+    "jawaban": 229, "toleransiRel": 0.03, "satuan": "km/s",
+    "pembahasan": ["Δλ = 656,8 − 656,3 = 0,5 nm; geseran positif adalah redshift.", "v = 3,0 × 10⁵(0,5/656,3) = 228,6 km/s.", "Dibulatkan menjadi 229 km/s menjauh. Karena v/c ≈ 7,6 × 10⁻⁴, pendekatan nonrelativistik memadai."]
+  },
+  {
+    "id": "f5-26", "topik": "gelombang-optik", "level": "olimpiade", "tipe": "isian", "gambar": "kurva-benda-hitam",
+    "soal": "Sebuah bintang memiliki puncak spektrum pada 580 nm. Dengan b = 2,898 × 10⁻³ m·K, taksir suhu permukaannya dalam K.",
+    "jawaban": 4997, "toleransiRel": 0.03, "satuan": "K",
+    "pembahasan": ["Konversi λmaks = 580 nm = 5,80 × 10⁻⁷ m.", "Hukum Wien memberi T = b/λmaks = (2,898 × 10⁻³)/(5,80 × 10⁻⁷) = 4,997 × 10³ K.", "Jadi T ≈ 5,0 × 10³ K. Pada grafik, suhu lebih tinggi akan memiliki puncak pada panjang gelombang lebih pendek."]
+  },
+  {
+    "id": "f5-27", "topik": "gelombang-optik", "level": "fondasi", "tipe": "isian", "gambar": "spektrum-absorpsi",
+    "soal": "Cahaya dengan panjang gelombang 0,75 μm berada pada pita spektrum apa? Jawab sebagai panjang gelombang dalam nm.",
+    "jawaban": 750, "toleransiRel": 0.02, "satuan": "nm",
+    "pembahasan": ["Satu mikrometer sama dengan 1.000 nm.", "0,75 μm = 0,75 × 1.000 = 750 nm.", "Rentang ini berada di inframerah dekat menurut pembagian sederhana; garis spektrum di luar tampak tetap dapat dianalisis dengan instrumen yang sesuai."]
+  },
+  {
+    "id": "f5-28", "topik": "gelombang-optik", "level": "olimpiade", "tipe": "esai", "gambar": "pola-airy",
+    "soal": "Dua bintang terpisah 0,40″ diamati pada λ = 600 nm. Gunakan pola Airy dan kriteria Rayleigh untuk menentukan diameter aperture minimum ideal dalam meter. Lalu jelaskan mengapa kondisi atmosfer dapat membuat aperture itu tidak mencapai resolusi tersebut.",
+    "rubrik": [{"poin":"Mengidentifikasi syarat Rayleigh θ = 1,22λ/D dan mengubah 0,40″ menjadi radian dengan membagi 206.265.","bobot":2},{"poin":"Menghitung D = 1,22(600 × 10⁻⁹)/(0,40/206.265) ≈ 0,38 m.","bobot":2},{"poin":"Menjelaskan bahwa seeing atmosfer sekitar 1″ atau lebih besar dapat mendominasi batas difraksi ideal.","bobot":1},{"poin":"Menyimpulkan aperture lebih besar atau optik adaptif diperlukan untuk benar-benar memisahkan pasangan tersebut.","bobot":1}],
+    "jawabanTeladan":"Kriteria Rayleigh untuk aperture bundar adalah θ = 1,22λ/D. Jarak sudut 0,40″ sama dengan 0,40/206.265 = 1,94 × 10⁻⁶ rad. Maka D = 1,22(600 × 10⁻⁹ m)/(1,94 × 10⁻⁶) ≈ 0,377 m, atau sekitar 0,38 m. Ini batas ideal tanpa gangguan. Seeing tipikal 1″ lebih besar daripada 0,40″, sehingga dua bintang masih kabur menjadi satu meskipun aperture teoritis cukup. Pengamatan memerlukan atmosfer sangat stabil/optik adaptif atau aperture lebih besar agar batas difraksi lebih kecil daripada 0,40″ dan gangguan atmosfer dapat dikurangi.",
+    "pembahasan": ["Ubah detik busur menjadi radian sebelum memakai rumus θ = 1,22λ/D.","Substitusi menghasilkan D ≈ 0,377 m; diameter lebih kecil memberi sudut Airy lebih lebar daripada jarak pasangan.","Batas difraksi adalah ideal. Seeing atmosfer merupakan batas tambahan, lazimnya sekitar 1–2″.","Karena 0,40″ lebih kecil daripada seeing biasa, adaptif atau kondisi atmosfer sangat baik diperlukan."]
+  },
+  {
+    "id": "f5-29", "topik": "gelombang-optik", "level": "olimpiade", "tipe": "esai", "gambar": "kurva-benda-hitam",
+    "soal": "Pada kurva benda hitam, bintang A memiliki puncak pada 400 nm dan luminositas 16 kali luminositas bintang B yang berpuncak pada 800 nm. Tentukan perbandingan suhu dan radius R_A/R_B, lalu jelaskan pembacaan grafiknya.",
+    "rubrik": [{"poin":"Menggunakan Hukum Wien sehingga T_A/T_B = λ_B/λ_A = 2.","bobot":2},{"poin":"Menuliskan L_A/L_B = (R_A/R_B)²(T_A/T_B)⁴.","bobot":2},{"poin":"Menghitung 16 = (R_A/R_B)² × 16 sehingga R_A/R_B = 1.","bobot":1},{"poin":"Menjelaskan puncak A lebih biru/panas dan luminositas 16 kali berasal seluruhnya dari faktor T⁴ jika radius sama.","bobot":1}],
+    "jawabanTeladan":"Dari hukum Wien, λmaks T = b, sehingga T_A/T_B = λ_B/λ_A = 800/400 = 2. Luminositas memenuhi L ∝ R²T⁴. Dengan luminositas A/B = 16, diperoleh 16 = (R_A/R_B)² × 2⁴ = 16(R_A/R_B)², jadi R_A/R_B = 1. Kedua bintang berjari-jari sama; A lebih panas dua kali dan puncak spektrumnya bergeser ke panjang gelombang setengahnya. Faktor T⁴ sendiri menjelaskan rasio luminositas 16.",
+    "pembahasan": ["Baca letak puncak kurva: puncak 400 nm berada pada λ setengah dari bintang B, maka suhunya dua kali.","Gunakan Stefan–Boltzmann untuk mengaitkan luminositas, radius dan suhu.","Faktor suhu memberi 2⁴ = 16; agar luminositas juga 16, kuadrat rasio radius harus satu.","Dengan demikian rasio radius satu, bukan empat: suhu telah sepenuhnya menjelaskan perbedaan luminositas."]
+  },
+  {
+    "id": "f5-30", "topik": "gelombang-optik", "level": "olimpiade", "tipe": "esai", "gambar": "doppler-geser",
+    "soal": "Spektrum bintang menunjukkan garis diam 500,0 nm dan garis teramati 500,8 nm. Jelaskan cara menentukan arah gerak dan hitung kecepatan radialnya. Jika pengukuran dilakukan berulang sepanjang orbit, apa yang dapat disimpulkan dari perubahan tanda pergeseran? (c = 3,0 × 10⁵ km/s)",
+    "rubrik": [{"poin":"Menghitung Δλ = 0,8 nm serta mengenali pergeseran ke merah sebagai gerak menjauh pada pengamatan ini.","bobot":2},{"poin":"Menerapkan v/c = Δλ/λ₀ dengan substitusi benar dan memperoleh v ≈ 480 km/s.","bobot":2},{"poin":"Menjelaskan tanda positif/negatif masing-masing menandakan menjauh/mendekat.","bobot":1},{"poin":"Menghubungkan pembalikan tanda secara periodik dengan gerak radial bolak-balik, misalnya bintang mengorbit pusat massa pada sistem bintang ganda.","bobot":1}],
+    "jawabanTeladan":"Pergeseran panjang gelombang adalah Δλ = 500,8 − 500,0 = +0,8 nm. Tanda positif berarti redshift dan bintang menjauh pada saat pengamatan. Dengan pendekatan Doppler nonrelativistik, v_r = cΔλ/λ₀ = 3,0 × 10⁵(0,8/500,0) = 480 km/s. Pada pengamatan berulang, Δλ positif menunjukkan gerak menjauh dan Δλ negatif menunjukkan gerak mendekat. Bila tanda berubah berkala, kecepatan radial bintang berbalik arah secara periodik, konsisten dengan gerak orbit, misalnya pada sistem bintang ganda; perubahan ini tidak menyatakan gerak tangensialnya.",
+    "pembahasan": ["Geseran dibaca relatif terhadap garis diam; λobs > λ₀ adalah redshift.","Masukkan selisih relatif 0,8/500,0 = 0,0016; dikalikan c memberi 480 km/s menjauh.","Tanda Doppler berubah saat komponen radial kecepatan berubah arah, bukan saat kelajuan keseluruhan harus nol.","Pergeseran periodik menjadi bukti gerak orbit dan dapat digunakan mengukur kecepatan radial."]
+  }
+]

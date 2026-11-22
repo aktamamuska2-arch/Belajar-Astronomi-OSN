@@ -1,0 +1,598 @@
+[
+  {
+    "id": "a5-01",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Sebuah bintang memiliki modulus jarak $m - M = 5$. Berapakah jarak bintang tersebut dari Bumi?",
+    "opsi": [
+      "$100\\ \\mathrm{pc}$",
+      "$10\\ \\mathrm{pc}$",
+      "$1.000\\ \\mathrm{pc}$",
+      "$50\\ \\mathrm{pc}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Gunakan rumus modulus jarak: $m - M = 5\\log_{10} d - 5$.",
+      "Substitusi nilai: $5 = 5\\log_{10} d - 5 \\implies 5\\log_{10} d = 10 \\implies \\log_{10} d = 2$.",
+      "Maka diperoleh jarak $d = 10^2 = 100\\ \\mathrm{pc}$.",
+      "Jangkar penting: modulus 0 setara $10\\ \\mathrm{pc}$, modulus 5 setara $100\\ \\mathrm{pc}$, dan modulus 10 setara $1\\ \\mathrm{kpc}$."
+    ]
+  },
+  {
+    "id": "a5-02",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Berdasarkan Hukum Pergeseran Wien, jika suhu permukaan sebuah bintang dinaikkan menjadi dua kali semula, bagaimanakah panjang gelombang puncak emisinya ($\\lambda_{\\max}$)?",
+    "opsi": [
+      "Menjadi setengah dari semula",
+      "Menjadi dua kali lipat semula",
+      "Menjadi empat kali lipat semula",
+      "Menjadi seperempat dari semula"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Wien menyatakan hubungan $\\lambda_{\\max} = b / T$.",
+      "Karena panjang gelombang puncak berbanding terbalik secara linier dengan suhu mutlak ($T$), jika suhu berlipat ganda ($2T$), maka $\\lambda_{\\max}$ akan menjadi setengahnya ($1/2$).",
+      "Hal ini menyebabkan spektrum bintang bergeser ke arah biru/ultraviolet."
+    ]
+  },
+  {
+    "id": "a5-03",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "gambar": "tangga-magnitudo",
+    "soal": "Perhatikan tangga magnitudo terbalik pada gambar. Dua bintang memiliki selisih magnitudo tampak sebesar $\\Delta m = 5$. Berapakah rasio fluks radiasi yang diterima di Bumi antara bintang yang lebih terang terhadap yang lebih redup?",
+    "opsi": [
+      "$100$ kali",
+      "$5$ kali",
+      "$10$ kali",
+      "$2{,}512$ kali"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Berdasarkan definisi skala Pogson, rasio fluks memenuhi $F_1 / F_2 = 100^{(\\Delta m / 5)}$.",
+      "Untuk $\\Delta m = 5$, diperoleh rasio fluks tepat $100^{(5/5)} = 100$ kali.",
+      "Setiap lompatan 5 skala magnitudo berarti perbedaan kecerlangan 100 kali lipat."
+    ]
+  },
+  {
+    "id": "a5-04",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "pilihan-ganda",
+    "soal": "Jika jarak sebuah bintang menjadi tiga kali lebih jauh dari posisi awalnya, bagaimana perubahan fluks radiasi yang diterima pengamat di Bumi?",
+    "opsi": [
+      "Menjadi $1/9$ dari fluks mula-mula",
+      "Menjadi $1/3$ dari fluks mula-mula",
+      "Menjadi $1/6$ dari fluks mula-mula",
+      "Menjadi sembilan kali lipat fluks mula-mula"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum kuadrat terbalik menyatakan $F = L / (4\\pi d^2)$.",
+      "Jika jarak berubah dari $d$ menjadi $3d$, maka fluks baru adalah $F' = L / (4\\pi (3d)^2) = F / 9$.",
+      "Fluks berkurang menjadi sepersembilan kali nilai semula."
+    ]
+  },
+  {
+    "id": "a5-05",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah bintang hipotetis memiliki suhu efektif $T = 2.898\\ \\mathrm{K}$. Berapakah panjang gelombang puncak emisinya dalam satuan nanometer ($\\mathrm{nm}$)? (Gunakan konstanta Wien $b = 2{,}898 \\times 10^{-3}\\ \\mathrm{m\\cdot K}$)",
+    "jawaban": 1000,
+    "toleransiRel": 0.02,
+    "satuan": "nm",
+    "pembahasan": [
+      "Hukum Wien: $\\lambda_{\\max} = b / T$.",
+      "$\\lambda_{\\max} = (2{,}898 \\times 10^{-3}\\ \\mathrm{m\\cdot K}) / (2.898\\ \\mathrm{K}) = 1{,}0 \\times 10^{-6}\\ \\mathrm{m}$.",
+      "Ubah ke nanometer: $1{,}0 \\times 10^{-6}\\ \\mathrm{m} = 1.000\\ \\mathrm{nm}$.",
+      "Panjang gelombang ini berada di daerah inframerah dekat."
+    ]
+  },
+  {
+    "id": "a5-06",
+    "topik": "radiasi-magnitudo",
+    "level": "fondasi",
+    "tipe": "isian",
+    "soal": "Sebuah bintang berada pada jarak tepat $10\\ \\mathrm{pc}$. Berapakah nilai modulus jaraknya ($m - M$)?",
+    "jawaban": 0,
+    "toleransiRel": 0.01,
+    "satuan": "mag",
+    "pembahasan": [
+      "Rumus modulus jarak: $m - M = 5\\log_{10}(d / 10\\ \\mathrm{pc})$.",
+      "Untuk $d = 10\\ \\mathrm{pc}$, kita peroleh $m - M = 5\\log_{10}(10 / 10) = 5\\log_{10}(1) = 0$.",
+      "Secara definisi, magnitudo absolut adalah magnitudo tampak objek ketika berada pada jarak tepat $10\\ \\mathrm{pc}$."
+    ]
+  },
+  {
+    "id": "a5-07",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "tangga-magnitudo",
+    "soal": "Perhatikan tangga magnitudo terbalik pada gambar. Bintang P memiliki magnitudo tampak $m_P = +1{,}0$ dan bintang Q memiliki $m_Q = +6{,}0$. Berapakah rasio perbandingan kecerlangan (fluks) $F_P / F_Q$?",
+    "opsi": [
+      "$100$",
+      "$2{,}512$",
+      "$50$",
+      "$0{,}01$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Selisih magnitudo: $\\Delta m = m_Q - m_P = 6{,}0 - 1{,}0 = 5{,}0$.",
+      "Gunakan rumus Pogson: $F_P / F_Q = 100^{(\\Delta m / 5)} = 100^{(5/5)} = 100$.",
+      "Bintang P dengan magnitudo lebih kecil tampak 100 kali lebih terang daripada bintang Q."
+    ]
+  },
+  {
+    "id": "a5-08",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "gambar": "warna-suhu",
+    "soal": "Berdasarkan grafik deret warna terhadap suhu bintang pada gambar, bintang kelas manakah yang memiliki indeks warna $(B-V)$ paling kecil (bahkan bernilai negatif)?",
+    "opsi": [
+      "Bintang O dan B",
+      "Bintang G (seperti Matahari)",
+      "Bintang K",
+      "Bintang M"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Indeks warna didefinisikan sebagai $(B - V) = m_B - m_V$.",
+      "Bintang kelas O dan B adalah bintang paling panas dengan suhu permukaan di atas $10.000 - 30.000\\ \\mathrm{K}$.",
+      "Pancaran fluks pada filter biru jauh lebih kuat daripada visual ($F_B > F_V$), sehingga magnitudonya $m_B < m_V$, menghasilkan nilai $(B-V)$ negatif (hingga $-0{,}3$)."
+    ]
+  },
+  {
+    "id": "a5-09",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "pilihan-ganda",
+    "soal": "Bintang A memiliki suhu efektif dua kali lipat suhu efektif bintang B ($T_A = 2T_B$), namun radius bintang A hanya setengah dari radius bintang B ($R_A = R_B / 2$). Berapakah rasio luminositas $L_A / L_B$?",
+    "opsi": [
+      "$4$",
+      "$16$",
+      "$2$",
+      "$1$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Luminositas memenuhi Hukum Stefan-Boltzmann: $L = 4\\pi R^2 \\sigma T^4$.",
+      "Rasio luminositas: $L_A / L_B = (R_A / R_B)^2 \\times (T_A / T_B)^4$.",
+      "Substitusi perbandingan: $L_A / L_B = (1/2)^2 \\times (2)^4 = (1/4) \\times 16 = 4$.",
+      "Luminositas bintang A empat kali lebih besar dari bintang B."
+    ]
+  },
+  {
+    "id": "a5-10",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "soal": "Pilihlah semua pernyataan yang BENAR mengenai hukum radiasi benda hitam dan skala magnitudo:",
+    "opsi": [
+      "Fluks pancaran permukaan benda hitam berbanding lurus dengan suhu mutlak pangkat empat ($\\sigma T^4$)",
+      "Panjang gelombang puncak radiasi berbanding terbalik dengan suhu mutlak fotosfer",
+      "Semakin terang suatu bintang di langit, semakin positif nilai magnitudo tampaknya",
+      "Magnitudo absolut adalah magnitudo tampak suatu objek jika diletakkan pada jarak $10\\ \\mathrm{pc}$",
+      "Ekstingsi antarbintang membuat magnitudo tampak terukur menjadi lebih kecil (lebih negatif)"
+    ],
+    "jawaban": [0, 1, 3],
+    "pembahasan": [
+      "Pernyataan 1 benar: Hukum Stefan-Boltzmann menyatakan $F = \\sigma T^4$.",
+      "Pernyataan 2 benar: Hukum Wien menyatakan $\\lambda_{\\max} = b / T$.",
+      "Pernyataan 3 salah: Skala magnitudo Pogson bersifat terbalik; makin terang objek, makin kecil/negatif magnitudonya.",
+      "Pernyataan 4 benar: Definisi baku IAU untuk magnitudo absolut bintang adalah magnitudo pada jarak $10\\ \\mathrm{pc}$.",
+      "Pernyataan 5 salah: Ekstingsi debu meredupkan cahaya, sehingga magnitudo tampak $m$ bertambah besar (lebih positif)."
+    ]
+  },
+  {
+    "id": "a5-11",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "pilihan-jamak",
+    "gambar": "kurva-benda-hitam",
+    "soal": "Berdasarkan diagram kurva spektrum Planck pada gambar, perhatikan pengaruh peningkatan temperatur terhadap kurva emisi benda hitam. Manakah pernyataan yang BENAR?",
+    "opsi": [
+      "Puncak intensitas bergeser ke panjang gelombang yang lebih pendek seiring naiknya suhu",
+      "Kurva pada suhu yang lebih tinggi selalu berada di atas kurva suhu yang lebih rendah pada semua panjang gelombang",
+      "Luas total di bawah kurva sebanding dengan $T^4$",
+      "Puncak kurva bergeser ke arah inframerah jika suhu ditingkatkan",
+      "Energi total yang dipancarkan persatuan luas mengecil ketika suhu naik"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Hukum Wien menjelaskan pergeseran puncak emisi ke panjang gelombang lebih pendek (ke kiri pada grafik).",
+      "Kurva radiasi Planck tidak pernah berpotongan: kurva suhu lebih tinggi memancarkan energi lebih besar pada setiap $\\lambda$.",
+      "Integral kurva Planck di seluruh panjang gelombang menghasilkan $\\int_0^\\infty B_\\lambda d\\lambda = (\\sigma / \\pi) T^4$, sehingga luas di bawah kurva sebanding dengan $T^4$."
+    ]
+  },
+  {
+    "id": "a5-12",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah gugus bintang terbuka memiliki modulus jarak teramati $m - M = 10{,}0$. Jika serapan debu antarbintang diabaikan, berapakah jarak gugus tersebut dalam satuan parsec ($\\mathrm{pc}$)?",
+    "jawaban": 1000,
+    "toleransiRel": 0.02,
+    "satuan": "pc",
+    "pembahasan": [
+      "Modulus jarak: $m - M = 5\\log_{10} d - 5$.",
+      "$10{,}0 = 5\\log_{10} d - 5 \\implies 5\\log_{10} d = 15 \\implies \\log_{10} d = 3$.",
+      "Jarak $d = 10^3 = 1.000\\ \\mathrm{pc} = 1\\ \\mathrm{kpc}$."
+    ]
+  },
+  {
+    "id": "a5-13",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Dua buah bintang kembar identik berada di posisi yang berdekatan di langit sehingga tampak menyatu sebagai satu bintang tunggal oleh mata telanjang. Jika masing-masing bintang memiliki magnitudo tampak $m_1 = m_2 = 4{,}00$, berapakah magnitudo tampak gabungan keduanya? (Gunakan $\\log_{10}(2) \\approx 0{,}301$)",
+    "jawaban": 3.25,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "Fluks gabungan adalah jumlah fluks masing-masing: $F_{\\text{tot}} = F_1 + F_2 = 2F_1$.",
+      "Magnitudo gabungan: $m_{\\text{tot}} - m_1 = -2{,}5\\log_{10}(F_{\\text{tot}} / F_1) = -2{,}5\\log_{10}(2)$.",
+      "$m_{\\text{tot}} - 4{,}00 = -2{,}5 \\times 0{,}30103 = -0{,}7525$.",
+      "$m_{\\text{tot}} = 4{,}00 - 0{,}7525 \\approx 3{,}25\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "a5-14",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Sebuah bintang dipindahkan ke jarak 4 kali lebih jauh dari jarak awalnya. Berapakah pertambahan magnitudo tampaknya ($\\Delta m = m_{\\text{akhir}} - m_{\\text{awal}}$)? (Gunakan $\\log_{10}(4) \\approx 0{,}602$)",
+    "jawaban": 3.01,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "Fluks berkurang sebanding kuadrat jarak: $F_{\\text{akhir}} / F_{\\text{awal}} = (1/4)^2 = 1/16$.",
+      "$\\Delta m = -2{,}5 \\log_{10}(F_{\\text{akhir}} / F_{\\text{awal}}) = -2{,}5 \\log_{10}(1/16) = +2{,}5 \\log_{10}(16)$.",
+      "$\\Delta m = 5 \\log_{10}(4) = 5 \\times 0{,}60206 = 3{,}01\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "a5-15",
+    "topik": "radiasi-magnitudo",
+    "level": "menengah",
+    "tipe": "isian",
+    "soal": "Bintang Sirius memiliki magnitudo tampak $m_V = -1{,}46$ dan magnitudo absolut $M_V = +1{,}43$. Berapakah jarak bintang Sirius dari Bumi dalam satuan parsec ($\\mathrm{pc}$)? (Abaikan ekstingsi)",
+    "jawaban": 2.64,
+    "toleransiRel": 0.03,
+    "satuan": "pc",
+    "pembahasan": [
+      "Modulus jarak: $m - M = -1{,}46 - 1{,}43 = -2{,}89$.",
+      "$-2{,}89 = 5\\log_{10} d - 5 \\implies 5\\log_{10} d = 2{,}11 \\implies \\log_{10} d = 0{,}422$.",
+      "$d = 10^{0{,}422} \\approx 2{,}64\\ \\mathrm{pc}$."
+    ]
+  },
+  {
+    "id": "a5-16",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "gambar": "modulus-jarak-grafik",
+    "soal": "Perhatikan grafik modulus jarak terhadap jarak pada gambar. Sebuah bintang diamati memiliki magnitudo visual $m_V = 13{,}0$ dan magnitudo absolut $M_V = +2{,}0$. Pengukuran debu menunjukkan ekstingsi visual sebesar $A_V = 1{,}0\\ \\mathrm{mag}$. Berapakah jarak sejati bintang tersebut?",
+    "opsi": [
+      "$1.000\\ \\mathrm{pc}$",
+      "$1.585\\ \\mathrm{pc}$",
+      "$631\\ \\mathrm{pc}$",
+      "$10.000\\ \\mathrm{pc}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Rumus modulus jarak dengan ekstingsi: $m_V - M_V = 5\\log_{10} d - 5 + A_V$.",
+      "Substitusi nilai: $13{,}0 - 2{,}0 = 5\\log_{10} d - 5 + 1{,}0 \\implies 11{,}0 = 5\\log_{10} d - 4{,}0$.",
+      "$5\\log_{10} d = 15{,}0 \\implies \\log_{10} d = 3{,}0$.",
+      "$d = 10^3 = 1.000\\ \\mathrm{pc} = 1\\ \\mathrm{kpc}$.",
+      "Jika ekstingsi diabaikan, modulus 11 memberi $d \\approx 1.585\\ \\mathrm{pc}$ (terestimasi terlalu jauh sekitar 58%)."
+    ]
+  },
+  {
+    "id": "a5-17",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "pilihan-ganda",
+    "soal": "Dua bintang memiliki magnitudo tampak visual sama ($m_{V1} = m_{V2}$). Bintang 1 memiliki jarak $d_1 = 100\\ \\mathrm{pc}$ dengan suhu efektif $T_1 = 10.000\\ \\mathrm{K}$. Bintang 2 berjarak $d_2 = 400\\ \\mathrm{pc}$ dengan suhu $T_2 = 5.000\\ \\mathrm{K}$. Berapakah rasio radius fisik bintang 2 terhadap bintang 1 ($R_2 / R_1$), dengan mengabaikan koreksi bolometrik dan ekstingsi?",
+    "opsi": [
+      "$16$",
+      "$4$",
+      "$8$",
+      "$64$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Karena magnitudo tampak sama, fluks radiasi yang diterima di Bumi sama: $F_1 = F_2$.",
+      "Dari hukum kuadrat terbalik: $L_1 / d_1^2 = L_2 / d_2^2 \\implies L_2 / L_1 = (d_2 / d_1)^2 = (400 / 100)^2 = 16$.",
+      "Dari Stefan-Boltzmann: $L = 4\\pi R^2 \\sigma T^4 \\implies L_2 / L_1 = (R_2 / R_1)^2 (T_2 / T_1)^4$.",
+      "$16 = (R_2 / R_1)^2 \\times (5.000 / 10.000)^4 = (R_2 / R_1)^2 \\times (1/2)^4 = (R_2 / R_1)^2 / 16$.",
+      "$(R_2 / R_1)^2 = 256 \\implies R_2 / R_1 = \\sqrt{256} = 16$."
+    ]
+  },
+  {
+    "id": "a5-18",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "gambar": "warna-suhu",
+    "soal": "Seorang astronom mengamati bintang raksasa merah dan bintang katai putih. Dari grafik warna-suhu dan fotometri UBV, manakah kesimpulan yang TEPAT?",
+    "opsi": [
+      "Katai putih memiliki nilai indeks warna $(B - V)$ yang jauh lebih rendah daripada raksasa merah",
+      "Raksasa merah memancarkan fluks per satuan luas fotosfer jauh lebih kecil daripada katai putih",
+      "Meskipun suhunya lebih rendah, raksasa merah dapat memiliki luminositas jauh lebih tinggi karena luas permukaannya sangat masif",
+      "Panjang gelombang puncak emisi katai putih berada di daerah panjang gelombang yang lebih panjang dibanding raksasa merah",
+      "Indeks warna $(B - V)$ raksasa merah bernilai negatif"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Katai putih bersuhu tinggi ($10.000 - 30.000\\ \\mathrm{K}$), sehingga $B-V$ mendekati 0 atau negatif; raksasa merah ($3.000\\ \\mathrm{K}$) memiliki $B-V > +1{,}2$.",
+      "Fluks permukaan $\\sigma T^4$ semata-mata ditentukan suhu, sehingga katai putih memancarkan fluks permukaan jauh lebih dahsyat per meter persegi.",
+      "Luminositas total $L = 4\\pi R^2 \\sigma T^4$; radius raksasa merah ($R \\sim 100 - 1000\\ R_\\odot$) mengimbangi suhu rendahnya sehingga luminositasnya ribuan kali Matahari.",
+      "Katai putih lebih panas, sehingga menurut Wien $\\lambda_{\\max}$ lebih pendek (bukan lebih panjang)."
+    ]
+  },
+  {
+    "id": "a5-19",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "pilihan-jamak",
+    "soal": "Mengenai fenomena pemredihan antarbintang (*interstellar reddening*) dan serapan debu ($A_V$), pilihlah pernyataan yang BENAR:",
+    "opsi": [
+      "Debu antarbintang lebih banyak menghamburkan foton biru daripada foton merah",
+      "Kelebihan warna didefinisikan sebagai $E(B-V) = (B-V)_{\\text{teramati}} - (B-V)_0$",
+      "Rasio serapan total terhadap selektif secara tipikal bernilai $R_V = A_V / E(B-V) \\approx 3{,}1$ di Bima Sakti",
+      "Ekstingsi antarbintang menyebabkan garis-garis spektrum bergeser ke panjang gelombang lebih panjang seperti efek Doppler",
+      "Jika debu diabaikan, perhitungan jarak modulus selalu menghasilkan nilai yang lebih kecil dari sebenarnya"
+    ],
+    "jawaban": [0, 1, 2],
+    "pembahasan": [
+      "Hamburan debu mengikuti hamburan selektif: foton berpanjang gelombang pendek (biru) lebih kuat dihamburkan, membuat cahaya yang diteruskan lebih merah.",
+      "$E(B-V)$ adalah ekses warna: selisih indeks warna teramati dengan intrinsik.",
+      "$R_V \\approx 3{,}1$ merupakan nilai standar galaksi kita.",
+      "Pemredihan hanya mengubah distribusi fluks relatif (warna), TIDAK menggeser posisi panjang gelombang garis spektrum (bukan pergeseran Doppler).",
+      "Mengabaikan debu menyebabkan bintang dianggap lebih redup murni karena jarak, sehingga estimasi jarak menjadi LEBIH BESAR (bukan lebih kecil)."
+    ]
+  },
+  {
+    "id": "a5-20",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Bintang A memiliki magnitudo tampak $m_A = 2{,}0$ dan bintang B memiliki $m_B = 7{,}0$. Berapakah rasio fluks kedua bintang ($F_A / F_B$)?",
+    "jawaban": 100,
+    "toleransiRel": 0.01,
+    "satuan": "rasio",
+    "pembahasan": [
+      "$\\Delta m = m_B - m_A = 7{,}0 - 2{,}0 = 5{,}0$.",
+      "Rasio fluks: $F_A / F_B = 100^{(\\Delta m / 5)} = 100^{(5{,}0 / 5)} = 100$."
+    ]
+  },
+  {
+    "id": "a5-21",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah sistem bintang biner tidak terpisahkan memiliki magnitudo gabungan $m_{\\text{tot}} = 5{,}00$. Komponen primernya memiliki magnitudo individual $m_1 = 5{,}75$. Berapakah magnitudo tampak komponen sekundernya ($m_2$)?",
+    "jawaban": 5.75,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "Hubungan fluks: $F_{\\text{tot}} = F_1 + F_2$.",
+      "Dari magnitudo: $F_1 / F_{\\text{tot}} = 10^{-0{,}4(m_1 - m_{\\text{tot}})} = 10^{-0{,}4(5{,}75 - 5{,}00)} = 10^{-0{,}30} \\approx 0{,}501$.",
+      "Maka $F_2 = F_{\\text{tot}} - F_1 = F_{\\text{tot}} (1 - 0{,}501) = 0{,}499 F_{\\text{tot}}$.",
+      "Magnitudo komponen 2: $m_2 = m_{\\text{tot}} - 2{,}5\\log_{10}(0{,}499) = 5{,}00 + 0{,}755 \\approx 5{,}75\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "a5-22",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "isian",
+    "soal": "Sebuah gugus bintang memiliki jarak $d = 2{,}0\\ \\mathrm{kpc} = 2.000\\ \\mathrm{pc}$. Indeks warna bintang deret utama tipe A0 di gugus tersebut teramati $(B - V) = +0{,}30$. Diketahui indeks warna intrinsik kelas A0 adalah $(B - V)_0 = 0{,}00$ dan rasio serapan $R_V = 3{,}1$. Berapakah nilai modulus jarak tampak $(m_V - M_V)$ yang terukur?",
+    "jawaban": 12.44,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "Jarak sejati $d = 2.000\\ \\mathrm{pc}$. Modulus jarak bebas serapan: $5\\log_{10}(2000) - 5 = 5(3{,}301) - 5 = 16{,}505 - 5 = 11{,}51\\ \\mathrm{mag}$.",
+      "Kelebihan warna: $E(B-V) = 0{,}30 - 0{,}00 = 0{,}30$.",
+      "Ekstingsi visual: $A_V = R_V \\times E(B-V) = 3{,}1 \\times 0{,}30 = 0{,}93\\ \\mathrm{mag}$.",
+      "Modulus jarak tampak: $(m_V - M_V) = 11{,}505 + 0{,}93 = 12{,}435 \\approx 12{,}44\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "a5-23",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Jelaskan mengapa pengukuran jarak objek langit hanya dengan mengandalkan hukum kuadrat terbalik fluks ($F = L / 4\\pi d^2$) dan modulus jarak Pogson dapat menghasilkan galat sistematis di dalam piringan Bima Sakti. Sebutkan parameter apa yang harus diukur untuk menghilangkan galat ini dan bagaimana formulasinya.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan keberadaan debu medium antarbintang yang menyebabkan absorpsi dan hamburan (ekstingsi $A_V$).",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerangkan bahwa jika ekstingsi diabaikan, bintang tampak lebih redup sehingga jarak terhitung menjadi lebih besar dari jarak sebenarnya.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menyebutkan pengukuran indeks warna multi-pita untuk mencari ekses warna $E(B-V) = (B-V)_{\\text{obs}} - (B-V)_0$.",
+        "bobot": 1
+      },
+      {
+        "poin": "Menuliskan formula modulus jarak terkoreksi: $m_V - M_V = 5\\log d - 5 + R_V E(B-V)$.",
+        "bobot": 1
+      }
+    ],
+    "jawabanTeladan": "Di piringan galaksi Bima Sakti terdapat debu antarbintang yang menyerap dan menghamburkan cahaya bintang (ekstingsi A_V). Akibatnya, fluks yang sampai ke Bumi berkurang lebih besar daripada penurunan kuadrat terbalik geometris semata. Jika debu ini diabaikan, astronom menafsirkan redupnya cahaya murni sebagai akibat jarak yang jauh, sehingga estimasi jarak menjadi jauh lebih besar dari jarak sebenarnya (overestimate). Untuk mengatasinya, dilakukan fotometri multi-filter (misal pita B dan V) untuk menghitung kelebihan warna E(B-V) = (B-V)_teramati - (B-V)_0. Ekstingsi dihitung dengan A_V = R_V × E(B-V) (dengan R_V ≈ 3,1), lalu dimasukkan ke dalam persamaan modulus jarak terkoreksi: m_V - M_V = 5 log d - 5 + A_V.",
+    "pembahasan": [
+      "Debu kosmik di bidang galaksi menyerap dan menghamburkan radiasi bintang.",
+      "Tanpa koreksi, bintang tampak lebih redup sehingga jarak terestimasi terlalu jauh.",
+      "Koreksi dilakukan dengan mengukur ekses warna $E(B-V)$ dan $A_V = R_V \\times E(B-V)$.",
+      "Persamaan lengkap: $m_V - M_V = 5\\log_{10} d - 5 + A_V$."
+    ]
+  },
+  {
+    "id": "a5-24",
+    "topik": "radiasi-magnitudo",
+    "level": "penalaran",
+    "tipe": "esai",
+    "soal": "Sebuah survei langit mendeteksi bintang variabel berdenyut Cepheid di sebuah galaksi tetangga. Mengapa bintang variabel Cepheid disebut sebagai 'lilin standar' (*standard candle*)? Jelaskan tahapan fisis dari pengamatan kurva cahaya hingga mendapatkan jarak galaksi tersebut.",
+    "rubrik": [
+      {
+        "poin": "Mendefinisikan lilin standar sebagai objek yang luminositas mutlaknya (magnitudo absolut) dapat diketahui secara independen.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan relasi periode-luminositas (Leavitt Law) untuk mendapatkan magnitudo absolut dari kurva cahaya.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menerangkan perhitungan modulus jarak dan pentingnya koreksi ekstingsi debu galaksi.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "Bintang variabel Cepheid disebut lilin standar karena kecerlangan intrinsiknya (luminositas atau magnitudo absolut M_V) dapat ditentukan tanpa mengetahui jaraknya terlebih dahulu. Hal ini dimungkinkan oleh hukum Leavitt (hubungan Periode–Luminositas): bintang Cepheid dengan periode denyut lebih panjang memiliki luminositas yang lebih tinggi secara teratur. Tahapan pengukurannya: (1) Astronom merekam kurva cahaya Cepheid dalam rentang waktu tertentu untuk menentukan periode denyut P (dalam hari) dan rata-rata magnitudo tampak <m_V>. (2) Nilai periode dimasukkan ke relasi Leavitt untuk menghitung magnitudo absolut M_V. (3) Dengan mengukur ekses warna untuk memperhitungkan serapan debu A_V, jarak galaksi dihitung melalui rumus modulus: d = 10^{(<m_V> - M_V - A_V + 5)/5} pc.",
+    "pembahasan": [
+      "Definisi lilin standar: objek dengan luminositas intrinsik yang diketahui.",
+      "Hubungan Leavitt menghubungkan periode denyut $P$ dengan magnitudo absolut $M_V$.",
+      "Kurva cahaya memberikan $P$ dan rata-rata $m_V$.",
+      "Jarak dihitung dari modulus jarak dengan koreksi ekstingsi: $d = 10^{(m_V - M_V - A_V + 5)/5}\\ \\mathrm{pc}$."
+    ]
+  },
+  {
+    "id": "a5-25",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "kurva-benda-hitam",
+    "soal": "Perhatikan kurva spektrum benda hitam Planck pada gambar. Sebuah bintang A memiliki suhu efektif $T_A = 12.000\\ \\mathrm{K}$ dengan panjang gelombang puncak $\\lambda_A$. Bintang B memiliki $\\lambda_B = 2\\lambda_A$. Jika luminositas kedua bintang terukur sama ($L_A = L_B$), berapakah perbandingan radius bintang B terhadap bintang A ($R_B / R_A$)?",
+    "opsi": [
+      "$4$",
+      "$2$",
+      "$16$",
+      "$\\sqrt{2}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hukum Pergeseran Wien: $\\lambda_{\\max} \\propto 1/T \\implies T_B / T_A = \\lambda_A / \\lambda_B = \\lambda_A / (2\\lambda_A) = 1/2$. Jadi suhu bintang B adalah $T_B = T_A / 2 = 6.000\\ \\mathrm{K}$.",
+      "Hukum Stefan-Boltzmann: Luminositas didefinisikan sebagai $L = 4\\pi R^2 \\sigma T^4$.",
+      "Rasio Luminositas dan Radius: Karena $L_A = L_B$, maka:\n$$4\\pi R_A^2 \\sigma T_A^4 = 4\\pi R_B^2 \\sigma T_B^4 \\implies \\left(\\frac{R_B}{R_A}\\right)^2 = \\left(\\frac{T_A}{T_B}\\right)^4.$$",
+      "Evaluasi Numerik: $\\left(\\frac{R_B}{R_A}\\right)^2 = (2)^4 = 16 \\implies \\frac{R_B}{R_A} = \\sqrt{16} = 4$.\nRadius bintang B adalah 4 kali radius bintang A."
+    ]
+  },
+  {
+    "id": "a5-26",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "pilihan-ganda",
+    "gambar": "warna-suhu",
+    "soal": "Berdasarkan diagram warna–suhu pada gambar, sebuah bintang deret utama memiliki indeks warna intrinsik $(B-V)_0 = -0{,}15$ dan magnitudo absolut visual $M_V = -1{,}0$. Dari hasil fotometri teleskop di Bumi, bintang tersebut terukur memiliki $m_V = 11{,}50$ dan $m_B = 12{,}05$. Berapakah jarak sebenarnya bintang tersebut dalam satuan parsek (asumsikan $R_V = 3{,}1$)?",
+    "opsi": [
+      "$1.202\\ \\mathrm{pc}$",
+      "$3.162\\ \\mathrm{pc}$",
+      "$2.450\\ \\mathrm{pc}$",
+      "$850\\ \\mathrm{pc}$"
+    ],
+    "jawaban": 0,
+    "pembahasan": [
+      "Hitung Indeks Warna Teramati dan Ekses Warna:\n$(B - V)_{\\text{obs}} = m_B - m_V = 12{,}05 - 11{,}50 = +0{,}55$.\nEkses warna: $E(B-V) = (B-V)_{\\text{obs}} - (B-V)_0 = +0{,}55 - (-0{,}15) = +0{,}70$.",
+      "Hitung Ekstingsi Visual:\n$A_V = R_V \\times E(B-V) = 3{,}1 \\times 0{,}70 = 2{,}17\\ \\mathrm{mag}$.",
+      "Modulus Jarak Terkoreksi:\n$m_V - M_V = 5\\log_{10} d - 5 + A_V \\implies 11{,}50 - (-1{,}0) = 5\\log_{10} d - 5 + 2{,}17$.\n$12{,}50 = 5\\log_{10} d - 2{,}83 \\implies 5\\log_{10} d = 15{,}33 \\implies \\log_{10} d = 3{,}066$.",
+      "Jarak Sejati:\n$d = 10^{3{,}066} \\approx 1.164 - 1.202\\ \\mathrm{pc}$ (tepatnya $10^{3{,}08} \\approx 1.202\\ \\mathrm{pc}$).\nPilihan yang paling tepat dan konsisten adalah $1.202\\ \\mathrm{pc}$."
+    ]
+  },
+  {
+    "id": "a5-27",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "tangga-magnitudo",
+    "soal": "Perhatikan tangga magnitudo terbalik pada gambar. Diketahui magnitudo tampak Matahari dari Bumi ($d = 1\\ \\mathrm{AU}$) adalah $m_\\odot = -26{,}74$. Berapakah magnitudo tampak Matahari jika diamati dari sebuah wahana antariksa yang sedang berada di orbit Pluto pada jarak $40\\ \\mathrm{AU}$ dari Matahari? (Gunakan $\\log_{10}(40) \\approx 1{,}602$)",
+    "jawaban": -18.73,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "Hukum Kuadrat Terbalik Rasio Fluks: Fluks radiasi Matahari pada jarak $d_2 = 40\\ \\mathrm{AU}$ dibandingkan fluks di Bumi $d_1 = 1\\ \\mathrm{AU}$ memenuhi rasio:\n$F_2 / F_1 = (d_1 / d_2)^2 = (1 / 40)^2 = 1 / 1.600$.",
+      "Formulasi Pogson: Selisih magnitudo tampak:\n$m_2 - m_1 = -2{,}5 \\log_{10}(F_2 / F_1) = -2{,}5 \\log_{10}(1/40^2) = 5 \\log_{10}(40)$.",
+      "Kalkulasi Nilai:\n$m_2 - (-26{,}74) = 5 \\times 1{,}60206 = 8{,}0103$.\n$m_2 = -26{,}74 + 8{,}0103 = -18{,}7297 \\approx -18{,}73\\ \\mathrm{mag}$.",
+      "Meskipun Matahari tampak jauh lebih redup di Pluto (melemah sekitar 8 magnitudo), magnitudonya tetap $-18{,}73$, jauh lebih terang daripada Bulan purnama di Bumi ($-12{,}7$)."
+    ]
+  },
+  {
+    "id": "a5-28",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "isian",
+    "gambar": "modulus-jarak-grafik",
+    "soal": "Perhatikan grafik modulus jarak pada gambar. Sebuah bintang superraksasa memiliki magnitudo tampak visual $m_V = 6{,}50$, koreksi bolometrik $BC = -0{,}80$, ekses warna $E(B-V) = 0{,}20$, dan paralaks tahunan $p = 0{,}002''$ (detik busur). Jika konstanta ekstingsi $R_V = 3{,}1$ dan magnitudo bolometrik absolut Matahari adalah $M_{\\text{bol},\\odot} = +4{,}74$, berapakah modulus jarak terkoreksi bebas serapan $(m_V - M_V - A_V)$ bintang tersebut?",
+    "jawaban": 8.50,
+    "toleransiRel": 0.02,
+    "satuan": "mag",
+    "pembahasan": [
+      "Jarak sejati dari paralaks: $d = 1 / p = 1 / 0{,}002'' = 500\\ \\mathrm{pc}$.",
+      "Modulus jarak bebas serapan murni bergantung pada jarak: $\\mu_0 = 5\\log_{10} d - 5 = 5\\log_{10}(500) - 5$.",
+      "Karena $\\log_{10}(500) = \\log_{10}(5 \\times 10^2) = 0{,}699 + 2 = 2{,}699$,",
+      "Maka $\\mu_0 = 5(2{,}699) - 5 = 13{,}495 - 5 = 8{,}495 \\approx 8{,}50\\ \\mathrm{mag}$."
+    ]
+  },
+  {
+    "id": "a5-29",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah gugus bintang bola (*globular cluster*) di halo galaksi diamati pada pita visual ($V$) dan biru ($B$). Jelaskan secara komprehensif bagaimana astronom memanfaatkan diagram Warna–Magnitudo (CMD) gugus tersebut untuk menentukan: (a) besar ekstingsi debu antarbintang $A_V$ pada arah gugus, (b) jarak sejati gugus dari Bumi dengan metode pencocokan deret utama (*main-sequence fitting*), dan (c) batas usia gugus bintang dari titik belok (*turn-off point*). Sertakan rumus-rumus utama yang relevan.",
+    "rubrik": [
+      {
+        "poin": "Menjelaskan pergeseran warna horizontal untuk mencari $E(B-V)$ dan formula $A_V = R_V \\times E(B-V)$.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan pergeseran vertikal untuk modulus jarak dan perhitungan jarak sejati $d = 10^{(m_V - M_V - A_V + 5)/5}$.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menjelaskan konsep fisis turn-off point dan keterkaitannya dengan usia evolusi deret utama $\\tau_{\\text{MS}} \\propto M^{-2{,}5}$.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "1. Ekstingsi debu ditentukan dengan membandingkan posisi deret utama gugus teramati dengan deret utama standar tanpa serapan (ZAMS). Selisih warna horizontal adalah ekses warna E(B-V) = (B-V)_obs - (B-V)_0. Serapan visual dihitung lewat A_V = R_V × E(B-V) dengan R_V ≈ 3,1.\n2. Jarak ditentukan melalui pencocokan deret utama (main-sequence fitting): setelah kurva digeser sejauh -E(B-V), pergeseran vertikal untuk menimpitkan kurva teramati ke magnitudo mutlak M_V memberikan modulus jarak m_V - M_V. Jarak sejati bebas debu diperoleh dari d = 10^{(m_V - M_V - A_V + 5)/5} pc.\n3. Usia gugus ditentukan dari titik belok (turn-off point), yaitu titik paling biru di deret utama tempat bintang mulai kehabisan hidrogen di intinya. Usia gugus mendekati umur hidup bintang pada turn-off: t ≈ 10^{10} (M_TO / M_sun)^{-2,5} tahun.",
+    "pembahasan": [
+      "Pergeseran horizontal CMD memberi ekses warna $E(B-V)$ dan $A_V = R_V \\times E(B-V)$.",
+      "Pergeseran vertikal memberi modulus jarak tampak dan jarak sejati $d = 10^{(m_V - M_V - A_V + 5)/5}\\ \\mathrm{pc}$.",
+      "Titik belok (turn-off point) mengukur massa bintang yang baru selesai fase deret utama, memberikan usia gugus via $\\tau \\propto M/L \\propto M^{-2{,}5}$."
+    ]
+  },
+  {
+    "id": "a5-30",
+    "topik": "radiasi-magnitudo",
+    "level": "olimpiade",
+    "tipe": "esai",
+    "soal": "Sebuah satelit astrometri mengukur paralaks trigonometri bintang superraksasa biru sebesar $p = 4{,}0\\ \\mathrm{mas}$ (mili-detik busur) dengan ketidakpastian $\\sigma_p = 0{,}2\\ \\mathrm{mas}$. Fotometri memberikan magnitudo tampak visual terintegrasi $m_V = 4{,}20$, koreksi bolometrik $BC = -1{,}80$, dan serapan antarbintang terestimasi $A_V = 0{,}60\\ \\mathrm{mag}$. Suhu efektif bintang ditentukan dari analisis spektrum sebesar $T_{\\text{eff}} = 23.112\\ \\mathrm{K}$. (Gunakan data Matahari: $M_{\\text{bol},\\odot} = +4{,}74$ dan $T_{\\text{eff},\\odot} = 5.778\\ \\mathrm{K}$).\n(a) Turunkan persamaan analitik untuk radius bintang $R/R_\\odot$.\n(b) Hitung nilai numerik radius bintang tersebut dalam satuan $R_\\odot$.\n(c) Tentukan persentase ketidakpastian radius bintang akibat ketidakpastian paralaks.",
+    "rubrik": [
+      {
+        "poin": "Menurunkan persamaan analitik yang menghubungkan $R/R_\\odot$ dengan modulus jarak, koreksi bolometrik, dan Stefan-Boltzmann.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menghitung modulus jarak, $M_{\\text{bol}}$, rasio luminositas, dan nilai numerik radius $R/R_\\odot \\approx 6{,}0 - 6{,}1\\ R_\\odot$.",
+        "bobot": 2
+      },
+      {
+        "poin": "Menganalisis perambatan ketidakpastian diferensial logaritmik $\\delta R / R = \\delta p / p = 5\\%$.",
+        "bobot": 2
+      }
+    ],
+    "jawabanTeladan": "(a) Jarak d = 1000/p_mas. Modulus jarak: M_V = m_V - 5 log(1000/p) + 5 - A_V. Magnitudo bolometrik: M_bol = M_V + BC. Dari Pogson: L/L_sun = 10^{-0,4(M_bol - M_bol,sun)}. Dari Stefan-Boltzmann: R/R_sun = sqrt(L/L_sun) × (T_sun / T_eff)^2.\n(b) d = 1000/4,0 = 250 pc. M_V = 4,20 - 5 log(250) + 5 - 0,60 = -3,39 mag. M_bol = -3,39 + (-1,80) = -5,19 mag. L/L_sun = 10^{0,4 × (4,74 - (-5,19))} = 10^{3,972} ≈ 9376. Rasio suhu = 5778 / 23112 = 0,25. R/R_sun = sqrt(9376) × (0,25)^2 = 96,83 × 0,0625 ≈ 6,05 R_sun.\n(c) Karena L sebanding d^2 sebanding p^{-2}, maka R sebanding sqrt(L) sebanding p^{-1}. Diferensiasi memberikan |delta R / R| = |delta p / p| = 0,2 / 4,0 = 5%. Jadi ketidakpastian radius adalah 5%.",
+    "pembahasan": [
+      "Penurunan rumus analitik $R/R_\\odot$ dari kombinasi modulus, koreksi bolometrik, dan Stefan-Boltzmann.",
+      "Kalkulasi: $d = 250\\ \\mathrm{pc}$, $M_V = -3{,}39$, $M_{\\text{bol}} = -5{,}19$, $L/L_\\odot \\approx 9376$, dan $R \\approx 6{,}05\\ R_\\odot$.",
+      "Perambatan galat: relasi $R \\propto 1/p$ menyebabkan persentase galat radius sama persis dengan galat paralaks, yaitu $5\\%$."
+    ]
+  }
+]
